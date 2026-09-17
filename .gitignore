@@ -1,0 +1,14 @@
+# Tài liệu SGK gốc (PDF) — không đẩy lên git
+data/
+
+# Ảnh trang đã render, node_modules cho check_math — tạo lại được
+.cache/
+
+# Rác hệ thống / công cụ
+__pycache__/
+*.pyc
+node_modules/
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
