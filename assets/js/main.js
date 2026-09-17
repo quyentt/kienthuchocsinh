@@ -165,6 +165,12 @@
     const panels = $$(".panel").filter(p => $(".formula, .equation", p));
     if (!panels.length) return;
     const hasEq = panels.some(p => $(".equation", p));
+    // Trang có thể đổi chữ qua <body data-quick-title=".." data-quick-unit=".." data-quick-hint="..">
+    const label = {
+      title: document.body.dataset.quickTitle || "Công thức nhanh",
+      unit: document.body.dataset.quickUnit || "công thức",
+      hint: document.body.dataset.quickHint || "Tìm: điện trở, R, độ cồn, allele…"
+    };
     const total = panels.reduce((n, p) => n + $$(".formula", p).length, 0);
     const tabName = p => {
       const tab = $(`.tab[data-tab="${p.id}"]`);
@@ -203,26 +209,26 @@
 
     const sheet = document.createElement("dialog");
     sheet.className = "fsheet";
-    sheet.setAttribute("aria-label", "Công thức nhanh");
+    sheet.setAttribute("aria-label", label.title);
     sheet.innerHTML = `
       <div class="fs-inner">
         <header class="fs-head">
           <div class="fs-head-row">
             <div>
-              <div class="fs-title">∑ Công thức nhanh</div>
-              <div class="fs-sub">${total} công thức${hasEq ? " · kèm phương trình hoá học" : ""} · bấm tên bài để xem chi tiết</div>
+              <div class="fs-title">∑ ${label.title}</div>
+              <div class="fs-sub">${total} ${label.unit}${hasEq ? " · kèm phương trình hoá học" : ""} · bấm tên bài để xem chi tiết</div>
             </div>
             <span class="spacer"></span>
             <button type="button" class="icon-btn fs-print" title="In bảng công thức">🖨️ In</button>
             <button type="button" class="icon-btn fs-close" title="Đóng (Esc)">✕</button>
           </div>
           <div class="fs-controls">
-            <input type="search" placeholder="Tìm: điện trở, R, độ cồn, allele…" aria-label="Tìm công thức">
+            <input type="search" placeholder="${label.hint}" aria-label="Tìm ${label.unit}">
             ${chips}
             ${hasEq ? `<label class="fs-check"><input type="checkbox" checked> Phương trình hoá học</label>` : ""}
           </div>
         </header>
-        <div class="fs-body">${groups}<p class="fs-empty" hidden>Không tìm thấy công thức phù hợp.</p></div>
+        <div class="fs-body">${groups}<p class="fs-empty" hidden>Không tìm thấy ${label.unit} phù hợp.</p></div>
       </div>`;
     document.body.appendChild(sheet);
 
@@ -266,8 +272,10 @@
     const btn = document.createElement("button");
     btn.type = "button";
     btn.className = "icon-btn formula-btn";
-    btn.title = "Tra nhanh công thức (phím F)";
-    btn.innerHTML = `<b>∑</b> Công thức<span class="hide-sm"> nhanh</span>`;
+    btn.title = `Tra nhanh ${label.unit} (phím F)`;
+    const words = label.title.split(" ");
+    const last = words.length > 1 ? words.pop() : "";
+    btn.innerHTML = `<b>∑</b> ${words.join(" ")}${last ? `<span class="hide-sm"> ${last}</span>` : ""}`;
     btn.addEventListener("click", open);
     const themeBtn = $("#theme-toggle");
     if (themeBtn) themeBtn.before(btn); else $(".topbar-inner")?.appendChild(btn);

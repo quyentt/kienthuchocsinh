@@ -128,6 +128,54 @@ lọc theo tab, bật/tắt phương trình hoá học, nút in. Không cần vi
 - Đơn vị viết sau kí hiệu trong `formula-legend`, dạng "\(R\): điện trở (Ω)".
 - Công thức suy ra / biến đổi (vd. \(v = \sqrt{2W_\text{đ}/m}\)) đặt thêm trong cùng khung, hoặc `formula-note`.
 
+### Môn ngoại ngữ (Tiếng Anh)
+
+Trang một panel (`section.panel.en`, không thanh tab), nhiều INCLUDE liên tiếp (mỗi chủ điểm một partial
+`_parts/tieng-anh-N.html`). `<body data-quick-title="Cấu trúc nhanh" data-quick-unit="cấu trúc" data-quick-hint="…">`
+để nút tra nhanh thành "∑ Cấu trúc nhanh". Chương = **chủ điểm (Theme)**, bài = **Unit**; id `ta-chu-diem-N`, `ta-unit-N`.
+Bài Review không có kiến thức mới → không tạo bài riêng. Mỗi Unit theo thứ tự:
+
+```html
+<article class="lesson" id="ta-unit-1">
+  <h3 class="lesson-title"><span class="lesson-no">Unit 1</span>Local Community <span class="vi-title">Cộng đồng địa phương</span></h3>
+  <p class="lesson-goal">Cần nắm: …</p>
+
+  <h4>1. Vocabulary — Từ vựng</h4>
+  <div class="table-wrap"><table class="vocab">
+    <thead><tr><th>Từ / cụm từ</th><th>Loại</th><th>Phiên âm</th><th>Nghĩa</th></tr></thead>
+    <tbody>
+      <tr><td>artisan</td><td class="pos">n</td><td class="ipa">/ˌɑːtɪˈzæn/</td><td>thợ làm nghề thủ công</td></tr>
+    </tbody>
+  </table></div>
+  <!-- cụm từ / collocation / word family: box note data-label="🔗 Cụm từ hay gặp" -->
+
+  <h4>2. Pronunciation — Phát âm</h4>
+  <div class="box law" data-label="🔊 Quy tắc phát âm">… ví dụ: <span class="en">com<span class="stress">mu</span>nity</span></div>
+
+  <h4>3. Grammar — Ngữ pháp</h4>
+  <div class="formula">
+    <div class="formula-name">Câu hỏi gián tiếp với từ để hỏi + to-V</div>
+    <div class="formula-body pattern"><i>S</i> + <b>ask / wonder / (don't) know</b> + <b>wh-word</b> + <b>to V</b></div>
+    <ul class="formula-legend"><li>Dùng khi: …</li><li>Lưu ý: …</li></ul>
+    <div class="formula-note"><span class="en">I don't know where to go.</span> <span class="vi">Tôi không biết đi đâu.</span></div>
+  </div>
+  <ul class="examples"><li><span class="en">…</span><span class="vi">…</span></li></ul>
+
+  <h4>4. Everyday English — Giao tiếp</h4>   <!-- bảng: Chức năng | Mẫu câu (tiếng Anh, class en) -->
+  <h4>5. Skills — Kĩ năng</h4>               <!-- ý chính bài đọc, dàn ý bài viết (ol.steps), từ nối/mẫu câu hữu ích -->
+  <div class="key-points">…</div>
+</article>
+```
+
+- Từ vựng lấy **đủ** từ Glossary cuối sách (từ, loại từ, phiên âm, nghĩa — chép đúng IPA) + bổ sung cụm từ quan trọng trong Unit.
+- Mỗi điểm ngữ pháp = một `div.formula` với `formula-body pattern`: `<b>` = từ cố định, `<i>` = chỗ điền (S, V-ing, O…).
+  Có cách dùng, lưu ý, ví dụ kèm dịch. Bảng so sánh khi dễ lẫn (defining vs non-defining…).
+- Câu tiếng Anh bọc `span.en`, bản dịch `span.vi`. Âm tiết nhận trọng âm bọc `span.stress`.
+- Không dùng KaTeX cho môn này (trang không nạp KaTeX).
+- Bài phát âm luyện **âm** (không phải trọng âm): cũng dùng `span.stress` để tô chữ cái mang âm cần luyện.
+- Glossary SGK có thể in sai (IPA, nghĩa): chép đúng sách, chỉ sửa lỗi rõ ràng và ghi chú lại, vd.
+  `thuốc trừ sâu <span class="muted">(Glossary SGK ghi “…”)</span>`.
+
 ### Nguyên tắc biên soạn "nhìn là hiểu"
 
 - **Bám sát SGK**: đủ mọi định nghĩa, định luật, công thức, bảng, kết luận "Em đã học" của từng bài.
@@ -153,12 +201,21 @@ lọc theo tab, bật/tắt phương trình hoá học, nút in. Không cần vi
   dưới ~500px và chụp sai khi trang đã cuộn → tạo file HTML tạm (trong scratchpad) chứa các `<iframe>` rộng 380px
   (điện thoại) và 1000px (máy tính) trỏ tới `khtn.html#<id-bài>` rồi chụp file đó.
 - Không viết `\` trơn trong văn bản HTML ngoài công thức (bị hiển thị thẳng ra).
+- Class của panel (`ly`, `hoa`, `sinh`, `en`) không được trùng class dùng trong nội dung: selector nội dung
+  phải gắn thẻ (vd. `span.en`, không phải `.en`) — từng làm cả trang Tiếng Anh bị in nghiêng.
 
 ## Tiến độ
 
 | Lớp | Môn | Nguồn | Trạng thái |
 |---|---|---|---|
 | 9 | KHTN (Lí/Hoá/Sinh) | `data/thuvienhoclieu.com-SGK-KHTN-Lop-9-thong-nhat-.pdf` — Kết nối tri thức, 230 trang, trang PDF = trang in + 1 | Xong 2026-09-17: 15 chương, 51 bài, 798 công thức |
+| 9 | Tiếng Anh | `data/Tiếng Anh 9 Global Success.pdf` — 139 trang, số trang PDF lệch không đều (thiếu trang in 5) → tra theo bảng dưới | Xong 2026-09-18: 4 chủ điểm, 12 Unit, 266 từ vựng, 26 cấu trúc |
 
 Phân chia KHTN 9 (số trang PDF): Bài 1 (chung, đặt ở tab Hoá) 7–15 · **Vật lí** Chương I–V (Bài 2–17) 16–87 ·
 **Hoá học** Chương VI–X (Bài 18–35) 88–159 · **Sinh học** Chương XI–XIV (Bài 36–51) 160–224, thuật ngữ 225–227.
+
+Phân chia Tiếng Anh 9 (số trang PDF; mỗi Unit 10 trang): Book map 4–6 · Chủ điểm 1 *Our Communities*: U1 7–16, U2 17–26,
+U3 27–36, Review 1 37–38 · Chủ điểm 2 *Our Heritage*: U4 39–48, U5 49–58, U6 59–68, Review 2 69–70 ·
+Chủ điểm 3 *Our World*: U7 71–80, U8 81–90, U9 91–100, Review 3 101–102 · Chủ điểm 4 *Visions of the Future*:
+U10 103–112, U11 113–122, U12 123–132, Review 4 133–134 · Glossary 135–138 (bản nét, cắt đôi cột:
+`.cache/pages/lop-9/tieng-anh/glossary/p135a.jpg`…`p138b.jpg`).
