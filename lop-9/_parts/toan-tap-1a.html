@@ -1,0 +1,1624 @@
+<section class="chapter" id="toan-chuong-1">
+  <h2 class="chapter-title"><span>Chương I · Đại số</span>Phương trình và hệ hai phương trình bậc nhất hai ẩn</h2>
+
+  <article class="lesson" id="toan-bai-1">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 1</span>Khái niệm phương trình và hệ hai phương trình bậc nhất hai ẩn</h3>
+    <p class="lesson-goal">Cần nắm: dạng của phương trình bậc nhất hai ẩn và nghiệm của nó; biểu diễn hình học tập nghiệm (một đường thẳng); khái niệm hệ hai phương trình bậc nhất hai ẩn và nghiệm của hệ.</p>
+
+    <h4>1. Phương trình bậc nhất hai ẩn</h4>
+    <div class="box def">
+      <p><b>Phương trình bậc nhất hai ẩn</b> \(x\) và \(y\) là hệ thức dạng \(ax + by = c\), trong đó \(a\), \(b\), \(c\) là các số đã biết, với <span class="kw">\(a \ne 0\) hoặc \(b \ne 0\)</span>.</p>
+      <p>Nếu tại \(x = x_0\) và \(y = y_0\) ta có \(ax_0 + by_0 = c\) là một khẳng định đúng thì cặp số \((x_0; y_0)\) được gọi là một <b>nghiệm</b> của phương trình.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Phương trình bậc nhất hai ẩn x, y</div>
+      <div class="formula-body">\[ ax + by = c \qquad (a \ne 0 \ \text{hoặc}\ b \ne 0) \]</div>
+      <ul class="formula-legend">
+        <li>\(x\), \(y\): hai ẩn</li>
+        <li>\(a\), \(b\), \(c\): các số đã biết; \(a\) và \(b\) <b>không đồng thời</b> bằng 0</li>
+        <li>\((x_0; y_0)\) là nghiệm ⇔ \(ax_0 + by_0 = c\) đúng</li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1</p>
+      <p>a) Trong các hệ thức \(4x + 3y = 5\); \(0x + y = -1\); \(0x + 0y = 3\): hai hệ thức đầu là phương trình bậc nhất hai ẩn. Hệ thức \(0x + 0y = 3\) có \(a = b = 0\) nên <b>không phải</b> phương trình bậc nhất hai ẩn.</p>
+      <p>b) \((2; -1)\) là nghiệm của \(4x + 3y = 5\) vì \(4 \cdot 2 + 3 \cdot (-1) = 5\).<br>
+      \((1; 0)\) không là nghiệm vì \(4 \cdot 1 + 3 \cdot 0 = 4 \ne 5\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 — Phương trình \(x + 2y = 5\)</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>\(x\)</th><td>\(-2\)</td><td>\(-1\)</td><td>\(0\)</td><td>\(3\)</td><td>\(1\)</td></tr></thead>
+        <tbody><tr><th>\(y\)</th><td>\(\frac{7}{2}\)</td><td>\(3\)</td><td>\(\frac{5}{2}\)</td><td>\(1\)</td><td>\(2\)</td></tr></tbody>
+      </table></div>
+      <p>Ta có \(y = \dfrac{5 - x}{2}\): với mỗi giá trị \(x\) tuỳ ý luôn tìm được một giá trị \(y\) tương ứng ⇒ phương trình có <b>vô số nghiệm</b>.</p>
+    </div>
+    <div class="box note">
+      <p><b>Chú ý.</b> Mỗi phương trình bậc nhất hai ẩn đều có <b>vô số nghiệm</b>.</p>
+    </div>
+
+    <h5>Viết nghiệm tổng quát và biểu diễn hình học</h5>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3</p>
+      <p>a) \(x + 2y = 3\) ⇔ \(y = -0{,}5x + 1{,}5\). Nghiệm tổng quát: \((x;\ -0{,}5x + 1{,}5)\) với \(x \in \mathbb{R}\) tuỳ ý. Tập nghiệm là đường thẳng \(d: x + 2y = 3\), vẽ qua hai điểm \(A(0; 1{,}5)\) và \(B(3; 0)\).</p>
+      <p>b) \(0x + y = -2\) viết gọn là \(y = -2\). Nghiệm: \((x; -2)\) với \(x \in \mathbb{R}\) tuỳ ý. Tập nghiệm là <b>đường thẳng \(y = -2\)</b>, song song với trục hoành, cắt trục tung tại \((0; -2)\).</p>
+      <p>c) \(x + 0y = 3\) viết gọn là \(x = 3\). Nghiệm: \((3; y)\) với \(y \in \mathbb{R}\) tuỳ ý. Tập nghiệm là <b>đường thẳng \(x = 3\)</b>, song song với trục tung, cắt trục hoành tại \((3; 0)\).</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 300 215" width="300" role="img" aria-label="Ba đường thẳng x + 2y = 3, y = -2 và x = 3 trên mặt phẳng toạ độ">
+        <defs>
+          <marker id="toan-arr1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+            <path d="M0 0 L10 5 L0 10 z" class="accent-fill"/>
+          </marker>
+        </defs>
+        <line x1="10" y1="110" x2="290" y2="110" class="stroke" stroke-width="1.2" marker-end="url(#toan-arr1)"/>
+        <line x1="80" y1="205" x2="80" y2="10" class="stroke" stroke-width="1.2" marker-end="url(#toan-arr1)"/>
+        <g class="stroke" stroke-width="1">
+          <line x1="20" y1="107" x2="20" y2="113"/><line x1="50" y1="107" x2="50" y2="113"/>
+          <line x1="110" y1="107" x2="110" y2="113"/><line x1="140" y1="107" x2="140" y2="113"/>
+          <line x1="170" y1="107" x2="170" y2="113"/><line x1="200" y1="107" x2="200" y2="113"/>
+          <line x1="230" y1="107" x2="230" y2="113"/>
+          <line x1="77" y1="20" x2="83" y2="20"/><line x1="77" y1="50" x2="83" y2="50"/>
+          <line x1="77" y1="80" x2="83" y2="80"/><line x1="77" y1="140" x2="83" y2="140"/>
+          <line x1="77" y1="170" x2="83" y2="170"/><line x1="77" y1="200" x2="83" y2="200"/>
+        </g>
+        <line x1="20" y1="35" x2="260" y2="155" class="accent" stroke-width="2.5"/>
+        <line x1="20" y1="170" x2="265" y2="170" class="stroke" stroke-width="2" stroke-dasharray="7 4"/>
+        <line x1="170" y1="18" x2="170" y2="205" class="stroke" stroke-width="2" stroke-dasharray="2 3"/>
+        <circle cx="80" cy="65" r="3" class="accent-fill"/>
+        <circle cx="170" cy="110" r="3" class="accent-fill"/>
+        <text x="284" y="126" font-size="13" font-style="italic">x</text>
+        <text x="86" y="18" font-size="13" font-style="italic">y</text>
+        <text x="67" y="124" font-size="12" font-style="italic">O</text>
+        <text x="14" y="126" font-size="11">−2</text>
+        <text x="106" y="126" font-size="11">1</text>
+        <text x="136" y="126" font-size="11">2</text>
+        <text x="236" y="126" font-size="11">5</text>
+        <text x="84" y="84" font-size="11">1</text>
+        <text x="84" y="54" font-size="11">2</text>
+        <text x="84" y="144" font-size="11">−1</text>
+        <text x="60" y="62" font-size="13" font-style="italic">A</text>
+        <text x="175" y="131" font-size="13" font-style="italic">B</text>
+        <text x="186" y="100" font-size="12">d: x + 2y = 3</text>
+        <text x="200" y="188" font-size="12">y = −2</text>
+        <text x="176" y="34" font-size="12">x = 3</text>
+      </svg>
+      <figcaption>Nét liền: đường thẳng \(d: x + 2y = 3\) (qua \(A(0; 1{,}5)\), \(B(3; 0)\)) · nét gạch: đường thẳng \(y = -2\) · nét chấm: đường thẳng \(x = 3\).</figcaption>
+    </figure>
+    <div class="box law" data-label="⚖️ Nhận xét">
+      <p>Trong mặt phẳng toạ độ, tập hợp các điểm có toạ độ \((x; y)\) thoả mãn phương trình bậc nhất hai ẩn \(ax + by = c\) là <b>một đường thẳng</b>. Đường thẳng đó gọi là <span class="kw">đường thẳng \(ax + by = c\)</span>.</p>
+    </div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Trường hợp</th><th>Viết lại</th><th>Nghiệm tổng quát</th><th>Đường thẳng \(ax + by = c\)</th></tr></thead>
+      <tbody>
+        <tr><td>\(a \ne 0,\ b \ne 0\)</td><td>\(y = -\dfrac{a}{b}x + \dfrac{c}{b}\)</td><td>\(\left(x;\ -\dfrac{a}{b}x + \dfrac{c}{b}\right)\), \(x \in \mathbb{R}\)</td><td>Trùng với đồ thị hàm số \(y = -\frac{a}{b}x + \frac{c}{b}\)</td></tr>
+        <tr><td>\(a = 0,\ b \ne 0\)</td><td>\(y = m\) với \(m = \dfrac{c}{b}\)</td><td>\((x;\ m)\), \(x \in \mathbb{R}\)</td><td>Song song hoặc trùng trục hoành, cắt trục tung tại \((0; m)\)</td></tr>
+        <tr><td>\(a \ne 0,\ b = 0\)</td><td>\(x = n\) với \(n = \dfrac{c}{a}\)</td><td>\((n;\ y)\), \(y \in \mathbb{R}\)</td><td>Song song hoặc trùng trục tung, cắt trục hoành tại \((n; 0)\)</td></tr>
+      </tbody>
+    </table></div>
+    <div class="box method">
+      <p class="box-title">Dạng: Viết nghiệm và biểu diễn hình học tập nghiệm của \(ax + by = c\)</p>
+      <ol class="steps">
+        <li>Rút một ẩn theo ẩn kia (nếu \(b \ne 0\): \(y = \dots x + \dots\); nếu \(b = 0\): \(x = n\)).</li>
+        <li>Viết nghiệm tổng quát, ghi rõ ẩn còn lại <b>tuỳ ý thuộc \(\mathbb{R}\)</b>.</li>
+        <li>Vẽ đường thẳng: tìm hai điểm bất kì thuộc nó (thường là giao điểm với hai trục) rồi nối lại; trường hợp \(y = m\) hay \(x = n\) thì kẻ song song với trục hoành / trục tung.</li>
+      </ol>
+    </div>
+
+    <h4>2. Hệ hai phương trình bậc nhất hai ẩn</h4>
+    <div class="box def">
+      <p>Một cặp gồm hai phương trình bậc nhất hai ẩn \(ax + by = c\) và \(a'x + b'y = c'\) được gọi là một <b>hệ hai phương trình bậc nhất hai ẩn</b>.</p>
+      <p>Mỗi cặp số \((x_0; y_0)\) được gọi là một <b>nghiệm của hệ</b> nếu nó <span class="kw">đồng thời</span> là nghiệm của cả hai phương trình của hệ (tức là <b>nghiệm chung</b> của hai phương trình).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Hệ hai phương trình bậc nhất hai ẩn</div>
+      <div class="formula-body">\[ \begin{cases} ax + by = c \\ a'x + b'y = c' \end{cases} \quad (*) \]</div>
+      <ul class="formula-legend">
+        <li>Mỗi phương trình của hệ là phương trình bậc nhất hai ẩn</li>
+        <li>\((x_0; y_0)\) là nghiệm của hệ ⇔ thoả mãn <b>cả hai</b> phương trình</li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 4</p>
+      <p>Hệ \(\begin{cases} x + 2y = -3 \\ 0x + 0y = 1 \end{cases}\) <b>không phải</b> hệ hai phương trình bậc nhất hai ẩn, vì \(0x + 0y = 1\) không phải phương trình bậc nhất hai ẩn.<br>
+      Còn \(\begin{cases} 2x = -6 \\ 5x + 4y = 1 \end{cases}\) vẫn là hệ bậc nhất hai ẩn (\(2x = -6\) chính là \(2x + 0y = -6\)).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 5 — \((1; 2)\) là nghiệm của hệ \(\begin{cases} 2x - y = 0 \\ x + y = 3 \end{cases}\)</p>
+      <ul>
+        <li>\(2 \cdot 1 - 2 = 0\) ⇒ \((1; 2)\) là nghiệm của phương trình thứ nhất;</li>
+        <li>\(1 + 2 = 3\) ⇒ \((1; 2)\) là nghiệm của phương trình thứ hai.</li>
+      </ul>
+      <p>Vậy \((1; 2)\) là nghiệm chung, tức là một nghiệm của hệ.</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Kiểm tra một cặp số có là nghiệm của hệ không</p>
+      <ol class="steps">
+        <li>Thay \(x = x_0\), \(y = y_0\) vào <b>từng</b> phương trình của hệ.</li>
+        <li>Nếu cả hai đẳng thức đều đúng ⇒ là nghiệm của hệ; chỉ cần một đẳng thức sai ⇒ không là nghiệm.</li>
+      </ol>
+    </div>
+    <div class="box note">
+      <p><b>Chú ý.</b> Cặp số \((1; 2)\) là nghiệm của hệ ở Ví dụ 5 nghĩa là điểm \(M(1; 2)\) vừa thuộc \(d_1: 2x - y = 0\), vừa thuộc \(d_2: x + y = 3\) — \(M\) là <b>giao điểm</b> của \(d_1\) và \(d_2\).</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 230 195" width="230" role="img" aria-label="Hai đường thẳng 2x - y = 0 và x + y = 3 cắt nhau tại M(1; 2)">
+        <defs>
+          <marker id="toan-arr2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+            <path d="M0 0 L10 5 L0 10 z" class="accent-fill"/>
+          </marker>
+        </defs>
+        <line x1="10" y1="150" x2="222" y2="150" class="stroke" stroke-width="1.2" marker-end="url(#toan-arr2)"/>
+        <line x1="50" y1="188" x2="50" y2="10" class="stroke" stroke-width="1.2" marker-end="url(#toan-arr2)"/>
+        <g class="stroke" stroke-width="1">
+          <line x1="20" y1="147" x2="20" y2="153"/><line x1="80" y1="147" x2="80" y2="153"/>
+          <line x1="110" y1="147" x2="110" y2="153"/><line x1="140" y1="147" x2="140" y2="153"/>
+          <line x1="47" y1="120" x2="53" y2="120"/><line x1="47" y1="90" x2="53" y2="90"/>
+          <line x1="47" y1="60" x2="53" y2="60"/><line x1="47" y1="180" x2="53" y2="180"/>
+        </g>
+        <line x1="35" y1="180" x2="110" y2="30" class="stroke" stroke-width="2"/>
+        <line x1="20" y1="30" x2="170" y2="180" class="accent" stroke-width="2.5"/>
+        <line x1="80" y1="90" x2="80" y2="150" class="stroke" stroke-width="1" stroke-dasharray="4 3"/>
+        <line x1="50" y1="90" x2="80" y2="90" class="stroke" stroke-width="1" stroke-dasharray="4 3"/>
+        <circle cx="80" cy="90" r="3.5" class="accent-fill"/>
+        <text x="86" y="86" font-size="13" font-style="italic">M</text>
+        <text x="215" y="166" font-size="13" font-style="italic">x</text>
+        <text x="56" y="18" font-size="13" font-style="italic">y</text>
+        <text x="38" y="164" font-size="12" font-style="italic">O</text>
+        <text x="76" y="164" font-size="11">1</text>
+        <text x="106" y="164" font-size="11">2</text>
+        <text x="136" y="164" font-size="11">3</text>
+        <text x="38" y="94" font-size="11">2</text>
+        <text x="38" y="64" font-size="11">3</text>
+        <text x="112" y="44" font-size="12">d₁: 2x − y = 0</text>
+        <text x="130" y="120" font-size="12">d₂: x + y = 3</text>
+      </svg>
+      <figcaption>Nghiệm của hệ = toạ độ giao điểm \(M(1; 2)\) của hai đường thẳng \(d_1\), \(d_2\).</figcaption>
+    </figure>
+    <div class="box example">
+      <p class="box-title">Vận dụng — Bài toán cổ “Quýt, cam mười bảy quả tươi…”</p>
+      <p>Gọi \(x\) là số cam, \(y\) là số quýt \((x, y \in \mathbb{N}^*)\). Tổng 17 quả; mỗi quả cam chia 10 miếng, mỗi quả quýt chia 3 miếng, được 100 miếng:</p>
+      <p>\[ \begin{cases} x + y = 17 \\ 10x + 3y = 100 \end{cases} \]</p>
+      <p>Cặp \((7; 10)\) thoả mãn cả hai phương trình (\(7 + 10 = 17\); \(70 + 30 = 100\)) ⇒ <b>7 quả cam, 10 quả quýt</b>. Cặp \((10; 7)\) không thoả mãn (\(100 + 21 \ne 100\)).</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Phương trình bậc nhất hai ẩn: \(ax + by = c\) với \(a \ne 0\) hoặc \(b \ne 0\); luôn có <b>vô số nghiệm</b>.</li>
+        <li>Tập nghiệm của \(ax + by = c\) biểu diễn bởi một <b>đường thẳng</b>; \(y = m\) song song trục hoành, \(x = n\) song song trục tung.</li>
+        <li>Nghiệm tổng quát phải ghi rõ ẩn tuỳ ý: \((x;\ -0{,}5x + 1{,}5)\) với \(x \in \mathbb{R}\).</li>
+        <li>Nghiệm của hệ = nghiệm chung của hai phương trình = toạ độ giao điểm của hai đường thẳng.</li>
+        <li>Hệ thức \(0x + 0y = c\) <b>không</b> phải phương trình bậc nhất hai ẩn.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-2">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 2</span>Giải hệ hai phương trình bậc nhất hai ẩn</h3>
+    <p class="lesson-goal">Cần nắm: giải hệ bằng phương pháp thế, phương pháp cộng đại số; nhận biết hệ vô nghiệm, hệ có vô số nghiệm; dùng máy tính cầm tay tìm nghiệm của hệ.</p>
+
+    <h4>1. Phương pháp thế</h4>
+    <div class="box method">
+      <p class="box-title">Dạng: Giải hệ bằng phương pháp thế</p>
+      <ol class="steps">
+        <li>Từ một phương trình của hệ, <b>biểu diễn một ẩn theo ẩn kia</b> rồi thế vào phương trình còn lại để được phương trình chỉ còn chứa một ẩn.</li>
+        <li>Giải phương trình một ẩn vừa nhận được, từ đó suy ra nghiệm của hệ đã cho.</li>
+      </ol>
+    </div>
+    <div class="box tip"><p>Nên rút ẩn có hệ số \(1\) hoặc \(-1\) (tránh phân số). Tuỳ hệ, có thể biểu diễn \(x\) theo \(y\) hoặc \(y\) theo \(x\).</p></div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 — Hệ có một nghiệm: \(\begin{cases} 2x - y = 3 \\ x + 2y = 4 \end{cases}\)</p>
+      <p>Từ phương trình thứ nhất: \(y = 2x - 3\). Thế vào phương trình thứ hai: \(x + 2(2x - 3) = 4\) ⇔ \(5x - 6 = 4\) ⇔ \(x = 2\).</p>
+      <p>Suy ra \(y = 2 \cdot 2 - 3 = 1\). Hệ có nghiệm \((2; 1)\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 — Hệ vô nghiệm: \(\begin{cases} x - y = -2 \\ 2x - 2y = 8 \end{cases}\)</p>
+      <p>Từ phương trình thứ nhất: \(x = y - 2\). Thế vào phương trình thứ hai: \(2(y - 2) - 2y = 8\) ⇔ \(0y - 4 = 8\).</p>
+      <p>Không có giá trị nào của \(y\) thoả mãn ⇒ hệ <b>vô nghiệm</b>.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 — Hệ có vô số nghiệm: \(\begin{cases} -x + y = -2 \\ 3x - 3y = 6 \end{cases}\)</p>
+      <p>Từ phương trình thứ nhất: \(y = x - 2\). Thế vào phương trình thứ hai: \(3x - 3(x - 2) = 6\) ⇔ \(0x = 0\), đúng với mọi \(x\).</p>
+      <p>Hệ có nghiệm \((x;\ x - 2)\) với \(x \in \mathbb{R}\) tuỳ ý (<b>vô số nghiệm</b>).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Vận dụng 1 — Bài toán vườn cải bắp (tình huống mở đầu)</p>
+      <p>Gọi \(x\) là số luống, \(y\) là số cây mỗi luống \((x, y \in \mathbb{N}^*)\). Số cây cả vườn là \(xy\).</p>
+      <ul>
+        <li>Tăng 8 luống, mỗi luống ít đi 3 cây thì cả vườn ít đi 108 cây: \((x + 8)(y - 3) = xy - 108\) ⇔ \(-3x + 8y = -84\).</li>
+        <li>Giảm 4 luống, mỗi luống thêm 2 cây thì cả vườn tăng 64 cây: \((x - 4)(y + 2) = xy + 64\) ⇔ \(x - 2y = 36\).</li>
+      </ul>
+      <p>Thế \(x = 2y + 36\) vào phương trình đầu: \(-3(2y + 36) + 8y = -84\) ⇔ \(2y = 24\) ⇔ \(y = 12\), suy ra \(x = 60\). Vườn có \(60 \cdot 12 = 720\) cây cải bắp.</p>
+    </div>
+
+    <h4>2. Phương pháp cộng đại số</h4>
+    <div class="box method">
+      <p class="box-title">Dạng: Giải hệ bằng phương pháp cộng đại số</p>
+      <p>Áp dụng khi hệ số của <b>cùng một ẩn</b> trong hai phương trình <span class="kw">bằng nhau hoặc đối nhau</span>:</p>
+      <ol class="steps">
+        <li><b>Cộng</b> (nếu hệ số đối nhau) hay <b>trừ</b> (nếu hệ số bằng nhau) từng vế của hai phương trình để được phương trình chỉ còn chứa một ẩn.</li>
+        <li>Giải phương trình một ẩn vừa nhận được, từ đó suy ra nghiệm của hệ đã cho.</li>
+      </ol>
+    </div>
+    <div class="box note">
+      <p><b>Chú ý.</b> Nếu không có hai hệ số của cùng một ẩn bằng nhau hay đối nhau, ta <b>nhân hai vế của mỗi phương trình với một số thích hợp (khác 0)</b> để đưa về trường hợp trên.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 4 — Hệ số đối nhau: \(\begin{cases} -2x + 5y = 12 \\ 2x + 3y = 4 \end{cases}\)</p>
+      <p>Cộng từng vế: \(8y = 16\) ⇒ \(y = 2\). Thế vào phương trình thứ hai: \(2x + 6 = 4\) ⇒ \(x = -1\). Nghiệm: \((-1; 2)\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 5 — Hệ số bằng nhau: \(\begin{cases} 5x - 7y = 9 \\ 5x - 3y = 1 \end{cases}\)</p>
+      <p>Trừ từng vế: \((5x - 5x) + (-7y + 3y) = 9 - 1\) ⇔ \(-4y = 8\) ⇒ \(y = -2\).</p>
+      <p>Thế vào phương trình thứ nhất: \(5x + 14 = 9\) ⇒ \(x = -1\). Nghiệm: \((-1; -2)\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 6 — Nhân để có hệ số đối nhau: \(\begin{cases} 3x + 2y = 7 \\ 2x - 3y = -4 \end{cases}\)</p>
+      <p>Nhân phương trình thứ nhất với 3, phương trình thứ hai với 2: \(\begin{cases} 9x + 6y = 21 \\ 4x - 6y = -8 \end{cases}\)</p>
+      <p>Cộng từng vế: \(13x = 13\) ⇒ \(x = 1\). Thế vào \(3x + 2y = 7\): \(y = 2\). Nghiệm: \((1; 2)\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 7 — Vô số nghiệm: \(\begin{cases} 3x - 5y = 2 \\ -6x + 10y = -4 \end{cases}\)</p>
+      <p>Chia hai vế phương trình thứ hai cho 2: \(-3x + 5y = -2\). Cộng với phương trình thứ nhất: \(0x + 0y = 0\), luôn đúng.</p>
+      <p>Từ \(3x - 5y = 2\) suy ra \(y = \frac{3}{5}x - \frac{2}{5}\). Hệ có nghiệm \(\left(x;\ \frac{3}{5}x - \frac{2}{5}\right)\) với \(x \in \mathbb{R}\).</p>
+    </div>
+    <div class="box warn">
+      <ul>
+        <li>Khi <b>trừ</b> từng vế phải đổi dấu <b>tất cả</b> các hạng tử của phương trình bị trừ (kể cả vế phải).</li>
+        <li>Khi nhân một phương trình với một số, phải nhân <b>cả hai vế</b>, kể cả hằng số \(c\).</li>
+        <li>Đến \(0x = k\) (hoặc \(0y = k\), \(0x + 0y = k\)): \(k \ne 0\) ⇒ hệ <b>vô nghiệm</b>; \(k = 0\) ⇒ hệ có <b>vô số nghiệm</b> — khi đó phải viết nghiệm tổng quát.</li>
+      </ul>
+    </div>
+
+    <h4>3. Sử dụng máy tính cầm tay để tìm nghiệm của hệ</h4>
+    <div class="formula">
+      <div class="formula-name">Dạng hệ để nhập vào máy tính cầm tay</div>
+      <div class="formula-body">\[ \begin{cases} a_1x + b_1y = c_1 \\ a_2x + b_2y = c_2 \end{cases} \]</div>
+      <ul class="formula-legend">
+        <li>Phải chuyển hằng số sang vế phải trước khi nhập: \(2x + 3y - 4 = 0\) → \(2x + 3y = 4\)</li>
+        <li>\(a_1, b_1, c_1, a_2, b_2, c_2\): nhập lần lượt theo thứ tự này</li>
+      </ul>
+    </div>
+    <ol class="steps">
+      <li>Vào chức năng giải hệ hai phương trình bậc nhất hai ẩn: bấm <b>MODE 5 1</b> (với máy tính thích hợp).</li>
+      <li>Nhập \(a_1, b_1, c_1, a_2, b_2, c_2\), sau mỗi số bấm phím <b>=</b>. Ví dụ hệ \(\begin{cases} 2x + 3y = 4 \\ 5x + 6y = 7 \end{cases}\): bấm 2 = 3 = 4 = 5 = 6 = 7 =.</li>
+      <li>Đọc kết quả: bấm <b>=</b> được \(x = -1\); bấm tiếp <b>=</b> được \(y = 2\). Nghiệm là \((-1; 2)\).</li>
+    </ol>
+    <div class="box note">
+      <ul>
+        <li>Xoá số vừa nhập: phím <b>AC</b>; muốn sửa số ở vị trí nào thì di chuyển con trỏ đến đó rồi nhập lại.</li>
+        <li>Phím ▲ / ▼ để chuyển hiển thị giữa giá trị \(x\) và \(y\).</li>
+        <li>Máy báo <b>“Infinite Sol”</b> ⇒ hệ có vô số nghiệm; báo <b>“No-Solution”</b> ⇒ hệ vô nghiệm.</li>
+      </ul>
+    </div>
+
+    <h4>4. Đọc thêm: giải hệ bằng phương pháp hình học</h4>
+    <p>Nghiệm của hệ \((*)\) ứng với điểm chung của hai đường thẳng \(\Delta: ax + by = c\) và \(\Delta': a'x + b'y = c'\). Chỉ có 3 trường hợp:</p>
+    <figure class="diagram">
+      <svg viewBox="0 0 450 160" width="450" role="img" aria-label="Ba vị trí của hai đường thẳng: cắt nhau, song song, trùng nhau">
+        <rect x="5" y="5" width="140" height="115" rx="8" fill="none" class="stroke" stroke-width="0.6"/>
+        <rect x="155" y="5" width="140" height="115" rx="8" fill="none" class="stroke" stroke-width="0.6"/>
+        <rect x="305" y="5" width="140" height="115" rx="8" fill="none" class="stroke" stroke-width="0.6"/>
+        <line x1="20" y1="105" x2="130" y2="20" class="accent" stroke-width="2.5"/>
+        <line x1="20" y1="30" x2="130" y2="100" class="stroke" stroke-width="2"/>
+        <circle cx="75" cy="62.5" r="4" class="accent-fill"/>
+        <line x1="170" y1="90" x2="280" y2="30" class="accent" stroke-width="2.5"/>
+        <line x1="170" y1="112" x2="280" y2="52" class="stroke" stroke-width="2"/>
+        <line x1="320" y1="100" x2="430" y2="25" class="accent" stroke-width="5" opacity="0.5"/>
+        <line x1="320" y1="100" x2="430" y2="25" class="stroke" stroke-width="1.5" stroke-dasharray="6 4"/>
+        <text x="75" y="140" font-size="13" text-anchor="middle">Cắt nhau</text>
+        <text x="75" y="155" font-size="12" text-anchor="middle">1 nghiệm duy nhất</text>
+        <text x="225" y="140" font-size="13" text-anchor="middle">Song song</text>
+        <text x="225" y="155" font-size="12" text-anchor="middle">vô nghiệm</text>
+        <text x="375" y="140" font-size="13" text-anchor="middle">Trùng nhau</text>
+        <text x="375" y="155" font-size="12" text-anchor="middle">vô số nghiệm</text>
+      </svg>
+      <figcaption>Số nghiệm của hệ = số điểm chung của hai đường thẳng \(\Delta\) và \(\Delta'\).</figcaption>
+    </figure>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Vị trí của \(\Delta\) và \(\Delta'\)</th><th>Số nghiệm của hệ \((*)\)</th><th>Ví dụ SGK</th></tr></thead>
+      <tbody>
+        <tr><td>Cắt nhau (một điểm chung)</td><td>Một nghiệm duy nhất</td><td>\(\begin{cases} 2x - y = 3 \\ x + 2y = 4 \end{cases}\): hai đường thẳng cắt nhau tại \(M(2; 1)\)</td></tr>
+        <tr><td>Song song (không có điểm chung)</td><td>Vô nghiệm</td><td>\(\begin{cases} -x + y = 2 \\ -2x + 2y = 8 \end{cases}\): là \(y = x + 2\) và \(y = x + 4\), cùng hệ số góc 1, phân biệt</td></tr>
+        <tr><td>Trùng nhau</td><td>Vô số nghiệm</td><td>\(\begin{cases} -x + y = 2 \\ -2x + 2y = 4 \end{cases}\): cả hai đều là \(y = x + 2\)</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="key-points">
+      <ul>
+        <li><b>Phương pháp thế</b>: rút một ẩn từ một phương trình → thế vào phương trình kia → giải phương trình một ẩn.</li>
+        <li><b>Phương pháp cộng đại số</b>: làm cho hệ số của một ẩn bằng nhau (thì trừ) hoặc đối nhau (thì cộng) → khử ẩn đó.</li>
+        <li>Gặp \(0x = k\): \(k \ne 0\) ⇒ vô nghiệm; \(k = 0\) ⇒ vô số nghiệm.</li>
+        <li>Máy tính cầm tay: đưa về dạng \(a_1x + b_1y = c_1\), bấm MODE 5 1 rồi nhập 6 hệ số.</li>
+        <li>Hai đường thẳng cắt nhau / song song / trùng nhau ⇔ hệ có 1 nghiệm / vô nghiệm / vô số nghiệm.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-3">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 3</span>Giải bài toán bằng cách lập hệ phương trình</h3>
+    <p class="lesson-goal">Cần nắm: ba bước giải bài toán bằng cách lập hệ phương trình bậc nhất hai ẩn; cách đặt ẩn phụ khi ẩn nằm ở mẫu (bài toán làm chung – làm riêng).</p>
+
+    <h4>1. Các bước giải bài toán bằng cách lập hệ phương trình</h4>
+    <div class="box method">
+      <p class="box-title">Dạng: Giải bài toán bằng cách lập hệ phương trình</p>
+      <ol class="steps">
+        <li><b>Lập hệ phương trình:</b> chọn ẩn số (thường chọn hai ẩn) và <span class="kw">đặt điều kiện thích hợp</span> cho các ẩn; biểu diễn các đại lượng chưa biết theo ẩn và các đại lượng đã biết; lập hệ phương trình biểu thị mối quan hệ giữa các đại lượng.</li>
+        <li><b>Giải hệ phương trình.</b></li>
+        <li><b>Trả lời:</b> kiểm tra xem trong các nghiệm tìm được, nghiệm nào thoả mãn, nghiệm nào không thoả mãn điều kiện của ẩn, rồi kết luận.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Bài toán mở đầu — Hợp kim đồng và kẽm</p>
+      <p>Vật nặng 124 g, thể tích 15 cm³; 1 cm³ đồng nặng 8,9 g, 1 cm³ kẽm nặng 7 g. Gọi \(x\), \(y\) (g) là khối lượng đồng, kẽm \((x, y &gt; 0)\):</p>
+      <p>\[ \begin{cases} x + y = 124 \\ \dfrac{x}{8{,}9} + \dfrac{y}{7} = 15 \end{cases} \]</p>
+      <p>Giải ra \(x = 89\), \(y = 35\) (thoả mãn). Vậy có <b>89 g đồng</b> và <b>35 g kẽm</b>.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 — Tìm hai số tự nhiên</p>
+      <p>Tổng hai số tự nhiên bằng 1 006; lấy số lớn chia số nhỏ được thương 2, dư 124.</p>
+      <ul>
+        <li>Gọi hai số là \(x\), \(y\) với \(x &lt; y\). Số dư là 124 nên \(x &gt; 124\). Điều kiện: \(x, y \in \mathbb{N}\), \(124 &lt; x &lt; y\).</li>
+        <li>Ta có hệ \(\begin{cases} x + y = 1\,006 \\ y = 2x + 124 \end{cases}\) (số bị chia = số chia × thương + số dư).</li>
+        <li>Thế \(y = 2x + 124\): \(3x + 124 = 1\,006\) ⇒ \(x = 294\); \(y = 2 \cdot 294 + 124 = 712\).</li>
+        <li>Thoả mãn điều kiện. Hai số cần tìm là <b>294 và 712</b>.</li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 — Làm chung, làm riêng (đặt ẩn phụ)</p>
+      <p>Hai đội cùng làm một đoạn đường trong 24 ngày thì xong; mỗi ngày đội I làm được nhiều gấp rưỡi đội II. Hỏi nếu làm một mình thì mỗi đội làm xong trong bao lâu?</p>
+      <ul>
+        <li>Gọi \(x\), \(y\) (ngày) là thời gian đội I, đội II làm một mình xong việc \((x &gt; 0,\ y &gt; 0)\). Mỗi ngày đội I làm được \(\frac{1}{x}\), đội II làm được \(\frac{1}{y}\) công việc.</li>
+        <li>Ta có hệ \(\begin{cases} \dfrac{1}{x} = \dfrac{3}{2} \cdot \dfrac{1}{y} \\[2mm] \dfrac{1}{x} + \dfrac{1}{y} = \dfrac{1}{24} \end{cases}\)</li>
+        <li>Đặt \(u = \frac{1}{x}\), \(v = \frac{1}{y}\): \(\begin{cases} u = \frac{3}{2}v \\ u + v = \frac{1}{24} \end{cases}\) ⇒ \(\frac{5}{2}v = \frac{1}{24}\) ⇒ \(v = \frac{1}{60}\), \(u = \frac{1}{40}\).</li>
+        <li>Suy ra \(x = 40\), \(y = 60\) (thoả mãn). Đội I làm một mình xong trong <b>40 ngày</b>, đội II trong <b>60 ngày</b>.</li>
+      </ul>
+    </div>
+
+    <h4>2. Một số quan hệ hay dùng khi lập hệ phương trình</h4>
+    <div class="formula-row">
+      <div class="formula">
+        <div class="formula-name">Chuyển động đều: quãng đường – vận tốc – thời gian</div>
+        <div class="formula-body">\[ s = v \cdot t \]</div>
+        <ul class="formula-legend">
+          <li>\(s\): quãng đường (km), \(v\): vận tốc (km/h), \(t\): thời gian (h)</li>
+          <li>Hai xe đi ngược chiều gặp nhau: tổng quãng đường hai xe đi = khoảng cách ban đầu</li>
+        </ul>
+      </div>
+      <div class="formula">
+        <div class="formula-name">Làm chung – làm riêng (năng suất mỗi đơn vị thời gian)</div>
+        <div class="formula-body">\[ \frac{1}{x} + \frac{1}{y} = \frac{1}{t} \]</div>
+        <ul class="formula-legend">
+          <li>\(x\), \(y\): thời gian mỗi người (đội, vòi) làm một mình xong việc; \(t\): thời gian làm chung xong việc</li>
+          <li>Coi cả công việc là 1; làm một mình hết \(x\) ngày thì mỗi ngày làm được \(\frac{1}{x}\) công việc</li>
+          <li>Điều kiện: \(x &gt; 0\), \(y &gt; 0\); thường đặt \(u = \frac{1}{x}\), \(v = \frac{1}{y}\)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="formula-row">
+      <div class="formula">
+        <div class="formula-name">Phép chia có dư</div>
+        <div class="formula-body">\[ a = b \cdot q + r \quad (0 \le r &lt; b) \]</div>
+        <ul class="formula-legend">
+          <li>\(a\): số bị chia, \(b\): số chia, \(q\): thương, \(r\): số dư</li>
+        </ul>
+      </div>
+      <div class="formula">
+        <div class="formula-name">Số tự nhiên có hai chữ số</div>
+        <div class="formula-body">\[ \overline{ab} = 10a + b \]</div>
+        <ul class="formula-legend">
+          <li>\(a\): chữ số hàng chục \((1 \le a \le 9)\), \(b\): chữ số hàng đơn vị \((0 \le b \le 9)\)</li>
+          <li>Viết ngược lại: \(\overline{ba} = 10b + a\)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="box warn">
+      <ul>
+        <li>Quên đặt điều kiện cho ẩn (số tự nhiên, số dương, chữ số từ 0 đến 9…) hoặc quên đối chiếu nghiệm với điều kiện trước khi trả lời.</li>
+        <li>Đơn vị không thống nhất: 1 giờ 40 phút = \(\frac{5}{3}\) giờ; 1 giờ 20 phút = 80 phút.</li>
+        <li>Vượt mức 15% nghĩa là đạt \(115\% = 1{,}15\) lần mức cũ.</li>
+      </ul>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Ba bước: <b>lập hệ</b> (chọn ẩn + điều kiện) → <b>giải hệ</b> → <b>trả lời</b> (đối chiếu điều kiện).</li>
+        <li>Ẩn nằm ở mẫu dạng \(\frac{1}{x}\), \(\frac{1}{y}\) → đặt ẩn phụ \(u = \frac{1}{x}\), \(v = \frac{1}{y}\) để được hệ bậc nhất.</li>
+        <li>Làm chung – làm riêng: mỗi đơn vị thời gian làm được \(\frac{1}{x}\) công việc.</li>
+        <li>Chuyển động: \(s = v \cdot t\); số có hai chữ số \(\overline{ab} = 10a + b\).</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-on-tap-chuong-1">
+    <h3 class="lesson-title"><span class="lesson-no">Ôn tập</span>Ôn tập Chương I</h3>
+    <p class="lesson-goal">Tóm tắt: khái niệm phương trình, hệ phương trình bậc nhất hai ẩn; hai phương pháp giải hệ; các dạng bài tập thường gặp trong Luyện tập chung và Bài tập cuối chương.</p>
+
+    <h4>1. Tóm tắt kiến thức</h4>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Nội dung</th><th>Ghi nhớ</th></tr></thead>
+      <tbody>
+        <tr><td>Phương trình bậc nhất hai ẩn</td><td>\(ax + by = c\) \((a \ne 0\) hoặc \(b \ne 0)\); vô số nghiệm; tập nghiệm là một đường thẳng</td></tr>
+        <tr><td>Hệ hai phương trình bậc nhất hai ẩn</td><td>\(\begin{cases} ax + by = c \\ a'x + b'y = c' \end{cases}\); nghiệm là nghiệm chung của hai phương trình</td></tr>
+        <tr><td>Số nghiệm của hệ</td><td>1 nghiệm / vô nghiệm / vô số nghiệm ⇔ hai đường thẳng cắt nhau / song song / trùng nhau</td></tr>
+        <tr><td>Phương pháp thế</td><td>Rút một ẩn → thế vào phương trình còn lại</td></tr>
+        <tr><td>Phương pháp cộng đại số</td><td>Hệ số của một ẩn bằng nhau → trừ; đối nhau → cộng; khác → nhân với số thích hợp</td></tr>
+        <tr><td>Giải bài toán bằng cách lập hệ</td><td>Lập hệ (ẩn + điều kiện) → giải hệ → trả lời</td></tr>
+      </tbody>
+    </table></div>
+    <div class="flow"><span>Hệ đã cho</span><i>→</i><span>Khử một ẩn (thế / cộng)</span><i>→</i><span>Phương trình một ẩn</span><i>→</i><span>Tìm ẩn còn lại</span><i>→</i><span>Kết luận nghiệm</span></div>
+
+    <h4>2. Các dạng toán thường gặp</h4>
+    <div class="box method">
+      <p class="box-title">Dạng: Hệ có hệ số thập phân hoặc phân số</p>
+      <ol class="steps">
+        <li>Nhân hai vế mỗi phương trình với 10, 100… (hoặc với mẫu số chung) để được hệ số nguyên.</li>
+        <li>Giải hệ mới bằng phương pháp thế hoặc cộng đại số.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 (Luyện tập chung) — \(\begin{cases} 0{,}5x + 0{,}6y = 0{,}4 \\ 0{,}4x - 0{,}9y = 1{,}7 \end{cases}\)</p>
+      <p>Nhân mỗi phương trình với 10: \(\begin{cases} 5x + 6y = 4 \\ 4x - 9y = 17 \end{cases}\). Nhân phương trình thứ nhất với 3, thứ hai với 2: \(\begin{cases} 15x + 18y = 12 \\ 8x - 18y = 34 \end{cases}\).</p>
+      <p>Cộng từng vế: \(23x = 46\) ⇒ \(x = 2\); thế vào \(5x + 6y = 4\): \(6y = -6\) ⇒ \(y = -1\). Nghiệm: \((2; -1)\).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Cân bằng phương trình hoá học bằng hệ phương trình</p>
+      <ol class="steps">
+        <li>Gọi các hệ số chưa biết là ẩn.</li>
+        <li>Mỗi nguyên tố: số nguyên tử ở hai vế bằng nhau → một phương trình.</li>
+        <li>Giải hệ nhận được.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 (Luyện tập chung) — \(3\ce{Fe} + x\ce{O2} \to y\ce{Fe3O4}\)</p>
+      <p>Số nguyên tử Fe: \(3 = 3y\); số nguyên tử O: \(2x = 4y\). Hệ \(\begin{cases} y = 1 \\ x = 2y \end{cases}\) ⇒ \(x = 2\), \(y = 1\).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Tìm \(a\), \(b\) để đường thẳng \(y = ax + b\) đi qua hai điểm (hoặc để hệ có nghiệm cho trước)</p>
+      <ol class="steps">
+        <li>Thay toạ độ mỗi điểm (hoặc nghiệm đã cho) vào phương trình → được phương trình ẩn \(a\), \(b\).</li>
+        <li>Giải hệ hai phương trình ẩn \(a\), \(b\).</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 (Luyện tập chung) — \(y = ax + b\) đi qua \(A(-2; -1)\) và \(B(2; 3)\)</p>
+      <p>Qua \(A\): \(-2a + b = -1\); qua \(B\): \(2a + b = 3\). Cộng từng vế: \(2b = 2\) ⇒ \(b = 1\); thay vào: \(-2a + 1 = -1\) ⇒ \(a = 1\).</p>
+      <p>Vậy \(a = 1\), \(b = 1\).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Giải hệ bằng cách đặt ẩn phụ</p>
+      <ol class="steps">
+        <li>Nhận ra biểu thức lặp lại, vd. \(x - 2\) và \(1 + y\) trong \(\begin{cases} 2(x - 2) + 3(1 + y) = -2 \\ 3(x - 2) - 2(1 + y) = -3 \end{cases}\); hoặc \(\frac{1}{x}\), \(\frac{1}{y}\).</li>
+        <li>Đặt \(u\), \(v\) cho các biểu thức đó (kèm điều kiện nếu có) → hệ bậc nhất ẩn \(u\), \(v\).</li>
+        <li>Giải tìm \(u\), \(v\) rồi suy ra \(x\), \(y\); đối chiếu điều kiện.</li>
+      </ol>
+      <p class="muted">(Cũng có thể phá ngoặc, thu gọn rồi giải như bình thường.)</p>
+    </div>
+    <div class="box tip">
+      <p>Không chắc kết quả? Thay nghiệm vừa tìm vào <b>cả hai</b> phương trình của hệ ban đầu, hoặc kiểm tra bằng máy tính cầm tay (MODE 5 1).</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Luôn đưa hệ về hệ số nguyên, gọn trước khi giải.</li>
+        <li>Chọn phương pháp: có ẩn hệ số \(\pm 1\) → thế; có hai hệ số bằng / đối nhau → cộng đại số.</li>
+        <li>Điểm thuộc đường thẳng ⇔ toạ độ thoả mãn phương trình đường thẳng.</li>
+        <li>Bài toán thực tế: đặt ẩn có điều kiện, trả lời có đối chiếu điều kiện.</li>
+      </ul>
+    </div>
+  </article>
+</section>
+
+<section class="chapter" id="toan-chuong-2">
+  <h2 class="chapter-title"><span>Chương II · Đại số</span>Phương trình và bất phương trình bậc nhất một ẩn</h2>
+
+  <article class="lesson" id="toan-bai-4">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 4</span>Phương trình quy về phương trình bậc nhất một ẩn</h3>
+    <p class="lesson-goal">Cần nắm: giải phương trình tích \((ax + b)(cx + d) = 0\); tìm điều kiện xác định và giải phương trình chứa ẩn ở mẫu quy về phương trình bậc nhất.</p>
+
+    <h4>1. Phương trình tích</h4>
+    <div class="box law" data-label="⚖️ Cách giải phương trình tích">
+      <p>Để giải phương trình tích \((ax + b)(cx + d) = 0\), ta giải hai phương trình \(ax + b = 0\) và \(cx + d = 0\). Sau đó lấy <b>tất cả</b> các nghiệm của chúng.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Phương trình tích (hai nhân tử bậc nhất)</div>
+      <div class="formula-body">\[ (ax + b)(cx + d) = 0 \iff ax + b = 0 \ \text{hoặc}\ cx + d = 0 \]</div>
+      <ul class="formula-legend">
+        <li>\(a \ne 0\), \(c \ne 0\)</li>
+        <li>Nghiệm: \(x = -\dfrac{b}{a}\) và \(x = -\dfrac{d}{c}\)</li>
+        <li>Cơ sở: tích bằng 0 khi và chỉ khi có ít nhất một thừa số bằng 0</li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 — \((2x + 1)(3x - 1) = 0\)</p>
+      <p>\(2x + 1 = 0\) ⇒ \(x = -\frac{1}{2}\); &nbsp; \(3x - 1 = 0\) ⇒ \(x = \frac{1}{3}\).</p>
+      <p>Phương trình có hai nghiệm \(x = -\frac{1}{2}\) và \(x = \frac{1}{3}\).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Giải phương trình đưa được về phương trình tích</p>
+      <ol class="steps">
+        <li>Chuyển mọi hạng tử sang vế trái (vế phải bằng 0), rồi <b>phân tích vế trái thành nhân tử</b> (đặt nhân tử chung, hằng đẳng thức, nhóm hạng tử) để được \((ax + b)(cx + d) = 0\).</li>
+        <li>Giải phương trình tích tìm được.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 — \(x^2 - x = -2x + 2\)</p>
+      <p>\(x^2 - x + 2x - 2 = 0\) ⇔ \(x(x - 1) + 2(x - 1) = 0\) ⇔ \((x + 2)(x - 1) = 0\).</p>
+      <p>\(x + 2 = 0\) ⇒ \(x = -2\); \(x - 1 = 0\) ⇒ \(x = 1\). Phương trình có hai nghiệm \(x = -2\) và \(x = 1\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Vận dụng — Lối đi quanh vườn (tình huống mở đầu)</p>
+      <p>Vườn hình vuông cạnh 15 m, lối đi xung quanh rộng \(x\) (m), \(0 &lt; x &lt; 7{,}5\). Phần đất còn lại là hình vuông cạnh \(15 - 2x\):</p>
+      <p>\((15 - 2x)^2 = 169\) ⇔ \((15 - 2x)^2 - 13^2 = 0\) ⇔ \((2 - 2x)(28 - 2x) = 0\) ⇒ \(x = 1\) hoặc \(x = 14\).</p>
+      <p>Chỉ \(x = 1\) thoả mãn điều kiện. Lối đi rộng <b>1 m</b>.</p>
+    </div>
+    <div class="box warn">
+      <ul>
+        <li><b>Không chia</b> hai vế cho biểu thức chứa ẩn: \(2(x + 1) = (5x - 1)(x + 1)\) mà chia cho \(x + 1\) sẽ <b>mất nghiệm</b> \(x = -1\). Phải chuyển vế rồi đặt nhân tử chung \((x + 1)\).</li>
+        <li>Phương trình tích chỉ dùng được khi <b>vế phải bằng 0</b>: \((x - 1)(x - 2) = 2\) không suy ra được \(x - 1 = 2\).</li>
+      </ul>
+    </div>
+
+    <h4>2. Phương trình chứa ẩn ở mẫu</h4>
+    <div class="box def">
+      <p>Đối với phương trình chứa ẩn ở mẫu, ta thường đặt điều kiện cho ẩn để <b>tất cả các mẫu thức</b> trong phương trình đều <span class="kw">khác 0</span> và gọi đó là <b>điều kiện xác định</b> (viết tắt là ĐKXĐ) của phương trình.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 — Tìm điều kiện xác định</p>
+      <p>a) \(\dfrac{5x + 2}{x - 1} = 0\): \(x - 1 \ne 0\) ⇔ \(x \ne 1\). ĐKXĐ: \(x \ne 1\).</p>
+      <p>b) \(\dfrac{1}{x + 1} = 1 + \dfrac{1}{x - 2}\): \(x + 1 \ne 0\) và \(x - 2 \ne 0\). ĐKXĐ: \(x \ne -1\) và \(x \ne 2\).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Giải phương trình chứa ẩn ở mẫu</p>
+      <ol class="steps">
+        <li>Tìm <b>điều kiện xác định</b> của phương trình.</li>
+        <li>Quy đồng mẫu hai vế của phương trình rồi khử mẫu.</li>
+        <li>Giải phương trình vừa tìm được.</li>
+        <li><b>Kết luận:</b> trong các giá trị tìm được của ẩn ở Bước 3, giá trị nào <span class="kw">thoả mãn điều kiện xác định</span> chính là nghiệm của phương trình đã cho.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 4 — \(\dfrac{2}{x + 1} + \dfrac{1}{x - 2} = \dfrac{3}{(x + 1)(x - 2)}\)</p>
+      <p>ĐKXĐ: \(x \ne -1\) và \(x \ne 2\).</p>
+      <p>Quy đồng và khử mẫu: \(2(x - 2) + (x + 1) = 3\) ⇔ \(3x - 3 = 3\) ⇔ \(x = 2\).</p>
+      <p>Giá trị \(x = 2\) <b>không thoả mãn</b> ĐKXĐ. Vậy phương trình <b>vô nghiệm</b>.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập chung) — \(\dfrac{x}{x + 3} - \dfrac{2}{x - 3} = \dfrac{-2x - 6}{x^2 - 9}\)</p>
+      <p>ĐKXĐ: \(x \ne 3\) và \(x \ne -3\). Mẫu chung \(x^2 - 9 = (x + 3)(x - 3)\).</p>
+      <p>Khử mẫu: \(x(x - 3) - 2(x + 3) = -2x - 6\) ⇔ \(x^2 - 5x - 6 = -2x - 6\) ⇔ \(x^2 - 3x = 0\) ⇔ \(x(x - 3) = 0\).</p>
+      <p>\(x = 0\) (thoả mãn ĐKXĐ) hoặc \(x = 3\) (không thoả mãn). Phương trình có nghiệm \(x = 0\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập chung) — \(\dfrac{1}{x - 1} + \dfrac{2}{x^2 + x + 1} = \dfrac{x^2 + x}{x^3 - 1}\)</p>
+      <p>ĐKXĐ: \(x \ne 1\) (vì \(x^3 - 1 = (x - 1)(x^2 + x + 1)\) và \(x^2 + x + 1 &gt; 0\) với mọi \(x\)).</p>
+      <p>Khử mẫu: \((x^2 + x + 1) + 2(x - 1) = x^2 + x\) ⇔ \(2x - 1 = 0\) ⇔ \(x = \frac{1}{2}\) (thoả mãn ĐKXĐ). Nghiệm: \(x = \frac{1}{2}\).</p>
+    </div>
+    <div class="formula-row">
+      <div class="formula">
+        <div class="formula-name">Hằng đẳng thức hay dùng để tìm mẫu chung: hiệu hai bình phương</div>
+        <div class="formula-body">\[ x^2 - a^2 = (x - a)(x + a) \]</div>
+        <ul class="formula-legend"><li>Vd. \(x^2 - 9 = (x - 3)(x + 3)\), \(x^2 - 16 = (x - 4)(x + 4)\)</li></ul>
+      </div>
+      <div class="formula">
+        <div class="formula-name">Hằng đẳng thức hay dùng để tìm mẫu chung: tổng, hiệu hai lập phương</div>
+        <div class="formula-body">\[ \begin{aligned} x^3 - 1 &amp;= (x - 1)(x^2 + x + 1) \\ x^3 + 1 &amp;= (x + 1)(x^2 - x + 1) \end{aligned} \]</div>
+        <ul class="formula-legend"><li>\(x^2 + x + 1 &gt; 0\) và \(x^2 - x + 1 &gt; 0\) với mọi \(x\) nên không làm thay đổi ĐKXĐ</li></ul>
+      </div>
+    </div>
+    <div class="box warn">
+      <ul>
+        <li><b>Quên tìm ĐKXĐ</b> hoặc quên đối chiếu nghiệm với ĐKXĐ → nhận cả giá trị làm mẫu bằng 0 (như \(x = 2\) ở Ví dụ 4).</li>
+        <li>ĐKXĐ nối bằng chữ “<b>và</b>”: \(x \ne -1\) <b>và</b> \(x \ne 2\) (ẩn phải khác đồng thời các giá trị đó).</li>
+        <li>Khử mẫu: nhân <b>mọi</b> hạng tử của hai vế với mẫu chung, kể cả hạng tử không có mẫu.</li>
+      </ul>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>\((ax + b)(cx + d) = 0\) ⇔ \(ax + b = 0\) hoặc \(cx + d = 0\); lấy tất cả các nghiệm.</li>
+        <li>Muốn dùng phương trình tích: chuyển vế cho vế phải bằng 0 rồi phân tích thành nhân tử.</li>
+        <li>ĐKXĐ: mọi mẫu thức khác 0.</li>
+        <li>Phương trình chứa ẩn ở mẫu: ĐKXĐ → quy đồng, khử mẫu → giải → <b>đối chiếu ĐKXĐ</b> rồi kết luận.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-5">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 5</span>Bất đẳng thức và tính chất</h3>
+    <p class="lesson-goal">Cần nắm: thứ tự trên tập số thực; khái niệm bất đẳng thức, hai bất đẳng thức cùng chiều / ngược chiều; tính chất bắc cầu; liên hệ giữa thứ tự với phép cộng và phép nhân.</p>
+
+    <h4>1. Bất đẳng thức</h4>
+    <h5>Thứ tự trên tập số thực</h5>
+    <div class="box fact">
+      <p>Với hai số thực \(a\) và \(b\), có ba trường hợp: \(a = b\); \(a &gt; b\) (\(a\) lớn hơn \(b\)); \(a &lt; b\) (\(a\) nhỏ hơn \(b\)).</p>
+      <ul>
+        <li>\(a\) <b>lớn hơn hoặc bằng</b> \(b\) (tức là \(a &gt; b\) hoặc \(a = b\)), kí hiệu \(a \ge b\).</li>
+        <li>\(a\) <b>nhỏ hơn hoặc bằng</b> \(b\) (tức là \(a &lt; b\) hoặc \(a = b\)), kí hiệu \(a \le b\).</li>
+        <li>Trên trục số, điểm biểu diễn số bé hơn nằm <b>trước</b> (bên trái) điểm biểu diễn số lớn hơn.</li>
+      </ul>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 360 60" width="360" role="img" aria-label="Trục số biểu diễn -2,5 nhỏ hơn -1 nhỏ hơn 0 nhỏ hơn 1 nhỏ hơn 1,5">
+        <defs>
+          <marker id="toan-arr3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+            <path d="M0 0 L10 5 L0 10 z" class="accent-fill"/>
+          </marker>
+        </defs>
+        <line x1="15" y1="25" x2="345" y2="25" class="stroke" stroke-width="1.5" marker-end="url(#toan-arr3)"/>
+        <circle cx="60" cy="25" r="4" class="accent-fill"/>
+        <circle cx="135" cy="25" r="4" class="accent-fill"/>
+        <circle cx="185" cy="25" r="4" class="accent-fill"/>
+        <circle cx="235" cy="25" r="4" class="accent-fill"/>
+        <circle cx="260" cy="25" r="4" class="accent-fill"/>
+        <text x="60" y="50" font-size="13" text-anchor="middle">−2,5</text>
+        <text x="135" y="50" font-size="13" text-anchor="middle">−1</text>
+        <text x="185" y="50" font-size="13" text-anchor="middle">0</text>
+        <text x="232" y="50" font-size="13" text-anchor="middle">1</text>
+        <text x="264" y="50" font-size="13" text-anchor="middle">1,5</text>
+      </svg>
+      <figcaption>\(-2{,}5 &lt; -1 &lt; 1 &lt; 1{,}5\): số bé hơn nằm bên trái.</figcaption>
+    </figure>
+
+    <h5>Khái niệm bất đẳng thức</h5>
+    <div class="box def">
+      <p>Hệ thức dạng \(a &gt; b\) (hay \(a &lt; b\), \(a \ge b\), \(a \le b\)) là <b>bất đẳng thức</b>; \(a\) là <b>vế trái</b>, \(b\) là <b>vế phải</b> của bất đẳng thức.</p>
+    </div>
+    <div class="box note">
+      <p><b>Chú ý.</b> \(1 &lt; 2\) và \(-3 &lt; -2\) (hay \(6 &gt; 3\) và \(8 &gt; 5\)) là hai bất đẳng thức <b>cùng chiều</b>. \(1 &lt; 2\) và \(-2 &gt; -3\) (hay \(6 &gt; 3\) và \(5 &lt; 8\)) là hai bất đẳng thức <b>ngược chiều</b>.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1, 2</p>
+      <ul>
+        <li>\(-2 &gt; -7\): vế trái \(-2\), vế phải \(-7\). \(a^2 + 1 &gt; 0\): vế trái \(a^2 + 1\), vế phải \(0\).</li>
+        <li>Nhiệt độ <b>trên</b> \(-5\) °C: \(t &gt; -5\); nhiệt độ <b>dưới</b> 4 °C: \(t &lt; 4\); tuổi <b>ít nhất</b> là 16: \(x \ge 16\).</li>
+      </ul>
+    </div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Cách nói</th><th>Kí hiệu</th></tr></thead>
+      <tbody>
+        <tr><td>trên, lớn hơn, vượt quá</td><td>\(&gt;\)</td></tr>
+        <tr><td>dưới, nhỏ hơn, chưa đến</td><td>\(&lt;\)</td></tr>
+        <tr><td>ít nhất, tối thiểu, không nhỏ hơn, không dưới</td><td>\(\ge\)</td></tr>
+        <tr><td>nhiều nhất, tối đa, không lớn hơn, không vượt quá</td><td>\(\le\)</td></tr>
+      </tbody>
+    </table></div>
+
+    <h5>Tính chất bắc cầu</h5>
+    <div class="box law" data-label="⚖️ Tính chất bắc cầu">
+      <p>Nếu \(a &lt; b\) và \(b &lt; c\) thì \(a &lt; c\).</p>
+      <p><b>Chú ý.</b> Các thứ tự \(&gt;\), \(\ge\), \(\le\) cũng có tính chất bắc cầu.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Tính chất bắc cầu của bất đẳng thức</div>
+      <div class="formula-body">\[ a &lt; b \ \text{và}\ b &lt; c \implies a &lt; c \]</div>
+      <ul class="formula-legend">
+        <li>\(a\), \(b\), \(c\): các số thực bất kì</li>
+        <li>Đúng tương tự với \(&gt;\), \(\ge\), \(\le\)</li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 — Chứng minh \(\dfrac{2\,024}{2\,023} &gt; \dfrac{2\,021}{2\,022}\)</p>
+      <p>\(\dfrac{2\,024}{2\,023} = 1 + \dfrac{1}{2\,023} &gt; 1\) và \(\dfrac{2\,021}{2\,022} = 1 - \dfrac{1}{2\,022} &lt; 1\). Bắc cầu qua số 1 ⇒ điều phải chứng minh.</p>
+    </div>
+    <div class="box tip"><p>So sánh hai số khó so sánh trực tiếp: tìm một <b>số trung gian</b> (thường là 0, 1, −1) nằm giữa hai số rồi dùng tính chất bắc cầu.</p></div>
+
+    <h4>2. Liên hệ giữa thứ tự và phép cộng</h4>
+    <div class="box law" data-label="⚖️ Tính chất (phép cộng)">
+      <p>Khi <b>cộng cùng một số</b> vào hai vế của một bất đẳng thức ta được bất đẳng thức mới <span class="kw">cùng chiều</span> với bất đẳng thức đã cho.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Liên hệ giữa thứ tự và phép cộng</div>
+      <div class="formula-body">\[ a &lt; b \implies a + c &lt; b + c \]</div>
+      <ul class="formula-legend">
+        <li>\(a\), \(b\), \(c\): ba số bất kì (\(c\) có thể âm)</li>
+        <li>Tương tự: \(a \le b \Rightarrow a + c \le b + c\); \(a &gt; b \Rightarrow a + c &gt; b + c\); \(a \ge b \Rightarrow a + c \ge b + c\)</li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 4</p>
+      <p>Vì \(2\,023 &lt; 2\,024\) nên \(2\,023 + (-19) &lt; 2\,024 + (-19)\) (cộng hai vế với cùng một số \(-19\)).</p>
+    </div>
+
+    <h4>3. Liên hệ giữa thứ tự và phép nhân</h4>
+    <div class="box law" data-label="⚖️ Tính chất (phép nhân)">
+      <ul>
+        <li>Nhân cả hai vế của một bất đẳng thức với cùng một <b>số dương</b> ta được bất đẳng thức mới <span class="kw">cùng chiều</span>.</li>
+        <li>Nhân cả hai vế của một bất đẳng thức với cùng một <b>số âm</b> ta được bất đẳng thức mới <span class="kw">ngược chiều</span>.</li>
+      </ul>
+    </div>
+    <div class="formula-row">
+      <div class="formula">
+        <div class="formula-name">Nhân hai vế bất đẳng thức với số dương (giữ chiều)</div>
+        <div class="formula-body">\[ a &lt; b,\ c &gt; 0 \implies ac &lt; bc \]</div>
+        <ul class="formula-legend">
+          <li>Điều kiện: \(c &gt; 0\)</li>
+          <li>Tương tự: \(a \le b \Rightarrow ac \le bc\); \(a &gt; b \Rightarrow ac &gt; bc\); \(a \ge b \Rightarrow ac \ge bc\)</li>
+        </ul>
+      </div>
+      <div class="formula">
+        <div class="formula-name">Nhân hai vế bất đẳng thức với số âm (đổi chiều)</div>
+        <div class="formula-body">\[ a &lt; b,\ c &lt; 0 \implies ac &gt; bc \]</div>
+        <ul class="formula-legend">
+          <li>Điều kiện: \(c &lt; 0\)</li>
+          <li>Tương tự: \(a \le b \Rightarrow ac \ge bc\); \(a &gt; b \Rightarrow ac &lt; bc\); \(a \ge b \Rightarrow ac \le bc\)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 5</p>
+      <p>a) Vì \(-7 &lt; -5\) và \(3 &gt; 0\) nên \(3 \cdot (-7) &lt; 3 \cdot (-5)\).</p>
+      <p>b) Vì \(-7 &lt; -5\) và \(-3 &lt; 0\) nên \((-3) \cdot (-7) &gt; (-3) \cdot (-5)\).</p>
+    </div>
+    <div class="box warn">
+      <ul>
+        <li>Nhân (hoặc chia) hai vế với <b>số âm</b> phải <b>đổi chiều</b> bất đẳng thức: \(a &lt; b \Rightarrow -2a &gt; -2b\).</li>
+        <li>Chia cho \(c\) chính là nhân với \(\frac{1}{c}\) (cùng dấu với \(c\)) nên cũng theo quy tắc trên.</li>
+        <li>Nhân với biểu thức chưa biết dấu (vd. nhân với \(m\)) thì chưa kết luận được chiều.</li>
+      </ul>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Chứng minh bất đẳng thức từ \(a &lt; b\) (hoặc \(a &gt; b\))</p>
+      <ol class="steps">
+        <li>Nhân hai vế của \(a &lt; b\) với hệ số cần có (chú ý số âm thì đổi chiều).</li>
+        <li>Cộng cùng một số vào hai vế.</li>
+        <li>Nếu hằng số hai vế khác nhau, so sánh thêm một bước rồi dùng <b>tính chất bắc cầu</b>.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập chung) — Cho \(a &lt; b\), chứng minh</p>
+      <p>a) \(2a + 1 &lt; 2b + 2\): từ \(a &lt; b\) có \(2a &lt; 2b\) ⇒ \(2a + 1 &lt; 2b + 1\) (1). Vì \(1 &lt; 2\) nên \(2b + 1 &lt; 2b + 2\) (2). Bắc cầu (1), (2) ⇒ điều phải chứng minh.</p>
+      <p>b) \(-2a - 5 &gt; -2b - 7\): từ \(a &lt; b\) có \(-2a &gt; -2b\) ⇒ \(-2a - 5 &gt; -2b - 5\) (3). Vì \(-5 &gt; -7\) nên \(-2b - 5 &gt; -2b - 7\) (4). Bắc cầu (3), (4) ⇒ điều phải chứng minh.</p>
+    </div>
+
+    <h4>4. Đọc thêm: bất đẳng thức giữa trung bình cộng và trung bình nhân</h4>
+    <div class="formula">
+      <div class="formula-name">Bất đẳng thức giữa trung bình cộng và trung bình nhân (bất đẳng thức Cauchy, AM-GM)</div>
+      <div class="formula-body">\[ \frac{a + b}{2} \ge \sqrt{ab} \]</div>
+      <ul class="formula-legend">
+        <li>Điều kiện: \(a \ge 0\), \(b \ge 0\)</li>
+        <li>\(\frac{a + b}{2}\): trung bình cộng; \(\sqrt{ab}\): trung bình nhân của hai số</li>
+      </ul>
+      <div class="formula-note">Dấu “=” xảy ra khi \(a = b\).</div>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Bất đẳng thức: \(a &gt; b\), \(a &lt; b\), \(a \ge b\), \(a \le b\); \(a\) là vế trái, \(b\) là vế phải.</li>
+        <li>Bắc cầu: \(a &lt; b\), \(b &lt; c\) ⇒ \(a &lt; c\).</li>
+        <li>Cộng cùng một số vào hai vế: <b>giữ chiều</b>.</li>
+        <li>Nhân với số dương: <b>giữ chiều</b>; nhân với số âm: <b>đổi chiều</b>.</li>
+        <li>“Ít nhất” ↔ \(\ge\); “nhiều nhất, tối đa” ↔ \(\le\).</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-6">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 6</span>Bất phương trình bậc nhất một ẩn</h3>
+    <p class="lesson-goal">Cần nắm: khái niệm bất phương trình bậc nhất một ẩn, nghiệm của bất phương trình; cách giải bất phương trình bậc nhất một ẩn và bất phương trình đưa được về dạng đó; giải bài toán thực tế.</p>
+
+    <h4>1. Khái niệm bất phương trình bậc nhất một ẩn</h4>
+    <div class="box def">
+      <p>Hệ thức như \(7x + 18 \le 100\) là một <b>bất phương trình</b> với ẩn \(x\); \(7x + 18\) là <b>vế trái</b>, \(100\) là <b>vế phải</b>.</p>
+      <p>Bất phương trình dạng \(ax + b &lt; 0\) (hoặc \(ax + b &gt; 0\), \(ax + b \le 0\), \(ax + b \ge 0\)), trong đó \(a\), \(b\) là hai số đã cho, <span class="kw">\(a \ne 0\)</span>, được gọi là <b>bất phương trình bậc nhất một ẩn</b> \(x\).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Bất phương trình bậc nhất một ẩn</div>
+      <div class="formula-body">\[ ax + b &lt; 0 \quad (a \ne 0) \]</div>
+      <ul class="formula-legend">
+        <li>\(x\): ẩn; \(a\), \(b\): số đã cho, <b>\(a \ne 0\)</b></li>
+        <li>Các dạng khác: \(ax + b &gt; 0\), \(ax + b \le 0\), \(ax + b \ge 0\)</li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1</p>
+      <p>\(3x + 16 \le 0\); \(-5x + 5 &gt; 0\); \(-3x &lt; 0\) là các bất phương trình bậc nhất một ẩn. \(x^2 - 4 &gt; 0\) <b>không</b> phải (vì \(x^2 - 4\) là đa thức bậc hai).</p>
+    </div>
+    <h5>Nghiệm của bất phương trình</h5>
+    <div class="box def">
+      <ul>
+        <li>Số \(x_0\) là một <b>nghiệm</b> của bất phương trình \(A(x) &lt; B(x)\) nếu \(A(x_0) &lt; B(x_0)\) là khẳng định đúng.</li>
+        <li><b>Giải</b> một bất phương trình là tìm <b>tất cả</b> các nghiệm của bất phương trình đó.</li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p>Với \(3x + 8 &lt; 20\): \(x = \frac{4}{3}\) là nghiệm vì \(3 \cdot \frac{4}{3} + 8 = 12 &lt; 20\) là khẳng định đúng; \(x = 5\) không là nghiệm vì \(3 \cdot 5 + 8 &lt; 20\) là khẳng định sai.</p>
+    </div>
+
+    <h4>2. Cách giải bất phương trình bậc nhất một ẩn</h4>
+    <div class="box law" data-label="⚖️ Cách giải bất phương trình ax + b &lt; 0">
+      <p>\(ax + b &lt; 0\) ⇔ \(ax &lt; -b\) (cộng hai vế với \(-b\)), sau đó chia hai vế cho \(a\):</p>
+      <ul>
+        <li>Nếu \(a &gt; 0\) thì \(x &lt; -\dfrac{b}{a}\) (giữ chiều);</li>
+        <li>Nếu \(a &lt; 0\) thì \(x &gt; -\dfrac{b}{a}\) (<b>đổi chiều</b>).</li>
+      </ul>
+      <p><b>Chú ý.</b> Các bất phương trình \(ax + b &gt; 0\), \(ax + b \le 0\), \(ax + b \ge 0\) được giải tương tự.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Nghiệm của bất phương trình bậc nhất ax + b &lt; 0</div>
+      <div class="formula-body">\[ ax + b &lt; 0 \iff \begin{cases} x &lt; -\dfrac{b}{a} &amp; \text{nếu } a &gt; 0 \\[3mm] x &gt; -\dfrac{b}{a} &amp; \text{nếu } a &lt; 0 \end{cases} \]</div>
+      <ul class="formula-legend">
+        <li>\(a \ne 0\); chia cho \(a &lt; 0\) thì đổi chiều bất đẳng thức</li>
+      </ul>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Giải bất phương trình bậc nhất một ẩn (và bất phương trình đưa được về dạng đó)</p>
+      <ol class="steps">
+        <li>Bỏ ngoặc, khử mẫu (nhân hai vế với mẫu chung <b>dương</b>) nếu có.</li>
+        <li><b>Chuyển vế</b>: đưa hạng tử chứa ẩn về một vế, hằng số về vế kia (chuyển vế thì đổi dấu hạng tử — thực chất là cộng hai vế với cùng một số).</li>
+        <li>Thu gọn về dạng \(ax &lt; c\) (hoặc \(&gt;\), \(\le\), \(\ge\)).</li>
+        <li>Chia hai vế cho \(a\): \(a &gt; 0\) giữ chiều, <b>\(a &lt; 0\) đổi chiều</b>. Kết luận nghiệm.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 — \(-2x - 4 &gt; 0\)</p>
+      <p>\(-2x &gt; 4\) (cộng hai vế với 4) ⇔ \(x &lt; 4 \cdot \left(-\frac{1}{2}\right)\) (nhân hai vế với số âm \(-\frac{1}{2}\), <b>đổi chiều</b>) ⇔ \(x &lt; -2\).</p>
+      <p>Nghiệm của bất phương trình là \(x &lt; -2\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 4 — Bất phương trình đưa được về dạng bậc nhất</p>
+      <p>a) \(2x + 5 &lt; 3x - 4\) ⇔ \(2x - 3x &lt; -4 - 5\) ⇔ \(-x &lt; -9\) ⇔ \(x &gt; 9\).</p>
+      <p>b) \(-3x + 5 \ge -4x + 3\) ⇔ \(-3x + 4x \ge 3 - 5\) ⇔ \(x \ge -2\).</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 360 110" width="360" role="img" aria-label="Biểu diễn tập nghiệm x lớn hơn hoặc bằng -2 và x lớn hơn 9 trên trục số">
+        <defs>
+          <marker id="toan-arr4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+            <path d="M0 0 L10 5 L0 10 z" class="accent-fill"/>
+          </marker>
+        </defs>
+        <line x1="15" y1="30" x2="345" y2="30" class="stroke" stroke-width="1.5" marker-end="url(#toan-arr4)"/>
+        <line x1="120" y1="30" x2="330" y2="30" class="accent" stroke-width="4"/>
+        <circle cx="120" cy="30" r="5" class="accent-fill"/>
+        <text x="120" y="52" font-size="13" text-anchor="middle">−2</text>
+        <text x="250" y="20" font-size="13" text-anchor="middle">x ≥ −2</text>
+        <line x1="15" y1="80" x2="345" y2="80" class="stroke" stroke-width="1.5" marker-end="url(#toan-arr4)"/>
+        <line x1="195" y1="80" x2="330" y2="80" class="accent" stroke-width="4"/>
+        <circle cx="190" cy="80" r="5" fill="none" class="accent" stroke-width="2"/>
+        <text x="190" y="102" font-size="13" text-anchor="middle">9</text>
+        <text x="270" y="70" font-size="13" text-anchor="middle">x &gt; 9</text>
+      </svg>
+      <figcaption>Minh hoạ tập nghiệm trên trục số: chấm đặc — đầu mút <b>thuộc</b> tập nghiệm (dấu \(\ge\), \(\le\)); chấm rỗng — đầu mút <b>không thuộc</b> (dấu \(&gt;\), \(&lt;\)).</figcaption>
+    </figure>
+
+    <h4>3. Giải bài toán thực tế bằng bất phương trình</h4>
+    <div class="box method">
+      <p class="box-title">Dạng: Bài toán thực tế dẫn đến bất phương trình</p>
+      <ol class="steps">
+        <li>Gọi ẩn, đặt điều kiện (số tự nhiên, số dương…).</li>
+        <li>Dịch điều kiện đề bài (“ít nhất”, “tối đa”, “không vượt quá”…) thành bất phương trình.</li>
+        <li>Giải bất phương trình.</li>
+        <li>Chọn giá trị phù hợp điều kiện của ẩn (lớn nhất / nhỏ nhất, làm tròn đúng chiều) rồi trả lời.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 — Mua vở (tình huống mở đầu)</p>
+      <p>Thanh có 100 nghìn đồng, mua 1 bút giá 18 nghìn đồng và \(x\) quyển vở, mỗi quyển 7 nghìn đồng \((x \in \mathbb{N}^*)\).</p>
+      <p>\(7x + 18 \le 100\) ⇔ \(7x \le 82\) ⇔ \(x \le \frac{82}{7}\) \((\approx 11{,}7)\). Vì số vở là số tự nhiên nên Thanh mua được <b>nhiều nhất 11 quyển vở</b>.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 5 — Gửi tiết kiệm</p>
+      <p>Lãi suất 7,4%/năm; cần tiền lãi mỗi năm ít nhất 60 triệu đồng. Gọi \(x\) (triệu đồng) là số tiền gửi, tiền lãi một năm là \(0{,}074x\).</p>
+      <p>\(0{,}074x \ge 60\) ⇔ \(x \ge 60 : 0{,}074 \approx 810{,}81\). Bà Mai cần gửi <b>ít nhất 811 triệu đồng</b> (làm tròn <b>lên</b> để vẫn thoả mãn).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Vận dụng — Thi tuyển dụng</p>
+      <p>25 câu hỏi, đúng được cộng 2 điểm, sai bị trừ 1 điểm, được tặng 5 điểm; cần từ 25 điểm trở lên. Gọi \(x\) là số câu trả lời đúng \((x \in \mathbb{N},\ x \le 25)\):</p>
+      <p>\(5 + 2x - (25 - x) \ge 25\) ⇔ \(3x \ge 45\) ⇔ \(x \ge 15\). Phải trả lời đúng <b>ít nhất 15 câu</b>.</p>
+    </div>
+    <div class="box warn">
+      <ul>
+        <li>Chia hoặc nhân hai vế với <b>số âm</b> mà quên đổi chiều (vd. \(-x &lt; -9\) phải ra \(x &gt; 9\)).</li>
+        <li>Bài toán thực tế: “nhiều nhất” thì làm tròn <b>xuống</b> (\(x \le 11{,}7\) → 11); “ít nhất” thì làm tròn <b>lên</b> (\(x \ge 810{,}81\) → 811).</li>
+        <li>Kết luận nghiệm của bất phương trình dạng \(x &lt; -2\), không phải \(x = -2\).</li>
+      </ul>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Bất phương trình bậc nhất một ẩn: \(ax + b &lt; 0\) (hoặc \(&gt;\), \(\le\), \(\ge\)) với \(a \ne 0\).</li>
+        <li>\(x_0\) là nghiệm của \(A(x) &lt; B(x)\) nếu \(A(x_0) &lt; B(x_0)\) đúng; giải = tìm tất cả nghiệm.</li>
+        <li>Chuyển vế đổi dấu hạng tử; chia cho số dương giữ chiều, chia cho <b>số âm đổi chiều</b>.</li>
+        <li>\(ax + b &lt; 0\): \(a &gt; 0\) ⇒ \(x &lt; -\frac{b}{a}\); \(a &lt; 0\) ⇒ \(x &gt; -\frac{b}{a}\).</li>
+        <li>Bài toán thực tế: chú ý điều kiện của ẩn và làm tròn đúng chiều.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-on-tap-chuong-2">
+    <h3 class="lesson-title"><span class="lesson-no">Ôn tập</span>Ôn tập Chương II</h3>
+    <p class="lesson-goal">Tóm tắt: phương trình tích, phương trình chứa ẩn ở mẫu; bất đẳng thức và tính chất; bất phương trình bậc nhất một ẩn.</p>
+
+    <h4>1. Tóm tắt kiến thức</h4>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Nội dung</th><th>Ghi nhớ</th></tr></thead>
+      <tbody>
+        <tr><td>Phương trình tích</td><td>\((ax + b)(cx + d) = 0\) ⇔ \(ax + b = 0\) hoặc \(cx + d = 0\)</td></tr>
+        <tr><td>Phương trình chứa ẩn ở mẫu</td><td>ĐKXĐ → quy đồng, khử mẫu → giải → đối chiếu ĐKXĐ → kết luận</td></tr>
+        <tr><td>Bắc cầu</td><td>\(a &lt; b\), \(b &lt; c\) ⇒ \(a &lt; c\)</td></tr>
+        <tr><td>Cộng hai vế với \(c\)</td><td>Giữ chiều: \(a &lt; b \Rightarrow a + c &lt; b + c\)</td></tr>
+        <tr><td>Nhân hai vế với \(c\)</td><td>\(c &gt; 0\): giữ chiều; \(c &lt; 0\): đổi chiều</td></tr>
+        <tr><td>Bất phương trình \(ax + b &lt; 0\) \((a \ne 0)\)</td><td>\(a &gt; 0\): \(x &lt; -\frac{b}{a}\); \(a &lt; 0\): \(x &gt; -\frac{b}{a}\)</td></tr>
+      </tbody>
+    </table></div>
+    <div class="two-col">
+      <div class="box fact" data-label="🔎 Phương trình (dấu =)">
+        <p>Nhân / chia hai vế cho số khác 0: dấu “=” <b>không đổi</b>.</p>
+        <p>Nghiệm là một hay vài giá trị: \(x = \dots\)</p>
+      </div>
+      <div class="box fact" data-label="🔎 Bất phương trình (dấu <, >, ≤, ≥)">
+        <p>Nhân / chia hai vế cho số âm: <b>đổi chiều</b>.</p>
+        <p>Nghiệm là cả một tập: \(x &lt; \dots\), \(x \ge \dots\)</p>
+      </div>
+    </div>
+
+    <h4>2. Sơ đồ các dạng toán</h4>
+    <div class="flow"><span>Phương trình phức tạp</span><i>→</i><span>Chuyển vế = 0, phân tích nhân tử</span><i>→</i><span>Phương trình tích</span><i>→</i><span>Các phương trình bậc nhất</span></div>
+    <div class="flow"><span>Có ẩn ở mẫu</span><i>→</i><span>ĐKXĐ</span><i>→</i><span>Khử mẫu</span><i>→</i><span>Giải</span><i>→</i><span>Loại giá trị sai ĐKXĐ</span></div>
+    <div class="flow"><span>Bất phương trình</span><i>→</i><span>Bỏ ngoặc, chuyển vế</span><i>→</i><span>\(ax &lt; c\)</span><i>→</i><span>Chia cho \(a\) (âm thì đổi chiều)</span></div>
+    <div class="box method">
+      <p class="box-title">Dạng: So sánh hai biểu thức khi biết \(a &lt; b\)</p>
+      <ol class="steps">
+        <li>Đưa hai biểu thức về cùng dạng \(ka + m\) và \(kb + m\) (vd. \(a + b + 5\) và \(2b + 5\) là \(a + (b + 5)\) và \(b + (b + 5)\)).</li>
+        <li>Nhân \(a &lt; b\) với \(k\) (đổi chiều nếu \(k &lt; 0\)), rồi cộng \(m\) vào hai vế.</li>
+      </ol>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Bài toán “chọn phương án” (gói cước, chi phí…)</p>
+      <ol class="steps">
+        <li>Gọi ẩn (số phút, số km…), biểu diễn chi phí của từng phương án theo ẩn.</li>
+        <li>Lập phương trình (chi phí bằng nhau) hoặc bất phương trình (phương án này rẻ hơn) rồi giải.</li>
+        <li>So sánh với giá trị cụ thể của đề bài để chọn phương án.</li>
+      </ol>
+    </div>
+    <div class="box warn">
+      <ul>
+        <li>Phương trình chứa ẩn ở mẫu: luôn viết ĐKXĐ đầu tiên và kiểm tra nghiệm cuối cùng.</li>
+        <li>Bất phương trình: nhân / chia với số âm thì đổi chiều.</li>
+        <li>Không chia hai vế phương trình cho biểu thức chứa ẩn (có thể mất nghiệm).</li>
+      </ul>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Phương trình tích: tích bằng 0 khi một thừa số bằng 0.</li>
+        <li>Phương trình chứa ẩn ở mẫu: 4 bước, bước cuối đối chiếu ĐKXĐ.</li>
+        <li>Bất đẳng thức: cộng giữ chiều; nhân số dương giữ chiều, số âm đổi chiều; bắc cầu.</li>
+        <li>Bất phương trình bậc nhất: đưa về \(ax &lt; c\) rồi chia cho \(a\) (chú ý dấu của \(a\)).</li>
+      </ul>
+    </div>
+  </article>
+</section>
+
+<section class="chapter" id="toan-chuong-3">
+  <h2 class="chapter-title"><span>Chương III · Đại số</span>Căn bậc hai và căn bậc ba</h2>
+
+  <article class="lesson" id="toan-bai-7">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 7</span>Căn bậc hai và căn thức bậc hai</h3>
+    <p class="lesson-goal">Cần nắm: căn bậc hai của số thực không âm; tính chất \(\sqrt{a^2} = |a|\); căn thức bậc hai và điều kiện xác định; hằng đẳng thức \(\sqrt{A^2} = |A|\) để rút gọn.</p>
+
+    <h4>1. Căn bậc hai</h4>
+    <div class="box def">
+      <p><b>Căn bậc hai</b> của số thực không âm \(a\) là số thực \(x\) sao cho <span class="kw">\(x^2 = a\)</span>.</p>
+    </div>
+    <div class="box fact" data-label="🔎 Nhận xét">
+      <ul>
+        <li>Số <b>âm</b> không có căn bậc hai.</li>
+        <li>Số <b>0</b> có một căn bậc hai duy nhất là 0.</li>
+        <li>Số <b>dương</b> \(a\) có đúng <b>hai</b> căn bậc hai đối nhau: \(\sqrt{a}\) (căn bậc hai số học của \(a\)) và \(-\sqrt{a}\).</li>
+      </ul>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Căn bậc hai của số thực không âm a</div>
+      <div class="formula-body">\[ x^2 = a \ (a \ge 0) \iff x = \sqrt{a} \ \text{hoặc}\ x = -\sqrt{a} \]</div>
+      <ul class="formula-legend">
+        <li>\(\sqrt{a} \ge 0\): căn bậc hai số học của \(a\)</li>
+        <li>\(a &gt; 0\): hai căn bậc hai \(\pm\sqrt{a}\); \(a = 0\): một căn bậc hai là 0; \(a &lt; 0\): không có căn bậc hai</li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1, 2</p>
+      <ul>
+        <li>\(\sqrt{81} = 9\) nên 81 có hai căn bậc hai là \(9\) và \(-9\).</li>
+        <li>Máy tính cầm tay: bấm √ 1 1 . 1 = rồi S⇔D, được \(3{,}33166625\). Vậy \(\sqrt{11{,}1} \approx 3{,}33\); căn bậc hai của 11,1 (làm tròn đến chữ số thập phân thứ hai) là \(3{,}33\) và \(-3{,}33\).</li>
+      </ul>
+    </div>
+    <div class="box warn">
+      <p>“Căn bậc hai của 4” là <b>2 và −2</b>; còn “căn bậc hai <b>số học</b> của 4” chỉ là \(\sqrt{4} = 2\). Kí hiệu \(\sqrt{4}\) luôn là số không âm: \(\sqrt{4} \ne \pm 2\).</p>
+    </div>
+    <h5>Tính chất của căn bậc hai</h5>
+    <div class="box law" data-label="⚖️ Tính chất">
+      <p>\(\sqrt{a^2} = |a|\) với mọi số thực \(a\).</p>
+    </div>
+    <div class="formula-row">
+      <div class="formula">
+        <div class="formula-name">Căn bậc hai của một bình phương (số)</div>
+        <div class="formula-body">\[ \sqrt{a^2} = |a| = \begin{cases} a &amp; \text{nếu } a \ge 0 \\ -a &amp; \text{nếu } a &lt; 0 \end{cases} \]</div>
+        <ul class="formula-legend"><li>\(a\): số thực bất kì</li><li>Vd. \(\sqrt{(-3)^2} = |-3| = 3\)</li></ul>
+      </div>
+      <div class="formula">
+        <div class="formula-name">So sánh các căn bậc hai số học (đã học ở lớp 7)</div>
+        <div class="formula-body">\[ 0 \le a &lt; b \implies \sqrt{a} &lt; \sqrt{b} \]</div>
+        <ul class="formula-legend"><li>\(a\), \(b\): số không âm</li><li>Vd. \(9 &lt; 10\) nên \(3 = \sqrt{9} &lt; \sqrt{10}\)</li></ul>
+      </div>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 — Tính không dùng máy tính cầm tay</p>
+      <p>a) \(\sqrt{(1 + \sqrt{2})^2} = |1 + \sqrt{2}| = 1 + \sqrt{2}\) nên \(1 - \sqrt{2} + \sqrt{(1 + \sqrt{2})^2} = 1 - \sqrt{2} + 1 + \sqrt{2} = 2\).</p>
+      <p>b) \(\sqrt{(-3)^2} + 3 = |-3| + 3 = 3 + 3 = 6\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Vận dụng — Vật rơi tự do (tình huống mở đầu)</p>
+      <p>Quãng đường rơi \(S = 4{,}9t^2\) (\(S\) tính bằng m, \(t\) tính bằng s). Từ độ cao 122,5 m: \(t = \sqrt{\dfrac{S}{4{,}9}} = \sqrt{\dfrac{122{,}5}{4{,}9}} = \sqrt{25} = 5\). Vật chạm đất sau <b>5 giây</b>.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Thời gian rơi tự do theo quãng đường (theo SGK)</div>
+      <div class="formula-body">\[ S = 4{,}9t^2 \implies t = \sqrt{\frac{S}{4{,}9}} \]</div>
+      <ul class="formula-legend">
+        <li>\(S\): quãng đường rơi (m)</li>
+        <li>\(t\): thời gian rơi (s), \(t \ge 0\)</li>
+      </ul>
+    </div>
+
+    <h4>2. Căn thức bậc hai</h4>
+    <div class="box def">
+      <p><b>Căn thức bậc hai</b> là biểu thức có dạng \(\sqrt{A}\), trong đó \(A\) là một biểu thức đại số. \(A\) được gọi là <b>biểu thức lấy căn</b> hoặc <b>biểu thức dưới dấu căn</b>.</p>
+      <p>\(\sqrt{A}\) xác định khi \(A\) lấy giá trị không âm, viết là <span class="kw">\(A \ge 0\)</span>. Ta nói \(A \ge 0\) là <b>điều kiện xác định</b> (hay điều kiện có nghĩa) của \(\sqrt{A}\).</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 260 190" width="260" role="img" aria-label="Tam giác ABC vuông tại A với AB = 3 cm, AC = x cm, cạnh huyền BC bằng căn của 9 cộng x bình phương">
+        <polygon points="50,150 50,50 220,150" fill="none" class="stroke" stroke-width="2"/>
+        <polyline points="50,138 62,138 62,150" fill="none" class="stroke" stroke-width="1.2"/>
+        <line x1="50" y1="50" x2="220" y2="150" class="accent" stroke-width="3"/>
+        <text x="36" y="166" font-size="14" font-style="italic">A</text>
+        <text x="36" y="48" font-size="14" font-style="italic">B</text>
+        <text x="224" y="166" font-size="14" font-style="italic">C</text>
+        <text x="16" y="104" font-size="13">3 cm</text>
+        <text x="115" y="172" font-size="13">x cm</text>
+        <text x="140" y="86" font-size="13">BC = √(9 + x²)</text>
+      </svg>
+      <figcaption>Theo định lí Pythagore, cạnh huyền \(BC = \sqrt{9 + x^2}\) — một căn thức bậc hai với biểu thức lấy căn \(9 + x^2\).</figcaption>
+    </figure>
+    <div class="formula">
+      <div class="formula-name">Điều kiện xác định của căn thức bậc hai</div>
+      <div class="formula-body">\[ \sqrt{A}\ \text{xác định} \iff A \ge 0 \]</div>
+      <ul class="formula-legend">
+        <li>\(A\): biểu thức đại số (biểu thức lấy căn)</li>
+      </ul>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Tìm điều kiện xác định và tính giá trị căn thức bậc hai</p>
+      <ol class="steps">
+        <li>Cho biểu thức lấy căn \(\ge 0\), giải bất phương trình để được điều kiện của biến.</li>
+        <li>Kiểm tra giá trị cho trước của biến có thoả mãn điều kiện không; nếu có, thay vào rồi tính.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 4 — Căn thức \(\sqrt{2x + 1}\)</p>
+      <p>a) Điều kiện xác định: \(2x + 1 \ge 0\) hay \(x \ge -\frac{1}{2}\).</p>
+      <p>b) Tại \(x = 0\) (thoả mãn): \(\sqrt{2 \cdot 0 + 1} = 1\). Tại \(x = 4\) (thoả mãn): \(\sqrt{2 \cdot 4 + 1} = 3\).</p>
+    </div>
+    <h5>Hằng đẳng thức \(\sqrt{A^2} = |A|\)</h5>
+    <div class="box law" data-label="⚖️ Hằng đẳng thức">
+      <p>Với \(A\) là một biểu thức:</p>
+      <ul>
+        <li>Với \(A \ge 0\) ta có \(\sqrt{A} \ge 0\); \((\sqrt{A})^2 = A\);</li>
+        <li>\(\sqrt{A^2} = |A|\).</li>
+      </ul>
+    </div>
+    <div class="formula-row">
+      <div class="formula">
+        <div class="formula-name">Bình phương của căn thức bậc hai</div>
+        <div class="formula-body">\[ \left(\sqrt{A}\right)^2 = A \]</div>
+        <ul class="formula-legend"><li>Điều kiện: \(A \ge 0\) (khi đó \(\sqrt{A} \ge 0\))</li></ul>
+      </div>
+      <div class="formula">
+        <div class="formula-name">Hằng đẳng thức căn bậc hai của một bình phương</div>
+        <div class="formula-body">\[ \sqrt{A^2} = |A| \]</div>
+        <ul class="formula-legend">
+          <li>Đúng với mọi biểu thức \(A\)</li>
+          <li>\(A \ge 0\): \(\sqrt{A^2} = A\); \(A &lt; 0\): \(\sqrt{A^2} = -A\)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Rút gọn \(\sqrt{A^2}\) (có điều kiện của biến)</p>
+      <ol class="steps">
+        <li>Viết biểu thức dưới dấu căn thành bình phương (thường dùng hằng đẳng thức): \(1 - 2x + x^2 = (1 - x)^2\).</li>
+        <li>Áp dụng \(\sqrt{A^2} = |A|\).</li>
+        <li>Dựa vào điều kiện của biến để <b>xét dấu</b> \(A\) rồi bỏ dấu giá trị tuyệt đối.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 5 — Rút gọn</p>
+      <p>a) \((\sqrt{1 - x})^2\) với \(x &lt; 0\): khi đó \(1 - x &gt; 0\) nên \((\sqrt{1 - x})^2 = 1 - x\).</p>
+      <p>b) \(\sqrt{1 - 2x + x^2}\) với \(x &gt; 2\): \(\sqrt{1 - 2x + x^2} = \sqrt{(1 - x)^2} = |1 - x|\). Vì \(x &gt; 2\) nên \(1 - x &lt; 0\), do đó \(|1 - x| = x - 1\).</p>
+      <p>Vậy \(\sqrt{1 - 2x + x^2} = x - 1\) với \(x &gt; 2\).</p>
+    </div>
+    <div class="box warn">
+      <ul>
+        <li>\(\sqrt{A^2} = A\) chỉ đúng khi \(A \ge 0\). Tổng quát phải viết \(\sqrt{A^2} = |A|\): \(\sqrt{(1 - \sqrt{3})^2} = \sqrt{3} - 1\) (vì \(1 &lt; \sqrt{3}\)).</li>
+        <li>Quên điều kiện xác định: \(\sqrt{2x - 1}\) không tính được tại \(x = 0\) vì \(2 \cdot 0 - 1 &lt; 0\).</li>
+      </ul>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Căn bậc hai của \(a \ge 0\) là số \(x\) với \(x^2 = a\); số dương có hai căn bậc hai \(\pm\sqrt{a}\), số âm không có.</li>
+        <li>\(\sqrt{a^2} = |a|\) với mọi \(a\); \(0 \le a &lt; b \Rightarrow \sqrt{a} &lt; \sqrt{b}\).</li>
+        <li>Căn thức bậc hai \(\sqrt{A}\) xác định khi \(A \ge 0\).</li>
+        <li>\((\sqrt{A})^2 = A\) (với \(A \ge 0\)); \(\sqrt{A^2} = |A|\) — nhớ xét dấu \(A\).</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-8">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 8</span>Khai căn bậc hai với phép nhân và phép chia</h3>
+    <p class="lesson-goal">Cần nắm: khai căn bậc hai của một tích, một thương; nhân, chia các căn bậc hai; áp dụng tính toán và rút gọn căn thức bậc hai.</p>
+    <div class="box def">
+      <p><b>Phép khai căn bậc hai</b> là phép toán tìm căn bậc hai số học của số (hay biểu thức) không âm.</p>
+    </div>
+
+    <h4>1. Khai căn bậc hai và phép nhân</h4>
+    <div class="box law" data-label="⚖️ Liên hệ giữa phép khai căn bậc hai và phép nhân">
+      <p>Với \(A\), \(B\) là các biểu thức không âm, ta có \(\sqrt{A} \cdot \sqrt{B} = \sqrt{AB}\).</p>
+      <p><b>Chú ý.</b> Kết quả mở rộng cho nhiều biểu thức không âm, chẳng hạn \(\sqrt{A} \cdot \sqrt{B} \cdot \sqrt{C} = \sqrt{A \cdot B \cdot C}\) (với \(A, B, C \ge 0\)).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Khai căn bậc hai của một tích / nhân các căn bậc hai</div>
+      <div class="formula-body">\[ \sqrt{A} \cdot \sqrt{B} = \sqrt{AB} \]</div>
+      <ul class="formula-legend">
+        <li>Điều kiện: \(A \ge 0\), \(B \ge 0\)</li>
+        <li>Mở rộng: \(\sqrt{A}\cdot\sqrt{B}\cdot\sqrt{C} = \sqrt{ABC}\) với \(A, B, C \ge 0\)</li>
+      </ul>
+      <div class="formula-note">Hệ quả: nếu \(A, B, C \ge 0\) thì \(\sqrt{A^2B^2C^2} = ABC\).</div>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 → 4</p>
+      <ul>
+        <li>\(\sqrt{27} \cdot \sqrt{3} = \sqrt{27 \cdot 3} = \sqrt{81} = 9\).</li>
+        <li>\(\sqrt{5}(\sqrt{125} + \sqrt{5}) = \sqrt{5 \cdot 125} + \sqrt{25} = 25 + 5 = 30\).</li>
+        <li>\(\sqrt{5x} \cdot \sqrt{20x} = \sqrt{100x^2} = \sqrt{(10x)^2} = |10x| = 10x\) với \(x \ge 0\).</li>
+        <li>\(\sqrt{2^2 \cdot 3^2 \cdot 5^2} = \sqrt{2^2} \cdot \sqrt{3^2} \cdot \sqrt{5^2} = 2 \cdot 3 \cdot 5 = 30\).</li>
+        <li>\(\sqrt{25a^2b^2}\) với \(a \ge 0\), \(b &lt; 0\): \(= \sqrt{25} \cdot \sqrt{a^2} \cdot \sqrt{b^2} = 5|a| \cdot |b| = -5ab\).</li>
+      </ul>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Tính / rút gọn tích các căn bậc hai</p>
+      <ol class="steps">
+        <li>Gộp các căn thành một căn \(\sqrt{AB}\) (hoặc tách một căn thành tích các căn), sao cho dưới dấu căn xuất hiện <b>số chính phương / bình phương</b>.</li>
+        <li>Khai căn bằng \(\sqrt{A^2} = |A|\); dùng điều kiện đề bài để bỏ dấu giá trị tuyệt đối.</li>
+      </ol>
+    </div>
+
+    <h4>2. Khai căn bậc hai và phép chia</h4>
+    <div class="box law" data-label="⚖️ Liên hệ giữa phép khai căn bậc hai và phép chia">
+      <p>Nếu \(A\), \(B\) là các biểu thức với \(A \ge 0\), \(B &gt; 0\) thì \(\dfrac{\sqrt{A}}{\sqrt{B}} = \sqrt{\dfrac{A}{B}}\).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Khai căn bậc hai của một thương / chia hai căn bậc hai</div>
+      <div class="formula-body">\[ \frac{\sqrt{A}}{\sqrt{B}} = \sqrt{\frac{A}{B}} \]</div>
+      <ul class="formula-legend">
+        <li>Điều kiện: \(A \ge 0\), <b>\(B &gt; 0\)</b> (mẫu khác 0)</li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 5, 6</p>
+      <ul>
+        <li>\(\sqrt{8} : \sqrt{2} = \sqrt{8 : 2} = \sqrt{4} = 2\).</li>
+        <li>\(\sqrt{52a^3} : \sqrt{13a} = \sqrt{4a^2} = \sqrt{(2a)^2} = |2a| = 2a\) (do \(a &gt; 0\)).</li>
+        <li>\(1{,}69 = \dfrac{169}{100} = \dfrac{13^2}{10^2}\) nên \(\sqrt{1{,}69} = \dfrac{\sqrt{13^2}}{\sqrt{10^2}} = \dfrac{13}{10} = 1{,}3\).</li>
+        <li>Với \(a &gt; 0\): \(a \cdot \sqrt{\dfrac{2}{a^2}} = a \cdot \dfrac{\sqrt{2}}{\sqrt{a^2}} = a \cdot \dfrac{\sqrt{2}}{a} = \sqrt{2}\).</li>
+      </ul>
+    </div>
+    <div class="box tip"><p>Số thập phân dưới dấu căn: viết thành <b>phân số thập phân</b> có tử và mẫu là số chính phương (\(6{,}25 = \frac{625}{100} = \frac{25^2}{10^2}\)).</p></div>
+    <div class="box example">
+      <p class="box-title">Vận dụng — Hiệu điện thế \(U = \sqrt{PR}\)</p>
+      <p>Công suất tăng 8 lần, điện trở giảm 2 lần: \(U' = \sqrt{8P \cdot \frac{R}{2}} = \sqrt{4PR} = 2\sqrt{PR} = 2U\). Tỉ số \(\frac{U'}{U} = 2\).</p>
+    </div>
+    <div class="box warn">
+      <ul>
+        <li><b>Tranh luận (SGK):</b> viết \(\sqrt{(-3)^2} = -3\), \(\sqrt{(-12)^2} = -12\) là <b>sai</b>. Đúng: \(\sqrt{(-3)^2 \cdot (-12)^2} = |-3| \cdot |-12| = 3 \cdot 12 = 36\).</li>
+        <li>\(\sqrt{A} \cdot \sqrt{B} = \sqrt{AB}\) cần \(A, B \ge 0\): không viết \(\sqrt{-2} \cdot \sqrt{-8}\) (không xác định).</li>
+        <li>Không có quy tắc cho tổng: \(\sqrt{9 + 16} = 5 \ne \sqrt{9} + \sqrt{16} = 7\).</li>
+      </ul>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>\(\sqrt{A} \cdot \sqrt{B} = \sqrt{AB}\) với \(A, B \ge 0\).</li>
+        <li>\(\dfrac{\sqrt{A}}{\sqrt{B}} = \sqrt{\dfrac{A}{B}}\) với \(A \ge 0\), \(B &gt; 0\).</li>
+        <li>\(\sqrt{A^2B^2C^2} = ABC\) khi \(A, B, C \ge 0\); nếu có thừa số âm thì dùng giá trị tuyệt đối.</li>
+        <li>Không tách căn của một tổng.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-9">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 9</span>Biến đổi đơn giản và rút gọn biểu thức chứa căn thức bậc hai</h3>
+    <p class="lesson-goal">Cần nắm: đưa thừa số ra ngoài / vào trong dấu căn; khử mẫu của biểu thức lấy căn; biểu thức liên hợp và trục căn thức ở mẫu; phối hợp các phép biến đổi để rút gọn.</p>
+
+    <h4>1. Đưa thừa số ra ngoài dấu căn</h4>
+    <div class="box law" data-label="⚖️ Đưa thừa số ra ngoài dấu căn">
+      <p>Nếu \(a\) là một số và \(b\) là một số không âm thì \(\sqrt{a^2 \cdot b} = |a|\sqrt{b}\).</p>
+      <p><b>Chú ý.</b> Phép biến đổi trên gọi là <b>phép đưa thừa số ra ngoài dấu căn</b>.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Đưa thừa số ra ngoài dấu căn</div>
+      <div class="formula-body">\[ \sqrt{a^2 b} = |a|\sqrt{b} \]</div>
+      <ul class="formula-legend">
+        <li>Điều kiện: \(b \ge 0\); \(a\) bất kì</li>
+        <li>\(a \ge 0\): \(\sqrt{a^2b} = a\sqrt{b}\); \(a &lt; 0\): \(\sqrt{a^2b} = -a\sqrt{b}\)</li>
+      </ul>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Đưa thừa số ra ngoài dấu căn</p>
+      <ol class="steps">
+        <li>Phân tích số (biểu thức) dưới dấu căn thành tích, tách ra thừa số là <b>bình phương</b> lớn nhất: \(45 = 3^2 \cdot 5\), \(243 = 9^2 \cdot 3\).</li>
+        <li>Đưa cơ số của bình phương ra ngoài, nhớ lấy <b>giá trị tuyệt đối</b>.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1</p>
+      <p>a) \(45 = 3^2 \cdot 5\) nên \(\sqrt{45} = \sqrt{3^2 \cdot 5} = 3\sqrt{5}\).</p>
+      <p>b) \(243 = 3 \cdot 9^2\) nên \(\sqrt{243a} = \sqrt{9^2 \cdot 3a} = 9\sqrt{3a}\) (\(a \ge 0\)).</p>
+    </div>
+    <div class="box warn">
+      <p><b>Tranh luận (SGK):</b> \(\sqrt{(-2)^2 \cdot 5} = -2\sqrt{5}\) là <b>sai</b> (vế trái không âm, vế phải âm). Đúng: \(\sqrt{(-2)^2 \cdot 5} = |-2|\sqrt{5} = 2\sqrt{5}\).</p>
+    </div>
+    <h5>Khử mẫu của biểu thức lấy căn</h5>
+    <div class="box note">
+      <p><b>Chú ý.</b> Khi biểu thức dưới dấu căn có mẫu, ta thường <b>khử mẫu của biểu thức lấy căn</b> (biến đổi căn thức thành biểu thức mà trong căn không còn mẫu): nhân cả tử và mẫu của biểu thức lấy căn với một số thích hợp để mẫu thành bình phương, rồi đưa ra ngoài dấu căn.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 — Khử mẫu của \(\sqrt{\dfrac{4}{7}}\)</p>
+      <p>\[ \sqrt{\frac{4}{7}} = \sqrt{\frac{4 \cdot 7}{7^2}} = \sqrt{\left(\frac{2}{7}\right)^2 \cdot 7} = \frac{2\sqrt{7}}{7}. \]</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Khử mẫu của biểu thức lấy căn</div>
+      <div class="formula-body">\[ \sqrt{\frac{A}{B}} = \sqrt{\frac{AB}{B^2}} = \frac{\sqrt{AB}}{|B|} \]</div>
+      <ul class="formula-legend">
+        <li>Điều kiện: \(AB \ge 0\), \(B \ne 0\)</li>
+        <li>Nhân tử và mẫu với \(B\) để mẫu thành bình phương \(B^2\)</li>
+      </ul>
+      <div class="formula-note">Viết tổng quát từ cách làm ở Ví dụ 2.</div>
+    </div>
+
+    <h4>2. Đưa thừa số vào trong dấu căn</h4>
+    <div class="box law" data-label="⚖️ Đưa thừa số vào trong dấu căn">
+      <ul>
+        <li>Nếu \(a\) và \(b\) là hai số không âm thì \(a\sqrt{b} = \sqrt{a^2b}\).</li>
+        <li>Nếu \(a\) là số âm và \(b\) là số không âm thì \(a\sqrt{b} = -\sqrt{a^2b}\).</li>
+      </ul>
+      <p><b>Chú ý.</b> Các phép biến đổi trên gọi là <b>phép đưa thừa số vào trong dấu căn</b>.</p>
+    </div>
+    <div class="formula-row">
+      <div class="formula">
+        <div class="formula-name">Đưa thừa số không âm vào trong dấu căn</div>
+        <div class="formula-body">\[ a\sqrt{b} = \sqrt{a^2 b} \]</div>
+        <ul class="formula-legend"><li>Điều kiện: \(a \ge 0\), \(b \ge 0\)</li></ul>
+      </div>
+      <div class="formula">
+        <div class="formula-name">Đưa thừa số âm vào trong dấu căn</div>
+        <div class="formula-body">\[ a\sqrt{b} = -\sqrt{a^2 b} \]</div>
+        <ul class="formula-legend"><li>Điều kiện: \(a &lt; 0\), \(b \ge 0\)</li><li>Dấu “−” ở lại bên ngoài</li></ul>
+      </div>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3, 4</p>
+      <ul>
+        <li>\(5\sqrt{2} = \sqrt{5^2 \cdot 2} = \sqrt{50}\); &nbsp; \(-2\sqrt{a} = -\sqrt{2^2 \cdot a} = -\sqrt{4a}\) (\(a \ge 0\)).</li>
+        <li><b>So sánh \(3\sqrt{2}\) và \(2\sqrt{3}\)</b> (tình huống mở đầu): \(3\sqrt{2} = \sqrt{18}\), \(2\sqrt{3} = \sqrt{12}\). Vì \(\sqrt{12} &lt; \sqrt{18}\) nên \(2\sqrt{3} &lt; 3\sqrt{2}\).</li>
+      </ul>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: So sánh hai số dạng \(a\sqrt{b}\)</p>
+      <ol class="steps">
+        <li>Đưa các thừa số vào trong dấu căn để được \(\sqrt{m}\) và \(\sqrt{n}\).</li>
+        <li>So sánh \(m\) và \(n\): \(0 \le m &lt; n \Rightarrow \sqrt{m} &lt; \sqrt{n}\).</li>
+      </ol>
+    </div>
+
+    <h4>3. Trục căn thức ở mẫu</h4>
+    <div class="box def">
+      <p><b>Trục căn thức ở mẫu</b> là phép biến đổi làm mất căn thức ở mẫu của một biểu thức.</p>
+      <p>Các cặp \(A + \sqrt{B}\) và \(A - \sqrt{B}\); \(\sqrt{A} + \sqrt{B}\) và \(\sqrt{A} - \sqrt{B}\) được gọi là những cặp <b>biểu thức liên hợp</b>.</p>
+    </div>
+    <div class="formula-row">
+      <div class="formula">
+        <div class="formula-name">Tích hai biểu thức liên hợp dạng A ± √B</div>
+        <div class="formula-body">\[ (A + \sqrt{B})(A - \sqrt{B}) = A^2 - B \]</div>
+        <ul class="formula-legend"><li>\(A\), \(B\): biểu thức, \(B \ge 0\)</li><li>Dựa trên hằng đẳng thức hiệu hai bình phương</li></ul>
+      </div>
+      <div class="formula">
+        <div class="formula-name">Tích hai biểu thức liên hợp dạng √A ± √B</div>
+        <div class="formula-body">\[ (\sqrt{A} + \sqrt{B})(\sqrt{A} - \sqrt{B}) = A - B \]</div>
+        <ul class="formula-legend"><li>\(A \ge 0\), \(B \ge 0\)</li><li>Vd. \((\sqrt{5} + \sqrt{2})(\sqrt{5} - \sqrt{2}) = 5 - 2 = 3\)</li></ul>
+      </div>
+    </div>
+    <div class="box law" data-label="⚖️ Trục căn thức ở mẫu">
+      <p>Nhân cả tử và mẫu với \(\sqrt{B}\) (mẫu dạng \(\sqrt{B}\)) hoặc với <b>biểu thức liên hợp của mẫu</b>, rồi dùng hằng đẳng thức hiệu hai bình phương để rút gọn mẫu.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Trục căn thức ở mẫu dạng A/√B</div>
+      <div class="formula-body">\[ \frac{A}{\sqrt{B}} = \frac{A\sqrt{B}}{B} \]</div>
+      <ul class="formula-legend"><li>Điều kiện: \(B &gt; 0\)</li><li>Nhân tử và mẫu với \(\sqrt{B}\)</li></ul>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Trục căn thức ở mẫu dạng C/(√A ± B)</div>
+      <div class="formula-body">\[ \frac{C}{\sqrt{A} + B} = \frac{C(\sqrt{A} - B)}{A - B^2}; \qquad \frac{C}{\sqrt{A} - B} = \frac{C(\sqrt{A} + B)}{A - B^2} \]</div>
+      <ul class="formula-legend"><li>Điều kiện: \(A \ge 0\), \(A \ne B^2\)</li><li>Nhân tử và mẫu với biểu thức liên hợp của mẫu</li></ul>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Trục căn thức ở mẫu dạng C/(√A ± √B)</div>
+      <div class="formula-body">\[ \frac{C}{\sqrt{A} + \sqrt{B}} = \frac{C(\sqrt{A} - \sqrt{B})}{A - B}; \qquad \frac{C}{\sqrt{A} - \sqrt{B}} = \frac{C(\sqrt{A} + \sqrt{B})}{A - B} \]</div>
+      <ul class="formula-legend"><li>Điều kiện: \(A \ge 0\), \(B \ge 0\), \(A \ne B\)</li></ul>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Trục căn thức ở mẫu</p>
+      <ol class="steps">
+        <li>Xác định dạng của mẫu: \(k\sqrt{B}\) → nhân với \(\sqrt{B}\); \(\sqrt{A} \pm B\) hoặc \(\sqrt{A} \pm \sqrt{B}\) → nhân với <b>biểu thức liên hợp</b> (đổi dấu ở giữa).</li>
+        <li>Nhân <b>cả tử và mẫu</b> với biểu thức đó.</li>
+        <li>Rút gọn mẫu bằng hiệu hai bình phương; rút gọn kết quả.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 5</p>
+      <p>a) \(\dfrac{2}{3\sqrt{5}} = \dfrac{2\sqrt{5}}{3(\sqrt{5})^2} = \dfrac{2\sqrt{5}}{3 \cdot 5} = \dfrac{2\sqrt{5}}{15}\).</p>
+      <p>b) Biểu thức liên hợp của mẫu \(3 - 2\sqrt{2}\) là \(3 + 2\sqrt{2}\):</p>
+      <p>\[ \frac{a}{3 - 2\sqrt{2}} = \frac{a(3 + 2\sqrt{2})}{3^2 - (2\sqrt{2})^2} = \frac{a(3 + 2\sqrt{2})}{9 - 8} = (3 + 2\sqrt{2})a. \]</p>
+    </div>
+    <div class="box warn">
+      <ul>
+        <li>Chỉ nhân mẫu mà quên nhân tử (giá trị biểu thức bị thay đổi).</li>
+        <li>\((2\sqrt{2})^2 = 4 \cdot 2 = 8\), không phải \(2 \cdot 2 = 4\).</li>
+        <li>Liên hợp của \(3 - 2\sqrt{2}\) là \(3 + 2\sqrt{2}\), không phải \(-3 + 2\sqrt{2}\).</li>
+      </ul>
+    </div>
+
+    <h4>4. Rút gọn biểu thức chứa căn thức bậc hai</h4>
+    <div class="box fact">
+      <p>Khi rút gọn biểu thức chứa căn thức bậc hai, cần <b>phối hợp</b> các phép tính (cộng, trừ, nhân, chia) và các phép biến đổi đã học: đưa thừa số ra ngoài hoặc vào trong dấu căn; khử mẫu của biểu thức lấy căn; trục căn thức ở mẫu.</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Rút gọn biểu thức chứa căn thức bậc hai</p>
+      <ol class="steps">
+        <li>Ghi (hoặc tìm) <b>điều kiện</b> của biến: biểu thức dưới căn \(\ge 0\), mẫu \(\ne 0\).</li>
+        <li>Đưa thừa số ra ngoài dấu căn, dùng \(\sqrt{A^2} = |A|\), khử mẫu để xuất hiện các <b>căn đồng dạng</b> (cùng biểu thức dưới dấu căn).</li>
+        <li>Trục căn thức ở mẫu hoặc quy đồng (mẫu chung thường là tích hai biểu thức liên hợp); phân tích tử thành nhân tử để rút gọn.</li>
+        <li>Cộng, trừ các căn đồng dạng; thu gọn kết quả.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 6 — \(A = 2\sqrt{3} - \sqrt{75} + \sqrt{(1 - \sqrt{3})^2}\)</p>
+      <p>\(\sqrt{75} = \sqrt{3 \cdot 5^2} = 5\sqrt{3}\); \(\sqrt{(1 - \sqrt{3})^2} = |1 - \sqrt{3}| = \sqrt{3} - 1\).</p>
+      <p>\(A = 2\sqrt{3} - 5\sqrt{3} + \sqrt{3} - 1 = -1 - 2\sqrt{3}\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 7 — \(P = \dfrac{x^2 - 1}{\sqrt{x} - 1} - \dfrac{x^2 - x}{\sqrt{x} + 1}\) với \(x \ge 0\), \(x \ne 1\)</p>
+      <p>Trục căn thức ở mẫu (dùng \((\sqrt{x} - 1)(\sqrt{x} + 1) = x - 1\)):</p>
+      <p>\(\dfrac{x^2 - 1}{\sqrt{x} - 1} = \dfrac{(x - 1)(x + 1)(\sqrt{x} + 1)}{x - 1} = (x + 1)(\sqrt{x} + 1) = x\sqrt{x} + \sqrt{x} + x + 1\);</p>
+      <p>\(\dfrac{x^2 - x}{\sqrt{x} + 1} = \dfrac{x(x - 1)(\sqrt{x} - 1)}{x - 1} = x(\sqrt{x} - 1) = x\sqrt{x} - x\).</p>
+      <p>Vậy \(P = (x\sqrt{x} + \sqrt{x} + x + 1) - (x\sqrt{x} - x) = 2x + \sqrt{x} + 1\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Vận dụng — Khối lượng trong thuyết tương đối</p>
+      <p>\(m = \dfrac{m_0}{\sqrt{1 - \frac{v^2}{c^2}}}\) (\(m_0\): khối lượng khi đứng yên, \(c\): vận tốc ánh sáng trong chân không). Trục căn thức ở mẫu: \(m = \dfrac{m_0\sqrt{1 - \frac{v^2}{c^2}}}{1 - \frac{v^2}{c^2}}\).</p>
+      <p>Với \(v = \frac{1}{10}c\): \(m = \dfrac{m_0}{\sqrt{0{,}99}} \approx 1{,}005\,m_0\).</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Ra ngoài: \(\sqrt{a^2b} = |a|\sqrt{b}\) (\(b \ge 0\)). Vào trong: \(a\sqrt{b} = \sqrt{a^2b}\) nếu \(a \ge 0\); \(= -\sqrt{a^2b}\) nếu \(a &lt; 0\).</li>
+        <li>Khử mẫu biểu thức lấy căn: nhân tử và mẫu để mẫu thành bình phương.</li>
+        <li>Trục căn ở mẫu: \(\frac{A}{\sqrt{B}} = \frac{A\sqrt{B}}{B}\); mẫu dạng tổng/hiệu → nhân với biểu thức liên hợp.</li>
+        <li>Rút gọn: điều kiện → đưa ra ngoài dấu căn → căn đồng dạng → trục căn / quy đồng → thu gọn.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-10">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 10</span>Căn bậc ba và căn thức bậc ba</h3>
+    <p class="lesson-goal">Cần nắm: căn bậc ba của một số thực; tính căn bậc ba (đúng, gần đúng bằng máy tính cầm tay); căn thức bậc ba của một biểu thức và tính chất \((\sqrt[3]{A})^3 = \sqrt[3]{A^3} = A\).</p>
+
+    <h4>1. Căn bậc ba</h4>
+    <div class="box def">
+      <p><b>Căn bậc ba</b> của số thực \(a\) là số thực \(x\) thoả mãn <span class="kw">\(x^3 = a\)</span>.</p>
+      <p><b>Chú ý.</b> Mỗi số \(a\) đều có <b>duy nhất một</b> căn bậc ba, kí hiệu \(\sqrt[3]{a}\). Trong kí hiệu \(\sqrt[3]{a}\), số 3 được gọi là <b>chỉ số</b> của căn. Phép tìm căn bậc ba của một số gọi là <b>phép khai căn bậc ba</b>.</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 220 170" width="220" role="img" aria-label="Hình lập phương cạnh x có thể tích V bằng x mũ 3">
+        <polygon points="40,60 130,60 130,150 40,150" fill="none" class="stroke" stroke-width="2"/>
+        <polygon points="40,60 80,25 170,25 130,60" fill="none" class="stroke" stroke-width="2"/>
+        <polygon points="130,60 170,25 170,115 130,150" fill="none" class="stroke" stroke-width="2"/>
+        <line x1="40" y1="150" x2="130" y2="150" class="accent" stroke-width="3"/>
+        <text x="80" y="166" font-size="14" font-style="italic">x</text>
+        <text x="62" y="110" font-size="14">V = x³</text>
+        <text x="176" y="80" font-size="13">x = ∛V</text>
+      </svg>
+      <figcaption>Hình lập phương cạnh \(x\) có thể tích \(V = x^3\); biết thể tích thì cạnh là \(x = \sqrt[3]{V}\) (vd. \(V = 64\) ⇒ \(x = 4\)).</figcaption>
+    </figure>
+    <div class="formula">
+      <div class="formula-name">Căn bậc ba của số thực a</div>
+      <div class="formula-body">\[ x = \sqrt[3]{a} \iff x^3 = a \]</div>
+      <ul class="formula-legend">
+        <li>\(a\): số thực bất kì (có thể âm); mỗi số có đúng một căn bậc ba</li>
+        <li>\(3\): chỉ số của căn</li>
+      </ul>
+      <div class="formula-note">Nhận xét: \((\sqrt[3]{a})^3 = \sqrt[3]{a^3} = a\) với mọi số thực \(a\).</div>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1</p>
+      <p>Vì \(4^3 = 64\) nên \(\sqrt[3]{64} = 4\) (hoặc \(\sqrt[3]{64} = \sqrt[3]{4^3} = 4\)). Vì \(0^3 = 0\) nên \(\sqrt[3]{0} = 0\). Vì \((-3)^3 = -27\) nên \(\sqrt[3]{-27} = -3\).</p>
+    </div>
+    <h5>Tính căn bậc ba bằng máy tính cầm tay</h5>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Phép tính</th><th>Bấm các phím</th><th>Kết quả</th></tr></thead>
+      <tbody>
+        <tr><td>\(\sqrt[3]{343}\)</td><td>SHIFT √ 3 4 3 =</td><td>7</td></tr>
+        <tr><td>\(\sqrt[3]{12}\)</td><td>SHIFT √ 1 2 =</td><td>2,289428485</td></tr>
+        <tr><td>\(\sqrt[3]{3{,}25}\)</td><td>SHIFT √ 3 . 2 5 =</td><td>1,481248034 → \(\approx 1{,}48\)</td></tr>
+      </tbody>
+    </table></div>
+    <div class="box note">
+      <p><b>Chú ý.</b> Màn hình máy tính chỉ hiển thị hữu hạn chữ số nên kết quả là số thập phân vô hạn (tuần hoàn hay không tuần hoàn) đều được làm tròn, chẳng hạn \(\sqrt[3]{12} \approx 2{,}289428485\).</p>
+    </div>
+    <div class="box tip"><p>Nhớ các lập phương: \(1, 8, 27, 64, 125, 216, 343, 512, 729, 1000\) (của 1 → 10). Vd. 125 khối lập phương đơn vị xếp được thành một khối lập phương lớn cạnh \(\sqrt[3]{125} = 5\) (cm).</p></div>
+
+    <h4>2. Căn thức bậc ba</h4>
+    <div class="box def">
+      <p><b>Căn thức bậc ba</b> là biểu thức có dạng \(\sqrt[3]{A}\), trong đó \(A\) là một biểu thức đại số.</p>
+    </div>
+    <div class="box note">
+      <ul>
+        <li>Tương tự căn bậc ba của một số: \((\sqrt[3]{A})^3 = \sqrt[3]{A^3} = A\) (\(A\) là một biểu thức).</li>
+        <li>Để tính giá trị của \(\sqrt[3]{A}\) tại giá trị cho trước của biến, thay giá trị đó vào căn thức rồi tính giá trị biểu thức số nhận được.</li>
+      </ul>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Lập phương của căn thức bậc ba / căn bậc ba của một lập phương</div>
+      <div class="formula-body">\[ \left(\sqrt[3]{A}\right)^3 = \sqrt[3]{A^3} = A \]</div>
+      <ul class="formula-legend">
+        <li>\(A\): biểu thức bất kì (không cần điều kiện \(A \ge 0\))</li>
+        <li>Khác với căn bậc hai: \(\sqrt[3]{A^3} = A\) (không có giá trị tuyệt đối)</li>
+      </ul>
+    </div>
+    <div class="formula-row">
+      <div class="formula">
+        <div class="formula-name">Hằng đẳng thức lập phương của một tổng</div>
+        <div class="formula-body">\[ (a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3 \]</div>
+        <ul class="formula-legend"><li>Vd. \(x^3 + 3x^2 + 3x + 1 = (x + 1)^3\)</li></ul>
+      </div>
+      <div class="formula">
+        <div class="formula-name">Hằng đẳng thức lập phương của một hiệu</div>
+        <div class="formula-body">\[ (a - b)^3 = a^3 - 3a^2b + 3ab^2 - b^3 \]</div>
+        <ul class="formula-legend"><li>Vd. \(x^3 - 3x^2 + 3x - 1 = (x - 1)^3\)</li></ul>
+      </div>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Rút gọn căn thức bậc ba</p>
+      <ol class="steps">
+        <li>Viết biểu thức dưới dấu căn thành <b>lập phương</b> của một biểu thức (dùng hằng đẳng thức lập phương của tổng / hiệu).</li>
+        <li>Áp dụng \(\sqrt[3]{A^3} = A\), rồi thu gọn.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3, 4</p>
+      <ul>
+        <li>\(\sqrt[3]{2x + 5}\) tại \(x = 60\): \(\sqrt[3]{125} = \sqrt[3]{5^3} = 5\); tại \(x = -6{,}5\): \(\sqrt[3]{-8} = \sqrt[3]{(-2)^3} = -2\).</li>
+        <li>\(-x + 5 + \sqrt[3]{x^3 + 3x^2 + 3x + 1} = -x + 5 + \sqrt[3]{(x + 1)^3} = -x + 5 + (x + 1) = 6\).</li>
+      </ul>
+    </div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>So sánh</th><th>Căn bậc hai \(\sqrt{a}\)</th><th>Căn bậc ba \(\sqrt[3]{a}\)</th></tr></thead>
+      <tbody>
+        <tr><td>Định nghĩa</td><td>\(x^2 = a\), với \(a \ge 0\)</td><td>\(x^3 = a\), với mọi \(a\)</td></tr>
+        <tr><td>Số âm</td><td>Không có căn bậc hai</td><td>Có căn bậc ba (là số âm)</td></tr>
+        <tr><td>Số lượng</td><td>Số dương có 2 căn bậc hai \(\pm\sqrt{a}\)</td><td>Mỗi số có đúng 1 căn bậc ba</td></tr>
+        <tr><td>Điều kiện xác định</td><td>\(\sqrt{A}\): \(A \ge 0\)</td><td>\(\sqrt[3]{A}\): mọi giá trị làm \(A\) xác định</td></tr>
+        <tr><td>Căn của lũy thừa</td><td>\(\sqrt{A^2} = |A|\)</td><td>\(\sqrt[3]{A^3} = A\)</td></tr>
+      </tbody>
+    </table></div>
+    <div class="box warn">
+      <ul>
+        <li>\(\sqrt[3]{-8} = -2\) (có nghĩa), trong khi \(\sqrt{-8}\) không xác định.</li>
+        <li>\(\sqrt[3]{(1 - \sqrt{2})^3} = 1 - \sqrt{2}\) (giữ nguyên dấu), không lấy giá trị tuyệt đối như căn bậc hai.</li>
+      </ul>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Căn bậc ba của \(a\) là số \(x\) với \(x^3 = a\); mọi số thực có đúng một căn bậc ba \(\sqrt[3]{a}\).</li>
+        <li>\((\sqrt[3]{a})^3 = \sqrt[3]{a^3} = a\); căn bậc ba của số âm là số âm.</li>
+        <li>Căn thức bậc ba: \(\sqrt[3]{A}\); \((\sqrt[3]{A})^3 = \sqrt[3]{A^3} = A\).</li>
+        <li>Máy tính cầm tay: SHIFT √ … = để tính \(\sqrt[3]{a}\).</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-on-tap-chuong-3">
+    <h3 class="lesson-title"><span class="lesson-no">Ôn tập</span>Ôn tập Chương III</h3>
+    <p class="lesson-goal">Tóm tắt: các công thức căn bậc hai, căn bậc ba; các phép biến đổi và cách rút gọn biểu thức chứa căn; các dạng bài trong Luyện tập chung và Bài tập cuối chương.</p>
+
+    <h4>1. Bảng công thức chính</h4>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Công thức</th><th>Điều kiện</th></tr></thead>
+      <tbody>
+        <tr><td>\(\sqrt{A}\) xác định</td><td>\(A \ge 0\)</td></tr>
+        <tr><td>\((\sqrt{A})^2 = A\)</td><td>\(A \ge 0\)</td></tr>
+        <tr><td>\(\sqrt{A^2} = |A|\)</td><td>mọi \(A\)</td></tr>
+        <tr><td>\(\sqrt{A}\cdot\sqrt{B} = \sqrt{AB}\)</td><td>\(A \ge 0,\ B \ge 0\)</td></tr>
+        <tr><td>\(\dfrac{\sqrt{A}}{\sqrt{B}} = \sqrt{\dfrac{A}{B}}\)</td><td>\(A \ge 0,\ B &gt; 0\)</td></tr>
+        <tr><td>\(\sqrt{a^2b} = |a|\sqrt{b}\)</td><td>\(b \ge 0\)</td></tr>
+        <tr><td>\(a\sqrt{b} = \sqrt{a^2b}\) / \(a\sqrt{b} = -\sqrt{a^2b}\)</td><td>\(a \ge 0\) / \(a &lt; 0\); \(b \ge 0\)</td></tr>
+        <tr><td>\(\dfrac{A}{\sqrt{B}} = \dfrac{A\sqrt{B}}{B}\)</td><td>\(B &gt; 0\)</td></tr>
+        <tr><td>\(\dfrac{C}{\sqrt{A} \pm B} = \dfrac{C(\sqrt{A} \mp B)}{A - B^2}\)</td><td>\(A \ge 0,\ A \ne B^2\)</td></tr>
+        <tr><td>\(\dfrac{C}{\sqrt{A} \pm \sqrt{B}} = \dfrac{C(\sqrt{A} \mp \sqrt{B})}{A - B}\)</td><td>\(A, B \ge 0,\ A \ne B\)</td></tr>
+        <tr><td>\((\sqrt[3]{A})^3 = \sqrt[3]{A^3} = A\)</td><td>mọi \(A\)</td></tr>
+      </tbody>
+    </table></div>
+
+    <h4>2. Các dạng toán thường gặp</h4>
+    <div class="box method">
+      <p class="box-title">Dạng: Tính giá trị biểu thức số chứa căn (không dùng máy tính)</p>
+      <ol class="steps">
+        <li>Dùng \(\sqrt{A^2} = |A|\) và so sánh để bỏ dấu giá trị tuyệt đối (vd. \(1 &lt; \sqrt{3}\) ⇒ \(|1 - \sqrt{3}| = \sqrt{3} - 1\)).</li>
+        <li>Đưa thừa số ra ngoài dấu căn để có căn đồng dạng; trục căn thức ở mẫu nếu cần.</li>
+        <li>Cộng, trừ các căn đồng dạng.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập chung)</p>
+      <ul>
+        <li>\(A = \sqrt{(1 - \sqrt{3})^2} - \sqrt{3} = (\sqrt{3} - 1) - \sqrt{3} = -1\).</li>
+        <li>\((2 + \sqrt{5})(2 - \sqrt{5}) = 2^2 - (\sqrt{5})^2 = 4 - 5 = -1\).</li>
+        <li>\(A = \sqrt{(\sqrt{3} + 1)^2} - \sqrt{3(\sqrt{3} + 1)^2} + \sqrt{4} = (\sqrt{3} + 1) - \sqrt{3}(\sqrt{3} + 1) + 2 = 0\).</li>
+      </ul>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Rút gọn biểu thức chứa căn có biến, rồi tính giá trị</p>
+      <ol class="steps">
+        <li>Ghi điều kiện (vd. \(x \ge 0\), \(x \ne 1\)).</li>
+        <li>Quy đồng với mẫu chung là tích hai biểu thức liên hợp: \((\sqrt{x} + 1)(\sqrt{x} - 1) = x - 1\); hoặc phân tích tử thành nhân tử (hằng đẳng thức, vd. \(x\sqrt{x} + 1 = (\sqrt{x})^3 + 1^3\)) để rút gọn.</li>
+        <li>Thu gọn; kiểm tra giá trị của biến thoả mãn điều kiện rồi thay vào biểu thức <b>đã rút gọn</b>.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập chung) — \(P = \dfrac{\sqrt{x}}{\sqrt{x} + 1} + \dfrac{\sqrt{x}}{\sqrt{x} - 1}\), \(x \ge 0\), \(x \ne 1\)</p>
+      <p>\(P = \dfrac{\sqrt{x}(\sqrt{x} - 1) + \sqrt{x}(\sqrt{x} + 1)}{(\sqrt{x} + 1)(\sqrt{x} - 1)} = \dfrac{x - \sqrt{x} + x + \sqrt{x}}{x - 1} = \dfrac{2x}{x - 1}\).</p>
+      <p>Khi \(x = 101\): \(P = \dfrac{202}{100} = 2{,}02\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập chung) — \(P = \dfrac{x\sqrt{x} + 1}{x - \sqrt{x} + 1} - 1\), \(x \ge 0\)</p>
+      <p>\(x\sqrt{x} + 1 = (\sqrt{x})^3 + 1^3 = (\sqrt{x} + 1)(x - \sqrt{x} + 1)\) nên \(P = (\sqrt{x} + 1) - 1 = \sqrt{x}\). Tại \(x = 100\): \(P = 10\).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Bài toán thực tế dùng căn bậc hai, căn bậc ba</p>
+      <ol class="steps">
+        <li>Từ công thức đã cho (\(S = 4{,}9t^2\), \(S = \pi r^2\), \(V = x^3\), \(Q = I^2Rt\)…) rút ra đại lượng cần tìm bằng phép khai căn.</li>
+        <li>Chỉ lấy giá trị phù hợp thực tế (độ dài, thời gian, cường độ… không âm), làm tròn theo yêu cầu.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập chung) — Thùng lập phương không nắp, thể tích 216 dm³</p>
+      <p>Cạnh \(x = \sqrt[3]{216} = 6\) (dm). Thùng gồm 4 mặt bên và 1 mặt đáy: diện tích bìa \(S = 5 \cdot 6^2 = 180\) (dm²).</p>
+    </div>
+    <div class="flow"><span>Điều kiện</span><i>→</i><span>\(\sqrt{A^2} = |A|\), đưa ra ngoài dấu căn</span><i>→</i><span>Trục căn / quy đồng</span><i>→</i><span>Thu gọn căn đồng dạng</span><i>→</i><span>Thay số</span></div>
+    <div class="box warn">
+      <ul>
+        <li>Căn bậc hai của 4 là \(\pm 2\); căn bậc hai <b>số học</b> của 49 là 7.</li>
+        <li>\(\sqrt{A^2} = |A|\) nhưng \(\sqrt[3]{A^3} = A\): vd. \(\sqrt[3]{(4 - \sqrt{17})^3} = 4 - \sqrt{17}\).</li>
+        <li>Tính giá trị tại một điểm: kiểm tra điểm đó thoả mãn điều kiện trước khi thay.</li>
+      </ul>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Luôn để ý điều kiện: dưới căn bậc hai \(\ge 0\), mẫu \(\ne 0\).</li>
+        <li>Bộ biến đổi: khai phương tích/thương, đưa ra/vào dấu căn, khử mẫu, trục căn thức ở mẫu.</li>
+        <li>Cặp liên hợp: \((\sqrt{A} + \sqrt{B})(\sqrt{A} - \sqrt{B}) = A - B\).</li>
+        <li>Căn bậc ba xác định với mọi số, \(\sqrt[3]{A^3} = A\).</li>
+      </ul>
+    </div>
+  </article>
+</section>

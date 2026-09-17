@@ -1,0 +1,1384 @@
+<section class="chapter" id="toan-chuong-4">
+  <h2 class="chapter-title"><span>Chương IV · Hình học phẳng</span>Hệ thức lượng trong tam giác vuông</h2>
+
+  <article class="lesson" id="toan-bai-11">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 11</span>Tỉ số lượng giác của góc nhọn</h3>
+    <p class="lesson-goal">Cần nắm: định nghĩa sin, côsin, tang, côtang của góc nhọn; bảng giá trị của các góc 30°, 45°, 60°; quan hệ giữa tỉ số lượng giác của hai góc phụ nhau; dùng máy tính cầm tay (MTCT) tính tỉ số lượng giác và tìm góc.</p>
+
+    <h4>1. Khái niệm tỉ số lượng giác của một góc nhọn</h4>
+    <div class="box def" data-label="📘 Cạnh đối · cạnh kề · cạnh huyền">
+      <p>Cho tam giác <i>ABC</i> vuông tại <i>A</i>, xét góc nhọn <i>B</i>:</p>
+      <ul>
+        <li>Cạnh <i>AC</i> (nằm đối diện góc <i>B</i>) gọi là <span class="kw">cạnh đối</span> của góc <i>B</i>.</li>
+        <li>Cạnh <i>AB</i> (là cạnh góc vuông nằm trên một cạnh của góc <i>B</i>) gọi là <span class="kw">cạnh kề</span> của góc <i>B</i>.</li>
+        <li>Cạnh <i>BC</i> (đối diện góc vuông) là <span class="kw">cạnh huyền</span>.</li>
+      </ul>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 400 235" width="400" role="img" aria-label="Tam giác ABC vuông tại A, góc B bằng alpha, ghi cạnh đối, cạnh kề, cạnh huyền">
+        <polygon points="40,190 300,190 300,40" class="stroke" fill="none" stroke-width="2"/>
+        <path d="M288 190 L288 178 L300 178" class="stroke" fill="none" stroke-width="1.3"/>
+        <path d="M75 190 A35 35 0 0 0 70.3 172.5" class="accent" stroke-width="2"/>
+        <text x="80" y="184" font-size="15" font-style="italic">α</text>
+        <text x="22" y="200" font-size="16" font-style="italic">B</text>
+        <text x="306" y="204" font-size="16" font-style="italic">A</text>
+        <text x="306" y="42" font-size="16" font-style="italic">C</text>
+        <text x="150" y="102" font-size="14" transform="rotate(-30 150 102)" class="accent-fill">cạnh huyền</text>
+        <text x="110" y="214" font-size="14" class="accent-fill">cạnh kề (của góc α)</text>
+        <text x="312" y="112" font-size="14" class="accent-fill">cạnh đối</text>
+        <text x="312" y="130" font-size="14" class="accent-fill">(của góc α)</text>
+      </svg>
+      <figcaption>Tam giác <i>ABC</i> vuông tại <i>A</i>, góc nhọn \(\widehat{B} = \alpha\) (Hình 4.5)</figcaption>
+    </figure>
+    <div class="box note" data-label="📝 Nhận xét">
+      <p>Các tam giác vuông có cùng một góc nhọn \(\alpha\) thì <b>đồng dạng</b> với nhau. Vì vậy các tỉ số giữa cạnh đối và cạnh huyền, cạnh kề và cạnh huyền, cạnh đối và cạnh kề, cạnh kề và cạnh đối của góc \(\alpha\) <b>không phụ thuộc</b> vào tam giác được chọn, chỉ phụ thuộc vào <b>độ lớn góc</b> \(\alpha\).</p>
+    </div>
+    <div class="box def" data-label="📘 Định nghĩa sin, côsin, tang, côtang">
+      <p>Cho góc nhọn \(\alpha\). Xét tam giác <i>ABC</i> vuông tại <i>A</i> có \(\widehat{B} = \alpha\):</p>
+      <ul>
+        <li>Tỉ số giữa <b>cạnh đối</b> và <b>cạnh huyền</b> gọi là <span class="kw">sin</span> của \(\alpha\), kí hiệu \(\sin\alpha\).</li>
+        <li>Tỉ số giữa <b>cạnh kề</b> và <b>cạnh huyền</b> gọi là <span class="kw">côsin</span> của \(\alpha\), kí hiệu \(\cos\alpha\).</li>
+        <li>Tỉ số giữa <b>cạnh đối</b> và <b>cạnh kề</b> gọi là <span class="kw">tang</span> của \(\alpha\), kí hiệu \(\tan\alpha\).</li>
+        <li>Tỉ số giữa <b>cạnh kề</b> và <b>cạnh đối</b> gọi là <span class="kw">côtang</span> của \(\alpha\), kí hiệu \(\cot\alpha\).</li>
+      </ul>
+      <p>\(\sin\alpha, \cos\alpha, \tan\alpha, \cot\alpha\) gọi là các <b>tỉ số lượng giác của góc nhọn</b> \(\alpha\).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Tỉ số lượng giác của góc nhọn α</div>
+      <div class="formula-body">\[ \sin\alpha = \frac{\text{cạnh đối}}{\text{cạnh huyền}};\quad \cos\alpha = \frac{\text{cạnh kề}}{\text{cạnh huyền}} \] \[ \tan\alpha = \frac{\text{cạnh đối}}{\text{cạnh kề}};\quad \cot\alpha = \frac{\text{cạnh kề}}{\text{cạnh đối}} \]</div>
+      <ul class="formula-legend">
+        <li>Với tam giác <i>ABC</i> vuông tại <i>A</i>, \(\alpha = \widehat{B}\): \(\sin B = \dfrac{AC}{BC}\), \(\cos B = \dfrac{AB}{BC}\), \(\tan B = \dfrac{AC}{AB}\), \(\cot B = \dfrac{AB}{AC}\)</li>
+        <li>\(\sin\alpha\) còn viết là \(\sin\widehat{B}\) hay \(\sin B\); tương tự cho cos, tan, cot</li>
+      </ul>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Quan hệ giữa tang và côtang</div>
+      <div class="formula-body">\[ \cot\alpha = \frac{1}{\tan\alpha} \qquad (\tan\alpha \cdot \cot\alpha = 1) \]</div>
+      <ul class="formula-legend">
+        <li>\(\alpha\): góc nhọn (\(0^\circ &lt; \alpha &lt; 90^\circ\))</li>
+      </ul>
+    </div>
+    <div class="box fact">
+      <p>\(\sin\alpha\), \(\cos\alpha\) của góc nhọn luôn <b>dương</b> và <b>bé hơn 1</b> (vì trong tam giác vuông, cạnh huyền dài nhất): \(0 &lt; \sin\alpha &lt; 1\), \(0 &lt; \cos\alpha &lt; 1\).</p>
+    </div>
+    <div class="box tip">
+      <p>Câu nhớ: <b>“Sin đi học, Cos không hư, Tan đoàn kết, Cot kết đoàn”</b></p>
+      <p>→ <b>S</b>in = <b>Đ</b>i/<b>H</b>ọc (đối/huyền) · <b>C</b>os = <b>K</b>hông/<b>H</b>ư (kề/huyền) · <b>T</b>an = <b>Đ</b>oàn/<b>K</b>ết (đối/kề) · <b>C</b>ot = <b>K</b>ết/<b>Đ</b>oàn (kề/đối).</p>
+    </div>
+    <div class="box warn">
+      <p>Cạnh đối, cạnh kề luôn xét <b>theo góc đang tính</b>: cạnh đối của góc <i>B</i> lại là cạnh kề của góc <i>C</i>. Cạnh huyền thì không đổi.</p>
+      <p>\(\tan\alpha\), \(\cot\alpha\) có thể lớn hơn 1 (vd. \(\tan 60^\circ = \sqrt{3}\)); chỉ sin và cos luôn bé hơn 1.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1. Tam giác <i>ABC</i> vuông tại <i>A</i>, <i>AB</i> = 3 cm, <i>AC</i> = 4 cm. Tính \(\sin\alpha, \cos\alpha, \tan\alpha\) với \(\alpha = \widehat{B}\).</p>
+      <p>Theo định lí Pythagore: \(BC^2 = AC^2 + AB^2 = 4^2 + 3^2 = 25\) nên \(BC = 5\) (cm).</p>
+      <p>\(\sin\alpha = \dfrac{AC}{BC} = \dfrac{4}{5}\); \(\cos\alpha = \dfrac{AB}{BC} = \dfrac{3}{5}\); \(\tan\alpha = \dfrac{AC}{AB} = \dfrac{4}{3}\).</p>
+    </div>
+
+    <h5>Giá trị lượng giác của các góc đặc biệt 30°, 45°, 60°</h5>
+    <figure class="diagram">
+      <div class="two-col">
+        <svg viewBox="0 0 220 175" width="220" role="img" aria-label="Tam giác ABC vuông cân tại A, AB = AC = a, hai góc đáy 45 độ">
+          <polygon points="110,30 20,120 200,120" class="stroke" fill="none" stroke-width="2"/>
+          <path d="M101.5 38.5 L110 47 L118.5 38.5" class="stroke" fill="none" stroke-width="1.2"/>
+          <path d="M48 120 A28 28 0 0 0 39.8 100.2" class="accent" stroke-width="1.8"/>
+          <path d="M172 120 A28 28 0 0 1 180.2 100.2" class="accent" stroke-width="1.8"/>
+          <line x1="61" y1="71" x2="69" y2="79" class="stroke" stroke-width="1.2"/>
+          <line x1="151" y1="79" x2="159" y2="71" class="stroke" stroke-width="1.2"/>
+          <text x="105" y="22" font-size="15" font-style="italic">A</text>
+          <text x="4" y="126" font-size="15" font-style="italic">B</text>
+          <text x="204" y="126" font-size="15" font-style="italic">C</text>
+          <text x="46" y="68" font-size="14" font-style="italic">a</text>
+          <text x="166" y="68" font-size="14" font-style="italic">a</text>
+          <text x="50" y="114" font-size="12">45°</text>
+          <text x="146" y="114" font-size="12">45°</text>
+          <text x="92" y="142" font-size="14"><tspan font-style="italic">a</tspan>√2</text>
+        </svg>
+        <svg viewBox="0 0 220 175" width="220" role="img" aria-label="Tam giác đều ABC cạnh 2a, đường cao AH">
+          <polygon points="110,12 30,150 190,150" class="stroke" fill="none" stroke-width="2"/>
+          <line x1="110" y1="12" x2="110" y2="150" class="stroke" stroke-width="1.4" stroke-dasharray="5 4"/>
+          <path d="M110 140 L120 140 L120 150" class="stroke" fill="none" stroke-width="1.2"/>
+          <path d="M55 150 A25 25 0 0 0 42.5 128.3" class="accent" stroke-width="1.8"/>
+          <path d="M110 37 A25 25 0 0 1 97.5 33.7" class="accent" stroke-width="1.8"/>
+          <text x="118" y="20" font-size="15" font-style="italic">A</text>
+          <text x="14" y="156" font-size="15" font-style="italic">B</text>
+          <text x="194" y="156" font-size="15" font-style="italic">C</text>
+          <text x="104" y="168" font-size="15" font-style="italic">H</text>
+          <text x="62" y="167" font-size="13" font-style="italic">a</text>
+          <text x="150" y="167" font-size="13" font-style="italic">a</text>
+          <text x="156" y="80" font-size="14">2<tspan font-style="italic">a</tspan></text>
+          <text x="58" y="144" font-size="12">60°</text>
+          <text x="84" y="54" font-size="12">30°</text>
+          <text x="114" y="98" font-size="13"><tspan font-style="italic">a</tspan>√3</text>
+        </svg>
+      </div>
+      <figcaption>Tam giác vuông cân cạnh góc vuông \(a\) (cho góc 45°) và tam giác đều cạnh \(2a\) có đường cao \(AH = a\sqrt{3}\) (cho góc 30°, 60°)</figcaption>
+    </figure>
+    <div class="formula">
+      <div class="formula-name">Bảng tỉ số lượng giác của các góc đặc biệt 30°, 45°, 60°</div>
+      <div class="formula-body">\[ \begin{array}{c|c|c|c} \alpha & 30^\circ & 45^\circ & 60^\circ \\ \hline \sin\alpha & \dfrac{1}{2} & \dfrac{\sqrt{2}}{2} & \dfrac{\sqrt{3}}{2} \\[6pt] \cos\alpha & \dfrac{\sqrt{3}}{2} & \dfrac{\sqrt{2}}{2} & \dfrac{1}{2} \\[6pt] \tan\alpha & \dfrac{\sqrt{3}}{3} & 1 & \sqrt{3} \\[6pt] \cot\alpha & \sqrt{3} & 1 & \dfrac{\sqrt{3}}{3} \end{array} \]</div>
+      <ul class="formula-legend">
+        <li>Lấy từ tam giác vuông cân cạnh \(a\) (cạnh huyền \(a\sqrt{2}\)) và nửa tam giác đều cạnh \(2a\) (đường cao \(a\sqrt{3}\))</li>
+        <li>\(\dfrac{\sqrt{3}}{3} = \dfrac{1}{\sqrt{3}}\)</li>
+      </ul>
+    </div>
+    <div class="box tip">
+      <p>Hàng sin viết theo dãy \(\dfrac{\sqrt{1}}{2}, \dfrac{\sqrt{2}}{2}, \dfrac{\sqrt{3}}{2}\) (30° → 60°); hàng cos là hàng sin <b>viết ngược lại</b>. Hàng cot là hàng tan viết ngược lại.</p>
+      <p>Khi góc tăng từ 30° đến 60°: sin, tan <b>tăng</b>; cos, cot <b>giảm</b>.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2. Tam giác <i>ABC</i> vuông tại <i>A</i> có \(\widehat{C} = 30^\circ\), \(BC = a\). Tính <i>AB</i>, <i>AC</i> theo \(a\).</p>
+      <p>\(\sin C = \dfrac{AB}{BC}\) ⇒ \(AB = BC\cdot\sin C = a\cdot\sin 30^\circ = \dfrac{a}{2}\).</p>
+      <p>\(\cos C = \dfrac{AC}{BC}\) ⇒ \(AC = BC\cdot\cos C = a\cdot\cos 30^\circ = \dfrac{a\sqrt{3}}{2}\).</p>
+    </div>
+
+    <h4>2. Tỉ số lượng giác của hai góc phụ nhau</h4>
+    <div class="box def">
+      <p><b>Hai góc phụ nhau</b> là hai góc nhọn có tổng bằng \(90^\circ\). Hai góc phụ nhau có thể coi là <b>hai góc nhọn của một tam giác vuông</b>.</p>
+    </div>
+    <div class="box law" data-label="⚖️ Định lí (hai góc phụ nhau)">
+      <p>Nếu hai góc phụ nhau thì <b>sin góc này bằng côsin góc kia</b>, <b>tang góc này bằng côtang góc kia</b>.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Tỉ số lượng giác của hai góc phụ nhau (α + β = 90°)</div>
+      <div class="formula-body">\[ \sin\alpha = \cos\beta,\quad \cos\alpha = \sin\beta,\quad \tan\alpha = \cot\beta,\quad \cot\alpha = \tan\beta \]</div>
+      <ul class="formula-legend">
+        <li>\(\alpha, \beta\): hai góc nhọn phụ nhau, \(\beta = 90^\circ - \alpha\)</li>
+        <li>Viết gọn: \(\sin(90^\circ - \alpha) = \cos\alpha\); \(\tan(90^\circ - \alpha) = \cot\alpha\)</li>
+      </ul>
+    </div>
+    <div class="box note">
+      <p>Về số đo góc, dưới đơn vị độ (°) còn có <b>phút</b> (′) và <b>giây</b> (″): \(1^\circ = 60'\), \(1' = 60''\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3. Viết thành tỉ số lượng giác của góc nhỏ hơn 45°.</p>
+      <p>\(\sin 60^\circ = \cos(90^\circ - 60^\circ) = \cos 30^\circ\); \(\cos 75^\circ = \sin 15^\circ\);</p>
+      <p>\(\sin 52^\circ 30' = \cos(90^\circ - 52^\circ 30') = \cos 37^\circ 30'\); \(\tan 80^\circ = \cot 10^\circ\); \(\cot 82^\circ = \tan 8^\circ\).</p>
+    </div>
+    <div class="box tip">
+      <p>“<b>Sin</b> góc này = <b>cô</b>sin góc kia; <b>tang</b> góc này = <b>cô</b>tang góc kia”: chữ “cô” trong côsin, côtang chính là “complementary” (phụ).</p>
+    </div>
+
+    <h4>3. Sử dụng máy tính cầm tay tính tỉ số lượng giác của một góc nhọn</h4>
+    <div class="box method">
+      <p class="box-title">Dạng: Tính tỉ số lượng giác khi biết góc (MTCT)</p>
+      <ol class="steps">
+        <li>Để máy ở chế độ đơn vị <b>độ</b> (Deg).</li>
+        <li>sin, cos, tan: bấm phím <b>sin</b> / <b>cos</b> / <b>tan</b> → nhập số độ, bấm phím <b>° ′ ″</b>; nhập số phút, bấm <b>° ′ ″</b> → <b>=</b>.</li>
+        <li>cot: máy không có phím cot → tính <b>tan</b> của góc rồi bấm <b>x⁻¹</b> (nghịch đảo) → <b>=</b>, vì \(\cot\alpha = \dfrac{1}{\tan\alpha}\). Hoặc tính tan của góc phụ: \(\cot\alpha = \tan(90^\circ - \alpha)\).</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 4 (làm tròn đến chữ số thập phân thứ ba)</p>
+      <p>\(\sin 27^\circ \approx 0{,}454\); \(\cos 32^\circ 15' \approx 0{,}846\); \(\tan 52^\circ 12' \approx 1{,}289\); \(\cot 35^\circ 23' = \dfrac{1}{\tan 35^\circ 23'} \approx 1{,}408\) (hoặc \(= \tan 54^\circ 37'\)).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Tìm góc nhọn khi biết một tỉ số lượng giác (MTCT)</p>
+      <ol class="steps">
+        <li>Biết sin / cos / tan: bấm <b>SHIFT</b> + <b>sin</b> (<b>cos</b>, <b>tan</b>) → nhập giá trị → <b>=</b> (được số đo độ dạng thập phân).</li>
+        <li>Bấm phím <b>° ′ ″</b> để đổi sang độ, phút, giây rồi làm tròn theo yêu cầu.</li>
+        <li>Biết cot: bấm <b>SHIFT</b> + <b>tan</b> → nhập giá trị, bấm <b>x⁻¹</b> → <b>=</b> (vì \(\tan\alpha = \dfrac{1}{\cot\alpha}\)); hoặc tìm góc \(90^\circ - \alpha\) có tang bằng giá trị đó rồi suy ra \(\alpha\).</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 5 (làm tròn đến phút)</p>
+      <p>\(\sin\alpha_1 = 0{,}3214\) ⇒ \(\alpha_1 \approx 18^\circ 45'\); \(\cos\alpha_2 = 0{,}4321\) ⇒ \(\alpha_2 \approx 64^\circ 24'\);</p>
+      <p>\(\tan\alpha_3 = 1{,}2742\) ⇒ \(\alpha_3 \approx 51^\circ 52'\); \(\cot\alpha_4 = 1{,}5384\) ⇒ \(\alpha_4 \approx 33^\circ 1'\).</p>
+    </div>
+    <div class="box warn">
+      <p>Máy đang ở chế độ <b>Rad</b> hoặc <b>Gra</b> sẽ cho kết quả sai. Làm tròn “đến phút”: xét số giây, từ 30″ trở lên thì tăng 1 phút (vd. 18°44′51,4″ ≈ 18°45′).</p>
+    </div>
+    <div class="box example" data-label="✏️ Vận dụng (tự giải)">
+      <p class="box-title">Đoạn dốc vào sảnh dài 4 m, đỉnh dốc cao 0,4 m. Góc dốc có đạt chuẩn cho xe lăn (bé hơn 6°) không?</p>
+      <p>Độ dài dốc là cạnh huyền, độ cao là cạnh đối của góc dốc \(\alpha\): \(\sin\alpha = \dfrac{0{,}4}{4} = 0{,}1\) ⇒ \(\alpha \approx 5^\circ 44' &lt; 6^\circ\). Vậy dốc <b>đạt</b> tiêu chuẩn.</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>\(\sin = \dfrac{\text{đối}}{\text{huyền}}\), \(\cos = \dfrac{\text{kề}}{\text{huyền}}\), \(\tan = \dfrac{\text{đối}}{\text{kề}}\), \(\cot = \dfrac{\text{kề}}{\text{đối}}\); \(\cot\alpha = \dfrac{1}{\tan\alpha}\).</li>
+        <li>Tỉ số lượng giác chỉ phụ thuộc độ lớn góc; \(0 &lt; \sin\alpha, \cos\alpha &lt; 1\).</li>
+        <li>Thuộc bảng giá trị 30°, 45°, 60° (sin 30° = cos 60° = 1/2; tan 45° = 1…).</li>
+        <li>Hai góc phụ nhau: sin góc này = cos góc kia, tan góc này = cot góc kia.</li>
+        <li>MTCT: chế độ độ; cot = 1/tan; tìm góc dùng SHIFT + sin/cos/tan.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-12">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 12</span>Một số hệ thức giữa cạnh, góc trong tam giác vuông và ứng dụng</h3>
+    <p class="lesson-goal">Cần nắm: hệ thức giữa cạnh huyền và cạnh góc vuông (qua sin, cos); hệ thức giữa hai cạnh góc vuông (qua tan, cot); giải tam giác vuông; ứng dụng đo chiều cao, khoảng cách.</p>
+
+    <figure class="diagram">
+      <svg viewBox="0 0 310 190" width="310" role="img" aria-label="Tam giác ABC vuông tại A, cạnh huyền a, hai cạnh góc vuông b và c">
+        <polygon points="120,40 30,160 280,160" class="stroke" fill="none" stroke-width="2"/>
+        <path d="M112.8 49.6 L122.4 56.8 L129.6 47.2" class="stroke" fill="none" stroke-width="1.2"/>
+        <text x="114" y="32" font-size="16" font-style="italic">A</text>
+        <text x="12" y="168" font-size="16" font-style="italic">B</text>
+        <text x="286" y="168" font-size="16" font-style="italic">C</text>
+        <text x="60" y="96" font-size="16" font-style="italic" class="accent-fill">c</text>
+        <text x="206" y="94" font-size="16" font-style="italic" class="accent-fill">b</text>
+        <text x="150" y="180" font-size="16" font-style="italic" class="accent-fill">a</text>
+      </svg>
+      <figcaption>Quy ước: \(BC = a\) (cạnh huyền), \(AC = b\), \(AB = c\) (cạnh góc vuông); cạnh \(b\) đối diện góc <i>B</i>, cạnh \(c\) đối diện góc <i>C</i></figcaption>
+    </figure>
+
+    <h4>1. Hệ thức giữa cạnh huyền và cạnh góc vuông</h4>
+    <div class="box law" data-label="⚖️ Định lí 1">
+      <p>Trong tam giác vuông, mỗi cạnh góc vuông bằng <b>cạnh huyền nhân với sin góc đối</b> hoặc nhân với <b>côsin góc kề</b>.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Cạnh góc vuông theo cạnh huyền và sin, côsin (Định lí 1)</div>
+      <div class="formula-body">\[ b = a\cdot\sin B = a\cdot\cos C; \qquad c = a\cdot\sin C = a\cdot\cos B \]</div>
+      <ul class="formula-legend">
+        <li>Tam giác <i>ABC</i> vuông tại <i>A</i>; \(a = BC\): cạnh huyền</li>
+        <li>\(b = AC\), \(c = AB\): các cạnh góc vuông (cùng đơn vị độ dài với \(a\))</li>
+      </ul>
+      <p class="formula-note">Suy ra cạnh huyền: \( a = \dfrac{b}{\sin B} = \dfrac{b}{\cos C} \); \( a = \dfrac{c}{\sin C} = \dfrac{c}{\cos B} \).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1. Máy bay bay lên với vận tốc 500 km/h, đường bay tạo với phương ngang góc 30°. Sau 1,2 phút máy bay lên cao được bao nhiêu kilômét?</p>
+      <p>1,2 phút = \(\dfrac{1}{50}\) giờ nên quãng đường bay \(AB = 500\cdot\dfrac{1}{50} = 10\) (km).</p>
+      <p>Tam giác <i>ABH</i> vuông tại <i>H</i>, \(\widehat{A} = 30^\circ\): \(BH = AB\cdot\sin A = 10\cdot\sin 30^\circ = 10\cdot\dfrac{1}{2} = 5\) (km).</p>
+    </div>
+
+    <h4>2. Hệ thức giữa hai cạnh góc vuông</h4>
+    <div class="box law" data-label="⚖️ Định lí 2">
+      <p>Trong tam giác vuông, mỗi cạnh góc vuông bằng <b>cạnh góc vuông kia nhân với tang góc đối</b> hoặc nhân với <b>côtang góc kề</b>.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Cạnh góc vuông theo cạnh góc vuông kia và tang, côtang (Định lí 2)</div>
+      <div class="formula-body">\[ b = c\cdot\tan B = c\cdot\cot C; \qquad c = b\cdot\tan C = b\cdot\cot B \]</div>
+      <ul class="formula-legend">
+        <li>Tam giác <i>ABC</i> vuông tại <i>A</i>; \(b = AC\), \(c = AB\): hai cạnh góc vuông</li>
+        <li>Góc <i>B</i> đối diện cạnh \(b\), kề cạnh \(c\); góc <i>C</i> đối diện cạnh \(c\), kề cạnh \(b\)</li>
+      </ul>
+    </div>
+    <div class="box tip">
+      <p>Nhớ theo chữ: <b>đối = huyền × sin = kề × tan</b>; <b>kề = huyền × cos = đối × cot</b>. Đây chính là định nghĩa tỉ số lượng giác nhân chéo lên.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2. Tia nắng tạo với mặt đất góc ≈ 34°, bóng tháp dài 8,6 m. Tính chiều cao tháp (làm tròn đến mét).</p>
+      <p>Chiều cao \(h\) là cạnh đối, bóng tháp là cạnh kề của góc 34°. Theo Định lí 2: \(h = 8{,}6\cdot\tan 34^\circ \approx 6\) (m).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Tính chiều cao / khoảng cách không đo trực tiếp được</p>
+      <ol class="steps">
+        <li>Vẽ hình, tìm (hoặc tạo) một <b>tam giác vuông</b> chứa đoạn cần tính và các dữ kiện đo được (một cạnh + một góc nhọn).</li>
+        <li>Xác định đoạn cần tính là cạnh đối, cạnh kề hay cạnh huyền của góc đã biết.</li>
+        <li>Chọn hệ thức: biết huyền → dùng sin/cos (Định lí 1); biết cạnh góc vuông → dùng tan/cot (Định lí 2).</li>
+        <li>Tính bằng MTCT, cộng thêm chiều cao giác kế / chiều cao mắt người (nếu có), làm tròn theo yêu cầu.</li>
+      </ol>
+    </div>
+    <div class="box example" data-label="✏️ Tranh luận (tự giải)">
+      <p class="box-title">Hai điểm <i>A</i>, <i>B</i> ở hai bên sông; lấy <i>C</i> cùng bờ với <i>B</i> sao cho tam giác <i>ABC</i> vuông tại <i>B</i>, đo được \(\widehat{ACB} = \alpha = 55^\circ\), \(BC = a = 70\) m. Tính <i>AB</i>.</p>
+      <p>Chỉ cần <b>một cạnh và một góc nhọn</b> là tính được: \(AB = BC\cdot\tan C = 70\cdot\tan 55^\circ \approx 100\) (m).</p>
+    </div>
+
+    <h4>3. Giải tam giác vuông</h4>
+    <div class="box def">
+      <p>Trong một tam giác vuông, nếu biết trước <b>hai cạnh</b> (hoặc <b>một cạnh và một góc nhọn</b>) thì tìm được tất cả các cạnh và các góc còn lại. Bài toán này gọi là bài toán <span class="kw">giải tam giác vuông</span>.</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Giải tam giác vuông <i>ABC</i> (vuông tại <i>A</i>) khi biết hai cạnh</p>
+      <ol class="steps">
+        <li>Tính một tỉ số lượng giác của một góc nhọn từ hai cạnh đã biết (vd. biết \(b, c\): \(\tan B = \dfrac{b}{c}\); biết \(c, a\): \(\cos B = \dfrac{c}{a}\)) → dùng MTCT tìm góc đó.</li>
+        <li>Góc nhọn còn lại: \(\widehat{C} = 90^\circ - \widehat{B}\).</li>
+        <li>Cạnh thứ ba: dùng định lí Pythagore, <b>hoặc</b> dùng Định lí 1, 2 (vd. \(a = \dfrac{b}{\sin B}\)).</li>
+      </ol>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Giải tam giác vuông khi biết một cạnh và một góc nhọn</p>
+      <ol class="steps">
+        <li>Góc nhọn còn lại = \(90^\circ\) − góc đã biết.</li>
+        <li>Biết cạnh huyền \(a\): \(b = a\sin B\), \(c = a\cos B\).</li>
+        <li>Biết cạnh góc vuông (vd. \(c\)): \(b = c\tan B\); cạnh huyền \(a = \dfrac{c}{\cos B}\).</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3. Tam giác <i>ABC</i> vuông tại <i>A</i>, <i>AB</i> = 5, <i>AC</i> = 8. Tính <i>BC</i> (làm tròn đến chữ số thập phân thứ nhất) và các góc <i>B</i>, <i>C</i> (làm tròn đến độ).</p>
+      <p><i>Cách 1.</i> \(BC = \sqrt{AB^2 + AC^2} = \sqrt{5^2 + 8^2} \approx 9{,}4\).</p>
+      <p>\(\tan C = \dfrac{AB}{AC} = \dfrac{5}{8} = 0{,}625\) ⇒ \(\widehat{C} \approx 32^\circ\) ⇒ \(\widehat{B} = 90^\circ - \widehat{C} \approx 58^\circ\).</p>
+      <p><i>Cách 2.</i> Sau khi có \(\widehat{C} \approx 32^\circ\): \(\sin C = \dfrac{AB}{BC}\) ⇒ \(BC \approx \dfrac{5}{\sin 32^\circ} \approx 9{,}4\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 4. Tam giác <i>ABC</i> vuông tại <i>A</i>, <i>AB</i> = 3, \(\widehat{B} = 42^\circ\). Tính góc <i>C</i> và các cạnh <i>AC</i>, <i>BC</i> (làm tròn đến chữ số thập phân thứ ba).</p>
+      <p>\(\widehat{C} = 90^\circ - 42^\circ = 48^\circ\); \(AC = AB\cdot\tan B = 3\cdot\tan 42^\circ \approx 2{,}701\).</p>
+      <p>\(\cos B = \dfrac{AB}{BC}\) ⇒ \(BC = \dfrac{AB}{\cos B} = \dfrac{3}{\cos 42^\circ} \approx 4{,}037\).</p>
+    </div>
+    <div class="box warn">
+      <p>Giải tam giác vuông cần ít nhất <b>một cạnh</b>: biết hai góc nhọn thôi thì không tính được cạnh.</p>
+      <p>Nên dùng số liệu <b>đề cho</b> để tính (hạn chế dùng số đã làm tròn) để sai số nhỏ.</p>
+    </div>
+
+    <h5>Ứng dụng: đo chiều cao bằng hai lần ngắm</h5>
+    <figure class="diagram">
+      <svg viewBox="0 0 460 200" width="460" role="img" aria-label="Đo chiều cao tòa lâu đài bằng giác kế đặt tại hai điểm M và N">
+        <line x1="20" y1="180" x2="440" y2="180" class="stroke" stroke-width="2"/>
+        <line x1="400" y1="180" x2="400" y2="30" class="stroke" stroke-width="2.5"/>
+        <line x1="50" y1="150" x2="400" y2="150" class="stroke" stroke-width="1.2" stroke-dasharray="5 4"/>
+        <line x1="50" y1="180" x2="50" y2="150" class="stroke" stroke-width="2"/>
+        <line x1="170" y1="180" x2="170" y2="150" class="stroke" stroke-width="2"/>
+        <line x1="50" y1="150" x2="400" y2="30" class="accent" stroke-width="1.8"/>
+        <line x1="170" y1="150" x2="400" y2="30" class="accent" stroke-width="1.8"/>
+        <path d="M388 150 L388 138 L400 138" class="stroke" fill="none" stroke-width="1.2"/>
+        <path d="M95 150 A45 45 0 0 0 92.6 134.6" class="accent" stroke-width="1.6"/>
+        <path d="M215 150 A45 45 0 0 0 209.9 129.2" class="accent" stroke-width="1.6"/>
+        <text x="98" y="146" font-size="13" font-style="italic">β</text>
+        <text x="218" y="146" font-size="13" font-style="italic">α</text>
+        <text x="30" y="148" font-size="14" font-style="italic">N′</text>
+        <text x="150" y="148" font-size="14" font-style="italic">M′</text>
+        <text x="44" y="196" font-size="14" font-style="italic">N</text>
+        <text x="164" y="196" font-size="14" font-style="italic">M</text>
+        <text x="406" y="34" font-size="14" font-style="italic">P′</text>
+        <text x="406" y="156" font-size="14" font-style="italic">H</text>
+        <text x="406" y="194" font-size="14" font-style="italic">P</text>
+        <text x="94" y="174" font-size="12">20 m</text>
+        <text x="410" y="96" font-size="13" font-style="italic">x</text>
+        <text x="410" y="172" font-size="11">1,6 m</text>
+      </svg>
+      <figcaption>Giác kế cao 1,6 m đặt ở <i>M</i> rồi ở <i>N</i> (\(NM = 20\) m), nhìn đỉnh <i>P′</i> dưới góc \(\alpha\) và \(\beta\) (\(\beta &lt; \alpha\)) — tình huống mở đầu Bài 12</figcaption>
+    </figure>
+    <div class="box method">
+      <p class="box-title">Dạng: Tính chiều cao khi không đến được chân vật (ngắm tại hai điểm)</p>
+      <ol class="steps">
+        <li>Đặt \(x = P'H\), \(M'H = y\) thì \(N'H = y + 20\).</li>
+        <li>Theo Định lí 2 (dùng cot): \(y = x\cot\alpha\) và \(y + 20 = x\cot\beta\).</li>
+        <li>Trừ vế: \(20 = x(\cot\beta - \cot\alpha)\) ⇒ \(x = \dfrac{20}{\cot\beta - \cot\alpha}\).</li>
+        <li>Chiều cao vật: \(PP' = x + 1{,}6\) (m).</li>
+      </ol>
+      <p>Vd. (tự tính) \(\alpha = 27^\circ\), \(\beta = 19^\circ\): \(x = \dfrac{20}{\cot 19^\circ - \cot 27^\circ} \approx 21{,}24\) m ⇒ chiều cao ≈ 22,84 m.</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Định lí 1: cạnh góc vuông = cạnh huyền × sin góc đối = cạnh huyền × cos góc kề.</li>
+        <li>Định lí 2: cạnh góc vuông = cạnh góc vuông kia × tan góc đối = cạnh góc vuông kia × cot góc kề.</li>
+        <li>Giải tam giác vuông: biết 2 cạnh, hoặc 1 cạnh + 1 góc nhọn → tìm mọi cạnh, góc còn lại.</li>
+        <li>Hai góc nhọn của tam giác vuông: \(\widehat{B} + \widehat{C} = 90^\circ\).</li>
+        <li>Bài toán thực tế: dựng tam giác vuông chứa đoạn cần tìm, chọn đúng hệ thức.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-on-tap-chuong-4">
+    <h3 class="lesson-title"><span class="lesson-no">Ôn tập</span>Ôn tập Chương IV — Hệ thức lượng trong tam giác vuông</h3>
+    <p class="lesson-goal">Tổng hợp: tỉ số lượng giác, bảng góc đặc biệt, hai góc phụ nhau, hệ thức cạnh – góc, các dạng bài tập (Luyện tập chung và Bài tập cuối chương IV).</p>
+
+    <h4>1. Tóm tắt kiến thức</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Nội dung</th><th>Công thức (tam giác <i>ABC</i> vuông tại <i>A</i>, \(BC = a\), \(AC = b\), \(AB = c\))</th></tr></thead>
+        <tbody>
+          <tr><td>Tỉ số lượng giác của góc <i>B</i></td><td>\(\sin B = \dfrac{b}{a}\), \(\cos B = \dfrac{c}{a}\), \(\tan B = \dfrac{b}{c}\), \(\cot B = \dfrac{c}{b}\)</td></tr>
+          <tr><td>Hai góc phụ nhau (\(\widehat{B} + \widehat{C} = 90^\circ\))</td><td>\(\sin B = \cos C\), \(\cos B = \sin C\), \(\tan B = \cot C\), \(\cot B = \tan C\)</td></tr>
+          <tr><td>Định lí 1</td><td>\(b = a\sin B = a\cos C\); \(c = a\sin C = a\cos B\)</td></tr>
+          <tr><td>Định lí 2</td><td>\(b = c\tan B = c\cot C\); \(c = b\tan C = b\cot B\)</td></tr>
+          <tr><td>Góc đặc biệt</td><td>\(\sin 30^\circ = \cos 60^\circ = \tfrac12\); \(\sin 45^\circ = \cos 45^\circ = \tfrac{\sqrt2}{2}\); \(\tan 45^\circ = 1\); \(\tan 60^\circ = \cot 30^\circ = \sqrt3\)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Hệ thức sin² α + cos² α = 1 (Bài tập 4.29)</div>
+      <div class="formula-body">\[ \sin^2\alpha + \cos^2\alpha = 1 \]</div>
+      <ul class="formula-legend">
+        <li>\(\alpha\): góc nhọn bất kì</li>
+        <li>Chứng minh: \(\sin^2 B + \cos^2 B = \dfrac{b^2 + c^2}{a^2} = \dfrac{a^2}{a^2} = 1\) (định lí Pythagore)</li>
+      </ul>
+      <p class="formula-note">Suy ra: biết \(\sin\alpha\) thì \(\cos\alpha = \sqrt{1 - \sin^2\alpha}\) (và ngược lại).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Luyện tập chung – Ví dụ 1. Tam giác <i>ABC</i> vuông tại <i>A</i>, <i>AB</i> = 5 cm, <i>AC</i> = 12 cm. Tính tỉ số lượng giác của góc <i>B</i>, suy ra của góc <i>C</i>.</p>
+      <p>\(BC^2 = 5^2 + 12^2 = 169\) ⇒ \(BC = 13\) cm.</p>
+      <p>\(\sin B = \dfrac{12}{13}\), \(\cos B = \dfrac{5}{13}\), \(\tan B = \dfrac{12}{5}\), \(\cot B = \dfrac{5}{12}\).</p>
+      <p>Vì \(\widehat{B} + \widehat{C} = 90^\circ\): \(\sin C = \cos B = \dfrac{5}{13}\), \(\cos C = \dfrac{12}{13}\), \(\tan C = \dfrac{5}{12}\), \(\cot C = \dfrac{12}{5}\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Luyện tập chung – Ví dụ 2. Bức tường dạng hình thang vuông <i>ABCD</i> (vuông ở <i>A</i>, <i>D</i>), <i>AB</i> = 1 m, <i>CD</i> = 4 m, <i>AD</i> = 6 m. Tính góc \(\alpha\) giữa <i>BC</i> và mặt đất <i>AD</i>, và độ dài <i>BC</i>.</p>
+      <p>Kẻ <i>BE</i> ∥ <i>AD</i> (<i>E</i> ∈ <i>CD</i>) thì \(\widehat{EBC} = \alpha\) (đồng vị); <i>ABED</i> là hình chữ nhật nên \(BE = 6\) m, \(EC = 4 - 1 = 3\) m.</p>
+      <p>\(\tan\alpha = \dfrac{EC}{BE} = \dfrac{3}{6} = \dfrac12\) ⇒ \(\alpha \approx 26^\circ 34'\).</p>
+      <p>\(BC = \sqrt{6^2 + 3^2} = \sqrt{45} = 3\sqrt5 \approx 6{,}7\) (m) (hoặc \(BC = \dfrac{EC}{\sin\alpha}\)).</p>
+    </div>
+
+    <h4>2. Các dạng toán và cách giải</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Dạng toán</th><th>Cách giải</th></tr></thead>
+        <tbody>
+          <tr><td>Tính tỉ số lượng giác khi biết cạnh</td><td>Tìm đủ 3 cạnh (Pythagore) → áp dụng định nghĩa đối/huyền, kề/huyền, đối/kề, kề/đối</td></tr>
+          <tr><td>Đổi sang tỉ số lượng giác của góc nhỏ hơn 45°</td><td>Dùng góc phụ: \(\sin\alpha = \cos(90^\circ - \alpha)\), \(\tan\alpha = \cot(90^\circ - \alpha)\)</td></tr>
+          <tr><td>Tính giá trị biểu thức (vd. \(\dfrac{\tan 25^\circ}{\cot 65^\circ}\), \(\tan 34^\circ - \cot 56^\circ\))</td><td>Nhận ra cặp góc phụ nhau → hai tỉ số bằng nhau (kết quả 1 và 0)</td></tr>
+          <tr><td>Tính cạnh khi biết góc đặc biệt</td><td>Dùng bảng giá trị 30°, 45°, 60° → kết quả chính xác (có căn)</td></tr>
+          <tr><td>Giải tam giác vuông</td><td>Biết 2 cạnh: tính tỉ số → góc → cạnh thứ ba. Biết 1 cạnh + 1 góc: góc kia = 90° − góc đã biết, cạnh theo Định lí 1, 2</td></tr>
+          <tr><td>Tam giác thường, hình thang, hình thoi</td><td>Kẻ đường cao / dùng đường chéo để tạo tam giác vuông rồi giải</td></tr>
+          <tr><td>Bài toán thực tế (dốc, thang, bóng nắng, sông, tàu lặn)</td><td>Vẽ mô hình tam giác vuông, xác định cạnh đối/kề/huyền của góc đã biết, chọn hệ thức, làm tròn đúng yêu cầu</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flow"><span>Đọc đề, vẽ hình</span><i>→</i><span>Tìm tam giác vuông</span><i>→</i><span>Xác định đối / kề / huyền</span><i>→</i><span>Chọn sin, cos, tan, cot</span><i>→</i><span>Tính, làm tròn</span></div>
+    <div class="box warn">
+      <p>Đề hỏi “làm tròn đến độ / phút / dm” thì làm tròn <b>kết quả cuối</b>; không làm tròn sớm các bước trung gian.</p>
+      <p>Góc giữa đường chéo và cạnh, góc giữa mái và mặt đất… luôn phải chỉ rõ trong tam giác vuông nào.</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>4 tỉ số lượng giác: đối/huyền, kề/huyền, đối/kề, kề/đối.</li>
+        <li>Góc phụ nhau: sin ↔ cos, tan ↔ cot.</li>
+        <li>\(\sin^2\alpha + \cos^2\alpha = 1\); \(\tan\alpha\cdot\cot\alpha = 1\).</li>
+        <li>Cạnh góc vuông = huyền × (sin đối / cos kề) = cạnh góc vuông kia × (tan đối / cot kề).</li>
+        <li>Mọi bài toán thực tế đưa về giải tam giác vuông.</li>
+      </ul>
+    </div>
+  </article>
+</section>
+
+<section class="chapter" id="toan-chuong-5">
+  <h2 class="chapter-title"><span>Chương V · Hình học phẳng</span>Đường tròn</h2>
+
+  <article class="lesson" id="toan-bai-13">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 13</span>Mở đầu về đường tròn</h3>
+    <p class="lesson-goal">Cần nắm: định nghĩa đường tròn, hình tròn; vị trí của một điểm đối với đường tròn; đối xứng tâm, đối xứng trục; tâm đối xứng và trục đối xứng của đường tròn.</p>
+
+    <h4>1. Đường tròn</h4>
+    <div class="box def">
+      <p><b>Đường tròn tâm <i>O</i> bán kính <i>R</i></b> (\(R &gt; 0\)), kí hiệu là <span class="kw">\((O; R)\)</span>, là hình gồm tất cả các điểm cách điểm <i>O</i> một khoảng bằng <i>R</i>.</p>
+      <ul>
+        <li>Khi không cần để ý đến bán kính, kí hiệu đường tròn tâm <i>O</i> là \((O)\).</li>
+        <li>Nếu <i>A</i> là một điểm của đường tròn \((O)\) thì viết \(A \in (O)\). Khi đó ta còn nói đường tròn \((O)\) <b>đi qua</b> điểm <i>A</i>, hay điểm <i>A</i> <b>nằm trên</b> đường tròn \((O)\).</li>
+      </ul>
+    </div>
+    <div class="box def" data-label="📘 Hình tròn">
+      <p><b>Hình tròn</b> tâm <i>O</i> bán kính <i>R</i> là hình gồm các điểm <b>nằm trên</b> và <b>nằm trong</b> đường tròn \((O; R)\).</p>
+    </div>
+    <div class="box warn"><p><b>Đường tròn</b> chỉ là “đường viền” (các điểm cách tâm đúng bằng <i>R</i>); <b>hình tròn</b> gồm cả đường viền và phần bên trong.</p></div>
+    <figure class="diagram">
+      <svg viewBox="0 0 260 190" width="260" role="img" aria-label="Điểm A nằm trên, điểm C nằm trong, điểm B nằm ngoài đường tròn tâm O">
+        <circle cx="120" cy="100" r="70" class="stroke" fill="none" stroke-width="2"/>
+        <line x1="120" y1="100" x2="177.3" y2="59.8" class="accent" stroke-width="1.8"/>
+        <line x1="120" y1="100" x2="235" y2="100" class="stroke" stroke-width="1.2"/>
+        <circle cx="120" cy="100" r="3" class="accent-fill"/>
+        <circle cx="177.3" cy="59.8" r="3" class="accent-fill"/>
+        <circle cx="160" cy="100" r="3" class="accent-fill"/>
+        <circle cx="235" cy="100" r="3" class="accent-fill"/>
+        <text x="102" y="104" font-size="15" font-style="italic">O</text>
+        <text x="180" y="54" font-size="15" font-style="italic">A</text>
+        <text x="155" y="120" font-size="15" font-style="italic">C</text>
+        <text x="230" y="120" font-size="15" font-style="italic">B</text>
+        <text x="138" y="74" font-size="14" font-style="italic">R</text>
+      </svg>
+      <figcaption><i>A</i> nằm trên, <i>C</i> nằm trong, <i>B</i> nằm ngoài đường tròn \((O; R)\) (Hình 5.1)</figcaption>
+    </figure>
+    <div class="formula">
+      <div class="formula-name">Vị trí của điểm M đối với đường tròn (O; R)</div>
+      <div class="formula-body">\[ \begin{aligned} OM = R &amp;\Leftrightarrow M \text{ nằm trên } (O)\\ OM &lt; R &amp;\Leftrightarrow M \text{ nằm trong } (O)\\ OM &gt; R &amp;\Leftrightarrow M \text{ nằm ngoài } (O) \end{aligned} \]</div>
+      <ul class="formula-legend">
+        <li>\(OM\): khoảng cách từ tâm \(O\) đến điểm \(M\)</li>
+        <li>\(R\): bán kính đường tròn (cùng đơn vị độ dài)</li>
+      </ul>
+    </div>
+    <div class="box note">
+      <p>Nếu <i>O</i> là trung điểm của đoạn <i>AB</i> thì \(OA = OB\) nên đường tròn \((O; OA)\) đi qua <i>B</i> (Ví dụ 1). Đoạn <i>AB</i> là một <b>đường kính</b> của \((O)\); \((O)\) còn gọi là <span class="kw">đường tròn đường kính <i>AB</i></span>.</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Xác định vị trí của một điểm đối với đường tròn</p>
+      <ol class="steps">
+        <li>Tính khoảng cách \(OM\) từ tâm đến điểm (trong mặt phẳng toạ độ: dùng định lí Pythagore, vd. \(M(x; y)\) thì \(OM = \sqrt{x^2 + y^2}\) với \(O\) là gốc toạ độ).</li>
+        <li>So sánh \(OM\) với \(R\) → kết luận nằm trên / trong / ngoài.</li>
+      </ol>
+    </div>
+    <div class="box example" data-label="✏️ Vận dụng 1 (tự giải)">
+      <p class="box-title">Trong mặt phẳng toạ độ <i>Oxy</i> cho \(A(3; 0)\), \(B(-2; 0)\), \(C(0; 4)\). Xét vị trí các điểm đối với \((O; 3)\).</p>
+      <p>\(OA = 3 = R\) → <i>A</i> nằm trên; \(OB = 2 &lt; 3\) → <i>B</i> nằm trong; \(OC = 4 &gt; 3\) → <i>C</i> nằm ngoài \((O; 3)\).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Chứng minh nhiều điểm cùng nằm trên một đường tròn</p>
+      <ol class="steps">
+        <li>Chỉ ra một điểm <i>O</i> <b>cách đều</b> các điểm đó (\(OA = OB = OC = \dots\)).</li>
+        <li>Tam giác vuông: trung điểm cạnh huyền cách đều ba đỉnh (đường trung tuyến ứng với cạnh huyền bằng nửa cạnh huyền) → đỉnh góc vuông nằm trên đường tròn đường kính là cạnh huyền.</li>
+        <li>Kết luận các điểm cùng thuộc đường tròn tâm <i>O</i>, bán kính bằng khoảng cách chung.</li>
+      </ol>
+    </div>
+
+    <h4>2. Tính đối xứng của đường tròn</h4>
+    <div class="two-col">
+      <div class="box def" data-label="📘 Đối xứng tâm">
+        <p>Hai điểm <i>M</i> và <i>M′</i> gọi là <b>đối xứng với nhau qua điểm <i>I</i></b> (qua tâm <i>I</i>) nếu <span class="kw"><i>I</i> là trung điểm</span> của đoạn thẳng <i>MM′</i>.</p>
+        <p>Vd. <i>O</i> là giao điểm hai đường chéo hình bình hành <i>ABCD</i> thì <i>A</i> và <i>C</i> (cũng như <i>B</i> và <i>D</i>) đối xứng nhau qua <i>O</i>.</p>
+      </div>
+      <div class="box def" data-label="📘 Đối xứng trục">
+        <p>Hai điểm <i>M</i> và <i>M′</i> gọi là <b>đối xứng với nhau qua đường thẳng <i>d</i></b> (qua trục <i>d</i>) nếu <span class="kw"><i>d</i> là đường trung trực</span> của đoạn thẳng <i>MM′</i>.</p>
+        <p>Vd. <i>AH</i> là đường cao của tam giác <i>ABC</i> cân tại <i>A</i> thì <i>B</i> và <i>C</i> đối xứng nhau qua <i>AH</i>.</p>
+      </div>
+    </div>
+    <figure class="diagram">
+      <div class="two-col">
+        <svg viewBox="0 0 220 100" width="220" role="img" aria-label="M và M phẩy đối xứng qua tâm I">
+          <line x1="30" y1="50" x2="190" y2="50" class="stroke" stroke-width="2"/>
+          <circle cx="30" cy="50" r="3" class="accent-fill"/>
+          <circle cx="110" cy="50" r="3.5" class="accent-fill"/>
+          <circle cx="190" cy="50" r="3" class="accent-fill"/>
+          <line x1="66" y1="44" x2="74" y2="56" class="stroke" stroke-width="1.3"/>
+          <line x1="146" y1="44" x2="154" y2="56" class="stroke" stroke-width="1.3"/>
+          <text x="14" y="42" font-size="15" font-style="italic">M</text>
+          <text x="106" y="74" font-size="15" font-style="italic">I</text>
+          <text x="186" y="42" font-size="15" font-style="italic">M′</text>
+          <text x="60" y="94" font-size="12">Đối xứng qua tâm I</text>
+        </svg>
+        <svg viewBox="0 0 220 100" width="220" role="img" aria-label="M và M phẩy đối xứng qua trục d">
+          <line x1="30" y1="55" x2="190" y2="55" class="stroke" stroke-width="2"/>
+          <line x1="110" y1="8" x2="110" y2="80" class="accent" stroke-width="2"/>
+          <path d="M110 45 L120 45 L120 55" class="stroke" fill="none" stroke-width="1.2"/>
+          <circle cx="30" cy="55" r="3" class="accent-fill"/>
+          <circle cx="190" cy="55" r="3" class="accent-fill"/>
+          <line x1="66" y1="49" x2="74" y2="61" class="stroke" stroke-width="1.3"/>
+          <line x1="146" y1="49" x2="154" y2="61" class="stroke" stroke-width="1.3"/>
+          <text x="14" y="48" font-size="15" font-style="italic">M</text>
+          <text x="94" y="72" font-size="15" font-style="italic">H</text>
+          <text x="186" y="48" font-size="15" font-style="italic">M′</text>
+          <text x="116" y="18" font-size="15" font-style="italic">d</text>
+          <text x="60" y="96" font-size="12">Đối xứng qua trục d</text>
+        </svg>
+      </div>
+      <figcaption>Trái: <i>I</i> là trung điểm <i>MM′</i>. Phải: <i>d</i> là đường trung trực của <i>MM′</i></figcaption>
+    </figure>
+    <div class="box law" data-label="⚖️ Tâm và trục đối xứng của đường tròn">
+      <ul>
+        <li>Đường tròn là hình có tâm đối xứng; <b>tâm của đường tròn</b> là <span class="kw">tâm đối xứng</span> của nó.</li>
+        <li>Đường tròn là hình có trục đối xứng; <b>mỗi đường thẳng đi qua tâm</b> của đường tròn là một <span class="kw">trục đối xứng</span> của nó.</li>
+      </ul>
+    </div>
+    <div class="box tip"><p>Đường tròn có <b>một</b> tâm đối xứng nhưng có <b>vô số</b> trục đối xứng (mọi đường kính).</p></div>
+    <figure class="diagram">
+      <svg viewBox="0 0 260 200" width="260" role="img" aria-label="Điểm N đối xứng với M qua tâm O, điểm P đối xứng với M qua đường kính AB">
+        <circle cx="130" cy="100" r="70" class="stroke" fill="none" stroke-width="2"/>
+        <line x1="36" y1="100" x2="224" y2="100" class="stroke" stroke-width="1.5"/>
+        <line x1="194" y1="23.8" x2="66" y2="176.2" class="accent" stroke-width="1.5"/>
+        <line x1="175" y1="22" x2="175" y2="178" class="accent" stroke-width="1.5"/>
+        <path d="M165 100 L165 90 L175 90" class="stroke" fill="none" stroke-width="1.1"/>
+        <circle cx="130" cy="100" r="3" class="accent-fill"/>
+        <text x="46" y="94" font-size="14" font-style="italic">A</text>
+        <text x="204" y="94" font-size="14" font-style="italic">B</text>
+        <text x="118" y="92" font-size="14" font-style="italic">O</text>
+        <text x="180" y="46" font-size="14" font-style="italic">M</text>
+        <text x="66" y="160" font-size="14" font-style="italic">N</text>
+        <text x="180" y="166" font-size="14" font-style="italic">P</text>
+        <text x="179" y="116" font-size="14" font-style="italic">H</text>
+      </svg>
+      <figcaption><i>N</i> đối xứng với <i>M</i> qua tâm <i>O</i>; <i>P</i> đối xứng với <i>M</i> qua đường kính <i>AB</i> (Hình 5.5)</figcaption>
+    </figure>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2. <i>M</i> nằm trên \((O)\) đường kính <i>AB</i>. Tìm điểm <i>N</i> đối xứng với <i>M</i> qua <i>O</i> và điểm <i>P</i> đối xứng với <i>M</i> qua <i>AB</i>.</p>
+      <p>a) <i>O</i> là tâm đối xứng của \((O)\) nên <i>N</i> vừa thuộc \((O)\), vừa thuộc đường thẳng <i>OM</i> → <i>N</i> là giao điểm (khác <i>M</i>) của \((O)\) với đường thẳng <i>OM</i>.</p>
+      <p>b) <i>AB</i> là trục đối xứng của \((O)\) nên <i>P</i> vừa thuộc \((O)\), vừa thuộc đường vuông góc hạ từ <i>M</i> xuống <i>AB</i> → <i>P</i> là giao điểm (khác <i>M</i>) của \((O)\) với đường thẳng qua <i>M</i> vuông góc với <i>AB</i>.</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Tìm lại tâm của một hình tròn (tình huống mở đầu)</p>
+      <ol class="steps">
+        <li>Gấp đôi mảnh giấy hình tròn sao cho hai nửa trùng khít: nếp gấp là một <b>trục đối xứng</b>, tức là một đường kính.</li>
+        <li>Gấp đôi theo một cách khác được đường kính thứ hai.</li>
+        <li>Giao điểm của hai nếp gấp là <b>tâm</b> hình tròn.</li>
+      </ol>
+    </div>
+    <div class="box note"><p>Đường trung trực của một dây <i>AB</i> bất kì đi qua tâm <i>O</i> (vì \(OA = OB\)) nên là một trục đối xứng của \((O)\) (Luyện tập 2).</p></div>
+
+    <div class="key-points">
+      <ul>
+        <li>\((O; R)\): tập hợp các điểm cách <i>O</i> một khoảng bằng <i>R</i>; hình tròn gồm cả phần bên trong.</li>
+        <li>So sánh \(OM\) với \(R\): bằng → trên, nhỏ hơn → trong, lớn hơn → ngoài.</li>
+        <li>Đối xứng qua tâm <i>I</i>: <i>I</i> là trung điểm; đối xứng qua trục <i>d</i>: <i>d</i> là trung trực.</li>
+        <li>Tâm đường tròn là tâm đối xứng; mọi đường thẳng qua tâm là trục đối xứng.</li>
+        <li>Đỉnh góc vuông của tam giác vuông nằm trên đường tròn đường kính là cạnh huyền.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-14">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 14</span>Cung và dây của một đường tròn</h3>
+    <p class="lesson-goal">Cần nắm: dây cung, đường kính; đường kính là dây lớn nhất; góc ở tâm, cung bị chắn; cách xác định số đo của một cung.</p>
+
+    <h4>1. Dây và đường kính của đường tròn</h4>
+    <div class="box def">
+      <ul>
+        <li>Đoạn thẳng nối hai điểm tuỳ ý của một đường tròn gọi là một <span class="kw">dây</span> (hay <b>dây cung</b>) của đường tròn.</li>
+        <li>Mỗi dây đi qua tâm là một <span class="kw">đường kính</span> của đường tròn. Đường kính của đường tròn bán kính <i>R</i> có độ dài bằng \(2R\).</li>
+      </ul>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 230 190" width="230" role="img" aria-label="Đường tròn tâm O với dây CD và đường kính AB">
+        <circle cx="110" cy="100" r="70" class="stroke" fill="none" stroke-width="2"/>
+        <line x1="40" y1="100" x2="180" y2="100" class="accent" stroke-width="2"/>
+        <line x1="44.2" y1="76.1" x2="133.9" y2="34.2" class="stroke" stroke-width="2"/>
+        <circle cx="110" cy="100" r="3" class="accent-fill"/>
+        <text x="24" y="104" font-size="15" font-style="italic">A</text>
+        <text x="186" y="104" font-size="15" font-style="italic">B</text>
+        <text x="104" y="118" font-size="15" font-style="italic">O</text>
+        <text x="28" y="74" font-size="15" font-style="italic">C</text>
+        <text x="136" y="28" font-size="15" font-style="italic">D</text>
+        <text x="140" y="94" font-size="12" class="accent-fill">đường kính</text>
+        <text x="62" y="46" font-size="12">dây</text>
+      </svg>
+      <figcaption><i>CD</i> là một dây, <i>AB</i> là một đường kính của \((O)\) (Hình 5.6)</figcaption>
+    </figure>
+    <div class="box law" data-label="⚖️ Định lí">
+      <p>Trong một đường tròn, <b>đường kính là dây cung lớn nhất</b>.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Độ dài dây cung so với đường kính</div>
+      <div class="formula-body">\[ AB \le 2R \]</div>
+      <ul class="formula-legend">
+        <li>\(AB\): dây bất kì của \((O; R)\); \(2R\): độ dài đường kính</li>
+        <li>Dấu “=” xảy ra khi và chỉ khi \(AB\) là đường kính (dây đi qua tâm)</li>
+      </ul>
+      <p class="formula-note">Chứng minh: dây \(AB\) không qua tâm thì trong tam giác \(AOB\): \(AB &lt; OA + OB = 2R\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1. Tứ giác lồi <i>ABCD</i> có \(\widehat{BAC} = \widehat{BDC} = 90^\circ\). Chứng minh <i>A</i>, <i>B</i>, <i>C</i>, <i>D</i> cùng nằm trên một đường tròn và \(AD &lt; BC\).</p>
+      <p>Gọi <i>O</i> là trung điểm <i>BC</i>. Tam giác <i>ABC</i> vuông tại <i>A</i> nên trung tuyến \(AO = \dfrac{BC}{2} = OB = OC\) → <i>A</i> thuộc đường tròn \((O)\) đường kính <i>BC</i>.</p>
+      <p>Tương tự với tam giác <i>DBC</i>: <i>D</i> thuộc \((O)\). Vậy <i>AD</i> là một dây không qua tâm của \((O)\) nên \(AD &lt; BC\) (định lí trên).</p>
+    </div>
+
+    <h4>2. Góc ở tâm, cung và số đo của một cung</h4>
+    <div class="box def">
+      <ul>
+        <li>Hai điểm <i>A</i>, <i>B</i> cùng thuộc một đường tròn chia đường tròn thành hai phần, mỗi phần gọi là một <span class="kw">cung tròn</span> (hay <b>cung</b>). <i>A</i> và <i>B</i> gọi là hai <b>mút</b> (đầu mút) của mỗi cung.</li>
+        <li><span class="kw">Góc ở tâm</span> là góc có đỉnh trùng với tâm của đường tròn.</li>
+      </ul>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 240 190" width="240" role="img" aria-label="Góc ở tâm AOB bằng alpha chắn cung nhỏ AmB; cung lớn AnB">
+        <circle cx="120" cy="100" r="70" class="stroke" fill="none" stroke-width="2"/>
+        <path d="M190 100 A70 70 0 0 0 143.9 34.2" class="accent" stroke-width="4"/>
+        <line x1="120" y1="100" x2="220" y2="100" class="stroke" stroke-width="1.6"/>
+        <line x1="120" y1="100" x2="150.8" y2="15.4" class="stroke" stroke-width="1.6"/>
+        <path d="M140 100 A20 20 0 0 0 126.8 81.2" class="accent" stroke-width="1.6"/>
+        <circle cx="120" cy="100" r="3" class="accent-fill"/>
+        <text x="100" y="112" font-size="15" font-style="italic">O</text>
+        <text x="196" y="94" font-size="15" font-style="italic">A</text>
+        <text x="148" y="36" font-size="15" font-style="italic">B</text>
+        <text x="138" y="92" font-size="13" font-style="italic">α</text>
+        <text x="186" y="52" font-size="15" font-style="italic" class="accent-fill">m</text>
+        <text x="44" y="160" font-size="15" font-style="italic">n</text>
+      </svg>
+      <figcaption>Góc ở tâm \(\widehat{AOB} = \alpha\) chắn cung nhỏ \(\overset{\frown}{AmB}\) (tô màu); phần còn lại là cung lớn \(\overset{\frown}{AnB}\) (Hình 5.9)</figcaption>
+    </figure>
+    <div class="box note" data-label="📝 Chú ý">
+      <ul>
+        <li>Khi góc <i>AOB</i> <b>không bẹt</b>: cung nằm trong góc <i>AOB</i> gọi là <b>cung nhỏ</b> (kí hiệu \(\overset{\frown}{AmB}\), gọn là \(\overset{\frown}{AB}\)); cung còn lại (\(\overset{\frown}{AnB}\)) gọi là <b>cung lớn</b>.</li>
+        <li>Khi góc <i>AOB</i> <b>bẹt</b>: mỗi cung <i>AB</i> là một <b>nửa đường tròn</b>.</li>
+        <li>Ta nói góc <i>AOB</i> <b>chắn</b> cung <i>AB</i>, hay cung <i>AB</i> <b>bị chắn</b> bởi góc <i>AOB</i>.</li>
+        <li>Hai điểm <i>A</i>, <i>B</i> cho <b>hai cung</b> nhưng chỉ <b>một</b> góc ở tâm \(\widehat{AOB}\).</li>
+      </ul>
+    </div>
+    <div class="box def" data-label="📘 Số đo của một cung">
+      <ul>
+        <li>Số đo của <b>nửa đường tròn</b> bằng \(180^\circ\).</li>
+        <li>Số đo của <b>cung nhỏ</b> bằng số đo của <b>góc ở tâm</b> chắn cung đó.</li>
+        <li>Số đo của <b>cung lớn</b> bằng hiệu giữa \(360^\circ\) và số đo của cung nhỏ có chung hai mút.</li>
+      </ul>
+      <p>Số đo cung <i>AB</i> kí hiệu là \(\text{sđ}\,\overset{\frown}{AB}\).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Số đo cung nhỏ, cung lớn</div>
+      <div class="formula-body">\[ \text{sđ}\,\overset{\frown}{AmB} = \widehat{AOB} = \alpha \ \ (0^\circ &lt; \alpha \le 180^\circ); \qquad \text{sđ}\,\overset{\frown}{AnB} = 360^\circ - \alpha \]</div>
+      <ul class="formula-legend">
+        <li>\(\overset{\frown}{AmB}\): cung nhỏ; \(\overset{\frown}{AnB}\): cung lớn có chung hai mút <i>A</i>, <i>B</i></li>
+        <li>\(\alpha\): số đo góc ở tâm \(\widehat{AOB}\) (độ)</li>
+      </ul>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Cộng số đo cung (A nằm trên cung BAC)</div>
+      <div class="formula-body">\[ \text{sđ}\,\overset{\frown}{BAC} = \text{sđ}\,\overset{\frown}{BA} + \text{sđ}\,\overset{\frown}{AC} \]</div>
+      <ul class="formula-legend">
+        <li><i>A</i>: một điểm thuộc cung \(\overset{\frown}{BAC}\) (các số đo tính bằng độ)</li>
+      </ul>
+    </div>
+    <div class="box note" data-label="📝 Chú ý">
+      <ul>
+        <li>Cung có số đo \(n^\circ\) còn gọi là <b>cung \(n^\circ\)</b>. Cả đường tròn được coi là cung \(360^\circ\); đôi khi coi một điểm là cung \(0^\circ\).</li>
+        <li>Hai cung trên <b>một đường tròn</b> gọi là <b>bằng nhau</b> nếu chúng có cùng số đo.</li>
+        <li>Số đo cung lớn luôn lớn hơn \(180^\circ\) (vì cung nhỏ có số đo nhỏ hơn \(180^\circ\)).</li>
+      </ul>
+    </div>
+    <div class="box warn"><p>Chỉ so sánh / nói “hai cung bằng nhau” khi hai cung nằm trên <b>cùng một đường tròn</b> (hoặc hai đường tròn bằng nhau). Kí hiệu \(\overset{\frown}{AB}\) (không có chữ ở giữa) mặc định là <b>cung nhỏ</b>.</p></div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2. Ba điểm <i>A</i>, <i>B</i>, <i>C</i> thuộc \((O)\). Tìm các góc ở tâm và các cung có hai mút là hai trong ba điểm đó.</p>
+      <p>Góc ở tâm: \(\widehat{AOB}, \widehat{BOC}, \widehat{COA}\).</p>
+      <p>Cung: hai mút <i>A</i>, <i>B</i>: \(\overset{\frown}{AB}, \overset{\frown}{ACB}\); hai mút <i>A</i>, <i>C</i>: \(\overset{\frown}{AC}, \overset{\frown}{ABC}\); hai mút <i>B</i>, <i>C</i>: \(\overset{\frown}{BAC}, \overset{\frown}{BaC}\) (6 cung).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3. Tam giác <i>ABC</i> vuông cân tại <i>A</i>, nội tiếp \((O)\) với <i>BC</i> là đường kính. Tính số đo các cung có mút là hai trong ba điểm <i>A</i>, <i>B</i>, <i>C</i>.</p>
+      <p>Tam giác <i>ABC</i> vuông cân tại <i>A</i> nên trung tuyến <i>AO</i> cũng là đường cao: \(AO \perp BC\) ⇒ \(\widehat{AOB} = \widehat{AOC} = 90^\circ\) ⇒ \(\text{sđ}\,\overset{\frown}{AB} = \text{sđ}\,\overset{\frown}{AC} = 90^\circ\).</p>
+      <p>\(\text{sđ}\,\overset{\frown}{ACB} = 360^\circ - 90^\circ = 270^\circ\); \(\text{sđ}\,\overset{\frown}{ABC} = 360^\circ - 90^\circ = 270^\circ\). Hai nửa đường tròn mút <i>B</i>, <i>C</i> có số đo \(180^\circ\).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Tính số đo cung</p>
+      <ol class="steps">
+        <li>Xác định cung cần tính là cung nhỏ, cung lớn hay nửa đường tròn.</li>
+        <li>Cung nhỏ: tìm góc ở tâm chắn cung (dùng tam giác cân, tam giác đều, đường cao, tỉ số lượng giác…).</li>
+        <li>Cung lớn: lấy \(360^\circ\) trừ số đo cung nhỏ cùng hai mút. Cung ghép: cộng số đo các cung nhỏ liền nhau.</li>
+      </ol>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Tính khoảng cách từ tâm đến dây (Bài tập 5.6, 5.7, 5.16)</p>
+      <ol class="steps">
+        <li>Kẻ \(OH \perp AB\) (<i>H</i> ∈ <i>AB</i>). Tam giác <i>OAB</i> cân tại <i>O</i> (\(OA = OB = R\)) nên đường cao <i>OH</i> cũng là trung tuyến: <i>H</i> là trung điểm <i>AB</i>, và là phân giác: \(\widehat{AOH} = \tfrac12\widehat{AOB}\).</li>
+        <li>Trong tam giác vuông <i>OHA</i>: \(OH^2 + AH^2 = R^2\), hoặc dùng tỉ số lượng giác của góc \(\widehat{AOH}\).</li>
+      </ol>
+      <p>Vd. (tự tính) \((O; 5\text{ cm})\), dây \(AB = 6\) cm: \(AH = 3\) cm, \(OH = \sqrt{5^2 - 3^2} = 4\) cm.</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Dây: đoạn nối hai điểm của đường tròn; dây qua tâm là đường kính (dài \(2R\)).</li>
+        <li>Đường kính là dây lớn nhất: \(AB \le 2R\).</li>
+        <li>Góc ở tâm: đỉnh trùng tâm; chắn cung nằm bên trong nó.</li>
+        <li>sđ cung nhỏ = góc ở tâm; sđ cung lớn = 360° − sđ cung nhỏ; nửa đường tròn = 180°.</li>
+        <li>Hai cung trên một đường tròn bằng nhau khi có cùng số đo.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-15">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 15</span>Độ dài của cung tròn. Diện tích hình quạt tròn và hình vành khuyên</h3>
+    <p class="lesson-goal">Cần nắm: công thức độ dài đường tròn, độ dài cung \(n^\circ\); khái niệm và công thức diện tích hình quạt tròn, hình vành khuyên.</p>
+
+    <h4>1. Độ dài của cung tròn</h4>
+    <div class="box fact">
+      <p>Tỉ số giữa chu vi và đường kính của mọi đường tròn luôn bằng một số vô tỉ không đổi, gọi là số <span class="kw">\(\pi\)</span> (đọc là “pi”). Trong đời sống thường lấy \(\pi \approx 3{,}14\).</p>
+      <p>Trên một đường tròn, hai cung bằng nhau thì có cùng độ dài, và độ dài của cung <b>tỉ lệ</b> với số đo của nó.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Độ dài đường tròn (chu vi)</div>
+      <div class="formula-body">\[ C = \pi d = 2\pi R \]</div>
+      <ul class="formula-legend">
+        <li>\(C\): độ dài đường tròn</li>
+        <li>\(R\): bán kính; \(d = 2R\): đường kính (cùng đơn vị độ dài với \(C\))</li>
+        <li>\(\pi \approx 3{,}14\)</li>
+      </ul>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Độ dài cung tròn n°</div>
+      <div class="formula-body">\[ l = \frac{n}{180}\pi R \]</div>
+      <ul class="formula-legend">
+        <li>\(l\): độ dài cung \(n^\circ\) (cùng đơn vị với \(R\))</li>
+        <li>\(n\): số đo cung (độ); \(R\): bán kính đường tròn</li>
+      </ul>
+      <p class="formula-note">Cách lập: cung \(1^\circ\) dài \(\dfrac{2\pi R}{360} = \dfrac{\pi R}{180}\) → cung \(n^\circ\) dài gấp \(n\) lần. Suy ra \(n = \dfrac{180\,l}{\pi R}\); \(R = \dfrac{180\,l}{\pi n}\).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Tỉ số độ dài cung n° và độ dài đường tròn</div>
+      <div class="formula-body">\[ l = \frac{n}{360}\pi d = \frac{n}{360}C \quad\Leftrightarrow\quad \frac{l}{C} = \frac{n}{360} \]</div>
+      <ul class="formula-legend">
+        <li>\(l\): độ dài cung \(n^\circ\); \(C\): độ dài đường tròn cùng bán kính</li>
+      </ul>
+    </div>
+    <div class="box warn"><p>Công thức độ dài cung có mẫu là <b>180</b> (vì \(2\pi R\) chia 360); công thức diện tích hình quạt có mẫu là <b>360</b>. Đừng nhầm hai mẫu số này.</p></div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1. <i>A</i>, <i>B</i> trên \((O; 3\text{ cm})\), \(\widehat{AOB} = 120^\circ\). Tính số đo và độ dài các cung có hai mút <i>A</i>, <i>B</i>.</p>
+      <p>Cung nhỏ <i>AB</i>: \(\text{sđ}\,\overset{\frown}{AB} = 120^\circ\); \(l_1 = \dfrac{120}{180}\pi\cdot 3 = 2\pi\) (cm).</p>
+      <p>Cung lớn <i>AmB</i>: \(\text{sđ}\,\overset{\frown}{AmB} = 360^\circ - 120^\circ = 240^\circ\); \(l_2 = \dfrac{240}{180}\pi\cdot 3 = 4\pi\) (cm).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Quãng đường bánh xe lăn được</p>
+      <ol class="steps">
+        <li>Mỗi vòng quay, một điểm trên vành bánh xe đi được đúng <b>một chu vi</b> \(C = \pi d\).</li>
+        <li>Quãng đường = số vòng quay của bánh xe × \(\pi d\).</li>
+        <li>Xe đạp: số vòng bánh xe = số vòng giò đĩa × (số vòng bánh xe quay được khi giò đĩa quay 1 vòng). Đổi đơn vị (mm → m) trước khi kết luận.</li>
+      </ol>
+      <p>Vd. (Vận dụng 1, tự tính) bánh xe \(d = 650\) mm, giò đĩa quay 1 vòng thì bánh xe quay 3,3 vòng; đạp 10 vòng: \(10\cdot 3{,}3\cdot \pi\cdot 0{,}65 \approx 67{,}4\) (m).</p>
+    </div>
+
+    <h4>2. Hình quạt tròn và hình vành khuyên</h4>
+    <div class="two-col">
+      <div class="box def" data-label="📘 Hình quạt tròn">
+        <p><b>Hình quạt tròn</b> là phần hình tròn giới hạn bởi <span class="kw">một cung tròn</span> và <span class="kw">hai bán kính</span> đi qua hai đầu mút của cung đó.</p>
+      </div>
+      <div class="box def" data-label="📘 Hình vành khuyên">
+        <p><b>Hình vành khuyên</b> (còn gọi là hình vành khăn) là phần nằm giữa <span class="kw">hai đường tròn có cùng tâm</span> và bán kính khác nhau (hai đường tròn <b>đồng tâm</b>).</p>
+      </div>
+    </div>
+    <figure class="diagram">
+      <div class="two-col">
+        <svg viewBox="0 0 220 200" width="220" role="img" aria-label="Hình quạt tròn OAB ứng với cung n độ">
+          <path d="M110 100 L163.6 55 A70 70 0 0 1 163.6 145 Z" class="accent-fill" fill-opacity="0.25"/>
+          <circle cx="110" cy="100" r="70" class="stroke" fill="none" stroke-width="2"/>
+          <path d="M163.6 55 A70 70 0 0 1 163.6 145" class="accent" stroke-width="3"/>
+          <line x1="110" y1="100" x2="163.6" y2="55" class="accent" stroke-width="2"/>
+          <line x1="110" y1="100" x2="163.6" y2="145" class="accent" stroke-width="2"/>
+          <path d="M128 84.9 A23.5 23.5 0 0 1 128 115.1" class="stroke" fill="none" stroke-width="1.2"/>
+          <circle cx="110" cy="100" r="3" class="accent-fill"/>
+          <text x="92" y="104" font-size="15" font-style="italic">O</text>
+          <text x="166" y="50" font-size="15" font-style="italic">A</text>
+          <text x="166" y="162" font-size="15" font-style="italic">B</text>
+          <text x="138" y="105" font-size="13"><tspan font-style="italic">n</tspan>°</text>
+          <text x="126" y="72" font-size="14" font-style="italic">R</text>
+          <text x="186" y="104" font-size="15" font-style="italic">l</text>
+          <text x="60" y="192" font-size="12">Hình quạt tròn</text>
+        </svg>
+        <svg viewBox="0 0 220 200" width="220" role="img" aria-label="Hình vành khuyên giữa hai đường tròn đồng tâm bán kính R và r">
+          <path d="M40 100 a70 70 0 1 0 140 0 a70 70 0 1 0 -140 0 Z M72 100 a38 38 0 1 0 76 0 a38 38 0 1 0 -76 0 Z" class="accent-fill" fill-opacity="0.25" fill-rule="evenodd"/>
+          <circle cx="110" cy="100" r="70" class="stroke" fill="none" stroke-width="2"/>
+          <circle cx="110" cy="100" r="38" class="stroke" fill="none" stroke-width="2"/>
+          <line x1="110" y1="100" x2="170.6" y2="135" class="stroke" stroke-width="1.5"/>
+          <line x1="110" y1="100" x2="142.9" y2="81" class="stroke" stroke-width="1.5"/>
+          <circle cx="110" cy="100" r="3" class="accent-fill"/>
+          <text x="92" y="98" font-size="15" font-style="italic">O</text>
+          <text x="124" y="84" font-size="14" font-style="italic">r</text>
+          <text x="148" y="134" font-size="14" font-style="italic">R</text>
+          <text x="52" y="192" font-size="12">Hình vành khuyên</text>
+        </svg>
+      </div>
+      <figcaption>Trái: hình quạt tròn bán kính <i>R</i> ứng với cung \(n^\circ\) dài \(l\) (Hình 5.15). Phải: hình vành khuyên giữa \((O; R)\) và \((O; r)\) (Hình 5.16)</figcaption>
+    </figure>
+    <div class="box fact">
+      <p>Hai hình quạt tròn ứng với hai cung bằng nhau trên một đường tròn thì có diện tích bằng nhau; diện tích hình quạt tròn <b>tỉ lệ</b> với số đo cung tương ứng.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Diện tích hình tròn</div>
+      <div class="formula-body">\[ S = \pi R^2 \]</div>
+      <ul class="formula-legend">
+        <li>\(R\): bán kính; \(S\): diện tích hình tròn (đơn vị diện tích, vd. cm²)</li>
+      </ul>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Diện tích hình quạt tròn (bán kính R, cung n°)</div>
+      <div class="formula-body">\[ S_\text{q} = \frac{n}{360}\pi R^2 = \frac{l\cdot R}{2} \]</div>
+      <ul class="formula-legend">
+        <li>\(S_\text{q}\): diện tích hình quạt tròn (cm², m²…)</li>
+        <li>\(n\): số đo cung (độ); \(R\): bán kính</li>
+        <li>\(l\): độ dài cung tương ứng (cùng đơn vị với \(R\))</li>
+      </ul>
+      <p class="formula-note">Nhận xét: \(S_\text{q} = \dfrac{n}{360}S\) hay \(\dfrac{S_\text{q}}{S} = \dfrac{n}{360} = \dfrac{l}{C}\) — tỉ số diện tích quạt / hình tròn bằng tỉ số độ dài cung / đường tròn.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Diện tích hình vành khuyên</div>
+      <div class="formula-body">\[ S_\text{v} = \pi\left(R^2 - r^2\right) \quad (R &gt; r) \]</div>
+      <ul class="formula-legend">
+        <li>\(S_\text{v}\): diện tích hình vành khuyên</li>
+        <li>\(R\), \(r\): bán kính đường tròn lớn, đường tròn nhỏ (đồng tâm)</li>
+      </ul>
+      <p class="formula-note">Là hiệu diện tích hai hình tròn: \(\pi R^2 - \pi r^2\).</p>
+    </div>
+    <div class="box warn"><p>\(S_\text{v} = \pi(R^2 - r^2)\), <b>không phải</b> \(\pi(R - r)^2\). Vd. \(R = 5, r = 3\): \(\pi(25 - 9) = 16\pi\), còn \(\pi(5-3)^2 = 4\pi\) là sai.</p></div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2. Diện tích hình vành khuyên giữa hai đường tròn đồng tâm bán kính 3 m và 5 m.</p>
+      <p>\(S_\text{v} = \pi(5^2 - 3^2) = 16\pi\) (m²).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3. Diện tích hình quạt tròn bán kính 5 cm, độ dài cung \(4\pi\) cm.</p>
+      <p>\(S = \dfrac{l\cdot R}{2} = \dfrac{4\pi\cdot 5}{2} = 10\pi\) (cm²).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Vẽ hình quạt biểu diễn tỉ lệ phần trăm (biểu đồ hình quạt)</p>
+      <ol class="steps">
+        <li>Số đo cung (góc ở tâm) = tỉ lệ phần trăm × \(360^\circ\). Vd. 40% → \(0{,}4\cdot 360^\circ = 144^\circ\).</li>
+        <li>Vẽ đường tròn, vẽ góc ở tâm có số đo vừa tìm, tô hình quạt tương ứng.</li>
+        <li>Diện tích (nếu cần): \(S_\text{q} = \dfrac{n}{360}\pi R^2\); vd. \(R = 4\) cm, \(n = 144\): \(S_\text{q} = 6{,}4\pi \approx 20{,}1\) cm² (tự tính).</li>
+      </ol>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Tính độ dài cung, diện tích hình quạt, hình vành khuyên</p>
+      <ol class="steps">
+        <li>Tìm bán kính \(R\) (và \(r\)) — chú ý đề cho đường kính thì chia 2.</li>
+        <li>Tìm số đo cung \(n\) (qua góc ở tâm) hoặc độ dài cung \(l\).</li>
+        <li>Áp dụng: \(l = \dfrac{n\pi R}{180}\); \(S_\text{q} = \dfrac{n\pi R^2}{360} = \dfrac{lR}{2}\); \(S_\text{v} = \pi(R^2 - r^2)\).</li>
+        <li>Để kết quả theo \(\pi\) hoặc lấy \(\pi \approx 3{,}14\) và làm tròn theo yêu cầu.</li>
+      </ol>
+    </div>
+    <div class="box example" data-label="✏️ Vận dụng 2 (tự giải)">
+      <p class="box-title">Bia gồm các đường tròn đồng tâm bán kính 5, 10, 15, 20, 30 cm. Xác suất ném trúng vòng 8 (vành khuyên giữa đường tròn thứ hai và thứ ba) bằng tỉ số diện tích vành khuyên đó với diện tích hình tròn lớn nhất.</p>
+      <p>\(S_\text{v} = \pi(15^2 - 10^2) = 125\pi\); hình tròn lớn nhất: \(\pi\cdot 30^2 = 900\pi\). Xác suất: \(\dfrac{125\pi}{900\pi} = \dfrac{5}{36} \approx 0{,}139\).</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>\(C = \pi d = 2\pi R\); \(\pi \approx 3{,}14\).</li>
+        <li>Độ dài cung \(n^\circ\): \(l = \dfrac{n\pi R}{180}\).</li>
+        <li>Hình quạt tròn: giới hạn bởi một cung và hai bán kính; \(S_\text{q} = \dfrac{n\pi R^2}{360} = \dfrac{lR}{2}\).</li>
+        <li>Hình vành khuyên: phần giữa hai đường tròn đồng tâm; \(S_\text{v} = \pi(R^2 - r^2)\).</li>
+        <li>\(\dfrac{l}{C} = \dfrac{S_\text{q}}{S} = \dfrac{n}{360}\).</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-16">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 16</span>Vị trí tương đối của đường thẳng và đường tròn</h3>
+    <p class="lesson-goal">Cần nắm: ba vị trí tương đối của đường thẳng và đường tròn (cắt nhau, tiếp xúc, không giao nhau) và hệ thức giữa \(d\) và \(R\); tiếp tuyến, tiếp điểm; dấu hiệu nhận biết tiếp tuyến; tính chất hai tiếp tuyến cắt nhau.</p>
+
+    <h4>1. Vị trí tương đối của đường thẳng và đường tròn</h4>
+    <div class="box def">
+      <ol>
+        <li>Đường thẳng <i>a</i> và đường tròn \((O)\) gọi là <span class="kw">cắt nhau</span> nếu chúng có <b>đúng hai</b> điểm chung.</li>
+        <li>Đường thẳng <i>a</i> và đường tròn \((O)\) gọi là <span class="kw">tiếp xúc với nhau</span> nếu chúng có <b>duy nhất một</b> điểm chung <i>H</i>. Điểm chung ấy gọi là <b>tiếp điểm</b>. Khi đó đường thẳng <i>a</i> còn gọi là <span class="kw">tiếp tuyến</span> của đường tròn \((O)\) tại <i>H</i>.</li>
+        <li>Đường thẳng <i>a</i> và đường tròn \((O)\) gọi là <span class="kw">không giao nhau</span> nếu chúng <b>không có</b> điểm chung.</li>
+      </ol>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 480 195" width="480" role="img" aria-label="Ba vị trí của đường thẳng a và đường tròn: cắt nhau, tiếp xúc, không giao nhau">
+        <circle cx="80" cy="70" r="45" class="stroke" fill="none" stroke-width="2"/>
+        <line x1="8" y1="105" x2="152" y2="105" class="accent" stroke-width="2"/>
+        <line x1="80" y1="70" x2="80" y2="105" class="stroke" stroke-width="1.3" stroke-dasharray="4 3"/>
+        <line x1="80" y1="70" x2="51.7" y2="105" class="stroke" stroke-width="1.3"/>
+        <path d="M80 97 L88 97 L88 105" class="stroke" fill="none" stroke-width="1"/>
+        <circle cx="80" cy="70" r="2.5" class="accent-fill"/>
+        <circle cx="51.7" cy="105" r="2.5" class="accent-fill"/>
+        <circle cx="108.3" cy="105" r="2.5" class="accent-fill"/>
+        <text x="84" y="66" font-size="13" font-style="italic">O</text>
+        <text x="44" y="120" font-size="13" font-style="italic">A</text>
+        <text x="104" y="120" font-size="13" font-style="italic">B</text>
+        <text x="74" y="120" font-size="13" font-style="italic">H</text>
+        <text x="84" y="92" font-size="12" font-style="italic">d</text>
+        <text x="54" y="86" font-size="12" font-style="italic">R</text>
+        <text x="10" y="100" font-size="13" font-style="italic">a</text>
+        <text x="50" y="160" font-size="13">Cắt nhau</text>
+        <text x="20" y="180" font-size="12"><tspan font-style="italic">d</tspan> &lt; <tspan font-style="italic">R</tspan> · 2 điểm chung</text>
+
+        <circle cx="240" cy="70" r="45" class="stroke" fill="none" stroke-width="2"/>
+        <line x1="168" y1="115" x2="312" y2="115" class="accent" stroke-width="2"/>
+        <line x1="240" y1="70" x2="240" y2="115" class="stroke" stroke-width="1.3"/>
+        <path d="M240 107 L248 107 L248 115" class="stroke" fill="none" stroke-width="1"/>
+        <circle cx="240" cy="70" r="2.5" class="accent-fill"/>
+        <circle cx="240" cy="115" r="2.5" class="accent-fill"/>
+        <text x="244" y="66" font-size="13" font-style="italic">O</text>
+        <text x="236" y="130" font-size="13" font-style="italic">H</text>
+        <text x="228" y="96" font-size="12" font-style="italic">R</text>
+        <text x="170" y="110" font-size="13" font-style="italic">a</text>
+        <text x="206" y="160" font-size="13">Tiếp xúc</text>
+        <text x="180" y="180" font-size="12"><tspan font-style="italic">d</tspan> = <tspan font-style="italic">R</tspan> · 1 điểm chung</text>
+
+        <circle cx="400" cy="55" r="45" class="stroke" fill="none" stroke-width="2"/>
+        <line x1="328" y1="135" x2="472" y2="135" class="accent" stroke-width="2"/>
+        <line x1="400" y1="55" x2="400" y2="135" class="stroke" stroke-width="1.3" stroke-dasharray="4 3"/>
+        <path d="M400 127 L408 127 L408 135" class="stroke" fill="none" stroke-width="1"/>
+        <circle cx="400" cy="55" r="2.5" class="accent-fill"/>
+        <text x="404" y="51" font-size="13" font-style="italic">O</text>
+        <text x="396" y="150" font-size="13" font-style="italic">H</text>
+        <text x="404" y="120" font-size="12" font-style="italic">d</text>
+        <text x="330" y="130" font-size="13" font-style="italic">a</text>
+        <text x="350" y="165" font-size="13">Không giao nhau</text>
+        <text x="340" y="182" font-size="12"><tspan font-style="italic">d</tspan> &gt; <tspan font-style="italic">R</tspan> · 0 điểm chung</text>
+      </svg>
+      <figcaption>\(d = OH\): khoảng cách từ tâm <i>O</i> đến đường thẳng <i>a</i> (Hình 5.26)</figcaption>
+    </figure>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Vị trí tương đối của đường thẳng <i>a</i> và \((O; R)\)</th><th>Số điểm chung</th><th>Hệ thức giữa \(d\) và \(R\)</th></tr></thead>
+        <tbody>
+          <tr><td>Cắt nhau</td><td>2</td><td>\(d &lt; R\)</td></tr>
+          <tr><td>Tiếp xúc nhau (<i>a</i> là tiếp tuyến)</td><td>1</td><td>\(d = R\)</td></tr>
+          <tr><td>Không giao nhau</td><td>0</td><td>\(d &gt; R\)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Vị trí tương đối của đường thẳng và đường tròn (theo d và R)</div>
+      <div class="formula-body">\[ d &lt; R \Leftrightarrow \text{cắt nhau};\qquad d = R \Leftrightarrow \text{tiếp xúc};\qquad d &gt; R \Leftrightarrow \text{không giao nhau} \]</div>
+      <ul class="formula-legend">
+        <li>\(d\): khoảng cách từ tâm \(O\) đến đường thẳng \(a\) (độ dài đoạn vuông góc \(OH\))</li>
+        <li>\(R\): bán kính đường tròn (cùng đơn vị với \(d\))</li>
+      </ul>
+    </div>
+    <div class="box fact" data-label="🔎 Tính chất của tiếp tuyến">
+      <p>Nếu đường thẳng <i>a</i> tiếp xúc với đường tròn \((O)\) tại <i>H</i> thì \(OH \perp a\): <b>tiếp tuyến vuông góc với bán kính đi qua tiếp điểm</b>.</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Xác định vị trí tương đối của đường thẳng và đường tròn</p>
+      <ol class="steps">
+        <li>Tìm khoảng cách \(d\) từ tâm đến đường thẳng (độ dài đường vuông góc).</li>
+        <li>So sánh \(d\) với \(R\) → kết luận theo bảng trên (không cần vẽ hình).</li>
+      </ol>
+      <p>Vd. (Luyện tập 1) <i>O</i> cách <i>a</i> 4 cm: \((O; 3\text{ cm})\) không giao <i>a</i>; \((O; 5\text{ cm})\) cắt <i>a</i>; \((O; 4\text{ cm})\) tiếp xúc <i>a</i>.</p>
+    </div>
+
+    <h4>2. Dấu hiệu nhận biết tiếp tuyến của đường tròn</h4>
+    <div class="box law" data-label="⚖️ Định lí 1 (Dấu hiệu nhận biết tiếp tuyến)">
+      <p>Nếu một đường thẳng <b>đi qua một điểm nằm trên đường tròn</b> và <b>vuông góc với bán kính đi qua điểm đó</b> thì đường thẳng ấy là một <span class="kw">tiếp tuyến</span> của đường tròn.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Dấu hiệu nhận biết tiếp tuyến</div>
+      <div class="formula-body">\[ H \in (O),\ a \ni H,\ a \perp OH \ \Rightarrow\ a \text{ là tiếp tuyến của } (O) \text{ tại } H \]</div>
+      <ul class="formula-legend">
+        <li>\(H\): điểm nằm trên đường tròn (tiếp điểm); \(OH\): bán kính đi qua \(H\)</li>
+      </ul>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Chứng minh một đường thẳng là tiếp tuyến của đường tròn</p>
+      <ol class="steps">
+        <li><b>Cách 1</b> (Định lí 1): chỉ ra đường thẳng đi qua một điểm <i>H</i> <b>thuộc</b> đường tròn và vuông góc với bán kính <i>OH</i> tại <i>H</i> (thường qua tam giác bằng nhau, góc \(90^\circ\)).</li>
+        <li><b>Cách 2</b> (định nghĩa qua \(d\)): chứng minh khoảng cách từ tâm đến đường thẳng bằng bán kính, \(d = R\).</li>
+        <li>Kết luận: đường thẳng là tiếp tuyến của đường tròn tại <i>H</i>.</li>
+      </ol>
+    </div>
+    <div class="box warn"><p>Chỉ có “vuông góc với bán kính” thì chưa đủ: điểm vuông góc phải là <b>đầu mút bán kính nằm trên đường tròn</b>. Nhớ ghi đủ hai điều kiện.</p></div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1. <i>AB</i> là dây không qua tâm của \((O)\). Đường thẳng qua <i>O</i> vuông góc với <i>AB</i> cắt tiếp tuyến tại <i>A</i> ở <i>C</i>. Chứng minh <i>CB</i> là tiếp tuyến của \((O)\).</p>
+      <p>Gọi <i>D</i> là giao điểm của <i>AB</i> và <i>OC</i>. Tam giác <i>AOB</i> cân (\(OA = OB\)) có đường cao <i>OD</i> nên <i>OD</i> cũng là phân giác: \(\widehat{O_1} = \widehat{O_2}\).</p>
+      <p>\(\Delta AOC = \Delta BOC\) (c.g.c: <i>OC</i> chung, \(\widehat{O_1} = \widehat{O_2}\), \(OA = OB\)) ⇒ \(\widehat{OBC} = \widehat{OAC} = 90^\circ\) (vì <i>CA</i> là tiếp tuyến).</p>
+      <p>Vậy \(CB \perp OB\) tại \(B \in (O)\) ⇒ <i>CB</i> là tiếp tuyến của \((O)\) (Định lí 1).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Vẽ đường tròn tâm M tiếp xúc với đường thẳng a (M ∉ a)</p>
+      <ol class="steps">
+        <li>Kẻ \(MH \perp a\) (<i>H</i> ∈ <i>a</i>).</li>
+        <li>Vẽ đường tròn \((M; MH)\): đường tròn này tiếp xúc với <i>a</i> tại <i>H</i>.</li>
+      </ol>
+    </div>
+
+    <h4>3. Hai tiếp tuyến cắt nhau của một đường tròn</h4>
+    <div class="box def">
+      <p>Cho điểm <i>M</i> nằm ngoài \((O)\). Vẽ đường tròn đường kính <i>MO</i> cắt \((O)\) tại <i>A</i> và <i>B</i>; khi đó <i>MA</i>, <i>MB</i> là hai tiếp tuyến của \((O)\) và gọi là <span class="kw">hai tiếp tuyến cắt nhau</span> (tại <i>M</i>) của đường tròn \((O)\).</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 400 220" width="400" role="img" aria-label="Hai tiếp tuyến MA và MB của đường tròn tâm O cắt nhau tại M">
+        <circle cx="110" cy="110" r="60" class="stroke" fill="none" stroke-width="2"/>
+        <line x1="60" y1="33.5" x2="370" y2="121.3" class="accent" stroke-width="2"/>
+        <line x1="60" y1="186.5" x2="370" y2="98.7" class="accent" stroke-width="2"/>
+        <line x1="110" y1="110" x2="330" y2="110" class="stroke" stroke-width="1.4"/>
+        <line x1="110" y1="110" x2="126.4" y2="52.3" class="stroke" stroke-width="1.6"/>
+        <line x1="110" y1="110" x2="126.4" y2="167.7" class="stroke" stroke-width="1.6"/>
+        <line x1="126.4" y1="52.3" x2="126.4" y2="167.7" class="stroke" stroke-width="1.2" stroke-dasharray="4 3"/>
+        <path d="M123.7 61.9 L133.3 64.6 L136.0 55.0" class="stroke" fill="none" stroke-width="1.1"/>
+        <path d="M123.7 158.1 L133.3 155.4 L136.0 165.0" class="stroke" fill="none" stroke-width="1.1"/>
+        <line x1="226.8" y1="86.0" x2="229.6" y2="76.3" class="stroke" stroke-width="1.3"/>
+        <line x1="226.8" y1="134.0" x2="229.6" y2="143.7" class="stroke" stroke-width="1.3"/>
+        <path d="M296 110 A34 34 0 0 1 297.3 100.4" class="accent" stroke-width="1.4"/>
+        <path d="M296 110 A34 34 0 0 0 297.3 119.6" class="accent" stroke-width="1.4"/>
+        <path d="M128 110 A18 18 0 0 0 114.9 92.7" class="accent" stroke-width="1.4"/>
+        <path d="M128 110 A18 18 0 0 1 114.9 127.3" class="accent" stroke-width="1.4"/>
+        <circle cx="110" cy="110" r="3" class="accent-fill"/>
+        <circle cx="330" cy="110" r="3" class="accent-fill"/>
+        <text x="90" y="116" font-size="15" font-style="italic">O</text>
+        <text x="122" y="44" font-size="15" font-style="italic">A</text>
+        <text x="122" y="188" font-size="15" font-style="italic">B</text>
+        <text x="330" y="132" font-size="15" font-style="italic">M</text>
+        <text x="130" y="114" font-size="12" font-style="italic">I</text>
+      </svg>
+      <figcaption>\(MA = MB\); <i>MO</i> là phân giác của \(\widehat{AMB}\); <i>OM</i> là phân giác của \(\widehat{AOB}\); \(OM \perp AB\) tại <i>I</i> (Hình 5.28, 5.29)</figcaption>
+    </figure>
+    <div class="box law" data-label="⚖️ Định lí 2 (Hai tiếp tuyến cắt nhau)">
+      <p>Nếu hai tiếp tuyến của đường tròn \((O)\) cắt nhau tại điểm <i>M</i> thì:</p>
+      <ul>
+        <li>Điểm <i>M</i> <b>cách đều hai tiếp điểm</b>;</li>
+        <li><i>MO</i> là <b>tia phân giác của góc tạo bởi hai tiếp tuyến</b>;</li>
+        <li><i>OM</i> là <b>tia phân giác của góc tạo bởi hai bán kính</b> qua hai tiếp điểm.</li>
+      </ul>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Tính chất hai tiếp tuyến MA, MB cắt nhau tại M</div>
+      <div class="formula-body">\[ MA = MB;\qquad \widehat{AMO} = \widehat{BMO};\qquad \widehat{AOM} = \widehat{BOM} \]</div>
+      <ul class="formula-legend">
+        <li><i>A</i>, <i>B</i>: hai tiếp điểm; <i>O</i>: tâm đường tròn; <i>M</i>: giao điểm hai tiếp tuyến</li>
+        <li>Chứng minh: \(\Delta OAM = \Delta OBM\) (cạnh huyền – cạnh góc vuông: <i>OM</i> chung, \(OA = OB\))</li>
+      </ul>
+      <p class="formula-note">Hệ quả (Ví dụ 2): \(OM \perp AB\) (vì trong tam giác cân <i>AOB</i>, phân giác <i>OM</i> cũng là đường cao).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Độ dài đoạn tiếp tuyến từ điểm M đến (O; R)</div>
+      <div class="formula-body">\[ MA = MB = \sqrt{OM^2 - R^2} \]</div>
+      <ul class="formula-legend">
+        <li>\(OM\): khoảng cách từ <i>M</i> đến tâm; \(R\): bán kính (cùng đơn vị)</li>
+        <li>Suy ra từ định lí Pythagore trong tam giác <i>OAM</i> vuông tại <i>A</i>: \(AM^2 + OA^2 = OM^2\)</li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2. <i>MA</i>, <i>MB</i> là hai tiếp tuyến của \((O; R)\). a) Chứng minh \(OM \perp AB\). b) Tính <i>MA</i>, <i>MB</i> khi \(R = 2\) cm, \(MO = 4\) cm.</p>
+      <p>a) Theo Định lí 2, <i>OM</i> là phân giác của \(\widehat{AOB}\); tam giác <i>AOB</i> cân (\(OA = OB\)) nên phân giác <i>OM</i> cũng là đường cao: \(OM \perp AB\).</p>
+      <p>b) Tam giác <i>OAM</i> vuông tại <i>A</i>: \(AM^2 = OM^2 - OA^2 = 4^2 - 2^2 = 12\) ⇒ \(AM = \sqrt{12} = 2\sqrt3\) (cm). Theo tính chất hai tiếp tuyến cắt nhau: \(BM = AM = 2\sqrt3\) cm.</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Bài toán có hai tiếp tuyến cắt nhau</p>
+      <ol class="steps">
+        <li>Nối tâm với các tiếp điểm (\(OA \perp MA\), \(OB \perp MB\)) và với giao điểm <i>M</i>.</li>
+        <li>Dùng: \(MA = MB\); <i>MO</i>, <i>OM</i> là phân giác; \(OM \perp AB\) và <i>OM</i> đi qua trung điểm <i>AB</i>.</li>
+        <li>Tính độ dài bằng Pythagore hoặc tỉ số lượng giác trong tam giác vuông <i>OAM</i>; chu vi (vd. tam giác <i>SEF</i> tạo bởi tiếp tuyến thứ ba) bằng cách thay các đoạn tiếp tuyến bằng nhau.</li>
+      </ol>
+    </div>
+    <div class="box tip"><p>Thấy “tiếp tuyến” → nghĩ ngay đến <b>góc vuông tại tiếp điểm</b>. Thấy “hai tiếp tuyến cắt nhau” → nghĩ đến <b>hai đoạn bằng nhau</b> và <b>hai tia phân giác</b>.</p></div>
+
+    <div class="key-points">
+      <ul>
+        <li>Đường thẳng – đường tròn: cắt nhau (\(d &lt; R\), 2 điểm chung), tiếp xúc (\(d = R\), 1 điểm chung), không giao nhau (\(d &gt; R\), 0 điểm chung).</li>
+        <li>Tiếp tuyến: đường thẳng chỉ có một điểm chung với đường tròn; vuông góc với bán kính tại tiếp điểm.</li>
+        <li>Dấu hiệu: qua điểm trên đường tròn và vuông góc với bán kính tại điểm đó → tiếp tuyến.</li>
+        <li>Hai tiếp tuyến cắt nhau tại <i>M</i>: \(MA = MB\), <i>MO</i> và <i>OM</i> là các tia phân giác, \(OM \perp AB\).</li>
+        <li>\(MA = \sqrt{OM^2 - R^2}\).</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-17">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 17</span>Vị trí tương đối của hai đường tròn</h3>
+    <p class="lesson-goal">Cần nắm: hai đường tròn cắt nhau, tiếp xúc nhau (tiếp xúc ngoài, tiếp xúc trong), không giao nhau (ở ngoài nhau, đựng nhau); hệ thức giữa \(OO'\) với \(R\), \(R'\); số điểm chung.</p>
+    <div class="box note"><p>Khi nói hai đường tròn mà không giải thích gì thêm, ta hiểu đó là <b>hai đường tròn phân biệt</b>.</p></div>
+
+    <h4>1. Hai đường tròn cắt nhau</h4>
+    <div class="box def">
+      <p>Nếu hai đường tròn có <b>đúng hai điểm chung</b> thì ta nói đó là <span class="kw">hai đường tròn cắt nhau</span>. Hai điểm chung gọi là hai <b>giao điểm</b> của chúng.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Hai đường tròn cắt nhau</div>
+      <div class="formula-body">\[ R - R' &lt; OO' &lt; R + R' \quad (R &gt; R') \]</div>
+      <ul class="formula-legend">
+        <li>\(OO'\): khoảng cách giữa hai tâm (đoạn nối tâm)</li>
+        <li>\(R\), \(R'\): bán kính của \((O)\) và \((O')\) (cùng đơn vị độ dài)</li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1. \(OO' = 5\) cm. Vì sao \((O; 4\text{ cm})\) và \((O'; 3\text{ cm})\) cắt nhau?</p>
+      <p>\(R = 4\), \(R' = 3\): \(1\text{ cm} &lt; 5\text{ cm} &lt; 7\text{ cm}\), tức \(R - R' &lt; OO' &lt; R + R'\) ⇒ hai đường tròn cắt nhau.</p>
+    </div>
+
+    <h4>2. Hai đường tròn tiếp xúc nhau</h4>
+    <div class="box def">
+      <p>Nếu hai đường tròn có <b>duy nhất một điểm chung</b> thì ta nói đó là <span class="kw">hai đường tròn tiếp xúc nhau</span>. Điểm chung gọi là <b>tiếp điểm</b> của chúng.</p>
+      <p>Phân biệt hai trường hợp: <b>tiếp xúc ngoài</b> và <b>tiếp xúc trong</b>.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Hai đường tròn tiếp xúc ngoài / tiếp xúc trong</div>
+      <div class="formula-body">\[ \text{Tiếp xúc ngoài: } OO' = R + R'; \qquad \text{Tiếp xúc trong: } OO' = R - R' &gt; 0 \]</div>
+      <ul class="formula-legend">
+        <li>\(OO'\): khoảng cách hai tâm; \(R \ge R'\): hai bán kính</li>
+      </ul>
+    </div>
+    <div class="box fact"><p>Nếu hai đường tròn tiếp xúc với nhau thì <b>tiếp điểm thẳng hàng với hai tâm</b>.</p></div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2. \(OO' = 5\) cm. Vì sao \((O; 3\text{ cm})\) và \((O'; 2\text{ cm})\) tiếp xúc nhau? Tiếp xúc trong hay ngoài?</p>
+      <p>\(5 = 3 + 2\), tức \(OO' = R + R'\) ⇒ hai đường tròn <b>tiếp xúc ngoài</b>.</p>
+    </div>
+
+    <h4>3. Hai đường tròn không giao nhau</h4>
+    <div class="box def">
+      <p>Nếu hai đường tròn <b>không có điểm chung</b> nào thì ta nói đó là <span class="kw">hai đường tròn không giao nhau</span>.</p>
+      <p>Phân biệt hai trường hợp: hai đường tròn <b>ở ngoài nhau</b> và đường tròn này <b>đựng</b> đường tròn kia.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Hai đường tròn ở ngoài nhau / đựng nhau</div>
+      <div class="formula-body">\[ \text{Ở ngoài nhau: } OO' &gt; R + R'; \qquad (O) \text{ đựng } (O'): \ R &gt; R' \text{ và } OO' &lt; R - R' \]</div>
+      <ul class="formula-legend">
+        <li>\(OO'\): khoảng cách hai tâm; \(R\), \(R'\): bán kính của \((O)\), \((O')\)</li>
+        <li>Đặc biệt: \(O \equiv O'\) và \(R \ne R'\) → hai đường tròn <b>đồng tâm</b></li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3. Vị trí tương đối của \((O; 3\text{ cm})\) và \((O'; 5\text{ cm})\), biết \(OO' &gt; 8\) cm.</p>
+      <p>\(OO' &gt; 8 = 3 + 5 = R + R'\) ⇒ hai đường tròn <b>ở ngoài nhau</b>.</p>
+    </div>
+
+    <h4>4. Bảng tổng kết</h4>
+    <figure class="diagram">
+      <div class="two-col">
+        <svg viewBox="0 0 230 160" width="230" role="img" aria-label="Hai đường tròn cắt nhau tại A và B">
+          <circle cx="80" cy="75" r="50" class="stroke" fill="none" stroke-width="2"/>
+          <circle cx="150" cy="75" r="35" class="accent" stroke-width="2"/>
+          <line x1="80" y1="75" x2="150" y2="75" class="stroke" stroke-width="1.2" stroke-dasharray="4 3"/>
+          <circle cx="124.1" cy="51.4" r="2.5" class="accent-fill"/>
+          <circle cx="124.1" cy="98.6" r="2.5" class="accent-fill"/>
+          <text x="66" y="80" font-size="13" font-style="italic">O</text>
+          <text x="154" y="80" font-size="13" font-style="italic">O′</text>
+          <text x="118" y="44" font-size="13" font-style="italic">B</text>
+          <text x="118" y="114" font-size="13" font-style="italic">A</text>
+          <text x="30" y="150" font-size="12">Cắt nhau: 2 điểm chung</text>
+        </svg>
+        <svg viewBox="0 0 230 160" width="230" role="img" aria-label="Hai đường tròn tiếp xúc ngoài tại A">
+          <circle cx="70" cy="75" r="50" class="stroke" fill="none" stroke-width="2"/>
+          <circle cx="155" cy="75" r="35" class="accent" stroke-width="2"/>
+          <line x1="70" y1="75" x2="155" y2="75" class="stroke" stroke-width="1.2" stroke-dasharray="4 3"/>
+          <circle cx="120" cy="75" r="2.5" class="accent-fill"/>
+          <text x="56" y="70" font-size="13" font-style="italic">O</text>
+          <text x="158" y="70" font-size="13" font-style="italic">O′</text>
+          <text x="112" y="68" font-size="13" font-style="italic">A</text>
+          <text x="40" y="150" font-size="12">Tiếp xúc ngoài: 1 điểm</text>
+        </svg>
+        <svg viewBox="0 0 230 160" width="230" role="img" aria-label="Hai đường tròn tiếp xúc trong tại A">
+          <circle cx="110" cy="72" r="60" class="stroke" fill="none" stroke-width="2"/>
+          <circle cx="135" cy="72" r="35" class="accent" stroke-width="2"/>
+          <line x1="110" y1="72" x2="170" y2="72" class="stroke" stroke-width="1.2" stroke-dasharray="4 3"/>
+          <circle cx="170" cy="72" r="2.5" class="accent-fill"/>
+          <circle cx="110" cy="72" r="2" class="accent-fill"/>
+          <circle cx="135" cy="72" r="2" class="accent-fill"/>
+          <text x="96" y="68" font-size="13" font-style="italic">O</text>
+          <text x="130" y="66" font-size="13" font-style="italic">O′</text>
+          <text x="175" y="68" font-size="13" font-style="italic">A</text>
+          <text x="44" y="150" font-size="12">Tiếp xúc trong: 1 điểm</text>
+        </svg>
+        <svg viewBox="0 0 230 160" width="230" role="img" aria-label="Hai đường tròn ở ngoài nhau">
+          <circle cx="65" cy="72" r="45" class="stroke" fill="none" stroke-width="2"/>
+          <circle cx="170" cy="72" r="30" class="accent" stroke-width="2"/>
+          <line x1="65" y1="72" x2="170" y2="72" class="stroke" stroke-width="1.2" stroke-dasharray="4 3"/>
+          <text x="52" y="68" font-size="13" font-style="italic">O</text>
+          <text x="166" y="68" font-size="13" font-style="italic">O′</text>
+          <text x="36" y="150" font-size="12">Ở ngoài nhau: 0 điểm</text>
+        </svg>
+        <svg viewBox="0 0 230 160" width="230" role="img" aria-label="Đường tròn O đựng đường tròn O phẩy">
+          <circle cx="110" cy="72" r="60" class="stroke" fill="none" stroke-width="2"/>
+          <circle cx="128" cy="66" r="28" class="accent" stroke-width="2"/>
+          <circle cx="110" cy="72" r="2" class="accent-fill"/>
+          <circle cx="128" cy="66" r="2" class="accent-fill"/>
+          <text x="98" y="86" font-size="13" font-style="italic">O</text>
+          <text x="126" y="60" font-size="13" font-style="italic">O′</text>
+          <text x="40" y="150" font-size="12">(O) đựng (O′): 0 điểm</text>
+        </svg>
+        <svg viewBox="0 0 230 160" width="230" role="img" aria-label="Hai đường tròn đồng tâm">
+          <circle cx="110" cy="72" r="60" class="stroke" fill="none" stroke-width="2"/>
+          <circle cx="110" cy="72" r="30" class="accent" stroke-width="2"/>
+          <circle cx="110" cy="72" r="2" class="accent-fill"/>
+          <text x="102" y="90" font-size="13" font-style="italic">O ≡ O′</text>
+          <text x="40" y="150" font-size="12">Đồng tâm (O trùng O′)</text>
+        </svg>
+      </div>
+      <figcaption>Các vị trí tương đối của hai đường tròn (Hình 5.32, 5.34, 5.36)</figcaption>
+    </figure>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Vị trí tương đối của \((O; R)\) và \((O'; R')\), \(R \ge R'\)</th><th>Số điểm chung</th><th>Hệ thức giữa \(OO'\) với \(R\) và \(R'\)</th></tr></thead>
+        <tbody>
+          <tr><td>Hai đường tròn cắt nhau</td><td>2</td><td>\(R - R' &lt; OO' &lt; R + R'\)</td></tr>
+          <tr><td>Hai đường tròn tiếp xúc nhau:<br>– Tiếp xúc ngoài<br>– Tiếp xúc trong</td><td>1</td><td><br>\(OO' = R + R'\)<br>\(OO' = R - R' &gt; 0\)</td></tr>
+          <tr><td>Hai đường tròn không giao nhau:<br>– \((O)\) và \((O')\) ở ngoài nhau<br>– \((O)\) đựng \((O')\)</td><td>0</td><td><br>\(OO' &gt; R + R'\)<br>\(OO' &lt; R - R'\)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Xác định vị trí tương đối của hai đường tròn</p>
+      <ol class="steps">
+        <li>Xác định \(R \ge R'\) và tính \(R + R'\), \(R - R'\), khoảng cách tâm \(OO'\).</li>
+        <li>Đặt ba số lên trục số: \(OO'\) so với \(R - R'\) và \(R + R'\).</li>
+        <li>Kết luận theo bảng: giữa hai số → cắt nhau; bằng tổng → tiếp xúc ngoài; bằng hiệu → tiếp xúc trong; lớn hơn tổng → ở ngoài nhau; nhỏ hơn hiệu → đựng nhau.</li>
+      </ol>
+      <p>Vd. (Luyện tập 1, tự giải) \((O; 5)\), \(OI = 2\): \((I; 4)\): \(1 &lt; 2 &lt; 9\) → cắt nhau; \((I; 6)\): \(R - R' = 1 &lt; 2 &lt; 11\) → cắt nhau.</p>
+    </div>
+    <div class="flow"><span>\(OO' &lt; R - R'\): đựng nhau</span><i>→</i><span>\(= R - R'\): tiếp xúc trong</span><i>→</i><span>giữa hiệu và tổng: cắt nhau</span><i>→</i><span>\(= R + R'\): tiếp xúc ngoài</span><i>→</i><span>\(&gt; R + R'\): ở ngoài nhau</span></div>
+    <div class="box warn">
+      <p>“Hai đường tròn <b>không cắt nhau</b>” <b>khác</b> “hai đường tròn <b>không giao nhau</b>”: không cắt nhau còn gồm cả trường hợp <b>tiếp xúc</b> (có 1 điểm chung), còn không giao nhau là không có điểm chung nào (Tranh luận).</p>
+      <p>Tiếp xúc trong so sánh \(OO'\) với <b>hiệu</b> \(R - R'\) (không phải tổng); luôn sắp \(R \ge R'\) trước khi trừ.</p>
+    </div>
+    <div class="box tip"><p>Nguyệt thực một phần: Mặt Trăng và bóng Trái Đất như hai đường tròn <b>cắt nhau</b>; nguyệt thực toàn phần: bóng Trái Đất <b>đựng</b> Mặt Trăng.</p></div>
+
+    <div class="key-points">
+      <ul>
+        <li>Cắt nhau: 2 điểm chung, \(R - R' &lt; OO' &lt; R + R'\).</li>
+        <li>Tiếp xúc: 1 điểm chung; ngoài \(OO' = R + R'\), trong \(OO' = R - R'\); tiếp điểm thẳng hàng với hai tâm.</li>
+        <li>Không giao nhau: 0 điểm chung; ở ngoài nhau \(OO' &gt; R + R'\), đựng nhau \(OO' &lt; R - R'\).</li>
+        <li>Đồng tâm: \(O\) trùng \(O'\), \(R \ne R'\).</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-on-tap-chuong-5">
+    <h3 class="lesson-title"><span class="lesson-no">Ôn tập</span>Ôn tập Chương V — Đường tròn</h3>
+    <p class="lesson-goal">Tổng hợp: công thức độ dài, diện tích; các bảng vị trí tương đối; hình viên phân; các dạng toán trong Luyện tập chung và Bài tập cuối chương V.</p>
+
+    <h4>1. Tóm tắt công thức</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Đại lượng</th><th>Công thức</th></tr></thead>
+        <tbody>
+          <tr><td>Đường kính; dây cung</td><td>\(d = 2R\); dây \(AB \le 2R\)</td></tr>
+          <tr><td>Số đo cung</td><td>cung nhỏ = góc ở tâm; cung lớn = \(360^\circ\) − cung nhỏ; nửa đường tròn = \(180^\circ\)</td></tr>
+          <tr><td>Độ dài đường tròn</td><td>\(C = \pi d = 2\pi R\)</td></tr>
+          <tr><td>Độ dài cung \(n^\circ\)</td><td>\(l = \dfrac{n\pi R}{180}\)</td></tr>
+          <tr><td>Diện tích hình tròn</td><td>\(S = \pi R^2\)</td></tr>
+          <tr><td>Diện tích hình quạt tròn</td><td>\(S_\text{q} = \dfrac{n\pi R^2}{360} = \dfrac{lR}{2}\)</td></tr>
+          <tr><td>Diện tích hình vành khuyên</td><td>\(S_\text{v} = \pi(R^2 - r^2)\)</td></tr>
+          <tr><td>Diện tích hình viên phân</td><td>\(S = S_\text{q} - S_{OAB}\)</td></tr>
+          <tr><td>Đoạn tiếp tuyến</td><td>\(MA = MB = \sqrt{OM^2 - R^2}\)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>2. Hình viên phân</h4>
+    <div class="box def">
+      <p><b>Hình viên phân</b> là hình giới hạn bởi <span class="kw">một cung nhỏ</span> của một đường tròn và <span class="kw">dây căng cung</span> đó.</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 220 200" width="220" role="img" aria-label="Hình viên phân giới hạn bởi cung AB 90 độ và dây AB">
+        <path d="M149.5 50.5 A70 70 0 0 1 149.5 149.5 Z" class="accent-fill" fill-opacity="0.3"/>
+        <circle cx="100" cy="100" r="70" class="stroke" fill="none" stroke-width="2"/>
+        <line x1="100" y1="100" x2="149.5" y2="50.5" class="stroke" stroke-width="1.6"/>
+        <line x1="100" y1="100" x2="149.5" y2="149.5" class="stroke" stroke-width="1.6"/>
+        <line x1="149.5" y1="50.5" x2="149.5" y2="149.5" class="accent" stroke-width="2"/>
+        <path d="M107.1 92.9 L114.1 100 L107.1 107.1" class="stroke" fill="none" stroke-width="1.1"/>
+        <circle cx="100" cy="100" r="3" class="accent-fill"/>
+        <text x="82" y="105" font-size="15" font-style="italic">O</text>
+        <text x="150" y="44" font-size="15" font-style="italic">A</text>
+        <text x="150" y="166" font-size="15" font-style="italic">B</text>
+        <text x="114" y="68" font-size="14" font-style="italic">R</text>
+      </svg>
+      <figcaption>Hình viên phân (tô màu) ứng với cung \(90^\circ\) (Hình 5.21)</figcaption>
+    </figure>
+    <div class="formula">
+      <div class="formula-name">Diện tích hình viên phân</div>
+      <div class="formula-body">\[ S_\text{viên phân} = S_\text{q} - S_{OAB}; \qquad \text{cung } 90^\circ:\ S = \frac{1}{4}\pi R^2 - \frac{1}{2}R^2 = R^2\left(\frac{\pi}{4} - \frac{1}{2}\right) \]</div>
+      <ul class="formula-legend">
+        <li>\(S_\text{q}\): diện tích hình quạt ứng với cung \(AB\); \(S_{OAB}\): diện tích tam giác \(OAB\)</li>
+        <li>\(R\): bán kính; cung \(90^\circ\): \(S_{OAB} = \tfrac12 OA\cdot OB = \tfrac12 R^2\)</li>
+      </ul>
+    </div>
+
+    <h4>3. Các bảng vị trí tương đối</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Đối tượng</th><th>Cách xét</th><th>Kết luận</th></tr></thead>
+        <tbody>
+          <tr><td>Điểm <i>M</i> và \((O; R)\)</td><td>so sánh \(OM\) với \(R\)</td><td>\(=\): trên · \(&lt;\): trong · \(&gt;\): ngoài</td></tr>
+          <tr><td>Đường thẳng và \((O; R)\)</td><td>so sánh \(d\) với \(R\)</td><td>\(&lt;\): cắt (2) · \(=\): tiếp xúc (1) · \(&gt;\): không giao (0)</td></tr>
+          <tr><td>\((O; R)\) và \((O'; R')\)</td><td>so sánh \(OO'\) với \(R + R'\), \(R - R'\)</td><td>cắt (2) · tiếp xúc ngoài/trong (1) · ngoài nhau/đựng nhau (0)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>4. Ví dụ tổng hợp (Luyện tập chung)</h4>
+    <div class="box example">
+      <p class="box-title">Tam giác nhọn <i>ABC</i> cân tại <i>A</i>, đường cao <i>BH</i>, <i>CK</i>. a) Đường tròn \((O)\) đường kính <i>BC</i> đi qua <i>K</i>, <i>H</i>. b) \(\overset{\frown}{BH} = \overset{\frown}{CK}\). c) Tính \(\text{sđ}\,\overset{\frown}{KH}\) khi \(\widehat{BAC} = 40^\circ\).</p>
+      <p>a) \(OH\) là trung tuyến ứng với cạnh huyền của tam giác vuông <i>HBC</i> nên \(OH = \dfrac{BC}{2} = R\) ⇒ \(H \in (O)\); tương tự \(K \in (O)\).</p>
+      <p>b) \(\Delta HBC = \Delta KCB\) (cạnh huyền <i>BC</i> chung, \(\widehat{ABC} = \widehat{ACB}\)) ⇒ \(BH = CK\) ⇒ \(\Delta BOH = \Delta COK\) (c.c.c) ⇒ \(\widehat{BOH} = \widehat{COK}\) ⇒ hai cung nhỏ bằng nhau.</p>
+      <p>c) Ba tam giác cân <i>ABC</i>, <i>OCH</i>, <i>OBK</i> có góc ở đáy bằng nhau nên góc ở đỉnh bằng nhau: \(\widehat{BOK} = \widehat{HOC} = 40^\circ\) ⇒ \(\widehat{KOH} = 180^\circ - 40^\circ - 40^\circ = 100^\circ\) ⇒ \(\text{sđ}\,\overset{\frown}{KH} = 100^\circ\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">\((O; R)\) và \((O'; R')\) cắt nhau tại <i>A</i>, <i>B</i>; <i>M</i>, <i>N</i> đối xứng với <i>A</i> qua <i>O</i>, <i>O′</i>. Chứng minh <i>M</i>, <i>B</i>, <i>N</i> thẳng hàng và <i>MN</i> tiếp xúc với đường tròn đường kính <i>AB</i>.</p>
+      <p>\(M \in (O)\) (tính đối xứng). Tam giác <i>ABM</i> có trung tuyến \(BO = \tfrac12 AM\) nên vuông tại <i>B</i>: \(\widehat{ABM} = 90^\circ\). Tương tự \(\widehat{ABN} = 90^\circ\) ⇒ \(\widehat{MBN} = 180^\circ\) ⇒ thẳng hàng.</p>
+      <p>\(MN \perp AB\) tại <i>B</i> (đầu mút đường kính <i>AB</i>) ⇒ <i>MN</i> là tiếp tuyến của đường tròn đường kính <i>AB</i>.</p>
+    </div>
+    <div class="box note" data-label="📝 Mở rộng (Luyện tập chung – Ví dụ 2)">
+      <p>Đường thẳng <i>d</i> tiếp xúc với hai đường tròn ngoài nhau \((O; R)\), \((O'; R')\) tại <i>A</i>, <i>B</i> (\(R &gt; R'\), <i>O</i>, <i>O′</i> cùng phía với <i>d</i>) và cắt <i>OO′</i> tại <i>P</i> thì \(O'B \parallel OA\) nên \(\Delta POA \backsim \Delta PO'B\) ⇒ \(\dfrac{PO}{PO'} = \dfrac{R}{R'}\). Đường thẳng \(PA'\) (<i>A′</i> đối xứng với <i>A</i> qua <i>OO′</i>) cũng tiếp xúc với cả hai đường tròn.</p>
+    </div>
+    <div class="box note" data-label="📝 Em có biết – Vẽ chắp nối trơn">
+      <ul>
+        <li>Nếu một đoạn thẳng được chắp nối trơn với một cung tròn thì đoạn thẳng đó nằm trên <b>tiếp tuyến</b> của đường tròn chứa cung tại điểm chắp nối.</li>
+        <li>Nếu hai cung tròn được chắp nối trơn với nhau thì hai đường tròn chứa hai cung ấy <b>tiếp xúc nhau</b> tại điểm chắp nối (hai tâm và điểm nối thẳng hàng).</li>
+      </ul>
+    </div>
+
+    <h4>5. Các dạng toán và cách giải</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Dạng toán</th><th>Cách giải</th></tr></thead>
+        <tbody>
+          <tr><td>Chứng minh các điểm cùng thuộc một đường tròn</td><td>Chỉ ra một điểm cách đều; dùng trung tuyến ứng với cạnh huyền (góc vuông nhìn đường kính)</td></tr>
+          <tr><td>So sánh dây, chứng minh bất đẳng thức về dây</td><td>Đường kính là dây lớn nhất; bất đẳng thức tam giác</td></tr>
+          <tr><td>Khoảng cách tâm – dây, bán kính khi biết dây</td><td>Kẻ \(OH \perp AB\) (<i>H</i> là trung điểm), dùng Pythagore / tỉ số lượng giác</td></tr>
+          <tr><td>Số đo cung</td><td>Tìm góc ở tâm; cung lớn = 360° − cung nhỏ; cộng cung</td></tr>
+          <tr><td>Độ dài cung, diện tích quạt, vành khuyên, viên phân</td><td>Xác định \(R\), \(n\) (hoặc \(l\)) rồi áp dụng công thức; viên phân = quạt − tam giác</td></tr>
+          <tr><td>Bài toán thực tế (bánh xe, đồng hồ, pizza, quạt giấy)</td><td>Quãng đường = số vòng × chu vi; kim đồng hồ: 60 phút ↔ 360° (kim phút), 12 giờ ↔ 360° (kim giờ)</td></tr>
+          <tr><td>Vị trí tương đối</td><td>So sánh \(d\) với \(R\); \(OO'\) với \(R \pm R'\)</td></tr>
+          <tr><td>Chứng minh tiếp tuyến</td><td>Vuông góc với bán kính tại điểm thuộc đường tròn, hoặc \(d = R\)</td></tr>
+          <tr><td>Hai tiếp tuyến cắt nhau</td><td>\(MA = MB\), hai tia phân giác, \(OM \perp AB\); Pythagore trong tam giác <i>OAM</i></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="box warn">
+      <p>Đề cho <b>đường kính</b> thì phải chia đôi để có bán kính trước khi dùng công thức.</p>
+      <p>Đơn vị: độ dài cung cùng đơn vị với \(R\); diện tích là đơn vị bình phương (cm², m²…).</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>\(l = \dfrac{n\pi R}{180}\); \(S_\text{q} = \dfrac{n\pi R^2}{360} = \dfrac{lR}{2}\); \(S_\text{v} = \pi(R^2 - r^2)\).</li>
+        <li>Viên phân = quạt − tam giác.</li>
+        <li>Ba bảng vị trí tương đối: điểm (\(OM\)), đường thẳng (\(d\)), hai đường tròn (\(OO'\)) so với bán kính.</li>
+        <li>Tiếp tuyến ⊥ bán kính tại tiếp điểm; hai tiếp tuyến cắt nhau cho hai đoạn bằng nhau.</li>
+        <li>Góc vuông nhìn một đoạn thẳng → đỉnh góc nằm trên đường tròn đường kính là đoạn đó.</li>
+      </ul>
+    </div>
+  </article>
+</section>

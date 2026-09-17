@@ -128,6 +128,44 @@ lọc theo tab, bật/tắt phương trình hoá học, nút in. Không cần vi
 - Đơn vị viết sau kí hiệu trong `formula-legend`, dạng "\(R\): điện trở (Ω)".
 - Công thức suy ra / biến đổi (vd. \(v = \sqrt{2W_\text{đ}/m}\)) đặt thêm trong cùng khung, hoặc `formula-note`.
 
+### Môn Toán
+
+Trang `lop-9/toan.html`: 2 tab theo tập (`tap-1` class `t1`, `tap-2` class `t2`), mỗi tab 2 partial
+(`_parts/toan-tap-1a.html`…). Id dùng chung tiền tố `toan-` (số bài/chương không trùng giữa 2 tập):
+`toan-chuong-1`, `toan-bai-1`, `toan-on-tap-chuong-1`. Chương: `<h2 class="chapter-title"><span>Chương I · Đại số</span>…</h2>`.
+- Mỗi bài: `lesson-goal` → các mục `h4` theo SGK → `key-points`. Trong mỗi mục:
+  `box def` (định nghĩa, khái niệm) · `box law` (định lí, tính chất — `data-label="⚖️ Định lí …"`) ·
+  `div.formula` (mọi công thức / hằng đẳng thức / hệ thức) · `box note` (Chú ý, Nhận xét của SGK) ·
+  **`box method`** (🧭 Cách giải một dạng toán: `<p class="box-title">Dạng: …</p>` + `ol.steps`) ·
+  `box example` (Ví dụ SGK có lời giải, trình bày gọn, đủ bước) · `box warn` (lỗi hay gặp: quên điều kiện, sai dấu…).
+- Hình học: vẽ SVG cho định nghĩa/định lí có hình (tam giác vuông với cạnh kề/đối/huyền, đường tròn, dây, cung,
+  tiếp tuyến, góc nội tiếp, tứ giác nội tiếp, hình trụ/nón/cầu…). Nhãn điểm in nghiêng như SGK.
+- Mục "Luyện tập chung", "Bài tập cuối chương" không thành bài riêng; thay bằng một bài **Ôn tập chương**
+  (`lesson-no` = "Ôn tập") cuối mỗi chương: bảng/tóm tắt công thức chính, sơ đồ các dạng toán và cách giải.
+- Hoạt động thực hành trải nghiệm, bảng tra cứu thuật ngữ: không làm bài riêng (bảng giải thích thuật ngữ dùng để
+  viết định nghĩa cho chuẩn).
+- Kí hiệu cung: `\overset{\frown}{AB}` (KaTeX 0.16.11 không có `\wideparen`/`\overparen`). Tiêu đề chương/bài
+  có thể chứa KaTeX (mục lục giữ nguyên công thức).
+- Không dùng chữ viết tắt tự đặt; kí hiệu toán chuẩn (Δ, ⇔, ∈, (O; R), sin/cos/tan/cot) thì được.
+
+### Môn Lịch sử và Địa lí
+
+Trang `lop-9/lich-su-dia-li.html`: 3 tab `lich-su` (class `ls`), `dia-li` (`dl`), `chu-de-chung` (`cd`).
+Id tiền tố `ls-`, `dl-`, `cd-` (vd. `ls-chuong-1`, `ls-bai-1`, `dl-bai-12`, `cd-chu-de-1`).
+`<body data-quick-selector=".formula, .timeline, .stats">` → nút tra nhanh gom **mốc thời gian và số liệu**
+thay vì công thức (tên nút "∑ Mốc & số liệu").
+- **Lịch sử**, mỗi bài: bối cảnh → diễn biến → kết quả, ý nghĩa. Dùng:
+  `ol.timeline` (`<li><span class="t-date">9-1945</span>…<span class="t-note">ghi chú</span></li>`) cho chuỗi sự kiện;
+  `box def` (khái niệm: chiến tranh lạnh, toàn cầu hoá…), `box law data-label="📜 Nội dung chính"` cho nội dung
+  văn kiện/hiệp định, `box note` (tư liệu, Em có biết), `box example` (nhân vật, trận đánh tiêu biểu),
+  bảng so sánh giai đoạn, `div.flow` cho quan hệ nhân quả.
+- **Địa lí**, mỗi bài/vùng: vị trí & phạm vi → điều kiện tự nhiên → dân cư → kinh tế (theo ngành) → ý nghĩa.
+  Dùng `div.stats` (`<div><b>104,1 triệu</b><span>dân số 2024</span></div>`) cho số liệu nổi bật,
+  bảng cơ cấu/sản lượng, `box fact` cho đặc điểm, `div.formula` cho công thức tính (mật độ dân số, tỉ lệ…).
+  Số liệu ghi rõ **năm** và chép đúng SGK (sách dùng số liệu 2024, tỉnh/thành sau sáp nhập 2025).
+- Bài **Thực hành** rút gọn: mục tiêu, các bước (`ol.steps`), kết luận mẫu.
+- Không chép nguyên đoạn dài; tách ý thành gạch đầu dòng, in đậm từ khoá, mỗi bài có `key-points`.
+
 ### Môn ngoại ngữ (Tiếng Anh)
 
 Trang một panel (`section.panel.en`, không thanh tab), nhiều INCLUDE liên tiếp (mỗi chủ điểm một partial
@@ -172,6 +210,11 @@ Bài Review không có kiến thức mới → không tạo bài riêng. Mỗi U
   Có cách dùng, lưu ý, ví dụ kèm dịch. Bảng so sánh khi dễ lẫn (defining vs non-defining…).
 - Câu tiếng Anh bọc `span.en`, bản dịch `span.vi`. Âm tiết nhận trọng âm bọc `span.stress`.
 - Không dùng KaTeX cho môn này (trang không nạp KaTeX).
+- **Kí hiệu viết tắt** (sb, sth, one's, S, V, O, N, V-ing, to V, V3…): trang có `details.abbr-legend` ngay đầu
+  `.content` (ngoài INCLUDE). Mỗi mục `<div data-term="sb" data-inline>` → JS tự gạch chấm + bong bóng nghĩa:
+  `data-inline` = tìm cả trong câu chữ (chỉ dùng cho kí hiệu không thể trùng từ thường), không có = chỉ gắn vào
+  ô `<i>` của khung cấu trúc; nhiều cách viết nối bằng `|` (`to V|to-V`). **Dùng kí hiệu mới trong nội dung thì
+  phải thêm vào bảng này** — người dùng từng không hiểu "sb/sth". Môn khác cũng dùng được khối này.
 - Bài phát âm luyện **âm** (không phải trọng âm): cũng dùng `span.stress` để tô chữ cái mang âm cần luyện.
 - Glossary SGK có thể in sai (IPA, nghĩa): chép đúng sách, chỉ sửa lỗi rõ ràng và ghi chú lại, vd.
   `thuốc trừ sâu <span class="muted">(Glossary SGK ghi “…”)</span>`.
@@ -200,7 +243,16 @@ Bài Review không có kiến thức mới → không tạo bài riêng. Mỗi U
   --headless=new --screenshot=… --window-size=… --virtual-time-budget=5000`). Edge headless không thu nhỏ cửa sổ
   dưới ~500px và chụp sai khi trang đã cuộn → tạo file HTML tạm (trong scratchpad) chứa các `<iframe>` rộng 380px
   (điện thoại) và 1000px (máy tính) trỏ tới `khtn.html#<id-bài>` rồi chụp file đó.
+- **Kiểm độ lệch trang ở nhiều vị trí** (đầu – giữa – cuối sách) bằng cách cắt dải số trang ở đáy ảnh rồi ghép lại
+  thành một ảnh; sách scan có thể thiếu trang, làm độ lệch thay đổi giữa chừng.
 - Không viết `\` trơn trong văn bản HTML ngoài công thức (bị hiển thị thẳng ra).
+- Công thức quá rộng: JS `fitFormulas()` tự xếp dọc `.formula-row`, thu nhỏ `.formula-body`/`.equation`
+  (biến `--fit`) và cho công thức trong câu cuộn ngang (`.k-scroll`). Vẫn nên chủ động **tách công thức dài
+  thành nhiều dòng** (`egin{aligned}` hoặc hai khối `\[ \]`) thay vì dựa vào thu nhỏ.
+- Lưới CSS phải dùng `minmax(min(Xpx, 100%), 1fr)` và `.steps` dùng `minmax(0, 1fr)`, nếu không trang tràn ngang
+  trên điện thoại.
+- Kiểm tra tràn: script tạm trong scratchpad mở từng tab trong iframe rộng 1100px và 380px, đếm phần tử có
+  `getBoundingClientRect().right > clientWidth` và `.formula-body` có `scrollWidth > clientWidth`. Mục tiêu: 0.
 - Class của panel (`ly`, `hoa`, `sinh`, `en`) không được trùng class dùng trong nội dung: selector nội dung
   phải gắn thẻ (vd. `span.en`, không phải `.en`) — từng làm cả trang Tiếng Anh bị in nghiêng.
 
@@ -210,6 +262,8 @@ Bài Review không có kiến thức mới → không tạo bài riêng. Mỗi U
 |---|---|---|---|
 | 9 | KHTN (Lí/Hoá/Sinh) | `data/thuvienhoclieu.com-SGK-KHTN-Lop-9-thong-nhat-.pdf` — Kết nối tri thức, 230 trang, trang PDF = trang in + 1 | Xong 2026-09-17: 15 chương, 51 bài, 798 công thức |
 | 9 | Tiếng Anh | `data/Tiếng Anh 9 Global Success.pdf` — 139 trang, số trang PDF lệch không đều (thiếu trang in 5) → tra theo bảng dưới | Xong 2026-09-18: 4 chủ điểm, 12 Unit, 266 từ vựng, 26 cấu trúc |
+| 9 | Toán (2 tập) | `data/thuvienhoclieu.com-SGK-Toan-9-tu-nam-2026-Tap-1.pdf` (122 tr) + `…-Tap-2.pdf` (134 tr) — Kết nối tri thức, cả hai: trang PDF = trang in + 1 | Xong 2026-09-18: 10 chương, 42 bài, 113 công thức, 78 cách giải, 49 hình SVG |
+| 9 | Lịch sử và Địa lí | `data/thuvienhoclieu.com-SGK-Lich-Su-Va-Dia-Li-Lop-9-thong-nhat.pdf` — 242 trang; **trang PDF = trang in + 2 đến p164, từ p165 trở đi = trang in + 1 vì PDF THIẾU trang in 163** | Xong 2026-09-18: 12 chương, 45 bài, 214 mốc thời gian, 40 khối số liệu, 99 bảng |
 
 Phân chia KHTN 9 (số trang PDF): Bài 1 (chung, đặt ở tab Hoá) 7–15 · **Vật lí** Chương I–V (Bài 2–17) 16–87 ·
 **Hoá học** Chương VI–X (Bài 18–35) 88–159 · **Sinh học** Chương XI–XIV (Bài 36–51) 160–224, thuật ngữ 225–227.
@@ -219,3 +273,25 @@ U3 27–36, Review 1 37–38 · Chủ điểm 2 *Our Heritage*: U4 39–48, U5 4
 Chủ điểm 3 *Our World*: U7 71–80, U8 81–90, U9 91–100, Review 3 101–102 · Chủ điểm 4 *Visions of the Future*:
 U10 103–112, U11 113–122, U12 123–132, Review 4 133–134 · Glossary 135–138 (bản nét, cắt đôi cột:
 `.cache/pages/lop-9/tieng-anh/glossary/p135a.jpg`…`p138b.jpg`).
+
+Phân chia Toán 9 (số trang PDF; ảnh ở `.cache/pages/lop-9/toan-tap-1/`, `toan-tap-2/`):
+**Tập 1** — mục lục p005 · Ch I Phương trình và hệ hai phương trình bậc nhất hai ẩn (B1–3) 6–26 ·
+Ch II Phương trình và bất phương trình bậc nhất một ẩn (B4–6) 27–44 · Ch III Căn bậc hai và căn bậc ba (B7–10) 45–66 ·
+Ch IV Hệ thức lượng trong tam giác vuông (B11–12) 67–83 · Ch V Đường tròn (B13–17) 84–114 ·
+HĐ trải nghiệm 115–118 · thuật ngữ 119–122.
+**Tập 2** — mục lục p004 · Ch VI Hàm số y = ax² (a ≠ 0). Phương trình bậc hai một ẩn (B18–21) 5–32 ·
+Ch VII Tần số và tần số tương đối (B22–24) 33–56 · Ch VIII Xác suất của biến cố trong một số mô hình xác suất đơn giản
+(B25–26) 57–67 · Ch IX Đường tròn ngoại tiếp và đường tròn nội tiếp (B27–30) 68–93 · Ch X Một số hình khối trong
+thực tiễn (B31–32) 94–111 · HĐ trải nghiệm 112–127 · ôn tập cuối năm 128–130 · thuật ngữ 131–134.
+
+Phân chia Lịch sử và Địa lí 9 (số trang PDF; mục lục p005–p006):
+⚠️ Độ lệch trang không đều: p009–p164 = trang in + 2; **trang in 163 không có trong file PDF**; p165–p242 = trang in + 1.
+(Trang 163 thuộc Bài 12 Địa lí — phần chăn nuôi, lâm nghiệp, thuỷ sản và đầu mục công nghiệp của vùng
+Trung du và miền núi phía Bắc.) Luôn kiểm số trang in ở góc dưới ảnh trước khi giao dải trang cho agent.
+**Lịch sử** — Ch1 Thế giới 1918–1945 (B1–4) 9–23 · Ch2 Việt Nam 1918–1945 (B5–8) 24–42 ·
+Ch3 Thế giới 1945–1991 (B9–12) 43–62 · Ch4 Việt Nam 1945–1975 (B13–17) 63–94 ·
+Ch5 Thế giới từ 1991 (B18–19) 95–102 · Ch6 Việt Nam từ 1976 (B20) 103–112 · Ch7 Cách mạng KH–KT (B21) 113–117.
+**Địa lí** — Ch1 Địa lí dân cư (B1–4) 119–130 · Ch2 Địa lí các ngành kinh tế (B5–11) 131–159 ·
+Ch3 Địa lí các vùng kinh tế – xã hội (B12–21) 160–222.
+**Chủ đề chung** 223–237 (Đô thị; Văn minh châu thổ sông Hồng và sông Cửu Long; Biển Đông).
+Thuật ngữ: Lịch sử p237, Địa lí p238 (p239 là bảng phiên âm).

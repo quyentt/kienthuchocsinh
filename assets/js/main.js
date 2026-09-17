@@ -67,6 +67,8 @@
     }).join("")}</div>`;
   }
 
+  const escapeHtml = s => s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+
   /* ---------- Mục lục tự sinh cho mỗi panel ---------- */
   function buildToc(panel) {
     const toc = $(".toc", panel);
@@ -75,7 +77,9 @@
     const items = $$(".chapter", content).map(ch => {
       const title = $(".chapter-title", ch);
       const label = title
-        ? Array.from(title.childNodes).map(n => n.textContent.trim()).filter(Boolean).join(" · ")
+        ? Array.from(title.childNodes)
+            .map(n => (n.nodeType === 1 ? n.innerHTML : escapeHtml(n.textContent)).trim())
+            .filter(Boolean).join(" · ")
         : "";
       const lessons = $$(".lesson", ch).map(ls => {
         const t = $(".lesson-title", ls);
@@ -132,6 +136,7 @@
       const active = panels.find(p => p.id === id);
       document.documentElement.style.setProperty("--accent", getComputedStyle(active).getPropertyValue("--accent"));
       if (!fromHash) history.replaceState(null, "", "#" + id);
+      fitFormulas(active);
     };
     tabs.forEach(t => t.addEventListener("click", () => { show(t.dataset.tab); window.scrollTo({ top: 0 }); }));
 
@@ -160,9 +165,37 @@
     });
   }
 
+  /* ---------- Công thức dài: xếp dọc khung đặt cạnh nhau, rồi thu nhỏ chữ cho vừa ---------- */
+  function fitFormulas(root = document) {
+    const bodies = $$(".formula-body, .equation", root).filter(b => b.offsetParent);
+    const rows = new Set(bodies.map(b => b.closest(".formula-row")).filter(Boolean));
+    rows.forEach(r => r.classList.remove("stack"));
+    bodies.forEach(b => b.style.removeProperty("--fit"));
+    bodies.forEach(b => {
+      const row = b.closest(".formula-row");
+      if (row && b.scrollWidth > b.clientWidth + 1) row.classList.add("stack");
+    });
+    const minFit = innerWidth < 640 ? 0.6 : 0.72;
+    bodies.forEach(b => {
+      for (let fit = 0.93; b.scrollWidth > b.clientWidth + 1 && fit >= minFit; fit -= 0.07) {
+        b.style.setProperty("--fit", fit.toFixed(2));
+      }
+    });
+    // Công thức trong câu quá dài (không tự xuống dòng được) → cho cuộn ngang riêng
+    $$(".k-scroll", root).forEach(k => k.classList.remove("k-scroll"));
+    $$(".katex", root).forEach(k => {
+      if (!k.offsetParent || k.closest(".katex-display, .formula-body, .equation")) return;
+      const box = k.parentElement.closest("p, li, td, th, dd, div, figcaption");
+      if (box && k.getBoundingClientRect().right > box.getBoundingClientRect().right + 1) k.classList.add("k-scroll");
+    });
+  }
+  let fitTimer;
+  addEventListener("resize", () => { clearTimeout(fitTimer); fitTimer = setTimeout(() => fitFormulas(), 200); });
+
   /* ---------- Công thức nhanh: tự gom mọi .formula / .equation trên trang ---------- */
   function initFormulaSheet() {
-    const panels = $$(".panel").filter(p => $(".formula, .equation", p));
+    const SEL = document.body.dataset.quickSelector || ".formula, .equation";
+    const panels = $$(".panel").filter(p => $(SEL, p));
     if (!panels.length) return;
     const hasEq = panels.some(p => $(".equation", p));
     // Trang có thể đổi chữ qua <body data-quick-title=".." data-quick-unit=".." data-quick-hint="..">
@@ -171,7 +204,7 @@
       unit: document.body.dataset.quickUnit || "công thức",
       hint: document.body.dataset.quickHint || "Tìm: điện trở, R, độ cồn, allele…"
     };
-    const total = panels.reduce((n, p) => n + $$(".formula", p).length, 0);
+    const total = panels.reduce((n, p) => n + $$(SEL, p).filter(el => !el.classList.contains("equation")).length, 0);
     const tabName = p => {
       const tab = $(`.tab[data-tab="${p.id}"]`);
       return tab ? tab.textContent.trim() : ($(".subject-head h1")?.textContent.trim() || "");
@@ -186,7 +219,7 @@
     const groups = panels.map(p => {
       const css = getComputedStyle(p);
       const lessons = $$(".lesson", p).map(ls => {
-        const items = $$(".formula, .equation", ls);
+        const items = $$(SEL, ls);
         if (!items.length) return "";
         return `<section class="fs-lesson">
             <a class="fs-lesson-title" href="#${ls.id}">${$(".lesson-title", ls).innerHTML}<span class="fs-go">Xem bài →</span></a>
@@ -235,7 +268,7 @@
     const norm = s => s.normalize("NFD").replace(/\p{M}/gu, "").replace(/[đĐ]/g, "d").toLowerCase();
     const search = $("input[type=search]", sheet);
     const eqBox = $(".fs-check input", sheet);
-    const itemText = new Map($$(".formula, .equation", sheet).map(el => [el, norm(el.textContent)]));
+    const itemText = new Map($$(SEL, sheet).map(el => [el, norm(el.textContent)]));
     let scope = "all";
 
     function apply() {
@@ -248,7 +281,7 @@
         $$(".fs-lesson", g).forEach(ls => {
           const lessonHit = q && norm($(".fs-lesson-title", ls).textContent).includes(q);
           let count = 0;
-          $$(".formula, .equation", ls).forEach(it => {
+          $$(SEL, ls).forEach(it => {
             const ok = (showEq || !it.classList.contains("equation")) && (!q || lessonHit || itemText.get(it).includes(q));
             it.hidden = !ok;
             if (ok) count++;
@@ -259,6 +292,7 @@
         g.hidden = !groupCount || (scope !== "all" && g.dataset.panel !== scope);
       });
       $(".fs-empty", sheet).hidden = $$(".fs-group", sheet).some(g => !g.hidden);
+      if (sheet.open) fitFormulas(sheet);
     }
 
     const open = () => {
@@ -266,6 +300,7 @@
       scope = panels.length > 1 && current ? current.id : "all";
       apply();
       sheet.showModal();
+      fitFormulas(sheet);
       $(".fs-body", sheet).scrollTop = 0;
     };
 
@@ -307,6 +342,85 @@
     });
   }
 
+  /* ---------- Kí hiệu viết tắt: lấy từ details.abbr-legend, gắn chú thích vào bài ---------- */
+  function initAbbr() {
+    const legend = $(".abbr-legend");
+    if (!legend) return;
+    const terms = new Map();   // kí hiệu -> nghĩa
+    const inline = [];         // kí hiệu được tìm cả trong câu chữ (sb, sth…)
+    $$("[data-term]", legend).forEach(item => {
+      const tip = `${$("dt", item).textContent}: ${$("dd", item).textContent}`;
+      item.dataset.term.split("|").forEach(t => {
+        terms.set(t, tip);
+        if (item.hasAttribute("data-inline")) inline.push(t);
+      });
+    });
+    const mark = (el, tip) => {
+      el.classList.add("ab");
+      el.dataset.tip = tip;
+      el.tabIndex = 0;
+    };
+
+    // 1) Chỗ điền trong khung cấu trúc: <i>S</i>, <i>V (nguyên thể)</i>…
+    $$(".content .pattern i").forEach(i => {
+      const key = i.textContent.trim().replace(/\s*\(.*\)$/, "");
+      if (terms.has(key)) mark(i, terms.get(key));
+    });
+
+    // 2) sb / sth / one's trong câu chữ
+    if (inline.length) {
+      const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      const re = new RegExp(`(?<![\\w'-])(${inline.map(esc).join("|")})(?![\\w'-])`, "g");
+      $$(".content").forEach(content => {
+        const walker = document.createTreeWalker(content, NodeFilter.SHOW_TEXT, {
+          acceptNode: n => n.parentElement.closest(".abbr-legend, .ab, script, style")
+            ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT
+        });
+        const nodes = [];
+        const has = new RegExp(re.source);
+        while (walker.nextNode()) if (has.test(walker.currentNode.nodeValue)) nodes.push(walker.currentNode);
+        nodes.forEach(node => {
+          const frag = document.createDocumentFragment();
+          let last = 0;
+          node.nodeValue.replace(re, (m, term, at) => {
+            frag.append(node.nodeValue.slice(last, at));
+            const span = document.createElement("span");
+            span.textContent = m;
+            mark(span, terms.get(term));
+            frag.append(span);
+            last = at + m.length;
+          });
+          frag.append(node.nodeValue.slice(last));
+          node.replaceWith(frag);
+        });
+      });
+    }
+
+    // Bong bóng chú thích (đặt fixed để không bị khung cuộn cắt mất)
+    const tip = document.createElement("div");
+    tip.className = "ab-tip";
+    tip.hidden = true;
+    const show = el => {
+      (el.closest("dialog") || document.body).appendChild(tip);
+      tip.textContent = el.dataset.tip;
+      tip.hidden = false;
+      const r = el.getBoundingClientRect();
+      const w = tip.offsetWidth;
+      tip.style.left = Math.max(8, Math.min(innerWidth - w - 8, r.left + r.width / 2 - w / 2)) + "px";
+      const above = r.top - tip.offsetHeight - 6;
+      tip.style.top = (above > 8 ? above : r.bottom + 6) + "px";
+    };
+    const hide = () => { tip.hidden = true; };
+    document.addEventListener("mouseover", e => { const el = e.target.closest?.(".ab"); if (el) show(el); });
+    document.addEventListener("mouseout", e => { if (e.target.closest?.(".ab")) hide(); });
+    document.addEventListener("focusin", e => { const el = e.target.closest?.(".ab"); if (el) show(el); });
+    document.addEventListener("focusout", hide);
+    document.addEventListener("click", e => { const el = e.target.closest?.(".ab"); if (el) show(el); else hide(); });
+    addEventListener("scroll", e => {
+      if (e.target === document || e.target.closest?.(".fs-body")) hide();
+    }, { passive: true, capture: true });
+  }
+
   function initToTop() {
     const btn = document.createElement("button");
     btn.className = "to-top"; btn.type = "button"; btn.title = "Lên đầu trang"; btn.textContent = "↑";
@@ -324,7 +438,10 @@
     renderMath();
     $$(".panel").forEach(buildToc);
     initTabs();
+    initAbbr();
     initFormulaSheet();
+    fitFormulas();
+    document.fonts?.ready.then(() => fitFormulas());
     initToTop();
   });
 })();

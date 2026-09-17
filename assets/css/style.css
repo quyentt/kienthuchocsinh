@@ -20,6 +20,11 @@
   --hoa: #d9480f;     --hoa-soft: #fff0e6;
   --sinh: #2b8a3e;    --sinh-soft: #e7f6ea;
   --en: #7c3aed;      --en-soft: #f1ebff;
+  --t1: #0f766e;      --t1-soft: #e2f5f2;
+  --t2: #be185d;      --t2-soft: #fdebf3;
+  --ls: #b45309;      --ls-soft: #fdf1e0;
+  --dl: #047857;      --dl-soft: #e3f5ee;
+  --cd: #1d4ed8;      --cd-soft: #e8eeff;
   --accent: var(--brand);
   --accent-soft: var(--brand-soft);
 
@@ -48,6 +53,11 @@
     --hoa: #ff8a50; --hoa-soft: #3a2418;
     --sinh: #5fd07a; --sinh-soft: #183322;
     --en: #b595ff; --en-soft: #261d3d;
+    --t1: #3fd0bd; --t1-soft: #14302d;
+    --t2: #f47bb5; --t2-soft: #3a1a2a;
+    --ls: #f0a83a; --ls-soft: #332512;
+    --dl: #45c99a; --dl-soft: #122d25;
+    --cd: #7c9cff; --cd-soft: #1c2745;
     --def: #7aa7ff; --def-bg: #172238;
     --law: #b595ff; --law-bg: #231c3a;
     --note: #f0b94a; --note-bg: #2e2614;
@@ -68,6 +78,11 @@
   --hoa: #ff8a50; --hoa-soft: #3a2418;
   --sinh: #5fd07a; --sinh-soft: #183322;
   --en: #b595ff; --en-soft: #261d3d;
+  --t1: #3fd0bd; --t1-soft: #14302d;
+  --t2: #f47bb5; --t2-soft: #3a1a2a;
+  --ls: #f0a83a; --ls-soft: #332512;
+  --dl: #45c99a; --dl-soft: #122d25;
+  --cd: #7c9cff; --cd-soft: #1c2745;
   --def: #7aa7ff; --def-bg: #172238;
   --law: #b595ff; --law-bg: #231c3a;
   --note: #f0b94a; --note-bg: #2e2614;
@@ -168,11 +183,21 @@ a.card:hover { transform: translateY(-2px); border-color: var(--card-color, var(
 .tab.ly   { --c: var(--ly);   --cs: var(--ly-soft); }
 .tab.hoa  { --c: var(--hoa);  --cs: var(--hoa-soft); }
 .tab.sinh { --c: var(--sinh); --cs: var(--sinh-soft); }
+.tab.t1   { --c: var(--t1);   --cs: var(--t1-soft); }
+.tab.t2   { --c: var(--t2);   --cs: var(--t2-soft); }
+.tab.ls   { --c: var(--ls);   --cs: var(--ls-soft); }
+.tab.dl   { --c: var(--dl);   --cs: var(--dl-soft); }
+.tab.cd   { --c: var(--cd);   --cs: var(--cd-soft); }
 
 .panel.ly   { --accent: var(--ly);   --accent-soft: var(--ly-soft); }
 .panel.hoa  { --accent: var(--hoa);  --accent-soft: var(--hoa-soft); }
 .panel.sinh { --accent: var(--sinh); --accent-soft: var(--sinh-soft); }
 .panel.en   { --accent: var(--en);   --accent-soft: var(--en-soft); }
+.panel.t1   { --accent: var(--t1);   --accent-soft: var(--t1-soft); }
+.panel.t2   { --accent: var(--t2);   --accent-soft: var(--t2-soft); }
+.panel.ls   { --accent: var(--ls);   --accent-soft: var(--ls-soft); }
+.panel.dl   { --accent: var(--dl);   --accent-soft: var(--dl-soft); }
+.panel.cd   { --accent: var(--cd);   --accent-soft: var(--cd-soft); }
 .panel[hidden] { display: none; }
 
 .layout {
@@ -191,6 +216,7 @@ a.card:hover { transform: translateY(-2px); border-color: var(--card-color, var(
 }
 .toc ol { list-style: none; padding: 0; margin: 0; }
 .toc .toc-chapter { font-weight: 700; color: var(--accent); margin: 10px 6px 2px; font-size: 12.5px; text-transform: uppercase; letter-spacing: .03em; }
+.toc .katex { text-transform: none; font-size: 1em; }
 .toc a { display: block; padding: 4px 8px; border-radius: 6px; color: var(--text); text-decoration: none; line-height: 1.4; }
 .toc a:hover { background: var(--surface-2); }
 .toc a.active { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
@@ -239,6 +265,7 @@ a.card:hover { transform: translateY(-2px); border-color: var(--card-color, var(
 .box.tip     { --c: var(--tip);  --b: var(--tip-bg);  --label: "💡 Mẹo nhớ"; }
 .box.warn    { --c: var(--warn); --b: var(--warn-bg); --label: "⚠️ Dễ nhầm"; }
 .box.example { --c: var(--ex);   --b: var(--ex-bg);   --label: "✏️ Ví dụ"; }
+.box.method  { --c: var(--t1);   --b: var(--t1-soft); --label: "🧭 Cách giải"; }
 .box.fact    { --c: var(--def);  --b: var(--surface-2); --label: "🔎 Tính chất · Đặc điểm"; }
 .box[data-label]::before { content: attr(data-label); }
 
@@ -251,23 +278,27 @@ a.card:hover { transform: translateY(-2px); border-color: var(--card-color, var(
   display: inline-block; font-size: 12.5px; font-weight: 800; letter-spacing: .04em;
   color: var(--on-accent); background: var(--formula); padding: 2px 10px; border-radius: 6px; margin-bottom: 4px;
 }
-.formula-body { font-size: 1.22em; text-align: center; overflow-x: auto; overflow-y: hidden; padding: 4px 0; }
+.formula-body { font-size: calc(1.22em * var(--fit, 1)); text-align: center; overflow-x: auto; overflow-y: hidden; padding: 4px 0; }
 .formula-body .katex-display { margin: .4em 0; }
 .formula-legend {
   list-style: none; padding: 8px 0 0; margin: 6px 0 0; border-top: 1px dashed color-mix(in srgb, var(--formula) 45%, transparent);
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 2px 18px; font-size: 14.5px;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr)); gap: 2px 18px; font-size: 14.5px;
 }
 .formula-legend li { margin: 0; }
 .formula-note { font-size: 14px; color: var(--text-muted); margin-top: 6px; }
-.formula-row { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
-.formula-row .formula { margin: 8px 0; }
+.formula-row { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); }
+.formula-row .formula { margin: 8px 0; min-width: 0; }
+.formula-row.stack { grid-template-columns: minmax(0, 1fr); }
 
 /* Phương trình hoá học */
 .equation {
+  font-size: calc(1em * var(--fit, 1));
   background: var(--surface-2); border-radius: 8px; padding: 6px 14px; margin: 8px 0;
   overflow-x: auto; overflow-y: hidden; text-align: center;
 }
 .equation .katex-display { margin: .3em 0; }
+.content .katex-display { overflow-x: auto; overflow-y: hidden; }
+.k-scroll { display: inline-block; max-width: 100%; overflow-x: auto; overflow-y: hidden; vertical-align: bottom; }
 
 /* Ghi nhớ cuối bài */
 .key-points {
@@ -294,7 +325,7 @@ td + td, th + th { border-left: 1px solid var(--border); }
 .diagram .accent-fill { fill: var(--accent); }
 
 /* Sơ đồ bước (quy trình) */
-.steps { list-style: none; padding: 0; counter-reset: step; display: grid; gap: 8px; margin: 12px 0; }
+.steps { list-style: none; padding: 0; counter-reset: step; display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; margin: 12px 0; }
 .steps > li {
   counter-increment: step; position: relative; padding: 8px 12px 8px 46px;
   background: var(--surface-2); border-radius: 8px; margin: 0;
@@ -308,7 +339,7 @@ td + td, th + th { border-left: 1px solid var(--border); }
 .flow > span { background: var(--accent-soft); color: var(--accent); border-radius: 8px; padding: 5px 12px; font-weight: 600; }
 .flow > i { font-style: normal; color: var(--text-muted); }
 
-.two-col { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.two-col { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); }
 .two-col > .box { margin: 0; }
 
 /* Nút lên đầu */
@@ -318,6 +349,31 @@ td + td, th + th { border-left: 1px solid var(--border); }
   box-shadow: var(--shadow); opacity: 0; pointer-events: none; transition: opacity .2s;
 }
 .to-top.show { opacity: 1; pointer-events: auto; }
+
+/* ---------- Lịch sử: dòng thời gian · Địa lí: số liệu nổi bật ---------- */
+.timeline { list-style: none; margin: 14px 0; padding: 0 0 0 4px; position: relative; }
+.timeline::before {
+  content: ""; position: absolute; left: 7px; top: 6px; bottom: 6px; width: 2px;
+  background: color-mix(in srgb, var(--accent) 35%, transparent);
+}
+.timeline > li { position: relative; margin: 0 0 10px; padding: 0 0 0 26px; }
+.timeline > li::before {
+  content: ""; position: absolute; left: 2px; top: 8px; width: 12px; height: 12px; border-radius: 50%;
+  background: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft);
+}
+.t-date {
+  display: inline-block; font-weight: 800; color: var(--accent); background: var(--accent-soft);
+  border-radius: 6px; padding: 1px 9px; margin-right: 8px; font-size: 14.5px; white-space: nowrap;
+}
+.timeline .t-note { display: block; color: var(--text-muted); font-size: 14.5px; }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(160px, 100%), 1fr)); gap: 10px; margin: 14px 0; }
+.stats > div {
+  background: var(--surface-2); border: 1px solid var(--border); border-left: 4px solid var(--accent);
+  border-radius: 10px; padding: 10px 12px;
+}
+.stats b { display: block; font-size: 22px; font-weight: 800; color: var(--accent); line-height: 1.2; }
+.stats span { font-size: 14px; color: var(--text-muted); }
 
 /* ---------- Ngoại ngữ (Tiếng Anh) ---------- */
 .lesson-title .vi-title { font-size: 15px; font-weight: 500; color: var(--text-muted); }
@@ -343,6 +399,25 @@ table.vocab td:first-child { font-weight: 650; }
 .toc .vi-title { color: var(--text-muted); }
 .toc .vi-title::before { content: "· "; }
 .stress { font-weight: 800; color: var(--accent); text-decoration: underline 2px; text-underline-offset: 3px; }
+
+/* Kí hiệu viết tắt: bảng đầu trang + chữ có chú thích */
+.abbr-legend {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 10px 16px; margin-bottom: 20px; box-shadow: var(--shadow);
+}
+.abbr-legend summary { font-weight: 700; cursor: pointer; }
+.abbr-legend summary .muted { font-weight: 400; font-size: 14px; }
+.abbr-legend dl { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr)); gap: 4px 20px; margin: 10px 0 4px; }
+.abbr-legend dl > div { display: flex; gap: 10px; align-items: baseline; font-size: 15px; }
+.abbr-legend dt { flex: 0 0 76px; font-weight: 800; color: var(--accent); }
+.abbr-legend dd { margin: 0; }
+.ab { text-decoration: underline dotted 1.5px; text-underline-offset: 3px; cursor: help; }
+.ab:focus { outline: none; background: var(--accent-soft); border-radius: 3px; }
+.ab-tip {
+  position: fixed; z-index: 100; max-width: min(320px, calc(100vw - 16px));
+  background: var(--text); color: var(--bg); font-size: 13.5px; line-height: 1.45; font-style: normal; font-weight: 500;
+  padding: 6px 10px; border-radius: 8px; box-shadow: var(--shadow); pointer-events: none;
+}
 
 /* ---------- Công thức nhanh (bảng tra) ---------- */
 .formula-btn { display: inline-flex; align-items: center; gap: 5px; font-weight: 650; white-space: nowrap; }
@@ -392,13 +467,14 @@ table.vocab td:first-child { font-weight: 650; }
 .fs-lesson-title .lesson-no { font-size: 12px; padding: 2px 8px; }
 .fs-go { font-size: 12.5px; font-weight: 600; color: var(--accent); opacity: 0; transition: opacity .15s; }
 .fs-lesson-title:hover .fs-go, .fs-lesson-title:focus-visible .fs-go { opacity: 1; }
-.fs-items { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 8px; margin-top: 6px; }
+.fs-items { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr)); gap: 8px; margin-top: 6px; }
 .fsheet .formula { margin: 0; padding: 8px 12px 10px; border-width: 1.5px; min-width: 0; }
 .fsheet .formula-name { font-size: 12px; }
-.fsheet .formula-body { font-size: 1.1em; }
+.fsheet .formula-body { font-size: calc(1.1em * var(--fit, 1)); }
 .fsheet .formula-legend { grid-template-columns: 1fr; font-size: 13px; gap: 0; padding-top: 6px; }
 .fsheet .formula-note { font-size: 12.5px; }
-.fsheet .equation { grid-column: 1 / -1; margin: 0; padding: 0 12px; font-size: 14.5px; }
+.fsheet .timeline, .fsheet .stats { grid-column: 1 / -1; margin: 2px 0; }
+.fsheet .equation { grid-column: 1 / -1; margin: 0; padding: 0 12px; font-size: calc(14.5px * var(--fit, 1)); }
 .fsheet .equation .katex-display { margin: .25em 0; }
 .fs-empty { text-align: center; color: var(--text-muted); padding: 48px 0; }
 
@@ -421,6 +497,7 @@ table.vocab td:first-child { font-weight: 650; }
   body { font-size: 16px; }
   .hide-sm { display: none; }
   .ipa { white-space: normal; }
+  .t-date { white-space: normal; }
 }
 
 /* ---------- In ấn ---------- */

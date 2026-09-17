@@ -1,0 +1,1468 @@
+<section class="chapter" id="toan-chuong-8">
+  <h2 class="chapter-title"><span>Chương VIII · Xác suất</span>Xác suất của biến cố trong một số mô hình xác suất đơn giản</h2>
+
+  <article class="lesson" id="toan-bai-25">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 25</span>Phép thử ngẫu nhiên và không gian mẫu</h3>
+    <p class="lesson-goal">Cần nắm: thế nào là phép thử ngẫu nhiên; không gian mẫu \(\Omega\); cách liệt kê không gian mẫu bằng bảng (phép thử gồm hai hành động) hoặc theo từng trường hợp.</p>
+
+    <h4>1. Phép thử ngẫu nhiên và không gian mẫu</h4>
+    <div class="box def">
+      <p>Một hoặc một số hành động, thực nghiệm được tiến hành <b>liên tiếp hay đồng thời</b> mà kết quả của chúng <b>không thể biết trước</b> khi thực hiện nhưng <b>có thể liệt kê được tất cả các kết quả có thể xảy ra</b>, được gọi là một <span class="kw">phép thử ngẫu nhiên</span>, gọi tắt là <i>phép thử</i>.</p>
+    </div>
+    <div class="box def">
+      <p>Tập hợp tất cả các kết quả có thể xảy ra của phép thử (gọi tắt là tập tất cả các kết quả có thể của phép thử) được gọi là <span class="kw">không gian mẫu của phép thử</span>.</p>
+      <p>Không gian mẫu kí hiệu là \(\Omega\) (đọc là “ô-mê-ga”). Số phần tử của \(\Omega\) kí hiệu là \(n(\Omega)\).</p>
+    </div>
+    <div class="box tip"><p>Mô tả một phép thử luôn trả lời 3 câu: <b>Phép thử là gì?</b> → <b>Kết quả của phép thử là gì</b> (một số, một cặp số, một cách xếp…)? → <b>\(\Omega\) gồm những phần tử nào, có bao nhiêu phần tử?</b></p></div>
+
+    <h4>2. Liệt kê không gian mẫu</h4>
+    <div class="box method">
+      <p class="box-title">Dạng: Mô tả không gian mẫu của phép thử gồm hai hành động</p>
+      <ol class="steps">
+        <li>Nêu phép thử và dạng của một kết quả, thường là một <b>cặp</b> \((a, b)\): \(a\) là kết quả của hành động thứ nhất, \(b\) là kết quả của hành động thứ hai.</li>
+        <li><b>Lập bảng</b>: hàng ghi các kết quả của hành động thứ nhất, cột ghi các kết quả của hành động thứ hai; mỗi ô là một kết quả có thể.</li>
+        <li>Nếu lấy <b>không trả lại</b> (hai lần không thể trùng nhau) thì <b>xoá các ô trên đường chéo</b> \((1, 1), (2, 2), \ldots\)</li>
+        <li>Viết \(\Omega = \{\ldots\}\) và đếm số phần tử (số ô còn lại).</li>
+      </ol>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Mô tả không gian mẫu khi xếp chỗ, chọn lần lượt</p>
+      <ol class="steps">
+        <li>Kí hiệu các đối tượng bằng chữ cái (vd. B, C, D).</li>
+        <li>Chia <b>theo từng trường hợp</b> (vd. theo vị trí của một bạn) hoặc vẽ <b>sơ đồ cây</b>: mỗi tầng là một lựa chọn, mỗi nhánh từ gốc đến ngọn là một kết quả.</li>
+        <li>Gom lại thành \(\Omega\) và đếm số phần tử; kiểm tra không sót, không lặp.</li>
+      </ol>
+    </div>
+
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 — Gieo một con xúc xắc và một đồng xu</p>
+      <p>Bạn Lan gieo một con xúc xắc, bạn Hoà gieo một đồng xu; quan sát số chấm trên xúc xắc và mặt của đồng xu (sấp S, ngửa N).</p>
+      <p>Kết quả là cặp (số chấm, mặt đồng xu). Lập bảng:</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Đồng xu / Xúc xắc</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th></tr></thead>
+        <tbody>
+          <tr><td>S</td><td>(1, S)</td><td>(2, S)</td><td>(3, S)</td><td>(4, S)</td><td>(5, S)</td><td>(6, S)</td></tr>
+          <tr><td>N</td><td>(1, N)</td><td>(2, N)</td><td>(3, N)</td><td>(4, N)</td><td>(5, N)</td><td>(6, N)</td></tr>
+        </tbody>
+      </table></div>
+      <p>\(\Omega = \{(1, S); (2, S); \ldots; (6, S); (1, N); \ldots; (6, N)\}\) → không gian mẫu có <b>12</b> phần tử.</p>
+    </div>
+
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 — Lấy lần lượt hai quả bóng, không trả lại</p>
+      <p>Hộp có 4 quả bóng đánh số 1; 2; 3; 4. Lấy ngẫu nhiên lần lượt hai quả, quả lấy lần đầu không trả lại hộp.</p>
+      <p>Kết quả là cặp \((a, b)\): \(a\), \(b\) là số trên quả lấy lần thứ nhất, thứ hai. Vì không trả lại nên \(a \ne b\).</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Lần 1 / Lần 2</th><th>1</th><th>2</th><th>3</th><th>4</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td><s>(1, 1)</s></td><td>(1, 2)</td><td>(1, 3)</td><td>(1, 4)</td></tr>
+          <tr><td>2</td><td>(2, 1)</td><td><s>(2, 2)</s></td><td>(2, 3)</td><td>(2, 4)</td></tr>
+          <tr><td>3</td><td>(3, 1)</td><td>(3, 2)</td><td><s>(3, 3)</s></td><td>(3, 4)</td></tr>
+          <tr><td>4</td><td>(4, 1)</td><td>(4, 2)</td><td>(4, 3)</td><td><s>(4, 4)</s></td></tr>
+        </tbody>
+      </table></div>
+      <p>Xoá 4 ô đường chéo: \(\Omega = \{(1, 2); (1, 3); (1, 4); (2, 1); (2, 3); (2, 4); (3, 1); (3, 2); (3, 4); (4, 1); (4, 2); (4, 3)\}\) → <b>12</b> phần tử.</p>
+    </div>
+
+    <div class="box example">
+      <p class="box-title">Vận dụng — Lai hai cây đậu Hà Lan</p>
+      <p>Cây bố có kiểu gene (AA, Bb), cây mẹ có kiểu gene (Aa, Bb); cây con lấy ngẫu nhiên một gene từ bố và một gene từ mẹ.</p>
+      <p>Gene màu hạt của cây con: AA; Aa. Gene dạng hạt: BB; Bb; bB; bb. Lập bảng 2 hàng × 4 cột:</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Màu hạt / Dạng hạt</th><th>BB</th><th>Bb</th><th>bB</th><th>bb</th></tr></thead>
+        <tbody>
+          <tr><td>AA</td><td>(AA, BB)</td><td>(AA, Bb)</td><td>(AA, bB)</td><td>(AA, bb)</td></tr>
+          <tr><td>Aa</td><td>(Aa, BB)</td><td>(Aa, Bb)</td><td>(Aa, bB)</td><td>(Aa, bb)</td></tr>
+        </tbody>
+      </table></div>
+      <p>Không gian mẫu có <b>8</b> phần tử (dùng lại ở Bài 26, Ví dụ 3).</p>
+    </div>
+
+    <figure class="diagram">
+      <svg viewBox="0 0 360 200" width="360" role="img" aria-label="Sơ đồ cây giới tính hai người con">
+        <circle cx="30" cy="100" r="5" class="accent-fill"/>
+        <line x1="30" y1="100" x2="130" y2="50" class="stroke" stroke-width="1.5"/>
+        <line x1="30" y1="100" x2="130" y2="150" class="stroke" stroke-width="1.5"/>
+        <line x1="150" y1="50" x2="240" y2="25" class="stroke" stroke-width="1.5"/>
+        <line x1="150" y1="50" x2="240" y2="75" class="stroke" stroke-width="1.5"/>
+        <line x1="150" y1="150" x2="240" y2="125" class="stroke" stroke-width="1.5"/>
+        <line x1="150" y1="150" x2="240" y2="175" class="stroke" stroke-width="1.5"/>
+        <text x="132" y="55" font-size="14">T</text>
+        <text x="132" y="155" font-size="14">G</text>
+        <text x="244" y="30" font-size="14">T → (T, T)</text>
+        <text x="244" y="80" font-size="14">G → (T, G)</text>
+        <text x="244" y="130" font-size="14">T → (G, T)</text>
+        <text x="244" y="180" font-size="14">G → (G, G)</text>
+        <text x="60" y="190" font-size="12">Con thứ nhất</text>
+        <text x="160" y="198" font-size="12">Con thứ hai</text>
+      </svg>
+      <figcaption>Sơ đồ cây cho phép thử “chọn một gia đình có hai con, quan sát giới tính” (T: trai, G: gái): \(\Omega = \{(T, T); (T, G); (G, T); (G, G)\}\), có 4 phần tử.</figcaption>
+    </figure>
+
+    <div class="box warn">
+      <p>“Lấy <b>lần lượt</b>” thì <b>thứ tự có ý nghĩa</b>: \((1, 2)\) và \((2, 1)\) là hai kết quả khác nhau.</p>
+      <p>Lấy <b>không trả lại</b> → phải bỏ các cặp có hai số trùng nhau; lấy <b>có trả lại</b> (hoặc hai hành động độc lập như gieo xúc xắc hai lần) → giữ đủ các ô.</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Phép thử ngẫu nhiên: không biết trước kết quả nhưng liệt kê được mọi kết quả có thể.</li>
+        <li>Không gian mẫu \(\Omega\): tập hợp tất cả các kết quả có thể của phép thử.</li>
+        <li>Phép thử gồm hai hành động → kết quả là cặp \((a, b)\) → lập bảng để liệt kê.</li>
+        <li>Không trả lại → xoá các ô đường chéo; xếp chỗ → chia trường hợp hoặc vẽ sơ đồ cây.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-26">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 26</span>Xác suất của biến cố liên quan tới phép thử</h3>
+    <p class="lesson-goal">Cần nắm: kết quả thuận lợi cho một biến cố; công thức \(P(E) = \dfrac{n(E)}{n(\Omega)}\) khi các kết quả đồng khả năng; 4 bước tính xác suất.</p>
+
+    <h4>1. Kết quả thuận lợi cho một biến cố liên quan tới phép thử</h4>
+    <div class="box def">
+      <p>Cho phép thử \(T\). Xét biến cố \(E\), ở đó việc xảy ra hay không xảy ra của \(E\) tuỳ thuộc vào kết quả của phép thử \(T\).</p>
+      <p>Kết quả của phép thử \(T\) làm cho biến cố \(E\) xảy ra gọi là <span class="kw">kết quả thuận lợi</span> cho \(E\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 — Quay tấm bìa 4 hình quạt hai lần</p>
+      <p>Tấm bìa tròn chia 4 hình quạt bằng nhau đánh số 1; 2; 3; 4. Bạn Tuấn quay hai lần, ghi số hình quạt mũi tên chỉ vào.</p>
+      <p>a) Kết quả là cặp \((a, b)\); lập bảng 4 × 4 → \(\Omega\) có <b>16</b> phần tử: \((1, 1); (1, 2); \ldots; (4, 4)\).</p>
+      <p>b) \(E\): “Tổng hai số bằng 5” → kết quả thuận lợi: \((1, 4); (2, 3); (3, 2); (4, 1)\).</p>
+      <p>c) \(F\): “Tích hai số bằng 4” → kết quả thuận lợi: \((1, 4); (2, 2); (4, 1)\).</p>
+    </div>
+
+    <h4>2. Tính xác suất của biến cố khi các kết quả của phép thử đồng khả năng</h4>
+    <div class="box law" data-label="⚖️ Công thức xác suất">
+      <p>Giả sử các kết quả có thể của phép thử \(T\) là <b>đồng khả năng</b>. Khi đó xác suất \(P(E)\) của biến cố \(E\) bằng tỉ số giữa số kết quả thuận lợi cho biến cố \(E\) và số phần tử của tập \(\Omega\).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Xác suất của biến cố E (các kết quả đồng khả năng)</div>
+      <div class="formula-body">\[ P(E) = \frac{n(E)}{n(\Omega)} \]</div>
+      <ul class="formula-legend">
+        <li>\(\Omega\): không gian mẫu của phép thử \(T\)</li>
+        <li>\(n(E)\): số kết quả thuận lợi cho biến cố \(E\)</li>
+        <li>\(n(\Omega)\): số phần tử của tập \(\Omega\)</li>
+        <li>\(P(E)\): xác suất của biến cố \(E\) (không có đơn vị)</li>
+      </ul>
+      <div class="formula-note">Vì \(0 \le n(E) \le n(\Omega)\) nên \(0 \le P(E) \le 1\).</div>
+    </div>
+
+    <div class="box method">
+      <p class="box-title">Dạng: Tính xác suất của một biến cố E (theo SGK)</p>
+      <ol class="steps">
+        <li>Mô tả không gian mẫu của phép thử. Từ đó xác định số phần tử \(n(\Omega)\).</li>
+        <li>Chứng tỏ các kết quả có thể của phép thử là <b>đồng khả năng</b> (chọn ngẫu nhiên, xúc xắc/đồng xu cân đối, hình quạt bằng nhau…).</li>
+        <li>Mô tả các kết quả thuận lợi cho biến cố \(E\). Từ đó xác định \(n(E)\).</li>
+        <li>Lập tỉ số \(P(E) = \dfrac{n(E)}{n(\Omega)}\) (rút gọn phân số).</li>
+      </ol>
+    </div>
+
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 — Xếp ba bạn ngồi một hàng ghế</p>
+      <p>Bảo (B), Châu (C), Dương (D) được xếp ngẫu nhiên vào hàng ghế ba chỗ.</p>
+      <ul>
+        <li>Bảo ngồi ngoài cùng bên trái: BCD, BDC.</li>
+        <li>Bảo ngồi giữa: CBD, DBC.</li>
+        <li>Bảo ngồi ngoài cùng bên phải: CDB, DCB.</li>
+      </ul>
+      <p>\(\Omega = \{BCD; BDC; CBD; DBC; CDB; DCB\}\), \(n(\Omega) = 6\); xếp ngẫu nhiên nên các kết quả đồng khả năng.</p>
+      <p>a) \(E\): “Bảo không ngồi ngoài cùng bên phải” → 4 kết quả thuận lợi (BCD, BDC, CBD, DBC): \(P(E) = \dfrac{4}{6} = \dfrac{2}{3}\).</p>
+      <p>b) \(F\): “Châu và Dương không ngồi cạnh nhau” → 2 kết quả (CBD, DBC): \(P(F) = \dfrac{2}{6} = \dfrac{1}{3}\).</p>
+    </div>
+
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 — Xác suất cây đậu con có hạt vàng và trơn</p>
+      <p>Cây bố (AA, Bb), cây mẹ (Aa, Bb). Từ Bài 25: \(\Omega\) có 8 phần tử, đồng khả năng (cây con chọn ngẫu nhiên gene).</p>
+      <p>\(M\): “Cây con có hạt vàng và trơn” xảy ra khi gene màu hạt có ít nhất một allele trội A <b>và</b> gene dạng hạt có ít nhất một allele trội B.</p>
+      <p>Kết quả thuận lợi: (AA, BB); (AA, Bb); (AA, bB); (Aa, BB); (Aa, Bb); (Aa, bB) → 6 kết quả.</p>
+      <p>\(P(M) = \dfrac{6}{8} = \dfrac{3}{4}\).</p>
+    </div>
+
+    <div class="box example">
+      <p class="box-title">Luyện tập chung — Quay hai tấm bìa A (3 hình quạt) và B (5 hình quạt)</p>
+      <p>Bạn Nam quay tấm bìa A (số 1; 2; 3), bạn Bình quay tấm bìa B (số 1; 2; 3; 4; 5). Lập bảng 5 × 3 → \(n(\Omega) = 15\), các kết quả đồng khả năng. Kết quả viết (số trên B, số trên A).</p>
+      <ul>
+        <li>\(E\): “Tích hai số bằng 6” → \((3, 2); (2, 3)\): \(P(E) = \dfrac{2}{15}\).</li>
+        <li>\(F\): “Tích nhỏ hơn 5” → tích bằng 1: \((1, 1)\); bằng 2: \((1, 2); (2, 1)\); bằng 3: \((1, 3); (3, 1)\); bằng 4: \((2, 2); (4, 1)\) → 7 kết quả: \(P(F) = \dfrac{7}{15}\).</li>
+        <li>\(G\): “Tích là số chẵn” ⇔ trong cặp có ít nhất một số chẵn → 9 kết quả: \(P(G) = \dfrac{9}{15} = \dfrac{3}{5}\).</li>
+      </ul>
+    </div>
+
+    <div class="box warn">
+      <p>Chỉ dùng \(P(E) = \dfrac{n(E)}{n(\Omega)}\) khi các kết quả <b>đồng khả năng</b> (tấm bìa chia các hình quạt <b>bằng nhau</b>, xúc xắc <b>cân đối, đồng chất</b>…).</p>
+      <p>Đếm kết quả thuận lợi phải đếm trên <b>cùng</b> không gian mẫu: nếu \(\Omega\) phân biệt \((1, 2)\) và \((2, 1)\) thì khi đếm \(n(E)\) cũng phải tính cả hai.</p>
+    </div>
+    <div class="box tip"><p>“Ít nhất một…”, “có…” → thường dễ đếm hơn nếu đếm các ô <b>không</b> thoả mãn rồi lấy \(n(\Omega)\) trừ đi (vd. gieo hai xúc xắc: “không có mặt 6” có \(5 \cdot 5 = 25\) ô nên “có ít nhất một mặt 6” có \(36 - 25 = 11\) ô).</p></div>
+
+    <div class="key-points">
+      <ul>
+        <li>Kết quả thuận lợi cho \(E\): kết quả của phép thử làm cho \(E\) xảy ra.</li>
+        <li>Các kết quả đồng khả năng: \(P(E) = \dfrac{n(E)}{n(\Omega)}\).</li>
+        <li>4 bước: mô tả \(\Omega\) → chứng tỏ đồng khả năng → đếm \(n(E)\) → lập tỉ số.</li>
+        <li>Gieo hai xúc xắc: \(n(\Omega) = 36\); gieo xúc xắc và đồng xu: \(n(\Omega) = 12\).</li>
+        <li>\(0 \le P(E) \le 1\).</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-on-tap-chuong-8">
+    <h3 class="lesson-title"><span class="lesson-no">Ôn tập</span>Ôn tập chương VIII</h3>
+    <p class="lesson-goal">Cần nắm: sơ đồ giải một bài xác suất; cách lập bảng cho các phép thử thường gặp.</p>
+
+    <h4>1. Tóm tắt kiến thức</h4>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Khái niệm</th><th>Nội dung</th></tr></thead>
+      <tbody>
+        <tr><td>Phép thử ngẫu nhiên</td><td>Hành động, thực nghiệm không biết trước kết quả nhưng liệt kê được mọi kết quả có thể</td></tr>
+        <tr><td>Không gian mẫu \(\Omega\)</td><td>Tập hợp tất cả các kết quả có thể của phép thử</td></tr>
+        <tr><td>Kết quả thuận lợi cho \(E\)</td><td>Kết quả của phép thử làm cho \(E\) xảy ra</td></tr>
+        <tr><td>Xác suất (đồng khả năng)</td><td>\(P(E) = \dfrac{n(E)}{n(\Omega)}\)</td></tr>
+      </tbody>
+    </table></div>
+
+    <h4>2. Sơ đồ giải bài toán xác suất</h4>
+    <div class="flow"><span>Phép thử là gì?</span><i>→</i><span>Lập bảng / liệt kê \(\Omega\)</span><i>→</i><span>Đồng khả năng?</span><i>→</i><span>Đếm \(n(E)\)</span><i>→</i><span>\(P(E) = \frac{n(E)}{n(\Omega)}\)</span></div>
+
+    <h4>3. Các phép thử thường gặp</h4>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Phép thử</th><th>Cách liệt kê</th><th>\(n(\Omega)\)</th></tr></thead>
+      <tbody>
+        <tr><td>Gieo đồng thời hai con xúc xắc</td><td>Bảng 6 × 6</td><td>36</td></tr>
+        <tr><td>Gieo một xúc xắc và một đồng xu</td><td>Bảng 2 × 6</td><td>12</td></tr>
+        <tr><td>Rút mỗi túi một thẻ (túi \(m\) thẻ, túi \(k\) thẻ)</td><td>Bảng \(m \times k\)</td><td>\(m \cdot k\)</td></tr>
+        <tr><td>Lấy lần lượt 2 trong \(m\) vật, không trả lại</td><td>Bảng \(m \times m\), xoá đường chéo</td><td>\(m \cdot (m - 1)\)</td></tr>
+        <tr><td>Xếp 3 người vào 3 chỗ</td><td>Chia trường hợp / sơ đồ cây</td><td>6</td></tr>
+        <tr><td>Gia đình có hai con (giới tính)</td><td>Sơ đồ cây</td><td>4</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="box example">
+      <p class="box-title">Bài 8.12 — Tổng hai xúc xắc lớn hơn hoặc bằng 10</p>
+      <p>\(n(\Omega) = 36\). Tổng ≥ 10: \((4, 6); (5, 5); (6, 4); (5, 6); (6, 5); (6, 6)\) → 6 kết quả.</p>
+      <p>\(P = \dfrac{6}{36} = \dfrac{1}{6}\) → chọn <b>C</b>.</p>
+    </div>
+    <div class="box warn"><p>Đề cho “lấy ngẫu nhiên <b>hai</b> viên bi” (lấy cùng lúc) thì không phân biệt thứ tự: có thể liệt kê các cặp \(\{a, b\}\) với \(a &lt; b\) (4 viên → 6 cặp). Dù đếm có thứ tự hay không, phải dùng <b>cùng một cách</b> cho cả \(n(\Omega)\) và \(n(E)\).</p></div>
+
+    <div class="key-points">
+      <ul>
+        <li>Luôn mô tả \(\Omega\) trước khi đếm.</li>
+        <li>Kiểm tra điều kiện đồng khả năng trước khi dùng công thức.</li>
+        <li>Không trả lại → bỏ các cặp trùng; lần lượt → cặp có thứ tự.</li>
+        <li>Rút gọn phân số xác suất ở kết quả cuối.</li>
+      </ul>
+    </div>
+  </article>
+</section>
+
+<section class="chapter" id="toan-chuong-9">
+  <h2 class="chapter-title"><span>Chương IX · Hình học phẳng</span>Đường tròn ngoại tiếp và đường tròn nội tiếp</h2>
+
+  <article class="lesson" id="toan-bai-27">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 27</span>Góc nội tiếp</h3>
+    <p class="lesson-goal">Cần nắm: nhận biết góc nội tiếp và cung bị chắn; định lí số đo góc nội tiếp bằng nửa số đo cung bị chắn và các hệ quả.</p>
+
+    <h4>1. Góc nội tiếp và cung bị chắn</h4>
+    <div class="box def">
+      <p><span class="kw">Góc nội tiếp</span> của đường tròn là góc có <b>đỉnh nằm trên đường tròn</b> và <b>hai cạnh chứa hai dây cung</b> của đường tròn đó.</p>
+      <p>Cung nằm bên trong góc được gọi là <span class="kw">cung bị chắn</span>.</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 360 230" width="360" role="img" aria-label="Góc nội tiếp ACB và góc ở tâm AOB cùng chắn cung AB">
+        <circle cx="180" cy="120" r="90" class="stroke" fill="none" stroke-width="1.8"/>
+        <path d="M102.1 165 A90 90 0 0 0 257.9 165" class="accent" stroke-width="4"/>
+        <line x1="164.4" y1="31.4" x2="102.1" y2="165" class="stroke" stroke-width="1.8"/>
+        <line x1="164.4" y1="31.4" x2="257.9" y2="165" class="stroke" stroke-width="1.8"/>
+        <line x1="180" y1="120" x2="102.1" y2="165" class="stroke" stroke-width="1.2" stroke-dasharray="5 4"/>
+        <line x1="180" y1="120" x2="257.9" y2="165" class="stroke" stroke-width="1.2" stroke-dasharray="5 4"/>
+        <path d="M155.1 51.3 A22 22 0 0 0 177 49.4" class="accent" stroke-width="2"/>
+        <path d="M164.4 129 A18 18 0 0 0 195.6 129" class="stroke" fill="none" stroke-width="1.2"/>
+        <circle cx="180" cy="120" r="2.5" class="accent-fill"/>
+        <text x="156" y="24" font-size="15" font-style="italic">C</text>
+        <text x="86" y="176" font-size="15" font-style="italic">A</text>
+        <text x="263" y="176" font-size="15" font-style="italic">B</text>
+        <text x="184" y="115" font-size="15" font-style="italic">O</text>
+        <text x="140" y="226" font-size="13">cung bị chắn AB</text>
+        <text x="4" y="40" font-size="12">góc nội tiếp ACB</text>
+        <text x="4" y="125" font-size="11">góc ở tâm AOB</text>
+      </svg>
+      <figcaption>\(\widehat{ACB}\) là góc nội tiếp, \(\widehat{AOB}\) (nét đứt) là góc ở tâm; cả hai cùng chắn cung nhỏ \(\overset{\frown}{AB}\) (tô màu).</figcaption>
+    </figure>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 — Nhận biết góc nội tiếp</p>
+      <ul>
+        <li>Góc có đỉnh <b>không nằm trên</b> đường tròn (ở ngoài hoặc ở trong) → <b>không</b> là góc nội tiếp.</li>
+        <li>Góc có đỉnh trên đường tròn nhưng <b>một cạnh không chứa dây cung</b> → <b>không</b> là góc nội tiếp.</li>
+        <li>Góc có đỉnh trên đường tròn và hai cạnh chứa hai dây cung → <b>là</b> góc nội tiếp.</li>
+      </ul>
+    </div>
+
+    <h4>2. Định lí về góc nội tiếp</h4>
+    <div class="box law" data-label="⚖️ Định lí góc nội tiếp">
+      <p>Trong một đường tròn, số đo của góc nội tiếp bằng <b>nửa số đo của cung bị chắn</b>.</p>
+      <p>GT: \(A, B, C \in (O)\). &nbsp; KL: \(\widehat{ACB} = \dfrac{1}{2}\,\text{sđ}\,\overset{\frown}{AB}\) (cung \(AB\) không chứa \(C\)).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Số đo góc nội tiếp theo cung bị chắn</div>
+      <div class="formula-body">\[ \widehat{ACB} = \frac{1}{2}\,\text{sđ}\,\overset{\frown}{AB} \]</div>
+      <ul class="formula-legend">
+        <li>\(\widehat{ACB}\): góc nội tiếp, đỉnh \(C\) nằm trên \((O)\) (độ, °)</li>
+        <li>\(\text{sđ}\,\overset{\frown}{AB}\): số đo cung \(AB\) bị chắn, không chứa \(C\) (độ, °)</li>
+      </ul>
+      <div class="formula-note">Ngược lại: \(\text{sđ}\,\overset{\frown}{AB} = 2\,\widehat{ACB}\).</div>
+    </div>
+    <div class="box note" data-label="📝 Chứng minh (tóm tắt 3 trường hợp)">
+      <ul>
+        <li><b>Tâm \(O\) nằm trên một cạnh</b> (giả sử \(O \in CB\)): tam giác \(OAC\) cân tại \(O\) nên \(2\widehat{ACB} = \widehat{ACO} + \widehat{CAO} = 180^\circ - \widehat{AOC} = \widehat{AOB}\). Mà \(\widehat{AOB} = \text{sđ}\,\overset{\frown}{AB}\) (góc ở tâm) nên \(\widehat{ACB} = \frac{1}{2}\,\text{sđ}\,\overset{\frown}{AB}\).</li>
+        <li><b>Tâm \(O\) nằm bên trong góc</b>: vẽ đường kính \(CD\), áp dụng trường hợp 1 rồi <b>cộng</b>: \(\widehat{ACB} = \widehat{ACD} + \widehat{DCB} = \frac{1}{2}\,\text{sđ}\,\overset{\frown}{AD} + \frac{1}{2}\,\text{sđ}\,\overset{\frown}{DB} = \frac{1}{2}\,\text{sđ}\,\overset{\frown}{AB}\).</li>
+        <li><b>Tâm \(O\) nằm bên ngoài góc</b>: vẽ đường kính \(CD\), áp dụng trường hợp 1 rồi <b>trừ</b>: \(\widehat{ACB} = \widehat{ACD} - \widehat{BCD} = \frac{1}{2}\,\text{sđ}\,\overset{\frown}{AD} - \frac{1}{2}\,\text{sđ}\,\overset{\frown}{BD} = \frac{1}{2}\,\text{sđ}\,\overset{\frown}{AB}\).</li>
+      </ul>
+    </div>
+
+    <h4>3. Hệ quả (Nhận xét của SGK)</h4>
+    <div class="box fact" data-label="🔎 Nhận xét">
+      <p>Với các góc nội tiếp của <b>một đường tròn</b> hoặc của <b>hai đường tròn bằng nhau</b>:</p>
+      <ul>
+        <li>Các góc nội tiếp bằng nhau chắn các cung bằng nhau.</li>
+        <li>Các góc nội tiếp cùng chắn một cung hoặc chắn các cung bằng nhau thì bằng nhau.</li>
+        <li>Các góc nội tiếp chắn <b>cung nhỏ</b> thì có số đo bằng nửa số đo của góc ở tâm chắn cùng một cung.</li>
+        <li>Góc nội tiếp chắn nửa đường tròn là <b>góc vuông</b>.</li>
+      </ul>
+    </div>
+    <div class="formula-row">
+      <div class="formula">
+        <div class="formula-name">Góc nội tiếp và góc ở tâm cùng chắn cung nhỏ</div>
+        <div class="formula-body">\[ \widehat{ACB} = \frac{1}{2}\,\widehat{AOB} \]</div>
+        <ul class="formula-legend">
+          <li>\(\widehat{ACB}\): góc nội tiếp (°)</li>
+          <li>\(\widehat{AOB}\): góc ở tâm chắn cùng cung nhỏ \(AB\) (°)</li>
+        </ul>
+      </div>
+      <div class="formula">
+        <div class="formula-name">Góc nội tiếp chắn nửa đường tròn</div>
+        <div class="formula-body">\[ AB \text{ là đường kính} \Rightarrow \widehat{ACB} = 90^\circ \]</div>
+        <ul class="formula-legend">
+          <li>\(AB\): đường kính của \((O)\)</li>
+          <li>\(C\): điểm bất kì trên \((O)\), khác \(A\), \(B\)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="box method">
+      <p class="box-title">Dạng: Tính số đo góc nội tiếp, góc ở tâm</p>
+      <ol class="steps">
+        <li>Kiểm tra đỉnh của góc có nằm trên đường tròn không; xác định <b>cung bị chắn</b> (cung nằm trong góc).</li>
+        <li>Tìm góc đã biết <b>cùng chắn cung đó</b>: góc nội tiếp khác (→ bằng nhau) hoặc góc ở tâm (→ góc nội tiếp bằng một nửa).</li>
+        <li>Nếu biết độ dài dây và bán kính: xét tam giác cân \(OAB\) (đều, vuông…) để tìm góc ở tâm trước.</li>
+        <li>Kết hợp tổng ba góc tam giác bằng 180°, tam giác cân để tính các góc còn lại.</li>
+      </ol>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Chứng minh hai góc bằng nhau, hai tam giác đồng dạng, hệ thức tích</p>
+      <ol class="steps">
+        <li>Tìm các cặp góc nội tiếp <b>cùng chắn một cung</b> → bằng nhau.</li>
+        <li>Thêm một cặp góc bằng nhau (đối đỉnh, góc chung) → hai tam giác đồng dạng (g.g).</li>
+        <li>Từ tỉ số đồng dạng suy ra hệ thức dạng \(XA \cdot XB = XC \cdot XD\).</li>
+      </ol>
+    </div>
+
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 — Tính góc từ góc nội tiếp đã biết</p>
+      <p>\(A, B, C, D \in (O)\), \(\widehat{BAC} = 60^\circ\). Tính \(\widehat{BOC}\), \(\widehat{BDC}\).</p>
+      <ul>
+        <li>Góc nội tiếp \(\widehat{BDC}\) và \(\widehat{BAC}\) cùng chắn cung nhỏ \(BC\) nên \(\widehat{BDC} = \widehat{BAC} = 60^\circ\).</li>
+        <li>Góc nội tiếp \(\widehat{BAC}\) và góc ở tâm \(\widehat{BOC}\) cùng chắn cung nhỏ \(BC\) nên \(\widehat{BOC} = 2\widehat{BAC} = 120^\circ\).</li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p class="box-title">Luyện tập — Hai dây cắt nhau: \(\Delta AXC \backsim \Delta DXB\)</p>
+      <p>Hai dây \(AB\), \(CD\) của \((O)\) cắt nhau tại \(X\) nằm trong đường tròn.</p>
+      <ul>
+        <li>\(\widehat{CAX} = \widehat{CAB}\) và \(\widehat{BDX} = \widehat{BDC}\) là hai góc nội tiếp cùng chắn cung \(BC\) nên bằng nhau.</li>
+        <li>\(\widehat{AXC} = \widehat{DXB}\) (đối đỉnh).</li>
+        <li>Vậy \(\Delta AXC \backsim \Delta DXB\) (g.g), suy ra \(\dfrac{XA}{XD} = \dfrac{XC}{XB}\), tức là \(XA \cdot XB = XC \cdot XD\) (dùng cho bài 9.4b).</li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p class="box-title">Vận dụng — Đường tròn bán kính 2 cm, dây \(BC = 2\sqrt{2}\) cm. Tính \(\widehat{BAC}\)</p>
+      <p>\(OB^2 + OC^2 = 4 + 4 = 8 = BC^2\) nên tam giác \(BOC\) vuông tại \(O\) (định lí Pythagore đảo), \(\widehat{BOC} = 90^\circ\).</p>
+      <p>Với \(A\) trên cung lớn \(BC\) (như Hình 9.1): \(\widehat{BAC} = \frac{1}{2}\widehat{BOC} = 45^\circ\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Bài 9.6 — Góc sút bóng</p>
+      <p>Điểm phạt đền cách mỗi cọc gôn 11,6 m nên hai cọc gôn nằm trên đường tròn tâm là điểm phạt đền, bán kính 11,6 m; góc sút 36° là <b>góc ở tâm</b>.</p>
+      <p>Quả bóng đặt cách điểm phạt đền 11,6 m thì nằm trên đường tròn đó → góc sút là <b>góc nội tiếp</b> chắn cùng cung: \(36^\circ : 2 = 18^\circ\).</p>
+    </div>
+
+    <div class="box warn">
+      <p>“Góc nội tiếp bằng nửa góc ở tâm” chỉ đúng khi hai góc <b>chắn cùng một cung nhỏ</b>. Góc nội tiếp chắn cung lớn thì lớn hơn 90°, không có góc ở tâm tương ứng.</p>
+      <p>“Hai góc nội tiếp bằng nhau thì chắn các cung bằng nhau” — <b>không</b> nhất thiết chắn <b>cùng một</b> cung.</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Góc nội tiếp: đỉnh trên đường tròn, hai cạnh chứa hai dây cung.</li>
+        <li>\(\widehat{ACB} = \frac{1}{2}\,\text{sđ}\,\overset{\frown}{AB}\).</li>
+        <li>Cùng chắn một cung (hoặc các cung bằng nhau) → các góc nội tiếp bằng nhau.</li>
+        <li>Chắn cung nhỏ: góc nội tiếp = \(\frac{1}{2}\) góc ở tâm.</li>
+        <li>Góc nội tiếp chắn nửa đường tròn = 90°.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-28">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 28</span>Đường tròn ngoại tiếp và đường tròn nội tiếp của một tam giác</h3>
+    <p class="lesson-goal">Cần nắm: định nghĩa đường tròn ngoại tiếp, nội tiếp tam giác; cách xác định tâm; tâm và bán kính cho tam giác vuông, tam giác đều.</p>
+
+    <h4>1. Đường tròn ngoại tiếp một tam giác</h4>
+    <div class="box def">
+      <p><span class="kw">Đường tròn ngoại tiếp</span> một tam giác là đường tròn <b>đi qua ba đỉnh</b> của tam giác đó.</p>
+      <p>Khi \((O)\) ngoại tiếp tam giác \(ABC\), ta cũng nói tam giác \(ABC\) <b>nội tiếp</b> đường tròn \((O)\).</p>
+    </div>
+    <div class="box law" data-label="⚖️ Tâm đường tròn ngoại tiếp">
+      <p>Tâm \(O\) của đường tròn ngoại tiếp tam giác \(ABC\) là <b>giao điểm của ba đường trung trực</b> của tam giác. Bán kính \(R = OA = OB = OC\).</p>
+      <p>(Điểm \(O\) nằm trên đường trung trực của \(AB\) thì \(OA = OB\), nên đường tròn tâm \(O\) đi qua \(A\) thì đi qua \(B\).)</p>
+    </div>
+
+    <h5>a) Tam giác vuông</h5>
+    <div class="box law" data-label="⚖️ Đường tròn ngoại tiếp tam giác vuông">
+      <p>Đường tròn ngoại tiếp tam giác vuông có tâm là <b>trung điểm của cạnh huyền</b> và bán kính bằng <b>một nửa cạnh huyền</b>.</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 240 210" width="240" role="img" aria-label="Đường tròn ngoại tiếp tam giác vuông có tâm là trung điểm cạnh huyền">
+        <circle cx="120" cy="110" r="80" class="stroke" fill="none" stroke-width="1.8"/>
+        <polygon points="80,40.7 40,110 200,110" class="accent" stroke-width="2.2"/>
+        <polyline points="75,49.4 83.7,54.4 88.7,45.7" class="stroke" fill="none" stroke-width="1.2"/>
+        <circle cx="120" cy="110" r="3" class="accent-fill"/>
+        <text x="72" y="33" font-size="15" font-style="italic">A</text>
+        <text x="22" y="115" font-size="15" font-style="italic">B</text>
+        <text x="205" y="115" font-size="15" font-style="italic">C</text>
+        <text x="113" y="128" font-size="15" font-style="italic">M</text>
+      </svg>
+      <figcaption>\(\Delta ABC\) vuông tại \(A\): tâm \(M\) là trung điểm cạnh huyền \(BC\), \(R = MB = MC = \frac{BC}{2}\).</figcaption>
+    </figure>
+    <div class="formula">
+      <div class="formula-name">Bán kính đường tròn ngoại tiếp tam giác vuông</div>
+      <div class="formula-body">\[ R = \frac{BC}{2} \]</div>
+      <ul class="formula-legend">
+        <li>\(BC\): cạnh huyền của tam giác \(ABC\) vuông tại \(A\) (cm)</li>
+        <li>\(R\): bán kính đường tròn ngoại tiếp (cm); tâm là trung điểm \(BC\)</li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 — \(\Delta ABC\) vuông tại \(A\), \(AB = 2\) cm, \(AC = 4\) cm. Tính \(R\)</p>
+      <p>Lấy \(O\) là trung điểm \(BC\), vẽ \((O)\) đi qua \(A\) → \((O)\) ngoại tiếp \(\Delta ABC\).</p>
+      <p>Định lí Pythagore: \(BC^2 = AB^2 + AC^2 = 4 + 16 = 20\) nên \(BC = 2\sqrt{5}\) cm. Vậy \(R = \dfrac{BC}{2} = \sqrt{5}\) cm.</p>
+    </div>
+
+    <h5>b) Tam giác đều</h5>
+    <div class="box law" data-label="⚖️ Đường tròn ngoại tiếp tam giác đều">
+      <p>Đường tròn ngoại tiếp tam giác đều cạnh \(a\) có tâm là <b>trọng tâm</b> của tam giác đó và bán kính bằng \(\dfrac{\sqrt{3}}{3}a\).</p>
+      <p>(Trong tam giác đều, các đường trung trực cũng là các đường trung tuyến nên tâm \(O\) trùng trọng tâm; \(\widehat{OBM} = 30^\circ\) và \(OB = \dfrac{\sqrt{3}}{3}BC\) với \(M\) là trung điểm \(BC\).)</p>
+    </div>
+
+    <h4>2. Đường tròn nội tiếp một tam giác</h4>
+    <div class="box def">
+      <p>Đường tròn <b>tiếp xúc với ba cạnh</b> của tam giác được gọi là <span class="kw">đường tròn nội tiếp</span> tam giác. Tam giác đó được gọi là <b>ngoại tiếp</b> đường tròn.</p>
+      <p>Tâm đường tròn nội tiếp tam giác là <b>giao điểm ba đường phân giác</b> của tam giác. Bán kính \(r = ID = IE = IF\) (\(D, E, F\): tiếp điểm trên \(BC, CA, AB\)).</p>
+    </div>
+    <div class="box note"><p>Đường tròn tiếp xúc với một cạnh của tam giác nghĩa là tiếp xúc với đường thẳng chứa cạnh đó và có tiếp điểm nằm trên cạnh đó.</p></div>
+    <figure class="diagram">
+      <svg viewBox="0 0 320 220" width="320" role="img" aria-label="Đường tròn nội tiếp tam giác ABC, tâm I là giao điểm ba đường phân giác">
+        <polygon points="110,40 30,200 290,200" class="stroke" fill="none" stroke-width="2"/>
+        <circle cx="129" cy="138.8" r="61.2" class="accent" stroke-width="2.2"/>
+        <line x1="110" y1="40" x2="129" y2="138.8" class="stroke" stroke-width="1" stroke-dasharray="5 4"/>
+        <line x1="30" y1="200" x2="129" y2="138.8" class="stroke" stroke-width="1" stroke-dasharray="5 4"/>
+        <line x1="290" y1="200" x2="129" y2="138.8" class="stroke" stroke-width="1" stroke-dasharray="5 4"/>
+        <line x1="129" y1="138.8" x2="129" y2="200" class="accent" stroke-width="1.5"/>
+        <line x1="129" y1="138.8" x2="169.7" y2="93.1" class="accent" stroke-width="1.5"/>
+        <line x1="129" y1="138.8" x2="74.3" y2="111.4" class="accent" stroke-width="1.5"/>
+        <polyline points="121,200 121,192 129,192" class="stroke" fill="none" stroke-width="1"/>
+        <circle cx="129" cy="138.8" r="2.5" class="accent-fill"/>
+        <text x="104" y="32" font-size="15" font-style="italic">A</text>
+        <text x="12" y="210" font-size="15" font-style="italic">B</text>
+        <text x="295" y="210" font-size="15" font-style="italic">C</text>
+        <text x="125" y="216" font-size="15" font-style="italic">D</text>
+        <text x="174" y="88" font-size="15" font-style="italic">E</text>
+        <text x="56" y="108" font-size="15" font-style="italic">F</text>
+        <text x="134" y="134" font-size="15" font-style="italic">I</text>
+      </svg>
+      <figcaption>\((I)\) nội tiếp \(\Delta ABC\): \(I\) là giao điểm ba đường phân giác (nét đứt), \(ID \perp BC\), \(IE \perp CA\), \(IF \perp AB\), \(r = ID = IE = IF\).</figcaption>
+    </figure>
+
+    <h5>Tam giác đều</h5>
+    <div class="box law" data-label="⚖️ Đường tròn nội tiếp tam giác đều">
+      <p>Đường tròn nội tiếp tam giác đều cạnh \(a\) có tâm là <b>trọng tâm</b> của tam giác đó và bán kính bằng \(\dfrac{\sqrt{3}}{6}a\).</p>
+      <p>Bán kính đường tròn nội tiếp tam giác đều bằng <b>một nửa</b> bán kính đường tròn ngoại tiếp (hai đường tròn cùng tâm).</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 300 200" width="300" role="img" aria-label="Tam giác đều với đường tròn ngoại tiếp và đường tròn nội tiếp chung tâm">
+        <circle cx="150" cy="105" r="90" class="stroke" fill="none" stroke-width="1.8"/>
+        <circle cx="150" cy="105" r="45" class="accent" stroke-width="2"/>
+        <polygon points="150,15 72.06,150 227.94,150" class="stroke" fill="none" stroke-width="2"/>
+        <line x1="150" y1="15" x2="150" y2="150" class="stroke" stroke-width="1" stroke-dasharray="5 4"/>
+        <line x1="72.06" y1="150" x2="188.97" y2="82.5" class="stroke" stroke-width="1" stroke-dasharray="5 4"/>
+        <line x1="227.94" y1="150" x2="111.03" y2="82.5" class="stroke" stroke-width="1" stroke-dasharray="5 4"/>
+        <line x1="150" y1="105" x2="227.94" y2="150" class="accent" stroke-width="1.6"/>
+        <circle cx="150" cy="105" r="2.5" class="accent-fill"/>
+        <text x="156" y="14" font-size="15" font-style="italic">A</text>
+        <text x="54" y="162" font-size="15" font-style="italic">B</text>
+        <text x="232" y="162" font-size="15" font-style="italic">C</text>
+        <text x="146" y="166" font-size="15" font-style="italic">M</text>
+        <text x="130" y="102" font-size="15" font-style="italic">O</text>
+        <text x="192" y="122" font-size="14" font-style="italic">R</text>
+        <text x="154" y="134" font-size="14" font-style="italic">r</text>
+      </svg>
+      <figcaption>Tam giác đều cạnh \(a\): tâm \(O\) (trọng tâm) chung cho cả hai đường tròn; \(R = OC = \frac{\sqrt{3}}{3}a\), \(r = OM = \frac{\sqrt{3}}{6}a = \frac{R}{2}\).</figcaption>
+    </figure>
+    <div class="formula-row">
+      <div class="formula">
+        <div class="formula-name">Bán kính đường tròn ngoại tiếp tam giác đều</div>
+        <div class="formula-body">\[ R = \frac{\sqrt{3}}{3}\,a \]</div>
+        <ul class="formula-legend">
+          <li>\(a\): độ dài cạnh tam giác đều (cm)</li>
+          <li>\(R\): bán kính đường tròn ngoại tiếp (cm)</li>
+        </ul>
+        <div class="formula-note">Suy ra cạnh theo \(R\): \(a = R\sqrt{3}\).</div>
+      </div>
+      <div class="formula">
+        <div class="formula-name">Bán kính đường tròn nội tiếp tam giác đều</div>
+        <div class="formula-body">\[ r = \frac{\sqrt{3}}{6}\,a = \frac{R}{2} \]</div>
+        <ul class="formula-legend">
+          <li>\(a\): độ dài cạnh tam giác đều (cm)</li>
+          <li>\(r\): bán kính đường tròn nội tiếp (cm)</li>
+        </ul>
+        <div class="formula-note">Suy ra cạnh theo \(r\): \(a = 2\sqrt{3}\,r\).</div>
+      </div>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Diện tích tam giác theo bán kính đường tròn nội tiếp</div>
+      <div class="formula-body">\[ S = \frac{1}{2}\,r\,(BC + CA + AB) \]</div>
+      <ul class="formula-legend">
+        <li>\(S\): diện tích tam giác \(ABC\) (cm²)</li>
+        <li>\(r\): bán kính đường tròn nội tiếp \((I; r)\) (cm)</li>
+        <li>\(BC + CA + AB\): chu vi tam giác (cm)</li>
+      </ul>
+      <div class="formula-note">Chứng minh (Luyện tập chung, Ví dụ 2): \(S = S_{BIC} + S_{CIA} + S_{AIB} = \frac{1}{2}ID \cdot BC + \frac{1}{2}IE \cdot CA + \frac{1}{2}IF \cdot AB\). Suy ra \(r = \dfrac{2S}{BC + CA + AB}\).</div>
+    </div>
+
+    <div class="box method">
+      <p class="box-title">Dạng: Xác định tâm, tính bán kính đường tròn ngoại tiếp / nội tiếp</p>
+      <ol class="steps">
+        <li>Nhận dạng tam giác: <b>vuông</b> → tâm ngoại tiếp là trung điểm cạnh huyền, \(R = \frac{\text{cạnh huyền}}{2}\) (tính cạnh huyền bằng định lí Pythagore); <b>đều</b> → tâm là trọng tâm, dùng \(R = \frac{\sqrt{3}}{3}a\), \(r = \frac{\sqrt{3}}{6}a\).</li>
+        <li>Tam giác bất kì: tâm ngoại tiếp = giao hai đường trung trực; tâm nội tiếp = giao hai đường phân giác.</li>
+        <li>Tính \(r\) của tam giác bất kì: tính diện tích \(S\) và chu vi rồi dùng \(r = \frac{2S}{\text{chu vi}}\).</li>
+        <li>Bài toán ngược (biết \(R\) hoặc \(r\), tìm cạnh tam giác đều): \(a = R\sqrt{3} = 2\sqrt{3}\,r\).</li>
+      </ol>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Tính góc tạo bởi tâm đường tròn nội tiếp và hai đỉnh</p>
+      <ol class="steps">
+        <li>Tính góc còn lại của tam giác (tổng ba góc bằng 180°).</li>
+        <li>\(I\) nằm trên các đường phân giác → mỗi góc tại đỉnh bị chia đôi.</li>
+        <li>Trong tam giác \(BIC\): \(\widehat{BIC} = 180^\circ - \frac{\widehat{B}}{2} - \frac{\widehat{C}}{2}\) (tương tự cho \(\widehat{CIA}\), \(\widehat{AIB}\)).</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 — Tam giác đều cạnh 3 cm. Tính \(R\)</p>
+      <p>\(O\) là giao điểm ba đường trung tuyến; \(R = \dfrac{\sqrt{3}}{3}BC = \dfrac{\sqrt{3}}{3} \cdot 3 = \sqrt{3}\) cm.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 — \(\Delta ABC\) ngoại tiếp \((I)\), \(\widehat{A} = 40^\circ\), \(\widehat{B} = 60^\circ\). Tính \(\widehat{BIC}\), \(\widehat{CIA}\), \(\widehat{AIB}\)</p>
+      <p>\(\widehat{ACB} = 180^\circ - 40^\circ - 60^\circ = 80^\circ\).</p>
+      <p>\(I\) là giao điểm các đường phân giác: \(\widehat{CAI} = \widehat{BAI} = 20^\circ\); \(\widehat{CBI} = \widehat{ABI} = 30^\circ\); \(\widehat{ACI} = \widehat{BCI} = 40^\circ\).</p>
+      <p>\(\widehat{BIC} = 180^\circ - 30^\circ - 40^\circ = 110^\circ\); \(\widehat{CIA} = 180^\circ - 40^\circ - 20^\circ = 120^\circ\); \(\widehat{AIB} = 180^\circ - 30^\circ - 20^\circ = 130^\circ\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Luyện tập chung, Ví dụ 1 — Tính góc tam giác nội tiếp từ các góc tại tâm</p>
+      <p>\(\Delta ABC\) nội tiếp \((O)\), \(\widehat{OAB} = 30^\circ\), \(\widehat{OAC} = 40^\circ\). Tính \(\widehat{ABC}\), \(\widehat{ACB}\).</p>
+      <ul>
+        <li>\(OA = OB\) → \(\Delta OAB\) cân tại \(O\): \(\widehat{AOB} = 180^\circ - 30^\circ - 30^\circ = 120^\circ\).</li>
+        <li>\(OA = OC\) → \(\Delta OAC\) cân tại \(O\): \(\widehat{AOC} = 180^\circ - 40^\circ - 40^\circ = 100^\circ\).</li>
+        <li>Góc nội tiếp và góc ở tâm cùng chắn cung nhỏ: \(\widehat{ABC} = \frac{1}{2}\widehat{AOC} = 50^\circ\); \(\widehat{ACB} = \frac{1}{2}\widehat{AOB} = 60^\circ\).</li>
+      </ul>
+    </div>
+
+    <h4>3. Vẽ đường tròn nội tiếp bằng thước kẻ và compa (Thực hành)</h4>
+    <ol class="steps">
+      <li>Vẽ tia phân giác góc \(B\): vẽ cung tròn tâm \(B\) cắt \(BC\), \(BA\) tại \(X\), \(Y\); vẽ hai cung tâm \(X\), \(Y\) cùng bán kính, cắt nhau tại \(Z\) khác \(B\); kẻ tia \(BZ\).</li>
+      <li>Tương tự, vẽ tia phân giác góc \(C\), cắt tia \(BZ\) tại \(I\).</li>
+      <li>Vẽ đường cao \(ID\) từ \(I\) xuống \(BC\) (\(D \in BC\)). Vẽ đường tròn \((I; ID)\) — đó là đường tròn nội tiếp tam giác \(ABC\).</li>
+    </ol>
+    <div class="box note" data-label="📝 Em có biết — Đường tròn bàng tiếp">
+      <p>Đường tròn <b>bàng tiếp</b> của tam giác \(ABC\) trong góc \(A\) là đường tròn tiếp xúc với cạnh \(BC\) và tiếp xúc với các tia đối của tia \(BA\) và tia \(CA\). Mỗi tam giác có ba đường tròn bàng tiếp (nằm ngoài tam giác).</p>
+      <p>Cách vẽ: tâm \(I_a\) là giao điểm hai đường phân giác <b>ngoài</b> góc \(B\) và \(C\); kẻ đường thẳng qua \(I_a\) vuông góc với \(AC\), cắt \(AC\) tại \(E\); vẽ đường tròn \((I_a; I_aE)\).</p>
+    </div>
+
+    <div class="box warn">
+      <p>Đừng nhầm: tâm <b>ngoại</b> tiếp = giao các đường <b>trung trực</b>; tâm <b>nội</b> tiếp = giao các đường <b>phân giác</b>.</p>
+      <p>Công thức \(R = \frac{\sqrt{3}}{3}a\), \(r = \frac{\sqrt{3}}{6}a\) <b>chỉ</b> dùng cho tam giác <b>đều</b>; \(R = \frac{\text{cạnh huyền}}{2}\) chỉ dùng cho tam giác <b>vuông</b>.</p>
+    </div>
+    <div class="box tip"><p>Tam giác đều có đường cao \(h = \frac{\sqrt{3}}{2}a\); trọng tâm chia đường cao theo tỉ lệ 2 : 1 nên \(R = \frac{2}{3}h\), \(r = \frac{1}{3}h\) → \(R = 2r\).</p></div>
+
+    <div class="key-points">
+      <ul>
+        <li>Ngoại tiếp: đi qua ba đỉnh; tâm = giao ba đường trung trực.</li>
+        <li>Nội tiếp: tiếp xúc ba cạnh; tâm = giao ba đường phân giác.</li>
+        <li>Tam giác vuông: tâm ngoại tiếp là trung điểm cạnh huyền, \(R = \frac{\text{cạnh huyền}}{2}\).</li>
+        <li>Tam giác đều cạnh \(a\): tâm là trọng tâm, \(R = \frac{\sqrt{3}}{3}a\), \(r = \frac{\sqrt{3}}{6}a = \frac{R}{2}\).</li>
+        <li>\(S = \frac{1}{2}\,r \cdot \text{chu vi}\).</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-29">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 29</span>Tứ giác nội tiếp</h3>
+    <p class="lesson-goal">Cần nắm: định nghĩa tứ giác nội tiếp; định lí tổng hai góc đối bằng 180°; tâm và bán kính đường tròn ngoại tiếp hình chữ nhật, hình vuông.</p>
+
+    <h4>1. Đường tròn ngoại tiếp một tứ giác</h4>
+    <div class="box def">
+      <p>Tứ giác có <b>bốn đỉnh nằm trên một đường tròn</b> được gọi là <span class="kw">tứ giác nội tiếp</span> đường tròn (hoặc đơn giản là tứ giác nội tiếp) và đường tròn được gọi là <span class="kw">đường tròn ngoại tiếp tứ giác</span>.</p>
+    </div>
+    <div class="box note">
+      <ul>
+        <li>Tứ giác chỉ có ba đỉnh nằm trên đường tròn (đỉnh còn lại ở trong hoặc ngoài) thì <b>không</b> nội tiếp đường tròn đó.</li>
+        <li>Tứ giác \(ABCD\) có \(\widehat{A} = \widehat{C} = 90^\circ\) thì bốn đỉnh cùng nằm trên đường tròn có tâm là <b>trung điểm \(O\) của \(BD\)</b> (vì \(OA = OC = \frac{BD}{2}\) — đường trung tuyến ứng với cạnh huyền).</li>
+        <li>Tứ giác nội tiếp thì các đường trung trực của bốn cạnh đồng quy tại tâm đường tròn ngoại tiếp.</li>
+      </ul>
+    </div>
+
+    <h4>2. Định lí về tổng hai góc đối</h4>
+    <div class="box law" data-label="⚖️ Định lí tứ giác nội tiếp">
+      <p>Trong một tứ giác nội tiếp, <b>tổng số đo hai góc đối nhau bằng 180°</b>.</p>
+      <p>GT: Tứ giác \(ABCD\) nội tiếp \((O)\). &nbsp; KL: \(\widehat{A} + \widehat{C} = 180^\circ\); \(\widehat{B} + \widehat{D} = 180^\circ\).</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 300 230" width="300" role="img" aria-label="Tứ giác ABCD nội tiếp đường tròn, góc A cộng góc C bằng 180 độ">
+        <circle cx="150" cy="120" r="90" class="stroke" fill="none" stroke-width="1.8"/>
+        <polygon points="65.43,89.22 165.63,31.37 234.57,89.22 92.15,188.94" class="accent" stroke-width="2.2"/>
+        <path d="M81.02 80.22 A18 18 0 0 1 70.09 106.61" class="stroke" fill="none" stroke-width="1.5"/>
+        <path d="M220.78 77.65 A18 18 0 0 0 219.82 99.54" class="stroke" fill="none" stroke-width="1.5"/>
+        <circle cx="150" cy="120" r="2.5" class="accent-fill"/>
+        <text x="46" y="92" font-size="15" font-style="italic">A</text>
+        <text x="162" y="24" font-size="15" font-style="italic">B</text>
+        <text x="240" y="88" font-size="15" font-style="italic">C</text>
+        <text x="80" y="206" font-size="15" font-style="italic">D</text>
+        <text x="154" y="136" font-size="15" font-style="italic">O</text>
+        <text x="84" y="104" font-size="12">105°</text>
+        <text x="186" y="100" font-size="12">75°</text>
+      </svg>
+      <figcaption>Tứ giác \(ABCD\) nội tiếp \((O)\): \(\widehat{A} + \widehat{C} = 105^\circ + 75^\circ = 180^\circ\).</figcaption>
+    </figure>
+    <div class="formula">
+      <div class="formula-name">Tổng hai góc đối của tứ giác nội tiếp</div>
+      <div class="formula-body">\[ \widehat{A} + \widehat{C} = 180^\circ; \quad \widehat{B} + \widehat{D} = 180^\circ \]</div>
+      <ul class="formula-legend">
+        <li>\(ABCD\): tứ giác nội tiếp đường tròn \((O)\)</li>
+        <li>\(\widehat{A}, \widehat{C}\) và \(\widehat{B}, \widehat{D}\): các cặp góc đối nhau (°)</li>
+      </ul>
+      <div class="formula-note">Suy ra: \(\widehat{C} = 180^\circ - \widehat{A}\), \(\widehat{D} = 180^\circ - \widehat{B}\).</div>
+    </div>
+    <div class="box note" data-label="📝 Chứng minh">
+      <p>Hai điểm \(B\), \(D\) chia \((O)\) thành hai cung \(\overset{\frown}{BCD}\) và \(\overset{\frown}{BAD}\) nên \(\text{sđ}\,\overset{\frown}{BCD} + \text{sđ}\,\overset{\frown}{BAD} = 360^\circ\).</p>
+      <p>\(\widehat{A}\), \(\widehat{C}\) là góc nội tiếp lần lượt chắn \(\overset{\frown}{BCD}\), \(\overset{\frown}{BAD}\) nên \(\widehat{A} + \widehat{C} = \frac{1}{2}\,\text{sđ}\,\overset{\frown}{BCD} + \frac{1}{2}\,\text{sđ}\,\overset{\frown}{BAD} = 180^\circ\). Tương tự \(\widehat{B} + \widehat{D} = 180^\circ\).</p>
+    </div>
+
+    <div class="box method">
+      <p class="box-title">Dạng: Tính góc của tứ giác nội tiếp</p>
+      <ol class="steps">
+        <li>Xác định đúng các cặp góc <b>đối nhau</b> (\(A\) với \(C\), \(B\) với \(D\)).</li>
+        <li>Góc đối = 180° − góc đã biết.</li>
+        <li>Góc tạo bởi hai cạnh kéo dài: dùng tổng ba góc của tam giác tạo thành; góc nội tiếp chắn cung → dùng thêm Bài 27.</li>
+      </ol>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Chứng minh tứ giác nội tiếp (các cách dùng trong SGK)</p>
+      <ol class="steps">
+        <li><b>Chỉ ra một điểm cách đều bốn đỉnh</b> (vd. các đường trung trực của \(AB\), \(AC\), \(AD\) đồng quy tại \(O\) thì \(OA = OB = OC = OD\)).</li>
+        <li><b>Hai đỉnh cùng nhìn một đoạn thẳng dưới góc vuông</b>: nếu \(\widehat{BEC} = \widehat{BFC} = 90^\circ\) thì \(E\), \(F\) nằm trên đường tròn đường kính \(BC\) → \(BCEF\) nội tiếp đường tròn có tâm là trung điểm \(BC\).</li>
+        <li>Tứ giác có hai góc đối cùng bằng 90° (\(\widehat{A} = \widehat{C} = 90^\circ\)) → nội tiếp đường tròn đường kính \(BD\).</li>
+      </ol>
+    </div>
+    <div class="box note" data-label="📝 Mở rộng (ngoài SGK)"><p>Điều ngược lại của định lí cũng đúng: tứ giác có tổng hai góc đối bằng 180° thì nội tiếp được đường tròn.</p></div>
+
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 — \(ABCD\) nội tiếp \((O)\), \(AB\) cắt \(DC\) tại \(X\), \(\widehat{DAB} = 70^\circ\), \(\widehat{ABC} = 130^\circ\). Tính \(\widehat{BCD}\), \(\widehat{BXC}\)</p>
+      <p>Tứ giác nội tiếp nên: \(\widehat{BCD} = 180^\circ - \widehat{DAB} = 110^\circ\); \(\widehat{CDA} = 180^\circ - \widehat{ABC} = 50^\circ\).</p>
+      <p>Trong tam giác \(AXD\): \(\widehat{BXC} = \widehat{AXD} = 180^\circ - 70^\circ - 50^\circ = 60^\circ\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Luyện tập 1 — \(\Delta ABC\) có đường cao \(BE\), \(CF\), \(\widehat{B} = 60^\circ\), \(\widehat{C} = 80^\circ\)</p>
+      <p>a) \(\widehat{BEC} = \widehat{BFC} = 90^\circ\) nên \(E\), \(F\) nằm trên đường tròn đường kính \(BC\) → \(BCEF\) nội tiếp đường tròn tâm là trung điểm \(BC\).</p>
+      <p>b) Tứ giác nội tiếp \(BCEF\): \(\widehat{BFE} = 180^\circ - \widehat{BCE} = 180^\circ - 80^\circ = 100^\circ\); \(\widehat{CEF} = 180^\circ - \widehat{CBF} = 180^\circ - 60^\circ = 120^\circ\).</p>
+    </div>
+
+    <h4>3. Đường tròn ngoại tiếp hình chữ nhật và hình vuông</h4>
+    <div class="box law" data-label="⚖️ Hình chữ nhật, hình vuông">
+      <p>Hình chữ nhật và hình vuông là các tứ giác nội tiếp. Đường tròn ngoại tiếp của chúng có tâm là <b>giao điểm của hai đường chéo</b> và bán kính bằng <b>một nửa độ dài đường chéo</b>.</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 240 200" width="240" role="img" aria-label="Hình chữ nhật nội tiếp đường tròn, tâm là giao điểm hai đường chéo">
+        <circle cx="120" cy="100" r="80" class="stroke" fill="none" stroke-width="1.8"/>
+        <rect x="56" y="52" width="128" height="96" class="accent" stroke-width="2.2"/>
+        <line x1="56" y1="52" x2="184" y2="148" class="stroke" stroke-width="1.2"/>
+        <line x1="184" y1="52" x2="56" y2="148" class="stroke" stroke-width="1.2"/>
+        <circle cx="120" cy="100" r="2.5" class="accent-fill"/>
+        <text x="40" y="48" font-size="15" font-style="italic">A</text>
+        <text x="188" y="48" font-size="15" font-style="italic">D</text>
+        <text x="38" y="162" font-size="15" font-style="italic">B</text>
+        <text x="188" y="162" font-size="15" font-style="italic">C</text>
+        <text x="114" y="120" font-size="15" font-style="italic">O</text>
+      </svg>
+      <figcaption>Tâm \(O\) = giao điểm hai đường chéo; \(R = OA = \frac{BD}{2}\).</figcaption>
+    </figure>
+    <div class="formula-row">
+      <div class="formula">
+        <div class="formula-name">Bán kính đường tròn ngoại tiếp hình chữ nhật</div>
+        <div class="formula-body">\[ R = \frac{BD}{2} = \frac{\sqrt{a^2 + b^2}}{2} \]</div>
+        <ul class="formula-legend">
+          <li>\(a, b\): chiều dài, chiều rộng hình chữ nhật (cm)</li>
+          <li>\(BD\): đường chéo (cm)</li>
+          <li>\(R\): bán kính đường tròn ngoại tiếp (cm)</li>
+        </ul>
+      </div>
+      <div class="formula">
+        <div class="formula-name">Bán kính đường tròn ngoại tiếp hình vuông</div>
+        <div class="formula-body">\[ R = \frac{a\sqrt{2}}{2} \]</div>
+        <ul class="formula-legend">
+          <li>\(a\): cạnh hình vuông (cm); đường chéo bằng \(a\sqrt{2}\)</li>
+          <li>\(R\): bán kính đường tròn ngoại tiếp (cm)</li>
+        </ul>
+        <div class="formula-note">Suy ra cạnh theo \(R\): \(a = R\sqrt{2}\).</div>
+      </div>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 — Hình chữ nhật \(AB = 3\) cm, \(AD = 4\) cm. Tính \(R\)</p>
+      <p>Gọi \(O\) là giao điểm của \(AC\) và \(BD\); đường tròn \((O; OA)\) ngoại tiếp hình chữ nhật.</p>
+      <p>Định lí Pythagore trong tam giác \(ABD\) vuông tại \(A\): \(BD^2 = 3^2 + 4^2 = 25\), \(BD = 5\) cm. Vậy \(R = \dfrac{BD}{2} = 2{,}5\) cm.</p>
+    </div>
+
+    <div class="box fact" data-label="🔎 Kết quả hay dùng (từ bài tập)">
+      <ul>
+        <li>Hình bình hành nội tiếp đường tròn là <b>hình chữ nhật</b> (bài 9.20) — nên hình bình hành nói chung <b>không</b> nội tiếp được (9.39).</li>
+        <li>Hình thang nội tiếp đường tròn là <b>hình thang cân</b> (bài 9.21).</li>
+        <li>Nếu hai đường thẳng qua \(I\) cắt \((O)\) tại \(A, B\) và \(C, D\) thì \(IA \cdot IB = IC \cdot ID\) (bài 9.4, 9.19 — dùng tam giác đồng dạng).</li>
+      </ul>
+    </div>
+
+    <div class="box warn">
+      <p>Tổng 180° là của hai góc <b>đối nhau</b>, không phải hai góc kề nhau. Viết tên tứ giác theo đúng thứ tự các đỉnh để khỏi chọn nhầm cặp góc.</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Tứ giác nội tiếp: bốn đỉnh nằm trên một đường tròn.</li>
+        <li>Tứ giác nội tiếp ⇒ \(\widehat{A} + \widehat{C} = \widehat{B} + \widehat{D} = 180^\circ\).</li>
+        <li>Hai đỉnh cùng nhìn một cạnh dưới góc vuông → bốn điểm cùng nằm trên đường tròn có đường kính là cạnh đó.</li>
+        <li>Hình chữ nhật, hình vuông nội tiếp; tâm là giao hai đường chéo, \(R = \frac{\text{đường chéo}}{2}\).</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-30">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 30</span>Đa giác đều</h3>
+    <p class="lesson-goal">Cần nắm: đa giác, đa giác lồi, đa giác đều; đường tròn ngoại tiếp và tâm của đa giác đều; phép quay và các phép quay giữ nguyên đa giác đều.</p>
+
+    <h4>1. Đa giác</h4>
+    <div class="box def">
+      <p>Đa giác \(ABCDE\) là hình gồm năm đoạn thẳng \(AB, BC, CD, DE, EA\), trong đó bất kì hai đoạn thẳng nào có một điểm chung cũng không cùng nằm trên một đường thẳng.</p>
+      <ul>
+        <li><b>Đỉnh</b>: các điểm \(A, B, C, D, E\).</li>
+        <li><b>Cạnh</b>: các đoạn thẳng \(AB, BC, CD, DE, EA\).</li>
+        <li><b>Góc</b>: các góc \(EAB, ABC, BCD, CDE, DEA\).</li>
+      </ul>
+    </div>
+    <div class="box def">
+      <p>Nếu với một cạnh bất kì của đa giác, các đỉnh không thuộc cạnh đó đều nằm về một phía đối với đường thẳng chứa cạnh đó thì đa giác được gọi là <span class="kw">đa giác lồi</span>.</p>
+    </div>
+
+    <h4>2. Đa giác đều</h4>
+    <div class="box def">
+      <p><span class="kw">Đa giác đều</span> là một đa giác lồi có <b>các cạnh bằng nhau</b> và <b>các góc bằng nhau</b>.</p>
+      <p>Các đỉnh của mỗi đa giác đều luôn cùng nằm trên một đường tròn, gọi là <b>đường tròn ngoại tiếp đa giác</b>; tâm đường tròn gọi là <span class="kw">tâm của đa giác đều</span>; đa giác gọi là nội tiếp đường tròn đó.</p>
+      <p>Trong đa giác đều, tâm của đường tròn ngoại tiếp và đường tròn nội tiếp <b>trùng nhau</b> (Bảng giải thích thuật ngữ).</p>
+    </div>
+    <div class="box note" data-label="📝 Dựng ngũ giác đều nội tiếp">
+      <p>Vẽ đường tròn \((O; R)\), lần lượt lấy \(A, B, C, D, E\) trên đường tròn (theo một chiều) sao cho \(\widehat{AOB} = \widehat{BOC} = \widehat{COD} = \widehat{DOE} = \widehat{EOA} = \dfrac{360^\circ}{5} = 72^\circ\). Khi đó \(ABCDE\) là ngũ giác đều.</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 440 220" width="440" role="img" aria-label="Lục giác đều và ngũ giác đều nội tiếp đường tròn">
+        <circle cx="110" cy="110" r="80" class="stroke" fill="none" stroke-width="1.6"/>
+        <circle cx="110" cy="110" r="69.28" class="stroke" fill="none" stroke-width="1" stroke-dasharray="4 4"/>
+        <polygon points="70,40.72 150,40.72 190,110 150,179.28 70,179.28 30,110" class="accent" stroke-width="2.2"/>
+        <line x1="110" y1="110" x2="30" y2="110" class="stroke" stroke-width="1.4"/>
+        <line x1="110" y1="110" x2="70" y2="40.72" class="stroke" stroke-width="1" stroke-dasharray="4 3"/>
+        <circle cx="110" cy="110" r="2.5" class="accent-fill"/>
+        <text x="58" y="34" font-size="15" font-style="italic">A</text>
+        <text x="152" y="34" font-size="15" font-style="italic">B</text>
+        <text x="195" y="115" font-size="15" font-style="italic">C</text>
+        <text x="152" y="198" font-size="15" font-style="italic">D</text>
+        <text x="56" y="198" font-size="15" font-style="italic">E</text>
+        <text x="14" y="115" font-size="15" font-style="italic">F</text>
+        <text x="106" y="128" font-size="15" font-style="italic">O</text>
+        <text x="62" y="104" font-size="13" font-style="italic">R</text>
+        <circle cx="330" cy="110" r="80" class="stroke" fill="none" stroke-width="1.6"/>
+        <polygon points="282.98,45.28 377.02,45.28 406.08,134.72 330,190 253.92,134.72" class="accent" stroke-width="2.2"/>
+        <line x1="330" y1="110" x2="282.98" y2="45.28" class="stroke" stroke-width="1.2"/>
+        <line x1="330" y1="110" x2="253.92" y2="134.72" class="stroke" stroke-width="1.2"/>
+        <path d="M318.2 93.8 A20 20 0 0 0 311 116.2" class="stroke" fill="none" stroke-width="1.2"/>
+        <circle cx="330" cy="110" r="2.5" class="accent-fill"/>
+        <text x="270" y="38" font-size="15" font-style="italic">A</text>
+        <text x="380" y="38" font-size="15" font-style="italic">E</text>
+        <text x="236" y="140" font-size="15" font-style="italic">B</text>
+        <text x="324" y="210" font-size="15" font-style="italic">C</text>
+        <text x="410" y="140" font-size="15" font-style="italic">D</text>
+        <text x="336" y="114" font-size="15" font-style="italic">O</text>
+        <text x="284" y="104" font-size="12">72°</text>
+      </svg>
+      <figcaption>Trái: lục giác đều \(ABCDEF\) nội tiếp \((O; R)\), cạnh bằng \(R\); đường tròn nét đứt là đường tròn nội tiếp (cùng tâm \(O\)). Phải: ngũ giác đều \(ABCDE\), mỗi cạnh chắn góc ở tâm 72°.</figcaption>
+    </figure>
+    <div class="formula-row">
+      <div class="formula">
+        <div class="formula-name">Góc ở tâm chắn một cạnh của đa giác đều n cạnh</div>
+        <div class="formula-body">\[ \widehat{AOB} = \frac{360^\circ}{n} \]</div>
+        <ul class="formula-legend">
+          <li>\(n\): số cạnh của đa giác đều</li>
+          <li>\(O\): tâm đa giác đều; \(AB\): một cạnh</li>
+        </ul>
+        <div class="formula-note">Ngũ giác đều: 72°; lục giác đều: 60°; bát giác đều: 45°.</div>
+      </div>
+      <div class="formula">
+        <div class="formula-name">Số đo mỗi góc của đa giác đều n cạnh</div>
+        <div class="formula-body">\[ \widehat{A} = 180^\circ - \frac{360^\circ}{n} \]</div>
+        <ul class="formula-legend">
+          <li>\(n\): số cạnh của đa giác đều</li>
+          <li>\(\widehat{A}\): mỗi góc của đa giác đều (°)</li>
+        </ul>
+        <div class="formula-note">Suy từ các tam giác cân \(OAB\) (tự tổng hợp). Tam giác đều 60°, hình vuông 90°, ngũ giác đều 108°, lục giác đều 120°, bát giác đều 135°.</div>
+      </div>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Cạnh đa giác đều theo bán kính đường tròn ngoại tiếp R</div>
+      <div class="formula-body">\[ a_3 = R\sqrt{3}; \quad a_4 = R\sqrt{2}; \quad a_6 = R \]</div>
+      <ul class="formula-legend">
+        <li>\(R\): bán kính đường tròn ngoại tiếp (cm)</li>
+        <li>\(a_3, a_4, a_6\): cạnh tam giác đều, hình vuông, lục giác đều (cm)</li>
+      </ul>
+      <div class="formula-note">Lục giác đều: \(\widehat{AOB} = 60^\circ\) nên \(\Delta OAB\) đều, cạnh bằng \(R\) (vd. \(R = 2\) cm thì cạnh 2 cm, mỗi góc 120°).</div>
+    </div>
+
+    <div class="box method">
+      <p class="box-title">Dạng: Chứng minh một đa giác là đa giác đều</p>
+      <ol class="steps">
+        <li>Chỉ ra đa giác là <b>đa giác lồi</b>.</li>
+        <li>Chứng minh <b>tất cả các cạnh bằng nhau</b> (định lí Thalès đảo, đường trung bình, tam giác bằng nhau…).</li>
+        <li>Chứng minh <b>tất cả các góc bằng nhau</b> (thường qua các tam giác đều, tam giác cân bằng nhau).</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 — Nhận biết đa giác đều</p>
+      <p>Hình chữ L: không lồi. Hình thoi (không vuông): các góc không bằng nhau. Bát giác có các cạnh không bằng nhau: không đều. Hình vuông: <b>là</b> đa giác đều.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 — Cắt ba góc của tam giác đều cạnh 6 cm</p>
+      <p>Trên các cạnh của tam giác đều \(ABC\) lấy \(M, N \in AB\); \(P, Q \in BC\); \(E, F \in CA\) sao cho \(AM = MN = NB = BP = PQ = QC = CE = EF = FA = 2\) cm. \(MNPQEF\) là đa giác lồi.</p>
+      <ul>
+        <li>\(\dfrac{AM}{AB} = \dfrac{AF}{AC} = \dfrac{1}{3}\) → \(MF \parallel BC\) (Thalès đảo) → \(\dfrac{MF}{BC} = \dfrac{1}{3}\), \(MF = 2\) cm. Tương tự \(NP = QE = 2\) cm → sáu cạnh bằng nhau.</li>
+        <li>\(\Delta AMF\) đều → \(\widehat{FMA} = 60^\circ\), \(\widehat{FMN} = 180^\circ - 60^\circ = 120^\circ\). Tương tự các góc còn lại đều bằng 120°.</li>
+      </ul>
+      <p>Vậy \(MNPQEF\) là lục giác đều.</p>
+    </div>
+
+    <h4>3. Phép quay</h4>
+    <div class="box def">
+      <p><span class="kw">Phép quay thuận chiều \(\alpha^\circ\)</span> (\(0^\circ &lt; \alpha^\circ &lt; 360^\circ\)) tâm \(O\) giữ nguyên điểm \(O\), biến điểm \(A\) khác \(O\) thành điểm \(B\) thuộc đường tròn \((O; OA)\) sao cho tia \(OA\) quay <b>thuận chiều kim đồng hồ</b> đến tia \(OB\) thì điểm \(A\) tạo nên cung \(AB\) có số đo \(\alpha^\circ\).</p>
+      <p>Định nghĩa tương tự cho <b>phép quay ngược chiều</b> \(\alpha^\circ\) tâm \(O\).</p>
+      <p>Phép quay 0° và phép quay 360° giữ nguyên mọi điểm.</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 460 200" width="460" role="img" aria-label="Phép quay thuận chiều và ngược chiều alpha độ tâm O">
+        <defs>
+          <marker id="toan-arr-quay" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+            <path d="M0 0 L10 5 L0 10 z" class="accent-fill"/>
+          </marker>
+        </defs>
+        <circle cx="120" cy="100" r="70" class="stroke" fill="none" stroke-width="1.6"/>
+        <line x1="120" y1="100" x2="180.6" y2="65" class="stroke" stroke-width="1.6"/>
+        <line x1="120" y1="100" x2="180.6" y2="135" class="stroke" stroke-width="1.6"/>
+        <path d="M189.3 60 A80 80 0 0 1 189.3 140" class="accent" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#toan-arr-quay)"/>
+        <circle cx="120" cy="100" r="2.5" class="accent-fill"/>
+        <circle cx="180.6" cy="65" r="3" class="accent-fill"/>
+        <circle cx="180.6" cy="135" r="3" class="accent-fill"/>
+        <text x="100" y="105" font-size="15" font-style="italic">O</text>
+        <text x="176" y="56" font-size="15" font-style="italic">A</text>
+        <text x="176" y="156" font-size="15" font-style="italic">B</text>
+        <text x="148" y="105" font-size="14">α°</text>
+        <text x="80" y="192" font-size="13">a) Thuận chiều</text>
+        <circle cx="340" cy="100" r="70" class="stroke" fill="none" stroke-width="1.6"/>
+        <line x1="340" y1="100" x2="400.6" y2="135" class="stroke" stroke-width="1.6"/>
+        <line x1="340" y1="100" x2="400.6" y2="65" class="stroke" stroke-width="1.6"/>
+        <path d="M409.3 140 A80 80 0 0 0 409.3 60" class="accent" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#toan-arr-quay)"/>
+        <circle cx="340" cy="100" r="2.5" class="accent-fill"/>
+        <circle cx="400.6" cy="65" r="3" class="accent-fill"/>
+        <circle cx="400.6" cy="135" r="3" class="accent-fill"/>
+        <text x="320" y="105" font-size="15" font-style="italic">O</text>
+        <text x="396" y="156" font-size="15" font-style="italic">A</text>
+        <text x="396" y="56" font-size="15" font-style="italic">B</text>
+        <text x="368" y="105" font-size="14">α°</text>
+        <text x="296" y="192" font-size="13">b) Ngược chiều</text>
+      </svg>
+      <figcaption>Phép quay \(\alpha^\circ\) tâm \(O\) biến \(A\) thành \(B\): \(OA = OB\) và cung \(AB\) có số đo \(\alpha^\circ\) (a: thuận chiều kim đồng hồ; b: ngược chiều).</figcaption>
+    </figure>
+    <div class="box note">
+      <ul>
+        <li>Phép quay ngược chiều (hoặc thuận chiều) 180° tâm \(O\) biến \(A\) thành \(A'\) đối xứng với \(A\) qua \(O\).</li>
+        <li>Nếu phép quay thuận chiều \(\alpha^\circ\) tâm \(O\) biến \(A\) thành \(B\) thì phép quay ngược chiều \(\alpha^\circ\) tâm \(O\) biến \(B\) thành \(A\).</li>
+        <li>Xác định ảnh \(A'\) của \(A\) qua phép quay ngược chiều 60° tâm \(O\): vẽ đường tròn \((O; OA)\) và tia \(Ox\) sao cho \(\widehat{AOx} = 60^\circ\) (theo chiều ngược kim đồng hồ); tia \(Ox\) cắt \((O; OA)\) tại \(A'\).</li>
+      </ul>
+    </div>
+
+    <h5>Phép quay giữ nguyên đa giác đều</h5>
+    <div class="box law" data-label="⚖️ Phép quay giữ nguyên đa giác đều">
+      <p>Một phép quay được gọi là <b>giữ nguyên một đa giác đều \(\mathcal{H}\)</b> nếu phép quay đó biến mỗi điểm của \(\mathcal{H}\) thành một điểm của \(\mathcal{H}\).</p>
+      <p>Nếu một phép quay biến <b>các đỉnh</b> của đa giác đều \(\mathcal{H}\) thành <b>các đỉnh</b> của \(\mathcal{H}\) thì phép quay đó giữ nguyên \(\mathcal{H}\).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Các phép quay tâm O giữ nguyên đa giác đều n cạnh</div>
+      <div class="formula-body">\[ \alpha = k \cdot \frac{360^\circ}{n} \quad (k = 1, 2, \ldots, n) \]</div>
+      <ul class="formula-legend">
+        <li>\(O\): tâm của đa giác đều; \(n\): số cạnh</li>
+        <li>\(\alpha\): góc quay (°), thuận chiều hoặc ngược chiều</li>
+      </ul>
+      <div class="formula-note">Tam giác đều: 120°, 240°, 360°. Hình vuông: 90°, 180°, 270°, 360°. Ngũ giác đều: 72°, 144°, 216°, 288°, 360°. Lục giác đều: 60°, 120°, 180°, 240°, 300°, 360°.</div>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 4 — Tam giác đều \(ABC\) nội tiếp \((O)\) (các đỉnh \(A, B, C\) theo chiều ngược kim đồng hồ)</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Phép quay ngược chiều</th><th>A thành</th><th>B thành</th><th>C thành</th></tr></thead>
+        <tbody>
+          <tr><td>120°</td><td>B</td><td>C</td><td>A</td></tr>
+          <tr><td>240°</td><td>C</td><td>A</td><td>B</td></tr>
+          <tr><td>360°</td><td>A</td><td>B</td><td>C</td></tr>
+        </tbody>
+      </table></div>
+      <p>Ba phép quay này biến tam giác đều \(ABC\) thành chính nó (giữ nguyên tam giác đều \(ABC\)).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Tìm ảnh qua phép quay, liệt kê phép quay giữ nguyên đa giác đều</p>
+      <ol class="steps">
+        <li>Tính góc ở tâm giữa hai đỉnh liên tiếp: \(\frac{360^\circ}{n}\).</li>
+        <li>Quay \(k \cdot \frac{360^\circ}{n}\) thì mỗi đỉnh chuyển đi \(k\) vị trí theo chiều quay.</li>
+        <li>Lập bảng: mỗi hàng là một phép quay, mỗi cột là một đỉnh → ghi ảnh của đỉnh đó.</li>
+      </ol>
+    </div>
+
+    <div class="box warn">
+      <p>Đa giác có các cạnh bằng nhau chưa chắc đều (hình thoi); có các góc bằng nhau chưa chắc đều (hình chữ nhật). Cần <b>đủ cả hai</b> điều kiện và phải là đa giác <b>lồi</b> (ngôi sao năm cánh có 10 cạnh bằng nhau nhưng không lồi).</p>
+      <p>Phép quay phải nói rõ <b>tâm</b>, <b>chiều</b> (thuận/ngược kim đồng hồ) và <b>góc</b>.</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Đa giác đều: đa giác lồi, các cạnh bằng nhau và các góc bằng nhau.</li>
+        <li>Mọi đa giác đều nội tiếp được đường tròn; tâm ngoại tiếp trùng tâm nội tiếp (tâm đa giác đều).</li>
+        <li>Đa giác đều \(n\) cạnh: góc ở tâm chắn mỗi cạnh \(\frac{360^\circ}{n}\); lục giác đều có cạnh bằng \(R\).</li>
+        <li>Phép quay \(\alpha^\circ\) tâm \(O\): biến \(A\) thành \(B\) với \(OA = OB\), cung \(AB\) bằng \(\alpha^\circ\).</li>
+        <li>Đa giác đều \(n\) cạnh có \(n\) phép quay (cùng chiều) tâm \(O\) giữ nguyên nó: \(k \cdot \frac{360^\circ}{n}\).</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-on-tap-chuong-9">
+    <h3 class="lesson-title"><span class="lesson-no">Ôn tập</span>Ôn tập chương IX</h3>
+    <p class="lesson-goal">Cần nắm: bảng tổng hợp tâm và bán kính các đường tròn ngoại tiếp, nội tiếp; các dạng toán về góc nội tiếp, tứ giác nội tiếp, đa giác đều.</p>
+
+    <h4>1. Bảng tổng hợp</h4>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Hình</th><th>Tâm đường tròn ngoại tiếp</th><th>\(R\)</th><th>\(r\) (nội tiếp)</th></tr></thead>
+      <tbody>
+        <tr><td>Tam giác bất kì</td><td>Giao 3 đường trung trực</td><td>—</td><td>Tâm: giao 3 đường phân giác; \(r = \frac{2S}{\text{chu vi}}\)</td></tr>
+        <tr><td>Tam giác vuông</td><td>Trung điểm cạnh huyền</td><td>\(\frac{\text{cạnh huyền}}{2}\)</td><td>—</td></tr>
+        <tr><td>Tam giác đều cạnh \(a\)</td><td>Trọng tâm</td><td>\(\frac{\sqrt{3}}{3}a\)</td><td>\(\frac{\sqrt{3}}{6}a\)</td></tr>
+        <tr><td>Hình chữ nhật</td><td>Giao hai đường chéo</td><td>\(\frac{\text{đường chéo}}{2}\)</td><td>—</td></tr>
+        <tr><td>Hình vuông cạnh \(a\)</td><td>Giao hai đường chéo</td><td>\(\frac{a\sqrt{2}}{2}\)</td><td>\(\frac{a}{2}\)</td></tr>
+        <tr><td>Lục giác đều cạnh \(a\)</td><td>Tâm đa giác đều</td><td>\(a\)</td><td>\(\frac{\sqrt{3}}{2}a\)</td></tr>
+      </tbody>
+    </table></div>
+    <div class="box note"><p>Bán kính nội tiếp của hình vuông (\(\frac{a}{2}\)) và lục giác đều (\(\frac{\sqrt{3}}{2}a\), bằng đường cao tam giác đều \(OAB\)) là kết quả tự suy ra, dùng cho bài 9.33, 9.42.</p></div>
+
+    <h4>2. Các định lí chính</h4>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Nội dung</th><th>Hệ thức</th></tr></thead>
+      <tbody>
+        <tr><td>Góc nội tiếp</td><td>\(\widehat{ACB} = \frac{1}{2}\,\text{sđ}\,\overset{\frown}{AB}\)</td></tr>
+        <tr><td>Góc nội tiếp và góc ở tâm cùng chắn cung nhỏ</td><td>\(\widehat{ACB} = \frac{1}{2}\widehat{AOB}\)</td></tr>
+        <tr><td>Góc nội tiếp chắn nửa đường tròn</td><td>90°</td></tr>
+        <tr><td>Tứ giác nội tiếp</td><td>\(\widehat{A} + \widehat{C} = \widehat{B} + \widehat{D} = 180^\circ\)</td></tr>
+        <tr><td>Đa giác đều \(n\) cạnh</td><td>Góc ở tâm \(\frac{360^\circ}{n}\); mỗi góc \(180^\circ - \frac{360^\circ}{n}\)</td></tr>
+      </tbody>
+    </table></div>
+
+    <h4>3. Sơ đồ các dạng toán</h4>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Dạng toán</th><th>Công cụ chính</th></tr></thead>
+      <tbody>
+        <tr><td>Tính góc trong đường tròn</td><td>Cùng chắn một cung; góc nội tiếp = ½ góc ở tâm; tam giác cân \(OAB\)</td></tr>
+        <tr><td>Tính góc của tứ giác nội tiếp</td><td>Tổng hai góc đối = 180°</td></tr>
+        <tr><td>Chứng minh tứ giác nội tiếp</td><td>Điểm cách đều 4 đỉnh; hai đỉnh nhìn một cạnh dưới góc vuông</td></tr>
+        <tr><td>Hệ thức tích \(IA \cdot IB = IC \cdot ID\)</td><td>Hai tam giác đồng dạng (góc nội tiếp cùng chắn cung)</td></tr>
+        <tr><td>Tính \(R\), \(r\), cạnh</td><td>Nhận dạng hình → công thức bảng trên; định lí Pythagore</td></tr>
+        <tr><td>Phép quay</td><td>Góc ở tâm \(\frac{360^\circ}{n}\); lập bảng ảnh các đỉnh</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="box example">
+      <p class="box-title">Luyện tập chung, Ví dụ 1 — Tứ giác \(ABCD\) nội tiếp \((O)\), \(\widehat{AOB} = 120^\circ\), \(\widehat{BOC} = 40^\circ\), \(\widehat{COD} = 80^\circ\)</p>
+      <ul>
+        <li>\(\widehat{ADB} = \frac{1}{2}\widehat{AOB} = 60^\circ\) (cùng chắn \(\overset{\frown}{AB}\)).</li>
+        <li>\(\widehat{BAC} = \widehat{BDC} = \frac{1}{2}\widehat{BOC} = 20^\circ\) (cùng chắn \(\overset{\frown}{BC}\)).</li>
+        <li>\(\widehat{CAD} = \frac{1}{2}\widehat{COD} = 40^\circ\) (cùng chắn \(\overset{\frown}{CD}\)).</li>
+        <li>\(\widehat{BAD} = 20^\circ + 40^\circ = 60^\circ\); \(\widehat{ADC} = 60^\circ + 20^\circ = 80^\circ\).</li>
+        <li>\(\widehat{ABC} = 180^\circ - 80^\circ = 100^\circ\); \(\widehat{BCD} = 180^\circ - 60^\circ = 120^\circ\).</li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p class="box-title">Luyện tập chung, Ví dụ 2 — Lục giác đều \(ABCDEF\)</p>
+      <p>a) Các góc của lục giác đều bằng 120°; các tứ giác \(ABCF\), \(ABDF\), \(ADEF\) nội tiếp \((O)\). Vậy \(\widehat{BCF} = 180^\circ - \widehat{BAF} = 60^\circ\); tương tự \(\widehat{BDF} = \widehat{BEF} = 60^\circ\).</p>
+      <p>b) Tam giác \(ACE\) có các góc bằng 60° → tam giác đều nội tiếp \((O)\). Ba phép quay tâm \(O\) giữ nguyên tam giác \(ACE\): thuận chiều 120°, 240°, 360°.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Bài 9.38 — Tứ giác nội tiếp có \(\widehat{A} - \widehat{C} = 100^\circ\)</p>
+      <p>\(\widehat{A} + \widehat{C} = 180^\circ\) và \(\widehat{A} - \widehat{C} = 100^\circ\) → \(\widehat{A} = 140^\circ\), \(\widehat{C} = 40^\circ\) → chọn <b>D</b>.</p>
+    </div>
+    <div class="box warn">
+      <p>Góc nội tiếp có số đo bằng <b>nửa</b> (không phải bằng) số đo cung bị chắn; góc có đỉnh trên đường tròn nhưng cạnh không chứa dây cung thì <b>không</b> phải góc nội tiếp (bài 9.37).</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Góc nội tiếp = ½ số đo cung bị chắn.</li>
+        <li>Ngoại tiếp tam giác: trung trực; nội tiếp tam giác: phân giác.</li>
+        <li>Tứ giác nội tiếp: hai góc đối bù nhau.</li>
+        <li>Tam giác đều: \(R = \frac{\sqrt{3}}{3}a\), \(r = \frac{\sqrt{3}}{6}a\); hình vuông: \(R = \frac{a\sqrt{2}}{2}\); lục giác đều: \(R = a\).</li>
+        <li>Đa giác đều \(n\) cạnh: \(n\) phép quay \(k \cdot \frac{360^\circ}{n}\) giữ nguyên.</li>
+      </ul>
+    </div>
+  </article>
+</section>
+
+<section class="chapter" id="toan-chuong-10">
+  <h2 class="chapter-title"><span>Chương X · Hình học trực quan</span>Một số hình khối trong thực tiễn</h2>
+
+  <article class="lesson" id="toan-bai-31">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 31</span>Hình trụ và hình nón</h3>
+    <p class="lesson-goal">Cần nắm: các yếu tố của hình trụ (đáy, bán kính đáy, chiều cao, đường sinh) và hình nón (đỉnh, đáy, bán kính đáy, đường cao, đường sinh); hình khai triển; công thức diện tích xung quanh và thể tích.</p>
+
+    <h4>1. Hình trụ</h4>
+    <div class="box def">
+      <p>Khi quay hình chữ nhật \(O'ABO\) một vòng quanh cạnh \(OO'\) cố định thì ta được một <span class="kw">hình trụ</span>, trong đó:</p>
+      <ul>
+        <li>Hai <b>đáy</b> của hình trụ là hai hình tròn bằng nhau \((O'; O'A)\) và \((O; OB)\).</li>
+        <li>Mỗi <b>đường sinh</b> là một vị trí của \(AB\) khi quay. Hình trụ có vô số đường sinh.</li>
+        <li>\(R = O'A = OB\) gọi là <b>bán kính đáy</b> của hình trụ.</li>
+        <li>Độ dài đoạn \(OO'\) gọi là <b>chiều cao</b> của hình trụ. Các đường sinh bằng nhau và bằng \(OO'\).</li>
+      </ul>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 240 240" width="240" role="img" aria-label="Hình trụ với chiều cao h, bán kính đáy R, đường sinh l">
+        <ellipse cx="110" cy="45" rx="60" ry="16" class="stroke" fill="none" stroke-width="1.8"/>
+        <path d="M50 200 A60 16 0 0 0 170 200" class="stroke" fill="none" stroke-width="1.8"/>
+        <path d="M50 200 A60 16 0 0 1 170 200" class="stroke" fill="none" stroke-width="1.2" stroke-dasharray="5 4"/>
+        <line x1="50" y1="45" x2="50" y2="200" class="stroke" stroke-width="1.8"/>
+        <line x1="170" y1="45" x2="170" y2="200" class="accent" stroke-width="2.6"/>
+        <line x1="110" y1="45" x2="110" y2="200" class="stroke" stroke-width="1.2" stroke-dasharray="5 4"/>
+        <line x1="110" y1="45" x2="170" y2="45" class="stroke" stroke-width="1.4"/>
+        <line x1="110" y1="200" x2="170" y2="200" class="accent" stroke-width="2" stroke-dasharray="5 4"/>
+        <circle cx="110" cy="45" r="2.5" class="accent-fill"/>
+        <circle cx="110" cy="200" r="2.5" class="accent-fill"/>
+        <text x="90" y="40" font-size="15" font-style="italic">O′</text>
+        <text x="96" y="214" font-size="15" font-style="italic">O</text>
+        <text x="176" y="42" font-size="15" font-style="italic">A</text>
+        <text x="176" y="214" font-size="15" font-style="italic">B</text>
+        <text x="114" y="128" font-size="15" font-style="italic">h</text>
+        <text x="178" y="128" font-size="15" font-style="italic">l</text>
+        <text x="134" y="194" font-size="14" font-style="italic">R</text>
+      </svg>
+      <figcaption>Hình trụ: chiều cao \(h = O'O\); bán kính đáy \(R = OB\); đường sinh \(l = AB\) (\(l = h\)). Nét đứt: phần bị khuất.</figcaption>
+    </figure>
+    <div class="box note" data-label="📝 Chú ý — Hình khai triển của hình trụ">
+      <p>Cắt rời hai đáy và cắt theo một đường sinh rồi trải phẳng, ta được <b>hình khai triển của hình trụ</b>: gồm <b>hai hình tròn</b> (hai đáy) và <b>một hình chữ nhật</b> (mặt xung quanh) có một cạnh bằng chiều cao \(h\), cạnh kia bằng chu vi đáy \(2\pi R\).</p>
+      <p>Ngược lại, cuộn băng giấy hình chữ nhật \(ABCD\) (\(AB = 8\) cm, \(BC = 15\) cm) cho \(AB\) sát \(DC\) được hình trụ không đáy có chiều cao 8 cm, chu vi đáy 15 cm.</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 440 200" width="440" role="img" aria-label="Hình khai triển của hình trụ và của hình nón">
+        <rect x="20" y="60" width="170" height="80" class="accent" stroke-width="2"/>
+        <circle cx="60" cy="35" r="25" class="stroke" fill="none" stroke-width="1.6"/>
+        <circle cx="150" cy="165" r="25" class="stroke" fill="none" stroke-width="1.6"/>
+        <text x="90" y="55" font-size="13">2πR</text>
+        <text x="196" y="105" font-size="14" font-style="italic">h</text>
+        <text x="30" y="190" font-size="12">Hình trụ</text>
+        <path d="M330 30 L275 125.26 A110 110 0 0 0 385 125.26 Z" class="accent" stroke-width="2"/>
+        <circle cx="330" cy="165" r="25" class="stroke" fill="none" stroke-width="1.6"/>
+        <circle cx="330" cy="30" r="2.5" class="accent-fill"/>
+        <text x="324" y="22" font-size="14" font-style="italic">S</text>
+        <text x="364" y="78" font-size="14" font-style="italic">l</text>
+        <text x="392" y="140" font-size="13">2πr</text>
+        <circle cx="330" cy="165" r="2" class="accent-fill"/>
+        <text x="336" y="170" font-size="12" font-style="italic">r</text>
+        <text x="240" y="190" font-size="12">Hình nón</text>
+      </svg>
+      <figcaption>Trái: hình khai triển hình trụ (hình chữ nhật \(2\pi R \times h\) và hai hình tròn bán kính \(R\)). Phải: hình khai triển hình nón (hình quạt tròn bán kính \(l\), độ dài cung \(2\pi r\), và một hình tròn bán kính \(r\)).</figcaption>
+    </figure>
+
+    <h5>Diện tích xung quanh và thể tích của hình trụ</h5>
+    <div class="formula-row">
+      <div class="formula">
+        <div class="formula-name">Diện tích xung quanh hình trụ</div>
+        <div class="formula-body">\[ S_\text{xq} = 2\pi R h \]</div>
+        <ul class="formula-legend">
+          <li>\(R\): bán kính đáy (cm)</li>
+          <li>\(h\): chiều cao (cm)</li>
+          <li>\(S_\text{xq}\): diện tích xung quanh (cm²)</li>
+        </ul>
+        <div class="formula-note">Là diện tích hình chữ nhật khai triển: chu vi đáy \(2\pi R\) nhân chiều cao \(h\).</div>
+      </div>
+      <div class="formula">
+        <div class="formula-name">Thể tích hình trụ</div>
+        <div class="formula-body">\[ V = S_\text{đáy} \cdot h = \pi R^2 h \]</div>
+        <ul class="formula-legend">
+          <li>\(S_\text{đáy} = \pi R^2\): diện tích đáy (cm²)</li>
+          <li>\(R\): bán kính đáy (cm); \(h\): chiều cao (cm)</li>
+          <li>\(V\): thể tích (cm³)</li>
+        </ul>
+        <div class="formula-note">Tương tự thể tích hình lăng trụ đứng \(V = S \cdot h\).</div>
+      </div>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Diện tích toàn phần hình trụ</div>
+      <div class="formula-body">\[ S_\text{tp} = S_\text{xq} + 2S_\text{đáy} = 2\pi R h + 2\pi R^2 \]</div>
+      <ul class="formula-legend">
+        <li>\(S_\text{tp}\): diện tích toàn phần = diện tích xung quanh + diện tích hai đáy (cm²)</li>
+        <li>\(R\): bán kính đáy (cm); \(h\): chiều cao (cm)</li>
+      </ul>
+      <div class="formula-note">Định nghĩa theo Bảng giải thích thuật ngữ và bài 10.11.</div>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 — Sơn thùng rác hình trụ (sơn mặt ngoài và một đáy là nắp), \(R = 11\) cm, \(h = 30\) cm</p>
+      <p>a) \(S_\text{xq} = 2\pi Rh = 2\pi \cdot 11 \cdot 30 = 660\pi\) (cm²); \(S_\text{đáy} = \pi R^2 = \pi \cdot 11^2 = 121\pi\) (cm²).</p>
+      <p>Diện tích cần sơn: \(S = S_\text{xq} + S_\text{đáy} = (660 + 121)\pi = 781\pi\) (cm²).</p>
+      <p>b) \(V = S_\text{đáy} \cdot h = 121\pi \cdot 30 = 3\,630\pi \approx 11\,404\) (cm³).</p>
+    </div>
+
+    <h4>2. Hình nón</h4>
+    <div class="box def">
+      <p>Khi quay tam giác vuông \(SOA\) (vuông ở \(O\)) một vòng quanh \(SO\) cố định thì ta được một <span class="kw">hình nón</span> <b>đỉnh \(S\)</b>, trong đó:</p>
+      <ul>
+        <li><b>Đáy</b> của hình nón là hình tròn \((O; OA)\); \(R = OA\) gọi là <b>bán kính đáy</b>.</li>
+        <li>Mỗi <b>đường sinh</b> là một vị trí của \(SA\) khi quay. Hình nón có vô số đường sinh dài bằng nhau.</li>
+        <li>\(SO\) gọi là <b>đường cao</b> của hình nón; độ dài đoạn \(SO\) gọi là <b>chiều cao</b> của hình nón.</li>
+      </ul>
+    </div>
+    <div class="box note"><p>SGK dùng \(R\) khi mô tả các yếu tố hình nón nhưng dùng \(r\) trong công thức diện tích, thể tích. Hai kí hiệu cùng chỉ bán kính đáy.</p></div>
+    <figure class="diagram">
+      <svg viewBox="0 0 240 240" width="240" role="img" aria-label="Hình nón đỉnh S với chiều cao h, bán kính đáy r, đường sinh l">
+        <path d="M40 200 A70 18 0 0 0 180 200" class="stroke" fill="none" stroke-width="1.8"/>
+        <path d="M40 200 A70 18 0 0 1 180 200" class="stroke" fill="none" stroke-width="1.2" stroke-dasharray="5 4"/>
+        <line x1="110" y1="30" x2="40" y2="200" class="stroke" stroke-width="1.8"/>
+        <line x1="110" y1="30" x2="180" y2="200" class="accent" stroke-width="2.6"/>
+        <line x1="110" y1="30" x2="110" y2="200" class="stroke" stroke-width="1.2" stroke-dasharray="5 4"/>
+        <line x1="110" y1="200" x2="180" y2="200" class="accent" stroke-width="2" stroke-dasharray="5 4"/>
+        <line x1="40" y1="200" x2="110" y2="200" class="stroke" stroke-width="1" stroke-dasharray="5 4"/>
+        <polyline points="110,191 119,191 119,200" class="stroke" fill="none" stroke-width="1"/>
+        <circle cx="110" cy="30" r="2.5" class="accent-fill"/>
+        <circle cx="110" cy="200" r="2.5" class="accent-fill"/>
+        <text x="104" y="22" font-size="15" font-style="italic">S</text>
+        <text x="104" y="234" font-size="15" font-style="italic">O</text>
+        <text x="24" y="206" font-size="15" font-style="italic">A</text>
+        <text x="186" y="206" font-size="15" font-style="italic">B</text>
+        <text x="96" y="124" font-size="15" font-style="italic">h</text>
+        <text x="152" y="112" font-size="15" font-style="italic">l</text>
+        <text x="142" y="194" font-size="14" font-style="italic">r</text>
+      </svg>
+      <figcaption>Hình nón: đỉnh \(S\); chiều cao \(h = SO\); đường sinh \(l = SA = SB\); bán kính đáy \(r = OA = OB\). Tam giác \(SOB\) vuông tại \(O\).</figcaption>
+    </figure>
+    <div class="box note" data-label="📝 Chú ý — Hình khai triển của hình nón">
+      <p>Cắt rời đáy và cắt mặt xung quanh theo đường sinh \(SA\) rồi trải phẳng, ta được <b>hình khai triển của hình nón</b>: gồm <b>một hình tròn</b> (đáy) và <b>một hình quạt tròn</b> (mặt xung quanh) có bán kính bằng đường sinh \(l\).</p>
+      <p>Ngược lại, cuộn nửa hình tròn đường kính \(AB = 20\) cm, tâm \(S\) cho \(SA\) sát \(SB\) được hình nón không đáy có đường sinh 10 cm, chu vi đáy bằng độ dài nửa đường tròn: \(10\pi\) cm.</p>
+    </div>
+
+    <h5>Diện tích xung quanh và thể tích của hình nón</h5>
+    <div class="formula-row">
+      <div class="formula">
+        <div class="formula-name">Diện tích xung quanh hình nón</div>
+        <div class="formula-body">\[ S_\text{xq} = \pi r l \]</div>
+        <ul class="formula-legend">
+          <li>\(r\): bán kính đáy (cm)</li>
+          <li>\(l\): độ dài đường sinh (cm)</li>
+          <li>\(S_\text{xq}\): diện tích xung quanh (cm²)</li>
+        </ul>
+        <div class="formula-note">Là diện tích hình quạt tròn khai triển.</div>
+      </div>
+      <div class="formula">
+        <div class="formula-name">Thể tích hình nón</div>
+        <div class="formula-body">\[ V = \frac{1}{3} S_\text{đáy} \cdot h = \frac{1}{3}\pi r^2 h \]</div>
+        <ul class="formula-legend">
+          <li>\(S_\text{đáy} = \pi r^2\): diện tích đáy (cm²)</li>
+          <li>\(r\): bán kính đáy (cm); \(h\): chiều cao (cm)</li>
+          <li>\(V\): thể tích (cm³)</li>
+        </ul>
+        <div class="formula-note">Tương tự thể tích hình chóp đều \(V = \frac{1}{3} S \cdot h\).</div>
+      </div>
+    </div>
+    <div class="formula-row">
+      <div class="formula">
+        <div class="formula-name">Liên hệ đường sinh, chiều cao, bán kính đáy hình nón</div>
+        <div class="formula-body">\[ l^2 = r^2 + h^2 \]</div>
+        <ul class="formula-legend">
+          <li>\(l\): đường sinh; \(r\): bán kính đáy; \(h\): chiều cao (cùng đơn vị, cm)</li>
+        </ul>
+        <div class="formula-note">Định lí Pythagore trong tam giác \(SOB\) vuông tại \(O\): \(h = \sqrt{l^2 - r^2}\), \(r = \sqrt{l^2 - h^2}\).</div>
+      </div>
+      <div class="formula">
+        <div class="formula-name">Diện tích toàn phần hình nón</div>
+        <div class="formula-body">\[ S_\text{tp} = S_\text{xq} + S_\text{đáy} = \pi r l + \pi r^2 \]</div>
+        <ul class="formula-legend">
+          <li>\(S_\text{tp}\): diện tích xung quanh + diện tích đáy (cm²)</li>
+          <li>\(r\): bán kính đáy; \(l\): đường sinh (cm)</li>
+        </ul>
+        <div class="formula-note">Theo Bảng giải thích thuật ngữ và bài 10.23.</div>
+      </div>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 4 — Hình nón có đường sinh 10 cm, bán kính đáy 6 cm</p>
+      <p>a) \(S_\text{xq} = \pi r l = \pi \cdot 6 \cdot 10 = 60\pi\) (cm²).</p>
+      <p>b) Tam giác \(SOB\) vuông tại \(O\): \(OB^2 + SO^2 = SB^2\) ⇒ \(SO^2 = 100 - 36 = 64\) ⇒ \(SO = 8\) cm.</p>
+      <p>\(V = \frac{1}{3}\pi r^2 h = \frac{1}{3}\pi \cdot 6^2 \cdot 8 = 96\pi\) (cm³).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Vận dụng — Đống muối hình nón cao 0,9 m, đường kính đáy 1,6 m (lời giải tự trình bày)</p>
+      <p>Đổi ra dm: \(h = 9\) dm, \(r = 16 : 2 = 8\) dm.</p>
+      <p>\(V = \frac{1}{3}\pi \cdot 8^2 \cdot 9 = 192\pi \approx 603\) (dm³).</p>
+    </div>
+
+    <div class="box method">
+      <p class="box-title">Dạng: Tính diện tích, thể tích hình trụ, hình nón</p>
+      <ol class="steps">
+        <li>Xác định \(R\) (hoặc \(r\)), \(h\), \(l\); nếu đề cho <b>đường kính</b> thì chia 2; đưa về <b>cùng đơn vị</b>.</li>
+        <li>Hình nón thiếu \(h\) hoặc \(l\) → dùng \(l^2 = r^2 + h^2\).</li>
+        <li>Chọn đúng công thức: xung quanh / toàn phần (đọc kĩ đề: có nắp không, mấy đáy) / thể tích.</li>
+        <li>Giữ kết quả theo \(\pi\) hoặc làm tròn theo yêu cầu; ghi đơn vị cm², cm³ (1 dm³ = 1 lít).</li>
+      </ol>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Hình tạo thành khi quay một hình phẳng</p>
+      <ol class="steps">
+        <li>Quay hình chữ nhật quanh một cạnh → hình trụ: cạnh làm trục là <b>chiều cao</b>, cạnh kề với nó là <b>bán kính đáy</b>.</li>
+        <li>Quay tam giác vuông quanh một cạnh góc vuông → hình nón: cạnh làm trục là <b>chiều cao</b>, cạnh góc vuông kia là <b>bán kính đáy</b>, cạnh huyền là <b>đường sinh</b>.</li>
+        <li>Hình ghép (trụ + nón, trụ bị khoét nón…) → cộng hoặc trừ thể tích các phần.</li>
+      </ol>
+    </div>
+
+    <div class="box warn">
+      <p>Hình trụ có <b>hai</b> đáy (\(S_\text{tp}\) cộng \(2\pi R^2\)), hình nón chỉ có <b>một</b> đáy.</p>
+      <p>\(S_\text{xq}\) hình nón dùng <b>đường sinh \(l\)</b>, còn thể tích dùng <b>chiều cao \(h\)</b> — đừng lẫn \(l\) với \(h\).</p>
+      <p>Quay tam giác \(ABC\) vuông tại \(A\) quanh \(AC\): chiều cao là \(AC\) (không phải \(AB\)). Vd. \(AB = 4\) cm, \(BC = 5\) cm thì chiều cao \(AC = 3\) cm (bài 10.18).</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Hình trụ: \(S_\text{xq} = 2\pi Rh\), \(V = \pi R^2 h\), \(S_\text{tp} = 2\pi Rh + 2\pi R^2\).</li>
+        <li>Hình nón: \(S_\text{xq} = \pi r l\), \(V = \frac{1}{3}\pi r^2 h\), \(S_\text{tp} = \pi r l + \pi r^2\).</li>
+        <li>Hình nón: \(l^2 = r^2 + h^2\).</li>
+        <li>Khai triển: trụ → hình chữ nhật + 2 hình tròn; nón → hình quạt + 1 hình tròn.</li>
+        <li>Thể tích hình nón bằng \(\frac{1}{3}\) thể tích hình trụ cùng đáy, cùng chiều cao.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-32">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 32</span>Hình cầu</h3>
+    <p class="lesson-goal">Cần nắm: tâm, bán kính của mặt cầu, hình cầu; mặt cắt của hình cầu bởi mặt phẳng, đường tròn lớn; công thức diện tích mặt cầu và thể tích hình cầu.</p>
+
+    <h4>1. Mặt cầu và hình cầu</h4>
+    <div class="box def">
+      <ul>
+        <li>Khi quay <b>nửa đường tròn</b> quanh đường kính \(AB\) cố định của nó, ta được một <span class="kw">mặt cầu</span>.</li>
+        <li>Khi quay <b>nửa hình tròn</b> quanh đường kính \(AB\) cố định của nó, ta được một <span class="kw">hình cầu</span>.</li>
+        <li>Tâm và bán kính của nửa đường tròn (hình tròn) cũng là <b>tâm</b> và <b>bán kính</b> của mặt cầu (hình cầu).</li>
+      </ul>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 240 220" width="240" role="img" aria-label="Hình cầu tâm O bán kính R với đường tròn lớn">
+        <circle cx="110" cy="110" r="80" class="stroke" fill="none" stroke-width="1.8"/>
+        <path d="M30 110 A80 20 0 0 0 190 110" class="accent" stroke-width="2"/>
+        <path d="M30 110 A80 20 0 0 1 190 110" class="accent" stroke-width="1.2" stroke-dasharray="5 4"/>
+        <line x1="110" y1="110" x2="190" y2="110" class="stroke" stroke-width="1.4" stroke-dasharray="5 4"/>
+        <line x1="110" y1="110" x2="166.6" y2="53.4" class="stroke" stroke-width="1.4" stroke-dasharray="5 4"/>
+        <line x1="110" y1="30" x2="110" y2="190" class="stroke" stroke-width="1" stroke-dasharray="3 4"/>
+        <circle cx="110" cy="110" r="2.5" class="accent-fill"/>
+        <text x="94" y="106" font-size="15" font-style="italic">O</text>
+        <text x="146" y="104" font-size="14" font-style="italic">R</text>
+        <text x="196" y="115" font-size="15" font-style="italic">B</text>
+        <text x="14" y="115" font-size="15" font-style="italic">A</text>
+        <text x="170" y="48" font-size="15" font-style="italic">M</text>
+        <text x="40" y="212" font-size="12">đường tròn lớn (tô màu)</text>
+      </svg>
+      <figcaption>Mặt cầu tâm \(O\), bán kính \(R = OB = OM\). Đường tròn tô màu là giao của mặt cầu với mặt phẳng đi qua tâm (đường tròn lớn).</figcaption>
+    </figure>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 — Kể tên tâm và bán kính</p>
+      <p>Mặt cầu có tâm \(O\), các điểm \(M, N, P\) nằm trên mặt cầu (\(MN\) là đường kính) → tâm \(O\); các bán kính: \(OP\), \(OM\), \(ON\).</p>
+    </div>
+
+    <h4>2. Cắt mặt cầu, hình cầu bởi một mặt phẳng</h4>
+    <div class="box fact" data-label="🔎 Mặt cắt">
+      <ol>
+        <li>Nếu cắt một <b>hình cầu</b> bởi một mặt phẳng thì phần chung của mặt phẳng và hình cầu (còn gọi là <i>mặt cắt</i>) là một <b>hình tròn</b>.</li>
+        <li>Nếu cắt một <b>mặt cầu</b> bán kính \(R\) bởi một mặt phẳng thì phần chung là một <b>đường tròn</b>:
+          <ul>
+            <li>Mặt phẳng <b>đi qua tâm</b> → đường tròn có bán kính \(R\), gọi là <span class="kw">đường tròn lớn</span>.</li>
+            <li>Mặt phẳng <b>không đi qua tâm</b> → đường tròn có bán kính <b>nhỏ hơn \(R\)</b>.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 — Đường kính Trái Đất</p>
+      <p>Đường Xích đạo là một đường tròn lớn dài khoảng 40 075 km nên bán kính của nó bằng bán kính \(R\) của Trái Đất.</p>
+      <p>\(2R\pi \approx 40\,075\) (km) ⇒ đường kính \(2R \approx 40\,075 : \pi \approx 12\,756{,}27\) (km).</p>
+    </div>
+
+    <h4>3. Diện tích mặt cầu và thể tích hình cầu</h4>
+    <div class="box note" data-label="📝 Hoạt động dẫn dắt">
+      <ul>
+        <li>Lượng sơn để sơn kín mặt cầu bán kính \(R\) bằng lượng sơn để sơn kín hình tròn bán kính \(2R\): \(\pi (2R)^2 = 4\pi R^2\).</li>
+        <li>Đặt hình cầu bán kính \(R\) khít trong cốc hình trụ bán kính đáy \(R\), cao \(2R\) đầy nước; nhấc hình cầu ra, nước còn lại cao bằng \(\frac{1}{3}\) chiều cao cốc → thể tích hình cầu bằng \(\frac{2}{3}\) thể tích cốc: \(\frac{2}{3} \cdot \pi R^2 \cdot 2R = \frac{4}{3}\pi R^3\).</li>
+      </ul>
+    </div>
+    <div class="formula-row">
+      <div class="formula">
+        <div class="formula-name">Diện tích mặt cầu</div>
+        <div class="formula-body">\[ S = 4\pi R^2 \]</div>
+        <ul class="formula-legend">
+          <li>\(R\): bán kính mặt cầu (cm)</li>
+          <li>\(S\): diện tích mặt cầu (cm²)</li>
+        </ul>
+        <div class="formula-note">Theo đường kính \(d = 2R\): \(S = \pi d^2\).</div>
+      </div>
+      <div class="formula">
+        <div class="formula-name">Thể tích hình cầu</div>
+        <div class="formula-body">\[ V = \frac{4}{3}\pi R^3 \]</div>
+        <ul class="formula-legend">
+          <li>\(R\): bán kính hình cầu (cm)</li>
+          <li>\(V\): thể tích hình cầu (cm³)</li>
+        </ul>
+        <div class="formula-note">Nửa hình cầu: \(V = \frac{2}{3}\pi R^3\).</div>
+      </div>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 — Hình cầu bán kính 10 cm</p>
+      <p>\(S = 4\pi R^2 = 4\pi \cdot 10^2 = 400\pi\) (cm²); \(V = \frac{4}{3}\pi R^3 = \frac{4}{3}\pi \cdot 10^3 = \frac{4\,000\pi}{3}\) (cm³).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 4 — Bể cá dạng một phần hình cầu, đường kính 20 cm, đổ nước bằng \(\frac{2}{3}\) thể tích hình cầu</p>
+      <p>\(R = 20 : 2 = 10\) cm; \(V = \frac{4}{3}\pi \cdot 10^3 = \frac{4\,000\pi}{3}\) (cm³).</p>
+      <p>Thể tích nước: \(\frac{2}{3} \cdot \frac{4\,000\pi}{3} = \frac{8\,000\pi}{9} \approx 2\,793\) (cm³).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Vận dụng 1 — Quả bóng đá FIFA đường kính khoảng 22 cm (lời giải tự trình bày)</p>
+      <p>\(R = 11\) cm; \(V = \frac{4}{3}\pi \cdot 11^3 = \frac{5\,324\pi}{3} \approx 5\,575\) (cm³).</p>
+    </div>
+
+    <div class="box method">
+      <p class="box-title">Dạng: Tính diện tích mặt cầu, thể tích hình cầu</p>
+      <ol class="steps">
+        <li>Tìm bán kính \(R\): từ đường kính (\(R = d : 2\)), từ chu vi đường tròn lớn (\(R = C : 2\pi\)), từ diện tích mặt cắt qua tâm (\(\pi R^2 = S\)).</li>
+        <li>Thay vào \(S = 4\pi R^2\) hoặc \(V = \frac{4}{3}\pi R^3\).</li>
+        <li>Bài ngược: biết \(S\) → \(R^2 = \frac{S}{4\pi}\); biết \(V\) → \(R^3 = \frac{3V}{4\pi}\).</li>
+        <li>Nhiều vật (3 viên kem, 3 quả bóng) → nhân số lượng; phần không bị chiếm → lấy thể tích hộp trừ thể tích các quả cầu.</li>
+      </ol>
+    </div>
+
+    <div class="box warn">
+      <p>Đề thường cho <b>đường kính</b> — nhớ chia 2 trước khi thay vào công thức (có \(R^3\) nên sai rất lớn).</p>
+      <p>Diện tích mặt cầu là \(4\pi R^2\), không phải \(\pi R^2\) (đó là diện tích mặt cắt qua tâm).</p>
+    </div>
+    <div class="box tip"><p>Mặt cầu có diện tích bằng <b>4 lần</b> diện tích hình tròn lớn. Hình cầu nằm khít trong hình trụ thì chiếm \(\frac{2}{3}\) thể tích hình trụ.</p></div>
+
+    <div class="key-points">
+      <ul>
+        <li>Quay nửa đường tròn → mặt cầu; quay nửa hình tròn → hình cầu.</li>
+        <li>Mặt phẳng cắt hình cầu → hình tròn; cắt mặt cầu → đường tròn.</li>
+        <li>Mặt phẳng qua tâm → đường tròn lớn bán kính \(R\).</li>
+        <li>\(S = 4\pi R^2\); \(V = \frac{4}{3}\pi R^3\).</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-on-tap-chuong-10">
+    <h3 class="lesson-title"><span class="lesson-no">Ôn tập</span>Ôn tập chương X</h3>
+    <p class="lesson-goal">Cần nắm: bảng so sánh công thức hình trụ – hình nón – hình cầu; cách giải bài toán hình ghép và bài toán thực tế.</p>
+
+    <h4>1. Bảng so sánh công thức</h4>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Hình</th><th>Tạo thành khi quay</th><th>Diện tích xung quanh / mặt cầu</th><th>Diện tích toàn phần</th><th>Thể tích</th></tr></thead>
+      <tbody>
+        <tr><td>Hình trụ (\(R, h\))</td><td>Hình chữ nhật quanh một cạnh</td><td>\(2\pi Rh\)</td><td>\(2\pi Rh + 2\pi R^2\)</td><td>\(\pi R^2 h\)</td></tr>
+        <tr><td>Hình nón (\(r, h, l\))</td><td>Tam giác vuông quanh một cạnh góc vuông</td><td>\(\pi r l\)</td><td>\(\pi r l + \pi r^2\)</td><td>\(\frac{1}{3}\pi r^2 h\)</td></tr>
+        <tr><td>Hình cầu (\(R\))</td><td>Nửa hình tròn quanh đường kính</td><td>\(4\pi R^2\)</td><td>—</td><td>\(\frac{4}{3}\pi R^3\)</td></tr>
+      </tbody>
+    </table></div>
+    <div class="box tip"><p>Cùng bán kính \(R\), hình trụ và hình nón cao \(h = 2R\): \(V_\text{nón} : V_\text{cầu} : V_\text{trụ} = 1 : 2 : 3\) (vì \(\frac{2}{3}\pi R^3 : \frac{4}{3}\pi R^3 : 2\pi R^3\)).</p></div>
+
+    <h4>2. Các dạng toán</h4>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Dạng</th><th>Cách làm</th></tr></thead>
+      <tbody>
+        <tr><td>Tính trực tiếp</td><td>Tìm \(R\), \(h\), \(l\) (đổi đường kính, đổi đơn vị) → thay công thức</td></tr>
+        <tr><td>Biết \(S\) hoặc \(V\), tìm kích thước</td><td>Giải phương trình theo \(R\) hoặc \(h\)</td></tr>
+        <tr><td>Hình ghép (trụ + nón + nửa cầu)</td><td>Cộng thể tích các phần; diện tích mặt ngoài = tổng các mặt lộ ra</td></tr>
+        <tr><td>Khoét bỏ, phần còn trống</td><td>Lấy thể tích lớn trừ thể tích phần bị khoét / bị chiếm</td></tr>
+        <tr><td>Nước dâng khi thả vật</td><td>Thể tích vật = thể tích phần nước dâng: \(\pi R^2 \cdot \Delta h\)</td></tr>
+        <tr><td>Vòng bi (phần giữa hai hình trụ)</td><td>\(V = \pi (R_1^2 - R_2^2)\, h\)</td></tr>
+      </tbody>
+    </table></div>
+    <div class="formula">
+      <div class="formula-name">Thể tích phần giữa hai hình trụ cùng trục (vòng bi, ống)</div>
+      <div class="formula-body">\[ V = \pi R_1^2 h - \pi R_2^2 h = \pi \left(R_1^2 - R_2^2\right) h \]</div>
+      <ul class="formula-legend">
+        <li>\(R_1\), \(R_2\): bán kính đáy hình trụ ngoài, hình trụ trong (cm)</li>
+        <li>\(h\): chiều cao chung (cm); \(V\): thể tích (cm³)</li>
+      </ul>
+      <div class="formula-note">Tự tổng hợp cho bài 10.12 (hiệu thể tích hai hình trụ).</div>
+    </div>
+
+    <div class="box example">
+      <p class="box-title">Luyện tập chung, Ví dụ 1 — Hình trụ \(R = 1\) cm, \(h = 2\) cm, khoan đi phần hình nón cùng đáy, cùng chiều cao</p>
+      <p>\(V_1 = \pi R^2 h = \pi \cdot 1^2 \cdot 2 = 2\pi\) (cm³); \(V_2 = \frac{1}{3}\pi R^2 h = \frac{2\pi}{3}\) (cm³).</p>
+      <p>Phần còn lại: \(V = V_1 - V_2 = 2\pi - \frac{2\pi}{3} = \frac{4\pi}{3}\) (cm³).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Luyện tập chung, Ví dụ 2 — Hộp hình trụ chứa vừa khít 3 quả bóng tennis đường kính 6,4 cm</p>
+      <p>a) \(h = 6{,}4 \cdot 3 = 19{,}2\) cm; \(R = 6{,}4 : 2 = 3{,}2\) cm; \(V = \pi \cdot 3{,}2^2 \cdot 19{,}2 \approx 618\) (cm³).</p>
+      <p>b) Ba quả bóng: \(V' = 3 \cdot \left(\frac{4}{3}\pi \cdot 3{,}2^3\right) \approx 412\) (cm³). Phần không bị chiếm: \(V'' = V - V' \approx 618 - 412 = 206\) (cm³).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Bài 10.28 — Thả hòn đá vào bể hình trụ đường kính đáy 20 cm, nước dâng 3 cm (lời giải tự trình bày)</p>
+      <p>Thể tích hòn đá = thể tích nước dâng lên: \(V = \pi \cdot 10^2 \cdot 3 = 300\pi \approx 942\) (cm³).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Trắc nghiệm 10.19, 10.21</p>
+      <p>10.19: đường kính 10 cm → \(R = 5\) cm, \(S = 4\pi \cdot 25 = 100\pi\) cm² → <b>D</b>.</p>
+      <p>10.21: mặt cắt qua tâm có diện tích \(\pi R^2 = 9\pi\) → \(R = 3\) cm, \(V = \frac{4}{3}\pi \cdot 27 = 36\pi\) cm³ → <b>B</b>.</p>
+    </div>
+
+    <div class="box warn">
+      <p>Khi tính diện tích mặt ngoài của hình ghép, <b>không</b> cộng các mặt bị che (vd. đáy trên của hình trụ khi úp hình nón lên, đáy của dụng cụ nếu đề nói không tính).</p>
+      <p>Đổi đơn vị: 1 m³ = 1 000 dm³ = 1 000 lít; 1 dm³ = 1 000 cm³.</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Trụ: \(2\pi Rh\) và \(\pi R^2 h\); nón: \(\pi r l\) và \(\frac{1}{3}\pi r^2 h\); cầu: \(4\pi R^2\) và \(\frac{4}{3}\pi R^3\).</li>
+        <li>Nón: \(l^2 = r^2 + h^2\).</li>
+        <li>Toàn phần = xung quanh + đáy (trụ 2 đáy, nón 1 đáy).</li>
+        <li>Hình ghép: cộng/trừ thể tích; nước dâng = thể tích vật.</li>
+      </ul>
+    </div>
+  </article>
+</section>

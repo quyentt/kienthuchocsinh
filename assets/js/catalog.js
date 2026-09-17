@@ -10,11 +10,13 @@ window.CATALOG = [
     subjects: [
       { id: "khtn", name: "Khoa học tự nhiên", icon: "🔬", color: "#2b8a3e",
         desc: "Vật lí · Hoá học · Sinh học", status: "ready", page: "khtn.html" },
-      { id: "toan", name: "Toán", icon: "∑", color: "#2563eb", desc: "Đại số · Hình học", status: "soon" },
+      { id: "toan", name: "Toán", icon: "∑", color: "#2563eb",
+        desc: "Tập 1 · Tập 2", status: "ready", page: "toan.html" },
       { id: "ngu-van", name: "Ngữ văn", icon: "📖", color: "#b7791f", desc: "", status: "soon" },
       { id: "tieng-anh", name: "Tiếng Anh", icon: "🔤", color: "#7c3aed",
         desc: "Global Success · 12 Unit", status: "ready", page: "tieng-anh.html" },
-      { id: "lich-su-dia-li", name: "Lịch sử và Địa lí", icon: "🌏", color: "#c05621", desc: "", status: "soon" },
+      { id: "lich-su-dia-li", name: "Lịch sử và Địa lí", icon: "🌏", color: "#c05621",
+        desc: "Lịch sử · Địa lí · Chủ đề chung", status: "ready", page: "lich-su-dia-li.html" },
       { id: "gdcd", name: "Giáo dục công dân", icon: "🤝", color: "#c53030", desc: "", status: "soon" },
       { id: "tin-hoc", name: "Tin học", icon: "💻", color: "#0e7490", desc: "", status: "soon" },
       { id: "cong-nghe", name: "Công nghệ", icon: "🛠️", color: "#4a5568", desc: "", status: "soon" }
