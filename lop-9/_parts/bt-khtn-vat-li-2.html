@@ -1,0 +1,1160 @@
+<section class="chapter" id="bt-ly-chuong-3">
+  <h2 class="chapter-title"><span>Chương III</span>Điện</h2>
+
+  <article class="lesson" id="bt-ly-bai-11">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 11</span>Điện trở. Định luật Ohm</h3>
+    <p class="lesson-goal">Các dạng bài: vận dụng định luật Ohm \(I = \frac{U}{R}\) tính I, U, R · đổi đơn vị điện trở · đọc bảng số liệu U – I · so sánh điện trở hai dây · tính điện trở dây dẫn \(R = \rho\frac{l}{S}\) (và suy ra \(l\), \(S\)) · đọc trị số điện trở theo vòng màu · giải thích thực tế (dây đồng, dây nhôm, chập điện).</p>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 1</span><span class="ex-level"></span><span class="ex-src">Tự soạn</span></div>
+      <p>Phát biểu nào sau đây đúng với định luật Ohm?</p>
+      <ol class="choices grid">
+        <li>Cường độ dòng điện qua dây dẫn tỉ lệ nghịch với hiệu điện thế giữa hai đầu dây.</li>
+        <li>Cường độ dòng điện qua dây dẫn tỉ lệ thuận với hiệu điện thế giữa hai đầu dây và tỉ lệ nghịch với điện trở của dây.</li>
+        <li>Điện trở của dây dẫn tỉ lệ thuận với hiệu điện thế giữa hai đầu dây.</li>
+        <li>Cường độ dòng điện qua dây dẫn tỉ lệ thuận với điện trở của dây.</li>
+      </ol>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Định luật Ohm: \(I = \frac{U}{R}\) → I tỉ lệ thuận với U, tỉ lệ nghịch với R.</p>
+        <p>A sai (I tỉ lệ <b>thuận</b> với U). C sai: R của một dây không phụ thuộc U (U tăng thì I tăng theo, \(\frac{U}{I}\) không đổi). D sai: R càng lớn thì I càng nhỏ.</p>
+        <p class="answer">B</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 2</span><span class="ex-level"></span><span class="ex-src">Tham khảo dạng bài</span></div>
+      <p>Một điện trở có giá trị 2,4 kΩ. Đổi ra đơn vị ôm được:</p>
+      <ol class="choices grid">
+        <li>24 Ω</li>
+        <li>240 Ω</li>
+        <li>2 400 Ω</li>
+        <li>24 000 Ω</li>
+      </ol>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>\(1\ \text{k}\Omega = 1\,000\ \Omega\) nên \(2{,}4\ \text{k}\Omega = 2{,}4 \cdot 1\,000 = 2\,400\ \Omega\).</p>
+        <p>Các phương án khác nhân sai số mũ (nhân 10, 100 hoặc 10 000).</p>
+        <p class="answer">C</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 3</span><span class="ex-level"></span><span class="ex-src">SGK tr. 57</span></div>
+      <p>Hai đoạn dây dẫn bằng đồng: dây thứ nhất có chiều dài bằng một nửa dây thứ hai nhưng tiết diện gấp đôi tiết diện dây thứ hai. So với điện trở \(R_2\) của dây thứ hai, điện trở \(R_1\) của dây thứ nhất:</p>
+      <ol class="choices grid">
+        <li>bằng \(R_2\)</li>
+        <li>lớn gấp 4 lần \(R_2\)</li>
+        <li>nhỏ bằng \(\frac{1}{2}R_2\)</li>
+        <li>nhỏ bằng \(\frac{1}{4}R_2\)</li>
+      </ol>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Cùng chất (cùng \(\rho\)), \(l_1 = \frac{l_2}{2}\), \(S_1 = 2S_2\):</p>
+        <p>\[ \frac{R_1}{R_2} = \frac{l_1}{l_2}\cdot\frac{S_2}{S_1} = \frac{1}{2}\cdot\frac{1}{2} = \frac{1}{4} \]</p>
+        <p>Chiều dài giảm 2 lần → R giảm 2 lần; tiết diện tăng 2 lần → R giảm thêm 2 lần. Phương án C chỉ tính một yếu tố; B đảo ngược tỉ số.</p>
+        <p class="answer">D: \(R_1 = \frac{1}{4}R_2\)</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 4</span><span class="ex-level"></span><span class="ex-src">SGK tr. 56</span></div>
+      <p>a) Một bóng đèn xe máy lúc thắp sáng có điện trở 12 Ω, cường độ dòng điện qua dây tóc là 0,5 A. Tính hiệu điện thế giữa hai đầu dây tóc.</p>
+      <p>b) Khi hiệu điện thế giữa hai đầu một đoạn mạch là 2 V thì cường độ dòng điện qua nó là 0,4 A. Hiệu điện thế phải bằng bao nhiêu để cường độ dòng điện là 0,8 A?</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) Tóm tắt: \(R = 12\ \Omega\), \(I = 0{,}5\) A. Tìm U.</p>
+        <p>Từ \(I = \frac{U}{R}\) → \(U = IR = 0{,}5 \cdot 12 = 6\) V.</p>
+        <p>b) Điện trở đoạn mạch: \(R = \frac{U_1}{I_1} = \frac{2}{0{,}4} = 5\ \Omega\) (không đổi).</p>
+        <p>\(U_2 = I_2R = 0{,}8 \cdot 5 = 4\) V. (Cách nhanh: I tăng 2 lần thì U cũng phải tăng 2 lần.)</p>
+        <p class="answer">a) \(U = 6\) V; b) \(U = 4\) V</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 5</span><span class="ex-level"></span><span class="ex-src">SGK tr. 57</span></div>
+      <p>Tính điện trở của một đoạn dây dẫn bằng đồng dài 150 m, tiết diện 2 mm². Biết điện trở suất của đồng là \(1{,}7\cdot 10^{-8}\ \Omega\text{m}\).</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Tóm tắt: \(l = 150\) m; \(S = 2\ \text{mm}^2 = 2\cdot 10^{-6}\ \text{m}^2\); \(\rho = 1{,}7\cdot 10^{-8}\ \Omega\text{m}\). Tìm R.</p>
+        <p>\[ R = \rho\frac{l}{S} = 1{,}7\cdot 10^{-8}\cdot\frac{150}{2\cdot 10^{-6}} = 1{,}275\ \Omega \]</p>
+        <p class="answer">\(R = 1{,}275\ \Omega\)</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 6</span><span class="ex-level"></span><span class="ex-src">Tham khảo dạng bài</span></div>
+      <p>Đo cường độ dòng điện qua một vật dẫn khi thay đổi hiệu điện thế, được bảng sau:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>U (V)</th><th>0</th><th>4,5</th><th>9</th><th>13,5</th></tr></thead>
+          <tbody><tr><td>I (A)</td><td>0</td><td>0,3</td><td>0,6</td><td>?</td></tr></tbody>
+        </table>
+      </div>
+      <p>a) Tính điện trở của vật dẫn. b) Điền giá trị còn thiếu. c) Muốn cường độ dòng điện là 1,2 A thì cần đặt hiệu điện thế bao nhiêu?</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) \(R = \frac{U}{I} = \frac{4{,}5}{0{,}3} = 15\ \Omega\) (kiểm tra: \(\frac{9}{0{,}6} = 15\ \Omega\), đúng).</p>
+        <p>b) \(I = \frac{U}{R} = \frac{13{,}5}{15} = 0{,}9\) A.</p>
+        <p>c) \(U = IR = 1{,}2\cdot 15 = 18\) V.</p>
+        <p class="answer">a) \(R = 15\ \Omega\); b) \(I = 0{,}9\) A; c) \(U = 18\) V</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 7</span><span class="ex-level"></span><span class="ex-src">Tham khảo dạng bài</span></div>
+      <p>Một dây nicrom dài 2 m, tiết diện tròn đường kính 0,4 mm. Điện trở suất của nicrom là \(110\cdot 10^{-8}\ \Omega\text{m}\). Lấy \(\pi \approx 3{,}14\).</p>
+      <p>a) Tính điện trở của dây. b) Đặt vào hai đầu dây hiệu điện thế 35 V. Tính cường độ dòng điện qua dây.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Tóm tắt: \(l = 2\) m; \(d = 0{,}4\) mm → \(r = 0{,}2\ \text{mm} = 2\cdot 10^{-4}\) m; \(\rho = 110\cdot 10^{-8}\ \Omega\text{m}\); \(U = 35\) V.</p>
+        <p>a) Tiết diện: \(S = \pi r^2 = 3{,}14\cdot (2\cdot 10^{-4})^2 \approx 1{,}256\cdot 10^{-7}\ \text{m}^2\).</p>
+        <p>\[ R = \rho\frac{l}{S} = 110\cdot 10^{-8}\cdot\frac{2}{1{,}256\cdot 10^{-7}} \approx 17{,}5\ \Omega \]</p>
+        <p>b) \(I = \frac{U}{R} = \frac{35}{17{,}5} = 2\) A.</p>
+        <div class="box warn"><p>Đề cho <b>đường kính</b> thì phải lấy bán kính \(r = \frac{d}{2}\) trước khi tính \(S = \pi r^2\).</p></div>
+        <p class="answer">a) \(R \approx 17{,}5\ \Omega\); b) \(I \approx 2\) A</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 8</span><span class="ex-level"></span><span class="ex-src">SGK tr. 58 (Em có thể)</span></div>
+      <p>a) Dựa vào Bảng 11.3, giải thích vì sao dây dẫn điện trong gia đình thường làm bằng đồng, còn dây dẫn đường điện cao áp thường làm bằng nhôm.</p>
+      <p>b) "Chập điện" (đoản mạch) là gì, vì sao có thể gây hoả hoạn? Nêu cách phòng tránh.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) Đồng có điện trở suất nhỏ (\(1{,}70\cdot 10^{-8}\ \Omega\text{m}\)), chỉ lớn hơn bạc → dây đồng có điện trở nhỏ, ít toả nhiệt, dẫn điện tốt, lại rẻ hơn bạc nhiều → dùng trong nhà. Đường dây cao áp rất dài, treo trên cột: nhôm dẫn điện khá tốt (\(2{,}80\cdot 10^{-8}\ \Omega\text{m}\)) mà <b>nhẹ và rẻ</b> hơn đồng → giảm tải trọng lên cột và giảm chi phí.</p>
+        <p>b) Chập điện: hai dây nối với hai cực nguồn chạm trực tiếp vào nhau (qua vật có điện trở rất nhỏ), không qua thiết bị. Khi đó điện trở mạch rất nhỏ nên theo \(I = \frac{U}{R}\), cường độ dòng điện <b>rất lớn</b> → dây nóng lên mạnh, vỏ cách điện chảy, bắt lửa → cháy.</p>
+        <p>Phòng tránh: lắp cầu chì hoặc aptomat (cầu dao tự động) ngắt mạch khi dòng quá lớn; dùng dây có tiết diện phù hợp, vỏ cách điện tốt; thay dây cũ, hở; không cắm quá nhiều thiết bị công suất lớn vào một ổ cắm.</p>
+        <p class="answer">Đồng: \(\rho\) nhỏ, dẫn điện tốt; nhôm: nhẹ, rẻ. Chập điện → R rất nhỏ → I rất lớn → nóng, cháy.</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="3">
+      <div class="ex-head"><span class="ex-no">Bài 9</span><span class="ex-level"></span><span class="ex-src">Tham khảo dạng bài</span></div>
+      <p>Một dây đồng có điện trở 3 Ω. Coi thể tích dây không đổi.</p>
+      <p>a) Kéo dây cho dài gấp đôi. Điện trở mới bằng bao nhiêu?</p>
+      <p>b) Nếu không kéo mà gập đôi dây (chập hai nửa lại thành một dây) thì điện trở bằng bao nhiêu?</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) Thể tích \(V = lS\) không đổi: chiều dài tăng 2 lần thì tiết diện giảm 2 lần.</p>
+        <p>\[ \frac{R'}{R} = \frac{l'}{l}\cdot\frac{S}{S'} = 2\cdot 2 = 4 \Rightarrow R' = 4\cdot 3 = 12\ \Omega \]</p>
+        <p>b) Gập đôi: chiều dài còn \(\frac{l}{2}\), tiết diện thành \(2S\):</p>
+        <p>\[ \frac{R''}{R} = \frac{1}{2}\cdot\frac{1}{2} = \frac{1}{4} \Rightarrow R'' = \frac{3}{4} = 0{,}75\ \Omega \]</p>
+        <div class="box warn"><p>Kéo dài dây thì tiết diện cũng nhỏ đi – không chỉ nhân điện trở với 2.</p></div>
+        <p class="answer">a) \(12\ \Omega\); b) \(0{,}75\ \Omega\)</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="3">
+      <div class="ex-head"><span class="ex-no">Bài 10</span><span class="ex-level"></span><span class="ex-src">Tham khảo dạng bài</span></div>
+      <p>Người ta cần làm một điện trở 30 Ω bằng dây constantan (\(\rho = 50\cdot 10^{-8}\ \Omega\text{m}\)) tiết diện 0,5 mm², quấn thành một lớp quanh lõi sứ hình trụ đường kính 2 cm.</p>
+      <p>a) Tính chiều dài dây cần dùng. b) Tính số vòng dây quấn được (lấy \(\pi \approx 3{,}14\)).</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Tóm tắt: \(R = 30\ \Omega\); \(S = 0{,}5\ \text{mm}^2 = 0{,}5\cdot 10^{-6}\ \text{m}^2\); \(D = 2\ \text{cm} = 0{,}02\) m.</p>
+        <p>a) \[ l = \frac{RS}{\rho} = \frac{30\cdot 0{,}5\cdot 10^{-6}}{50\cdot 10^{-8}} = 30\ \text{m} \]</p>
+        <p>b) Chiều dài một vòng = chu vi lõi: \(\pi D = 3{,}14\cdot 0{,}02 = 0{,}0628\) m.</p>
+        <p>Số vòng: \(n = \frac{30}{0{,}0628} \approx 477{,}7\) → quấn được khoảng 477 vòng trọn.</p>
+        <p class="answer">a) \(l = 30\) m; b) khoảng 477 vòng</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="3">
+      <div class="ex-head"><span class="ex-no">Bài 11</span><span class="ex-level"></span><span class="ex-src">SGK tr. 59 (mở rộng) · Tự soạn</span></div>
+      <p>a) Một điện trở 4 vòng màu có các vòng lần lượt: nâu – đen – đỏ – vàng ánh kim. Đọc trị số điện trở.</p>
+      <p>b) Mắc điện trở đó vào hiệu điện thế 5 V. Cường độ dòng điện qua nó nằm trong khoảng nào?</p>
+      <p>c) Điện trở 470 Ω, sai số ±10% có các vòng màu nào?</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) Nâu = 1, đen = 0, đỏ = \(\times 10^2\), vàng ánh kim = ±5%: \(R = 10\cdot 10^2 = 1\,000\ \Omega\); sai số \(5\%\cdot 1\,000 = 50\ \Omega\) → \(R = 1\,000 \pm 50\ \Omega\).</p>
+        <p>b) R nằm trong khoảng 950 Ω đến 1 050 Ω.</p>
+        <p>\(I_\text{max} = \frac{5}{950} \approx 0{,}00526\) A \(\approx 5{,}26\) mA; \(I_\text{min} = \frac{5}{1\,050} \approx 0{,}00476\) A \(\approx 4{,}76\) mA.</p>
+        <p>c) \(470 = 47\cdot 10^1\): vòng 1 = 4 (vàng), vòng 2 = 7 (tím), vòng 3 = \(10^1\) (nâu), vòng 4 = ±10% (bạc).</p>
+        <p class="answer">a) \(1\,000 \pm 50\ \Omega\); b) khoảng 4,76 mA đến 5,26 mA; c) vàng – tím – nâu – bạc</p>
+      </details>
+    </div>
+  </article>
+
+  <article class="lesson" id="bt-ly-bai-12">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 12</span>Đoạn mạch nối tiếp, song song</h3>
+    <p class="lesson-goal">Các dạng bài: tính điện trở tương đương nối tiếp, song song · tính I, U từng điện trở · mạch 3 điện trở · mạch hỗn hợp (nối tiếp + song song) · biến trở điều chỉnh đèn · tìm các cách mắc cho trước điện trở tương đương · giải thích cách mắc thiết bị trong nhà.</p>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 1</span><span class="ex-level"></span><span class="ex-src">Tự soạn</span></div>
+      <p>Trong đoạn mạch gồm các điện trở mắc nối tiếp, đại lượng nào có giá trị như nhau tại mọi điện trở?</p>
+      <ol class="choices grid">
+        <li>Hiệu điện thế</li>
+        <li>Cường độ dòng điện</li>
+        <li>Điện trở</li>
+        <li>Cả hiệu điện thế và cường độ dòng điện</li>
+      </ol>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Nối tiếp: \(I = I_1 = I_2 = \ldots = I_n\). Hiệu điện thế thì <b>cộng lại</b> \(U = U_1 + U_2 + \ldots\), chỉ bằng nhau khi các điện trở bằng nhau → A, C, D sai.</p>
+        <p class="answer">B</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 2</span><span class="ex-level"></span><span class="ex-src">Tham khảo dạng bài</span></div>
+      <p>Hai điện trở \(R_1 = 6\ \Omega\) và \(R_2 = 12\ \Omega\) mắc song song. Điện trở tương đương của đoạn mạch là:</p>
+      <ol class="choices grid">
+        <li>18 Ω</li>
+        <li>9 Ω</li>
+        <li>4 Ω</li>
+        <li>2 Ω</li>
+      </ol>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>\[ R_\text{tđ} = \frac{R_1R_2}{R_1 + R_2} = \frac{6\cdot 12}{6 + 12} = \frac{72}{18} = 4\ \Omega \]</p>
+        <p>A là kết quả của mắc nối tiếp. B, D không đúng công thức. Kiểm tra nhanh: song song thì \(R_\text{tđ}\) phải <b>nhỏ hơn</b> điện trở nhỏ nhất (6 Ω) → chỉ còn C hoặc D; tính ra 4 Ω.</p>
+        <p class="answer">C</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 3</span><span class="ex-level"></span><span class="ex-src">SGK tr. 61</span></div>
+      <p>Hai điện trở \(R_1 = 2\ \Omega\), \(R_2 = 3\ \Omega\) mắc nối tiếp. Cường độ dòng điện qua \(R_1\) là 1 A. Xác định: a) điện trở tương đương; b) hiệu điện thế giữa hai đầu mỗi điện trở; c) hiệu điện thế giữa hai đầu đoạn mạch.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) \(R_\text{tđ} = R_1 + R_2 = 2 + 3 = 5\ \Omega\).</p>
+        <p>b) Nối tiếp nên \(I = I_1 = I_2 = 1\) A: \(U_1 = IR_1 = 2\) V; \(U_2 = IR_2 = 3\) V.</p>
+        <p>c) \(U = U_1 + U_2 = 5\) V (hoặc \(U = IR_\text{tđ} = 1\cdot 5 = 5\) V).</p>
+        <p class="answer">a) \(5\ \Omega\); b) \(U_1 = 2\) V, \(U_2 = 3\) V; c) \(U = 5\) V</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 4</span><span class="ex-level"></span><span class="ex-src">SGK tr. 62</span></div>
+      <p>Hai điện trở \(R_1 = 20\ \Omega\) và \(R_2 = 40\ \Omega\) mắc song song vào mạch điện có hiệu điện thế 24 V. a) Tính điện trở tương đương. b) Tính cường độ dòng điện trong mạch chính.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) \(R_\text{tđ} = \frac{R_1R_2}{R_1 + R_2} = \frac{20\cdot 40}{60} = \frac{40}{3} \approx 13{,}3\ \Omega\).</p>
+        <p>b) \(I = \frac{U}{R_\text{tđ}} = \frac{24}{40/3} = 1{,}8\) A.</p>
+        <p>Kiểm tra: \(I_1 = \frac{24}{20} = 1{,}2\) A; \(I_2 = \frac{24}{40} = 0{,}6\) A; \(I_1 + I_2 = 1{,}8\) A ✓.</p>
+        <p class="answer">a) \(R_\text{tđ} \approx 13{,}3\ \Omega\); b) \(I = 1{,}8\) A</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 5</span><span class="ex-level"></span><span class="ex-src">Tham khảo dạng bài</span></div>
+      <p>Ba điện trở \(R_1 = 5\ \Omega\), \(R_2 = 10\ \Omega\), \(R_3 = 15\ \Omega\) mắc nối tiếp vào hiệu điện thế 12 V. Tính điện trở tương đương, cường độ dòng điện trong mạch và hiệu điện thế giữa hai đầu mỗi điện trở.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>\(R_\text{tđ} = 5 + 10 + 15 = 30\ \Omega\).</p>
+        <p>\(I = \frac{U}{R_\text{tđ}} = \frac{12}{30} = 0{,}4\) A (như nhau qua cả ba điện trở).</p>
+        <p>\(U_1 = 0{,}4\cdot 5 = 2\) V; \(U_2 = 0{,}4\cdot 10 = 4\) V; \(U_3 = 0{,}4\cdot 15 = 6\) V. Kiểm tra: \(2 + 4 + 6 = 12\) V ✓.</p>
+        <div class="box tip"><p>Nối tiếp: hiệu điện thế chia theo tỉ lệ điện trở (1 : 2 : 3 → 2 V : 4 V : 6 V).</p></div>
+        <p class="answer">\(R_\text{tđ} = 30\ \Omega\); \(I = 0{,}4\) A; \(U_1 = 2\) V, \(U_2 = 4\) V, \(U_3 = 6\) V</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 6</span><span class="ex-level"></span><span class="ex-src">Tham khảo dạng bài</span></div>
+      <p>Ba điện trở \(R_1 = 10\ \Omega\), \(R_2 = 15\ \Omega\), \(R_3 = 30\ \Omega\) mắc song song. Ampe kế ở mạch chính chỉ 1,2 A. Tính điện trở tương đương, hiệu điện thế hai đầu đoạn mạch và cường độ dòng điện qua mỗi điện trở.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>\[ \frac{1}{R_\text{tđ}} = \frac{1}{10} + \frac{1}{15} + \frac{1}{30} = \frac{3 + 2 + 1}{30} = \frac{6}{30} \Rightarrow R_\text{tđ} = 5\ \Omega \]</p>
+        <p>\(U = IR_\text{tđ} = 1{,}2\cdot 5 = 6\) V (bằng nhau trên cả ba điện trở).</p>
+        <p>\(I_1 = \frac{6}{10} = 0{,}6\) A; \(I_2 = \frac{6}{15} = 0{,}4\) A; \(I_3 = \frac{6}{30} = 0{,}2\) A. Kiểm tra: \(0{,}6 + 0{,}4 + 0{,}2 = 1{,}2\) A ✓.</p>
+        <p class="answer">\(R_\text{tđ} = 5\ \Omega\); \(U = 6\) V; \(I_1 = 0{,}6\) A, \(I_2 = 0{,}4\) A, \(I_3 = 0{,}2\) A</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 7</span><span class="ex-level"></span><span class="ex-src">Tham khảo dạng bài</span></div>
+      <p>Cho mạch điện như hình: \(R_1 = 6\ \Omega\) mắc nối tiếp với cụm (\(R_2 = 12\ \Omega\) song song \(R_3 = 24\ \Omega\)). Hiệu điện thế hai đầu A, B là 21 V. Tính điện trở tương đương và cường độ dòng điện qua mỗi điện trở.</p>
+      <figure class="diagram">
+        <svg viewBox="0 0 360 150" width="360" role="img" aria-label="R1 nối tiếp với cụm R2 song song R3">
+          <g class="stroke" fill="none" stroke-width="2">
+            <line x1="20" y1="75" x2="60" y2="75"/>
+            <rect x="60" y="66" width="60" height="18"/>
+            <line x1="120" y1="75" x2="170" y2="75"/>
+            <polyline points="170,35 170,115"/>
+            <line x1="170" y1="35" x2="210" y2="35"/>
+            <line x1="170" y1="115" x2="210" y2="115"/>
+            <rect x="210" y="26" width="60" height="18"/>
+            <rect x="210" y="106" width="60" height="18"/>
+            <line x1="270" y1="35" x2="310" y2="35"/>
+            <line x1="270" y1="115" x2="310" y2="115"/>
+            <polyline points="310,35 310,115"/>
+            <line x1="310" y1="75" x2="345" y2="75"/>
+          </g>
+          <circle cx="20" cy="75" r="4" class="accent-fill"/>
+          <circle cx="345" cy="75" r="4" class="accent-fill"/>
+          <circle cx="170" cy="75" r="3" class="accent-fill"/>
+          <circle cx="310" cy="75" r="3" class="accent-fill"/>
+          <text x="12" y="100" font-size="14" font-style="italic">A</text>
+          <text x="338" y="100" font-size="14" font-style="italic">B</text>
+          <text x="80" y="58" font-size="14">R₁</text>
+          <text x="230" y="18" font-size="14">R₂</text>
+          <text x="230" y="144" font-size="14">R₃</text>
+          <text x="150" y="70" font-size="13" font-style="italic">C</text>
+        </svg>
+        <figcaption>\(R_1\) nt \((R_2 \parallel R_3)\).</figcaption>
+      </figure>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Bước 1 – cụm song song: \(R_{23} = \frac{12\cdot 24}{12 + 24} = \frac{288}{36} = 8\ \Omega\).</p>
+        <p>Bước 2 – cả mạch: \(R_\text{tđ} = R_1 + R_{23} = 6 + 8 = 14\ \Omega\).</p>
+        <p>Bước 3: \(I = I_1 = \frac{U}{R_\text{tđ}} = \frac{21}{14} = 1{,}5\) A.</p>
+        <p>Bước 4: \(U_1 = I R_1 = 1{,}5\cdot 6 = 9\) V; \(U_{23} = I R_{23} = 1{,}5\cdot 8 = 12\) V (kiểm tra \(9 + 12 = 21\) V ✓).</p>
+        <p>Bước 5: \(I_2 = \frac{12}{12} = 1\) A; \(I_3 = \frac{12}{24} = 0{,}5\) A (tổng 1,5 A ✓).</p>
+        <p class="answer">\(R_\text{tđ} = 14\ \Omega\); \(I_1 = 1{,}5\) A; \(I_2 = 1\) A; \(I_3 = 0{,}5\) A</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 8</span><span class="ex-level"></span><span class="ex-src">SGK tr. 60, 63 (Em có thể)</span></div>
+      <p>a) Có hai bóng đèn, nguồn điện và dây nối. Mắc hai đèn thế nào để khi một đèn bị cháy thì đèn kia vẫn sáng?</p>
+      <p>b) Giải thích vì sao bóng đèn, ti vi, tủ lạnh… trong gia đình được mắc song song.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) Mắc <b>song song</b>: mỗi đèn nằm trên một nhánh riêng nối thẳng vào hai cực nguồn. Một đèn cháy (nhánh đó hở) thì nhánh kia vẫn là mạch kín → đèn kia vẫn sáng. (Nếu mắc nối tiếp, một đèn cháy làm hở cả mạch → đèn kia tắt.)</p>
+        <p>b) Mắc song song thì:</p>
+        <ul>
+          <li>Mọi thiết bị có cùng hiệu điện thế bằng hiệu điện thế mạng điện (220 V) = hiệu điện thế định mức → hoạt động bình thường.</li>
+          <li>Mỗi thiết bị có công tắc riêng, bật/tắt độc lập; một thiết bị hỏng không làm các thiết bị khác ngừng hoạt động.</li>
+        </ul>
+        <p class="answer">Mắc song song: cùng hiệu điện thế 220 V, hoạt động độc lập.</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="3">
+      <div class="ex-head"><span class="ex-no">Bài 9</span><span class="ex-level"></span><span class="ex-src">Tham khảo dạng bài</span></div>
+      <p>Cho mạch gồm (\(R_1 = 4\ \Omega\) nối tiếp \(R_2 = 8\ \Omega\)) mắc song song với \(R_3 = 6\ \Omega\), hiệu điện thế hai đầu mạch là 12 V. Tính điện trở tương đương, cường độ dòng điện mạch chính và hiệu điện thế giữa hai đầu \(R_1\), \(R_2\).</p>
+      <figure class="diagram">
+        <svg viewBox="0 0 360 140" width="360" role="img" aria-label="R1 nối tiếp R2, cả nhánh song song với R3">
+          <g class="stroke" fill="none" stroke-width="2">
+            <line x1="20" y1="70" x2="60" y2="70"/>
+            <polyline points="60,30 60,110"/>
+            <line x1="60" y1="30" x2="90" y2="30"/>
+            <rect x="90" y="21" width="60" height="18"/>
+            <line x1="150" y1="30" x2="210" y2="30"/>
+            <rect x="210" y="21" width="60" height="18"/>
+            <line x1="270" y1="30" x2="300" y2="30"/>
+            <line x1="60" y1="110" x2="150" y2="110"/>
+            <rect x="150" y="101" width="60" height="18"/>
+            <line x1="210" y1="110" x2="300" y2="110"/>
+            <polyline points="300,30 300,110"/>
+            <line x1="300" y1="70" x2="340" y2="70"/>
+          </g>
+          <circle cx="20" cy="70" r="4" class="accent-fill"/>
+          <circle cx="340" cy="70" r="4" class="accent-fill"/>
+          <text x="110" y="15" font-size="14">R₁</text>
+          <text x="230" y="15" font-size="14">R₂</text>
+          <text x="170" y="136" font-size="14">R₃</text>
+        </svg>
+        <figcaption>\((R_1 \text{ nt } R_2) \parallel R_3\).</figcaption>
+      </figure>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Nhánh trên: \(R_{12} = 4 + 8 = 12\ \Omega\).</p>
+        <p>\(R_\text{tđ} = \frac{R_{12}R_3}{R_{12} + R_3} = \frac{12\cdot 6}{18} = 4\ \Omega\).</p>
+        <p>Hai nhánh song song nên cùng hiệu điện thế 12 V:</p>
+        <p>\(I_{12} = \frac{12}{12} = 1\) A; \(I_3 = \frac{12}{6} = 2\) A → \(I = 1 + 2 = 3\) A (kiểm tra: \(\frac{12}{4} = 3\) A ✓).</p>
+        <p>\(U_1 = I_{12}R_1 = 1\cdot 4 = 4\) V; \(U_2 = 1\cdot 8 = 8\) V.</p>
+        <p class="answer">\(R_\text{tđ} = 4\ \Omega\); \(I = 3\) A; \(U_1 = 4\) V; \(U_2 = 8\) V</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="3">
+      <div class="ex-head"><span class="ex-no">Bài 10</span><span class="ex-level"></span><span class="ex-src">Tham khảo dạng bài</span></div>
+      <p>Một bóng đèn sáng bình thường khi hiệu điện thế giữa hai đầu đèn là 6 V; khi đó điện trở của đèn là 12 Ω. Mắc đèn nối tiếp với một biến trở rồi mắc vào nguồn 9 V.</p>
+      <p>a) Biến trở phải có giá trị bao nhiêu để đèn sáng bình thường? b) Nếu tăng giá trị biến trở thì đèn sáng thế nào? Giải thích.</p>
+      <figure class="diagram">
+        <svg viewBox="0 0 300 140" width="300" role="img" aria-label="Đèn nối tiếp biến trở với nguồn">
+          <g class="stroke" fill="none" stroke-width="2">
+            <polyline points="140,25 30,25 30,110 70,110"/>
+            <polyline points="150,25 270,25 270,110 230,110"/>
+            <line x1="140" y1="12" x2="140" y2="38"/>
+            <line x1="150" y1="18" x2="150" y2="32" stroke-width="4"/>
+            <circle cx="90" cy="110" r="14"/>
+            <line x1="80" y1="100" x2="100" y2="120"/>
+            <line x1="100" y1="100" x2="80" y2="120"/>
+            <line x1="104" y1="110" x2="150" y2="110"/>
+            <rect x="150" y="101" width="60" height="18"/>
+            <line x1="210" y1="110" x2="230" y2="110"/>
+            <line x1="76" y1="110" x2="70" y2="110"/>
+          </g>
+          <line x1="155" y1="130" x2="205" y2="90" class="accent" stroke-width="2"/>
+          <polygon points="210,86 199,89 205,96" class="accent-fill"/>
+          <text x="131" y="10" font-size="13">+</text>
+          <text x="155" y="12" font-size="15">−</text>
+          <text x="82" y="90" font-size="14">Đ</text>
+          <text x="168" y="138" font-size="13">Rb</text>
+        </svg>
+        <figcaption>Đèn Đ mắc nối tiếp với biến trở \(R_b\).</figcaption>
+      </figure>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) Đèn sáng bình thường: \(U_\text{Đ} = 6\) V → \(I = \frac{U_\text{Đ}}{R_\text{Đ}} = \frac{6}{12} = 0{,}5\) A.</p>
+        <p>Nối tiếp: hiệu điện thế trên biến trở \(U_b = U - U_\text{Đ} = 9 - 6 = 3\) V, dòng điện qua biến trở cũng là 0,5 A.</p>
+        <p>\(R_b = \frac{U_b}{I} = \frac{3}{0{,}5} = 6\ \Omega\).</p>
+        <p>b) Tăng \(R_b\) → \(R_\text{tđ} = R_\text{Đ} + R_b\) tăng → \(I = \frac{U}{R_\text{tđ}}\) giảm → dòng qua đèn nhỏ hơn → đèn <b>tối hơn</b> bình thường.</p>
+        <p class="answer">a) \(R_b = 6\ \Omega\); b) đèn tối đi</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="3">
+      <div class="ex-head"><span class="ex-no">Bài 11</span><span class="ex-level"></span><span class="ex-src">Tham khảo dạng bài</span></div>
+      <p>Có ba điện trở giống nhau, mỗi điện trở 6 Ω. Có bao nhiêu cách mắc cả ba điện trở vào một đoạn mạch? Tính điện trở tương đương của mỗi cách.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Có 4 cách:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Cách mắc</th><th>Tính</th><th>\(R_\text{tđ}\)</th></tr></thead>
+            <tbody>
+              <tr><td>Cả ba nối tiếp</td><td>\(6 + 6 + 6\)</td><td>18 Ω</td></tr>
+              <tr><td>Cả ba song song</td><td>\(\frac{1}{R} = \frac{3}{6}\)</td><td>2 Ω</td></tr>
+              <tr><td>(Hai cái song song) nối tiếp cái thứ ba</td><td>\(3 + 6\)</td><td>9 Ω</td></tr>
+              <tr><td>(Hai cái nối tiếp) song song cái thứ ba</td><td>\(\frac{12\cdot 6}{12 + 6}\)</td><td>4 Ω</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="box tip"><p>n điện trở giống nhau R: nối tiếp → \(nR\); song song → \(\frac{R}{n}\).</p></div>
+        <p class="answer">4 cách: 18 Ω; 2 Ω; 9 Ω; 4 Ω</p>
+      </details>
+    </div>
+  </article>
+
+  <article class="lesson" id="bt-ly-bai-13">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 13</span>Năng lượng của dòng điện và công suất điện</h3>
+    <p class="lesson-goal">Các dạng bài: tính năng lượng điện \(W = UIt\) và công suất \(\mathscr{P} = UI\) · đổi J ↔ kWh · ý nghĩa số ghi trên thiết bị (U, \(\mathscr{P}\) định mức) · đọc công tơ, tính tiền điện (một giá, nhiều thiết bị, theo bậc) · thiết bị dùng sai hiệu điện thế · so sánh độ sáng hai đèn · hiệu suất thiết bị đun nóng.</p>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 1</span><span class="ex-level"></span><span class="ex-src">Tự soạn</span></div>
+      <p>Một "số điện" (1 kWh) bằng bao nhiêu jun?</p>
+      <ol class="choices grid">
+        <li>1 000 J</li>
+        <li>3 600 J</li>
+        <li>\(3{,}6\cdot 10^5\) J</li>
+        <li>\(3{,}6\cdot 10^6\) J</li>
+      </ol>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>\(1\ \text{kWh} = 1\,000\ \text{W}\cdot 3\,600\ \text{s} = 3\,600\,000\ \text{J} = 3{,}6\cdot 10^6\) J.</p>
+        <p>A chỉ đổi k → 1 000; B chỉ đổi giờ → giây; C thiếu một chữ số 0.</p>
+        <p class="answer">D</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 2</span><span class="ex-level"></span><span class="ex-src">SGK tr. 65 (tương tự)</span></div>
+      <p>Trên một bóng đèn có ghi 220 V – 75 W. Ý nghĩa của các số này là:</p>
+      <ol class="choices">
+        <li>Đèn chỉ sáng khi mắc đúng vào hiệu điện thế 220 V.</li>
+        <li>Khi mắc đèn vào hiệu điện thế 220 V thì đèn sáng bình thường và tiêu thụ công suất 75 W.</li>
+        <li>Đèn luôn tiêu thụ công suất 75 W dù mắc vào hiệu điện thế bao nhiêu.</li>
+        <li>Mỗi giờ đèn tiêu thụ 75 kWh điện năng.</li>
+      </ol>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>220 V là hiệu điện thế định mức, 75 W là công suất định mức: công suất đèn tiêu thụ khi hoạt động bình thường (mắc đúng 220 V).</p>
+        <p>A sai: dưới 220 V đèn vẫn sáng nhưng yếu hơn. C sai: hiệu điện thế khác thì công suất khác. D sai: 75 W trong 1 giờ là 75 Wh = 0,075 kWh.</p>
+        <p class="answer">B</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 3</span><span class="ex-level"></span><span class="ex-src">SGK tr. 64</span></div>
+      <p>a) Tính năng lượng điện mà một động cơ điện một chiều tiêu thụ trong 30 phút, biết hiệu điện thế giữa hai đầu động cơ là 12 V và cường độ dòng điện qua động cơ là 0,5 A.</p>
+      <p>b) Hiệu điện thế giữa hai đầu dây tóc một bóng đèn sợi đốt là 3,5 V, điện trở dây tóc khi sáng là 12 Ω. Tính năng lượng điện đèn tiêu thụ trong 4 phút.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) \(U = 12\) V; \(I = 0{,}5\) A; \(t = 30\ \text{phút} = 1\,800\) s.</p>
+        <p>\(W = UIt = 12\cdot 0{,}5\cdot 1\,800 = 10\,800\) J.</p>
+        <p>b) \(U = 3{,}5\) V; \(R = 12\ \Omega\); \(t = 4\ \text{phút} = 240\) s.</p>
+        <p>\(I = \frac{U}{R} = \frac{3{,}5}{12}\) A → \(W = UIt = \frac{U^2}{R}t = \frac{3{,}5^2}{12}\cdot 240 = \frac{12{,}25\cdot 240}{12} = 245\) J.</p>
+        <p class="answer">a) \(W = 10\,800\) J; b) \(W = 245\) J</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 4</span><span class="ex-level"></span><span class="ex-src">SGK tr. 65</span></div>
+      <p>Tính công suất điện của một bóng đèn và năng lượng điện đèn tiêu thụ trong 3 h, biết hiệu điện thế giữa hai đầu đèn là 220 V và cường độ dòng điện qua đèn là 0,3 A.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>\(\mathscr{P} = UI = 220\cdot 0{,}3 = 66\) W.</p>
+        <p>\(t = 3\ \text{h} = 10\,800\) s: \(W = \mathscr{P}t = 66\cdot 10\,800 = 712\,800\) J.</p>
+        <p>Tính theo kWh: \(W = 0{,}066\ \text{kW}\cdot 3\ \text{h} = 0{,}198\) kWh.</p>
+        <p class="answer">\(\mathscr{P} = 66\) W; \(W = 712\,800\) J \(= 0{,}198\) kWh</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 5</span><span class="ex-level"></span><span class="ex-src">SGK tr. 65</span></div>
+      <p>a) Giải thích các số ghi: bóng đèn pin 2,5 V – 2,5 W; bàn là điện 220 V – 1 000 W; bóng đèn sợi đốt 110 V – 100 W.</p>
+      <p>b) Bóng đèn 220 V – 60 W dùng đúng công suất định mức. Tính năng lượng điện đèn tiêu thụ trong 4 giờ và cường độ dòng điện qua dây tóc.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) Số đầu là hiệu điện thế định mức, số sau là công suất định mức:</p>
+        <ul>
+          <li>Đèn pin: mắc vào 2,5 V thì sáng bình thường, công suất 2,5 W.</li>
+          <li>Bàn là: dùng ở 220 V thì hoạt động bình thường, công suất 1 000 W.</li>
+          <li>Đèn sợi đốt: mắc vào 110 V thì sáng bình thường, công suất 100 W (mắc vào lưới 220 V sẽ hỏng).</li>
+        </ul>
+        <p>b) \(W = \mathscr{P}t = 60\ \text{W}\cdot 4\ \text{h} = 240\ \text{Wh} = 0{,}24\) kWh \(= 0{,}24\cdot 3{,}6\cdot 10^6 = 864\,000\) J.</p>
+        <p>\(I = \frac{\mathscr{P}}{U} = \frac{60}{220} \approx 0{,}27\) A.</p>
+        <p class="answer">b) \(W = 0{,}24\) kWh \(= 864\,000\) J; \(I \approx 0{,}27\) A</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 6</span><span class="ex-level"></span><span class="ex-src">Tham khảo dạng bài</span></div>
+      <p>Chỉ số công tơ điện của một gia đình đầu tháng là 2 468, cuối tháng là 2 613. Giả sử giá điện là 2 500 đồng/kWh (không tính thuế).</p>
+      <p>a) Gia đình đã dùng bao nhiêu điện năng? Đổi ra jun. b) Tính tiền điện phải trả.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) Số đếm công tơ: \(2\,613 - 2\,468 = 145\) số → \(W = 145\) kWh \(= 145\cdot 3{,}6\cdot 10^6 = 5{,}22\cdot 10^8\) J.</p>
+        <p>b) Tiền điện: \(145\cdot 2\,500 = 362\,500\) đồng.</p>
+        <p class="answer">a) 145 kWh \(= 5{,}22\cdot 10^8\) J; b) 362 500 đồng</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 7</span><span class="ex-level"></span><span class="ex-src">SGK tr. 66 (Em có thể) · Tham khảo dạng bài</span></div>
+      <p>Mỗi ngày một gia đình dùng: 4 đèn LED 18 W trong 5 h; nồi cơm điện 600 W trong 1 h; quạt điện 50 W trong 8 h; ti vi 100 W trong 4 h. Các thiết bị đều dùng đúng định mức. Tính điện năng tiêu thụ trong 30 ngày và tiền điện, giả sử giá 2 000 đồng/kWh.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Điện năng mỗi ngày (\(W = \mathscr{P}t\)):</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Thiết bị</th><th>Tính</th><th>W (Wh)</th></tr></thead>
+            <tbody>
+              <tr><td>Đèn LED</td><td>\(4\cdot 18\cdot 5\)</td><td>360</td></tr>
+              <tr><td>Nồi cơm điện</td><td>\(600\cdot 1\)</td><td>600</td></tr>
+              <tr><td>Quạt điện</td><td>\(50\cdot 8\)</td><td>400</td></tr>
+              <tr><td>Ti vi</td><td>\(100\cdot 4\)</td><td>400</td></tr>
+              <tr><td><b>Tổng</b></td><td></td><td><b>1 760 Wh = 1,76 kWh</b></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>30 ngày: \(W = 1{,}76\cdot 30 = 52{,}8\) kWh. Tiền điện: \(52{,}8\cdot 2\,000 = 105\,600\) đồng.</p>
+        <div class="box tip"><p>Tính tiền điện: đổi \(\mathscr{P}\) ra kW, t ra giờ → số kWh → nhân đơn giá.</p></div>
+        <p class="answer">52,8 kWh; 105 600 đồng</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 8</span><span class="ex-level"></span><span class="ex-src">Tham khảo dạng bài</span></div>
+      <p>Một bóng đèn 220 V – 100 W. a) Tính điện trở của đèn khi sáng bình thường. b) Mắc đèn vào hiệu điện thế 110 V (coi điện trở không đổi). Tính công suất của đèn khi đó và nhận xét độ sáng.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) Từ \(\mathscr{P} = \frac{U^2}{R}\) → \(R = \frac{U^2}{\mathscr{P}} = \frac{220^2}{100} = 484\ \Omega\).</p>
+        <p>b) \(\mathscr{P}' = \frac{U'^2}{R} = \frac{110^2}{484} = 25\) W.</p>
+        <p>Hiệu điện thế giảm 2 lần thì công suất giảm 4 lần → đèn sáng <b>yếu hơn nhiều</b> so với bình thường.</p>
+        <div class="box warn"><p>Công suất ghi trên đèn chỉ đúng khi dùng đúng hiệu điện thế định mức. Nhỏ hơn → hoạt động yếu; lớn hơn → dễ hỏng.</p></div>
+        <p class="answer">a) \(R = 484\ \Omega\); b) \(\mathscr{P}' = 25\) W, đèn sáng yếu</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="3">
+      <div class="ex-head"><span class="ex-no">Bài 9</span><span class="ex-level"></span><span class="ex-src">Tham khảo dạng bài</span></div>
+      <p>Hai bóng đèn Đ₁ (220 V – 100 W) và Đ₂ (220 V – 40 W). Coi điện trở các đèn không đổi.</p>
+      <p>a) Mắc song song hai đèn vào hiệu điện thế 220 V. Đèn nào sáng hơn?</p>
+      <p>b) Mắc nối tiếp hai đèn vào hiệu điện thế 220 V. Tính công suất mỗi đèn. Đèn nào sáng hơn?</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Điện trở: \(R_1 = \frac{220^2}{100} = 484\ \Omega\); \(R_2 = \frac{220^2}{40} = 1\,210\ \Omega\).</p>
+        <p>a) Song song: mỗi đèn chịu đúng 220 V → sáng bình thường, \(\mathscr{P}_1 = 100\) W > \(\mathscr{P}_2 = 40\) W → <b>Đ₁ sáng hơn</b>.</p>
+        <p>b) Nối tiếp: \(R_\text{tđ} = 484 + 1\,210 = 1\,694\ \Omega\); \(I = \frac{220}{1\,694} \approx 0{,}13\) A.</p>
+        <p>\(\mathscr{P}_1 = I^2R_1 \approx 8{,}2\) W; \(\mathscr{P}_2 = I^2R_2 \approx 20{,}4\) W → <b>Đ₂ sáng hơn</b>.</p>
+        <p>Giải thích: nối tiếp thì cùng I, \(\mathscr{P} = I^2R\) nên đèn có điện trở lớn hơn (công suất định mức nhỏ hơn) lại tiêu thụ công suất lớn hơn.</p>
+        <p class="answer">a) Đ₁ sáng hơn; b) \(\mathscr{P}_1 \approx 8{,}2\) W, \(\mathscr{P}_2 \approx 20{,}4\) W, Đ₂ sáng hơn</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="3">
+      <div class="ex-head"><span class="ex-no">Bài 10</span><span class="ex-level"></span><span class="ex-src">Tham khảo dạng bài</span></div>
+      <p>Giá điện sinh hoạt tính theo bậc thang. Giả sử bảng giá (số liệu giả định để luyện tập, chưa gồm thuế) như sau:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Bậc</th><th>Mức sử dụng trong tháng</th><th>Giá (đồng/kWh)</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>0 – 50 kWh</td><td>1 900</td></tr>
+            <tr><td>2</td><td>51 – 100 kWh</td><td>1 950</td></tr>
+            <tr><td>3</td><td>101 – 200 kWh</td><td>2 250</td></tr>
+            <tr><td>4</td><td>201 – 300 kWh</td><td>2 850</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Một gia đình dùng hết 245 kWh trong tháng. Tính tiền điện phải trả, biết cộng thêm thuế giá trị gia tăng 8%.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Chia 245 kWh theo từng bậc:</p>
+        <ul>
+          <li>Bậc 1: 50 kWh × 1 900 = 95 000 đồng</li>
+          <li>Bậc 2: 50 kWh × 1 950 = 97 500 đồng</li>
+          <li>Bậc 3: 100 kWh × 2 250 = 225 000 đồng</li>
+          <li>Bậc 4: còn \(245 - 200 = 45\) kWh × 2 850 = 128 250 đồng</li>
+        </ul>
+        <p>Chưa thuế: \(95\,000 + 97\,500 + 225\,000 + 128\,250 = 545\,750\) đồng.</p>
+        <p>Có thuế 8%: \(545\,750\cdot 1{,}08 = 589\,410\) đồng.</p>
+        <div class="box warn"><p>Không lấy cả 245 kWh nhân giá bậc 4: mỗi bậc chỉ tính phần điện năng nằm trong bậc đó.</p></div>
+        <p class="answer">589 410 đồng</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="3">
+      <div class="ex-head"><span class="ex-no">Bài 11</span><span class="ex-level"></span><span class="ex-src">Tham khảo dạng bài</span></div>
+      <p>Một ấm điện 220 V – 1 000 W được dùng đúng định mức để đun 2 lít nước từ 25 °C đến sôi (100 °C) hết 12 phút. Nhiệt dung riêng của nước là 4 200 J/(kg·K), khối lượng riêng của nước 1 kg/lít. Tính hiệu suất của ấm.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Tóm tắt: \(m = 2\) kg; \(\Delta t = 100 - 25 = 75\) °C; \(\mathscr{P} = 1\,000\) W; \(t = 12\ \text{phút} = 720\) s.</p>
+        <p>Nhiệt lượng có ích (nước nhận): \(Q = mc\Delta t = 2\cdot 4\,200\cdot 75 = 630\,000\) J.</p>
+        <p>Điện năng ấm tiêu thụ: \(W = \mathscr{P}t = 1\,000\cdot 720 = 720\,000\) J.</p>
+        <p>\[ H = \frac{Q}{W}\cdot 100\% = \frac{630\,000}{720\,000}\cdot 100\% = 87{,}5\% \]</p>
+        <p>Phần còn lại (90 000 J) hao phí: làm nóng vỏ ấm, toả ra không khí.</p>
+        <p class="answer">\(H = 87{,}5\%\)</p>
+      </details>
+    </div>
+  </article>
+</section>
+
+<section class="chapter" id="bt-ly-chuong-4">
+  <h2 class="chapter-title"><span>Chương IV</span>Điện từ</h2>
+
+  <article class="lesson" id="bt-ly-bai-14">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 14</span>Cảm ứng điện từ. Nguyên tắc tạo ra dòng điện xoay chiều</h3>
+    <p class="lesson-goal">Các dạng bài: điều kiện xuất hiện dòng điện cảm ứng · nhận biết trường hợp có / không có dòng điện cảm ứng · giải thích các thí nghiệm (nam châm vĩnh cửu, nam châm điện, nam châm quay, bóp cuộn dây) · đặc điểm dòng điện xoay chiều, tần số và số lần đổi chiều · nguyên tắc và cấu tạo máy phát điện xoay chiều.</p>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 1</span><span class="ex-level"></span><span class="ex-src">SGK tr. 69 · Tự soạn</span></div>
+      <p>Điều kiện để xuất hiện dòng điện cảm ứng trong một cuộn dây dẫn kín là:</p>
+      <ol class="choices">
+        <li>Đặt một nam châm thật mạnh ở gần cuộn dây.</li>
+        <li>Số đường sức từ xuyên qua tiết diện cuộn dây rất lớn.</li>
+        <li>Số đường sức từ xuyên qua tiết diện cuộn dây biến thiên (tăng hoặc giảm).</li>
+        <li>Cuộn dây được nối với một nguồn điện.</li>
+      </ol>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Dòng điện cảm ứng chỉ xuất hiện khi số đường sức từ qua tiết diện cuộn dây kín <b>biến thiên</b>. A, B sai: từ trường mạnh, nhiều đường sức nhưng không đổi thì không có dòng cảm ứng. D: dòng điện do nguồn tạo ra, không phải dòng cảm ứng.</p>
+        <p class="answer">C</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 2</span><span class="ex-level"></span><span class="ex-src">Tham khảo dạng bài</span></div>
+      <p>Trường hợp nào sau đây <b>không</b> xuất hiện dòng điện cảm ứng trong cuộn dây dẫn kín?</p>
+      <ol class="choices">
+        <li>Đưa cực Nam của nam châm lại gần cuộn dây.</li>
+        <li>Để thanh nam châm nằm yên trong lòng cuộn dây.</li>
+        <li>Ngắt công tắc của mạch nam châm điện đặt cạnh cuộn dây.</li>
+        <li>Bóp mạnh cuộn dây mềm có nam châm ở bên trong.</li>
+      </ol>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Nam châm nằm yên → số đường sức từ qua cuộn dây <b>không đổi</b> → không có dòng cảm ứng.</p>
+        <p>A: số đường sức tăng; C: số đường sức giảm (từ trường nam châm điện mất đi); D: tiết diện giảm → số đường sức giảm. Cả ba đều có dòng cảm ứng.</p>
+        <p class="answer">B</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 3</span><span class="ex-level"></span><span class="ex-src">SGK tr. 70</span></div>
+      <p>Dòng điện xoay chiều là dòng điện:</p>
+      <ol class="choices">
+        <li>chỉ chạy theo một chiều, cường độ không đổi.</li>
+        <li>có chiều không đổi, cường độ thay đổi theo thời gian.</li>
+        <li>có cường độ và chiều luân phiên thay đổi theo thời gian.</li>
+        <li>chỉ xuất hiện khi cuộn dây đứng yên trong từ trường.</li>
+      </ol>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Theo SGK: dòng điện xoay chiều có cường độ tăng, giảm tuần tự và chiều luân phiên thay đổi theo thời gian. A là dòng điện một chiều (như của pin). B vẫn là dòng một chiều vì chiều không đổi. D sai: cuộn dây đứng yên trong từ trường không đổi thì không có dòng điện.</p>
+        <p class="answer">C</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 4</span><span class="ex-level"></span><span class="ex-src">SGK tr. 70 · Tự soạn</span></div>
+      <p>Dòng điện xoay chiều trong mạng điện gia đình ở nước ta có tần số 50 Hz. Trong 1 giây, dòng điện này đổi chiều bao nhiêu lần?</p>
+      <ol class="choices grid">
+        <li>25 lần</li>
+        <li>50 lần</li>
+        <li>100 lần</li>
+        <li>200 lần</li>
+      </ol>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>50 Hz: mỗi giây có 50 chu kì; mỗi chu kì dòng điện đổi chiều 2 lần → \(2\cdot 50 = 100\) lần/giây.</p>
+        <p>B nhầm số chu kì với số lần đổi chiều.</p>
+        <p class="answer">C</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 5</span><span class="ex-level"></span><span class="ex-src">SGK tr. 67–68</span></div>
+      <p>Nối hai đầu cuộn dây với điện kế. Đưa cực Bắc của thanh nam châm lại gần cuộn dây theo phương vuông góc với tiết diện cuộn dây, sau đó kéo ra xa.</p>
+      <p>a) Số đường sức từ xuyên qua tiết diện cuộn dây biến thiên thế nào trong mỗi giai đoạn? b) Kim điện kế cho biết điều gì? Vì sao hai lần kim lệch về hai phía khác nhau?</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) Lại gần: nam châm càng gần thì càng nhiều đường sức xuyên qua → số đường sức <b>tăng</b>. Ra xa: số đường sức <b>giảm</b>.</p>
+        <p>b) Kim điện kế lệch → trong cuộn dây có dòng điện (dòng điện cảm ứng). Khi số đường sức tăng và khi giảm, dòng điện cảm ứng có chiều ngược nhau → kim lệch về hai phía ngược nhau.</p>
+        <p>Nam châm dừng lại → số đường sức không đổi → kim trở về số 0.</p>
+        <p class="answer">Lại gần: tăng; ra xa: giảm. Kim lệch chứng tỏ có dòng điện cảm ứng; chiều dòng điện đổi khi số đường sức chuyển từ tăng sang giảm.</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 6</span><span class="ex-level"></span><span class="ex-src">SGK tr. 68</span></div>
+      <p>Đặt cuộn dây dẫn kín (nối với điện kế) cạnh một nam châm điện. Mô tả số đường sức từ xuyên qua cuộn dây và kim điện kế khi: a) vừa đóng công tắc; b) công tắc đang đóng, dòng điện trong nam châm điện ổn định; c) vừa ngắt công tắc.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) Vừa đóng: dòng điện trong nam châm điện tăng từ 0 → từ trường xuất hiện → số đường sức qua cuộn dây <b>tăng</b> → kim điện kế lệch (có dòng cảm ứng).</p>
+        <p>b) Dòng điện ổn định → từ trường không đổi → số đường sức <b>không đổi</b> → kim chỉ số 0 (không có dòng cảm ứng).</p>
+        <p>c) Vừa ngắt: từ trường mất đi → số đường sức <b>giảm</b> → kim lệch về phía ngược lại.</p>
+        <p class="answer">Chỉ có dòng cảm ứng trong lúc đóng hoặc ngắt mạch (số đường sức đang thay đổi).</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 7</span><span class="ex-level"></span><span class="ex-src">SGK tr. 69</span></div>
+      <p>Hai đầu một cuộn dây được nối với hai đèn LED mắc song song, ngược cực (Đ₁, Đ₂). Quay thanh nam châm có trục quay ở giữa ở gần cuộn dây.</p>
+      <p>a) Hai đèn LED sáng thế nào? b) Giải thích. c) Nếu thay cuộn dây và nam châm bằng một viên pin thì sao?</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) Hai đèn LED sáng <b>luân phiên</b>: Đ₁ sáng rồi tắt, Đ₂ sáng rồi tắt, lặp lại.</p>
+        <p>b) Khi nam châm quay, các cực của nó lần lượt lại gần rồi ra xa cuộn dây → số đường sức qua cuộn dây tăng, giảm luân phiên → dòng điện cảm ứng đổi chiều liên tục. LED chỉ sáng khi dòng điện đi từ cực dương sang cực âm của nó, nên mỗi chiều dòng điện chỉ làm một đèn sáng.</p>
+        <p>c) Pin cho dòng điện một chiều → chỉ một đèn (đèn mắc đúng chiều) sáng liên tục, đèn kia tắt.</p>
+        <p class="answer">Hai LED sáng luân phiên vì dòng cảm ứng đổi chiều; với pin chỉ một đèn sáng.</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 8</span><span class="ex-level"></span><span class="ex-src">Tự soạn</span></div>
+      <p>a) Dòng điện xoay chiều 50 Hz: khoảng thời gian giữa hai lần đổi chiều liên tiếp là bao nhiêu?</p>
+      <p>b) Ở một số nước, dòng điện xoay chiều đổi chiều 120 lần trong 1 giây. Tần số của dòng điện đó là bao nhiêu? Trong 1 phút nó đổi chiều bao nhiêu lần?</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) 50 Hz đổi chiều 100 lần/giây → giữa hai lần đổi chiều: \(\frac{1}{100} = 0{,}01\ \text{s} = 10\) ms (khớp với đồ thị Hình 14.7: đổi chiều ở 10 ms, 20 ms, 30 ms…).</p>
+        <p>b) Số lần đổi chiều = 2 × tần số → \(f = \frac{120}{2} = 60\) Hz. Trong 1 phút: \(120\cdot 60 = 7\,200\) lần.</p>
+        <p class="answer">a) 0,01 s; b) 60 Hz; 7 200 lần</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="3">
+      <div class="ex-head"><span class="ex-no">Bài 9</span><span class="ex-level"></span><span class="ex-src">SGK tr. 71</span></div>
+      <p>Trong mô hình máy phát điện xoay chiều, khung dây quay trong từ trường của nam châm; hai đầu khung dây nối với hai vành khuyên, hai chổi quét tì vào vành khuyên để nối với mạch ngoài.</p>
+      <p>a) Dòng điện được dẫn từ khung dây ra mạch ngoài như thế nào? Vì sao phải dùng vành khuyên và chổi quét mà không nối dây trực tiếp?</p>
+      <p>b) Nêu một cách khác để tạo ra dòng điện xoay chiều mà cuộn dây đứng yên.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) Hai vành khuyên (vòng đồng) gắn với hai đầu khung dây và quay cùng khung. Hai chổi quét (lá đồng) đứng yên, luôn tì sát vào vành khuyên → dòng điện đi từ khung dây qua vành khuyên, qua chổi quét ra mạch ngoài, tạo thành mạch kín. Nếu nối dây trực tiếp thì khi khung quay, dây nối bị xoắn và đứt.</p>
+        <p>b) Cho <b>nam châm quay</b>, cuộn dây đứng yên: số đường sức qua cuộn dây vẫn tăng, giảm luân phiên → xuất hiện dòng điện xoay chiều.</p>
+        <p class="answer">Vành khuyên quay cùng khung, chổi quét đứng yên tì vào → dây mạch ngoài không bị xoắn. Có thể quay nam châm thay cho quay cuộn dây.</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="3">
+      <div class="ex-head"><span class="ex-no">Bài 10</span><span class="ex-level"></span><span class="ex-src">Tham khảo dạng bài</span></div>
+      <p>Một cuộn dây dẫn kín và một thanh nam châm thẳng đặt dọc theo trục cuộn dây. Trường hợp nào có dòng điện cảm ứng? Giải thích.</p>
+      <p>a) Nam châm và cuộn dây cùng chuyển động thẳng, cùng tốc độ, cùng hướng.</p>
+      <p>b) Giữ nam châm đứng yên, di chuyển cuộn dây ra xa nam châm.</p>
+      <p>c) Cắt hở một chỗ trên cuộn dây rồi đưa nam châm lại gần.</p>
+      <p>d) Nam châm quay quanh chính trục dọc của nó (trùng với trục cuộn dây).</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) Không: vị trí giữa nam châm và cuộn dây không đổi → số đường sức qua cuộn dây không đổi.</p>
+        <p>b) <b>Có</b>: cuộn dây ra xa → số đường sức giảm. (Chỉ cần chuyển động tương đối, không cần nam châm chuyển động.)</p>
+        <p>c) Không có dòng điện: cuộn dây <b>hở</b>, không phải mạch kín.</p>
+        <p>d) Không: khi quay quanh trục dọc, sự phân bố đường sức quanh trục không đổi → số đường sức qua cuộn dây không đổi.</p>
+        <p class="answer">Chỉ trường hợp b) có dòng điện cảm ứng.</p>
+      </details>
+    </div>
+  </article>
+
+  <article class="lesson" id="bt-ly-bai-15">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 15</span>Tác dụng của dòng điện xoay chiều</h3>
+    <p class="lesson-goal">Các dạng bài: nhận biết tác dụng nhiệt, phát sáng, từ, sinh lí qua thiết bị · chỉ ra tác dụng chủ yếu của đồ dùng điện · so sánh tác dụng từ của dòng điện xoay chiều và một chiều · giải thích hiện tượng (đèn LED, kim nam châm) · an toàn điện.</p>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 1</span><span class="ex-level"></span><span class="ex-src">Tự soạn</span></div>
+      <p>Thiết bị nào sau đây hoạt động chủ yếu dựa vào tác dụng nhiệt của dòng điện xoay chiều?</p>
+      <ol class="choices grid">
+        <li>Quạt điện</li>
+        <li>Bàn là điện</li>
+        <li>Đèn LED</li>
+        <li>Nam châm điện</li>
+      </ol>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Bàn là biến điện năng thành nhiệt năng để là quần áo. Quạt điện dựa vào tác dụng từ (động cơ điện); đèn LED dựa vào tác dụng phát sáng; nam châm điện dựa vào tác dụng từ.</p>
+        <p class="answer">B</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 2</span><span class="ex-level"></span><span class="ex-src">SGK tr. 73</span></div>
+      <p>Khi đóng công tắc cho dòng điện xoay chiều chạy qua cuộn dây, đinh sắt đặt gần đầu cuộn dây bị hút lên. Hiện tượng này chứng tỏ dòng điện xoay chiều có:</p>
+      <ol class="choices grid">
+        <li>tác dụng nhiệt</li>
+        <li>tác dụng phát sáng</li>
+        <li>tác dụng từ</li>
+        <li>tác dụng sinh lí</li>
+      </ol>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Dòng điện trong cuộn dây sinh ra từ trường, hút đinh sắt → tác dụng từ.</p>
+        <p class="answer">C</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 3</span><span class="ex-level"></span><span class="ex-src">SGK tr. 74</span></div>
+      <p>Máy khử rung tim đặt gần tim bệnh nhân, phát xung điện khi nhịp tim rối loạn. Máy này ứng dụng tác dụng nào của dòng điện?</p>
+      <ol class="choices grid">
+        <li>Tác dụng nhiệt</li>
+        <li>Tác dụng sinh lí</li>
+        <li>Tác dụng phát sáng</li>
+        <li>Tác dụng hoá học</li>
+      </ol>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Dòng điện (xung điện) tác động lên cơ tim, điều chỉnh nhịp đập → tác dụng sinh lí.</p>
+        <p class="answer">B</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 4</span><span class="ex-level"></span><span class="ex-src">Tự soạn</span></div>
+      <p>Ghép mỗi thiết bị với tác dụng <b>chủ yếu</b> của dòng điện xoay chiều mà nó sử dụng: (1) đèn huỳnh quang; (2) ấm đun nước; (3) rơ le điện từ; (4) máy xung điện trị liệu. Tác dụng: a) nhiệt; b) phát sáng; c) từ; d) sinh lí.</p>
+      <ol class="choices grid">
+        <li>1b – 2a – 3c – 4d</li>
+        <li>1a – 2b – 3c – 4d</li>
+        <li>1b – 2a – 3d – 4c</li>
+        <li>1c – 2a – 3b – 4d</li>
+      </ol>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Đèn huỳnh quang: phát sáng; ấm đun: nhiệt; rơ le điện từ: từ; máy xung điện trị liệu: sinh lí.</p>
+        <p class="answer">A</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 5</span><span class="ex-level"></span><span class="ex-src">SGK tr. 74 (Em có thể)</span></div>
+      <p>Nêu các tác dụng của dòng điện xoay chiều khi chạy qua: quạt điện, bếp từ, bình nước nóng, máy sấy tóc, ấm đun nước, đèn điện.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Thiết bị</th><th>Tác dụng chủ yếu</th><th>Tác dụng kèm theo</th></tr></thead>
+            <tbody>
+              <tr><td>Quạt điện</td><td>Từ (động cơ điện làm cánh quay)</td><td>Nhiệt (động cơ ấm lên)</td></tr>
+              <tr><td>Bếp từ</td><td>Từ (cuộn dây tạo từ trường biến thiên làm nóng đáy nồi)</td><td>Nhiệt (nồi nóng lên để nấu)</td></tr>
+              <tr><td>Bình nước nóng</td><td>Nhiệt</td><td>—</td></tr>
+              <tr><td>Máy sấy tóc</td><td>Nhiệt (thổi hơi nóng)</td><td>Từ (động cơ quay quạt gió)</td></tr>
+              <tr><td>Ấm đun nước</td><td>Nhiệt</td><td>—</td></tr>
+              <tr><td>Đèn điện</td><td>Phát sáng</td><td>Nhiệt (bóng đèn nóng lên)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="answer">Xem bảng: mỗi thiết bị có một tác dụng chủ yếu, thường kèm tác dụng nhiệt.</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 6</span><span class="ex-level"></span><span class="ex-src">SGK tr. 73</span></div>
+      <p>Trong thí nghiệm đinh sắt bị hút lên khi có dòng điện xoay chiều chạy qua cuộn dây, nếu thay dòng điện xoay chiều bằng dòng điện một chiều thì hiện tượng có gì khác? Giải thích.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Đinh sắt <b>vẫn bị hút</b>: dòng điện một chiều qua cuộn dây cũng sinh ra từ trường.</p>
+        <p>Điểm khác: với dòng một chiều, các cực từ của cuộn dây cố định; với dòng xoay chiều, chiều dòng điện đổi liên tục nên các cực từ của cuộn dây cũng đổi liên tục. Đinh sắt bị hút bởi cả cực Bắc lẫn cực Nam nên trong cả hai trường hợp đinh đều bị hút.</p>
+        <p class="answer">Không khác về việc đinh bị hút; chỉ khác là cực từ của cuộn dây đổi liên tục khi dùng dòng xoay chiều.</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 7</span><span class="ex-level"></span><span class="ex-src">SGK tr. 74</span></div>
+      <p>a) Nêu biểu hiện của tác dụng sinh lí khi dòng điện xoay chiều đi qua cơ thể người. b) Nêu hai ứng dụng trong y tế. c) Nêu ba việc cần làm để an toàn khi dùng điện trong gia đình.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) Cơ co giật; có thể làm tim ngừng đập, ngạt thở, thần kinh bị tê liệt → nguy hiểm tới tính mạng.</p>
+        <p>b) Máy khử rung tim (khôi phục nhịp tim); máy xung điện giảm đau, mỏi cơ và khớp, hỗ trợ phục hồi sau chấn thương, tăng cường tuần hoàn máu.</p>
+        <p>c) Ví dụ: không chạm tay ướt vào ổ cắm, thiết bị điện; không dùng dây điện hở, bong vỏ cách điện; ngắt điện trước khi sửa chữa; không lại gần trạm biến thế, không chơi gần đường dây điện.</p>
+        <p class="answer">Tác dụng sinh lí nguy hiểm nhưng được ứng dụng có kiểm soát trong y học; luôn thận trọng khi dùng điện.</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="3">
+      <div class="ex-head"><span class="ex-no">Bài 8</span><span class="ex-level"></span><span class="ex-src">SGK tr. 69 · Tự soạn</span></div>
+      <p>Mắc hai đèn LED song song, ngược cực vào nguồn điện xoay chiều 50 Hz (qua điện trở bảo vệ phù hợp). Mắt ta thấy cả hai đèn đều sáng liên tục. Giải thích. Trong 1 giây, mỗi đèn sáng lên bao nhiêu lần?</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Mỗi chu kì, dòng điện chạy theo chiều này nửa chu kì (Đ₁ sáng) rồi theo chiều ngược lại nửa chu kì (Đ₂ sáng). Tần số 50 Hz → mỗi giây có 50 chu kì → mỗi đèn sáng lên 50 lần.</p>
+        <p>Mỗi lần tắt chỉ kéo dài khoảng 0,01 s, quá ngắn nên mắt không phân biệt được (giống như khi quay nhanh cuộn dây trong thí nghiệm SGK) → thấy cả hai đèn sáng liên tục.</p>
+        <p class="answer">Mỗi đèn sáng 50 lần/giây, thời gian tắt quá ngắn nên mắt thấy sáng liên tục.</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="3">
+      <div class="ex-head"><span class="ex-no">Bài 9</span><span class="ex-level"></span><span class="ex-src">Tham khảo dạng bài</span></div>
+      <p>Đặt một kim nam châm nhỏ gần đầu một cuộn dây. Cho dòng điện một chiều chạy qua cuộn dây thì kim nam châm quay và đứng lệch hẳn về một phía. Thay bằng dòng điện xoay chiều 50 Hz thì kim nam châm hầu như không quay theo mà chỉ rung nhẹ. Giải thích.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Dòng một chiều: cực từ của cuộn dây cố định → lực từ tác dụng lên kim có hướng không đổi → kim quay đến vị trí xác định.</p>
+        <p>Dòng xoay chiều 50 Hz: cực từ của cuộn dây đổi 100 lần mỗi giây → lực từ tác dụng lên kim đổi hướng liên tục. Kim có quán tính, chưa kịp quay theo hướng này thì lực đã đổi sang hướng ngược lại → kim chỉ rung nhẹ.</p>
+        <div class="box note"><p>Khác với đinh sắt (bị hút bởi cả hai cực), kim nam châm bị cực cùng tên đẩy, cực khác tên hút → nhạy với việc đổi chiều dòng điện.</p></div>
+        <p class="answer">Lực từ đổi chiều 100 lần/giây, kim không kịp quay theo nên chỉ rung.</p>
+      </details>
+    </div>
+  </article>
+</section>
+
+<section class="chapter" id="bt-ly-chuong-5">
+  <h2 class="chapter-title"><span>Chương V</span>Năng lượng với cuộc sống</h2>
+
+  <article class="lesson" id="bt-ly-bai-16">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 16</span>Vòng năng lượng trên Trái Đất. Năng lượng hoá thạch</h3>
+    <p class="lesson-goal">Các dạng bài: nguồn gốc năng lượng trên Trái Đất · mô tả vòng năng lượng giữa các vật sống và theo vòng tuần hoàn của nước · nhận biết nhiên liệu hoá thạch · ưu, nhược điểm của năng lượng hoá thạch · ví dụ ô nhiễm do đốt nhiên liệu · đọc số liệu cơ cấu giá, các yếu tố ảnh hưởng giá nhiên liệu.</p>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 1</span><span class="ex-level"></span><span class="ex-src">SGK tr. 79 · Tự soạn</span></div>
+      <p>Năng lượng từ gió, từ dòng chảy, từ sóng biển trên Trái Đất đều có nguồn gốc từ:</p>
+      <ol class="choices grid">
+        <li>lòng Trái Đất</li>
+        <li>Mặt Trăng</li>
+        <li>Mặt Trời</li>
+        <li>các nhà máy điện</li>
+      </ol>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Mặt Trời làm nóng mặt đất, biển, khí quyển không đều → không khí chuyển động (gió), gió tạo sóng; Mặt Trời làm nước bốc hơi → mưa → dòng chảy. Vậy năng lượng của Trái Đất đến từ Mặt Trời.</p>
+        <p class="answer">C</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 2</span><span class="ex-level"></span><span class="ex-src">SGK tr. 77</span></div>
+      <p>Nhóm nào sau đây chỉ gồm các nhiên liệu hoá thạch?</p>
+      <ol class="choices">
+        <li>Than mỏ, dầu mỏ, khí thiên nhiên</li>
+        <li>Than mỏ, gỗ, khí sinh học</li>
+        <li>Dầu mỏ, gió, ánh sáng mặt trời</li>
+        <li>Khí thiên nhiên, nước sông, củi</li>
+      </ol>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Nhiên liệu hoá thạch: than mỏ, dầu mỏ, khí mỏ dầu, khí thiên nhiên – hình thành từ xác sinh vật qua hàng triệu năm. Gỗ, củi, khí sinh học là năng lượng sinh khối; gió, ánh sáng mặt trời, nước sông là năng lượng tái tạo.</p>
+        <p class="answer">A</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 3</span><span class="ex-level"></span><span class="ex-src">SGK tr. 75</span></div>
+      <p>Trong quá trình quang hợp, thực vật chuyển hoá năng lượng mặt trời thành dạng năng lượng nào để lưu trữ?</p>
+      <ol class="choices grid">
+        <li>Nhiệt năng</li>
+        <li>Hoá năng</li>
+        <li>Cơ năng</li>
+        <li>Điện năng</li>
+      </ol>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Thực vật dùng năng lượng mặt trời chuyển \(\ce{CO2}\) và nước thành phân tử đường, lưu trữ dưới dạng <b>hoá năng</b> trong lục lạp.</p>
+        <p class="answer">B</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 4</span><span class="ex-level"></span><span class="ex-src">SGK tr. 78 · Tự soạn</span></div>
+      <p>Phát biểu nào sau đây là <b>nhược điểm</b> của năng lượng hoá thạch?</p>
+      <ol class="choices">
+        <li>Dễ vận chuyển, dễ tích trữ với khối lượng lớn.</li>
+        <li>Công nghệ khai thác phổ biến, chi phí rẻ.</li>
+        <li>Khi đốt cháy phát thải khí gây hiệu ứng nhà kính, gây ô nhiễm môi trường.</li>
+        <li>Cung cấp phần lớn nhu cầu năng lượng của thế giới.</li>
+      </ol>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>A, B, D là ưu điểm (SGK). Nhược điểm: ngày càng cạn kiệt; khai thác có thể thay đổi địa tầng, hệ sinh thái; đốt cháy phát thải \(\ce{CO2}\), \(\ce{CO}\), \(\ce{SO2}\)… gây ô nhiễm, hiệu ứng nhà kính.</p>
+        <p class="answer">C</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 5</span><span class="ex-level"></span><span class="ex-src">SGK tr. 76</span></div>
+      <p>Mô tả vòng năng lượng giữa các vật sống trên Trái Đất; nêu dạng năng lượng ở mỗi giai đoạn và chứng tỏ năng lượng trong vòng này đều đến từ Mặt Trời.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <div class="flow"><span>Năng lượng mặt trời (quang năng)</span><i>→</i><span>Quang hợp: hoá năng trong đường</span><i>→</i><span>Động vật ăn thực vật: hoá năng trong thức ăn</span><i>→</i><span>Hô hấp: năng lượng ATP, \(\ce{CO2}\), nước</span></div>
+        <ul>
+          <li>Thực vật hấp thụ ánh sáng mặt trời, chuyển \(\ce{CO2}\) và nước thành đường (hoá năng).</li>
+          <li>Động vật ăn thực vật (hoặc động vật khác) để lấy năng lượng.</li>
+          <li>Hô hấp phân giải glucose thành \(\ce{CO2}\), nước và năng lượng ATP dùng cho sinh trưởng, vận động.</li>
+          <li>\(\ce{CO2}\) và nước lại được thực vật dùng để quang hợp → khép kín vòng.</li>
+        </ul>
+        <p>Mọi hoá năng trong vòng đều bắt nguồn từ quang hợp, mà quang hợp cần ánh sáng mặt trời → năng lượng đến từ Mặt Trời.</p>
+        <p class="answer">Quang năng → hoá năng (đường) → năng lượng cho động vật (ATP) → vòng khép kín; khởi nguồn là Mặt Trời.</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 6</span><span class="ex-level"></span><span class="ex-src">SGK tr. 77</span></div>
+      <p>Chứng tỏ năng lượng từ gió và năng lượng từ dòng chảy trên Trái Đất đều đến từ Mặt Trời.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p><b>Gió:</b> ánh sáng mặt trời làm nóng mặt đất, biển và khí quyển không đều → chênh lệch nhiệt độ giữa các vùng → không khí chuyển động tạo thành gió.</p>
+        <p><b>Dòng chảy:</b> Mặt Trời làm nước bốc hơi → hơi nước ngưng tụ thành mây → mưa, tuyết rơi xuống vùng cao → nước chảy thành sông, suối về biển.</p>
+        <p class="answer">Không có năng lượng mặt trời thì không có chênh lệch nhiệt độ (gió) và không có bốc hơi – mưa (dòng chảy).</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 7</span><span class="ex-level"></span><span class="ex-src">SGK tr. 77</span></div>
+      <p>Mô tả tóm tắt quá trình hình thành dầu mỏ. Vì sao dầu mỏ không thể bổ sung nhanh và sẽ cạn kiệt trong tương lai gần?</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <ol class="steps">
+          <li>Xác thực vật, sinh vật biển tích tụ dưới đáy đại dương thành trầm tích.</li>
+          <li>Qua hàng triệu năm, trầm tích bị vi khuẩn biến đổi, chìm sâu hơn.</li>
+          <li>Ở độ sâu vài kilômét, nhiệt độ và áp suất lớn biến trầm tích thành bùn đen, dầu mỏ.</li>
+          <li>Dầu mỏ dâng lên theo vết đứt gãy, tích tụ trong túi đá → mỏ dầu.</li>
+        </ol>
+        <p>Quá trình này mất <b>hàng triệu năm</b>, trong khi con người khai thác, tiêu thụ rất nhanh → không bổ sung kịp → cạn kiệt.</p>
+        <p class="answer">Hình thành mất hàng triệu năm, tiêu thụ quá nhanh nên không bổ sung kịp.</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 8</span><span class="ex-level"></span><span class="ex-src">SGK tr. 78</span></div>
+      <p>Lấy ba ví dụ trong cuộc sống hằng ngày chứng tỏ việc đốt cháy than, xăng, dầu gây ô nhiễm môi trường. Nêu hậu quả lâu dài của việc phát thải khí nhà kính.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <ul>
+          <li>Xe máy, ô tô chạy xăng dầu thải khói chứa \(\ce{CO}\), \(\ce{NO2}\), bụi → không khí đô thị ô nhiễm, người đi đường khó thở.</li>
+          <li>Đun bếp than tổ ong trong phòng kín sinh khí \(\ce{CO}\) độc, có thể gây ngộ độc.</li>
+          <li>Nhà máy nhiệt điện than thải \(\ce{SO2}\), bụi, xỉ than (chất thải rắn).</li>
+        </ul>
+        <div class="flow"><span>Khí nhà kính (\(\ce{CO2}\)…)</span><i>→</i><span>Trái Đất nóng lên, băng tan</span><i>→</i><span>Nước biển dâng, hạn hán, lũ lụt, thiên tai</span></div>
+        <p class="answer">Khói xe, bếp than, nhà máy nhiệt điện than; lâu dài: biến đổi khí hậu.</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="3">
+      <div class="ex-head"><span class="ex-no">Bài 9</span><span class="ex-level"></span><span class="ex-src">SGK tr. 78 (số liệu Hình 16.4) · Tự soạn</span></div>
+      <p>Theo Hình 16.4 (SGK), cơ cấu giá bán xăng ở Mỹ năm 2023: chi phí khai thác 50%, lọc dầu và lợi nhuận 25%, thuế 14%, phân phối và tiếp thị 11%. Giả sử giá một lít xăng là 25 000 đồng.</p>
+      <p>a) Tính số tiền ứng với từng thành phần. b) Nếu chi phí khai thác tăng 20% còn các thành phần khác giữ nguyên thì giá một lít xăng là bao nhiêu? Tăng bao nhiêu phần trăm?</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) Khai thác: \(25\,000\cdot 50\% = 12\,500\) đồng; lọc dầu và lợi nhuận: \(25\,000\cdot 25\% = 6\,250\) đồng; thuế: \(25\,000\cdot 14\% = 3\,500\) đồng; phân phối, tiếp thị: \(25\,000\cdot 11\% = 2\,750\) đồng (tổng 25 000 đồng ✓).</p>
+        <p>b) Chi phí khai thác tăng thêm: \(12\,500\cdot 20\% = 2\,500\) đồng → giá mới \(25\,000 + 2\,500 = 27\,500\) đồng.</p>
+        <p>Mức tăng: \(\frac{2\,500}{25\,000}\cdot 100\% = 10\%\).</p>
+        <p>Nhận xét: chi phí khai thác chiếm tỉ lệ lớn nên khi nó tăng, giá nhiên liệu tăng rõ rệt – giá nhiên liệu phụ thuộc vào chi phí khai thác.</p>
+        <p class="answer">a) 12 500 đ; 6 250 đ; 3 500 đ; 2 750 đ. b) 27 500 đồng, tăng 10%</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="3">
+      <div class="ex-head"><span class="ex-no">Bài 10</span><span class="ex-level"></span><span class="ex-src">SGK tr. 79</span></div>
+      <p>a) Vì sao chi phí khai thác nhiên liệu hoá thạch ngày càng tăng? b) Khi tính thêm chi phí khắc phục ảnh hưởng đến môi trường (như thuế bảo vệ môi trường) làm giá nhiên liệu tăng thì có lợi ích gì?</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) Chi phí khai thác gồm thăm dò, khoan, vận chuyển, lưu kho, xử lí môi trường. Các mỏ trên đất liền, lộ thiên dần cạn kiệt → phải khai thác ở biển sâu, vùng hẻo lánh, các cực → khó khăn, tốn kém hơn.</p>
+        <p>b) Lợi ích:</p>
+        <ul>
+          <li>Có nguồn tiền để xử lí ô nhiễm, khắc phục hậu quả môi trường.</li>
+          <li>Giá cao khiến người dùng tiết kiệm nhiên liệu → giảm phát thải.</li>
+          <li>Khuyến khích chuyển sang phương tiện công cộng, năng lượng tái tạo, thiết bị tiết kiệm năng lượng.</li>
+        </ul>
+        <p class="answer">a) Mỏ dễ khai thác cạn dần. b) Có kinh phí bảo vệ môi trường, khuyến khích tiết kiệm và dùng năng lượng sạch.</p>
+      </details>
+    </div>
+  </article>
+
+  <article class="lesson" id="bt-ly-bai-17">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 17</span>Một số dạng năng lượng tái tạo</h3>
+    <p class="lesson-goal">Các dạng bài: nhận biết năng lượng tái tạo / không tái tạo · ưu, nhược điểm của năng lượng mặt trời, gió, sóng biển, dòng sông · ảnh hưởng của thuỷ điện tới môi trường · giải thích các biện pháp sử dụng hiệu quả năng lượng · tính điện năng, tiền điện tiết kiệm được, hiệu suất pin mặt trời.</p>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 1</span><span class="ex-level"></span><span class="ex-src">SGK tr. 80</span></div>
+      <p>Năng lượng tái tạo là năng lượng:</p>
+      <ol class="choices">
+        <li>có thể tái sử dụng nhiều lần sau khi đã dùng.</li>
+        <li>đến từ các nguồn có sẵn trong thiên nhiên, liên tục được bổ sung qua các quá trình tự nhiên.</li>
+        <li>do con người sản xuất ra trong nhà máy.</li>
+        <li>được tạo ra từ xác sinh vật qua hàng triệu năm.</li>
+      </ol>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>B đúng theo định nghĩa SGK. A sai: năng lượng đã dùng chuyển hoá thành dạng khác, không "dùng lại" được. C sai: nguồn năng lượng tái tạo có sẵn trong tự nhiên. D là năng lượng hoá thạch (không tái tạo).</p>
+        <p class="answer">B</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 2</span><span class="ex-level"></span><span class="ex-src">SGK tr. 80 (Hình 17.1)</span></div>
+      <p>Trong các dạng năng lượng: mặt trời, than mỏ, gió, dòng chảy, nhiệt trong lòng Trái Đất, dầu mỏ, sinh khối, sóng biển – những dạng nào <b>không</b> phải năng lượng tái tạo?</p>
+      <ol class="choices grid">
+        <li>Than mỏ và dầu mỏ</li>
+        <li>Than mỏ và sinh khối</li>
+        <li>Dầu mỏ và nhiệt trong lòng Trái Đất</li>
+        <li>Sóng biển và dòng chảy</li>
+      </ol>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Than mỏ, dầu mỏ là nhiên liệu hoá thạch, không bổ sung kịp → không tái tạo; khi dùng tạo chất thải rắn, khí nhà kính. Sinh khối, địa nhiệt (nhiệt trong lòng Trái Đất), sóng biển, dòng chảy đều là năng lượng tái tạo.</p>
+        <p class="answer">A</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 3</span><span class="ex-level"></span><span class="ex-src">SGK tr. 86</span></div>
+      <p>Nhược điểm chung của việc khai thác năng lượng tái tạo hiện nay là:</p>
+      <ol class="choices">
+        <li>nhanh cạn kiệt.</li>
+        <li>phát thải nhiều khí nhà kính.</li>
+        <li>công nghệ khai thác có hiệu suất thấp, chi phí đầu tư ban đầu cao.</li>
+        <li>không thể chuyển hoá thành điện năng.</li>
+      </ol>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Theo "Em đã học": công nghệ khai thác hiện nay có hiệu suất thấp, chi phí đầu tư ban đầu cao. A, B là nhược điểm của năng lượng hoá thạch; D sai vì điện mặt trời, điện gió, thuỷ điện đều tạo ra điện năng.</p>
+        <p class="answer">C</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="1">
+      <div class="ex-head"><span class="ex-no">Bài 4</span><span class="ex-level"></span><span class="ex-src">SGK tr. 82</span></div>
+      <p>Sóng biển được hình thành chủ yếu do:</p>
+      <ol class="choices grid">
+        <li>tác động của gió</li>
+        <li>nhiệt trong lòng Trái Đất</li>
+        <li>tàu thuyền chạy trên biển</li>
+        <li>các dòng sông đổ ra biển</li>
+      </ol>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Sóng biển hình thành chủ yếu do gió: gió càng mạnh, thổi càng lâu thì sóng càng lớn. (Gió lại có nguồn gốc từ Mặt Trời.)</p>
+        <p class="answer">A</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 5</span><span class="ex-level"></span><span class="ex-src">SGK tr. 81, 82</span></div>
+      <p>Lập bảng so sánh ưu điểm, nhược điểm của việc khai thác năng lượng mặt trời và năng lượng từ gió.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th></th><th>Năng lượng mặt trời</th><th>Năng lượng từ gió</th></tr></thead>
+            <tbody>
+              <tr><td>Ưu điểm</td><td>Luôn có sẵn, khó cạn kiệt; không gây ồn, không phát thải chất ô nhiễm, khí nhà kính; dùng trực tiếp (chiếu sáng, phơi sấy, làm muối, pin mặt trời) hoặc gián tiếp (đun nước, nhiệt điện mặt trời)</td><td>Luôn có sẵn; không phát thải chất ô nhiễm, khí nhà kính; công nghệ phát triển mạnh; gió ngoài khơi mạnh, ổn định → triển vọng lớn</td></tr>
+              <tr><td>Nhược điểm</td><td>Tấm pin đắt; hiệu suất hấp thụ nhiệt thấp; pin hết hạn (khoảng 25 năm) thành rác thải điện tử; gây ô nhiễm ánh sáng; nhà máy chiếm diện tích lớn, che mặt nước</td><td>Hiệu suất chuyển đổi thấp; đầu tư ban đầu cao; gây tiếng ồn; tua-bin làm nhiễu tín hiệu phát thanh, ảnh hưởng chim (nhất là chim di cư) và dơi</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="answer">Cả hai: sạch, không cạn kiệt; nhưng hiệu suất thấp, đầu tư cao, có tác động riêng tới môi trường.</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 6</span><span class="ex-level"></span><span class="ex-src">SGK tr. 84</span></div>
+      <p>Việc khai thác năng lượng từ dòng sông (thuỷ điện) ảnh hưởng đến môi trường thế nào trong các trường hợp: a) vỡ đập thuỷ điện; b) động vật không di chuyển được từ hạ nguồn lên thượng nguồn; c) diện tích rừng thay đổi khi xây nhà máy thuỷ điện? Nêu ưu điểm của thuỷ điện.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) Vỡ đập: khối nước khổng lồ tràn xuống hạ nguồn gây lũ, ngập lụt, phá huỷ nhà cửa, đồng ruộng, đe doạ tính mạng con người, tàn phá hệ sinh thái.</p>
+        <p>b) Các loài cá, thuỷ sinh cần di chuyển lên thượng nguồn bị đập chặn → suy giảm số lượng, giảm đa dạng sinh học.</p>
+        <p>c) Lòng hồ ngập nước, làm đường, xây nhà máy → mất rừng; nơi sống của động vật bị thu hẹp; ảnh hưởng chất lượng nước.</p>
+        <p>Ưu điểm: nguồn nước có sẵn, được nước mưa, nước ngầm, băng tuyết tan bổ sung thường xuyên; ít tác động tiêu cực đến môi trường so với năng lượng hoá thạch (không đốt nhiên liệu).</p>
+        <p class="answer">Thuỷ điện sạch hơn nhiệt điện nhưng ảnh hưởng hệ sinh thái, rừng, dân cư và có rủi ro vỡ đập.</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 7</span><span class="ex-level"></span><span class="ex-src">SGK tr. 86</span></div>
+      <p>Giải thích vì sao các cách sau được coi là sử dụng hiệu quả năng lượng điện: a) tắt thiết bị điện khi không dùng; b) để điều hoà trên 26 °C vào mùa hè, dùng quạt thay điều hoà khi có thể; c) không để tủ lạnh quá lạnh, không mở tủ quá lâu; d) sơn phòng sáng màu.</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) Thiết bị bật mà không dùng vẫn tiêu thụ điện (\(W = \mathscr{P}t\)); tắt đi thì không mất điện năng vô ích.</p>
+        <p>b) Nhiệt độ đặt càng thấp so với ngoài trời thì điều hoà chạy càng nhiều, tốn điện; quạt có công suất nhỏ hơn điều hoà nhiều lần.</p>
+        <p>c) Tủ càng lạnh hoặc mở càng lâu (hơi nóng lọt vào) thì tủ phải hoạt động lâu hơn → tốn điện.</p>
+        <p>d) Tường sáng màu phản xạ ánh sáng tốt → phòng sáng hơn, cần ít đèn hơn, tận dụng tốt ánh sáng tự nhiên.</p>
+        <p class="answer">Đều giảm thời gian hoạt động hoặc công suất thiết bị → giảm điện năng tiêu thụ cho cùng một nhu cầu.</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="2">
+      <div class="ex-head"><span class="ex-no">Bài 8</span><span class="ex-level"></span><span class="ex-src">SGK tr. 81, 85, 86</span></div>
+      <p>a) Vì sao cần tăng cường sử dụng năng lượng tái tạo? b) Vì sao sử dụng hiệu quả năng lượng góp phần bảo vệ môi trường? c) Vì sao trồng nhiều cây xanh quanh nhà và trường học giúp sử dụng hiệu quả năng lượng và bảo vệ môi trường?</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) Nhiên liệu hoá thạch đang cạn kiệt và gây ô nhiễm, biến đổi khí hậu; năng lượng tái tạo có sẵn, liên tục được bổ sung, khai thác không (hoặc ít) phát thải khí nhà kính.</p>
+        <p>b) Dùng ít năng lượng hơn cho cùng một công việc → giảm lượng điện, nhiên liệu cần sản xuất → giảm khai thác, đốt nhiên liệu hoá thạch → giảm khí thải, chất thải.</p>
+        <p>c) Cây xanh che nắng, làm mát không khí → giảm nhu cầu dùng quạt, điều hoà; cây quang hợp hấp thụ \(\ce{CO2}\), giải phóng \(\ce{O2}\), cản bụi → không khí trong lành.</p>
+        <p class="answer">Giảm tiêu thụ nhiên liệu hoá thạch → giảm phát thải; cây xanh vừa làm mát vừa hấp thụ \(\ce{CO2}\).</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="3">
+      <div class="ex-head"><span class="ex-no">Bài 9</span><span class="ex-level"></span><span class="ex-src">Tham khảo dạng bài</span></div>
+      <p>Một lớp học thay 10 bóng đèn huỳnh quang loại 40 W bằng 10 bóng đèn LED loại 18 W (độ sáng tương đương). Mỗi ngày đèn bật 6 giờ, mỗi tháng học 30 ngày. Giả sử giá điện 2 000 đồng/kWh. Mỗi tháng lớp tiết kiệm được bao nhiêu điện năng và bao nhiêu tiền?</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>Công suất giảm được: \(\Delta\mathscr{P} = 10\cdot (40 - 18) = 220\ \text{W} = 0{,}22\) kW.</p>
+        <p>Thời gian dùng mỗi tháng: \(t = 6\cdot 30 = 180\) h.</p>
+        <p>Điện năng tiết kiệm: \(\Delta W = 0{,}22\cdot 180 = 39{,}6\) kWh.</p>
+        <p>Tiền tiết kiệm: \(39{,}6\cdot 2\,000 = 79\,200\) đồng.</p>
+        <p class="answer">39,6 kWh; 79 200 đồng mỗi tháng</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="3">
+      <div class="ex-head"><span class="ex-no">Bài 10</span><span class="ex-level"></span><span class="ex-src">Tự soạn</span></div>
+      <p>Một tấm pin mặt trời có diện tích 2 m². Khi trời nắng, mỗi mét vuông nhận được năng lượng ánh sáng mặt trời với công suất khoảng 1 000 W. Tấm pin khi đó cung cấp công suất điện 400 W.</p>
+      <p>a) Tính hiệu suất của tấm pin. b) Kết quả này minh hoạ nhược điểm nào của năng lượng tái tạo nêu trong SGK?</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) Công suất ánh sáng chiếu tới tấm pin: \(\mathscr{P}_\text{tp} = 1\,000\cdot 2 = 2\,000\) W; công suất có ích \(\mathscr{P}_\text{ci} = 400\) W.</p>
+        <p>\[ H = \frac{\mathscr{P}_\text{ci}}{\mathscr{P}_\text{tp}}\cdot 100\% = \frac{400}{2\,000}\cdot 100\% = 20\% \]</p>
+        <p>b) Chỉ khoảng 20% năng lượng ánh sáng chuyển thành điện năng → công nghệ khai thác có <b>hiệu suất chuyển hoá thấp</b>.</p>
+        <p class="answer">a) \(H = 20\%\); b) hiệu suất chuyển hoá thấp</p>
+      </details>
+    </div>
+
+    <div class="exercise" data-level="3">
+      <div class="ex-head"><span class="ex-no">Bài 11</span><span class="ex-level"></span><span class="ex-src">Tham khảo dạng bài</span></div>
+      <p>Một gia đình lắp hệ thống điện mặt trời trên mái nhà với chi phí 45 triệu đồng. Trung bình mỗi ngày hệ thống phát ra điện năng bằng một thiết bị công suất 3 kW hoạt động trong 4 giờ. Giả sử mỗi kWh tự sản xuất giúp gia đình bớt 2 000 đồng tiền điện.</p>
+      <p>a) Tính điện năng hệ thống phát ra trong một tháng (30 ngày). b) Sau khoảng bao lâu thì gia đình thu hồi đủ chi phí lắp đặt?</p>
+      <details class="solution"><summary>Xem lời giải</summary>
+        <p>a) Mỗi ngày: \(W = \mathscr{P}t = 3\ \text{kW}\cdot 4\ \text{h} = 12\) kWh. Mỗi tháng: \(12\cdot 30 = 360\) kWh.</p>
+        <p>b) Tiền điện bớt được mỗi tháng: \(360\cdot 2\,000 = 720\,000\) đồng.</p>
+        <p>Thời gian thu hồi vốn: \(\frac{45\,000\,000}{720\,000} = 62{,}5\) tháng, khoảng 5,2 năm.</p>
+        <p>Nhận xét: chi phí đầu tư ban đầu cao (nhược điểm), nhưng về lâu dài có lợi và không phát thải khí nhà kính khi phát điện.</p>
+        <p class="answer">a) 360 kWh; b) khoảng 62,5 tháng (≈ 5,2 năm)</p>
+      </details>
+    </div>
+  </article>
+</section>

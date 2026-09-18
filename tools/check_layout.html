@@ -1,0 +1,59 @@
+<!doctype html>
+<!--
+  Kiểm tra tràn khung (máy tính 1100px, điện thoại 380px) cho các trang môn.
+  Chạy bằng Edge headless (cần cờ để iframe file:// đọc được nhau):
+    "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe" --headless=new --disable-gpu
+      --allow-file-access-from-files --disable-web-security --user-data-dir=<thư mục tạm>
+      --virtual-time-budget=120000 --dump-dom "file:///D:/<đường dẫn>/tools/check_layout.html?jobs=khtn.html:vat-li,toan.html:tap-1"
+  Tham số jobs = danh sách "trang:id-panel" (trang tính từ lop-9/). Bỏ trống = mọi trang, mọi tab.
+  Kết quả in trong <pre id="out">: pageCulprits (phần tử tràn ra ngoài trang) và formulaScroll
+  (công thức vẫn phải cuộn ngang sau khi đã thu nhỏ). Mục tiêu: pageCulprits = 0.
+  Mọi <details> (lời giải) được mở trước khi đo.
+-->
+<html><head><meta charset="utf-8"><title>check layout</title></head>
+<body><pre id="out"></pre>
+<script>
+const out = m => { document.getElementById("out").textContent += m + "\n"; };
+const DEFAULT = [
+  "khtn.html:vat-li", "khtn.html:hoa-hoc", "khtn.html:sinh-hoc", "khtn.html:chuyen-de-vat-li",
+  "khtn-bai-tap.html:bt-vat-li", "khtn-bai-tap.html:bt-chuyen-de-vat-li",
+  "toan.html:tap-1", "toan.html:tap-2", "tieng-anh.html:tieng-anh",
+  "lich-su-dia-li.html:lich-su", "lich-su-dia-li.html:dia-li", "lich-su-dia-li.html:chu-de-chung",
+  "ngu-van.html:tap-1", "ngu-van.html:tap-2", "ngu-van.html:van-mau"
+];
+const param = new URLSearchParams(location.search).get("jobs");
+const jobs = (param ? param.split(",") : DEFAULT).map(j => j.split(":"));
+const widths = [1100, 380];
+const wait = ms => new Promise(r => setTimeout(r, ms));
+
+async function run() {
+  for (const [page, tab] of jobs) for (const w of widths) {
+    const f = document.createElement("iframe");
+    f.style.width = w + "px"; f.style.height = "800px";
+    document.body.append(f);
+    await new Promise(r => { f.onload = r; f.src = "../lop-9/" + page + "#" + tab; });
+    await wait(1500);
+    const d = f.contentDocument, win = f.contentWindow;
+    const panel = d.getElementById(tab);
+    if (!panel) { out(`${page}#${tab} w=${w}  KHÔNG TÌM THẤY PANEL`); f.remove(); continue; }
+    d.querySelectorAll("details").forEach(x => { x.open = true; });
+    await wait(1200);                                   // chờ fitFormulas chạy sau khi mở lời giải
+    const vw = d.documentElement.clientWidth;
+    const clipped = el => { for (let p = el.parentElement; p && p !== panel; p = p.parentElement)
+      if (win.getComputedStyle(p).overflowX !== "visible") return true; return false; };
+    const bad = [...panel.querySelectorAll("*")].filter(el => el.getBoundingClientRect().right > vw + 1 && !clipped(el));
+    const top = bad.filter(el => !bad.includes(el.parentElement));
+    const scroll = [...panel.querySelectorAll(".formula-body, .equation")].filter(b =>
+      b.scrollWidth > b.clientWidth + 2 || [...b.querySelectorAll(".katex-display")].some(k => k.scrollWidth > k.clientWidth + 2));
+    const inline = [...panel.querySelectorAll(".katex-display")].filter(k =>
+      !k.closest(".formula-body, .equation") && k.scrollWidth > k.clientWidth + 2);
+    out(`${page}#${tab} w=${w}  pageCulprits=${top.length}  formulaScroll=${scroll.length}  displayScroll=${inline.length}`);
+    top.slice(0, 10).forEach(el => out(`   tràn: ${(el.closest(".lesson") || {}).id} | ${el.tagName}.${el.className} | right=${Math.round(el.getBoundingClientRect().right)}`));
+    inline.slice(0, 10).forEach(k => out(`   cuộn: ${(k.closest(".lesson") || {}).id} | ${(k.closest(".exercise") || {}).querySelector?.(".ex-no")?.textContent || ""} | ${k.scrollWidth}/${k.clientWidth}`));
+    f.remove();
+  }
+  out("DONE");
+}
+run();
+</script>
+</body></html>

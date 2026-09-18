@@ -260,6 +260,75 @@ Bài Review không có kiến thức mới → không tạo bài riêng. Mỗi U
 - Không chèn ảnh chụp từ SGK.
 - HTML hợp lệ, thụt lề 2 dấu cách, UTF-8.
 
+## Bài tập (mỗi môn: Lý thuyết + Bài tập)
+
+Mỗi môn có **2 phần**: trang lý thuyết `lop-9/<mon>.html` và trang bài tập `lop-9/<mon>-bai-tap.html`.
+Nút `nav.mode-switch` dưới `subject-head` chuyển qua lại (môn chưa có bài tập: hiện "✍️ Bài tập (sắp có)").
+- Trang bài tập: cùng tab như trang lý thuyết, **id panel và id bài = "bt-" + id bên lý thuyết**
+  (`bt-vat-li`, `bt-ly-bai-2`, `bt-ly-cd-nhiet`…); chương giữ tiêu đề như bên lý thuyết, id `bt-ly-chuong-1`.
+  `<body data-theory-page="<mon>.html">`. Trang lý thuyết khai báo
+  `<body data-exercise-page="<mon>-bai-tap.html" data-exercise-tabs="vat-li,…">` → JS tự gắn nút "✍️ Bài tập"
+  vào tiêu đề từng bài của các tab đó, và nút "📘 Lý thuyết" ở trang bài tập.
+- Partial: `_parts/bt-<mon>-<tab>[-N].html`.
+- Mỗi bài (lesson) gồm `lesson-goal` (các dạng bài trong bài này) rồi các bài tập, xếp theo mức tăng dần:
+
+```html
+<div class="exercise" data-level="1">          <!-- 1 Cơ bản · 2 Vận dụng · 3 Nâng cao (tự hiện dấu *) -->
+  <div class="ex-head"><span class="ex-no">Bài 1</span><span class="ex-level"></span><span class="ex-src">SGK tr. 16</span></div>
+  <p>Đề bài … \(m = 0{,}45\ 	ext{kg}\) …</p>
+  <ol class="choices grid"><li>…</li><li>…</li><li>…</li><li>…</li></ol>   <!-- chỉ với trắc nghiệm -->
+  <details class="solution"><summary>Xem lời giải</summary>
+    <p>Tóm tắt: …</p><p>Lời giải từng bước …</p>
+    <p class="answer">\(W_	ext{đ} = 22{,}5\ 	ext{J}\)</p>
+  </details>
+</div>
+```
+- Mỗi bài SGK: **8–12 bài tập** — khoảng 3–4 cơ bản (có trắc nghiệm 4 lựa chọn), 3–4 vận dụng, 2–3 nâng cao *.
+  Bài lý thuyết thuần (ít tính toán) có thể ít hơn, thiên về trắc nghiệm / giải thích hiện tượng.
+- **Nguồn**: (1) câu hỏi, bài tập trong SGK — ghi `SGK tr. N`, lời giải tự viết; (2) dạng bài phổ biến tìm trên
+  internet (WebSearch/WebFetch) — **viết lại đề bằng lời mình, đổi số liệu**, ghi `Tham khảo dạng bài`, KHÔNG
+  chép nguyên văn đề/lời giải từ trang giải bài tập; (3) tự soạn — ghi `Tự soạn`.
+- Lời giải: tóm tắt đề (đổi đơn vị) → công thức → thay số → kết luận; cuối có `p.answer`. Trắc nghiệm: nêu đáp án
+  và giải thích ngắn vì sao các phương án khác sai. **Tự kiểm tra lại mọi phép tính.**
+- Không dùng `div.formula` trong trang bài tập (để nút tra công thức không trùng); công thức viết KaTeX thường.
+- Kiểm tra: `check_math.js`, html.parser, quét tràn (mở cả lời giải khi quét).
+
+### ✅ Checklist tiến độ bài tập (đánh dấu [x] khi xong)
+
+Khi làm tiếp một mục: đọc mục này + phần lý thuyết của môn đó; giao agent theo mẫu prompt của Vật lí (đọc CLAUDE.md,
+dải trang SGK, danh sách id `bt-…`, WebSearch dạng bài, tự viết lại đề + lời giải, tự kiểm tra phép tính,
+check_math + html.parser, không chạy build); sau đó build, chạy `tools/check_layout.html`, chụp màn hình,
+đánh dấu [x] kèm số bài và ngày. Khi thêm tab bài tập mới, nhớ thêm tab/panel vào `<mon>-bai-tap.html` và
+id tab vào `data-exercise-tabs` của trang lý thuyết; môn đầu tiên có bài tập thì đổi "Bài tập (sắp có)" thành link.
+Nếu thêm chuyên đề HSG mới (Điện, Quang…) thì thêm luôn mục bài tập tương ứng vào checklist.
+
+- [x] KHTN · Vật lí — Chương I–II (Bài 2–10) · `_parts/bt-khtn-vat-li-1.html` — 96 bài (2026-09-18)
+- [x] KHTN · Vật lí — Chương III–V (Bài 11–17) · `_parts/bt-khtn-vat-li-2.html` — 73 bài (2026-09-18)
+- [x] KHTN · Chuyên đề Vật lí (HSG) — Cơ học, Nhiệt học · `_parts/bt-khtn-vat-li-chuyen-de.html` — 44 bài (2026-09-18)
+- [ ] KHTN · Hoá học (Bài 1, 18–35) — cần thêm tab `bt-hoa-hoc` vào `khtn-bai-tap.html`, thêm `hoa-hoc` vào `data-exercise-tabs`
+- [ ] KHTN · Sinh học (Bài 36–51) — tab `bt-sinh-hoc`
+- [ ] Toán — Tập 1 (Chương I–V) · `toan-bai-tap.html`
+- [ ] Toán — Tập 2 (Chương VI–X)
+- [ ] Tiếng Anh — Unit 1–12 (bài tập ngữ pháp, từ vựng, phát âm, đọc hiểu)
+- [ ] Lịch sử và Địa lí — Lịch sử, Địa lí (trắc nghiệm, câu hỏi tự luận, bài tập biểu đồ/số liệu)
+- [ ] Ngữ văn — Tập 1, Tập 2 (đọc hiểu văn bản ngoài SGK cùng thể loại, tiếng Việt, đề viết)
+
+## Chuyên đề ngoài SGK (ôn thi học sinh giỏi)
+
+Kiến thức nâng cao / tài liệu người dùng gửi (ảnh đề cương, "tổng hợp vào sổ tay <môn>") **không trộn vào tab SGK**:
+- Đặt ở **tab riêng** của trang môn, vd. KHTN có tab `chuyen-de-vat-li` (class `hsg`, nhãn "Chuyên đề Vật lí (HSG)"),
+  partial `_parts/khtn-vat-li-chuyen-de.html`. Môn khác làm tương tự: tab `chuyen-de-<mon>`, class `hsg`.
+- Chương theo **mảng kiến thức** (`ly-cd-co-hoc`, `ly-cd-nhiet-hoc`, sau này `ly-cd-dien-hoc`, `ly-cd-quang-hoc`…),
+  mỗi chuyên đề một lesson `ly-cd-<ten>`, `lesson-no` = "Chuyên đề N" (đánh số liên tục).
+- Mỗi chuyên đề có `box note data-label="📎 Nguồn"`: "tài liệu ôn tập do người dùng cung cấp" hoặc
+  "biên soạn theo kiến thức chuẩn (chưa có tài liệu gốc)".
+- Kí hiệu thống nhất với phần SGK (công suất \(\mathscr{P}\), áp suất \(p\) để khỏi lẫn trọng lượng \(P\)), ghi chú khi
+  đổi kí hiệu so với tài liệu; liên kết chéo tới bài SGK (`<a href="#ly-bai-4">` — JS tự chuyển tab).
+- Mức HSG: thêm công thức nâng cao, nhiều `box method` theo **dạng bài**, ví dụ có lời giải, `box warn` lỗi hay gặp.
+- Hiện có: Cơ học — CĐ1 Áp suất & lực đẩy Ác-si-mét, CĐ2 Công & máy cơ đơn giản (theo tài liệu người dùng);
+  Nhiệt học — CĐ3 Nhiệt dung riêng, cân bằng nhiệt, năng suất toả nhiệt (biên soạn theo kiến thức chuẩn).
+- Trong `	ext{}` của KaTeX không dùng "·" (lỗi `\cdotp`); viết đơn vị ra ngoài công thức.
+
 ## Kinh nghiệm rút ra
 
 - Chia agent theo môn/tab chạy song song; prompt cho agent phải có: bắt đọc CLAUDE.md, dải trang PDF, mục lục bài,
@@ -279,6 +348,11 @@ Bài Review không có kiến thức mới → không tạo bài riêng. Mỗi U
   thành nhiều dòng** (`\begin{aligned}` hoặc hai khối `\[ \]`) thay vì dựa vào thu nhỏ.
 - Lưới CSS phải dùng `minmax(min(Xpx, 100%), 1fr)` và `.steps` dùng `minmax(0, 1fr)`, nếu không trang tràn ngang
   trên điện thoại.
+- **Kiểm tra tràn bằng `tools/check_layout.html`** (hướng dẫn chạy ở đầu file; tham số `?jobs=trang:panel,…`,
+  bỏ trống = mọi trang). Nó mở mọi lời giải trước khi đo. Mục tiêu `pageCulprits=0`; `formulaScroll`/`displayScroll`
+  là công thức còn phải vuốt ngang trên điện thoại (chấp nhận được nếu ít, nên tách dòng nếu nhiều).
+- `.katex-display` tự cuộn ngang nên phải đo **cả** nó (không chỉ `.formula-body`); công thức vẫn tràn sau khi
+  thu nhỏ được gắn `.is-scroll` → hiện gợi ý "↔ vuốt ngang để xem hết".
 - Kiểm tra tràn: script tạm trong scratchpad mở từng tab trong iframe rộng 1100px và 380px, đếm phần tử có
   `getBoundingClientRect().right > clientWidth` và `.formula-body` có `scrollWidth > clientWidth`. Mục tiêu: 0.
 - Font cho chữ Việt: **không dùng Georgia** (thiếu glyph tiếng Việt → dấu tách rời khỏi chữ). Serif dùng

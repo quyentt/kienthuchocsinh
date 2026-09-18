@@ -168,17 +168,29 @@
   /* ---------- Công thức dài: xếp dọc khung đặt cạnh nhau, rồi thu nhỏ chữ cho vừa ---------- */
   function fitFormulas(root = document) {
     const bodies = $$(".formula-body, .equation", root).filter(b => b.offsetParent);
+    // tràn: chính khung hoặc khối công thức bên trong (.katex-display tự cuộn nên phải đo riêng)
+    const over = b => b.scrollWidth > b.clientWidth + 1 ||
+      $$(".katex-display", b).some(k => k.scrollWidth > k.clientWidth + 1);
     const rows = new Set(bodies.map(b => b.closest(".formula-row")).filter(Boolean));
     rows.forEach(r => r.classList.remove("stack"));
     bodies.forEach(b => b.style.removeProperty("--fit"));
     bodies.forEach(b => {
       const row = b.closest(".formula-row");
-      if (row && b.scrollWidth > b.clientWidth + 1) row.classList.add("stack");
+      if (row && over(b)) row.classList.add("stack");
     });
     const minFit = innerWidth < 640 ? 0.6 : 0.72;
     bodies.forEach(b => {
-      for (let fit = 0.93; b.scrollWidth > b.clientWidth + 1 && fit >= minFit; fit -= 0.07) {
+      for (let fit = 0.93; over(b) && fit >= minFit; fit -= 0.07) {
         b.style.setProperty("--fit", fit.toFixed(2));
+      }
+      b.classList.toggle("is-scroll", over(b));   // vẫn tràn → hiện gợi ý vuốt ngang
+    });
+    // Công thức riêng dòng nằm ngoài khung (vd. trong lời giải bài tập) → thu nhỏ bằng biến riêng --kfit
+    $$(".katex-display", root).filter(k => k.offsetParent && !k.closest(".formula-body, .equation")).forEach(k => {
+      k.style.removeProperty("--kfit");
+      k.classList.add("kfit");
+      for (let fit = 0.93; k.scrollWidth > k.clientWidth + 1 && fit >= minFit; fit -= 0.07) {
+        k.style.setProperty("--kfit", fit.toFixed(2));
       }
     });
     // Công thức trong câu quá dài (không tự xuống dòng được) → cho cuộn ngang riêng
@@ -421,6 +433,78 @@
     }, { passive: true, capture: true });
   }
 
+  /* ---------- Lý thuyết ⇄ Bài tập ----------
+     Trang lý thuyết: <body data-exercise-page="khtn-bai-tap.html" data-exercise-tabs="vat-li,chuyen-de-vat-li">
+     Trang bài tập:   <body data-theory-page="khtn.html">; id bài tập = "bt-" + id bài lý thuyết. */
+  function initModeLinks() {
+    const exPage = document.body.dataset.exercisePage;
+    const thPage = document.body.dataset.theoryPage;
+    const activePanel = () => $$(".panel").find(p => !p.hidden);
+
+    if (exPage) {
+      const tabs = (document.body.dataset.exerciseTabs || "").split(",").map(s => s.trim()).filter(Boolean);
+      tabs.forEach(tab => $$(`#${tab} .lesson`).forEach(ls => {
+        const title = $(".lesson-title", ls);
+        if (title) title.insertAdjacentHTML("beforeend",
+          `<a class="lesson-ex-link" href="${exPage}#bt-${ls.id}">✍️ Bài tập</a>`);
+      }));
+    }
+    if (thPage) {
+      $$(".lesson[id^='bt-']").forEach(ls => {
+        const title = $(".lesson-title", ls);
+        if (title) title.insertAdjacentHTML("beforeend",
+          `<a class="lesson-ex-link" href="${thPage}#${ls.id.slice(3)}">📘 Lý thuyết</a>`);
+      });
+    }
+    // Nút chuyển chế độ: giữ nguyên tab đang xem
+    $$(".mode-switch a[data-mode]").forEach(a => a.addEventListener("click", e => {
+      const p = activePanel();
+      if (!p) return;
+      const target = a.dataset.mode === "bai-tap" ? "bt-" + p.id : p.id.replace(/^bt-/, "");
+      e.preventDefault();
+      location.href = a.getAttribute("href").split("#")[0] + "#" + target;
+    }));
+  }
+
+  /* ---------- Trang bài tập: lọc theo mức, bật/tắt lời giải ---------- */
+  function initExercises() {
+    const LEVELS = { 1: "Cơ bản", 2: "Vận dụng", 3: "Nâng cao" };
+    $$(".exercise").forEach(ex => {
+      const lv = $(".ex-level", ex);
+      if (lv && !lv.textContent.trim()) lv.textContent = LEVELS[ex.dataset.level] || "";
+    });
+    $$(".panel").forEach(panel => {
+      const items = $$(".exercise", panel);
+      const content = $(".content", panel);
+      if (!items.length || !content) return;
+      const count = lv => items.filter(x => !lv || x.dataset.level === String(lv)).length;
+      const bar = document.createElement("div");
+      bar.className = "ex-toolbar";
+      bar.innerHTML = `
+        <span class="label">Mức:</span>
+        <button type="button" class="chip" data-lv="" aria-pressed="true">Tất cả (${count()})</button>
+        ${[1, 2, 3].map(l => `<button type="button" class="chip" data-lv="${l}" aria-pressed="false">
+          ${LEVELS[l]}${l === 3 ? " *" : ""} (${count(l)})</button>`).join("")}
+        <span class="spacer"></span>
+        <button type="button" class="icon-btn ex-toggle">👁 Hiện tất cả lời giải</button>`;
+      content.prepend(bar);
+      $$(".chip", bar).forEach(c => c.addEventListener("click", () => {
+        $$(".chip", bar).forEach(x => x.setAttribute("aria-pressed", String(x === c)));
+        items.forEach(x => { x.hidden = !!c.dataset.lv && x.dataset.level !== c.dataset.lv; });
+      }));
+      const toggle = $(".ex-toggle", bar);
+      toggle.addEventListener("click", () => {
+        const open = toggle.dataset.open !== "1";
+        $$("details.solution", panel).forEach(d => { d.open = open; });
+        toggle.dataset.open = open ? "1" : "";
+        toggle.textContent = open ? "🙈 Ẩn tất cả lời giải" : "👁 Hiện tất cả lời giải";
+        if (open) fitFormulas(panel);
+      });
+      // Lời giải mở ra mới có kích thước → co công thức lúc đó
+      $$("details.solution", panel).forEach(d => d.addEventListener("toggle", () => { if (d.open) fitFormulas(d); }));
+    });
+  }
+
   function initToTop() {
     const btn = document.createElement("button");
     btn.className = "to-top"; btn.type = "button"; btn.title = "Lên đầu trang"; btn.textContent = "↑";
@@ -437,6 +521,8 @@
     if (subjects) renderSubjects(subjects, subjects.dataset.grade);
     renderMath();
     $$(".panel").forEach(buildToc);
+    initModeLinks();
+    initExercises();
     initTabs();
     initAbbr();
     initFormulaSheet();
