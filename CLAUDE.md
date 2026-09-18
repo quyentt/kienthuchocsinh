@@ -166,6 +166,34 @@ thay vì công thức (tên nút "∑ Mốc & số liệu").
 - Bài **Thực hành** rút gọn: mục tiêu, các bước (`ol.steps`), kết luận mẫu.
 - Không chép nguyên đoạn dài; tách ý thành gạch đầu dòng, in đậm từ khoá, mỗi bài có `key-points`.
 
+### Môn Ngữ văn
+
+Trang `lop-9/ngu-van.html`: 3 tab `tap-1` (class `t1`), `tap-2` (`t2`), `van-mau` (`vm`).
+`<body data-quick-selector=".outline">` → nút "∑ Dàn ý nhanh" gom mọi **dàn ý** (cả Tập 1, Tập 2 và Văn mẫu).
+Không nạp KaTeX. Id tiền tố `nv-` (tab Tập 1/2) và `vm-` (tab Văn mẫu).
+- Chương = **Bài N (chủ đề)**: `<section class="chapter" id="nv-bai-1"><h2 class="chapter-title"><span>Bài 1</span>Thế giới kì ảo</h2>`.
+  Các bài (lesson) trong chương, theo thứ tự SGK:
+  `nv-b1-tri-thuc` (**Tri thức ngữ văn**: khái niệm thể loại/kiểu văn bản — `box def`, bảng đặc điểm) ·
+  mỗi văn bản đọc một lesson `nv-b1-vb1`, `nv-b1-vb2`, `nv-b1-vb3`, `nv-b1-thuc-hanh-doc` ·
+  `nv-b1-tieng-viet` (gộp mọi phần Thực hành tiếng Việt của bài: khái niệm `box def`, cách dùng, ví dụ, `box warn`) ·
+  `nv-b1-viet` (kiểu bài viết: yêu cầu → `div.outline` dàn ý → lưu ý) · `nv-b1-noi-nghe` (yêu cầu, các bước, lưu ý).
+  `lesson-no` ghi ngắn: "Tri thức", "Đọc 1", "Đọc 2", "Đọc 3", "Thực hành đọc", "Tiếng Việt", "Viết", "Nói – nghe".
+- Tiêu đề lesson văn bản đọc ghi tác giả bằng `<span class="vi-title">(Nguyễn Du)</span>` (chữ nhỏ, xám).
+- **Lesson văn bản đọc**: `dl.work-card` (Tác giả, Tác phẩm/xuất xứ, Thể loại, Phương thức biểu đạt, Bố cục…) →
+  **Tóm tắt** (truyện/kịch) → **Nội dung chính** → **Nghệ thuật** (bảng hoặc gạch đầu dòng) → **Ý nghĩa / thông điệp**
+  → `blockquote.quote` cho câu thơ/lời thoại đặc sắc (trích NGẮN ≤ 4 dòng, có `<cite>`) → `key-points`.
+- **Dàn ý** luôn dùng `div.outline`: `<div class="outline-name">Dàn ý: Nghị luận phân tích một bài thơ</div>`
+  + `<ol><li><b>Mở bài:</b> …</li><li><b>Thân bài:</b><ul>…</ul></li><li><b>Kết bài:</b> …</li></ol>`.
+  `outline-name` tự rõ nghĩa (vì hiện trong bảng tra nhanh).
+- **Văn mẫu** (tab `van-mau`): chương theo kiểu bài (`vm-nghi-luan-van-hoc`, `vm-nghi-luan-xa-hoi`, `vm-thuyet-minh`,
+  `vm-sang-tac`); mỗi bài mẫu một lesson: `box note data-label="📝 Đề bài"` → `div.outline` → `div.essay`
+  (các đoạn `<p>`, nhãn phần `<span class="part">Mở bài</span>` …) → `box tip data-label="💡 Học được gì từ bài mẫu"`.
+  Văn mẫu **tự viết mới** (không chép bài trên mạng), 500–900 chữ, đúng yêu cầu kiểu bài trong phần Viết của SGK;
+  chỉ trích dẫn ngắn từ tác phẩm.
+- `blockquote.quote` dùng `white-space: pre-line`: viết câu thơ sát lề, KHÔNG xuống dòng ngay sau `<blockquote …>`
+  (nếu không sẽ hiện một dòng trống thừa).
+- **Bản quyền**: KHÔNG chép toàn văn tác phẩm (nhất là tác giả hiện đại); chỉ tóm tắt và trích đoạn ngắn.
+
 ### Môn ngoại ngữ (Tiếng Anh)
 
 Trang một panel (`section.panel.en`, không thanh tab), nhiều INCLUDE liên tiếp (mỗi chủ điểm một partial
@@ -248,11 +276,13 @@ Bài Review không có kiến thức mới → không tạo bài riêng. Mỗi U
 - Không viết `\` trơn trong văn bản HTML ngoài công thức (bị hiển thị thẳng ra).
 - Công thức quá rộng: JS `fitFormulas()` tự xếp dọc `.formula-row`, thu nhỏ `.formula-body`/`.equation`
   (biến `--fit`) và cho công thức trong câu cuộn ngang (`.k-scroll`). Vẫn nên chủ động **tách công thức dài
-  thành nhiều dòng** (`egin{aligned}` hoặc hai khối `\[ \]`) thay vì dựa vào thu nhỏ.
+  thành nhiều dòng** (`\begin{aligned}` hoặc hai khối `\[ \]`) thay vì dựa vào thu nhỏ.
 - Lưới CSS phải dùng `minmax(min(Xpx, 100%), 1fr)` và `.steps` dùng `minmax(0, 1fr)`, nếu không trang tràn ngang
   trên điện thoại.
 - Kiểm tra tràn: script tạm trong scratchpad mở từng tab trong iframe rộng 1100px và 380px, đếm phần tử có
   `getBoundingClientRect().right > clientWidth` và `.formula-body` có `scrollWidth > clientWidth`. Mục tiêu: 0.
+- Font cho chữ Việt: **không dùng Georgia** (thiếu glyph tiếng Việt → dấu tách rời khỏi chữ). Serif dùng
+  "Times New Roman"/"Noto Serif". Luôn chụp màn hình kiểm tra dấu khi đổi font.
 - Class của panel (`ly`, `hoa`, `sinh`, `en`) không được trùng class dùng trong nội dung: selector nội dung
   phải gắn thẻ (vd. `span.en`, không phải `.en`) — từng làm cả trang Tiếng Anh bị in nghiêng.
 
@@ -264,6 +294,7 @@ Bài Review không có kiến thức mới → không tạo bài riêng. Mỗi U
 | 9 | Tiếng Anh | `data/Tiếng Anh 9 Global Success.pdf` — 139 trang, số trang PDF lệch không đều (thiếu trang in 5) → tra theo bảng dưới | Xong 2026-09-18: 4 chủ điểm, 12 Unit, 266 từ vựng, 26 cấu trúc |
 | 9 | Toán (2 tập) | `data/thuvienhoclieu.com-SGK-Toan-9-tu-nam-2026-Tap-1.pdf` (122 tr) + `…-Tap-2.pdf` (134 tr) — Kết nối tri thức, cả hai: trang PDF = trang in + 1 | Xong 2026-09-18: 10 chương, 42 bài, 113 công thức, 78 cách giải, 49 hình SVG |
 | 9 | Lịch sử và Địa lí | `data/thuvienhoclieu.com-SGK-Lich-Su-Va-Dia-Li-Lop-9-thong-nhat.pdf` — 242 trang; **trang PDF = trang in + 2 đến p164, từ p165 trở đi = trang in + 1 vì PDF THIẾU trang in 163** | Xong 2026-09-18: 12 chương, 45 bài, 214 mốc thời gian, 40 khối số liệu, 99 bảng |
+| 9 | Ngữ văn (2 tập) | `data/thuvienhoclieu.com-SGK-Ngu-Van-Lop-9-thong-nhat-tap-1.pdf` (154 tr) + `…-tap-2.pdf` (150 tr) — Kết nối tri thức, cả hai: trang PDF = trang in + 1 (đã kiểm 9 vị trí mỗi tập) | Xong 2026-09-18: 18 chương, 100 bài, 37 dàn ý, 16 văn mẫu tự viết, 40 thẻ tác phẩm |
 
 Phân chia KHTN 9 (số trang PDF): Bài 1 (chung, đặt ở tab Hoá) 7–15 · **Vật lí** Chương I–V (Bài 2–17) 16–87 ·
 **Hoá học** Chương VI–X (Bài 18–35) 88–159 · **Sinh học** Chương XI–XIV (Bài 36–51) 160–224, thuật ngữ 225–227.
@@ -295,3 +326,11 @@ Ch5 Thế giới từ 1991 (B18–19) 95–102 · Ch6 Việt Nam từ 1976 (B20)
 Ch3 Địa lí các vùng kinh tế – xã hội (B12–21) 160–222.
 **Chủ đề chung** 223–237 (Đô thị; Văn minh châu thổ sông Hồng và sông Cửu Long; Biển Đông).
 Thuật ngữ: Lịch sử p237, Địa lí p238 (p239 là bảng phiên âm).
+
+Phân chia Ngữ văn 9 (số trang PDF; ảnh ở `.cache/pages/lop-9/ngu-van-tap-1/`, `ngu-van-tap-2/`):
+**Tập 1** — mục lục p006–p007 · Bài 1 Thế giới kì ảo 9–39 · Bài 2 Những cung bậc tâm trạng 40–63 ·
+Bài 3 Hồn nước nằm trong tiếng mẹ cha 64–87 · Bài 4 Khám phá vẻ đẹp văn chương 88–116 · Bài 5 Đối diện với nỗi đau 117–142 ·
+Ôn tập học kì I 143–149 · thuật ngữ 150–151 · tên riêng nước ngoài 152–154.
+**Tập 2** — mục lục p003–p004 · Bài 6 Giải mã những bí mật 5–44 · Bài 7 Hồn thơ muôn điệu 45–66 ·
+Bài 8 Tiếng nói của lương tri 67–89 · Bài 9 Đi và suy ngẫm 90–113 · Bài 10 Văn học – lịch sử tâm hồn 114–131 ·
+Ôn tập học kì II 132–138 · thuật ngữ 139 · yếu tố Hán Việt 140–145 · tên riêng nước ngoài 146–150.

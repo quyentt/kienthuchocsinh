@@ -25,6 +25,8 @@
   --ls: #b45309;      --ls-soft: #fdf1e0;
   --dl: #047857;      --dl-soft: #e3f5ee;
   --cd: #1d4ed8;      --cd-soft: #e8eeff;
+  --vm: #7e22ce;      --vm-soft: #f5ebff;
+  --outline: #0369a1; --outline-bg: #eef8ff;
   --accent: var(--brand);
   --accent-soft: var(--brand-soft);
 
@@ -58,6 +60,8 @@
     --ls: #f0a83a; --ls-soft: #332512;
     --dl: #45c99a; --dl-soft: #122d25;
     --cd: #7c9cff; --cd-soft: #1c2745;
+    --vm: #c38bff; --vm-soft: #2a1c3d;
+    --outline: #5cc0f2; --outline-bg: #12263a;
     --def: #7aa7ff; --def-bg: #172238;
     --law: #b595ff; --law-bg: #231c3a;
     --note: #f0b94a; --note-bg: #2e2614;
@@ -83,6 +87,8 @@
   --ls: #f0a83a; --ls-soft: #332512;
   --dl: #45c99a; --dl-soft: #122d25;
   --cd: #7c9cff; --cd-soft: #1c2745;
+  --vm: #c38bff; --vm-soft: #2a1c3d;
+  --outline: #5cc0f2; --outline-bg: #12263a;
   --def: #7aa7ff; --def-bg: #172238;
   --law: #b595ff; --law-bg: #231c3a;
   --note: #f0b94a; --note-bg: #2e2614;
@@ -188,6 +194,7 @@ a.card:hover { transform: translateY(-2px); border-color: var(--card-color, var(
 .tab.ls   { --c: var(--ls);   --cs: var(--ls-soft); }
 .tab.dl   { --c: var(--dl);   --cs: var(--dl-soft); }
 .tab.cd   { --c: var(--cd);   --cs: var(--cd-soft); }
+.tab.vm   { --c: var(--vm);   --cs: var(--vm-soft); }
 
 .panel.ly   { --accent: var(--ly);   --accent-soft: var(--ly-soft); }
 .panel.hoa  { --accent: var(--hoa);  --accent-soft: var(--hoa-soft); }
@@ -198,6 +205,7 @@ a.card:hover { transform: translateY(-2px); border-color: var(--card-color, var(
 .panel.ls   { --accent: var(--ls);   --accent-soft: var(--ls-soft); }
 .panel.dl   { --accent: var(--dl);   --accent-soft: var(--dl-soft); }
 .panel.cd   { --accent: var(--cd);   --accent-soft: var(--cd-soft); }
+.panel.vm   { --accent: var(--vm);   --accent-soft: var(--vm-soft); }
 .panel[hidden] { display: none; }
 
 .layout {
@@ -375,8 +383,53 @@ td + td, th + th { border-left: 1px solid var(--border); }
 .stats b { display: block; font-size: 22px; font-weight: 800; color: var(--accent); line-height: 1.2; }
 .stats span { font-size: 14px; color: var(--text-muted); }
 
+/* ---------- Ngữ văn: dàn ý · bài văn mẫu · thẻ tác phẩm ---------- */
+.outline {
+  border: 2px solid var(--outline); background: var(--outline-bg);
+  border-radius: 12px; padding: 12px 18px 12px; margin: 16px 0;
+}
+.outline-name {
+  display: inline-block; font-size: 12.5px; font-weight: 800; letter-spacing: .04em;
+  color: var(--on-accent); background: var(--outline); padding: 2px 10px; border-radius: 6px; margin-bottom: 6px;
+}
+.outline > ol { margin: 4px 0 0; padding-left: 1.4em; }
+.outline > ol > li { margin: 6px 0; }
+.outline > ol > li > b:first-child { color: var(--outline); }
+.outline ul { margin: 2px 0; }
+
+.work-card { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 4px 14px; margin: 12px 0;
+  background: var(--surface-2); border-radius: 10px; padding: 12px 16px; border-left: 4px solid var(--accent); }
+.work-card dt { font-weight: 700; color: var(--accent); }
+.work-card dd { margin: 0; }
+
+blockquote.quote {
+  margin: 12px 0; padding: 8px 16px; border-left: 3px solid var(--accent); background: var(--surface-2);
+  border-radius: 0 8px 8px 0; font-style: italic; white-space: pre-line;
+}
+blockquote.quote cite { display: block; font-style: normal; font-size: 13.5px; color: var(--text-muted); margin-top: 4px; }
+
+.essay {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  padding: 18px 22px; margin: 16px 0;
+  font-family: "Times New Roman", "Noto Serif", "Liberation Serif", Tinos, serif;
+  font-size: 17px; line-height: 1.8;
+}
+.essay p { text-indent: 1.6em; margin: .6em 0; text-align: justify; }
+.essay p:has(br) { text-indent: 0; text-align: left; }  /* thơ: giữ dòng, không căn đều */
+.essay .part {
+  display: block; text-indent: 0; font-family: var(--font); font-size: 11.5px; font-weight: 800;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: 14px 0 -2px;
+}
+.essay .part:first-child { margin-top: 0; }
+@media (max-width: 640px) {
+  .essay { padding: 14px; font-size: 16px; }
+  .work-card { grid-template-columns: minmax(0, 1fr); }
+  .work-card dd { margin-bottom: 6px; }
+}
+
 /* ---------- Ngoại ngữ (Tiếng Anh) ---------- */
 .lesson-title .vi-title { font-size: 15px; font-weight: 500; color: var(--text-muted); }
+.lesson-title .vi-title i { font-style: italic; }
 .formula-body.pattern { font-size: 1.12em; font-weight: 600; line-height: 2; text-align: center; }
 .pattern b { color: var(--formula); }
 .pattern i {
@@ -473,7 +526,7 @@ table.vocab td:first-child { font-weight: 650; }
 .fsheet .formula-body { font-size: calc(1.1em * var(--fit, 1)); }
 .fsheet .formula-legend { grid-template-columns: 1fr; font-size: 13px; gap: 0; padding-top: 6px; }
 .fsheet .formula-note { font-size: 12.5px; }
-.fsheet .timeline, .fsheet .stats { grid-column: 1 / -1; margin: 2px 0; }
+.fsheet .timeline, .fsheet .stats, .fsheet .outline { grid-column: 1 / -1; margin: 2px 0; }
 .fsheet .equation { grid-column: 1 / -1; margin: 0; padding: 0 12px; font-size: calc(14.5px * var(--fit, 1)); }
 .fsheet .equation .katex-display { margin: .25em 0; }
 .fs-empty { text-align: center; color: var(--text-muted); padding: 48px 0; }
