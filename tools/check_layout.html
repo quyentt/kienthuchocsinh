@@ -5,7 +5,8 @@
     "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe" --headless=new --disable-gpu
       --allow-file-access-from-files --disable-web-security --user-data-dir=<thư mục tạm>
       --virtual-time-budget=120000 --dump-dom "file:///D:/<đường dẫn>/tools/check_layout.html?jobs=khtn.html:vat-li,toan.html:tap-1"
-  Tham số jobs = danh sách "trang:id-panel" (trang tính từ lop-9/). Bỏ trống = mọi trang, mọi tab.
+  Tham số jobs = danh sách "trang:id-panel"; trang không có "/" hiểu là trong lop-9/, có "/" thì tính từ gốc
+  (vd. "lop-7/toan.html:tap-1"). Bỏ trống = mọi trang lớp 9.
   Kết quả in trong <pre id="out">: pageCulprits (phần tử tràn ra ngoài trang) và formulaScroll
   (công thức vẫn phải cuộn ngang sau khi đã thu nhỏ). Mục tiêu: pageCulprits = 0.
   Mọi <details> (lời giải) được mở trước khi đo.
@@ -31,7 +32,8 @@ async function run() {
     const f = document.createElement("iframe");
     f.style.width = w + "px"; f.style.height = "800px";
     document.body.append(f);
-    await new Promise(r => { f.onload = r; f.src = "../lop-9/" + page + "#" + tab; });
+    const url = page.includes("/") ? "../" + page : "../lop-9/" + page;   // "lop-7/toan.html" hoặc "khtn.html"
+    await new Promise(r => { f.onload = r; f.src = url + "#" + tab; });
     await wait(1500);
     const d = f.contentDocument, win = f.contentWindow;
     const panel = d.getElementById(tab);

@@ -1,0 +1,1580 @@
+<section class="chapter" id="toan-chuong-1">
+  <h2 class="chapter-title"><span>Chương I · Số học</span>Số hữu tỉ</h2>
+
+  <article class="lesson" id="toan-bai-1">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 1</span>Tập hợp các số hữu tỉ</h3>
+    <p class="lesson-goal">Cần nắm: thế nào là số hữu tỉ và tập hợp \(\mathbb{Q}\); số đối của một số hữu tỉ; cách biểu diễn số hữu tỉ trên trục số; cách so sánh hai số hữu tỉ.</p>
+
+    <h4>1. Khái niệm số hữu tỉ</h4>
+    <div class="box def">
+      <p><b>Số hữu tỉ</b> là số viết được dưới dạng phân số \(\dfrac{a}{b}\) với \(a, b \in \mathbb{Z}\), \(b \ne 0\).</p>
+      <p>Tập hợp các số hữu tỉ được kí hiệu là <span class="kw">\(\mathbb{Q}\)</span>.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Dạng của một số hữu tỉ</div>
+      <div class="formula-body">\[ x = \frac{a}{b} \qquad (a,\ b \in \mathbb{Z},\ b \ne 0) \]</div>
+      <ul class="formula-legend">
+        <li>\(a\): tử số — một số nguyên</li>
+        <li>\(b\): mẫu số — một số nguyên <b>khác 0</b></li>
+        <li>\(\mathbb{Q}\): tập hợp các số hữu tỉ</li>
+        <li>Các phân số bằng nhau là các cách viết khác nhau của <b>cùng một số hữu tỉ</b>: \(1{,}5 = \dfrac{3}{2} = \dfrac{6}{4} = \dfrac{9}{6} = \dots\)</li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 (SGK tr. 6)</p>
+      <p>Các số \(-7\); \(0{,}6\); \(-1{,}2\); \(1\dfrac{4}{5}\) đều là số hữu tỉ vì đều viết được dưới dạng phân số:</p>
+      <p>\[ -7 = \frac{-7}{1};\quad 0{,}6 = \frac{6}{10};\quad -1{,}2 = \frac{-12}{10};\quad 1\frac{4}{5} = \frac{9}{5}. \]</p>
+    </div>
+    <div class="box note">
+      <p><b>Nhận xét.</b> Mọi <b>số thập phân</b> (hữu hạn), mọi <b>số nguyên</b>, mọi <b>hỗn số</b> đều là số hữu tỉ, vì chúng đều viết được dưới dạng phân số.</p>
+    </div>
+    <div class="box tip">
+      <p>Số tự nhiên là số nguyên, số nguyên là số hữu tỉ: \(\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q}\). Muốn chứng tỏ một số là số hữu tỉ, chỉ cần <b>viết được nó thành phân số</b> với tử và mẫu nguyên, mẫu khác 0.</p>
+    </div>
+    <div class="box note">
+      <p><b>Chú ý.</b> Mỗi số hữu tỉ đều có một <b>số đối</b>. Số đối của số hữu tỉ \(m\) là \(-m\).</p>
+      <p>Chẳng hạn số đối của \(-0{,}75\) là \(0{,}75\); số đối của \(6\dfrac{1}{5}\) là \(-6\dfrac{1}{5}\).</p>
+    </div>
+
+    <h4>2. Biểu diễn số hữu tỉ trên trục số</h4>
+    <div class="box method">
+      <p class="box-title">Dạng: Biểu diễn số hữu tỉ \(\dfrac{a}{b}\) trên trục số</p>
+      <ol class="steps">
+        <li>Viết số đã cho dưới dạng phân số có <b>mẫu dương</b> (vd. \(1{,}5 = \dfrac{3}{2}\); \(-1{,}25 = \dfrac{-5}{4}\)).</li>
+        <li>Chia đoạn thẳng đơn vị (đoạn từ 0 đến 1) thành \(b\) đoạn bằng nhau, lấy một đoạn làm <b>đơn vị mới</b> (đơn vị mới bằng \(\dfrac{1}{b}\) đơn vị cũ).</li>
+        <li>Số <b>dương</b> \(\dfrac{a}{b}\): điểm nằm <b>sau</b> gốc \(O\), cách \(O\) một đoạn bằng \(a\) đơn vị mới.<br>
+        Số <b>âm</b> \(-\dfrac{a}{b}\): điểm nằm <b>trước</b> gốc \(O\), cũng cách \(O\) một đoạn bằng \(a\) đơn vị mới.</li>
+      </ol>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 400 100" width="400" role="img" aria-label="Trục số biểu diễn ba phần hai và âm ba phần hai">
+        <defs>
+          <marker id="t7-arr1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+            <path d="M0 0 L10 5 L0 10 z" class="accent-fill"/>
+          </marker>
+        </defs>
+        <line x1="12" y1="50" x2="392" y2="50" class="stroke" stroke-width="1.2" marker-end="url(#t7-arr1)"/>
+        <g class="stroke" stroke-width="1.4">
+          <line x1="40" y1="44" x2="40" y2="56"/><line x1="100" y1="44" x2="100" y2="56"/>
+          <line x1="160" y1="44" x2="160" y2="56"/><line x1="220" y1="44" x2="220" y2="56"/>
+          <line x1="280" y1="44" x2="280" y2="56"/><line x1="340" y1="44" x2="340" y2="56"/>
+        </g>
+        <g class="stroke" stroke-width="0.8">
+          <line x1="70" y1="46" x2="70" y2="54"/><line x1="130" y1="46" x2="130" y2="54"/>
+          <line x1="190" y1="46" x2="190" y2="54"/><line x1="250" y1="46" x2="250" y2="54"/>
+          <line x1="310" y1="46" x2="310" y2="54"/>
+        </g>
+        <circle cx="190" cy="50" r="3.5" class="accent-fill"/>
+        <circle cx="130" cy="50" r="3.5" class="accent-fill"/>
+        <circle cx="250" cy="50" r="3.5" class="accent-fill"/>
+        <text x="184" y="30" font-size="13" font-style="italic">O</text>
+        <text x="124" y="30" font-size="13" font-style="italic">N</text>
+        <text x="244" y="30" font-size="13" font-style="italic">M</text>
+        <text x="30" y="72" font-size="12">−2</text>
+        <text x="94" y="72" font-size="12">−1</text>
+        <text x="186" y="72" font-size="12">0</text>
+        <text x="276" y="72" font-size="12">1</text>
+        <text x="336" y="72" font-size="12">2</text>
+        <text x="112" y="88" font-size="12">−3/2</text>
+        <text x="232" y="88" font-size="12">3/2</text>
+      </svg>
+      <figcaption>Chia đoạn đơn vị thành 2 phần bằng nhau. Điểm \(M\) biểu diễn \(\dfrac{3}{2} = 1{,}5\), điểm \(N\) biểu diễn \(-\dfrac{3}{2}\); \(OM = ON\).</figcaption>
+    </figure>
+    <div class="box law" data-label="⚖️ Nhận xét">
+      <p>Trên trục số, hai điểm biểu diễn của hai số hữu tỉ <b>đối nhau</b> \(a\) và \(-a\) nằm về <span class="kw">hai phía khác nhau</span> so với điểm \(O\) và có <span class="kw">cùng khoảng cách</span> đến \(O\).</p>
+    </div>
+    <div class="box note">
+      <p>Trên trục số, điểm biểu diễn số hữu tỉ \(a\) được gọi tắt là <b>điểm \(a\)</b>.</p>
+      <p>Một số hữu tỉ có nhiều cách viết nhưng chỉ ứng với <b>một điểm</b>: \(\dfrac{3}{2}\) và \(1{,}5\) cùng được biểu diễn bởi điểm \(M\); \(-\dfrac{3}{2}\) và \(-\dfrac{6}{4}\) cùng được biểu diễn bởi điểm \(N\).</p>
+    </div>
+
+    <h4>3. Thứ tự trong tập hợp các số hữu tỉ</h4>
+    <div class="box law" data-label="⚖️ Tính chất thứ tự trong ℚ">
+      <p>Ta có thể so sánh hai số hữu tỉ bất kì bằng cách viết chúng dưới dạng <b>phân số</b> rồi so sánh hai phân số đó.</p>
+      <p>Với hai số hữu tỉ \(a\), \(b\) bất kì, ta luôn có <b>hoặc</b> \(a = b\) <b>hoặc</b> \(a &lt; b\) <b>hoặc</b> \(a &gt; b\).</p>
+      <p><b>Tính chất bắc cầu:</b> cho ba số hữu tỉ \(a\), \(b\), \(c\). Nếu \(a &lt; b\) và \(b &lt; c\) thì \(a &lt; c\).</p>
+      <p>Trên trục số, nếu \(a &lt; b\) thì điểm \(a\) nằm <b>trước</b> điểm \(b\).</p>
+    </div>
+    <div class="box note">
+      <p><b>Chú ý.</b> Trên trục số, các điểm nằm <b>trước</b> gốc \(O\) biểu diễn <i>số hữu tỉ âm</i> (số hữu tỉ nhỏ hơn 0); các điểm nằm <b>sau</b> gốc \(O\) biểu diễn <i>số hữu tỉ dương</i> (số hữu tỉ lớn hơn 0).</p>
+      <p>Số <b>0</b> không là số hữu tỉ dương, cũng không là số hữu tỉ âm.</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: So sánh hai số hữu tỉ</p>
+      <ol class="steps">
+        <li>Nếu cả hai số đều viết dưới dạng <b>số thập phân</b>: so sánh trực tiếp, không cần đưa về phân số.</li>
+        <li>Nếu không: viết mỗi số dưới dạng phân số có <b>mẫu dương</b>, quy đồng về cùng mẫu rồi so sánh <b>tử số</b>.</li>
+        <li>Có thể dùng <b>tính chất bắc cầu</b> qua một số trung gian dễ so sánh (thường là \(0\) hoặc \(1\)).</li>
+        <li>Kết luận thêm về vị trí trên trục số nếu đề yêu cầu: số nhỏ hơn nằm trước.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 (SGK tr. 8) — So sánh \(0{,}7\) và \(\dfrac{6}{5}\)</p>
+      <p>Ta có \(0{,}7 = \dfrac{7}{10}\) và \(\dfrac{6}{5} = \dfrac{12}{10}\). Vì \(\dfrac{7}{10} &lt; \dfrac{12}{10}\) nên \(0{,}7 &lt; \dfrac{6}{5}\).</p>
+      <p>Do đó điểm \(0{,}7\) nằm <b>trước</b> điểm \(\dfrac{6}{5}\) trên trục số.</p>
+      <p><b>Cách khác (bắc cầu).</b> Vì \(0{,}7 &lt; 1\) và \(1 &lt; \dfrac{6}{5}\) nên \(0{,}7 &lt; \dfrac{6}{5}\).</p>
+    </div>
+    <div class="box warn">
+      <p>Với <b>hai số âm</b>, đừng so sánh như hai số dương: \(-2{,}5 &lt; -2{,}125\) (mặc dù \(2{,}5 &gt; 2{,}125\)).</p>
+      <p>Phân số có mẫu âm phải đưa về <b>mẫu dương</b> trước khi so sánh: \(\dfrac{5}{-8} = \dfrac{-5}{8}\).</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Số hữu tỉ: viết được thành \(\dfrac{a}{b}\) với \(a, b \in \mathbb{Z}\), \(b \ne 0\); tập hợp kí hiệu \(\mathbb{Q}\).</li>
+        <li>Số thập phân, số nguyên, hỗn số đều là số hữu tỉ; số đối của \(m\) là \(-m\).</li>
+        <li>Biểu diễn \(\dfrac{a}{b}\): chia đoạn đơn vị thành \(b\) phần, đếm \(a\) phần về bên phải (số dương) hoặc bên trái (số âm) gốc \(O\).</li>
+        <li>Hai số đối nhau nằm hai phía của \(O\) và cách đều \(O\).</li>
+        <li>So sánh: đưa về cùng mẫu dương rồi so tử, hoặc so sánh trực tiếp hai số thập phân, hoặc bắc cầu qua \(0\), \(1\).</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-2">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 2</span>Cộng, trừ, nhân, chia số hữu tỉ</h3>
+    <p class="lesson-goal">Cần nắm: quy tắc cộng, trừ, nhân, chia trong \(\mathbb{Q}\); các tính chất của phép cộng và phép nhân; quy tắc dấu ngoặc; cách tính nhanh, tính hợp lí.</p>
+
+    <h4>1. Cộng và trừ hai số hữu tỉ</h4>
+    <div class="box law" data-label="⚖️ Quy tắc cộng, trừ">
+      <p>Ta có thể cộng, trừ hai số hữu tỉ bằng cách viết chúng dưới dạng <b>phân số</b> rồi áp dụng quy tắc cộng, trừ phân số.</p>
+      <p>Mỗi số hữu tỉ đều viết được dưới dạng phân số với <b>mẫu dương</b>.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Cộng, trừ hai số hữu tỉ (đưa về cùng mẫu dương)</div>
+      <div class="formula-body">\[ \frac{a}{m} + \frac{b}{m} = \frac{a+b}{m}, \qquad \frac{a}{m} - \frac{b}{m} = \frac{a-b}{m} \]</div>
+      <ul class="formula-legend">
+        <li>\(a\), \(b\): các số nguyên (tử số sau khi quy đồng)</li>
+        <li>\(m\): mẫu chung, \(m &gt; 0\)</li>
+        <li>Khác mẫu: quy đồng về cùng mẫu dương rồi mới cộng, trừ</li>
+      </ul>
+      <div class="formula-note">Tổng quát: \( \dfrac{a}{b} + \dfrac{c}{d} = \dfrac{ad + bc}{bd} \) với \(b, d \ne 0\).</div>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Tính chất của phép cộng số hữu tỉ</div>
+      <div class="formula-body">\[ \begin{aligned} x + y &= y + x \\ (x + y) + z &= x + (y + z) \\ x + 0 &= 0 + x = x \\ x + (-x) &= 0 \end{aligned} \]</div>
+      <ul class="formula-legend">
+        <li>Dòng 1: tính chất <b>giao hoán</b></li>
+        <li>Dòng 2: tính chất <b>kết hợp</b></li>
+        <li>Dòng 3: cộng với <b>số 0</b></li>
+        <li>Dòng 4: tổng <b>hai số đối nhau</b> bằng 0</li>
+      </ul>
+    </div>
+    <div class="box note">
+      <p><b>Chú ý.</b> Nếu hai số hữu tỉ đều được cho dưới dạng <b>số thập phân</b> thì ta áp dụng quy tắc cộng và trừ đối với số thập phân, không cần đổi ra phân số.</p>
+      <p>Chẳng hạn \((-9{,}15) + 8{,}09 = -(9{,}15 - 8{,}09) = -1{,}06\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 (SGK tr. 10) — Tính \(\dfrac{2}{-3} + 2{,}5 + \dfrac{1}{3} + 1\dfrac{1}{2}\)</p>
+      <p>Viết mỗi số dưới dạng phân số có mẫu dương, rồi dùng tính chất giao hoán và kết hợp để nhóm:</p>
+      <p>\[ \begin{aligned} &\frac{-2}{3} + \frac{5}{2} + \frac{1}{3} + \frac{3}{2} \\ &= \left(\frac{-2}{3} + \frac{1}{3}\right) + \left(\frac{5}{2} + \frac{3}{2}\right) \\ &= \frac{-1}{3} + 4 = \frac{11}{3}. \end{aligned} \]</p>
+    </div>
+    <div class="box law" data-label="⚖️ Quy tắc dấu ngoặc">
+      <p>Trong tập các số hữu tỉ \(\mathbb{Q}\), ta cũng có quy tắc dấu ngoặc <b>tương tự</b> như trong tập các số nguyên \(\mathbb{Z}\).</p>
+      <p>Đối với một tổng trong \(\mathbb{Q}\), ta có thể <b>đổi chỗ</b> các số hạng, <b>đặt dấu ngoặc</b> để nhóm các số hạng một cách tuỳ ý.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Quy tắc dấu ngoặc trong \(\mathbb{Q}\)</div>
+      <div class="formula-body">\[ \begin{aligned} a + (b - c) &= a + b - c \\ a - (b - c) &= a - b + c \end{aligned} \]</div>
+      <ul class="formula-legend">
+        <li>Bỏ ngoặc có dấu <b>“+”</b> đằng trước: <b>giữ nguyên</b> dấu mọi số hạng trong ngoặc</li>
+        <li>Bỏ ngoặc có dấu <b>“−”</b> đằng trước: <b>đổi dấu</b> mọi số hạng trong ngoặc</li>
+        <li>Đặt ngoặc có dấu “−” đằng trước: cũng phải đổi dấu các số hạng đưa vào ngoặc</li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 (SGK tr. 11) — Tính \(\dfrac{8}{9} - \left[\dfrac{7}{4} - \left(\dfrac{3}{4} - \dfrac{2}{3}\right)\right]\)</p>
+      <p>Bỏ ngoặc vuông (có dấu “−” đằng trước), rồi bỏ ngoặc tròn (có dấu “+” đằng trước), sau đó nhóm lại:</p>
+      <p>\[ \begin{aligned} &= \frac{8}{9} - \frac{7}{4} + \left(\frac{3}{4} - \frac{2}{3}\right) \\ &= \frac{8}{9} - \frac{7}{4} + \frac{3}{4} - \frac{2}{3} \\ &= \left(\frac{8}{9} - \frac{2}{3}\right) - \left(\frac{7}{4} - \frac{3}{4}\right) \\ &= \frac{2}{9} - 1 = -\frac{7}{9}. \end{aligned} \]</p>
+    </div>
+
+    <h4>2. Nhân và chia hai số hữu tỉ</h4>
+    <div class="box law" data-label="⚖️ Quy tắc nhân, chia">
+      <p>Ta có thể nhân, chia hai số hữu tỉ bằng cách viết chúng dưới dạng <b>phân số</b> rồi áp dụng quy tắc nhân, chia phân số.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Nhân hai số hữu tỉ</div>
+      <div class="formula-body">\[ \frac{a}{b} \cdot \frac{c}{d} = \frac{a \cdot c}{b \cdot d} \qquad (b,\ d \ne 0) \]</div>
+      <ul class="formula-legend">
+        <li>Nhân tử với tử, mẫu với mẫu; rút gọn nếu được</li>
+        <li>Dấu: cùng dấu \(\Rightarrow\) tích dương; khác dấu \(\Rightarrow\) tích âm</li>
+      </ul>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Chia hai số hữu tỉ</div>
+      <div class="formula-body">\[ \frac{a}{b} : \frac{c}{d} = \frac{a}{b} \cdot \frac{d}{c} = \frac{a \cdot d}{b \cdot c} \qquad \left(b,\ c,\ d \ne 0\right) \]</div>
+      <ul class="formula-legend">
+        <li>Chia cho một số khác 0 = nhân với <b>số nghịch đảo</b> của nó</li>
+        <li>Số nghịch đảo của \(\dfrac{c}{d}\) là \(\dfrac{d}{c}\) (điều kiện \(c \ne 0\))</li>
+      </ul>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Tính chất của phép nhân số hữu tỉ</div>
+      <div class="formula-body">\[ \begin{aligned} x \cdot y &= y \cdot x \\ (x \cdot y) \cdot z &= x \cdot (y \cdot z) \\ x \cdot 1 &= 1 \cdot x = x \\ x \cdot (y + z) &= x \cdot y + x \cdot z \end{aligned} \]</div>
+      <ul class="formula-legend">
+        <li>Dòng 1: <b>giao hoán</b> · Dòng 2: <b>kết hợp</b></li>
+        <li>Dòng 3: nhân với <b>số 1</b></li>
+        <li>Dòng 4: <b>phân phối</b> của phép nhân đối với phép cộng — dùng để đặt thừa số chung</li>
+      </ul>
+    </div>
+    <div class="box note">
+      <p><b>Chú ý.</b> Nếu hai số hữu tỉ đều cho dưới dạng <b>số thập phân</b> thì áp dụng quy tắc nhân, chia đối với số thập phân:</p>
+      <p>\(1{,}25 \cdot (-4{,}6) = -(1{,}25 \cdot 4{,}6) = -5{,}75\); \(\quad 7{,}8 : (-0{,}13) = -(7{,}8 : 0{,}13) = -60\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 (SGK tr. 12)</p>
+      <p>a) \(\dfrac{6}{7} \cdot 0{,}25 = \dfrac{6}{7} \cdot \dfrac{25}{100} = \dfrac{6}{7} \cdot \dfrac{1}{4} = \dfrac{6}{28} = \dfrac{3}{14}\).</p>
+      <p>b) \(-2{,}4 : \dfrac{6}{5} = \dfrac{-24}{10} : \dfrac{6}{5} = \dfrac{-12}{5} \cdot \dfrac{5}{6} = \dfrac{-60}{30} = -2\).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Tính một cách hợp lí</p>
+      <ol class="steps">
+        <li>Đưa tất cả về <b>cùng một dạng</b>: hoặc tất cả phân số, hoặc tất cả số thập phân (chọn dạng nào cho phép tính gọn hơn).</li>
+        <li>Dùng giao hoán, kết hợp để <b>nhóm</b> các số hạng có tổng tròn, hoặc nhóm <b>hai số đối nhau</b> (tổng bằng 0).</li>
+        <li>Thấy một thừa số lặp lại \(\Rightarrow\) dùng tính chất <b>phân phối</b> để đặt thừa số chung: \(ab + ac = a(b+c)\).</li>
+        <li>Thực hiện phép tính còn lại và kết luận.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập 4, SGK tr. 12) — Tính hợp lí \(\dfrac{7}{6} \cdot 3\dfrac{1}{4} + \dfrac{7}{6} \cdot (-0{,}25)\)</p>
+      <p>\[ \frac{7}{6}\cdot 3{,}25 + \frac{7}{6}\cdot(-0{,}25) = \frac{7}{6}\big(3{,}25 - 0{,}25\big) = \frac{7}{6}\cdot 3 = \frac{7}{2}. \]</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 4 (SGK tr. 13) — Bài toán khinh khí cầu</p>
+      <p>Trong 50 giây đầu, khinh khí cầu bay lên cách mặt đất: \(0{,}8 \cdot 50 = 40\) (m).</p>
+      <p>Sau 27 giây hạ độ cao, nó giảm được: \(\dfrac{5}{9} \cdot 27 = 15\) (m).</p>
+      <p>Vậy khinh khí cầu cách mặt đất: \(40 - 15 = 25\) (m).</p>
+    </div>
+    <div class="box warn">
+      <p>Phân biệt <b>số đối</b> và <b>số nghịch đảo</b>: số đối của \(\dfrac{2}{3}\) là \(-\dfrac{2}{3}\) (tổng bằng 0); số nghịch đảo của \(\dfrac{2}{3}\) là \(\dfrac{3}{2}\) (tích bằng 1).</p>
+      <p>Không được “rút gọn” qua dấu cộng: \(\dfrac{a+b}{b} \ne a\). Chỉ rút gọn khi tử và mẫu là <b>tích</b>.</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Cộng, trừ, nhân, chia số hữu tỉ: viết về phân số (mẫu dương) rồi làm như với phân số.</li>
+        <li>Phép cộng có tính giao hoán, kết hợp, cộng với 0, tổng hai số đối bằng 0.</li>
+        <li>Phép nhân có tính giao hoán, kết hợp, nhân với 1, phân phối với phép cộng.</li>
+        <li>Chia cho một số khác 0 = nhân với số nghịch đảo: \(\dfrac{a}{b} : \dfrac{c}{d} = \dfrac{a}{b}\cdot\dfrac{d}{c}\).</li>
+        <li>Quy tắc dấu ngoặc: bỏ ngoặc sau dấu “−” thì <b>đổi dấu</b> tất cả số hạng bên trong.</li>
+        <li>Tính hợp lí: nhóm số đối nhau, nhóm cho tròn, đặt thừa số chung.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-3">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 3</span>Luỹ thừa với số mũ tự nhiên của một số hữu tỉ</h3>
+    <p class="lesson-goal">Cần nắm: định nghĩa luỹ thừa bậc \(n\) của số hữu tỉ; luỹ thừa của một tích, một thương; nhân và chia hai luỹ thừa cùng cơ số; luỹ thừa của luỹ thừa.</p>
+
+    <h4>1. Luỹ thừa với số mũ tự nhiên</h4>
+    <div class="box def">
+      <p><b>Luỹ thừa bậc \(n\)</b> của một số hữu tỉ \(x\), kí hiệu \(x^n\), là tích của \(n\) thừa số \(x\) (\(n\) là số tự nhiên lớn hơn 1).</p>
+      <p>\(x^n\) đọc là “\(x\) mũ \(n\)” hoặc “\(x\) luỹ thừa \(n\)” hoặc “luỹ thừa bậc \(n\) của \(x\)”. Trong đó \(x\) gọi là <span class="kw">cơ số</span>, \(n\) gọi là <span class="kw">số mũ</span>.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Luỹ thừa bậc n của số hữu tỉ x</div>
+      <div class="formula-body">\[ x^n = \underbrace{x \cdot x \cdot x \cdots x}_{n \ \text{thừa số}} \]</div>
+      <ul class="formula-legend">
+        <li>Điều kiện: \(x \in \mathbb{Q}\), \(n \in \mathbb{N}\), \(n &gt; 1\)</li>
+        <li>\(x\): cơ số (một số hữu tỉ)</li>
+        <li>\(n\): số mũ (số tự nhiên lớn hơn 1)</li>
+        <li>Quy ước: \(x^0 = 1\ (x \ne 0)\); \(x^1 = x\)</li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 (SGK tr. 17)</p>
+      <p>a) \((-3)^3 = (-3)\cdot(-3)\cdot(-3) = -27\).</p>
+      <p>b) \(\left(\dfrac{1}{3}\right)^4 = \dfrac{1}{3}\cdot\dfrac{1}{3}\cdot\dfrac{1}{3}\cdot\dfrac{1}{3} = \dfrac{1 \cdot 1 \cdot 1 \cdot 1}{3 \cdot 3 \cdot 3 \cdot 3} = \dfrac{1}{81}\).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Luỹ thừa của một tích · Luỹ thừa của một thương</div>
+      <div class="formula-body">\[ \begin{aligned} (x \cdot y)^n &= x^n \cdot y^n \\ \left(\frac{x}{y}\right)^n &= \frac{x^n}{y^n} \quad (y \ne 0) \end{aligned} \]</div>
+      <ul class="formula-legend">
+        <li>Luỹ thừa của một <b>tích</b> bằng <b>tích</b> các luỹ thừa</li>
+        <li>Luỹ thừa của một <b>thương</b> bằng <b>thương</b> các luỹ thừa</li>
+        <li>Dùng theo chiều ngược lại để tính nhanh: \(x^n y^n = (xy)^n\)</li>
+      </ul>
+      <div class="formula-note">Ví dụ: \(\left(\dfrac{2}{3}\right)^{10} \cdot 3^{10} = \left(\dfrac{2}{3}\cdot 3\right)^{10} = 2^{10} = 1\,024\).</div>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 (SGK tr. 17)</p>
+      <p>a) \(2^2 \cdot 3^2 = 4 \cdot 9 = 36\) và \((2 \cdot 3)^2 = 6^2 = 36\), nên \(2^2 \cdot 3^2 = (2\cdot 3)^2\).</p>
+      <p>b) \(\dfrac{(-14)^2}{7^2} = \dfrac{196}{49} = 4\) và \(\left(\dfrac{-14}{7}\right)^2 = (-2)^2 = 4\), nên \(\dfrac{(-14)^2}{7^2} = \left(\dfrac{-14}{7}\right)^2\).</p>
+    </div>
+
+    <h4>2. Nhân và chia hai luỹ thừa cùng cơ số</h4>
+    <div class="box law" data-label="⚖️ Quy tắc nhân, chia luỹ thừa cùng cơ số">
+      <p>Khi <b>nhân</b> hai luỹ thừa cùng cơ số, ta <span class="kw">giữ nguyên cơ số</span> và <span class="kw">cộng</span> hai số mũ.</p>
+      <p>Khi <b>chia</b> hai luỹ thừa cùng cơ số khác 0, ta <span class="kw">giữ nguyên cơ số</span> và lấy số mũ của luỹ thừa bị chia <span class="kw">trừ</span> số mũ của luỹ thừa chia.</p>
+    </div>
+    <div class="formula-row">
+      <div class="formula">
+        <div class="formula-name">Nhân hai luỹ thừa cùng cơ số</div>
+        <div class="formula-body">\[ x^m \cdot x^n = x^{m+n} \]</div>
+        <ul class="formula-legend">
+          <li>\(x\): cơ số chung</li>
+          <li>\(m\), \(n\): các số mũ tự nhiên</li>
+        </ul>
+      </div>
+      <div class="formula">
+        <div class="formula-name">Chia hai luỹ thừa cùng cơ số</div>
+        <div class="formula-body">\[ x^m : x^n = x^{m-n} \]</div>
+        <ul class="formula-legend">
+          <li>Điều kiện: \(x \ne 0\) và \(m \ge n\)</li>
+          <li>Khi \(m = n\): \(x^m : x^m = x^0 = 1\)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 (SGK tr. 18)</p>
+      <p>a) \(\left(\dfrac{2}{3}\right)^5 \cdot \left(\dfrac{2}{3}\right)^3 = \left(\dfrac{2}{3}\right)^{5+3} = \left(\dfrac{2}{3}\right)^8 = \dfrac{256}{6\,561}\).</p>
+      <p>b) \((-5)^5 : (-5)^5 = (-5)^{5-5} = (-5)^0 = 1\).</p>
+    </div>
+
+    <h4>3. Luỹ thừa của luỹ thừa</h4>
+    <div class="box law" data-label="⚖️ Quy tắc luỹ thừa của luỹ thừa">
+      <p>Khi tính luỹ thừa của một luỹ thừa, ta <b>giữ nguyên cơ số</b> và <b>nhân</b> hai số mũ.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Luỹ thừa của một luỹ thừa</div>
+      <div class="formula-body">\[ \left(x^m\right)^n = x^{m \cdot n} \]</div>
+      <ul class="formula-legend">
+        <li>\(x\): cơ số · \(m\), \(n\): hai số mũ tự nhiên</li>
+        <li>Dùng để đưa các luỹ thừa về <b>cùng một cơ số</b>: \(\left(\dfrac{1}{4}\right)^8 = \left[\left(\dfrac{1}{2}\right)^2\right]^8 = \left(\dfrac{1}{2}\right)^{16}\)</li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 4 (SGK tr. 18) — Tính \(\left[(-5)^3\right]^7\)</p>
+      <p>\(\left[(-5)^3\right]^7 = (-5)^{3 \cdot 7} = (-5)^{21}\).</p>
+    </div>
+    <div class="box warn">
+      <p><b>Đừng lẫn</b> \(x^m \cdot x^n = x^{m+n}\) (cộng số mũ) với \(\left(x^m\right)^n = x^{mn}\) (nhân số mũ).</p>
+      <p>Dấu của luỹ thừa số âm: \((-a)^n\) <b>dương</b> khi \(n\) chẵn, <b>âm</b> khi \(n\) lẻ. Chú ý \((-3)^2 = 9\) nhưng \(-3^2 = -9\).</p>
+      <p>Công thức chỉ đúng khi <b>cùng cơ số</b>: \(2^3 \cdot 5^3\) không rút gọn được thành luỹ thừa cùng cơ số, nhưng bằng \((2\cdot 5)^3 = 10^3\) (cùng số mũ).</p>
+    </div>
+    <div class="box note">
+      <p><b>Em có biết (SGK tr. 19) — Luỹ thừa với số mũ âm.</b> Người ta định nghĩa \(x^{-n} = \dfrac{1}{x^n}\) với \(n\) nguyên dương, \(x \ne 0\).</p>
+      <p>Chẳng hạn \(\dfrac{1}{100} = \dfrac{1}{10^2} = 10^{-2}\); \(\dfrac{1}{1\,000} = 10^{-3}\). Luỹ thừa của 10 với số mũ âm dùng để viết gọn các số rất nhỏ: 1 micrômét \(= 10^{-6}\) m.</p>
+    </div>
+    <div class="box tip">
+      <p>Các số rất lớn viết gọn bằng luỹ thừa của 10: \(9\,460\,000\,000\,000 = 9{,}46 \cdot 10^{12}\). So sánh hai số dạng này: so sánh <b>số mũ</b> trước, số mũ bằng nhau mới so sánh phần còn lại.</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>\(x^n\) là tích của \(n\) thừa số \(x\); quy ước \(x^0 = 1\ (x \ne 0)\), \(x^1 = x\).</li>
+        <li>\((xy)^n = x^n y^n\) và \(\left(\dfrac{x}{y}\right)^n = \dfrac{x^n}{y^n}\ (y \ne 0)\).</li>
+        <li>Cùng cơ số: nhân thì <b>cộng</b> số mũ, chia thì <b>trừ</b> số mũ.</li>
+        <li>Luỹ thừa của luỹ thừa: <b>nhân</b> số mũ — \(\left(x^m\right)^n = x^{mn}\).</li>
+        <li>\((-a)^n\) dương khi \(n\) chẵn, âm khi \(n\) lẻ; \(-3^2 = -9 \ne (-3)^2 = 9\).</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-4">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 4</span>Thứ tự thực hiện các phép tính. Quy tắc chuyển vế</h3>
+    <p class="lesson-goal">Cần nắm: thứ tự thực hiện các phép tính trong \(\mathbb{Q}\); khái niệm đẳng thức và các tính chất của đẳng thức; quy tắc chuyển vế và cách dùng để tìm \(x\).</p>
+
+    <h4>1. Thứ tự thực hiện các phép tính</h4>
+    <div class="box note">
+      <p>Thứ tự thực hiện phép tính đối với các số tự nhiên <b>vẫn đúng</b> đối với các số hữu tỉ.</p>
+    </div>
+    <div class="box law" data-label="⚖️ Thứ tự thực hiện các phép tính">
+      <p>Với các biểu thức chỉ có phép <b>cộng và trừ</b>, hoặc chỉ có phép <b>nhân và chia</b>: thực hiện <span class="kw">từ trái sang phải</span>.</p>
+      <p>Với các biểu thức <b>không có dấu ngoặc</b>: thực hiện <span class="kw">luỹ thừa \(\to\) nhân, chia \(\to\) cộng, trừ</span>.</p>
+      <p>Với các biểu thức <b>có dấu ngoặc</b>: thực hiện <span class="kw">trong ngoặc trước, ngoài ngoặc sau</span>, theo thứ tự \(( \ ) \to [\ ] \to \{\ \}\).</p>
+    </div>
+    <div class="flow"><span>Luỹ thừa</span><i>→</i><span>Nhân và chia</span><i>→</i><span>Cộng và trừ</span></div>
+    <div class="flow"><span>( )</span><i>→</i><span>[ ]</span><i>→</i><span>{ }</span></div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 (SGK tr. 20)</p>
+      <p>a) \(1{,}2 - 3^2 + 7{,}5 : 3 = 1{,}2 - 9 + 2{,}5 = -7{,}8 + 2{,}5 = -5{,}3\) &nbsp;<span class="muted">(luỹ thừa, nhân chia trước)</span></p>
+      <p>b) \(9{,}8 + 1{,}5 \cdot 6 + (6{,}8 - 2) : 3 = 9{,}8 + 9 + 4{,}8 : 3 = 18{,}8 + 1{,}6 = 20{,}4\) &nbsp;<span class="muted">(trong ngoặc trước)</span></p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Tính giá trị của một biểu thức</p>
+      <ol class="steps">
+        <li>Quan sát: có thể <b>tính hợp lí</b> được không (nhóm số đối, đặt thừa số chung)? Nếu có thì làm trước.</li>
+        <li>Nếu không: thực hiện trong ngoặc trước, theo thứ tự \(( \ ) \to [\ ] \to \{\ \}\).</li>
+        <li>Trong mỗi ngoặc (và ngoài ngoặc): luỹ thừa \(\to\) nhân, chia \(\to\) cộng, trừ.</li>
+        <li>Nếu biểu thức có nhiều phân số, nên đưa hết về phân số; nếu toàn số thập phân “đẹp” thì giữ nguyên số thập phân.</li>
+      </ol>
+    </div>
+
+    <h4>2. Đẳng thức và tính chất của đẳng thức</h4>
+    <div class="box def">
+      <p>Hệ thức dạng <b>\(A = B\)</b> được gọi là một <b>đẳng thức</b>; \(A\) là <span class="kw">vế trái</span>, \(B\) là <span class="kw">vế phải</span> của đẳng thức.</p>
+      <p>Chẳng hạn \(5{,}1 + x = 7\) là một đẳng thức với vế trái là \(5{,}1 + x\), vế phải là \(7\).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Tính chất của đẳng thức</div>
+      <div class="formula-body">\[ \begin{aligned} a = b &\;\Rightarrow\; b = a \\ a = b &\;\Rightarrow\; a + c = b + c \end{aligned} \]</div>
+      <ul class="formula-legend">
+        <li>\(a\), \(b\): hai vế của đẳng thức · \(c\): số hữu tỉ tuỳ ý</li>
+        <li>Có thể <b>đổi chỗ hai vế</b> của một đẳng thức</li>
+        <li>Có thể <b>cộng cùng một số</b> vào hai vế mà đẳng thức vẫn đúng</li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 (SGK tr. 21)</p>
+      <p>a) Tìm \(a\), biết \(a + 6 = -9\): cộng \(-6\) vào hai vế \(\Rightarrow a + 6 + (-6) = -9 + (-6) \Rightarrow a + 0 = -15 \Rightarrow a = -15\).</p>
+      <p>b) Tìm \(b\), biết \(b - 8 = -3\): cộng \(8\) vào hai vế \(\Rightarrow b - 8 + 8 = -3 + 8 \Rightarrow b = 5\).</p>
+    </div>
+
+    <h4>3. Quy tắc chuyển vế</h4>
+    <div class="box law" data-label="⚖️ Quy tắc chuyển vế">
+      <p>Khi <b>chuyển một số hạng</b> từ vế này sang vế kia của một đẳng thức, ta phải <span class="kw">đổi dấu</span> số hạng đó: dấu “+” đổi thành dấu “−” và dấu “−” đổi thành dấu “+”.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Quy tắc chuyển vế</div>
+      <div class="formula-body">\[ \begin{aligned} a + b = c &\;\Rightarrow\; a = c - b \\ a - b = c &\;\Rightarrow\; a = c + b \end{aligned} \]</div>
+      <ul class="formula-legend">
+        <li>\(a\), \(b\), \(c\): các số hữu tỉ</li>
+        <li>Số hạng chuyển vế phải <b>đổi dấu</b></li>
+        <li>Chỉ chuyển được <b>số hạng</b> (các phần nối với nhau bằng dấu “+”, “−”), không chuyển thừa số</li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 (SGK tr. 21–22) — Tìm \(x\)</p>
+      <p>a) \(x + \dfrac{1}{2} = -\dfrac{6}{7} \Rightarrow x = -\dfrac{6}{7} - \dfrac{1}{2} = -\dfrac{12}{14} - \dfrac{7}{14} = -\dfrac{19}{14}\). Vậy \(x = -\dfrac{19}{14}\).</p>
+      <p>b) \(x - \dfrac{3}{4} = \dfrac{9}{8} \Rightarrow x = \dfrac{9}{8} + \dfrac{3}{4} = \dfrac{9}{8} + \dfrac{6}{8} = \dfrac{15}{8}\). Vậy \(x = \dfrac{15}{8}\).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Tìm \(x\) trong một đẳng thức</p>
+      <ol class="steps">
+        <li>Thu gọn từng vế (bỏ ngoặc, tính các phép tính đã thực hiện được).</li>
+        <li>Chuyển các số hạng <b>chứa \(x\)</b> về một vế, các số hạng <b>không chứa \(x\)</b> về vế kia — nhớ <b>đổi dấu</b>.</li>
+        <li>Thu gọn hai vế để được dạng \(a \cdot x = b\) (hoặc \(x = b\)).</li>
+        <li>Chia hai vế cho \(a\) (nhân với \(\dfrac{1}{a}\)) để tìm \(x\), rồi kết luận “Vậy \(x = \dots\)”.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Bài tập 1.31, SGK tr. 24) — Tìm \(x\), biết \(2x + \dfrac{1}{2} = \dfrac{7}{9}\)</p>
+      <p>Chuyển vế: \(2x = \dfrac{7}{9} - \dfrac{1}{2} = \dfrac{14}{18} - \dfrac{9}{18} = \dfrac{5}{18}\).</p>
+      <p>Chia hai vế cho 2: \(x = \dfrac{5}{18} : 2 = \dfrac{5}{36}\). Vậy \(x = \dfrac{5}{36}\).</p>
+    </div>
+    <div class="box warn">
+      <p>Lỗi hay gặp: <b>quên đổi dấu</b> khi chuyển vế. Từ \(x + 7{,}25 = 15{,}75\) phải được \(x = 15{,}75 - 7{,}25\), <b>không</b> phải \(x = 15{,}75 + 7{,}25\).</p>
+      <p>Khi \(x\) đứng sau dấu “−”, vd. \(9 - x = m\), hãy chuyển \(x\) sang vế phải và \(m\) sang vế trái: \(9 - m = x\).</p>
+      <p>Quy tắc chuyển vế chỉ dùng cho <b>số hạng</b>. Với \(3x = 12\) phải <b>chia</b> hai vế cho 3, không được “chuyển 3 sang vế phải rồi đổi dấu”.</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Không có ngoặc: luỹ thừa \(\to\) nhân, chia \(\to\) cộng, trừ; có ngoặc: \(( \ ) \to [\ ] \to \{\ \}\).</li>
+        <li>Chỉ cộng – trừ hoặc chỉ nhân – chia: làm từ trái sang phải.</li>
+        <li>Đẳng thức \(A = B\): có thể đổi chỗ hai vế, cộng cùng một số vào hai vế.</li>
+        <li>Quy tắc chuyển vế: chuyển số hạng qua vế kia thì <b>đổi dấu</b>.</li>
+        <li>Tìm \(x\): gom \(x\) một vế, số một vế \(\to\) dạng \(ax = b \to x = b : a\).</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-on-tap-chuong-1">
+    <h3 class="lesson-title"><span class="lesson-no">Ôn tập</span>Ôn tập Chương I</h3>
+    <p class="lesson-goal">Tóm tắt: khái niệm số hữu tỉ, thứ tự trong \(\mathbb{Q}\), bốn phép tính, luỹ thừa, quy tắc chuyển vế; các dạng bài trong Luyện tập chung và Bài tập cuối chương I.</p>
+
+    <h4>1. Tóm tắt kiến thức</h4>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Nội dung</th><th>Ghi nhớ</th></tr></thead>
+      <tbody>
+        <tr><td>Số hữu tỉ</td><td>\(\dfrac{a}{b}\) với \(a, b \in \mathbb{Z}\), \(b \ne 0\); tập hợp \(\mathbb{Q}\); \(\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q}\)</td></tr>
+        <tr><td>Số đối</td><td>Số đối của \(m\) là \(-m\); \(m + (-m) = 0\); hai điểm biểu diễn nằm hai phía và cách đều \(O\)</td></tr>
+        <tr><td>So sánh</td><td>Đưa về phân số cùng mẫu dương rồi so tử; hoặc so sánh hai số thập phân; bắc cầu qua \(0\), \(1\)</td></tr>
+        <tr><td>Cộng, trừ</td><td>\(\dfrac{a}{m} \pm \dfrac{b}{m} = \dfrac{a \pm b}{m}\); giao hoán, kết hợp, cộng 0, tổng hai số đối bằng 0</td></tr>
+        <tr><td>Nhân, chia</td><td>\(\dfrac{a}{b}\cdot\dfrac{c}{d} = \dfrac{ac}{bd}\); \(\dfrac{a}{b}:\dfrac{c}{d} = \dfrac{a}{b}\cdot\dfrac{d}{c}\); giao hoán, kết hợp, nhân 1, phân phối</td></tr>
+        <tr><td>Dấu ngoặc</td><td>Bỏ ngoặc sau dấu “−” thì đổi dấu mọi số hạng trong ngoặc</td></tr>
+        <tr><td>Luỹ thừa</td><td>\(x^m x^n = x^{m+n}\); \(x^m : x^n = x^{m-n}\); \((x^m)^n = x^{mn}\); \((xy)^n = x^n y^n\); \(\left(\dfrac{x}{y}\right)^n = \dfrac{x^n}{y^n}\)</td></tr>
+        <tr><td>Thứ tự phép tính</td><td>Ngoặc \(\to\) luỹ thừa \(\to\) nhân, chia \(\to\) cộng, trừ</td></tr>
+        <tr><td>Quy tắc chuyển vế</td><td>\(a + b = c \Rightarrow a = c - b\); \(a - b = c \Rightarrow a = c + b\)</td></tr>
+      </tbody>
+    </table></div>
+    <div class="flow"><span>Đề bài</span><i>→</i><span>Viết về phân số mẫu dương</span><i>→</i><span>Nhóm hợp lí / đặt thừa số chung</span><i>→</i><span>Tính theo đúng thứ tự</span><i>→</i><span>Rút gọn, kết luận</span></div>
+
+    <h4>2. Các dạng toán thường gặp</h4>
+    <div class="box method">
+      <p class="box-title">Dạng: Nhận biết số hữu tỉ, tìm số đối</p>
+      <ol class="steps">
+        <li>Viết số đã cho thành phân số \(\dfrac{a}{b}\) với \(a, b\) nguyên, \(b \ne 0\) \(\Rightarrow\) đó là số hữu tỉ.</li>
+        <li>Số đối: giữ nguyên phần số, đổi dấu (số đối của \(-0{,}75\) là \(0{,}75\)).</li>
+        <li>Kí hiệu: dùng \(\in \mathbb{Q}\) hay \(\notin \mathbb{Q}\) cho đúng (mọi số nguyên đều thuộc \(\mathbb{Q}\)).</li>
+      </ol>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Sắp xếp nhiều số hữu tỉ theo thứ tự</p>
+      <ol class="steps">
+        <li>Đổi tất cả về cùng một dạng — thường là <b>số thập phân</b> nếu đổi được dễ (\(83\dfrac{1}{5} = 83{,}2\)).</li>
+        <li>Tách riêng nhóm số âm và nhóm số dương: mọi số âm đều nhỏ hơn 0 và nhỏ hơn mọi số dương.</li>
+        <li>Trong nhóm số âm: số nào “xa 0 hơn” thì nhỏ hơn.</li>
+        <li>Viết dãy theo đúng thứ tự đề yêu cầu (tăng hoặc giảm).</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập chung, SGK tr. 14) — Tính hợp lí</p>
+      <p>a) \(A = \dfrac{37}{5} + (-0{,}7) + \dfrac{5}{2} + (-4{,}3) = 7{,}4 + (-0{,}7) + 2{,}5 + (-4{,}3)\)<br>
+      \(= (7{,}4 + 2{,}5) + \big[(-0{,}7) + (-4{,}3)\big] = 9{,}9 + (-5) = 4{,}9\).</p>
+      <p>b) \(B = \dfrac{3}{2}\cdot\left(-\dfrac{37}{10}\right) + \dfrac{17}{2}\cdot\left(-\dfrac{37}{10}\right) = \left(\dfrac{3}{2} + \dfrac{17}{2}\right)\cdot\left(-\dfrac{37}{10}\right) = 10 \cdot \left(-\dfrac{37}{10}\right) = -37\).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Rút gọn biểu thức có luỹ thừa cùng cơ số</p>
+      <ol class="steps">
+        <li>Đưa mọi luỹ thừa về <b>cùng một cơ số</b> (vd. \(125 = 5^3\); \(27 = 3^3\); \(\dfrac{1}{9} = \left(\dfrac{1}{3}\right)^2\)).</li>
+        <li>Đặt thừa số chung ở tử và mẫu rồi rút gọn: \(\dfrac{3^{12} + 3^{15}}{1 + 3^3} = \dfrac{3^{12}(1 + 3^3)}{1 + 3^3} = 3^{12}\).</li>
+        <li>Dùng \(x^m x^n = x^{m+n}\), \(x^m : x^n = x^{m-n}\), \((x^m)^n = x^{mn}\) để thu gọn.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập chung, SGK tr. 23) — Viết gọn bằng luỹ thừa của 10</p>
+      <p>Một năm ánh sáng \(\approx 9\,460\,000\,000\,000\) km \(= 9{,}46 \cdot 10^{12}\) km.</p>
+      <p>Khoảng cách gần nhất từ Mộc tinh đến Trái Đất \(\approx 5{,}88 \cdot 10^{8}\) km, tính theo năm ánh sáng là</p>
+      <p>\[ \frac{5{,}88 \cdot 10^{8}}{9{,}46 \cdot 10^{12}} = \frac{588}{9\,460\,000} = \frac{147}{2\,365\,000} \ \text{(năm ánh sáng)}. \]</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Tìm \(x\) bằng quy tắc chuyển vế</p>
+      <ol class="steps">
+        <li>Bỏ ngoặc, thu gọn hai vế.</li>
+        <li>Chuyển số hạng chứa \(x\) sang một vế, số hạng còn lại sang vế kia (<b>đổi dấu</b>).</li>
+        <li>Đưa về \(ax = b\), rồi \(x = b : a\).</li>
+        <li>Kết luận và (nếu cần) thử lại bằng cách thay \(x\) vào đề.</li>
+      </ol>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Bài toán thực tế dùng số hữu tỉ</p>
+      <ol class="steps">
+        <li>Đọc kĩ, tóm tắt dữ kiện, thống nhất đơn vị (kg với kg, cm với cm…).</li>
+        <li>Chọn phép tính phù hợp: “còn lại” \(\to\) trừ; “mỗi… bao nhiêu” \(\to\) chia; “gấp bao nhiêu lần” \(\to\) chia.</li>
+        <li>Chú ý phép chia không hết khi đếm số vật: lấy <b>phần nguyên</b> của thương (vd. \(120 : 2{,}4 = 50\) cuốn sách).</li>
+        <li>Viết lời giải kèm đơn vị, kết luận đúng câu hỏi của đề.</li>
+      </ol>
+    </div>
+    <div class="box warn">
+      <p>Nhắc lại các lỗi hay gặp của chương: quên đưa mẫu về dương; quên đổi dấu khi bỏ ngoặc hoặc chuyển vế; nhầm \(-3^2\) với \((-3)^2\); nhầm cộng số mũ với nhân số mũ; nhầm số đối với số nghịch đảo.</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Bốn phép tính trong \(\mathbb{Q}\) làm như với phân số; nhớ đủ tính chất để <b>tính hợp lí</b>.</li>
+        <li>Năm công thức luỹ thừa: nhân, chia cùng cơ số; luỹ thừa của luỹ thừa; của một tích; của một thương.</li>
+        <li>Thứ tự phép tính: ngoặc \(\to\) luỹ thừa \(\to\) nhân, chia \(\to\) cộng, trừ.</li>
+        <li>Quy tắc chuyển vế là công cụ chính để tìm \(x\).</li>
+        <li>Bài toán thực tế: tóm tắt — chọn phép tính — tính — trả lời kèm đơn vị.</li>
+      </ul>
+    </div>
+  </article>
+</section>
+
+<section class="chapter" id="toan-chuong-2">
+  <h2 class="chapter-title"><span>Chương II · Số học</span>Số thực</h2>
+
+  <article class="lesson" id="toan-bai-5">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 5</span>Làm quen với số thập phân vô hạn tuần hoàn</h3>
+    <p class="lesson-goal">Cần nắm: thế nào là số thập phân hữu hạn, số thập phân vô hạn tuần hoàn và chu kì; cách làm tròn số căn cứ vào độ chính xác cho trước.</p>
+
+    <h4>1. Số thập phân vô hạn tuần hoàn</h4>
+    <div class="box def">
+      <p>Khi chia 5 cho 18, phép chia <b>không bao giờ chấm dứt</b>: \(\dfrac{5}{18} = 0{,}2777\dots\), chữ số 7 được lặp lại mãi. Những số như \(0{,}2777\dots\); \(-1{,}545454\dots\) gọi là <b>số thập phân vô hạn tuần hoàn</b>.</p>
+      <p>Số \(0{,}2777\dots\) được viết gọn là <span class="kw">\(0{,}2(7)\)</span>; chữ số (hoặc nhóm chữ số) trong ngoặc được lặp lại vô hạn lần và gọi là <span class="kw">chu kì</span>.</p>
+      <p>Các số thập phân đã biết như \(0{,}8\); \(1{,}25\); \(\dots\) được gọi là <b>số thập phân hữu hạn</b>.</p>
+    </div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Phân số</th><th>Dạng thập phân</th><th>Viết gọn</th><th>Chu kì</th><th>Loại</th></tr></thead>
+      <tbody>
+        <tr><td>\(\dfrac{4}{5}\)</td><td>\(0{,}8\)</td><td>\(0{,}8\)</td><td>—</td><td>hữu hạn</td></tr>
+        <tr><td>\(\dfrac{5}{18}\)</td><td>\(0{,}2777\dots\)</td><td>\(0{,}2(7)\)</td><td>\(7\)</td><td>vô hạn tuần hoàn</td></tr>
+        <tr><td>\(-\dfrac{17}{11}\)</td><td>\(-1{,}545454\dots\)</td><td>\(-1{,}(54)\)</td><td>\(54\)</td><td>vô hạn tuần hoàn</td></tr>
+        <tr><td>\(\dfrac{7}{22}\)</td><td>\(0{,}31818\dots\)</td><td>\(0{,}3(18)\)</td><td>\(18\)</td><td>vô hạn tuần hoàn</td></tr>
+      </tbody>
+    </table></div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 (SGK tr. 27) — Chu kì có thể có nhiều hơn một chữ số</p>
+      <p>a) \(\dfrac{7}{22} = 0{,}31818\dots = 0{,}3(18)\) là số thập phân vô hạn tuần hoàn với chu kì là \(18\).</p>
+      <p>b) \(\dfrac{-7}{22} = -\dfrac{7}{22} = -0{,}3(18)\).</p>
+    </div>
+    <div class="box note">
+      <p><b>Chú ý.</b> Mọi số hữu tỉ đều viết được dưới dạng <b>số thập phân hữu hạn</b> hoặc <b>vô hạn tuần hoàn</b>.</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Viết một phân số dưới dạng số thập phân</p>
+      <ol class="steps">
+        <li>Thực hiện phép chia tử cho mẫu.</li>
+        <li>Nếu phép chia <b>kết thúc</b> \(\Rightarrow\) số thập phân hữu hạn.</li>
+        <li>Nếu phép chia không kết thúc: tìm chữ số (hoặc nhóm chữ số) được lặp lại \(\Rightarrow\) đó là chu kì; viết gọn bằng cách đặt chu kì trong dấu ngoặc.</li>
+        <li>Phân số âm: làm với phân số dương rồi đặt dấu “−” ở trước kết quả.</li>
+      </ol>
+    </div>
+    <div class="box note">
+      <p><b>Em có biết (SGK tr. 28).</b> Người ta đã chứng minh được:</p>
+      <ul>
+        <li>Phân số tối giản với mẫu dương mà mẫu <b>không có ước nguyên tố khác 2 và 5</b> thì viết được dưới dạng số thập phân <b>hữu hạn</b>. Chẳng hạn \(\dfrac{3}{40} = \dfrac{3}{2^3 \cdot 5} = \dfrac{75}{1\,000} = 0{,}075\).</li>
+        <li>Phân số tối giản với mẫu dương mà mẫu <b>có ước nguyên tố khác 2 và 5</b> thì viết được dưới dạng số thập phân <b>vô hạn tuần hoàn</b>. Chẳng hạn \(\dfrac{1}{3} = 0{,}333\dots\)</li>
+        <li>Mỗi số thập phân vô hạn tuần hoàn đều biểu diễn một số hữu tỉ: \(0{,}(1) = \dfrac{1}{9}\); \(0{,}(01) = \dfrac{1}{99}\); \(0{,}(17) = \dfrac{17}{99}\); \(0{,}(9) = 1\).</li>
+      </ul>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Viết số thập phân vô hạn tuần hoàn (chu kì bắt đầu ngay sau dấu phẩy) thành phân số</p>
+      <ol class="steps">
+        <li>Đếm số chữ số của chu kì, giả sử là \(k\).</li>
+        <li>Tử số = chu kì; mẫu số = số gồm \(k\) chữ số 9 (\(k = 1 \to 9\); \(k = 2 \to 99\); \(k = 3 \to 999\)).</li>
+        <li>Rút gọn phân số vừa được: \(0{,}(3) = \dfrac{3}{9} = \dfrac{1}{3}\); \(0{,}(12) = \dfrac{12}{99} = \dfrac{4}{33}\).</li>
+      </ol>
+    </div>
+
+    <h4>2. Làm tròn số thập phân căn cứ vào độ chính xác cho trước</h4>
+    <div class="box def">
+      <p>Ta làm tròn số thập phân vô hạn <b>tương tự</b> như làm tròn số thập phân hữu hạn đã học ở lớp 6.</p>
+      <p>Kí hiệu “\(\approx\)” đọc là <b>xấp xỉ</b>. Chẳng hạn \(46{,}333\dots \approx 46\); \(-1{,}27(534) \approx -1{,}28\).</p>
+      <p>Khoảng cách từ điểm 46 đến điểm \(a = 46{,}333\dots\) nhỏ hơn \(0{,}5\), ta nói 46 là kết quả làm tròn của \(a\) với <span class="kw">độ chính xác \(0{,}5\)</span>.</p>
+    </div>
+    <div class="box law" data-label="⚖️ Độ chính xác của kết quả làm tròn">
+      <p>Khi làm tròn số đến một hàng nào đó, kết quả làm tròn có <b>độ chính xác bằng một nửa đơn vị hàng làm tròn</b>.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Độ chính xác khi làm tròn</div>
+      <div class="formula-body">\[ d = \frac{1}{2} \times (\text{đơn vị hàng làm tròn}) \]</div>
+      <ul class="formula-legend">
+        <li>\(d\): độ chính xác của kết quả làm tròn</li>
+        <li>Làm tròn đến hàng trăm \(\Rightarrow d = 50\); hàng chục \(\Rightarrow d = 5\); hàng đơn vị \(\Rightarrow d = 0{,}5\)</li>
+        <li>Hàng phần mười \(\Rightarrow d = 0{,}05\); hàng phần trăm \(\Rightarrow d = 0{,}005\)</li>
+      </ul>
+    </div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Hàng làm tròn</th><th>Độ chính xác</th></tr></thead>
+      <tbody>
+        <tr><td>trăm</td><td>50</td></tr>
+        <tr><td>chục</td><td>5</td></tr>
+        <tr><td>đơn vị</td><td>0,5</td></tr>
+        <tr><td>phần mười</td><td>0,05</td></tr>
+        <tr><td>phần trăm</td><td>0,005</td></tr>
+      </tbody>
+    </table></div>
+    <div class="box method">
+      <p class="box-title">Dạng: Làm tròn số với độ chính xác \(d\) cho trước</p>
+      <ol class="steps">
+        <li>Tra bảng trên để tìm <b>hàng làm tròn</b> ứng với độ chính xác \(d\) (\(d = 0{,}05 \Rightarrow\) hàng phần mười).</li>
+        <li>Xét chữ số <b>ngay sau</b> hàng làm tròn: nhỏ hơn 5 thì giữ nguyên, lớn hơn hoặc bằng 5 thì cộng thêm 1 vào chữ số hàng làm tròn.</li>
+        <li>Bỏ tất cả các chữ số phía sau (nếu chúng ở phần nguyên thì thay bằng chữ số 0).</li>
+        <li>Viết kết quả với dấu \(\approx\).</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 (SGK tr. 28) — Làm tròn số \(12\,591{,}27\)</p>
+      <p>a) Với độ chính xác 50: làm tròn đến <b>hàng trăm</b>, được \(12\,591{,}27 \approx 12\,600\).</p>
+      <p>b) Với độ chính xác \(0{,}05\): làm tròn đến <b>hàng phần mười</b>, được \(12\,591{,}27 \approx 12\,591{,}3\).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Ước lượng kết quả một phép tính</p>
+      <ol class="steps">
+        <li>Làm tròn mỗi thừa số (số hạng) đến hàng thích hợp — thường là hàng đơn vị.</li>
+        <li>Thực hiện phép tính với các số đã làm tròn.</li>
+        <li>Kết luận kết quả gần đúng, vd. \(31{,}(81) \cdot 4{,}9 \approx 32 \cdot 5 = 160\).</li>
+      </ol>
+    </div>
+    <div class="box warn">
+      <p>Chỉ <b>xét một chữ số ngay sau</b> hàng làm tròn, không làm tròn nhiều lần liên tiếp: \(0{,}1449\) làm tròn đến hàng phần trăm là \(0{,}14\) (không phải \(0{,}15\)).</p>
+      <p>Chu kì viết trong ngoặc là lặp <b>vô hạn</b>: \(3{,}2(31) = 3{,}2313131\dots\), chữ số thập phân thứ năm là \(3\), không phải \(1\).</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Số thập phân hữu hạn: phép chia kết thúc; vô hạn tuần hoàn: có chu kì lặp lại mãi, viết gọn bằng ngoặc đơn.</li>
+        <li>Mọi số hữu tỉ đều viết được dạng thập phân hữu hạn hoặc vô hạn tuần hoàn.</li>
+        <li>Độ chính xác \(=\) một nửa đơn vị hàng làm tròn: \(50\) – trăm, \(5\) – chục, \(0{,}5\) – đơn vị, \(0{,}05\) – phần mười, \(0{,}005\) – phần trăm.</li>
+        <li>Làm tròn: xét chữ số liền sau hàng làm tròn, \(\ge 5\) thì tăng thêm 1.</li>
+        <li>Ước lượng: làm tròn các số rồi mới tính.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-6">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 6</span>Số vô tỉ. Căn bậc hai số học</h3>
+    <p class="lesson-goal">Cần nắm: thế nào là số vô tỉ; định nghĩa căn bậc hai số học của một số không âm; cách tính căn bậc hai số học bằng máy tính cầm tay.</p>
+
+    <h4>1. Số vô tỉ</h4>
+    <div class="box def">
+      <p><b>Số vô tỉ</b> là số viết được dưới dạng <span class="kw">số thập phân vô hạn không tuần hoàn</span>.</p>
+      <p>Tập hợp các số vô tỉ được kí hiệu là <span class="kw">\(\mathbb{I}\)</span>.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Bài toán dẫn đến số vô tỉ (SGK tr. 29)</p>
+      <p>Hình vuông có diện tích \(2\ \text{dm}^2\). Gọi độ dài cạnh là \(x\) (dm), \(x &gt; 0\) thì \(x^2 = 2\).</p>
+      <p>Người ta đã chứng minh được <b>không có số hữu tỉ nào</b> mà bình phương bằng 2, và tính được</p>
+      <p>\[ x = 1{,}4142135623730950488016887\dots \]</p>
+      <p>Đây không là số thập phân hữu hạn, cũng không là số thập phân vô hạn tuần hoàn — đó là một <b>số vô tỉ</b>.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 (SGK tr. 30)</p>
+      <p>Tỉ số giữa chu vi và đường kính của một đường tròn luôn bằng \(3{,}14159265358\dots\) — đó là số vô tỉ, kí hiệu \(\pi\) (đọc là “pi”).</p>
+      <p>Số \(-0{,}10100100\dots\) (sau dấu phẩy viết liên tiếp các số 10; 100; 1 000; …) cũng là số vô tỉ.</p>
+    </div>
+    <div class="box note">
+      <p><b>Chú ý.</b> Ta cũng làm tròn số thập phân vô hạn như làm tròn số thập phân hữu hạn. Chẳng hạn làm tròn \(0{,}1010010001\dots\) đến chữ số thập phân thứ ba được \(0{,}101\).</p>
+    </div>
+
+    <h4>2. Căn bậc hai số học</h4>
+    <div class="box def">
+      <p><b>Căn bậc hai số học</b> của một số \(a\) <span class="kw">không âm</span>, kí hiệu \(\sqrt{a}\), là số \(x\) <span class="kw">không âm</span> sao cho \(x^2 = a\).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Căn bậc hai số học của số a không âm</div>
+      <div class="formula-body">\[ \sqrt{a} = x \iff \begin{cases} x \ge 0 \\ x^2 = a \end{cases} \qquad (a \ge 0) \]</div>
+      <ul class="formula-legend">
+        <li>\(a\): số không âm (biểu thức dưới dấu căn)</li>
+        <li>\(x = \sqrt{a}\): căn bậc hai số học của \(a\), luôn <b>không âm</b></li>
+        <li>Hệ quả: \(\left(\sqrt{a}\right)^2 = a\) với \(a \ge 0\)</li>
+      </ul>
+      <div class="formula-note">Với \(a &gt; 0\): \(\sqrt{a^2} = a\). Cạnh hình vuông có diện tích \(a\) bằng \(\sqrt{a}\).</div>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 (SGK tr. 30)</p>
+      <p>a) Vì \(10^2 = 100\) và \(10 &gt; 0\) nên \(\sqrt{100} = 10\).</p>
+      <p>b) Vì \(191 &gt; 0\) nên \(\sqrt{191^2} = 191\). &nbsp; c) Tương tự \(\sqrt{21{,}5^2} = 21{,}5\).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Tìm căn bậc hai số học của một số tự nhiên</p>
+      <ol class="steps">
+        <li>Thử xem số đó có phải <b>bình phương</b> của một số tự nhiên quen thuộc không (\(1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144\dots\)).</li>
+        <li>Nếu số lớn: <b>phân tích ra thừa số nguyên tố</b> rồi ghép thành bình phương. Chẳng hạn \(324 = 2^2 \cdot 3^4 = (2 \cdot 3^2)^2 = 18^2\) nên \(\sqrt{324} = 18\).</li>
+        <li>Nếu không phải số chính phương: dùng <b>máy tính cầm tay</b> và làm tròn theo yêu cầu.</li>
+      </ol>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Tính cạnh của hình vuông khi biết diện tích</p>
+      <ol class="steps">
+        <li>Đổi diện tích về cùng một đơn vị (chú ý \(1\ \text{ha} = 10\,000\ \text{m}^2\)).</li>
+        <li>Cạnh \(= \sqrt{\text{diện tích}}\).</li>
+        <li>Nếu đề hỏi chu vi thì nhân cạnh với 4; nếu hỏi số viên gạch thì lấy diện tích sân chia diện tích một viên.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Vận dụng 2, SGK tr. 30)</p>
+      <p>Sàn thi đấu hình vuông có diện tích \(144\ \text{m}^2\) \(\Rightarrow\) cạnh \(= \sqrt{144} = 12\) (m) \(\Rightarrow\) chu vi \(= 4 \cdot 12 = 48\) (m).</p>
+    </div>
+
+    <h4>3. Tính căn bậc hai số học bằng máy tính cầm tay</h4>
+    <div class="box note">
+      <p>Bấm phím căn bậc hai rồi nhập số, sau đó bấm “=”. Chẳng hạn \(\sqrt{2} \approx 1{,}414213562\); \(\sqrt{1\,024} = 32\).</p>
+      <p><b>Chú ý.</b> Màn hình máy tính chỉ hiển thị được một số hữu hạn chữ số, nên kết quả của các số thập phân vô hạn đều đã được <b>làm tròn</b>: \(\sqrt{2} \approx 1{,}414213562\) (làm tròn đến chữ số thập phân thứ chín).</p>
+      <p>Căn bậc hai số học của một số tự nhiên <b>không chính phương</b> luôn là một <b>số vô tỉ</b>.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 (SGK tr. 31) — Tính \(\sqrt{91}\) rồi làm tròn</p>
+      <p>Máy tính cho \(\sqrt{91} = 9{,}539392014\dots\)</p>
+      <p>a) Làm tròn đến chữ số thập phân thứ tư: \(\sqrt{91} \approx 9{,}5394\).</p>
+      <p>b) Với độ chính xác \(0{,}05\) (làm tròn đến hàng phần mười): \(\sqrt{91} \approx 9{,}5\).</p>
+    </div>
+    <div class="box warn">
+      <p>\(\sqrt{a}\) chỉ có nghĩa khi \(a \ge 0\), và \(\sqrt{a}\) <b>luôn không âm</b>: viết \(\sqrt{9} = -3\) là <b>sai</b>, đúng là \(\sqrt{9} = 3\).</p>
+      <p>Không nhầm \(\sqrt{a}\) với \(\dfrac{a}{2}\): \(\sqrt{16} = 4\) chứ không phải 8.</p>
+      <p>Công thức \(\sqrt{a^2} = a\) trong SGK dùng cho \(a &gt; 0\). Nếu \(a\) có thể âm thì phải viết \(\sqrt{a^2} = |a|\), vd. \(\sqrt{(-5)^2} = \sqrt{25} = 5 = |-5|\).</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Số vô tỉ = số thập phân <b>vô hạn không tuần hoàn</b>; tập hợp kí hiệu \(\mathbb{I}\). Ví dụ: \(\pi\), \(\sqrt{2}\).</li>
+        <li>\(\sqrt{a}\) (với \(a \ge 0\)) là số <b>không âm</b> có bình phương bằng \(a\).</li>
+        <li>\(\left(\sqrt{a}\right)^2 = a\) và \(\sqrt{a^2} = a\) khi \(a &gt; 0\).</li>
+        <li>Cạnh hình vuông diện tích \(a\) bằng \(\sqrt{a}\).</li>
+        <li>Căn bậc hai số học của số tự nhiên không chính phương là số vô tỉ — dùng máy tính rồi làm tròn.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-7">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 7</span>Tập hợp các số thực</h3>
+    <p class="lesson-goal">Cần nắm: khái niệm số thực và trục số thực; thứ tự trong tập hợp các số thực; giá trị tuyệt đối của một số thực.</p>
+
+    <h4>1. Khái niệm số thực và trục số thực</h4>
+    <div class="box def">
+      <p><b>Số hữu tỉ</b> và <b>số vô tỉ</b> được gọi chung là <span class="kw">số thực</span>.</p>
+      <p>Tập hợp các số thực được kí hiệu là <span class="kw">\(\mathbb{R}\)</span>.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Quan hệ giữa các tập hợp số</div>
+      <div class="formula-body">\[ \mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}, \qquad \mathbb{I} \subset \mathbb{R} \]</div>
+      <ul class="formula-legend">
+        <li>\(\mathbb{N}\): số tự nhiên · \(\mathbb{Z}\): số nguyên · \(\mathbb{Q}\): số hữu tỉ</li>
+        <li>\(\mathbb{I}\): số vô tỉ · \(\mathbb{R}\): số thực</li>
+        <li>Mỗi số thực viết được dưới dạng số thập phân hữu hạn hoặc vô hạn (tuần hoàn hoặc không tuần hoàn)</li>
+      </ul>
+      <div class="formula-note">Chẳng hạn \(\dfrac{3}{4} = 0{,}75\); \(\dfrac{1}{9} = 0{,}111\dots = 0{,}(1)\); \(\sqrt{2} = 1{,}4142\dots\) đều là số thực.</div>
+    </div>
+    <div class="box note">
+      <p><b>Chú ý.</b> Cũng như số hữu tỉ, mỗi số thực \(a\) đều có một <b>số đối</b>, kí hiệu là \(-a\).</p>
+      <p>Trong tập số thực cũng có các phép toán với các tính chất <b>như trong tập số hữu tỉ</b>.</p>
+    </div>
+    <div class="box law" data-label="⚖️ Trục số thực">
+      <p>Mỗi số thực đều được biểu diễn bởi <b>một điểm</b> trên trục số.</p>
+      <p>Ngược lại, mỗi điểm trên trục số đều biểu diễn <b>một số thực</b>.</p>
+      <p>Vì thế các số thực <span class="kw">lấp đầy</span> trục số; người ta cũng gọi trục số là <b>trục số thực</b>.</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 440 150" width="440" role="img" aria-label="Dựng điểm biểu diễn căn hai trên trục số bằng nửa đường chéo hình vuông cạnh 2">
+        <defs>
+          <marker id="t7-arr2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+            <path d="M0 0 L10 5 L0 10 z" class="accent-fill"/>
+          </marker>
+        </defs>
+        <rect x="20" y="20" width="80" height="80" class="stroke" fill="none" stroke-width="1.6"/>
+        <line x1="20" y1="20" x2="100" y2="100" class="stroke" stroke-width="1" stroke-dasharray="4 3"/>
+        <line x1="100" y1="20" x2="20" y2="100" class="stroke" stroke-width="1" stroke-dasharray="4 3"/>
+        <circle cx="60" cy="60" r="3" class="accent-fill"/>
+        <text x="14" y="16" font-size="12" font-style="italic">M</text>
+        <text x="100" y="16" font-size="12" font-style="italic">N</text>
+        <text x="8" y="112" font-size="12" font-style="italic">Q</text>
+        <text x="100" y="112" font-size="12" font-style="italic">P</text>
+        <text x="64" y="56" font-size="12" font-style="italic">E</text>
+        <text x="50" y="14" font-size="12">2</text>
+        <line x1="150" y1="90" x2="430" y2="90" class="stroke" stroke-width="1.2" marker-end="url(#t7-arr2)"/>
+        <circle cx="200" cy="90" r="56" class="accent" stroke-width="1.2" stroke-dasharray="5 4"/>
+        <g class="stroke" stroke-width="1.2">
+          <line x1="200" y1="85" x2="200" y2="95"/><line x1="240" y1="85" x2="240" y2="95"/>
+          <line x1="280" y1="85" x2="280" y2="95"/><line x1="320" y1="85" x2="320" y2="95"/>
+          <line x1="160" y1="85" x2="160" y2="95"/>
+        </g>
+        <circle cx="200" cy="90" r="3" class="accent-fill"/>
+        <circle cx="256" cy="90" r="3.5" class="accent-fill"/>
+        <text x="194" y="110" font-size="12" font-style="italic">O</text>
+        <text x="252" y="110" font-size="12" font-style="italic">A</text>
+        <text x="236" y="132" font-size="12">1</text>
+        <text x="316" y="132" font-size="12">2</text>
+        <text x="420" y="110" font-size="13" font-style="italic">x</text>
+      </svg>
+      <figcaption>Hình vuông \(MNPQ\) cạnh 2, \(E\) là giao hai đường chéo nên \(ME = \sqrt{2}\). Vẽ đường tròn tâm \(O\) bán kính \(ME\): giao điểm \(A\) với tia \(Ox\) là điểm biểu diễn \(\sqrt{2}\).</figcaption>
+    </figure>
+
+    <h4>2. Thứ tự trong tập hợp các số thực</h4>
+    <div class="box law" data-label="⚖️ Tính chất thứ tự trong ℝ">
+      <p>Các số thực đều viết được dưới dạng số thập phân, nên có thể so sánh hai số thực <b>tương tự</b> như so sánh hai số hữu tỉ viết dưới dạng số thập phân.</p>
+      <p>Với hai số thực \(a\), \(b\) bất kì, ta luôn có \(a = b\) hoặc \(a &lt; b\) hoặc \(a &gt; b\).</p>
+      <p><b>Bắc cầu:</b> nếu \(a &lt; b\) và \(b &lt; c\) thì \(a &lt; c\).</p>
+      <p>Trên trục số thực, nếu \(a &lt; b\) thì điểm \(a\) nằm <b>trước</b> điểm \(b\). Điểm nằm trước gốc \(O\) biểu diễn <b>số âm</b> (\(x &lt; 0\)), nằm sau \(O\) biểu diễn <b>số dương</b> (\(x &gt; 0\)).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">So sánh hai căn bậc hai số học</div>
+      <div class="formula-body">\[ 0 &lt; a &lt; b \;\Longrightarrow\; \sqrt{a} &lt; \sqrt{b} \]</div>
+      <ul class="formula-legend">
+        <li>\(a\), \(b\): hai số dương</li>
+        <li>Dùng để so sánh căn bậc hai với một số hữu tỉ: đưa số hữu tỉ vào trong căn</li>
+      </ul>
+      <div class="formula-note">Chẳng hạn \(\sqrt{2} &lt; \sqrt{5}\) vì \(2 &lt; 5\); \(\sqrt{5} &gt; 2\) vì \(5 &gt; 4 = 2^2\).</div>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: So sánh hai số thực</p>
+      <ol class="steps">
+        <li>Viết cả hai số dưới dạng <b>số thập phân</b> (số vô hạn tuần hoàn thì bung chu kì ra vài chữ số).</li>
+        <li>So sánh phần nguyên trước, rồi lần lượt từng chữ số sau dấu phẩy cho đến khi khác nhau.</li>
+        <li>Với hai số <b>âm</b>: so sánh hai số đối rồi đảo chiều kết luận (số nào có giá trị tuyệt đối lớn hơn thì nhỏ hơn).</li>
+        <li>Với căn bậc hai: dùng \(0 &lt; a &lt; b \Rightarrow \sqrt{a} &lt; \sqrt{b}\) hoặc dùng máy tính cầm tay.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (SGK tr. 34–35)</p>
+      <p>\(0{,}24(7) = 0{,}2477\dots &gt; 0{,}2382\dots\) nên \(0{,}24(7) &gt; 0{,}2382\dots\)</p>
+      <p>\(\sqrt{2} = 1{,}414\dots &gt; 1{,}410\) nên \(-\sqrt{2} &lt; -1{,}41\).</p>
+    </div>
+
+    <h4>3. Giá trị tuyệt đối của một số thực</h4>
+    <div class="box def">
+      <p><b>Khoảng cách</b> từ điểm \(a\) trên trục số đến gốc \(O\) là <span class="kw">giá trị tuyệt đối</span> của số \(a\), kí hiệu \(|a|\).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Giá trị tuyệt đối của số thực a</div>
+      <div class="formula-body">\[ |a| = \begin{cases} a & \text{khi } a &gt; 0 \\ -a & \text{khi } a &lt; 0 \\ 0 & \text{khi } a = 0 \end{cases} \]</div>
+      <ul class="formula-legend">
+        <li>\(a\): một số thực bất kì</li>
+        <li>\(|a|\): khoảng cách từ điểm \(a\) đến gốc \(O\) — luôn <b>không âm</b></li>
+        <li>Hai số đối nhau có giá trị tuyệt đối <b>bằng nhau</b>: \(|a| = |-a|\)</li>
+      </ul>
+      <div class="formula-note">\(|2| = 2\); \(\left|\dfrac{5}{8}\right| = \dfrac{5}{8}\); \(|-2| = 2\); \(|-5{,}1| = 5{,}1\); \(\left|-\sqrt{2}\right| = \sqrt{2}\); \(|0| = 0\).</div>
+    </div>
+    <div class="box note">
+      <p><b>Nhận xét.</b> Giá trị tuyệt đối của 0 là 0; của một <b>số dương</b> là chính nó; của một <b>số âm</b> là số đối của nó.</p>
+      <p>Nhờ nhận xét này, ta tính được giá trị tuyệt đối của một số thực bất kì mà <b>không cần</b> biểu diễn nó trên trục số.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập 4 và Bài tập 2.18, SGK tr. 36)</p>
+      <p>\(|-2{,}3| = 2{,}3\); \(\left|\dfrac{7}{5}\right| = \dfrac{7}{5}\); \(|-11| = 11\); \(\left|-\sqrt{8}\right| = \sqrt{8}\).</p>
+      <p>Tìm mọi số thực \(x\) thoả mãn \(|x| = 2{,}5\): có hai số là \(x = 2{,}5\) và \(x = -2{,}5\).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Tìm \(x\) biết \(|x| = m\)</p>
+      <ol class="steps">
+        <li>Nếu \(m &lt; 0\): <b>không có</b> giá trị nào của \(x\) (vì \(|x| \ge 0\)).</li>
+        <li>Nếu \(m = 0\): \(x = 0\).</li>
+        <li>Nếu \(m &gt; 0\): có <b>hai</b> giá trị \(x = m\) và \(x = -m\).</li>
+      </ol>
+    </div>
+    <div class="box warn">
+      <p>Viết \(|-2{,}5| = -2{,}5\) là <b>sai</b> — giá trị tuyệt đối không bao giờ âm; đúng là \(|-2{,}5| = 2{,}5\).</p>
+      <p>Trong hai số âm, số có <b>giá trị tuyệt đối lớn hơn</b> là số <b>bé hơn</b>: \(|-12{,}7| &gt; |-7{,}12|\) nên \(-12{,}7 &lt; -7{,}12\).</p>
+    </div>
+    <div class="box tip">
+      <p>Nhân hai số khác dấu: nhân hai <b>giá trị tuyệt đối</b> rồi đặt dấu “−” trước kết quả — \((-2{,}5)\cdot 3 = -(2{,}5 \cdot 3) = -7{,}5\).</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Số thực \(=\) số hữu tỉ \(+\) số vô tỉ; tập hợp \(\mathbb{R}\); \(\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}\).</li>
+        <li>Mỗi điểm trên trục số biểu diễn một số thực và ngược lại — trục số thực.</li>
+        <li>So sánh hai số thực như so sánh hai số thập phân; \(0 &lt; a &lt; b \Rightarrow \sqrt{a} &lt; \sqrt{b}\).</li>
+        <li>\(|a|\) là khoảng cách từ điểm \(a\) đến \(O\): bằng \(a\) nếu \(a \ge 0\), bằng \(-a\) nếu \(a &lt; 0\).</li>
+        <li>\(|x| = m &gt; 0\) cho <b>hai</b> nghiệm \(x = \pm m\); \(|x| = m &lt; 0\) vô nghiệm.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-on-tap-chuong-2">
+    <h3 class="lesson-title"><span class="lesson-no">Ôn tập</span>Ôn tập Chương II</h3>
+    <p class="lesson-goal">Tóm tắt: số thập phân vô hạn tuần hoàn, làm tròn theo độ chính xác, số vô tỉ, căn bậc hai số học, số thực và giá trị tuyệt đối; các dạng bài trong Luyện tập chung và Bài tập cuối chương II.</p>
+
+    <h4>1. Tóm tắt kiến thức</h4>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Nội dung</th><th>Ghi nhớ</th></tr></thead>
+      <tbody>
+        <tr><td>Số thập phân hữu hạn</td><td>Phép chia kết thúc; mẫu tối giản dương chỉ có ước nguyên tố 2 và 5</td></tr>
+        <tr><td>Số thập phân vô hạn tuần hoàn</td><td>Có chu kì lặp mãi, viết gọn \(0{,}2(7)\); biểu diễn một số hữu tỉ</td></tr>
+        <tr><td>Độ chính xác</td><td>Bằng nửa đơn vị hàng làm tròn: 50 · 5 · 0,5 · 0,05 · 0,005</td></tr>
+        <tr><td>Số vô tỉ</td><td>Thập phân vô hạn <b>không</b> tuần hoàn; tập hợp \(\mathbb{I}\); vd. \(\pi\), \(\sqrt{2}\)</td></tr>
+        <tr><td>Căn bậc hai số học</td><td>\(\sqrt{a} = x \iff x \ge 0\) và \(x^2 = a\) (\(a \ge 0\)); \(\left(\sqrt{a}\right)^2 = a\)</td></tr>
+        <tr><td>Số thực</td><td>\(\mathbb{R} = \mathbb{Q} \cup \mathbb{I}\); mỗi điểm trên trục số \(\leftrightarrow\) một số thực</td></tr>
+        <tr><td>So sánh</td><td>Như so sánh số thập phân; \(0 &lt; a &lt; b \Rightarrow \sqrt{a} &lt; \sqrt{b}\)</td></tr>
+        <tr><td>Giá trị tuyệt đối</td><td>\(|a| = a\) khi \(a \ge 0\); \(|a| = -a\) khi \(a &lt; 0\); \(|a| \ge 0\)</td></tr>
+      </tbody>
+    </table></div>
+    <div class="flow"><span>\(\mathbb{N}\)</span><i>⊂</i><span>\(\mathbb{Z}\)</span><i>⊂</i><span>\(\mathbb{Q}\)</span><i>⊂</i><span>\(\mathbb{R}\)</span><i>⊃</i><span>\(\mathbb{I}\)</span></div>
+
+    <h4>2. Các dạng toán thường gặp</h4>
+    <div class="box method">
+      <p class="box-title">Dạng: Phân loại các số vào \(\mathbb{Q}\), \(\mathbb{I}\), \(\mathbb{R}\)</p>
+      <ol class="steps">
+        <li>Số nguyên, phân số, số thập phân hữu hạn, số thập phân vô hạn <b>tuần hoàn</b> \(\Rightarrow\) số hữu tỉ.</li>
+        <li>Căn bậc hai số học của số <b>chính phương</b> là số hữu tỉ (\(\sqrt{81} = 9\)); của số không chính phương là số vô tỉ (\(\sqrt{15}\)).</li>
+        <li>Số thập phân vô hạn <b>không tuần hoàn</b> \(\Rightarrow\) số vô tỉ.</li>
+        <li>Tất cả các số trên đều là số thực.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Bài tập 2.13, SGK tr. 36)</p>
+      <p>Với \(A = \left\{7{,}1;\ -2{,}(61);\ 0;\ 5{,}14;\ \dfrac{4}{7};\ \sqrt{15};\ -\sqrt{81}\right\}\):</p>
+      <p>Các số hữu tỉ: \(7{,}1\); \(-2{,}(61)\); \(0\); \(5{,}14\); \(\dfrac{4}{7}\); \(-\sqrt{81} = -9\).</p>
+      <p>Số vô tỉ: \(\sqrt{15}\) (vì 15 không là số chính phương).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Điền chữ số thích hợp để có bất đẳng thức đúng</p>
+      <ol class="steps">
+        <li>Viết cả hai số dưới dạng thập phân đủ chữ số (bung chu kì nếu có).</li>
+        <li>So sánh lần lượt các chữ số cùng hàng từ trái sang phải.</li>
+        <li>Tại hàng có dấu “?”, chọn chữ số thoả mãn chiều bất đẳng thức — chú ý với số <b>âm</b> thì chiều so sánh <b>ngược lại</b>.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập chung, SGK tr. 37) — Tính \(\sqrt{3^2}\); \(\left(\sqrt{4{,}1}\right)^2\); \(\sqrt{a^2}\) với \(a &gt; 0\)</p>
+      <p>\(\sqrt{3^2} = 3\) vì \(3 &gt; 0\); \(\left(\sqrt{4{,}1}\right)^2 = 4{,}1\) (theo định nghĩa căn bậc hai số học); tương tự \(\sqrt{a^2} = a\).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Dùng căn bậc hai trong bài toán hình học – thực tế</p>
+      <ol class="steps">
+        <li>Lập biểu thức: cạnh hình vuông \(= \sqrt{S}\); đường chéo hình chữ nhật \(= \sqrt{a^2 + b^2}\) (bình phương đường chéo bằng tổng bình phương hai cạnh).</li>
+        <li>Thay số, dùng máy tính cầm tay.</li>
+        <li>Làm tròn đúng yêu cầu (đến hàng phần mười, hoặc với độ chính xác cho trước) rồi ghi đơn vị.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Bài tập 2.11, SGK tr. 32) — Đường chéo hình chữ nhật 8 dm × 5 dm</p>
+      <p>Bình phương đường chéo \(= 8^2 + 5^2 = 64 + 25 = 89\) \(\Rightarrow\) đường chéo \(= \sqrt{89} \approx 9{,}4\) (dm).</p>
+    </div>
+    <div class="box warn">
+      <p>Nhắc lại các lỗi hay gặp của chương: nghĩ \(\sqrt{a}\) có hai giá trị (căn bậc hai <b>số học</b> chỉ lấy giá trị không âm); quên rằng chu kì lặp vô hạn khi đếm chữ số thập phân; lẫn “làm tròn đến hàng phần mười” với “độ chính xác 0,1” (độ chính xác của hàng phần mười là \(0{,}05\)); viết giá trị tuyệt đối ra số âm.</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Số hữu tỉ \(\leftrightarrow\) thập phân hữu hạn hoặc vô hạn tuần hoàn; số vô tỉ \(\leftrightarrow\) thập phân vô hạn không tuần hoàn.</li>
+        <li>Độ chính xác \(=\) nửa đơn vị hàng làm tròn.</li>
+        <li>\(\sqrt{a}\) luôn không âm; \(\left(\sqrt{a}\right)^2 = a\); \(\sqrt{a^2} = a\) khi \(a &gt; 0\).</li>
+        <li>\(\mathbb{R}\) lấp đầy trục số; so sánh số thực như so sánh số thập phân.</li>
+        <li>\(|a|\) là khoảng cách tới \(O\), luôn \(\ge 0\); trong hai số âm, số có \(|\cdot|\) lớn hơn thì bé hơn.</li>
+      </ul>
+    </div>
+  </article>
+</section>
+
+<section class="chapter" id="toan-chuong-3">
+  <h2 class="chapter-title"><span>Chương III · Hình học</span>Góc và đường thẳng song song</h2>
+
+  <article class="lesson" id="toan-bai-8">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 8</span>Góc ở vị trí đặc biệt. Tia phân giác của một góc</h3>
+    <p class="lesson-goal">Cần nắm: thế nào là hai góc kề bù, hai góc đối đỉnh và tính chất của chúng; định nghĩa, tính chất và cách vẽ tia phân giác của một góc.</p>
+
+    <h4>1. Hai góc kề bù</h4>
+    <div class="box def">
+      <p>Hai góc có <span class="kw">một cạnh chung</span>, hai cạnh còn lại là <span class="kw">hai tia đối nhau</span> được gọi là <b>hai góc kề bù</b>.</p>
+      <p>Trong hình dưới, \(Ox\) và \(Oy\) là hai tia đối nhau nên \(\widehat{xOz}\) và \(\widehat{zOy}\) là hai góc kề bù (cạnh chung là \(Oz\)).</p>
+    </div>
+    <div class="box law" data-label="⚖️ Tính chất hai góc kề bù">
+      <p>Hai góc kề bù có <b>tổng số đo bằng \(180^\circ\)</b>.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Tổng hai góc kề bù</div>
+      <div class="formula-body">\[ \widehat{xOz} + \widehat{zOy} = 180^\circ \]</div>
+      <ul class="formula-legend">
+        <li>\(Ox\), \(Oy\): hai tia <b>đối nhau</b>; \(Oz\): cạnh chung của hai góc</li>
+        <li>Suy ra: \(\widehat{xOz} = 180^\circ - \widehat{zOy}\)</li>
+        <li>Đơn vị số đo góc: độ (\(^\circ\))</li>
+      </ul>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 320 140" width="320" role="img" aria-label="Hai góc kề bù xOz và zOy">
+        <line x1="20" y1="100" x2="300" y2="100" class="stroke" stroke-width="1.6"/>
+        <line x1="160" y1="100" x2="244" y2="21" class="stroke" stroke-width="1.6"/>
+        <path d="M193.6 68.6 A46 46 0 0 0 114 100" class="accent" stroke-width="1.8"/>
+        <path d="M194 100 A34 34 0 0 0 184.9 76.8" class="accent" stroke-width="1.8"/>
+        <circle cx="160" cy="100" r="2.6" class="accent-fill"/>
+        <text x="14" y="116" font-size="13" font-style="italic">x</text>
+        <text x="296" y="116" font-size="13" font-style="italic">y</text>
+        <text x="248" y="18" font-size="13" font-style="italic">z</text>
+        <text x="152" y="118" font-size="13" font-style="italic">O</text>
+        <text x="122" y="64" font-size="12">xOz</text>
+        <text x="196" y="86" font-size="12">zOy</text>
+      </svg>
+      <figcaption>Hai góc kề bù \(\widehat{xOz}\) và \(\widehat{zOy}\): chung cạnh \(Oz\), hai cạnh còn lại \(Ox\), \(Oy\) là hai tia đối nhau.</figcaption>
+    </figure>
+    <div class="box note">
+      <p><b>Chú ý 1.</b> Hai góc kề bù còn được hiểu là hai góc vừa <b>kề nhau</b>, vừa <b>bù nhau</b>, trong đó:</p>
+      <ul>
+        <li><b>Hai góc kề nhau</b> là hai góc có một cạnh chung và hai cạnh còn lại nằm <b>khác phía nhau</b> đối với đường thẳng chứa cạnh chung đó.</li>
+        <li><b>Hai góc bù nhau</b> là hai góc có tổng số đo bằng \(180^\circ\).</li>
+      </ul>
+      <p><b>Chú ý 2.</b> Nếu điểm \(M\) nằm trong góc \(xOy\) thì tia \(OM\) <b>nằm giữa</b> hai cạnh \(Ox\), \(Oy\). Khi đó \(\widehat{xOM} + \widehat{MOy} = \widehat{xOy}\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập 1, SGK tr. 42)</p>
+      <p>Trong Hình 3.4, \(Om\) và \(On\) là hai tia đối nhau, \(\widehat{tOn} = 60^\circ\). Hai góc kề bù là \(\widehat{mOt}\) và \(\widehat{tOn}\).</p>
+      <p>Do đó \(\widehat{mOt} = 180^\circ - \widehat{tOn} = 180^\circ - 60^\circ = 120^\circ\).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Tính số đo góc nhờ hai góc kề bù</p>
+      <ol class="steps">
+        <li>Tìm trên hình <b>hai tia đối nhau</b> (thường nằm trên một đường thẳng) và cạnh chung.</li>
+        <li>Chỉ rõ cặp góc kề bù, viết \(\widehat{\dots} + \widehat{\dots} = 180^\circ\).</li>
+        <li>Thay số đo đã biết rồi tính góc còn lại.</li>
+        <li>Nếu trong góc có thêm một tia nằm giữa: dùng \(\widehat{xOM} + \widehat{MOy} = \widehat{xOy}\).</li>
+      </ol>
+    </div>
+
+    <h4>2. Hai góc đối đỉnh</h4>
+    <div class="box def">
+      <p><b>Hai góc đối đỉnh</b> là hai góc mà <span class="kw">mỗi cạnh của góc này là tia đối của một cạnh của góc kia</span>.</p>
+      <p>Hai đường thẳng \(xx'\) và \(yy'\) cắt nhau tại \(O\) tạo thành hai cặp góc đối đỉnh: \(\widehat{xOy}\) và \(\widehat{x'Oy'}\); \(\widehat{xOy'}\) và \(\widehat{x'Oy}\).</p>
+    </div>
+    <div class="box law" data-label="⚖️ Tính chất hai góc đối đỉnh">
+      <p>Hai góc đối đỉnh thì <b>bằng nhau</b>.</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 320 150" width="320" role="img" aria-label="Hai đường thẳng cắt nhau tạo hai cặp góc đối đỉnh">
+        <line x1="40" y1="117" x2="280" y2="33" class="stroke" stroke-width="1.6"/>
+        <line x1="50" y1="25" x2="270" y2="124" class="stroke" stroke-width="1.6"/>
+        <path d="M194.7 90.6 A38 38 0 0 0 195.9 62.4" class="accent" stroke-width="1.8"/>
+        <path d="M125.3 59.4 A38 38 0 0 0 124.1 87.6" class="accent" stroke-width="1.8"/>
+        <circle cx="160" cy="75" r="2.6" class="accent-fill"/>
+        <text x="284" y="32" font-size="13" font-style="italic">x</text>
+        <text x="28" y="126" font-size="13" font-style="italic">x'</text>
+        <text x="272" y="136" font-size="13" font-style="italic">y</text>
+        <text x="40" y="22" font-size="13" font-style="italic">y'</text>
+        <text x="152" y="92" font-size="13" font-style="italic">O</text>
+        <text x="200" y="80" font-size="12">xOy</text>
+        <text x="86" y="76" font-size="12">x'Oy'</text>
+      </svg>
+      <figcaption>\(\widehat{xOy}\) và \(\widehat{x'Oy'}\) là hai góc đối đỉnh nên \(\widehat{xOy} = \widehat{x'Oy'}\).</figcaption>
+    </figure>
+    <div class="box example">
+      <p class="box-title">Tập suy luận (SGK tr. 42) — Vì sao hai góc đối đỉnh bằng nhau?</p>
+      <p>Gọi \(\widehat{O_1} = \widehat{xOy}\), \(\widehat{O_2} = \widehat{x'Oy'}\) và \(\widehat{O_3}\) là góc kề bù với cả hai góc đó.</p>
+      <p>Vì \(\widehat{O_1}\) và \(\widehat{O_3}\) kề bù nên \(\widehat{O_1} + \widehat{O_3} = 180^\circ\). &nbsp;(1)</p>
+      <p>Vì \(\widehat{O_2}\) và \(\widehat{O_3}\) kề bù nên \(\widehat{O_2} + \widehat{O_3} = 180^\circ\). &nbsp;(2)</p>
+      <p>Từ (1) và (2): \(\widehat{O_1} + \widehat{O_3} = \widehat{O_2} + \widehat{O_3}\), suy ra \(\widehat{O_1} = \widehat{O_2}\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 (SGK tr. 43)</p>
+      <p>Hai đường thẳng \(xx'\), \(yy'\) cắt nhau tại \(O\), biết \(\widehat{xOy} = 60^\circ\).</p>
+      <p>\(\widehat{x'Oy'} = \widehat{xOy} = 60^\circ\) (hai góc đối đỉnh).</p>
+      <p>\(\widehat{x'Oy} + \widehat{xOy} = 180^\circ\) (hai góc kề bù) \(\Rightarrow \widehat{x'Oy} = 180^\circ - 60^\circ = 120^\circ\).</p>
+    </div>
+    <div class="box note">
+      <p><b>Chú ý.</b> Hai đường thẳng \(xx'\), \(yy'\) cắt nhau và trong các góc tạo thành có <b>một góc vuông</b> thì được gọi là <b>hai đường thẳng vuông góc</b>, kí hiệu \(xx' \perp yy'\).</p>
+      <p>Khi đó cả bốn góc tạo thành đều là góc vuông (theo tính chất hai góc kề bù và hai góc đối đỉnh).</p>
+    </div>
+    <div class="box warn">
+      <p>Hai góc đối đỉnh thì bằng nhau, nhưng <b>hai góc bằng nhau chưa chắc đối đỉnh</b> (chẳng hạn hai góc \(30^\circ\) vẽ ở hai chỗ khác nhau).</p>
+      <p>Đừng nhầm <b>kề bù</b> (chung cạnh, hai cạnh kia đối nhau, tổng \(180^\circ\)) với <b>đối đỉnh</b> (không chung cạnh, các cạnh đối nhau từng đôi một, bằng nhau).</p>
+    </div>
+
+    <h4>3. Tia phân giác của một góc</h4>
+    <div class="box def">
+      <p><b>Tia phân giác</b> của một góc là tia <span class="kw">nằm giữa hai cạnh</span> của góc và <span class="kw">tạo với hai cạnh ấy hai góc bằng nhau</span>.</p>
+      <p>Đường thẳng chứa tia phân giác của một góc gọi là <b>đường phân giác</b> của góc đó.</p>
+    </div>
+    <div class="box law" data-label="⚖️ Tính chất tia phân giác">
+      <p>Khi \(Oz\) là tia phân giác của góc \(xOy\) thì \(\widehat{xOz} = \widehat{yOz} = \dfrac{1}{2}\widehat{xOy}\).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Góc tạo bởi tia phân giác</div>
+      <div class="formula-body">\[ \widehat{xOz} = \widehat{zOy} = \frac{1}{2}\,\widehat{xOy} \]</div>
+      <ul class="formula-legend">
+        <li>\(Oz\): tia phân giác của \(\widehat{xOy}\)</li>
+        <li>Suy ra: \(\widehat{xOy} = 2\,\widehat{xOz}\) — biết nửa góc thì tính được cả góc</li>
+        <li>Số đo góc tính bằng độ (\(^\circ\))</li>
+      </ul>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 300 150" width="300" role="img" aria-label="Tia Oz là tia phân giác của góc xOy">
+        <line x1="40" y1="130" x2="285" y2="130" class="stroke" stroke-width="1.6"/>
+        <line x1="40" y1="130" x2="158" y2="8" class="stroke" stroke-width="1.6"/>
+        <line x1="40" y1="130" x2="252" y2="40" class="accent" stroke-width="2"/>
+        <path d="M100 130 A60 60 0 0 0 95.2 106.6" class="stroke" fill="none" stroke-width="1.4"/>
+        <path d="M95.2 106.6 A60 60 0 0 0 81.7 86.8" class="stroke" fill="none" stroke-width="1.4"/>
+        <line x1="92.9" y1="119.2" x2="104.7" y2="116.8" class="stroke" stroke-width="1.6"/>
+        <line x1="84.5" y1="99.4" x2="94.4" y2="92.6" class="stroke" stroke-width="1.6"/>
+        <circle cx="40" cy="130" r="2.6" class="accent-fill"/>
+        <text x="24" y="142" font-size="13" font-style="italic">O</text>
+        <text x="288" y="136" font-size="13" font-style="italic">x</text>
+        <text x="162" y="14" font-size="13" font-style="italic">y</text>
+        <text x="256" y="38" font-size="13" font-style="italic">z</text>
+      </svg>
+      <figcaption>Tia \(Oz\) nằm giữa \(Ox\), \(Oy\) và chia \(\widehat{xOy}\) thành hai góc bằng nhau (hai nét gạch): \(Oz\) là tia phân giác của \(\widehat{xOy}\).</figcaption>
+    </figure>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 (SGK tr. 44)</p>
+      <p>Góc \(mOn\) có số đo \(70^\circ\), tia \(Ot\) là tia phân giác của góc \(mOn\). Khi đó</p>
+      <p>\[ \widehat{mOt} = \widehat{tOn} = \frac{1}{2}\widehat{mOn} = \frac{1}{2}\cdot 70^\circ = 35^\circ. \]</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập 3, SGK tr. 44) — Bài toán ngược</p>
+      <p>Biết \(\widehat{xAm} = 65^\circ\) và \(Am\) là tia phân giác của \(\widehat{xAy}\). Khi đó \(\widehat{xAy} = 2 \cdot \widehat{xAm} = 2 \cdot 65^\circ = 130^\circ\).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Vẽ tia phân giác của góc \(xOy\) bằng thước đo góc</p>
+      <ol class="steps">
+        <li>Đo (hoặc đọc đề) số đo \(\widehat{xOy}\); tính nửa số đo: \(\widehat{xOz} = \dfrac{1}{2}\widehat{xOy}\) (vd. \(\dfrac{1}{2}\cdot 68^\circ = 34^\circ\)).</li>
+        <li>Đặt thước đo góc sao cho tâm thước trùng đỉnh \(O\), vạch \(0^\circ\) trùng cạnh \(Ox\).</li>
+        <li>Đánh dấu điểm ứng với vạch bằng nửa số đo vừa tính.</li>
+        <li>Kẻ tia \(Oz\) đi qua điểm đã đánh dấu — đó là tia phân giác của \(\widehat{xOy}\).</li>
+      </ol>
+    </div>
+    <div class="box warn">
+      <p>Tia thoả mãn \(\widehat{xOt} = \widehat{tOy}\) <b>chưa chắc</b> là tia phân giác: nó còn phải <b>nằm giữa</b> hai cạnh của góc. Tia đối của tia phân giác cũng tạo với hai cạnh hai góc bằng nhau nhưng không phải tia phân giác.</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Hai góc kề bù: chung một cạnh, hai cạnh còn lại đối nhau; tổng bằng \(180^\circ\).</li>
+        <li>Hai góc đối đỉnh: mỗi cạnh của góc này là tia đối của một cạnh góc kia; chúng <b>bằng nhau</b>.</li>
+        <li>Hai đường thẳng cắt nhau tạo một góc vuông \(\Rightarrow\) vuông góc, kí hiệu \(\perp\); khi đó cả bốn góc đều vuông.</li>
+        <li>Tia phân giác nằm giữa hai cạnh và chia góc thành hai góc bằng nhau: \(\widehat{xOz} = \widehat{zOy} = \dfrac{1}{2}\widehat{xOy}\).</li>
+        <li>Vẽ tia phân giác: tính nửa số đo rồi dùng thước đo góc.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-9">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 9</span>Hai đường thẳng song song và dấu hiệu nhận biết</h3>
+    <p class="lesson-goal">Cần nắm: các cặp góc so le trong, đồng vị, trong cùng phía tạo bởi một đường thẳng cắt hai đường thẳng; dấu hiệu nhận biết hai đường thẳng song song; cách vẽ đường thẳng song song bằng êke.</p>
+
+    <h4>1. Các góc tạo bởi một đường thẳng cắt hai đường thẳng</h4>
+    <div class="box def">
+      <p>Cho đường thẳng \(c\) cắt hai đường thẳng \(a\), \(b\) lần lượt tại \(A\) và \(B\), tạo thành bốn góc đỉnh \(A\) và bốn góc đỉnh \(B\) (đánh số như hình dưới). Ghép mỗi góc đỉnh \(A\) với một góc đỉnh \(B\):</p>
+      <ul>
+        <li>Các cặp \(\widehat{A_1}\) và \(\widehat{B_3}\); \(\widehat{A_4}\) và \(\widehat{B_2}\) gọi là các cặp <span class="kw">góc so le trong</span>.</li>
+        <li>Các cặp \(\widehat{A_1}\) và \(\widehat{B_1}\); \(\widehat{A_2}\) và \(\widehat{B_2}\); \(\widehat{A_3}\) và \(\widehat{B_3}\); \(\widehat{A_4}\) và \(\widehat{B_4}\) gọi là các cặp <span class="kw">góc đồng vị</span>.</li>
+      </ul>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 400 210" width="400" role="img" aria-label="Đường thẳng c cắt hai đường thẳng a và b, đánh số các góc tại A và B">
+        <line x1="40" y1="60" x2="360" y2="60" class="stroke" stroke-width="1.6"/>
+        <line x1="40" y1="150" x2="360" y2="150" class="stroke" stroke-width="1.6"/>
+        <line x1="150" y1="20" x2="250" y2="190" class="accent" stroke-width="1.8"/>
+        <circle cx="173.5" cy="60" r="2.6" class="accent-fill"/>
+        <circle cx="226.5" cy="150" r="2.6" class="accent-fill"/>
+        <text x="368" y="56" font-size="13" font-style="italic">a</text>
+        <text x="368" y="146" font-size="13" font-style="italic">b</text>
+        <text x="142" y="16" font-size="13" font-style="italic">c</text>
+        <text x="170" y="42" font-size="13" font-style="italic">A</text>
+        <text x="216" y="136" font-size="13" font-style="italic">B</text>
+        <text x="150" y="52" font-size="12">2</text>
+        <text x="194" y="52" font-size="12">3</text>
+        <text x="152" y="80" font-size="12">1</text>
+        <text x="198" y="80" font-size="12">4</text>
+        <text x="202" y="142" font-size="12">2</text>
+        <text x="248" y="142" font-size="12">3</text>
+        <text x="204" y="170" font-size="12">1</text>
+        <text x="250" y="170" font-size="12">4</text>
+      </svg>
+      <figcaption>Đường thẳng \(c\) cắt \(a\) tại \(A\), cắt \(b\) tại \(B\). Các góc <b>nằm giữa</b> hai đường thẳng \(a\), \(b\) là \(\widehat{A_1}\), \(\widehat{A_4}\), \(\widehat{B_2}\), \(\widehat{B_3}\).</figcaption>
+    </figure>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Loại cặp góc</th><th>Vị trí</th><th>Các cặp trên hình</th></tr></thead>
+      <tbody>
+        <tr><td><b>So le trong</b></td><td>Nằm giữa \(a\) và \(b\), ở <b>hai phía</b> của \(c\)</td><td>\(\widehat{A_1}\) và \(\widehat{B_3}\); \(\widehat{A_4}\) và \(\widehat{B_2}\)</td></tr>
+        <tr><td><b>Đồng vị</b></td><td>Cùng vị trí đối với \(a\), \(b\) và <b>cùng phía</b> của \(c\)</td><td>\(\widehat{A_1}\)–\(\widehat{B_1}\); \(\widehat{A_2}\)–\(\widehat{B_2}\); \(\widehat{A_3}\)–\(\widehat{B_3}\); \(\widehat{A_4}\)–\(\widehat{B_4}\)</td></tr>
+        <tr><td><b>Trong cùng phía</b></td><td>Nằm giữa \(a\) và \(b\), ở <b>cùng phía</b> của \(c\)</td><td>\(\widehat{A_1}\) và \(\widehat{B_2}\); \(\widehat{A_4}\) và \(\widehat{B_3}\)</td></tr>
+      </tbody>
+    </table></div>
+    <div class="box law" data-label="⚖️ Tính chất">
+      <p>Nếu đường thẳng \(c\) cắt hai đường thẳng phân biệt \(a\), \(b\) và trong các góc tạo thành có <b>một cặp góc so le trong bằng nhau</b> thì:</p>
+      <ul>
+        <li>Hai góc so le trong <b>còn lại</b> bằng nhau;</li>
+        <li>Hai góc đồng vị bằng nhau.</li>
+      </ul>
+    </div>
+    <div class="box note">
+      <p><b>Suy ra (Luyện tập 1, SGK tr. 47).</b> Khi có một cặp góc so le trong bằng nhau thì mỗi cặp <b>góc trong cùng phía</b> có tổng số đo bằng \(180^\circ\) (hai góc đó <b>bù nhau</b>), vì mỗi góc trong cùng phía kề bù với một góc so le trong.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập 1, SGK tr. 47)</p>
+      <p>Cho \(\widehat{A_2} = 40^\circ\) và \(\widehat{B_4} = 40^\circ\) (hai góc so le trong). Khi đó các góc kề bù với chúng đều bằng \(180^\circ - 40^\circ = 140^\circ\), và mỗi cặp góc trong cùng phía có tổng \(40^\circ + 140^\circ = 180^\circ\).</p>
+    </div>
+
+    <h4>2. Dấu hiệu nhận biết hai đường thẳng song song</h4>
+    <div class="box law" data-label="⚖️ Dấu hiệu nhận biết hai đường thẳng song song">
+      <p>Nếu đường thẳng \(c\) cắt hai đường thẳng phân biệt \(a\), \(b\) và trong các góc tạo thành có <span class="kw">một cặp góc so le trong bằng nhau</span> <b>hoặc</b> <span class="kw">một cặp góc đồng vị bằng nhau</span> thì \(a\) và \(b\) <b>song song</b> với nhau.</p>
+      <p>Kí hiệu: \(a\ /\!/\ b\).</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 380 170" width="380" role="img" aria-label="Hai góc so le trong bằng nhau nên hai đường thẳng song song">
+        <line x1="40" y1="40" x2="340" y2="40" class="stroke" stroke-width="1.6"/>
+        <line x1="40" y1="120" x2="340" y2="120" class="stroke" stroke-width="1.6"/>
+        <line x1="250" y1="15" x2="170" y2="145" class="accent" stroke-width="1.8"/>
+        <path d="M204.6 40 A30 30 0 0 0 218.9 65.6" class="accent" stroke-width="1.6" fill="none"/>
+        <path d="M215.4 120 A30 30 0 0 0 201.1 94.4" class="accent" stroke-width="1.6" fill="none"/>
+        <circle cx="234.6" cy="40" r="2.6" class="accent-fill"/>
+        <circle cx="185.4" cy="120" r="2.6" class="accent-fill"/>
+        <text x="30" y="36" font-size="13" font-style="italic">x</text>
+        <text x="344" y="36" font-size="13" font-style="italic">y</text>
+        <text x="26" y="116" font-size="13" font-style="italic">x'</text>
+        <text x="344" y="116" font-size="13" font-style="italic">y'</text>
+        <text x="254" y="14" font-size="13" font-style="italic">z</text>
+        <text x="164" y="158" font-size="13" font-style="italic">z'</text>
+        <text x="238" y="34" font-size="13" font-style="italic">A</text>
+        <text x="172" y="134" font-size="13" font-style="italic">B</text>
+        <text x="190" y="62" font-size="12">70°</text>
+        <text x="206" y="112" font-size="12">70°</text>
+      </svg>
+      <figcaption>\(\widehat{xAB} = \widehat{ABy'} = 70^\circ\) là hai góc so le trong \(\Rightarrow\) \(xy\ /\!/\ x'y'\) (dấu hiệu nhận biết).</figcaption>
+    </figure>
+    <div class="box example">
+      <p class="box-title">Ví dụ (SGK tr. 48)</p>
+      <p>Trên Hình 3.21, \(\widehat{xAB} = \widehat{ABy'} = 70^\circ\). Hai góc này ở vị trí <b>so le trong</b>, do đó \(xy\ /\!/\ x'y'\) (theo dấu hiệu nhận biết hai đường thẳng song song).</p>
+    </div>
+    <div class="box note">
+      <p><b>Nhận xét (SGK tr. 48).</b> Hai đường thẳng phân biệt <b>cùng vuông góc</b> với một đường thẳng thứ ba thì chúng <b>song song</b> với nhau.</p>
+      <p>(Vì khi đó hai góc đồng vị tạo thành đều bằng \(90^\circ\).)</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Chứng tỏ hai đường thẳng song song</p>
+      <ol class="steps">
+        <li>Xác định <b>đường thẳng cắt</b> (cát tuyến) và hai đường thẳng cần chứng minh song song.</li>
+        <li>Chỉ ra một cặp góc <b>so le trong</b> hoặc <b>đồng vị</b> tạo bởi cát tuyến đó.</li>
+        <li>Chứng tỏ hai góc ấy <b>bằng nhau</b> (dùng số đo đã cho, hai góc đối đỉnh, hai góc kề bù…).</li>
+        <li>Kết luận theo <b>dấu hiệu nhận biết</b>, nhớ ghi rõ lí do.</li>
+        <li>Cách khác: chỉ ra hai đường thẳng đó <b>cùng vuông góc</b> với một đường thẳng thứ ba.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Bài tập 3.7, SGK tr. 49)</p>
+      <p>Biết \(\widehat{MEF} = 40^\circ\), \(\widehat{EMN} = 40^\circ\). Hai góc này ở vị trí so le trong đối với cát tuyến \(EM\), lại bằng nhau, nên \(EF\ /\!/\ NM\).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Vẽ đường thẳng \(b\) đi qua điểm \(A\) và song song với đường thẳng \(a\) (dùng êke)</p>
+      <ol class="steps">
+        <li>Đặt êke sao cho một cạnh góc nhọn (vd. góc \(60^\circ\)) nằm trên đường thẳng \(a\), cạnh còn lại đi qua \(A\).</li>
+        <li>Giữ nguyên hướng của êke, đặt thước thẳng áp sát cạnh dưới của êke.</li>
+        <li>Trượt êke dọc theo thước tới khi cạnh của êke đi qua điểm \(A\).</li>
+        <li>Kẻ đường thẳng \(b\) theo cạnh đó của êke. Khi đó \(a\) và \(b\) tạo với đường thẳng thứ ba hai góc <b>đồng vị bằng nhau</b> nên \(a\ /\!/\ b\).</li>
+      </ol>
+    </div>
+    <div class="box warn">
+      <p>Muốn dùng dấu hiệu nhận biết thì hai góc phải <b>đúng vị trí</b> (so le trong hoặc đồng vị) đối với <b>cùng một cát tuyến</b>. Hai góc bằng nhau nhưng ở vị trí “trong cùng phía” thì <b>không</b> suy ra được hai đường thẳng song song.</p>
+      <p>Hai đường thẳng phải <b>phân biệt</b>; nếu trùng nhau thì không nói là song song.</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Một cát tuyến cắt hai đường thẳng tạo ra: 2 cặp góc so le trong, 4 cặp góc đồng vị, 2 cặp góc trong cùng phía.</li>
+        <li>Có một cặp so le trong bằng nhau \(\Rightarrow\) cặp so le trong còn lại bằng nhau và các cặp đồng vị bằng nhau.</li>
+        <li><b>Dấu hiệu nhận biết:</b> một cặp so le trong bằng nhau hoặc một cặp đồng vị bằng nhau \(\Rightarrow\) hai đường thẳng song song.</li>
+        <li>Hai đường thẳng phân biệt cùng vuông góc với đường thẳng thứ ba thì song song.</li>
+        <li>Vẽ đường thẳng song song bằng êke dựa trên cặp góc đồng vị bằng nhau.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-10">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 10</span>Tiên đề Euclid. Tính chất của hai đường thẳng song song</h3>
+    <p class="lesson-goal">Cần nắm: nội dung tiên đề Euclid về đường thẳng song song; tính chất các góc tạo bởi một đường thẳng cắt hai đường thẳng song song và hai nhận xét quan trọng suy ra từ đó.</p>
+
+    <h4>1. Tiên đề Euclid về đường thẳng song song</h4>
+    <div class="box law" data-label="⚖️ Tiên đề Euclid">
+      <p>Qua <span class="kw">một điểm ở ngoài một đường thẳng</span>, chỉ có <span class="kw">một đường thẳng</span> song song với đường thẳng đó.</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 380 150" width="380" role="img" aria-label="Qua điểm M ngoài đường thẳng a chỉ có một đường thẳng b song song với a">
+        <line x1="40" y1="110" x2="340" y2="110" class="stroke" stroke-width="1.6"/>
+        <line x1="40" y1="50" x2="340" y2="50" class="accent" stroke-width="2"/>
+        <line x1="120" y1="18" x2="260" y2="132" class="stroke" stroke-width="1.2" stroke-dasharray="5 4"/>
+        <circle cx="190" cy="50" r="3.2" class="accent-fill"/>
+        <text x="184" y="40" font-size="13" font-style="italic">M</text>
+        <text x="346" y="46" font-size="13" font-style="italic">b</text>
+        <text x="346" y="116" font-size="13" font-style="italic">a</text>
+        <text x="264" y="136" font-size="13" font-style="italic">c</text>
+      </svg>
+      <figcaption>Điểm \(M\) nằm ngoài \(a\): đường thẳng \(b\) đi qua \(M\) và song song với \(a\) là <b>duy nhất</b>. Mọi đường thẳng khác qua \(M\) (như \(c\), nét đứt) đều cắt \(a\).</figcaption>
+    </figure>
+    <div class="box note">
+      <p><b>Nhận xét.</b> Nếu điểm \(M\) nằm ngoài đường thẳng \(a\) thì đường thẳng \(b\) đi qua \(M\) và song song với \(a\) là <b>duy nhất</b>.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 (SGK tr. 51–52)</p>
+      <p>Cho \(a\ /\!/\ b\). Giải thích vì sao nếu đường thẳng \(c\) cắt \(a\) thì \(c\) cũng cắt \(b\).</p>
+      <p><b>Giải.</b> Giả sử \(c\) cắt \(a\) tại \(M\). Theo tiên đề Euclid, qua \(M\) chỉ có <b>một</b> đường thẳng song song với \(b\), đó là \(a\). Do đó \(c\) (cũng đi qua \(M\)) không thể song song với \(b\). Vậy \(c\) cắt \(b\).</p>
+    </div>
+    <div class="box note">
+      <p><b>Chú ý.</b> Từ tiên đề Euclid suy ra: <b>một đường thẳng cắt một trong hai đường thẳng song song thì nó cũng cắt đường thẳng còn lại.</b></p>
+    </div>
+
+    <h4>2. Tính chất của hai đường thẳng song song</h4>
+    <div class="box law" data-label="⚖️ Tính chất hai đường thẳng song song">
+      <p>Nếu một đường thẳng cắt <b>hai đường thẳng song song</b> thì:</p>
+      <ul>
+        <li>Hai góc <b>so le trong</b> bằng nhau;</li>
+        <li>Hai góc <b>đồng vị</b> bằng nhau.</li>
+      </ul>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Góc tạo bởi một cát tuyến cắt hai đường thẳng song song</div>
+      <div class="formula-body">\[ a\ /\!/\ b \;\Longrightarrow\; \widehat{A_1} = \widehat{B_3}\ \ (\text{so le trong}), \quad \widehat{A_1} = \widehat{B_1}\ \ (\text{đồng vị}) \]</div>
+      <ul class="formula-legend">
+        <li>\(a\), \(b\): hai đường thẳng song song; cát tuyến cắt \(a\) tại \(A\), cắt \(b\) tại \(B\)</li>
+        <li>Các góc đánh số như hình ở Bài 9</li>
+        <li>Suy ra: hai góc <b>trong cùng phía</b> bù nhau — \(\widehat{A_1} + \widehat{B_2} = 180^\circ\)</li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 (SGK tr. 52–53)</p>
+      <p>Cho \(xy\ /\!/\ x'y'\) và \(\widehat{BAy} = 50^\circ\).</p>
+      <p>Vì \(xy\ /\!/\ x'y'\) nên \(\widehat{ABx'} = \widehat{BAy} = 50^\circ\) (hai góc <b>so le trong</b>).</p>
+      <p>Cũng từ \(xy\ /\!/\ x'y'\) suy ra \(\widehat{y'Bz'} = \widehat{BAy} = 50^\circ\) (hai góc <b>đồng vị</b>).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập 2, SGK tr. 53)</p>
+      <p>Cho \(MN\ /\!/\ BC\), \(\widehat{ABC} = 60^\circ\), \(\widehat{MNC} = 150^\circ\).</p>
+      <p>\(\widehat{BMN}\) và \(\widehat{ABC}\)… ta dùng: \(\widehat{BMN} + \widehat{ABC} = 180^\circ\) (hai góc trong cùng phía) \(\Rightarrow \widehat{BMN} = 180^\circ - 60^\circ = 120^\circ\).</p>
+      <p>\(\widehat{ACB} + \widehat{MNC} = 180^\circ\) (hai góc trong cùng phía) \(\Rightarrow \widehat{ACB} = 180^\circ - 150^\circ = 30^\circ\).</p>
+    </div>
+    <div class="box note">
+      <p><b>Nhận xét (SGK tr. 53).</b></p>
+      <ul>
+        <li>Một đường thẳng <b>vuông góc</b> với một trong hai đường thẳng song song thì nó cũng <b>vuông góc</b> với đường thẳng kia.</li>
+        <li>Hai đường thẳng phân biệt <b>cùng song song</b> với một đường thẳng thứ ba thì chúng <b>song song</b> với nhau.</li>
+      </ul>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Tính số đo góc khi có hai đường thẳng song song</p>
+      <ol class="steps">
+        <li>Xác định rõ <b>hai đường thẳng song song</b> và <b>cát tuyến</b> chứa góc cần tính.</li>
+        <li>Xếp loại cặp góc: so le trong / đồng vị (\(\Rightarrow\) <b>bằng nhau</b>), trong cùng phía (\(\Rightarrow\) <b>tổng \(180^\circ\)</b>).</li>
+        <li>Nếu góc cần tính không ghép trực tiếp được: dùng thêm hai góc <b>kề bù</b> hoặc hai góc <b>đối đỉnh</b> để chuyển sang góc khác.</li>
+        <li>Nếu hình chưa có đường song song thuận lợi: <b>kẻ thêm</b> một đường thẳng qua đỉnh và song song với đường đã cho (hoặc kẻ tia đối).</li>
+        <li>Viết lời giải kèm lí do trong ngoặc, rồi kết luận số đo.</li>
+      </ol>
+    </div>
+    <div class="box warn">
+      <p>Phân biệt hai chiều: <b>dấu hiệu nhận biết</b> đi từ “góc bằng nhau” \(\Rightarrow\) “song song”; <b>tính chất</b> đi từ “song song” \(\Rightarrow\) “góc bằng nhau”. Dùng nhầm chiều là lỗi rất hay gặp khi trình bày.</p>
+      <p>Hai góc <b>trong cùng phía</b> thì <b>bù nhau</b>, không bằng nhau.</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li><b>Tiên đề Euclid:</b> qua một điểm ngoài một đường thẳng chỉ có <b>một</b> đường thẳng song song với đường thẳng đó.</li>
+        <li>Đường thẳng cắt một trong hai đường thẳng song song thì cắt cả đường thẳng kia.</li>
+        <li>Hai đường thẳng song song bị cắt: so le trong bằng nhau, đồng vị bằng nhau, trong cùng phía bù nhau.</li>
+        <li>Vuông góc với một trong hai đường song song \(\Rightarrow\) vuông góc với đường còn lại.</li>
+        <li>Hai đường thẳng phân biệt cùng song song với đường thứ ba thì song song với nhau.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-11">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 11</span>Định lí và chứng minh định lí</h3>
+    <p class="lesson-goal">Cần nắm: thế nào là định lí, giả thiết và kết luận của định lí; cách viết GT – KL; thế nào là chứng minh một định lí và các bước trình bày.</p>
+
+    <h4>1. Định lí. Giả thiết và kết luận của định lí</h4>
+    <div class="box def">
+      <p><b>Định lí</b> là một khẳng định được <span class="kw">suy ra từ những khẳng định đúng đã biết</span>.</p>
+      <p>Mỗi định lí thường được phát biểu dưới dạng <b>“Nếu … thì …”</b>:</p>
+      <ul>
+        <li>Phần giữa từ “nếu” và từ “thì” là <span class="kw">giả thiết</span> của định lí;</li>
+        <li>Phần sau từ “thì” là <span class="kw">kết luận</span> của định lí.</li>
+      </ul>
+    </div>
+    <div class="flow"><span>Nếu <b>hai góc đối đỉnh</b></span><i>→</i><span>Giả thiết</span><i>·</i><span>thì <b>hai góc đó bằng nhau</b></span><i>→</i><span>Kết luận</span></div>
+    <div class="box note">
+      <p>Giả thiết và kết luận được viết tắt là <b>GT</b> và <b>KL</b>, thường trình bày thành bảng kèm hình vẽ.</p>
+      <p>Các tính chất của hai đường thẳng song song đã học đều là những <b>định lí</b>.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (SGK tr. 56)</p>
+      <p>Định lí: <i>“Một đường thẳng vuông góc với một trong hai đường thẳng song song thì nó cũng vuông góc với đường thẳng còn lại.”</i></p>
+      <div class="table-wrap"><table>
+        <tbody>
+          <tr><th>GT</th><td>\(d\), \(d'\), \(d''\) là các đường thẳng, \(d'\ /\!/\ d''\), \(d \perp d'\)</td></tr>
+          <tr><th>KL</th><td>\(d \perp d''\)</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập 1, SGK tr. 56)</p>
+      <p>Định lí: <i>“Hai góc đối đỉnh thì bằng nhau.”</i></p>
+      <div class="table-wrap"><table>
+        <tbody>
+          <tr><th>GT</th><td>\(\widehat{O_1}\) và \(\widehat{O_2}\) là hai góc đối đỉnh</td></tr>
+          <tr><th>KL</th><td>\(\widehat{O_1} = \widehat{O_2}\)</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+
+    <h4>2. Thế nào là chứng minh định lí?</h4>
+    <div class="box def">
+      <p><b>Chứng minh một định lí</b> là dùng <span class="kw">lập luận</span> để từ <b>giả thiết</b> và những <b>khẳng định đúng đã biết</b> suy ra <b>kết luận</b> của định lí.</p>
+    </div>
+    <div class="box note">
+      <p>Đo đạc chỉ cho ta kết quả <b>gần đúng</b> và chỉ trong <b>một trường hợp cụ thể</b>; muốn chắc chắn một tính chất đúng cho <b>mọi trường hợp</b> thì phải chứng minh.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (SGK tr. 56) — Chứng minh: “Nếu một đường thẳng cắt hai đường thẳng song song thì hai góc đồng vị bằng nhau”</p>
+      <div class="table-wrap"><table>
+        <tbody>
+          <tr><th>GT</th><td>\(a\ /\!/\ b\); \(c\) cắt \(a\) tại \(A\), cắt \(b\) tại \(B\); \(\widehat{A_1}\), \(\widehat{B_1}\) là hai góc đồng vị</td></tr>
+          <tr><th>KL</th><td>\(\widehat{A_1} = \widehat{B_1}\)</td></tr>
+        </tbody>
+      </table></div>
+      <p><b>Chứng minh.</b> Qua \(B\) kẻ đường thẳng \(b'\) sao cho \(\widehat{B_2} = \widehat{A_1}\). Khi đó \(c\) tạo với \(a\) và \(b'\) hai góc đồng vị bằng nhau.</p>
+      <p>Theo <b>dấu hiệu nhận biết</b> hai đường thẳng song song, ta có \(a\ /\!/\ b'\). Suy ra qua \(B\) có hai đường thẳng \(b\), \(b'\) cùng song song với \(a\).</p>
+      <p>Theo <b>tiên đề Euclid</b>, \(b'\) trùng \(b\). Từ đó \(\widehat{B_1} = \widehat{A_1}\) (vì cùng bằng \(\widehat{B_2}\)).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập 2, SGK tr. 57) — “Hai góc kề bù bằng nhau thì mỗi góc là một góc vuông”</p>
+      <p><b>GT:</b> \(\widehat{O_1}\), \(\widehat{O_2}\) kề bù và \(\widehat{O_1} = \widehat{O_2}\). &nbsp; <b>KL:</b> \(\widehat{O_1} = \widehat{O_2} = 90^\circ\).</p>
+      <p><b>Chứng minh.</b> Vì hai góc kề bù nên \(\widehat{O_1} + \widehat{O_2} = 180^\circ\). Mà \(\widehat{O_1} = \widehat{O_2}\) nên \(2\widehat{O_1} = 180^\circ\), suy ra \(\widehat{O_1} = \widehat{O_2} = 90^\circ\). Vậy mỗi góc là một góc vuông.</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Trình bày chứng minh một định lí</p>
+      <ol class="steps">
+        <li>Vẽ hình theo đúng nội dung định lí, đặt tên các điểm, đường thẳng, góc.</li>
+        <li>Viết <b>GT</b> (những điều đề cho) và <b>KL</b> (điều phải suy ra) bằng kí hiệu.</li>
+        <li>Lập luận từng bước, mỗi bước nêu rõ <b>căn cứ</b>: giả thiết, hai góc kề bù, hai góc đối đỉnh, dấu hiệu nhận biết, tiên đề Euclid, tính chất hai đường thẳng song song…</li>
+        <li>Kết thúc bằng đúng kết luận đã nêu ở KL.</li>
+      </ol>
+    </div>
+    <div class="box warn">
+      <p>Một định lí đúng thì mệnh đề <b>đảo</b> của nó <b>chưa chắc</b> đúng: “hai góc đối đỉnh thì bằng nhau” đúng, nhưng “hai góc bằng nhau thì đối đỉnh” <b>sai</b> (vẽ hai góc \(50^\circ\) rời nhau là phản ví dụ).</p>
+      <p>Tương tự: nếu \(Ot\) là tia phân giác của \(\widehat{xOy}\) thì \(\widehat{xOt} = \widehat{tOy}\), nhưng tia \(Ot\) thoả mãn \(\widehat{xOt} = \widehat{tOy}\) chưa chắc là tia phân giác (xét tia đối của tia phân giác).</p>
+      <p>Muốn bác bỏ một khẳng định, chỉ cần chỉ ra <b>một phản ví dụ</b>; muốn khẳng định nó đúng thì phải <b>chứng minh</b>.</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Định lí: khẳng định suy ra từ các khẳng định đúng đã biết, dạng “Nếu … thì …”.</li>
+        <li>Giả thiết (GT) nằm giữa “nếu” và “thì”; kết luận (KL) nằm sau “thì”.</li>
+        <li>Chứng minh định lí = lập luận từ GT và các điều đúng đã biết để suy ra KL.</li>
+        <li>Mỗi bước lập luận phải nêu <b>căn cứ</b>; kết thúc đúng bằng KL.</li>
+        <li>Mệnh đề đảo của một định lí không nhất thiết đúng — bác bỏ bằng một phản ví dụ.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-on-tap-chuong-3">
+    <h3 class="lesson-title"><span class="lesson-no">Ôn tập</span>Ôn tập Chương III</h3>
+    <p class="lesson-goal">Tóm tắt: các cặp góc đặc biệt, tia phân giác, dấu hiệu nhận biết và tính chất hai đường thẳng song song, tiên đề Euclid, cách trình bày chứng minh; các dạng bài trong Luyện tập chung và Bài tập cuối chương III.</p>
+
+    <h4>1. Tóm tắt kiến thức</h4>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Nội dung</th><th>Ghi nhớ</th></tr></thead>
+      <tbody>
+        <tr><td>Hai góc kề bù</td><td>Chung một cạnh, hai cạnh kia đối nhau; tổng \(= 180^\circ\)</td></tr>
+        <tr><td>Hai góc đối đỉnh</td><td>Mỗi cạnh của góc này là tia đối của một cạnh góc kia; <b>bằng nhau</b></td></tr>
+        <tr><td>Hai đường thẳng vuông góc</td><td>Cắt nhau tạo một góc vuông; kí hiệu \(\perp\); cả bốn góc đều vuông</td></tr>
+        <tr><td>Tia phân giác</td><td>Nằm giữa hai cạnh, \(\widehat{xOz} = \widehat{zOy} = \dfrac{1}{2}\widehat{xOy}\)</td></tr>
+        <tr><td>Cát tuyến cắt hai đường thẳng</td><td>2 cặp so le trong · 4 cặp đồng vị · 2 cặp trong cùng phía</td></tr>
+        <tr><td>Dấu hiệu nhận biết \(a\ /\!/\ b\)</td><td>Một cặp so le trong bằng nhau <b>hoặc</b> một cặp đồng vị bằng nhau</td></tr>
+        <tr><td>Tiên đề Euclid</td><td>Qua điểm ngoài một đường thẳng chỉ có <b>một</b> đường thẳng song song với nó</td></tr>
+        <tr><td>Tính chất \(a\ /\!/\ b\)</td><td>So le trong bằng nhau · đồng vị bằng nhau · trong cùng phía bù nhau</td></tr>
+        <tr><td>Quan hệ vuông góc – song song</td><td>\(a \perp c,\ b \perp c \Rightarrow a\ /\!/\ b\); \(a\ /\!/\ b,\ c \perp a \Rightarrow c \perp b\); \(a\ /\!/\ c,\ b\ /\!/\ c \Rightarrow a\ /\!/\ b\)</td></tr>
+        <tr><td>Định lí</td><td>Dạng “Nếu … thì …”; GT giữa “nếu” và “thì”, KL sau “thì”; chứng minh = lập luận có căn cứ</td></tr>
+      </tbody>
+    </table></div>
+    <div class="flow"><span>Góc bằng nhau (so le trong / đồng vị)</span><i>→ dấu hiệu →</i><span>Hai đường thẳng song song</span><i>→ tính chất →</i><span>Góc bằng nhau, góc bù nhau</span></div>
+
+    <h4>2. Các dạng toán thường gặp</h4>
+    <div class="box method">
+      <p class="box-title">Dạng: Kể tên các cặp góc kề bù, đối đỉnh, so le trong, đồng vị trên một hình</p>
+      <ol class="steps">
+        <li>Tìm các <b>cặp tia đối nhau</b> (nằm trên cùng một đường thẳng) \(\Rightarrow\) các cặp góc kề bù.</li>
+        <li>Tìm các <b>giao điểm của hai đường thẳng</b> \(\Rightarrow\) mỗi giao điểm cho 2 cặp góc đối đỉnh.</li>
+        <li>Tìm <b>cát tuyến</b> cắt hai đường thẳng \(\Rightarrow\) xét các góc nằm giữa hai đường thẳng ở hai phía cát tuyến (so le trong) hoặc cùng vị trí, cùng phía (đồng vị).</li>
+        <li>Viết tên góc bằng ba chữ cái với <b>đỉnh ở giữa</b>, vd. \(\widehat{MNB}\).</li>
+      </ol>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Tính số đo các góc còn lại trong hình</p>
+      <ol class="steps">
+        <li>Ghi số đo đã biết lên hình.</li>
+        <li>Dùng <b>đối đỉnh</b> để chuyển số đo sang góc đối diện.</li>
+        <li>Dùng <b>kề bù</b> để tính góc còn lại: \(180^\circ - \) góc đã biết.</li>
+        <li>Nếu có hai đường thẳng song song: dùng so le trong, đồng vị (bằng nhau) và trong cùng phía (bù nhau).</li>
+        <li>Nếu có tia phân giác: nhân đôi hoặc chia đôi số đo.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Bài tập 3.17, SGK tr. 53)</p>
+      <p>Cho \(mn\ /\!/\ pq\), cát tuyến \(vK\) cắt \(pq\) tại \(K\) với góc đã cho bằng \(70^\circ\).</p>
+      <p>\(\widehat{mHK} = 70^\circ\) (hai góc so le trong, vì \(mn\ /\!/\ pq\)); \(\widehat{vHn} = 70^\circ\) (hai góc đồng vị).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập chung, SGK tr. 58) — Góc tạo bởi hai tia phân giác của hai góc kề bù</p>
+      <p><b>GT:</b> \(\widehat{xOy}\) và \(\widehat{yOz}\) kề bù; \(Ou\) là tia phân giác của \(\widehat{xOy}\); \(Ov\) là tia phân giác của \(\widehat{yOz}\). &nbsp; <b>KL:</b> \(\widehat{uOv}\) là góc vuông.</p>
+      <p><b>Chứng minh.</b> \(\widehat{uOy} = \dfrac{1}{2}\widehat{xOy}\) và \(\widehat{yOv} = \dfrac{1}{2}\widehat{yOz}\).</p>
+      <p>Do đó \(\widehat{uOv} = \widehat{uOy} + \widehat{yOv} = \dfrac{1}{2}\left(\widehat{xOy} + \widehat{yOz}\right) = \dfrac{1}{2}\cdot 180^\circ = 90^\circ\).</p>
+      <p>Vậy \(\widehat{uOv}\) là góc vuông.</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Chứng minh hai đường thẳng song song / vuông góc</p>
+      <ol class="steps">
+        <li>Song song: chỉ ra một cặp góc so le trong (hoặc đồng vị) bằng nhau, <b>hoặc</b> hai đường cùng vuông góc với một đường thứ ba, <b>hoặc</b> hai đường cùng song song với một đường thứ ba.</li>
+        <li>Vuông góc: chỉ ra một góc tạo thành bằng \(90^\circ\), <b>hoặc</b> dùng “vuông góc với một trong hai đường song song thì vuông góc với đường kia”.</li>
+        <li>Mỗi bước ghi rõ căn cứ trong ngoặc.</li>
+      </ol>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Bài toán phải <b>kẻ thêm đường phụ</b></p>
+      <ol class="steps">
+        <li>Khi góc cần tính nằm ở một đỉnh “lẻ” giữa hai đường thẳng song song: <b>kẻ qua đỉnh đó một đường thẳng song song</b> với hai đường đã cho.</li>
+        <li>Tách góc cần tính thành tổng hai góc, mỗi góc ghép được với một góc đã biết (so le trong hoặc đồng vị).</li>
+        <li>Cộng lại để có kết quả, vd. chứng minh \(\widehat{C} = \widehat{A} + \widehat{B}\) ở Bài tập 3.34.</li>
+        <li>Cách khác: <b>kẻ tia đối</b> của một tia để tạo ra cặp góc kề bù tiện tính.</li>
+      </ol>
+    </div>
+    <div class="box warn">
+      <p>Nhắc lại các lỗi hay gặp của chương: nhầm “kề bù” với “đối đỉnh”; cho rằng hai góc trong cùng phía bằng nhau (thực ra <b>bù nhau</b>); dùng ngược chiều giữa dấu hiệu nhận biết và tính chất; quên điều kiện “tia nằm giữa” của tia phân giác; kết luận “bằng nhau thì đối đỉnh”.</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Kề bù \(\Rightarrow\) tổng \(180^\circ\); đối đỉnh \(\Rightarrow\) bằng nhau — hai công cụ tính góc cơ bản nhất.</li>
+        <li>Tia phân giác chia đôi góc: \(\widehat{xOz} = \dfrac{1}{2}\widehat{xOy}\).</li>
+        <li>Dấu hiệu nhận biết song song: so le trong hoặc đồng vị bằng nhau.</li>
+        <li>Tiên đề Euclid: đường thẳng song song qua một điểm ngoài là <b>duy nhất</b>.</li>
+        <li>Hai đường thẳng song song: so le trong và đồng vị bằng nhau, trong cùng phía bù nhau.</li>
+        <li>Trình bày chứng minh: vẽ hình \(\to\) GT, KL \(\to\) lập luận có căn cứ \(\to\) kết luận.</li>
+      </ul>
+    </div>
+  </article>
+</section>

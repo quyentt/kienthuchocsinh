@@ -8,7 +8,7 @@ Mọi nội dung viết bằng **tiếng Việt có dấu**. Không cần máy c
 
 ```
 index.html                  Trang chủ: chọn lớp (render từ catalog.js)
-lop-9/index.html            Trang lớp: chọn môn (render từ catalog.js)
+lop-7/, lop-9/              Mỗi lớp một thư mục: index.html (chọn môn) + <mon>.html + _parts/
 lop-9/khtn.html             Trang môn — KHTN có 3 tab: Vật lí / Hoá học / Sinh học
 lop-9/_parts/*.html         Nội dung từng môn/tab (partial) — ĐÂY là nơi viết kiến thức
 assets/css/style.css        Giao diện dùng chung (có chế độ tối, in ấn, điện thoại)
@@ -312,6 +312,8 @@ Nếu thêm chuyên đề HSG mới (Điện, Quang…) thì thêm luôn mục b
 - [ ] Tiếng Anh — Unit 1–12 (bài tập ngữ pháp, từ vựng, phát âm, đọc hiểu)
 - [ ] Lịch sử và Địa lí — Lịch sử, Địa lí (trắc nghiệm, câu hỏi tự luận, bài tập biểu đồ/số liệu)
 - [ ] Ngữ văn — Tập 1, Tập 2 (đọc hiểu văn bản ngoài SGK cùng thể loại, tiếng Việt, đề viết)
+- [ ] **Lớp 7** · Toán Tập 1 (Chương I–V) · `lop-7/toan-bai-tap.html`
+- [ ] **Lớp 7** · Toán Tập 2 (khi có PDF)
 
 ## Chuyên đề ngoài SGK (ôn thi học sinh giỏi)
 
@@ -364,6 +366,7 @@ Kiến thức nâng cao / tài liệu người dùng gửi (ảnh đề cương,
 
 | Lớp | Môn | Nguồn | Trạng thái |
 |---|---|---|---|
+| 7 | Toán (2 tập) | `data/thuvienhoclieu.com-SGK-Toan-7-tu-nam-2026-Tap-1.pdf` (122 tr) — Kết nối tri thức, trang PDF = trang in + 1 (đã kiểm 11 vị trí). **Tập 2 chưa có PDF** | Tập 1 xong 2026-09-20: 5 chương, 24 bài, 33 công thức, 48 cách giải, 29 hình SVG |
 | 9 | KHTN (Lí/Hoá/Sinh) | `data/thuvienhoclieu.com-SGK-KHTN-Lop-9-thong-nhat-.pdf` — Kết nối tri thức, 230 trang, trang PDF = trang in + 1 | Xong 2026-09-17: 15 chương, 51 bài, 798 công thức |
 | 9 | Tiếng Anh | `data/Tiếng Anh 9 Global Success.pdf` — 139 trang, số trang PDF lệch không đều (thiếu trang in 5) → tra theo bảng dưới | Xong 2026-09-18: 4 chủ điểm, 12 Unit, 266 từ vựng, 26 cấu trúc |
 | 9 | Toán (2 tập) | `data/thuvienhoclieu.com-SGK-Toan-9-tu-nam-2026-Tap-1.pdf` (122 tr) + `…-Tap-2.pdf` (134 tr) — Kết nối tri thức, cả hai: trang PDF = trang in + 1 | Xong 2026-09-18: 10 chương, 42 bài, 113 công thức, 78 cách giải, 49 hình SVG |
@@ -408,3 +411,10 @@ Bài 3 Hồn nước nằm trong tiếng mẹ cha 64–87 · Bài 4 Khám phá v
 **Tập 2** — mục lục p003–p004 · Bài 6 Giải mã những bí mật 5–44 · Bài 7 Hồn thơ muôn điệu 45–66 ·
 Bài 8 Tiếng nói của lương tri 67–89 · Bài 9 Đi và suy ngẫm 90–113 · Bài 10 Văn học – lịch sử tâm hồn 114–131 ·
 Ôn tập học kì II 132–138 · thuật ngữ 139 · yếu tố Hán Việt 140–145 · tên riêng nước ngoài 146–150.
+
+Phân chia Toán 7 Tập 1 (số trang PDF; ảnh ở `.cache/pages/lop-7/toan-tap-1/`; mục lục p005):
+Ch I Số hữu tỉ (B1–4) 6–26 · Ch II Số thực (B5–7) 27–40 · Ch III Góc và đường thẳng song song (B8–11) 41–60 ·
+Ch IV Tam giác bằng nhau (B12–16) 61–88 · Ch V Thu thập và biểu diễn dữ liệu (B17–19) 89–110 ·
+HĐ trải nghiệm 111–118 · thuật ngữ 119–122. Partial: `lop-7/_parts/toan7-tap-1a.html` (Ch I–III),
+`toan7-tap-1b.html` (Ch IV–V). Trang `lop-7/toan.html` có tab "Tập 1" và nút "Tập 2 · sắp có" (disabled);
+khi có PDF Tập 2: bỏ `disabled`, thêm `data-tab="tap-2"` + panel + partial `toan7-tap-2*.html`.

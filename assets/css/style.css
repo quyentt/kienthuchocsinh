@@ -199,6 +199,7 @@ a.card:hover { transform: translateY(-2px); border-color: var(--card-color, var(
 .tab.cd   { --c: var(--cd);   --cs: var(--cd-soft); }
 .tab.vm   { --c: var(--vm);   --cs: var(--vm-soft); }
 .tab.hsg  { --c: var(--hsg);  --cs: var(--hsg-soft); }
+.tab[disabled] { opacity: .45; cursor: default; }
 
 .panel.ly   { --accent: var(--ly);   --accent-soft: var(--ly-soft); }
 .panel.hoa  { --accent: var(--hoa);  --accent-soft: var(--hoa-soft); }
