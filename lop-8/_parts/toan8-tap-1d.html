@@ -1,0 +1,942 @@
+<section class="chapter" id="toan-chuong-4">
+  <h2 class="chapter-title"><span>Chương IV · Hình học</span>Định lí Thalès</h2>
+
+  <article class="lesson" id="toan-bai-15">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 15</span>Định lí Thalès trong tam giác</h3>
+    <p class="lesson-goal">Cần nắm: tỉ số của hai đoạn thẳng; hai đoạn thẳng tỉ lệ; <b>định lí Thalès</b> (thuận) và <b>định lí Thalès đảo</b>; cách ghép đúng các đoạn tương ứng trong tỉ lệ thức để tính độ dài; cách dùng Thalès đảo để chứng minh hai đường thẳng song song; ứng dụng đo khoảng cách không tới được.</p>
+
+    <div class="box note" data-label="📝 Em có biết">
+      <p><b>Thalès</b> (625 – 547 trước Công nguyên) là một trong những nhà hình học đầu tiên của Hy Lạp. Cả chương IV xoay quanh định lí mang tên ông cùng hai hệ quả quen thuộc: tính chất <b>đường trung bình</b> và tính chất <b>đường phân giác</b> của tam giác.</p>
+    </div>
+
+    <h4>1. Tỉ số của hai đoạn thẳng</h4>
+    <div class="box def">
+      <p><span class="kw">Tỉ số của hai đoạn thẳng</span> là tỉ số độ dài của chúng theo <b>cùng một đơn vị đo</b>.</p>
+      <p>Khi thay đổi đơn vị đo, tỉ số độ dài của hai đoạn thẳng <b>không thay đổi</b>.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Tỉ số của hai đoạn thẳng</div>
+      <div class="formula-body">\[ \dfrac{AB}{CD} \]</div>
+      <ul class="formula-legend">
+        <li>\(AB,\ CD\): độ dài hai đoạn thẳng, đo theo <b>cùng một đơn vị</b> (cm, dm, m…)</li>
+        <li>Tỉ số là một số <b>không có đơn vị</b></li>
+        <li>Đổi đơn vị đo (cm ↔ dm ↔ m) thì tỉ số vẫn giữ nguyên giá trị</li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập 1, tr. 77). Tìm tỉ số của các cặp đoạn thẳng sau.</p>
+      <p><b>a)</b> \(MN = 3\) cm, \(PQ = 9\) cm ⇒ \(\dfrac{MN}{PQ} = \dfrac{3}{9} = \dfrac{1}{3}\).</p>
+      <p><b>b)</b> \(EF = 25\) cm, \(HK = 10\) dm \(= 100\) cm ⇒ \(\dfrac{EF}{HK} = \dfrac{25}{100} = \dfrac{1}{4}\).</p>
+    </div>
+    <div class="box warn">
+      <p>Trước khi lập tỉ số phải <b>đổi về cùng một đơn vị</b>. Viết \(\dfrac{25}{10}\) cho câu b) là sai vì một bên tính bằng cm, một bên tính bằng dm.</p>
+    </div>
+
+    <h4>2. Đoạn thẳng tỉ lệ</h4>
+    <div class="box def">
+      <p>Hai đoạn thẳng <i>AB</i> và <i>CD</i> gọi là <span class="kw">tỉ lệ</span> với hai đoạn thẳng <i>A'B'</i> và <i>C'D'</i> nếu có tỉ lệ thức \(\dfrac{AB}{CD} = \dfrac{A'B'}{C'D'}\) hay \(\dfrac{AB}{A'B'} = \dfrac{CD}{C'D'}\).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Hai đoạn thẳng tỉ lệ</div>
+      <div class="formula-body">\[ \dfrac{AB}{CD} = \dfrac{A'B'}{C'D'} \quad \Longleftrightarrow \quad \dfrac{AB}{A'B'} = \dfrac{CD}{C'D'} \]</div>
+      <ul class="formula-legend">
+        <li>\(AB, CD, A'B', C'D'\): độ dài bốn đoạn thẳng (cùng đơn vị)</li>
+        <li>Hai cách viết trên là <b>một</b> tỉ lệ thức, chỉ đổi chỗ hai trung tỉ</li>
+        <li>Từ một tỉ lệ thức luôn suy ra: tích hai ngoại tỉ bằng tích hai trung tỉ, \(AB \cdot C'D' = CD \cdot A'B'\)</li>
+      </ul>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 320 192" width="320" role="img" aria-label="Bốn đoạn thẳng AB, CD, A phẩy B phẩy, C phẩy D phẩy có độ dài 2, 3, 4, 6 đơn vị minh hoạ hai đoạn thẳng tỉ lệ">
+        <g class="stroke" fill="none" stroke-width="2">
+          <line x1="45" y1="40" x2="125" y2="40"/>
+          <line x1="45" y1="80" x2="165" y2="80"/>
+          <line x1="45" y1="120" x2="205" y2="120"/>
+          <line x1="45" y1="160" x2="285" y2="160"/>
+        </g>
+        <g class="stroke" fill="none" stroke-width="1.6">
+          <path d="M45 34 L45 46 M125 34 L125 46"/>
+          <path d="M45 74 L45 86 M165 74 L165 86"/>
+          <path d="M45 114 L45 126 M205 114 L205 126"/>
+          <path d="M45 154 L45 166 M285 154 L285 166"/>
+        </g>
+        <g class="accent" fill="none" stroke-width="1.4">
+          <path d="M85 37 L85 43"/>
+          <path d="M85 77 L85 83 M125 77 L125 83"/>
+          <path d="M85 117 L85 123 M125 117 L125 123 M165 117 L165 123"/>
+          <path d="M85 157 L85 163 M125 157 L125 163 M165 157 L165 163 M205 157 L205 163 M245 157 L245 163"/>
+        </g>
+        <text x="41" y="32" font-size="14" font-style="italic">A</text>
+        <text x="119" y="32" font-size="14" font-style="italic">B</text>
+        <text x="41" y="72" font-size="14" font-style="italic">C</text>
+        <text x="159" y="72" font-size="14" font-style="italic">D</text>
+        <text x="39" y="112" font-size="14" font-style="italic">A'</text>
+        <text x="197" y="112" font-size="14" font-style="italic">B'</text>
+        <text x="39" y="152" font-size="14" font-style="italic">C'</text>
+        <text x="277" y="152" font-size="14" font-style="italic">D'</text>
+        <text x="135" y="44" font-size="11.5" class="accent-fill">2 đơn vị</text>
+        <text x="175" y="84" font-size="11.5" class="accent-fill">3 đơn vị</text>
+        <text x="215" y="124" font-size="11.5" class="accent-fill">4 đơn vị</text>
+        <text x="165" y="182" font-size="11.5" class="accent-fill" text-anchor="middle">6 đơn vị</text>
+      </svg>
+      <figcaption>Theo H.4.3: \(\dfrac{AB}{CD} = \dfrac{2}{3}\) và \(\dfrac{A'B'}{C'D'} = \dfrac{4}{6} = \dfrac{2}{3}\), nên \(AB\), \(CD\) tỉ lệ với \(A'B'\), \(C'D'\).</figcaption>
+    </figure>
+
+    <h4>3. Định lí Thalès trong tam giác</h4>
+    <div class="box law" data-label="⚖️ Định lí Thalès">
+      <p>Nếu một đường thẳng <b>song song với một cạnh</b> của tam giác và <b>cắt hai cạnh còn lại</b> thì nó định ra trên hai cạnh đó những <span class="kw">đoạn thẳng tương ứng tỉ lệ</span>.</p>
+      <p class="muted">GT: \(\triangle ABC\), \(B'C' \parallel BC\) \((B' \in AB;\ C' \in AC)\) &nbsp;·&nbsp; KL: \(\dfrac{AB'}{AB} = \dfrac{AC'}{AC}\), \(\dfrac{AB'}{B'B} = \dfrac{AC'}{C'C}\), \(\dfrac{B'B}{AB} = \dfrac{C'C}{AC}\).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Tỉ lệ thức trong định lí Thalès (đường thẳng song song một cạnh của tam giác)</div>
+      <div class="formula-body">\[ \begin{aligned} \dfrac{AB'}{AB} &amp;= \dfrac{AC'}{AC} \\[4pt] \dfrac{AB'}{B'B} &amp;= \dfrac{AC'}{C'C} \\[4pt] \dfrac{B'B}{AB} &amp;= \dfrac{C'C}{AC} \end{aligned} \]</div>
+      <ul class="formula-legend">
+        <li>Áp dụng khi: \(\triangle ABC\) có \(B' \in AB\), \(C' \in AC\) và \(B'C' \parallel BC\)</li>
+        <li>\(AB', AC'\): hai đoạn <b>kề đỉnh</b> \(A\) (cùng đơn vị độ dài)</li>
+        <li>\(B'B, C'C\): hai đoạn <b>kề đáy</b> \(BC\)</li>
+        <li>\(AB, AC\): hai cạnh nguyên vẹn của tam giác</li>
+      </ul>
+      <p class="formula-note">Quy tắc ghép: <b>trên</b> ↔ <b>trên</b>, <b>dưới</b> ↔ <b>dưới</b>, <b>cả cạnh</b> ↔ <b>cả cạnh</b>. Luôn so hai đoạn nằm trên <i>AB</i> với hai đoạn ở đúng vị trí đó trên <i>AC</i>.</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 340 210" width="340" role="img" aria-label="Tam giác ABC có đường thẳng qua B phẩy và C phẩy song song với BC, ghi tên bốn đoạn AB phẩy, B phẩy B, AC phẩy, C phẩy C">
+        <line x1="70" y1="112" x2="272" y2="112" class="accent" stroke-width="2"/>
+        <polygon points="160,28 45,180 305,180" class="stroke" fill="none" stroke-width="2"/>
+        <g class="accent" fill="none" stroke-width="1.8">
+          <path d="M162 106 L168 112 L162 118"/>
+        </g>
+        <g class="stroke" fill="none" stroke-width="1.8">
+          <path d="M169 174 L175 180 L169 186"/>
+        </g>
+        <circle cx="97" cy="112" r="3" class="accent-fill"/>
+        <circle cx="240" cy="112" r="3" class="accent-fill"/>
+        <text x="154" y="20" font-size="16" font-style="italic">A</text>
+        <text x="28" y="196" font-size="16" font-style="italic">B</text>
+        <text x="309" y="196" font-size="16" font-style="italic">C</text>
+        <text x="72" y="104" font-size="14" font-style="italic">B'</text>
+        <text x="244" y="104" font-size="14" font-style="italic">C'</text>
+        <text x="120" y="68" font-size="12" text-anchor="end" class="accent-fill">AB'</text>
+        <text x="62" y="150" font-size="12" text-anchor="end" class="accent-fill">B'B</text>
+        <text x="208" y="68" font-size="12" class="accent-fill">AC'</text>
+        <text x="280" y="150" font-size="12" class="accent-fill">C'C</text>
+      </svg>
+      <figcaption>Theo H.4.4: \(B'C' \parallel BC\) ⇒ \(\dfrac{AB'}{AB} = \dfrac{AC'}{AC}\), \(\dfrac{AB'}{B'B} = \dfrac{AC'}{C'C}\), \(\dfrac{B'B}{AB} = \dfrac{C'C}{AC}\).</figcaption>
+    </figure>
+    <div class="box method">
+      <p class="box-title">Dạng: Tính độ dài đoạn thẳng nhờ định lí Thalès</p>
+      <ol class="steps">
+        <li>Tìm trong hình một <b>tam giác</b> và một đường thẳng <b>song song với một cạnh</b> của tam giác đó, cắt hai cạnh kia.</li>
+        <li>Gọi tên đúng: đỉnh chung, hai đoạn kề đỉnh, hai đoạn kề đáy.</li>
+        <li>Viết tỉ lệ thức, chọn cặp đoạn <b>đã biết ba trong bốn</b> độ dài.</li>
+        <li>Giải tỉ lệ thức bằng quy tắc nhân chéo: \(\dfrac{a}{b} = \dfrac{c}{d} \Rightarrow a\,d = b\,c\), rồi rút ra ẩn.</li>
+        <li>Kiểm tra lại: đoạn dài hơn phải ứng với đoạn dài hơn.</li>
+      </ol>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 340 210" width="340" role="img" aria-label="Tam giác DEF có MN song song EF, DM bằng 2, ME bằng 4, DN bằng x, NF bằng 5">
+        <line x1="96" y1="79" x2="232" y2="79" class="accent" stroke-width="2"/>
+        <polygon points="150,28 58,180 318,180" class="stroke" fill="none" stroke-width="2"/>
+        <g class="accent" fill="none" stroke-width="1.8"><path d="M158 73 L164 79 L158 85"/></g>
+        <g class="stroke" fill="none" stroke-width="1.8"><path d="M182 174 L188 180 L182 186"/></g>
+        <circle cx="119" cy="79" r="3" class="accent-fill"/>
+        <circle cx="206" cy="79" r="3" class="accent-fill"/>
+        <text x="144" y="20" font-size="16" font-style="italic">D</text>
+        <text x="40" y="196" font-size="16" font-style="italic">E</text>
+        <text x="322" y="196" font-size="16" font-style="italic">F</text>
+        <text x="102" y="71" font-size="14" font-style="italic">M</text>
+        <text x="210" y="71" font-size="14" font-style="italic">N</text>
+        <text x="140" y="54" font-size="13" class="accent-fill">2</text>
+        <text x="80" y="134" font-size="13" text-anchor="end" class="accent-fill">4</text>
+        <text x="186" y="50" font-size="13" class="accent-fill">x</text>
+        <text x="270" y="134" font-size="13" class="accent-fill">5</text>
+      </svg>
+      <figcaption>Hình của Ví dụ 1 (H.4.5): \(MN \parallel EF\), \(DM = 2\), \(ME = 4\), \(DN = x\), \(NF = 5\).</figcaption>
+    </figure>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 (SGK tr. 78, H.4.5). Tính độ dài \(x\), biết \(MN \parallel EF\).</p>
+      <p>Xét \(\triangle DEF\) có \(MN \parallel EF\) nên theo định lí Thalès: \(\dfrac{DM}{ME} = \dfrac{DN}{NF}\).</p>
+      <p>Thay số: \(\dfrac{2}{4} = \dfrac{x}{5}\) ⇒ \(x = \dfrac{2 \cdot 5}{4} = 2{,}5\).</p>
+      <p><b>Vậy</b> \(x = 2{,}5\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 (Luyện tập 3, tr. 79, H.4.6). Tìm \(x\), \(y\).</p>
+      <p><b>a)</b> \(\triangle ABC\) có \(MN \parallel BC\), \(AM = 6{,}5\), \(MB = x\), \(AN = 4\), \(NC = 2\).</p>
+      <p>\(\dfrac{AM}{MB} = \dfrac{AN}{NC}\) ⇒ \(\dfrac{6{,}5}{x} = \dfrac{4}{2}\) ⇒ \(x = \dfrac{6{,}5 \cdot 2}{4} = 3{,}25\).</p>
+      <p><b>b)</b> \(\triangle PHQ\) có \(EF \perp PH\) và \(HQ \perp PH\) nên \(EF \parallel HQ\); \(PE = 4\), \(PF = 5\), \(FQ = 3{,}5\), \(PH = y\).</p>
+      <p>\(\dfrac{PE}{PH} = \dfrac{PF}{PQ}\) ⇒ \(\dfrac{4}{y} = \dfrac{5}{5 + 3{,}5} = \dfrac{5}{8{,}5}\) ⇒ \(y = \dfrac{4 \cdot 8{,}5}{5} = 6{,}8\).</p>
+    </div>
+    <div class="box warn">
+      <p><b>Lỗi số 1 của cả chương:</b> ghép sai đoạn tương ứng. Nếu tử số bên trái là đoạn <b>kề đỉnh</b> thì tử số bên phải cũng phải là đoạn <b>kề đỉnh</b>.</p>
+      <p>\(\dfrac{AB'}{B'B} = \dfrac{AC'}{C'C}\) là đúng, còn \(\dfrac{AB'}{B'B} = \dfrac{C'C}{AC'}\) là <b>sai</b>.</p>
+      <p>Cũng phải kiểm tra điều kiện <b>song song</b>. Không có \(B'C' \parallel BC\) thì không được viết tỉ lệ thức nào cả.</p>
+    </div>
+    <div class="box tip">
+      <p>Nhớ bằng hình ảnh: đường thẳng song song <b>cắt tam giác thành hai tầng</b>. Tầng trên so với tầng trên, tầng dưới so với tầng dưới, cả cạnh so với cả cạnh.</p>
+    </div>
+
+    <h4>4. Hệ quả của định lí Thalès (mở rộng)</h4>
+    <div class="box law" data-label="⚖️ Hệ quả của định lí Thalès">
+      <p>Nếu một đường thẳng cắt hai cạnh của một tam giác và <b>song song với cạnh còn lại</b> thì nó tạo thành một tam giác mới có <b>ba cạnh tỉ lệ</b> với ba cạnh của tam giác đã cho.</p>
+      <p class="muted">Hệ quả này không được SGK Toán 8 (Kết nối tri thức) nêu thành mục riêng, nhưng suy ra trực tiếp từ định lí Thalès và rất hay dùng khi phải tính đoạn \(B'C'\) nằm trên đường song song.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Hệ quả của định lí Thalès (ba cạnh tỉ lệ)</div>
+      <div class="formula-body">\[ \dfrac{AB'}{AB} = \dfrac{AC'}{AC} = \dfrac{B'C'}{BC} \]</div>
+      <ul class="formula-legend">
+        <li>Áp dụng khi: \(\triangle ABC\) có \(B' \in AB\), \(C' \in AC\), \(B'C' \parallel BC\)</li>
+        <li>\(B'C'\): đoạn nằm trên đường thẳng song song (cùng đơn vị với \(BC\))</li>
+        <li>Dùng để tính \(B'C'\) — điều mà định lí Thalès “thuần” chưa cho ngay</li>
+      </ul>
+      <p class="formula-note">Suy ra: \(B'C' = BC \cdot \dfrac{AB'}{AB}\).</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 340 210" width="340" role="img" aria-label="Tam giác ABC và tam giác AB phẩy C phẩy có B phẩy C phẩy song song BC, ba cạnh tỉ lệ">
+        <polygon points="160,28 45,180 305,180" class="stroke" fill="none" stroke-width="2"/>
+        <polygon points="160,28 97,112 240,112" class="accent" fill="none" stroke-width="2"/>
+        <g class="accent" fill="none" stroke-width="1.8"><path d="M194 106 L200 112 L194 118"/></g>
+        <g class="stroke" fill="none" stroke-width="1.8"><path d="M194 174 L200 180 L194 186"/></g>
+        <text x="154" y="20" font-size="16" font-style="italic">A</text>
+        <text x="28" y="196" font-size="16" font-style="italic">B</text>
+        <text x="309" y="196" font-size="16" font-style="italic">C</text>
+        <text x="72" y="108" font-size="14" font-style="italic">B'</text>
+        <text x="246" y="108" font-size="14" font-style="italic">C'</text>
+        <text x="150" y="106" font-size="12" text-anchor="middle" class="accent-fill">B'C'</text>
+        <text x="150" y="172" font-size="12" text-anchor="middle">BC</text>
+      </svg>
+      <figcaption>Tam giác \(AB'C'\) “thu nhỏ” của tam giác \(ABC\): \(\dfrac{AB'}{AB} = \dfrac{AC'}{AC} = \dfrac{B'C'}{BC}\).</figcaption>
+    </figure>
+
+    <h4>5. Định lí Thalès đảo</h4>
+    <div class="box law" data-label="⚖️ Định lí Thalès đảo">
+      <p>Nếu một đường thẳng <b>cắt hai cạnh</b> của một tam giác và định ra trên hai cạnh này những <b>đoạn thẳng tương ứng tỉ lệ</b> thì đường thẳng đó <span class="kw">song song với cạnh còn lại</span> của tam giác.</p>
+      <p class="muted">GT: \(\triangle ABC\), \(B' \in AB\), \(C' \in AC\), \(\dfrac{AB'}{AB} = \dfrac{AC'}{AC}\) &nbsp;·&nbsp; KL: \(B'C' \parallel BC\).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Điều kiện để hai đường thẳng song song (định lí Thalès đảo)</div>
+      <div class="formula-body">\[ \begin{aligned} &amp;\dfrac{AB'}{AB} = \dfrac{AC'}{AC} \quad \text{hay} \quad \dfrac{AB'}{B'B} = \dfrac{AC'}{C'C} \\[4pt] &amp;\Longrightarrow \ B'C' \parallel BC \end{aligned} \]</div>
+      <ul class="formula-legend">
+        <li>Áp dụng khi: \(B'\) nằm trên cạnh \(AB\), \(C'\) nằm trên cạnh \(AC\) của \(\triangle ABC\)</li>
+        <li>\(AB', B'B, AC', C'C\): các đoạn do \(B'\), \(C'\) chia ra (cùng đơn vị độ dài)</li>
+        <li>Chỉ cần <b>một</b> trong hai tỉ lệ thức trên là đủ để kết luận song song</li>
+      </ul>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 340 210" width="340" role="img" aria-label="Tam giác ABC có AB phẩy bằng 4, B phẩy B bằng 2, AC phẩy bằng 6, C phẩy C bằng 3 nên B phẩy C phẩy song song BC">
+        <line x1="60" y1="129" x2="280" y2="129" class="accent" stroke-width="2"/>
+        <polygon points="160,28 45,180 305,180" class="stroke" fill="none" stroke-width="2"/>
+        <g class="accent" fill="none" stroke-width="1.8"><path d="M164 123 L170 129 L164 135"/></g>
+        <g class="stroke" fill="none" stroke-width="1.8"><path d="M169 174 L175 180 L169 186"/></g>
+        <circle cx="83" cy="129" r="3" class="accent-fill"/>
+        <circle cx="257" cy="129" r="3" class="accent-fill"/>
+        <text x="154" y="20" font-size="16" font-style="italic">A</text>
+        <text x="28" y="196" font-size="16" font-style="italic">B</text>
+        <text x="309" y="196" font-size="16" font-style="italic">C</text>
+        <text x="62" y="122" font-size="14" font-style="italic">B'</text>
+        <text x="261" y="122" font-size="14" font-style="italic">C'</text>
+        <text x="113" y="82" font-size="13" text-anchor="end" class="accent-fill">4</text>
+        <text x="56" y="160" font-size="13" text-anchor="end" class="accent-fill">2</text>
+        <text x="216" y="82" font-size="13" class="accent-fill">6</text>
+        <text x="288" y="160" font-size="13" class="accent-fill">3</text>
+      </svg>
+      <figcaption>Theo HĐ4 (H.4.7): \(\dfrac{AB'}{AB} = \dfrac{4}{6} = \dfrac{2}{3}\) và \(\dfrac{AC'}{AC} = \dfrac{6}{9} = \dfrac{2}{3}\) ⇒ \(B'C' \parallel BC\).</figcaption>
+    </figure>
+    <div class="box method">
+      <p class="box-title">Dạng: Chứng minh hai đường thẳng song song bằng định lí Thalès đảo</p>
+      <ol class="steps">
+        <li>Xác định <b>tam giác</b> chứa hai điểm cần xét và <b>đỉnh chung</b> của hai cạnh bị cắt.</li>
+        <li>Tính riêng từng tỉ số (rút gọn về phân số tối giản), ví dụ \(\dfrac{DM}{ME}\) và \(\dfrac{DN}{NF}\).</li>
+        <li>So sánh hai tỉ số. Nếu bằng nhau thì kết luận hai đường thẳng song song, kèm lí do <i>(định lí Thalès đảo)</i>.</li>
+        <li>Nếu đề cho kết quả gián tiếp (độ dài tổng, trung điểm, trọng tâm…) thì tính đủ các đoạn rồi mới lập tỉ số.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 (SGK tr. 79, H.4.8). Chứng minh \(MN \parallel EF\), biết \(DM = 2\), \(ME = 4\), \(DN = 2{,}5\), \(NF = 5\).</p>
+      <p>Trong \(\triangle DEF\): \(\dfrac{DM}{ME} = \dfrac{2}{4} = \dfrac{1}{2}\) và \(\dfrac{DN}{NF} = \dfrac{2{,}5}{5} = \dfrac{1}{2}\).</p>
+      <p>Vì \(\dfrac{DM}{ME} = \dfrac{DN}{NF} = \dfrac{1}{2}\) nên \(MN \parallel EF\) <i>(định lí Thalès đảo)</i>.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 4 (Bài 4.2, tr. 80). Tìm cặp đường thẳng song song.</p>
+      <p><b>a)</b> \(\triangle MNP\) có \(E \in MN\), \(F \in MP\), \(ME = 2\), \(EN = 3\), \(MF = 3\), \(FP = 4{,}5\).</p>
+      <p>\(\dfrac{ME}{EN} = \dfrac{2}{3}\); \(\dfrac{MF}{FP} = \dfrac{3}{4{,}5} = \dfrac{2}{3}\) ⇒ \(EF \parallel NP\).</p>
+      <p><b>b)</b> \(\triangle HKQ\) có \(HF = 14\), \(FK = 12\), \(HM = 15\), \(MQ = 10\), \(KE = 18\), \(EQ = 12\).</p>
+      <p>\(\dfrac{QM}{MH} = \dfrac{10}{15} = \dfrac{2}{3}\) và \(\dfrac{QE}{EK} = \dfrac{12}{18} = \dfrac{2}{3}\) ⇒ \(ME \parallel HK\).</p>
+      <p>Còn \(\dfrac{HF}{FK} = \dfrac{14}{12} = \dfrac{7}{6} \ne \dfrac{HM}{MQ} = \dfrac{15}{10} = \dfrac{3}{2}\) nên \(FM\) <b>không</b> song song với \(KQ\).</p>
+    </div>
+    <div class="box warn">
+      <p>Định lí đảo chỉ dùng được khi \(B'\), \(C'\) nằm trên <b>hai cạnh khác nhau</b> của cùng một tam giác. Hai điểm nằm lung tung trên hai đường thẳng bất kì thì tỉ lệ thức không cho kết luận song song.</p>
+    </div>
+
+    <h4>6. Vận dụng: đo khoảng cách không tới được</h4>
+    <div class="box method">
+      <p class="box-title">Dạng: Đo khoảng cách giữa hai điểm không tới được (qua sông, qua hồ)</p>
+      <ol class="steps">
+        <li>Chọn thêm điểm phụ sao cho tạo ra một <b>tam giác</b> và một cặp đường thẳng <b>song song</b> (hai bờ sông, hai đường thẳng cùng vuông góc với một đường…).</li>
+        <li>Đo các đoạn <b>tới được</b> trên mặt đất.</li>
+        <li>Viết tỉ lệ thức theo định lí Thalès cho tam giác vừa tạo.</li>
+        <li>Giải ra đoạn chưa biết, rồi <b>trừ</b> phần đã đo nếu đề hỏi đoạn nằm giữa.</li>
+      </ol>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 340 230" width="340" role="img" aria-label="Sơ đồ đo khoảng cách CD qua sông, cầu AB rộng 300 m, AE bằng 400 m, EC bằng 500 m">
+        <g class="stroke" fill="none" stroke-width="1.6">
+          <line x1="45" y1="120" x2="330" y2="120"/>
+          <line x1="45" y1="195" x2="330" y2="195"/>
+          <path d="M274 114 L280 120 L274 126"/>
+          <path d="M274 189 L280 195 L274 201"/>
+        </g>
+        <line x1="80" y1="20" x2="211" y2="195" class="stroke" stroke-width="1.8"/>
+        <line x1="80" y1="120" x2="80" y2="195" class="accent" stroke-width="3.5"/>
+        <line x1="155" y1="120" x2="211" y2="195" class="accent" stroke-width="3.5"/>
+        <text x="70" y="16" font-size="15" font-style="italic">E</text>
+        <text x="64" y="116" font-size="15" font-style="italic">A</text>
+        <text x="68" y="211" font-size="15" font-style="italic">B</text>
+        <text x="158" y="113" font-size="15" font-style="italic">C</text>
+        <text x="215" y="211" font-size="15" font-style="italic">D</text>
+        <text x="72" y="74" font-size="12" text-anchor="end">400 m</text>
+        <text x="72" y="162" font-size="12" text-anchor="end">300 m</text>
+        <text x="124" y="66" font-size="12">500 m</text>
+        <text x="192" y="158" font-size="12" class="accent-fill">CD = ?</text>
+        <text x="100" y="178" font-size="11.5">sông</text>
+      </svg>
+      <figcaption>Tình huống mở đầu (H.4.1): hai bờ sông song song nên \(AC \parallel BD\); cầu \(AB = 300\) m, \(AE = 400\) m, \(EC = 500\) m.</figcaption>
+    </figure>
+    <div class="box example">
+      <p class="box-title">Ví dụ 5 (Vận dụng, tr. 80 — trả lời tình huống mở đầu).</p>
+      <p>Hai bờ sông song song nên trong \(\triangle EBD\) ta có \(AC \parallel BD\) với \(A \in EB\), \(C \in ED\).</p>
+      <p>Theo định lí Thalès: \(\dfrac{EA}{EB} = \dfrac{EC}{ED}\). Mà \(EB = EA + AB = 400 + 300 = 700\) (m).</p>
+      <p>\(\dfrac{400}{700} = \dfrac{500}{ED}\) ⇒ \(ED = \dfrac{500 \cdot 700}{400} = 875\) (m).</p>
+      <p><b>Vậy</b> \(CD = ED - EC = 875 - 500 = 375\) (m).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 6 (Bài 4.5, tr. 80). \(C, E, B\) thẳng hàng; \(C, F, A\) thẳng hàng; \(AB \parallel EF\); \(AF = 40\) m, \(FC = 20\) m, \(EC = 30\) m. Tính \(BE\).</p>
+      <p>\(\triangle CAB\) có \(F \in CA\), \(E \in CB\) và \(EF \parallel AB\) nên \(\dfrac{CF}{CA} = \dfrac{CE}{CB}\).</p>
+      <p>\(CA = AF + FC = 40 + 20 = 60\) (m) ⇒ \(\dfrac{20}{60} = \dfrac{30}{CB}\) ⇒ \(CB = 90\) (m).</p>
+      <p><b>Vậy</b> \(BE = CB - CE = 90 - 30 = 60\) (m).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 7 (Bài 4.3, tr. 80). \(D \in BC\); \(DF \parallel AB\) \((F \in AC)\), \(DE \parallel AC\) \((E \in AB)\). Chứng minh \(\dfrac{AE}{AB} + \dfrac{AF}{AC} = 1\).</p>
+      <p>Vì \(DE \parallel AC\) nên trong \(\triangle ABC\): \(\dfrac{BE}{BA} = \dfrac{BD}{BC}\) ⇒ \(\dfrac{AE}{AB} = 1 - \dfrac{BD}{BC}\).</p>
+      <p>Vì \(DF \parallel AB\) nên \(\dfrac{CF}{CA} = \dfrac{CD}{CB}\) ⇒ \(\dfrac{AF}{AC} = 1 - \dfrac{CD}{CB} = \dfrac{BD}{BC}\).</p>
+      <p>Cộng lại: \(\dfrac{AE}{AB} + \dfrac{AF}{AC} = 1 - \dfrac{BD}{BC} + \dfrac{BD}{BC} = 1\) (đpcm).</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li><b>Tỉ số hai đoạn thẳng</b>: phải đo theo cùng một đơn vị; đổi đơn vị thì tỉ số không đổi.</li>
+        <li><b>Định lí Thalès</b>: \(B'C' \parallel BC\) ⇒ \(\dfrac{AB'}{AB} = \dfrac{AC'}{AC}\), \(\dfrac{AB'}{B'B} = \dfrac{AC'}{C'C}\), \(\dfrac{B'B}{AB} = \dfrac{C'C}{AC}\).</li>
+        <li><b>Định lí Thalès đảo</b>: các đoạn tương ứng tỉ lệ ⇒ hai đường thẳng song song.</li>
+        <li>Ghép tỉ lệ thức theo vị trí: <b>trên – trên</b>, <b>dưới – dưới</b>, <b>cả cạnh – cả cạnh</b>.</li>
+        <li>Hệ quả (mở rộng): \(\dfrac{AB'}{AB} = \dfrac{AC'}{AC} = \dfrac{B'C'}{BC}\) — dùng để tính đoạn nằm trên đường song song.</li>
+        <li>Thalès giúp đo khoảng cách <b>không tới được</b> chỉ bằng vài phép đo trên mặt đất.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-16">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 16</span>Đường trung bình của tam giác</h3>
+    <p class="lesson-goal">Cần nắm: định nghĩa <b>đường trung bình của tam giác</b>; tính chất “song song với cạnh thứ ba và bằng nửa cạnh ấy”; chú ý về đường thẳng đi qua trung điểm một cạnh và song song với cạnh thứ hai; cách dùng đường trung bình để tính độ dài, chứng minh song song, chứng minh trung điểm.</p>
+
+    <h4>1. Định nghĩa đường trung bình của tam giác</h4>
+    <div class="box def">
+      <p><span class="kw">Đường trung bình của tam giác</span> là đoạn thẳng <b>nối trung điểm hai cạnh</b> của tam giác.</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 340 200" width="340" role="img" aria-label="Tam giác ABC với D là trung điểm AB, E là trung điểm AC, DE là đường trung bình">
+        <polygon points="150,25 40,170 300,170" class="stroke" fill="none" stroke-width="2"/>
+        <line x1="95" y1="97.5" x2="225" y2="97.5" class="accent" stroke-width="2.5"/>
+        <g class="stroke" fill="none" stroke-width="1.6">
+          <path d="M117.7 57.6 L127.3 64.9"/>
+          <path d="M62.7 130.1 L72.3 137.4"/>
+          <path d="M180.8 63.1 L189.2 54.5 M185.8 68.0 L194.2 59.4"/>
+          <path d="M255.8 135.6 L264.2 127.0 M260.8 140.5 L269.2 131.9"/>
+        </g>
+        <circle cx="95" cy="97.5" r="3" class="accent-fill"/>
+        <circle cx="225" cy="97.5" r="3" class="accent-fill"/>
+        <text x="144" y="18" font-size="16" font-style="italic">A</text>
+        <text x="22" y="186" font-size="16" font-style="italic">B</text>
+        <text x="304" y="186" font-size="16" font-style="italic">C</text>
+        <text x="74" y="94" font-size="15" font-style="italic">D</text>
+        <text x="232" y="92" font-size="15" font-style="italic">E</text>
+      </svg>
+      <figcaption>\(D\) là trung điểm \(AB\) (một gạch), \(E\) là trung điểm \(AC\) (hai gạch) ⇒ \(DE\) là <b>đường trung bình</b> của \(\triangle ABC\).</figcaption>
+    </figure>
+    <div class="box note">
+      <p>Thanh ngang của <b>thước chữ A</b> dùng đo đạc trên mặt đất (H.4.13) chính là hình ảnh đường trung bình của tam giác.</p>
+      <p>Mỗi tam giác có đúng <b>ba</b> đường trung bình (ứng với ba cặp cạnh).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 (Câu hỏi tr. 81, H.4.14). Chỉ ra các đường trung bình.</p>
+      <p>\(\triangle DEF\): \(M\) là trung điểm \(DE\), \(N\) là trung điểm \(DF\), \(P\) là trung điểm \(EF\) ⇒ các đường trung bình là \(MN\), \(NP\), \(MP\).</p>
+      <p>\(\triangle IHK\): \(B\) là trung điểm \(IH\), \(C\) là trung điểm \(IK\), \(A\) là trung điểm \(HK\) ⇒ các đường trung bình là \(BC\), \(CA\), \(AB\).</p>
+    </div>
+
+    <h4>2. Tính chất đường trung bình của tam giác</h4>
+    <div class="box law" data-label="⚖️ Định lí (đường trung bình của tam giác)">
+      <p>Đường trung bình của tam giác <b>song song với cạnh thứ ba</b> và <b>bằng nửa cạnh đó</b>.</p>
+      <p class="muted">GT: \(\triangle ABC\), \(AD = DB\), \(AE = EC\), \(D \in AB\), \(E \in AC\) &nbsp;·&nbsp; KL: \(DE \parallel BC\); \(DE = \dfrac{1}{2}BC\).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Độ dài đường trung bình của tam giác</div>
+      <div class="formula-body">\[ DE \parallel BC \quad \text{và} \quad DE = \dfrac{1}{2}\,BC \]</div>
+      <ul class="formula-legend">
+        <li>Áp dụng khi: \(D\), \(E\) lần lượt là <b>trung điểm</b> của \(AB\), \(AC\) trong \(\triangle ABC\)</li>
+        <li>\(DE\): đường trung bình ứng với cạnh \(BC\) (cm, m…)</li>
+        <li>\(BC\): cạnh thứ ba — cạnh <b>không</b> chứa \(D\) và \(E\)</li>
+      </ul>
+      <p class="formula-note">Suy ra: \(BC = 2\,DE\) — dùng khi biết đường trung bình, cần tìm cạnh đáy.</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 340 205" width="340" role="img" aria-label="Chứng minh tính chất đường trung bình: M là trung điểm BC, tứ giác DEMB là hình bình hành">
+        <polygon points="150,25 40,170 300,170" class="stroke" fill="none" stroke-width="2"/>
+        <line x1="95" y1="97.5" x2="225" y2="97.5" class="accent" stroke-width="2.5"/>
+        <line x1="225" y1="97.5" x2="170" y2="170" class="accent" stroke-width="1.8" stroke-dasharray="6 4"/>
+        <g class="stroke" fill="none" stroke-width="1.6">
+          <path d="M117.7 57.6 L127.3 64.9"/>
+          <path d="M62.7 130.1 L72.3 137.4"/>
+          <path d="M180.8 63.1 L189.2 54.5 M185.8 68.0 L194.2 59.4"/>
+          <path d="M255.8 135.6 L264.2 127.0 M260.8 140.5 L269.2 131.9"/>
+          <path d="M99 164 L99 176 M105 164 L105 176 M111 164 L111 176"/>
+          <path d="M229 164 L229 176 M235 164 L235 176 M241 164 L241 176"/>
+        </g>
+        <g class="accent" fill="none" stroke-width="1.8"><path d="M154 91.5 L160 97.5 L154 103.5"/></g>
+        <g class="stroke" fill="none" stroke-width="1.8"><path d="M69 164 L75 170 L69 176"/></g>
+        <text x="144" y="18" font-size="16" font-style="italic">A</text>
+        <text x="22" y="186" font-size="16" font-style="italic">B</text>
+        <text x="304" y="186" font-size="16" font-style="italic">C</text>
+        <text x="74" y="94" font-size="15" font-style="italic">D</text>
+        <text x="232" y="92" font-size="15" font-style="italic">E</text>
+        <text x="164" y="190" font-size="15" font-style="italic">M</text>
+      </svg>
+      <figcaption>Theo H.4.16: \(M\) là trung điểm \(BC\); tứ giác \(DEMB\) là hình bình hành nên \(DE = BM = \dfrac{1}{2}BC\).</figcaption>
+    </figure>
+    <div class="box note" data-label="📝 Chứng minh định lí (SGK tr. 82)">
+      <ol class="steps">
+        <li>Gọi \(M\) là trung điểm của \(BC\).</li>
+        <li>\(\triangle ABC\) có \(\dfrac{AD}{AB} = \dfrac{AE}{AC} = \dfrac{1}{2}\) ⇒ \(DE \parallel BC\) <i>(định lí Thalès đảo)</i>.</li>
+        <li>Tương tự chứng minh được \(EM \parallel AB\).</li>
+        <li>Tứ giác \(DEMB\) có \(DE \parallel BM\) và \(EM \parallel DB\) nên là <b>hình bình hành</b>.</li>
+        <li>Suy ra \(DE = BM = \dfrac{1}{2}BC\). Vậy \(DE \parallel BC\) và \(DE = \dfrac{1}{2}BC\).</li>
+      </ol>
+    </div>
+    <div class="box note" data-label="📝 Chú ý (SGK tr. 82)">
+      <p>Trong một tam giác, nếu một đường thẳng <b>đi qua trung điểm một cạnh</b> và <b>song song với cạnh thứ hai</b> thì nó <b>đi qua trung điểm cạnh thứ ba</b>.</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 340 200" width="340" role="img" aria-label="Đường thẳng qua trung điểm D của AB và song song với BC thì cắt AC tại trung điểm E">
+        <polygon points="150,25 40,170 300,170" class="stroke" fill="none" stroke-width="2"/>
+        <line x1="70" y1="97.5" x2="258" y2="97.5" class="accent" stroke-width="2.2"/>
+        <g class="stroke" fill="none" stroke-width="1.6">
+          <path d="M117.7 57.6 L127.3 64.9"/>
+          <path d="M62.7 130.1 L72.3 137.4"/>
+        </g>
+        <g class="accent" fill="none" stroke-width="1.7">
+          <path d="M180.8 63.1 L189.2 54.5 M185.8 68.0 L194.2 59.4"/>
+          <path d="M255.8 135.6 L264.2 127.0 M260.8 140.5 L269.2 131.9"/>
+          <path d="M154 91.5 L160 97.5 L154 103.5"/>
+        </g>
+        <g class="stroke" fill="none" stroke-width="1.8"><path d="M124 164 L130 170 L124 176"/></g>
+        <text x="144" y="18" font-size="16" font-style="italic">A</text>
+        <text x="22" y="186" font-size="16" font-style="italic">B</text>
+        <text x="304" y="186" font-size="16" font-style="italic">C</text>
+        <text x="80" y="92" font-size="15" font-style="italic">D</text>
+        <text x="228" y="92" font-size="15" font-style="italic">E</text>
+        <text x="264" y="102" font-size="11.5" class="accent-fill">d</text>
+      </svg>
+      <figcaption>\(D\) là trung điểm \(AB\), \(d \parallel BC\) ⇒ \(d\) cắt \(AC\) tại \(E\) và \(E\) là <b>trung điểm</b> của \(AC\).</figcaption>
+    </figure>
+    <div class="box method">
+      <p class="box-title">Dạng: Dùng đường trung bình để tính độ dài</p>
+      <ol class="steps">
+        <li>Tìm trong hình hai <b>trung điểm</b> của hai cạnh cùng một tam giác (dấu gạch bằng nhau, đề cho “trung điểm”, “trung tuyến”, “trọng tâm”).</li>
+        <li>Khẳng định đoạn nối hai trung điểm đó là <b>đường trung bình</b> của tam giác nào.</li>
+        <li>Dùng \(DE = \dfrac{1}{2}BC\) nếu cần đoạn ngắn, hoặc \(BC = 2\,DE\) nếu cần cạnh đáy.</li>
+        <li>Ghi rõ lí do <i>(tính chất đường trung bình của tam giác)</i>.</li>
+      </ol>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Dùng đường trung bình để chứng minh song song hoặc chứng minh trung điểm</p>
+      <ol class="steps">
+        <li><b>Chứng minh song song:</b> chỉ ra hai đầu mút của đoạn thẳng là trung điểm hai cạnh của một tam giác ⇒ đoạn đó song song với cạnh thứ ba.</li>
+        <li><b>Chứng minh trung điểm:</b> chỉ ra đường thẳng đi qua trung điểm một cạnh và song song với cạnh thứ hai ⇒ nó đi qua trung điểm cạnh thứ ba (Chú ý tr. 82).</li>
+        <li><b>Chứng minh tứ giác đặc biệt:</b> hai đường trung bình cùng ứng với một cạnh thì song song và bằng nhau ⇒ hình bình hành.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 (SGK tr. 82 – 83, H.4.17). \(M\), \(N\) là trung điểm \(AB\), \(AC\); \(BC = 10\) cm. Tính \(MN\).</p>
+      <p>\(\triangle ABC\) có \(M\) là trung điểm \(AB\), \(N\) là trung điểm \(AC\) nên \(MN\) là đường trung bình của \(\triangle ABC\).</p>
+      <p>Suy ra \(MN = \dfrac{1}{2}BC = \dfrac{1}{2} \cdot 10 = 5\) (cm).</p>
+      <p><b>Vậy</b> \(MN = 5\) cm.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 (Luyện tập tr. 83). \(\triangle ABC\) cân tại \(A\); \(D\), \(E\) là trung điểm \(AB\), \(AC\). Tứ giác \(DECB\) là hình gì?</p>
+      <p>\(DE\) là đường trung bình ⇒ \(DE \parallel BC\) ⇒ tứ giác \(DECB\) là <b>hình thang</b>.</p>
+      <p>Lại có \(DB = \dfrac{1}{2}AB\), \(EC = \dfrac{1}{2}AC\), mà \(AB = AC\) (tam giác cân) nên \(DB = EC\).</p>
+      <p><b>Vậy</b> \(DECB\) là <b>hình thang cân</b> (hình thang có hai cạnh bên bằng nhau và không song song).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 4 (Vận dụng tr. 83 — tình huống mở đầu, H.4.12). \(D\), \(E\) là trung điểm \(AB\), \(AC\); \(DE = 500\) m. Tính \(BC\).</p>
+      <p>\(DE\) là đường trung bình của \(\triangle ABC\) nên \(DE = \dfrac{1}{2}BC\) ⇒ \(BC = 2 \cdot DE = 2 \cdot 500 = 1000\) (m).</p>
+      <p><b>Vậy</b> khoảng cách giữa hai điểm \(B\) và \(C\) là \(1000\) m, không cần đo trực tiếp qua hồ.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 5 (Bài 4.8, tr. 83). \(\triangle ABC\) có trung tuyến \(AM\); \(D\), \(E \in AB\) với \(AD = DE = EB\), \(D\) nằm giữa \(A\) và \(E\). Chứng minh \(DC \parallel EM\); \(DC\) cắt \(AM\) tại \(I\), chứng minh \(I\) là trung điểm \(AM\).</p>
+      <p><b>a)</b> Trong \(\triangle BDC\): \(E\) là trung điểm \(BD\) (vì \(DE = EB\)), \(M\) là trung điểm \(BC\) ⇒ \(EM\) là đường trung bình ⇒ \(EM \parallel DC\).</p>
+      <p><b>b)</b> Trong \(\triangle AEM\): \(D\) là trung điểm \(AE\) (vì \(AD = DE\)) và \(DI \parallel EM\) (theo câu a) ⇒ \(DI\) đi qua trung điểm của \(AM\) <i>(Chú ý tr. 82)</i>. Vậy \(I\) là trung điểm của \(AM\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 6 (Bài 4.7, tr. 83). \(M\), \(N\), \(P\) là trung điểm \(AB\), \(AC\), \(BC\). Chứng minh \(BMNC\) là hình thang và \(MNPB\) là hình bình hành.</p>
+      <p><b>a)</b> \(MN\) là đường trung bình của \(\triangle ABC\) ⇒ \(MN \parallel BC\) ⇒ tứ giác \(BMNC\) là <b>hình thang</b>.</p>
+      <p><b>b)</b> \(MN \parallel BP\) (vì \(BP\) nằm trên \(BC\)) và \(MN = \dfrac{1}{2}BC = BP\) (\(P\) là trung điểm \(BC\)).</p>
+      <p>Tứ giác \(MNPB\) có một cặp cạnh đối <b>song song và bằng nhau</b> nên là <b>hình bình hành</b>.</p>
+    </div>
+    <div class="box warn">
+      <p>Đường trung bình của <b>tam giác</b> bằng <b>nửa</b> cạnh thứ ba: \(DE = \dfrac{1}{2}BC\). Rất hay viết nhầm thành \(DE = 2BC\).</p>
+      <p>Đừng lẫn với đường trung bình của <b>hình thang</b> (bằng <b>nửa tổng</b> hai đáy). Hai khái niệm khác nhau, công thức khác nhau.</p>
+      <p>Muốn gọi \(DE\) là đường trung bình thì <b>cả hai</b> điểm \(D\), \(E\) phải là trung điểm. Chỉ một điểm là trung điểm thì chưa đủ.</p>
+    </div>
+    <div class="box tip">
+      <p>Thấy chữ “<b>trung điểm</b>” xuất hiện <b>hai lần</b> trong đề bài hình học lớp 8 thì gần như chắc chắn phải dùng đường trung bình.</p>
+      <p>Trung tuyến, trọng tâm, đường chéo hình bình hành, hình chữ nhật… đều “tặng” sẵn cho ta những trung điểm.</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li><b>Đường trung bình của tam giác</b> = đoạn nối trung điểm hai cạnh; mỗi tam giác có ba đường trung bình.</li>
+        <li><b>Tính chất</b>: \(DE \parallel BC\) và \(DE = \dfrac{1}{2}BC\) (hay \(BC = 2\,DE\)).</li>
+        <li>Định lí được chứng minh nhờ <b>Thalès đảo</b> và <b>hình bình hành</b> — nên nó là hệ quả của Bài 15.</li>
+        <li><b>Chú ý</b>: qua trung điểm một cạnh và song song cạnh thứ hai ⇒ đi qua trung điểm cạnh thứ ba.</li>
+        <li>Dùng đường trung bình để: tính độ dài, chứng minh song song, chứng minh trung điểm, nhận dạng hình thang / hình bình hành.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-17">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 17</span>Tính chất đường phân giác của tam giác</h3>
+    <p class="lesson-goal">Cần nắm: <b>tính chất đường phân giác trong</b> của tam giác (\(\dfrac{DB}{DC} = \dfrac{AB}{AC}\)); cách chứng minh định lí bằng định lí Thalès; chú ý đảo (nhận biết đường phân giác); cách tính độ dài đoạn thẳng và tỉ số đoạn thẳng; tính chất đường <b>phân giác ngoài</b>.</p>
+
+    <h4>1. Tính chất đường phân giác của tam giác</h4>
+    <div class="box law" data-label="⚖️ Tính chất đường phân giác">
+      <p>Trong tam giác, <b>đường phân giác của một góc</b> chia cạnh đối diện thành hai đoạn thẳng <span class="kw">tỉ lệ với hai cạnh kề</span> hai đoạn ấy.</p>
+      <p class="muted">GT: \(\triangle ABC\), \(AD\) là đường phân giác của \(\widehat{BAC}\) \((D \in BC)\) &nbsp;·&nbsp; KL: \(\dfrac{DB}{DC} = \dfrac{AB}{AC}\).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Tính chất đường phân giác trong của tam giác</div>
+      <div class="formula-body">\[ \dfrac{DB}{DC} = \dfrac{AB}{AC} \]</div>
+      <ul class="formula-legend">
+        <li>Áp dụng khi: \(AD\) là phân giác của góc \(A\) trong \(\triangle ABC\), \(D\) nằm trên cạnh \(BC\)</li>
+        <li>\(DB, DC\): hai đoạn mà \(D\) chia cạnh \(BC\) (cm, m…)</li>
+        <li>\(AB, AC\): hai cạnh <b>kề</b> hai đoạn ấy — \(AB\) kề \(DB\), \(AC\) kề \(DC\)</li>
+        <li>Thường dùng kèm: \(DB + DC = BC\)</li>
+      </ul>
+      <p class="formula-note">Suy ra: \(DB = BC \cdot \dfrac{AB}{AB + AC}\) và \(DC = BC \cdot \dfrac{AC}{AB + AC}\).</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 340 210" width="340" role="img" aria-label="Tam giác ABC với AD là đường phân giác của góc A, D thuộc BC, hai đoạn DB và DC tỉ lệ với AB và AC">
+        <polygon points="150,25 55,175 320,175" class="stroke" fill="none" stroke-width="2"/>
+        <line x1="150" y1="25" x2="171" y2="175" class="accent" stroke-width="2.2"/>
+        <g class="accent" fill="none" stroke-width="1.7">
+          <path d="M134.0 50.4 A30 30 0 0 0 154.2 54.7"/>
+          <path d="M154.2 54.7 A30 30 0 0 0 172.5 44.9"/>
+          <path d="M144.5 50.4 L142.9 58.2"/>
+          <path d="M162.3 47.9 L166.1 54.9"/>
+        </g>
+        <circle cx="171" cy="175" r="3" class="accent-fill"/>
+        <text x="144" y="18" font-size="16" font-style="italic">A</text>
+        <text x="38" y="195" font-size="16" font-style="italic">B</text>
+        <text x="324" y="195" font-size="16" font-style="italic">C</text>
+        <text x="167" y="195" font-size="15" font-style="italic">D</text>
+        <text x="94" y="104" font-size="12" text-anchor="end" class="accent-fill">AB</text>
+        <text x="248" y="104" font-size="12" class="accent-fill">AC</text>
+        <text x="113" y="167" font-size="12" text-anchor="middle" class="accent-fill">DB</text>
+        <text x="246" y="167" font-size="12" text-anchor="middle" class="accent-fill">DC</text>
+      </svg>
+      <figcaption>Theo H.4.19: \(AD\) là phân giác của \(\widehat{BAC}\) ⇒ \(\dfrac{DB}{DC} = \dfrac{AB}{AC}\). Đoạn \(DB\) “dựa” vào cạnh \(AB\), đoạn \(DC\) “dựa” vào cạnh \(AC\).</figcaption>
+    </figure>
+
+    <h4>2. Chứng minh định lí</h4>
+    <figure class="diagram">
+      <svg viewBox="0 0 350 240" width="350" role="img" aria-label="Chứng minh tính chất đường phân giác: kẻ qua B đường thẳng song song với AD cắt đường thẳng AC tại E">
+        <line x1="90.6" y1="39" x2="330" y2="210" class="stroke" stroke-width="1.8"/>
+        <line x1="120" y1="210" x2="90.6" y2="39" class="accent" stroke-width="2"/>
+        <line x1="120" y1="210" x2="330" y2="210" class="stroke" stroke-width="2"/>
+        <line x1="120" y1="210" x2="190" y2="110" class="stroke" stroke-width="2"/>
+        <line x1="190" y1="110" x2="207" y2="210" class="accent" stroke-width="2"/>
+        <g class="accent" fill="none" stroke-width="1.7">
+          <path d="M176.2 129.7 A24 24 0 0 0 194.1 133.6"/>
+          <path d="M194.1 133.6 A24 24 0 0 0 209.5 124.0"/>
+          <path d="M115.7 184.4 A26 26 0 0 1 134.9 188.7"/>
+          <path d="M99.9 121.4 L106.2 128.4 L109.8 119.7"/>
+          <path d="M192.9 156.9 L199.2 163.9 L202.8 155.2"/>
+        </g>
+        <text x="78" y="34" font-size="16" font-style="italic">E</text>
+        <text x="196" y="104" font-size="16" font-style="italic">A</text>
+        <text x="106" y="228" font-size="16" font-style="italic">B</text>
+        <text x="328" y="228" font-size="16" font-style="italic">C</text>
+        <text x="202" y="228" font-size="15" font-style="italic">D</text>
+        <text x="178" y="148" font-size="11.5" class="accent-fill">1</text>
+        <text x="205" y="144" font-size="11.5" class="accent-fill">2</text>
+        <text x="125" y="175" font-size="11.5" class="accent-fill">1</text>
+      </svg>
+      <figcaption>Theo H.4.21: qua \(B\) kẻ đường thẳng song song với \(AD\), cắt đường thẳng \(AC\) tại \(E\).</figcaption>
+    </figure>
+    <div class="box note" data-label="📝 Chứng minh định lí (SGK tr. 85)">
+      <ol class="steps">
+        <li>Vẽ đường thẳng qua \(B\), song song với \(AD\), cắt đường thẳng \(AC\) tại \(E\).</li>
+        <li>\(AD\) là phân giác của góc \(A\) nên \(\widehat{A_1} = \widehat{A_2}\).</li>
+        <li>\(EB \parallel AD\) ⇒ \(\widehat{A_1} = \widehat{B_1}\) (so le trong) và \(\widehat{A_2} = \widehat{E}\) (đồng vị).</li>
+        <li>Do đó \(\widehat{B_1} = \widehat{E}\) ⇒ \(\triangle AEB\) cân tại \(A\) ⇒ \(AE = AB\). &nbsp;(1)</li>
+        <li>Áp dụng định lí Thalès vào \(\triangle CEB\) (có \(AD \parallel EB\)): \(\dfrac{DB}{DC} = \dfrac{AE}{AC}\). &nbsp;(2)</li>
+        <li>Từ (1) và (2) suy ra \(\dfrac{DB}{DC} = \dfrac{AB}{AC}\) (đpcm).</li>
+      </ol>
+    </div>
+    <div class="box note" data-label="📝 Chú ý (SGK tr. 85) — dấu hiệu nhận biết đường phân giác">
+      <p>Trong \(\triangle ABC\), nếu \(D\) là điểm thuộc đoạn \(BC\) và thoả mãn \(\dfrac{DB}{DC} = \dfrac{AB}{AC}\) thì \(AD\) <b>là đường phân giác</b> của góc \(A\).</p>
+    </div>
+
+    <h4>3. Tính độ dài đoạn thẳng nhờ tính chất đường phân giác</h4>
+    <div class="box method">
+      <p class="box-title">Dạng: Tính độ dài đoạn thẳng nhờ tính chất đường phân giác</p>
+      <ol class="steps">
+        <li>Xác định rõ <b>đường phân giác của góc nào</b> và nó cắt cạnh đối diện tại điểm nào.</li>
+        <li>Viết tỉ lệ thức: <b>đoạn kề cạnh nào thì ghép với cạnh ấy</b> — \(\dfrac{DB}{DC} = \dfrac{AB}{AC}\).</li>
+        <li>Nếu đề cho <b>ba</b> độ dài: nhân chéo, tìm ẩn ngay.</li>
+        <li>Nếu đề cho cạnh đáy \(BC\) và hai cạnh bên: dùng thêm \(DB + DC = BC\), rồi tính \(DB = BC \cdot \dfrac{AB}{AB + AC}\), \(DC = BC - DB\).</li>
+        <li>Làm tròn theo đúng yêu cầu của đề và ghi đơn vị.</li>
+      </ol>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 340 210" width="340" role="img" aria-label="Tam giác MNP có MI là phân giác góc M, MN bằng 24, MP bằng 32, NI bằng 15, IP bằng x">
+        <polygon points="140,30 60,180 320,180" class="stroke" fill="none" stroke-width="2"/>
+        <line x1="140" y1="30" x2="171" y2="180" class="accent" stroke-width="2.2"/>
+        <g class="accent" fill="none" stroke-width="1.7">
+          <path d="M128.7 51.2 A24 24 0 0 0 144.9 53.5"/>
+          <path d="M144.9 53.5 A24 24 0 0 0 158.4 45.4"/>
+          <path d="M137.2 49.8 L136.0 57.7"/>
+          <path d="M150.3 47.1 L154.4 54.0"/>
+        </g>
+        <circle cx="171" cy="180" r="3" class="accent-fill"/>
+        <text x="134" y="22" font-size="16" font-style="italic">M</text>
+        <text x="42" y="198" font-size="16" font-style="italic">N</text>
+        <text x="324" y="198" font-size="16" font-style="italic">P</text>
+        <text x="166" y="198" font-size="15" font-style="italic">I</text>
+        <text x="92" y="108" font-size="13" text-anchor="end" class="accent-fill">24</text>
+        <text x="238" y="108" font-size="13" class="accent-fill">32</text>
+        <text x="115" y="172" font-size="13" text-anchor="middle" class="accent-fill">15</text>
+        <text x="245" y="172" font-size="13" text-anchor="middle" class="accent-fill">x</text>
+      </svg>
+      <figcaption>Hình của Ví dụ SGK tr. 85 (H.4.22): \(MI\) là phân giác của \(\widehat{NMP}\).</figcaption>
+    </figure>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 (SGK tr. 85, H.4.22). Tính \(x\).</p>
+      <p>Trong \(\triangle MNP\), \(MI\) là đường phân giác của góc \(M\) nên \(\dfrac{IP}{IN} = \dfrac{MP}{MN}\).</p>
+      <p>Thay số: \(\dfrac{x}{15} = \dfrac{32}{24}\) ⇒ \(x = \dfrac{15 \cdot 32}{24} = 20\).</p>
+      <p><b>Vậy</b> \(x = 20\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 (Luyện tập tr. 85, H.4.23). \(\triangle DEF\) có \(EM\) là phân giác của góc \(E\) \((M \in DF)\), \(DE = 4{,}5\), \(DM = 3{,}5\), \(MF = 5{,}6\), \(EF = x\).</p>
+      <p>\(\dfrac{MD}{MF} = \dfrac{ED}{EF}\) ⇒ \(\dfrac{3{,}5}{5{,}6} = \dfrac{4{,}5}{x}\).</p>
+      <p>\(x = \dfrac{4{,}5 \cdot 5{,}6}{3{,}5} = \dfrac{25{,}2}{3{,}5} = 7{,}2\).</p>
+      <p><b>Vậy</b> \(x = 7{,}2\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 (Bài 4.10, tr. 86, H.4.24). \(\triangle MNP\) có \(PH\) là phân giác của góc \(P\) \((H \in MN)\), \(MH = 3\), \(HN = 5{,}1\), \(MP = 5\), \(NP = x\).</p>
+      <p>\(\dfrac{HM}{HN} = \dfrac{PM}{PN}\) ⇒ \(\dfrac{3}{5{,}1} = \dfrac{5}{x}\) ⇒ \(x = \dfrac{5 \cdot 5{,}1}{3} = 8{,}5\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 4 (Bài 4.11, tr. 86). \(AD\) là phân giác góc \(A\), \(D \in BC\); \(AB = 4{,}5\) m, \(AC = 7{,}0\) m, \(CB = 3{,}5\) m. Tính \(DC\) (làm tròn đến hàng phần chục).</p>
+      <p>\(\dfrac{DB}{DC} = \dfrac{AB}{AC} = \dfrac{4{,}5}{7}\) và \(DB + DC = 3{,}5\).</p>
+      <p>\(DC = BC \cdot \dfrac{AC}{AB + AC} = 3{,}5 \cdot \dfrac{7}{4{,}5 + 7} = \dfrac{24{,}5}{11{,}5} \approx 2{,}13\).</p>
+      <p><b>Vậy</b> \(DC \approx 2{,}1\) m.</p>
+    </div>
+    <div class="box warn">
+      <p>Ghép đúng cặp: đoạn \(DB\) <b>kề</b> cạnh \(AB\), đoạn \(DC\) <b>kề</b> cạnh \(AC\). Viết \(\dfrac{DB}{DC} = \dfrac{AC}{AB}\) là <b>sai</b>.</p>
+      <p>Tính chất chỉ đúng với <b>đường phân giác</b>. Một đường thẳng bất kì đi từ \(A\) xuống \(BC\) (trung tuyến, đường cao) <b>không</b> cho tỉ lệ thức này.</p>
+      <p>Khi đề chỉ cho \(AB\), \(AC\), \(BC\) thì phải dùng thêm \(DB + DC = BC\), không thể tính \(DB\) chỉ bằng một tỉ lệ thức.</p>
+    </div>
+    <div class="box tip">
+      <p>Cách nhớ: <b>phân giác chia đáy theo tỉ lệ hai cạnh bên</b> — cạnh bên dài hơn thì “kéo” về phía mình đoạn đáy dài hơn.</p>
+    </div>
+
+    <h4>4. Đường phân giác ngoài của tam giác</h4>
+    <div class="box law" data-label="⚖️ Tính chất đường phân giác ngoài">
+      <p>Đường phân giác của <b>góc ngoài</b> của một tam giác (gọi tắt là <span class="kw">đường phân giác ngoài</span>) cũng có tính chất tương tự đường phân giác trong.</p>
+      <p>Nếu \(AD'\) là phân giác của góc \(BAx\) (góc ngoài tại \(A\)) và \(D'\) nằm trên đường thẳng \(BC\) thì \(\dfrac{D'B}{D'C} = \dfrac{AB}{AC}\).</p>
+      <p class="muted">Nội dung mục “Em có biết” — SGK tr. 86.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Tính chất đường phân giác ngoài của tam giác</div>
+      <div class="formula-body">\[ \dfrac{D'B}{D'C} = \dfrac{AB}{AC} \]</div>
+      <ul class="formula-legend">
+        <li>Áp dụng khi: \(AD'\) là phân giác của góc ngoài tại đỉnh \(A\) của \(\triangle ABC\)</li>
+        <li>\(D'\): giao điểm của phân giác ngoài với <b>đường thẳng</b> \(BC\) — nằm <b>ngoài</b> đoạn \(BC\)</li>
+        <li>\(D'B, D'C\): khoảng cách từ \(D'\) tới \(B\), tới \(C\) (cùng đơn vị)</li>
+      </ul>
+      <p class="formula-note">Khi \(AB = AC\) (tam giác cân tại \(A\)) thì phân giác ngoài <b>song song</b> với \(BC\), không cắt đường thẳng \(BC\).</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 340 240" width="340" role="img" aria-label="Tam giác ABC với AD phẩy là phân giác góc ngoài BAx, D phẩy nằm trên tia đối của tia BC">
+        <line x1="40" y1="180" x2="320" y2="180" class="stroke" stroke-width="2"/>
+        <line x1="197.5" y1="112" x2="180" y2="180" class="stroke" stroke-width="2"/>
+        <line x1="197.5" y1="112" x2="320" y2="180" class="stroke" stroke-width="2"/>
+        <line x1="197.5" y1="112" x2="110" y2="63" class="stroke" stroke-width="1.8" stroke-dasharray="7 4"/>
+        <line x1="197.5" y1="112" x2="40" y2="180" class="accent" stroke-width="2.2"/>
+        <g class="accent" fill="none" stroke-width="1.7">
+          <path d="M191.0 137.2 A26 26 0 0 1 173.6 122.3"/>
+          <path d="M173.6 122.3 A26 26 0 0 1 174.8 99.4"/>
+          <path d="M183.2 128.7 L178.0 134.8"/>
+          <path d="M175.5 110.9 L167.5 110.5"/>
+        </g>
+        <g class="stroke" fill="none" stroke-width="1.4" stroke-dasharray="5 3">
+          <line x1="42" y1="212" x2="318" y2="212"/>
+        </g>
+        <g class="stroke" fill="none" stroke-width="1.4">
+          <path d="M42 206 L42 218 M318 206 L318 218"/>
+        </g>
+        <circle cx="40" cy="180" r="3" class="accent-fill"/>
+        <text x="202" y="106" font-size="16" font-style="italic">A</text>
+        <text x="172" y="197" font-size="16" font-style="italic">B</text>
+        <text x="324" y="197" font-size="16" font-style="italic">C</text>
+        <text x="26" y="172" font-size="15" font-style="italic">D'</text>
+        <text x="100" y="58" font-size="15" font-style="italic">x</text>
+        <text x="204" y="152" font-size="12" class="accent-fill">AB</text>
+        <text x="262" y="140" font-size="12" class="accent-fill">AC</text>
+        <text x="110" y="196" font-size="12" class="accent-fill" text-anchor="middle">D'B</text>
+        <text x="180" y="230" font-size="12" text-anchor="middle">D'C</text>
+      </svg>
+      <figcaption>Theo H.4.26: \(AD'\) là phân giác của góc ngoài \(\widehat{BAx}\) ⇒ \(\dfrac{D'B}{D'C} = \dfrac{AB}{AC}\). Điểm \(D'\) nằm trên tia đối của tia \(BC\) (phía cạnh ngắn hơn).</figcaption>
+    </figure>
+
+    <div class="key-points">
+      <ul>
+        <li><b>Tính chất đường phân giác</b>: \(AD\) là phân giác góc \(A\) ⇒ \(\dfrac{DB}{DC} = \dfrac{AB}{AC}\).</li>
+        <li>Ghép đúng: đoạn nào <b>kề</b> cạnh nào thì đi với cạnh ấy.</li>
+        <li>Định lí được chứng minh nhờ <b>định lí Thalès</b> và <b>tam giác cân</b>.</li>
+        <li><b>Chú ý đảo</b>: \(D \in BC\) và \(\dfrac{DB}{DC} = \dfrac{AB}{AC}\) ⇒ \(AD\) là phân giác góc \(A\).</li>
+        <li>Biết \(AB\), \(AC\), \(BC\): \(DB = BC \cdot \dfrac{AB}{AB + AC}\), \(DC = BC - DB\).</li>
+        <li><b>Phân giác ngoài</b> cũng cho \(\dfrac{D'B}{D'C} = \dfrac{AB}{AC}\), với \(D'\) nằm ngoài đoạn \(BC\).</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-on-tap-chuong-4">
+    <h3 class="lesson-title"><span class="lesson-no">Ôn tập</span>Ôn tập chương IV</h3>
+    <p class="lesson-goal">Cần nắm: hệ thống ba định lí lớn của chương (Thalès, Thalès đảo, đường trung bình, đường phân giác); nhận ra nhanh nên dùng định lí nào; cách trình bày bài tính độ dài và bài chứng minh (gộp phần <i>Luyện tập chung</i> tr. 87 – 88 và <i>Bài tập cuối chương IV</i> tr. 89).</p>
+
+    <h4>1. Bảng tóm tắt các định lí và tỉ lệ thức</h4>
+    <div class="box fact" data-label="🔎 Bảng tổng hợp kiến thức chương IV">
+      <div class="table-wrap"><table>
+        <thead><tr><th>Định lí</th><th>Hình</th><th>Điều kiện</th><th>Kết luận (tỉ lệ thức)</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><b>Định lí Thalès</b></td>
+            <td>
+              <div class="diagram">
+                <svg viewBox="0 0 120 88" width="120" role="img" aria-label="Tam giác ABC có B phẩy C phẩy song song BC">
+                  <polygon points="58,12 14,72 106,72" class="stroke" fill="none" stroke-width="1.6"/>
+                  <line x1="30" y1="42" x2="90" y2="42" class="accent" stroke-width="1.8"/>
+                  <text x="54" y="9" font-size="9" font-style="italic">A</text>
+                  <text x="6" y="84" font-size="9" font-style="italic">B</text>
+                  <text x="104" y="84" font-size="9" font-style="italic">C</text>
+                  <text x="16" y="38" font-size="9" font-style="italic">B'</text>
+                  <text x="92" y="38" font-size="9" font-style="italic">C'</text>
+                </svg>
+              </div>
+            </td>
+            <td>\(B' \in AB\), \(C' \in AC\), \(B'C' \parallel BC\)</td>
+            <td>\(\dfrac{AB'}{AB} = \dfrac{AC'}{AC}\)<br>\(\dfrac{AB'}{B'B} = \dfrac{AC'}{C'C}\)<br>\(\dfrac{B'B}{AB} = \dfrac{C'C}{AC}\)</td>
+          </tr>
+          <tr>
+            <td><b>Hệ quả</b> (mở rộng)</td>
+            <td class="muted">như trên</td>
+            <td>\(B'C' \parallel BC\)</td>
+            <td>\(\dfrac{AB'}{AB} = \dfrac{AC'}{AC} = \dfrac{B'C'}{BC}\)</td>
+          </tr>
+          <tr>
+            <td><b>Định lí Thalès đảo</b></td>
+            <td class="muted">như trên</td>
+            <td>\(\dfrac{AB'}{AB} = \dfrac{AC'}{AC}\)<br>hoặc \(\dfrac{AB'}{B'B} = \dfrac{AC'}{C'C}\)</td>
+            <td>\(B'C' \parallel BC\)</td>
+          </tr>
+          <tr>
+            <td><b>Đường trung bình</b></td>
+            <td>
+              <div class="diagram">
+                <svg viewBox="0 0 120 88" width="120" role="img" aria-label="Tam giác ABC với D, E là trung điểm AB, AC">
+                  <polygon points="58,12 14,72 106,72" class="stroke" fill="none" stroke-width="1.6"/>
+                  <line x1="36" y1="42" x2="82" y2="42" class="accent" stroke-width="1.8"/>
+                  <g class="stroke" fill="none" stroke-width="1.2">
+                    <path d="M44 24 L50 28 M24 54 L30 58"/>
+                    <path d="M67 24 L73 28 M70 27 L76 31"/>
+                    <path d="M89 54 L95 58 M92 57 L98 61"/>
+                  </g>
+                  <text x="54" y="9" font-size="9" font-style="italic">A</text>
+                  <text x="6" y="84" font-size="9" font-style="italic">B</text>
+                  <text x="104" y="84" font-size="9" font-style="italic">C</text>
+                  <text x="24" y="38" font-size="9" font-style="italic">D</text>
+                  <text x="86" y="38" font-size="9" font-style="italic">E</text>
+                </svg>
+              </div>
+            </td>
+            <td>\(D\), \(E\) là <b>trung điểm</b> \(AB\), \(AC\)</td>
+            <td>\(DE \parallel BC\) và \(DE = \dfrac{1}{2}BC\)</td>
+          </tr>
+          <tr>
+            <td><b>Chú ý</b> (Bài 16)</td>
+            <td class="muted">như trên</td>
+            <td>\(D\) là trung điểm \(AB\), \(DE \parallel BC\)</td>
+            <td>\(E\) là <b>trung điểm</b> của \(AC\)</td>
+          </tr>
+          <tr>
+            <td><b>Đường phân giác trong</b></td>
+            <td>
+              <div class="diagram">
+                <svg viewBox="0 0 120 88" width="120" role="img" aria-label="Tam giác ABC với AD là phân giác góc A">
+                  <polygon points="44,12 14,72 106,72" class="stroke" fill="none" stroke-width="1.6"/>
+                  <line x1="44" y1="12" x2="54" y2="72" class="accent" stroke-width="1.6"/>
+                  <g class="accent" fill="none" stroke-width="1.2">
+                    <path d="M37.7 24.5 A14 14 0 0 0 46.4 25.8"/>
+                    <path d="M46.4 25.8 A14 14 0 0 0 54.1 21.7"/>
+                  </g>
+                  <text x="40" y="9" font-size="9" font-style="italic">A</text>
+                  <text x="6" y="84" font-size="9" font-style="italic">B</text>
+                  <text x="104" y="84" font-size="9" font-style="italic">C</text>
+                  <text x="50" y="84" font-size="9" font-style="italic">D</text>
+                </svg>
+              </div>
+            </td>
+            <td>\(AD\) là phân giác \(\widehat{BAC}\), \(D \in BC\)</td>
+            <td>\(\dfrac{DB}{DC} = \dfrac{AB}{AC}\)</td>
+          </tr>
+          <tr>
+            <td><b>Đường phân giác ngoài</b></td>
+            <td class="muted">(Em có biết)</td>
+            <td>\(AD'\) là phân giác góc ngoài tại \(A\), \(D'\) trên đường thẳng \(BC\)</td>
+            <td>\(\dfrac{D'B}{D'C} = \dfrac{AB}{AC}\)</td>
+          </tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Các tỉ lệ thức cần nhớ của chương IV (Định lí Thalès)</div>
+      <div class="formula-body">\[ \begin{aligned} \dfrac{AB'}{AB} &amp;= \dfrac{AC'}{AC} = \dfrac{B'C'}{BC} \\[4pt] \dfrac{AB'}{B'B} &amp;= \dfrac{AC'}{C'C} \\[4pt] DE &amp;= \dfrac{1}{2}BC \\[4pt] \dfrac{DB}{DC} &amp;= \dfrac{AB}{AC} \end{aligned} \]</div>
+      <ul class="formula-legend">
+        <li>Dòng 1 – 2: \(\triangle ABC\) có \(B'C' \parallel BC\), \(B' \in AB\), \(C' \in AC\) (định lí Thalès và hệ quả)</li>
+        <li>Dòng 3: \(D\), \(E\) là trung điểm \(AB\), \(AC\); \(DE\) là đường trung bình, \(DE \parallel BC\)</li>
+        <li>Dòng 4: \(AD\) là đường phân giác của \(\widehat{BAC}\), \(D \in BC\)</li>
+        <li>Mọi đoạn thẳng đo theo cùng một đơn vị độ dài (cm, dm, m…)</li>
+      </ul>
+    </div>
+
+    <h4>2. Sơ đồ chọn dạng toán</h4>
+    <div class="flow"><span>Đề cho đường thẳng song song</span><i>→</i><span>Định lí Thalès</span><i>→</i><span>tính độ dài</span></div>
+    <div class="flow"><span>Đề cho các đoạn tỉ lệ</span><i>→</i><span>Thalès đảo</span><i>→</i><span>chứng minh song song</span></div>
+    <div class="flow"><span>Đề cho hai trung điểm</span><i>→</i><span>Đường trung bình</span><i>→</i><span>song song + gấp đôi / một nửa</span></div>
+    <div class="flow"><span>Đề cho đường phân giác</span><i>→</i><span>Tính chất phân giác</span><i>→</i><span>tỉ số hai đoạn trên cạnh đối diện</span></div>
+    <div class="box fact" data-label="🔎 Các dạng toán và cách giải">
+      <div class="table-wrap"><table>
+        <thead><tr><th>Dạng toán</th><th>Dấu hiệu trong đề</th><th>Cách giải</th></tr></thead>
+        <tbody>
+          <tr><td>Tính độ dài \(x\) trong hình</td><td>Có kí hiệu \(\parallel\), hoặc hai góc đồng vị / so le trong bằng nhau</td><td>Chứng minh song song (nếu cần) → viết tỉ lệ thức Thalès → nhân chéo</td></tr>
+          <tr><td>Tính độ dài khi có phân giác</td><td>Có kí hiệu hai góc bằng nhau tại một đỉnh</td><td>\(\dfrac{DB}{DC} = \dfrac{AB}{AC}\), kèm \(DB + DC = BC\) nếu cần</td></tr>
+          <tr><td>Chứng minh hai đường thẳng song song</td><td>Đề cho nhiều độ dài, hoặc cho trung điểm</td><td>Thalès đảo (so hai tỉ số) hoặc đường trung bình</td></tr>
+          <tr><td>Chứng minh trung điểm</td><td>Đề cho một trung điểm + một đường song song</td><td>Chú ý Bài 16 (đi qua trung điểm cạnh thứ ba)</td></tr>
+          <tr><td>Chứng minh tứ giác là hình thang / hình bình hành / hình chữ nhật</td><td>Xuất hiện nhiều trung điểm</td><td>Dùng đường trung bình để có cặp cạnh song song và bằng nhau, thêm một góc vuông thì được hình chữ nhật</td></tr>
+          <tr><td>Chứng minh đẳng thức tích, tỉ số</td><td>Kết luận dạng \(a \cdot b = c \cdot d\)</td><td>Tách thành hai tỉ lệ thức Thalès qua một tỉ số trung gian rồi ghép lại</td></tr>
+          <tr><td>Bài toán thực tế (đo khoảng cách)</td><td>Bờ sông, hồ, ao, hai vị trí không tới được</td><td>Dựng tam giác có cạnh song song → Thalès, hoặc dùng hai trung điểm → đường trung bình</td></tr>
+          <tr><td>So sánh diện tích hai tam giác có chung đường cao</td><td>Hai tam giác chung đỉnh, đáy nằm trên một đường thẳng</td><td>Tỉ số diện tích bằng tỉ số hai đáy</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Trình bày một bài chứng minh của chương IV</p>
+      <ol class="steps">
+        <li>Vẽ hình, ghi lên hình các dữ kiện (độ dài, kí hiệu song song, gạch trung điểm, cung góc bằng nhau).</li>
+        <li>Ghi <b>GT – KL</b> bằng kí hiệu toán học.</li>
+        <li>Mỗi bước: nêu rõ <b>xét tam giác nào</b>, <b>điều kiện gì</b> (song song / trung điểm / phân giác), rồi viết kết luận kèm lí do trong ngoặc.</li>
+        <li>Nối các tỉ lệ thức trung gian bằng cách đánh số (1), (2), (3) rồi suy ra kết luận cuối.</li>
+        <li>Kết luận lại đúng điều đề bài hỏi, kèm đơn vị nếu là bài tính toán.</li>
+      </ol>
+    </div>
+
+    <h4>3. Ví dụ ôn tập</h4>
+    <div class="box example">
+      <p class="box-title">Ví dụ ôn tập 1 (Luyện tập chung tr. 87, H.4.27). \(\widehat{AMN} = \widehat{ABC}\), \(AM = 16\), \(AN = 20\), \(NC = 15\), \(MB = x\). Tính \(x\).</p>
+      <p>\(\widehat{AMN} = \widehat{ABC}\) mà hai góc này ở vị trí <b>đồng vị</b> nên \(MN \parallel BC\).</p>
+      <p>Theo định lí Thalès: \(\dfrac{AM}{MB} = \dfrac{AN}{NC}\) ⇒ \(\dfrac{16}{x} = \dfrac{20}{15}\) ⇒ \(x = \dfrac{16 \cdot 15}{20} = 12\).</p>
+      <p><b>Vậy</b> \(x = 12\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ ôn tập 2 (Luyện tập chung tr. 87, H.4.28). \(AM\) là trung tuyến; \(MD\) là phân giác của \(\widehat{AMB}\) \((D \in AB)\), \(ME\) là phân giác của \(\widehat{AMC}\) \((E \in AC)\). Chứng minh \(DE \parallel BC\).</p>
+      <p>Trong \(\triangle AMB\), \(MD\) là phân giác nên \(\dfrac{DA}{DB} = \dfrac{MA}{MB}\). &nbsp;(1)</p>
+      <p>Trong \(\triangle AMC\), \(ME\) là phân giác nên \(\dfrac{EA}{EC} = \dfrac{MA}{MC}\). &nbsp;(2)</p>
+      <p>Mặt khác \(MB = MC\) (vì \(M\) là trung điểm \(BC\)). &nbsp;(3)</p>
+      <p>Từ (1), (2), (3) suy ra \(\dfrac{DA}{DB} = \dfrac{EA}{EC}\), do đó \(DE \parallel BC\) <i>(định lí Thalès đảo)</i>.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ ôn tập 3 (Luyện tập chung tr. 87 – 88, H.4.29). \(\triangle ABC\) vuông tại \(A\), đường cao \(AH\); \(I\), \(K\) là trung điểm \(AH\), \(HB\). Chứng minh \(IK \perp AC\) và \(AK \perp CI\).</p>
+      <p><b>a)</b> \(\triangle AHB\) có \(I\) là trung điểm \(AH\), \(K\) là trung điểm \(BH\) nên \(KI\) là đường trung bình ⇒ \(KI \parallel AB\).</p>
+      <p>Vì \(AB \perp AC\) (tam giác vuông tại \(A\)) nên \(KI \perp AC\).</p>
+      <p><b>b)</b> Xét \(\triangle AKC\): \(AH \perp KC\) (giả thiết) và \(KI \perp AC\) (chứng minh trên).</p>
+      <p>Hai đường cao \(AH\) và \(KI\) cắt nhau tại \(I\) nên \(I\) là <b>trực tâm</b> của \(\triangle AKC\). Suy ra \(CI \perp AK\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ ôn tập 4 (Bài 4.18 – 4.22, tr. 89 — trắc nghiệm).</p>
+      <p><b>4.18</b> (H.4.31): \(\widehat{AMN} = \widehat{ABC}\) (đồng vị) ⇒ \(MN \parallel BC\); \(\dfrac{AM}{MB} = \dfrac{AN}{NC}\) ⇒ \(\dfrac{2}{3} = \dfrac{1{,}5}{x}\) ⇒ \(x = 2{,}25\). → <b>C</b>.</p>
+      <p><b>4.19</b>: \(H\), \(K\) là trung điểm \(AC\), \(BC\) ⇒ \(HK\) là đường trung bình ⇒ \(AB = 2 \cdot HK = 7\) cm. → <b>B</b>.</p>
+      <p><b>4.20</b>: mỗi cạnh của \(\triangle MNP\) bằng nửa một cạnh của \(\triangle ABC\) ⇒ chu vi \(= \dfrac{32}{2} = 16\) cm. → <b>D</b>.</p>
+      <p><b>4.21</b>: \(DE \parallel BC\) ⇒ \(\dfrac{AE}{AC} = \dfrac{AD}{AB} = \dfrac{6}{9} = \dfrac{2}{3}\); \(EF \parallel CD\) trong \(\triangle ACD\) ⇒ \(\dfrac{AF}{AD} = \dfrac{AE}{AC} = \dfrac{2}{3}\) ⇒ \(AF = \dfrac{2}{3} \cdot 6 = 4\) cm. → <b>A</b>.</p>
+      <p><b>4.22</b>: \(BD\) là phân giác góc \(B\) ⇒ \(\dfrac{DA}{DC} = \dfrac{BA}{BC} = \dfrac{15}{10} = \dfrac{3}{2}\); \(DA + DC = AC = 15\) ⇒ \(DA = 15 \cdot \dfrac{3}{5} = 9\) cm. → <b>C</b>.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ ôn tập 5 (Bài 4.23, tr. 89). Góc \(xOy\); \(A\), \(B \in Ox\) với \(OA = 2\) cm, \(OB = 5\) cm; \(C \in Oy\) với \(OC = 3\) cm; \(BD \parallel AC\) \((D \in Oy)\). Tính \(CD\).</p>
+      <p>\(\triangle OBD\) có \(AC \parallel BD\) nên \(\dfrac{OA}{OB} = \dfrac{OC}{OD}\) ⇒ \(\dfrac{2}{5} = \dfrac{3}{OD}\) ⇒ \(OD = \dfrac{3 \cdot 5}{2} = 7{,}5\) (cm).</p>
+      <p><b>Vậy</b> \(CD = OD - OC = 7{,}5 - 3 = 4{,}5\) (cm).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ ôn tập 6 (Bài 4.16, tr. 88). \(AB = 15\) cm, \(AC = 20\) cm, \(BC = 25\) cm; \(AD\) là phân giác góc \(A\) \((D \in BC)\). Tính \(DB\), \(DC\) và tỉ số diện tích \(\triangle ABD\), \(\triangle ACD\).</p>
+      <p><b>a)</b> \(\dfrac{DB}{DC} = \dfrac{AB}{AC} = \dfrac{15}{20} = \dfrac{3}{4}\) và \(DB + DC = 25\).</p>
+      <p>\(DB = 25 \cdot \dfrac{3}{7} = \dfrac{75}{7} \approx 10{,}71\) (cm); \(DC = 25 - \dfrac{75}{7} = \dfrac{100}{7} \approx 14{,}29\) (cm).</p>
+      <p><b>b)</b> Hai tam giác \(ABD\) và \(ACD\) có chung đường cao hạ từ \(A\) xuống \(BC\), nên \(\dfrac{S_{ABD}}{S_{ACD}} = \dfrac{DB}{DC} = \dfrac{3}{4}\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ ôn tập 7 (Bài 4.27, tr. 89, H.4.32 — bài toán thực tế). \(AP = PB = 150\) m, \(AQ = QC = 250\) m, \(BC = 400\) m. Tính \(PQ\).</p>
+      <p>\(P\) là trung điểm \(AB\), \(Q\) là trung điểm \(AC\) nên \(PQ\) là đường trung bình của \(\triangle ABC\).</p>
+      <p>Suy ra \(PQ = \dfrac{1}{2}BC = \dfrac{1}{2} \cdot 400 = 200\) (m).</p>
+      <p><b>Vậy</b> khoảng cách giữa hai vị trí \(P\) và \(Q\) là \(200\) m.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ ôn tập 8 (Bài 4.12, tr. 86 — bài toán thời gian). Hình vuông \(ABCD\), \(M\) là trung điểm \(AB\); \(MD\) cắt \(AC\) tại \(I\). Mai đi từ \(M\), Dung đi từ \(D\) cùng tốc độ trên đường \(MD\); Mai xuất phát 7h và tới \(I\) lúc 7h30. Hỏi Dung xuất phát lúc mấy giờ?</p>
+      <p>Gọi \(O\) là giao điểm hai đường chéo \(AC\) và \(BD\) của hình vuông; khi đó \(O\) là <b>trung điểm</b> của \(BD\).</p>
+      <p>Xét \(\triangle ABD\): \(AO\) là trung tuyến ứng với cạnh \(BD\), \(DM\) là trung tuyến ứng với cạnh \(AB\) (\(M\) là trung điểm \(AB\)). Hai trung tuyến cắt nhau tại \(I\) nên \(I\) là <b>trọng tâm</b> của \(\triangle ABD\).</p>
+      <p>Suy ra \(DI = \dfrac{2}{3}DM\) và \(MI = \dfrac{1}{3}DM\), tức là \(DI = 2 \cdot MI\).</p>
+      <p>Cùng tốc độ nên thời gian Dung đi gấp đôi thời gian Mai: \(2 \cdot 30 = 60\) (phút).</p>
+      <p><b>Vậy</b> Dung phải xuất phát lúc <b>6h30</b>.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ ôn tập 9 (Bài 4.26, tr. 89). \(I \in AB\), \(K \in AC\); kẻ \(IM \parallel BK\) \((M \in AC)\) và \(KN \parallel CI\) \((N \in AB)\). Chứng minh \(MN \parallel BC\).</p>
+      <p>Xét \(\triangle ABK\) có \(I \in AB\), \(M \in AK\) và \(IM \parallel BK\) nên \(\dfrac{AM}{AK} = \dfrac{AI}{AB}\) ⇒ \(AM = \dfrac{AK \cdot AI}{AB}\). &nbsp;(1)</p>
+      <p>Xét \(\triangle ACI\) có \(K \in AC\), \(N \in AI\) và \(KN \parallel CI\) nên \(\dfrac{AN}{AI} = \dfrac{AK}{AC}\) ⇒ \(AN = \dfrac{AI \cdot AK}{AC}\). &nbsp;(2)</p>
+      <p>Từ (1): \(\dfrac{AM}{AC} = \dfrac{AI \cdot AK}{AB \cdot AC}\); từ (2): \(\dfrac{AN}{AB} = \dfrac{AI \cdot AK}{AC \cdot AB}\).</p>
+      <p>Do đó \(\dfrac{AM}{AC} = \dfrac{AN}{AB}\), suy ra \(MN \parallel BC\) <i>(định lí Thalès đảo)</i>.</p>
+    </div>
+    <div class="box warn">
+      <p>Bốn lỗi hay gặp nhất của chương IV:</p>
+      <ul>
+        <li><b>Ghép sai đoạn tương ứng</b> trong tỉ lệ thức (trên ↔ dưới lộn xộn).</li>
+        <li><b>Quên kiểm tra điều kiện song song</b> trước khi dùng định lí Thalès.</li>
+        <li>Nhầm đường trung bình của <b>tam giác</b> (bằng nửa cạnh thứ ba) với đường trung bình của <b>hình thang</b> (bằng nửa tổng hai đáy).</li>
+        <li>Dùng tính chất đường phân giác cho <b>trung tuyến</b> hoặc <b>đường cao</b> — chỉ đường phân giác mới có tỉ lệ thức đó.</li>
+      </ul>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li><b>Thalès</b>: song song ⇒ các đoạn tương ứng tỉ lệ. <b>Thalès đảo</b>: các đoạn tương ứng tỉ lệ ⇒ song song.</li>
+        <li><b>Đường trung bình</b> của tam giác: \(DE \parallel BC\) và \(DE = \dfrac{1}{2}BC\).</li>
+        <li><b>Đường phân giác</b>: \(\dfrac{DB}{DC} = \dfrac{AB}{AC}\); phân giác ngoài cũng cho tỉ lệ thức tương tự.</li>
+        <li>Đường trung bình và tính chất đường phân giác đều được <b>chứng minh nhờ định lí Thalès</b>.</li>
+        <li>Thấy “song song” → Thalès; thấy hai “trung điểm” → đường trung bình; thấy “phân giác” → tỉ số hai cạnh kề.</li>
+        <li>Cả chương chỉ cần thành thạo một kĩ năng: <b>lập và giải tỉ lệ thức</b> bằng phép nhân chéo.</li>
+      </ul>
+    </div>
+  </article>
+</section>

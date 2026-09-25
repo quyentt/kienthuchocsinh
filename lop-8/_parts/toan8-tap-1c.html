@@ -1,0 +1,1117 @@
+<section class="chapter" id="toan-chuong-3">
+  <h2 class="chapter-title"><span>Chương III · Hình học</span>Tứ giác</h2>
+
+  <article class="lesson" id="toan-bai-10">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 10</span>Tứ giác</h3>
+    <p class="lesson-goal">Cần nắm: khái niệm tứ giác và tứ giác lồi; các yếu tố của tứ giác (đỉnh, cạnh, góc, đường chéo, cặp cạnh đối, cặp góc đối); định lí tổng các góc của một tứ giác bằng \(360^\circ\) và cách dùng nó để tính góc chưa biết.</p>
+
+    <h4>1. Tứ giác lồi</h4>
+    <div class="box def">
+      <p><span class="kw">Tứ giác <i>ABCD</i></span> là hình gồm bốn đoạn thẳng <i>AB</i>, <i>BC</i>, <i>CD</i>, <i>DA</i>, trong đó <b>không có hai đoạn thẳng nào nằm trên cùng một đường thẳng</b>.</p>
+    </div>
+    <div class="box def">
+      <p><span class="kw">Tứ giác lồi</span> là tứ giác mà <b>hai đỉnh thuộc một cạnh bất kì</b> luôn nằm <b>về một phía</b> của đường thẳng đi qua hai đỉnh còn lại.</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 440 180" width="440" role="img" aria-label="So sánh tứ giác lồi ABCD và tứ giác EFGH không lồi, có đường thẳng FG kéo dài chia E và H về hai phía">
+        <polygon points="40,115 65,35 150,45 175,120" class="stroke" fill="none" stroke-width="2"/>
+        <polygon points="240,80 390,25 310,80 390,145" class="stroke" fill="none" stroke-width="2"/>
+        <line x1="248" y1="123" x2="411" y2="11" class="accent" stroke-width="1.5" stroke-dasharray="5 4"/>
+        <text x="22" y="122" font-size="15" font-style="italic">A</text>
+        <text x="58" y="26" font-size="15" font-style="italic">B</text>
+        <text x="154" y="38" font-size="15" font-style="italic">C</text>
+        <text x="180" y="132" font-size="15" font-style="italic">D</text>
+        <text x="222" y="86" font-size="15" font-style="italic">E</text>
+        <text x="366" y="22" font-size="15" font-style="italic">F</text>
+        <text x="299" y="101" font-size="15" font-style="italic">G</text>
+        <text x="396" y="152" font-size="15" font-style="italic">H</text>
+        <text x="72" y="160" font-size="12.5">a) tứ giác lồi</text>
+        <text x="264" y="170" font-size="12.5">b) không phải tứ giác lồi</text>
+      </svg>
+      <figcaption>a) Với mọi cạnh của <i>ABCD</i>, hai đỉnh còn lại đều nằm về một phía ⇒ tứ giác lồi. b) Đường thẳng <i>FG</i> (nét đứt) chia hai đỉnh <i>E</i>, <i>H</i> về <b>hai phía</b> ⇒ <i>EFGH</i> không lồi.</figcaption>
+    </figure>
+    <div class="box fact" data-label="🔎 Các yếu tố của tứ giác lồi ABCD">
+      <ul>
+        <li><b>Đỉnh</b>: các điểm <i>A</i>, <i>B</i>, <i>C</i>, <i>D</i>.</li>
+        <li><b>Cạnh</b>: các đoạn thẳng <i>AB</i>, <i>BC</i>, <i>CD</i>, <i>DA</i>.</li>
+        <li><b>Góc</b>: các góc \(\widehat{ABC}\), \(\widehat{BCD}\), \(\widehat{CDA}\), \(\widehat{DAB}\); viết gọn là \(\widehat{B}\), \(\widehat{C}\), \(\widehat{D}\), \(\widehat{A}\).</li>
+        <li><b>Hai đỉnh đối nhau</b>: hai đỉnh không cùng thuộc một cạnh (\(A\) và \(C\); \(B\) và \(D\)).</li>
+        <li><b>Đường chéo</b>: đoạn thẳng nối hai đỉnh đối nhau — <i>AC</i> và <i>BD</i>.</li>
+        <li><b>Cặp cạnh đối</b>: (<i>AB</i>, <i>CD</i>) và (<i>BC</i>, <i>AD</i>). <b>Cặp góc đối</b>: (\(\widehat{A}\), \(\widehat{C}\)) và (\(\widehat{B}\), \(\widehat{D}\)).</li>
+      </ul>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 400 250" width="400" role="img" aria-label="Tứ giác lồi ABCD với bốn góc và hai đường chéo AC, BD cắt nhau tại điểm I">
+        <polygon points="60,60 300,40 350,180 100,205" class="stroke" fill="none" stroke-width="2"/>
+        <g class="accent" fill="none" stroke-width="1.6" stroke-dasharray="6 4">
+          <line x1="60" y1="60" x2="350" y2="180"/>
+          <line x1="300" y1="40" x2="100" y2="205"/>
+        </g>
+        <g class="accent" fill="none" stroke-width="1.8">
+          <path d="M83.9 58 A24 24 0 0 1 66.4 83.1"/>
+          <path d="M308.1 62.6 A24 24 0 0 1 276.1 42"/>
+          <path d="M326.1 182.4 A24 24 0 0 1 341.9 157.4"/>
+          <path d="M93.6 181.9 A24 24 0 0 1 123.9 202.6"/>
+        </g>
+        <circle cx="204" cy="119" r="3.5" class="accent-fill"/>
+        <text x="42" y="54" font-size="16" font-style="italic">A</text>
+        <text x="306" y="36" font-size="16" font-style="italic">B</text>
+        <text x="356" y="186" font-size="16" font-style="italic">C</text>
+        <text x="80" y="222" font-size="16" font-style="italic">D</text>
+        <text x="199" y="103" font-size="16" font-style="italic" class="accent-fill">I</text>
+        <text x="118" y="240" font-size="12" class="accent-fill">hai đường chéo cắt nhau tại I</text>
+      </svg>
+      <figcaption>Tứ giác lồi <i>ABCD</i>: bốn góc \(\widehat{A}, \widehat{B}, \widehat{C}, \widehat{D}\); hai đường chéo <i>AC</i>, <i>BD</i> cắt nhau tại một điểm <b>nằm giữa</b> mỗi đường.</figcaption>
+    </figure>
+    <div class="box note" data-label="📝 Chú ý (SGK tr. 49)">
+      <ul>
+        <li>Từ nay, khi nói đến <b>tứ giác</b> mà không chú thích gì thêm, ta hiểu đó là <b>tứ giác lồi</b>.</li>
+        <li>Tứ giác <i>ABCD</i> còn được gọi tên là <i>BCDA</i>, <i>CDAB</i>, <i>DABC</i>, <i>ADCB</i>, <i>DCBA</i>, <i>CBAD</i>, <i>BADC</i>.</li>
+      </ul>
+    </div>
+    <div class="box warn">
+      <p>Tên tứ giác phải đọc <b>lần lượt theo một vòng quanh hình</b> (thuận hoặc ngược chiều kim đồng hồ). Với hình bên trên, viết “tứ giác <i>ACBD</i>” là <b>sai</b>, vì <i>A</i> và <i>C</i> không cùng thuộc một cạnh.</p>
+    </div>
+
+    <h4>2. Tổng các góc của một tứ giác</h4>
+    <div class="box law" data-label="⚖️ Định lí (tổng các góc của một tứ giác)">
+      <p><b>Tổng các góc của một tứ giác bằng \(360^\circ\).</b></p>
+      <p class="muted">GT: tứ giác \(ABCD\) &nbsp;·&nbsp; KL: \(\widehat{A} + \widehat{B} + \widehat{C} + \widehat{D} = 360^\circ\).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Tổng các góc của một tứ giác</div>
+      <div class="formula-body">\[ \widehat{A} + \widehat{B} + \widehat{C} + \widehat{D} = 360^\circ \]</div>
+      <ul class="formula-legend">
+        <li>\(\widehat{A}, \widehat{B}, \widehat{C}, \widehat{D}\): bốn góc của tứ giác \(ABCD\) (đơn vị: độ)</li>
+        <li>Chứng minh: đường chéo \(BD\) chia tứ giác thành \(\triangle ABD\) và \(\triangle CBD\), mỗi tam giác có tổng ba góc \(180^\circ\)</li>
+      </ul>
+      <p class="formula-note">\(180^\circ + 180^\circ = 360^\circ\).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Tính góc thứ tư của tứ giác</div>
+      <div class="formula-body">\[ \widehat{D} = 360^\circ - \left( \widehat{A} + \widehat{B} + \widehat{C} \right) \]</div>
+      <ul class="formula-legend">
+        <li>Dùng khi biết ba góc, tìm góc còn lại</li>
+        <li>Kết quả luôn thoả \(0^\circ \lt \widehat{D} \lt 360^\circ\); với tứ giác lồi thì \(\widehat{D} \lt 180^\circ\)</li>
+      </ul>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 400 240" width="400" role="img" aria-label="Tứ giác ABCD được đường chéo BD chia thành hai tam giác ABD và CBD, mỗi tam giác có tổng ba góc bằng 180 độ">
+        <polygon points="200,40 350,120 210,200 50,110" class="stroke" fill="none" stroke-width="2"/>
+        <line x1="350" y1="120" x2="50" y2="110" class="accent" stroke-width="1.8" stroke-dasharray="6 4"/>
+        <g class="accent" fill="none" stroke-width="1.8">
+          <path d="M222.9 52.2 A26 26 0 0 1 176.4 51"/>
+          <path d="M327.4 132.9 A26 26 0 0 1 327.1 107.8"/>
+          <path d="M187.3 187.3 A26 26 0 0 1 232.6 187.1"/>
+          <path d="M73.6 99 A26 26 0 0 1 72.7 122.7"/>
+        </g>
+        <text x="192" y="30" font-size="16" font-style="italic">A</text>
+        <text x="358" y="124" font-size="16" font-style="italic">B</text>
+        <text x="204" y="220" font-size="16" font-style="italic">C</text>
+        <text x="30" y="114" font-size="16" font-style="italic">D</text>
+        <text x="176" y="92" font-size="13" class="accent-fill">180°</text>
+        <text x="180" y="160" font-size="13" class="accent-fill">180°</text>
+      </svg>
+      <figcaption>Theo H.3.5: kẻ đường chéo <i>BD</i>, ta được \(\triangle ABD\) và \(\triangle CBD\). Cộng tổng ba góc của hai tam giác được đúng bốn góc của tứ giác, nên tổng bằng \(360^\circ\).</figcaption>
+    </figure>
+    <div class="box method">
+      <p class="box-title">Dạng: Tính số đo góc chưa biết của một tứ giác</p>
+      <ol class="steps">
+        <li>Xác định tứ giác chứa góc cần tính và các góc đã biết của nó.</li>
+        <li>Nếu góc cho ở <b>ngoài</b> tứ giác, đưa về góc trong bằng <b>hai góc kề bù</b> (tổng \(180^\circ\)) hoặc <b>hai góc đối đỉnh</b> (bằng nhau).</li>
+        <li>Áp dụng \(\widehat{A} + \widehat{B} + \widehat{C} + \widehat{D} = 360^\circ\) rồi chuyển vế: góc cần tìm \(= 360^\circ -\) (tổng ba góc kia).</li>
+        <li>Nếu đề cho thêm hệ thức giữa hai góc (vd. \(\widehat{H} = \widehat{E} + 10^\circ\)), đặt ẩn cho một góc rồi giải phương trình.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (SGK tr. 50, H.3.6). Tứ giác <i>ABCD</i> có \(\widehat{A} = 110^\circ\), \(\widehat{B} = 120^\circ\), \(\widehat{C} = 80^\circ\). Tính \(\widehat{D}\).</p>
+      <p>Theo định lí về tổng các góc của một tứ giác: \(\widehat{A} + \widehat{B} + \widehat{C} + \widehat{D} = 360^\circ\).</p>
+      <p>Do đó \(\widehat{D} = 360^\circ - (110^\circ + 120^\circ + 80^\circ) = 360^\circ - 310^\circ = 50^\circ\).</p>
+      <p><b>Vậy</b> \(\widehat{D} = 50^\circ\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập 2, H.3.7). Tứ giác <i>EFGH</i> có \(\widehat{E} = 90^\circ\), \(\widehat{G} = 90^\circ\), \(\widehat{H} = 55^\circ\). Tính \(\widehat{F}\).</p>
+      <p>\(\widehat{F} = 360^\circ - (90^\circ + 90^\circ + 55^\circ) = 360^\circ - 235^\circ = 125^\circ\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Thử thách nhỏ, SGK tr. 50). Trong một tứ giác, nhiều nhất có bao nhiêu góc tù? Nhiều nhất có bao nhiêu góc nhọn?</p>
+      <p><b>Góc tù:</b> nếu có 4 góc tù thì tổng \(\gt 4 \times 90^\circ = 360^\circ\) — vô lí. Vậy nhiều nhất <b>3 góc tù</b>; điều này xảy ra được, vd. \(100^\circ + 100^\circ + 100^\circ + 60^\circ = 360^\circ\).</p>
+      <p><b>Góc nhọn:</b> nếu có 4 góc nhọn thì tổng \(\lt 4 \times 90^\circ = 360^\circ\) — vô lí. Vậy nhiều nhất <b>3 góc nhọn</b>, vd. \(80^\circ + 80^\circ + 80^\circ + 120^\circ = 360^\circ\).</p>
+    </div>
+    <div class="box tip">
+      <p>Nếu một tứ giác có <b>ba góc nhọn</b> thì góc còn lại chắc chắn là <b>góc tù</b>: ba góc nhọn có tổng \(\lt 270^\circ\) nên góc thứ tư \(\gt 90^\circ\).</p>
+    </div>
+    <div class="box warn">
+      <p>Đừng nhầm với tam giác: tổng ba góc của <b>tam giác</b> là \(180^\circ\), còn tổng bốn góc của <b>tứ giác</b> là \(360^\circ\).</p>
+      <p>Tứ giác có hai góc tù thì hai góc còn lại <b>không nhất thiết đều nhọn</b> (vd. \(100^\circ + 100^\circ + 90^\circ + 70^\circ = 360^\circ\) có một góc vuông).</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Tứ giác <i>ABCD</i> gồm bốn đoạn thẳng <i>AB</i>, <i>BC</i>, <i>CD</i>, <i>DA</i>, không có hai đoạn nào cùng nằm trên một đường thẳng.</li>
+        <li><b>Tứ giác lồi</b>: hai đỉnh thuộc một cạnh bất kì luôn nằm về một phía của đường thẳng qua hai đỉnh còn lại. Nói “tứ giác” là hiểu tứ giác lồi.</li>
+        <li>Yếu tố cần thuộc: đỉnh – cạnh – góc – <b>đường chéo</b> <i>AC</i>, <i>BD</i>; cặp cạnh đối, cặp góc đối.</li>
+        <li><b>Tổng các góc của một tứ giác bằng \(360^\circ\)</b> ⇒ biết ba góc là tính được góc thứ tư.</li>
+        <li>Một tứ giác có nhiều nhất 3 góc tù và nhiều nhất 3 góc nhọn.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-11">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 11</span>Hình thang cân</h3>
+    <p class="lesson-goal">Cần nắm: khái niệm hình thang, hai đáy – hai cạnh bên – đường cao; định nghĩa hình thang cân; hai định lí về cạnh bên và đường chéo; dấu hiệu nhận biết hình thang cân.</p>
+
+    <h4>1. Hình thang. Hình thang cân</h4>
+    <div class="box def">
+      <p><span class="kw">Hình thang</span> là tứ giác có <b>hai cạnh đối song song</b>.</p>
+    </div>
+    <div class="box fact" data-label="🔎 Các yếu tố của hình thang ABCD (AB // CD)">
+      <ul>
+        <li><b>Hai đáy</b>: hai cạnh song song <i>AB</i> (đáy nhỏ) và <i>CD</i> (đáy lớn).</li>
+        <li><b>Hai cạnh bên</b>: hai cạnh còn lại <i>AD</i> và <i>BC</i>.</li>
+        <li><b>Đường cao</b>: đoạn vuông góc <i>AH</i> kẻ từ <i>A</i> đến <i>CD</i> (\(H \in CD\)).</li>
+      </ul>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 400 210" width="400" role="img" aria-label="Hình thang ABCD với AB song song CD, hai đáy, hai cạnh bên và đường cao AH vuông góc với CD">
+        <polygon points="120,50 280,50 350,160 50,160" class="stroke" fill="none" stroke-width="2"/>
+        <line x1="120" y1="50" x2="120" y2="160" class="accent" stroke-width="1.8"/>
+        <path d="M131 160 L131 149 L120 149" class="accent" fill="none" stroke-width="1.6"/>
+        <text x="112" y="42" font-size="16" font-style="italic">A</text>
+        <text x="284" y="42" font-size="16" font-style="italic">B</text>
+        <text x="356" y="176" font-size="16" font-style="italic">C</text>
+        <text x="34" y="176" font-size="16" font-style="italic">D</text>
+        <text x="122" y="176" font-size="14" font-style="italic">H</text>
+        <text x="172" y="40" font-size="11.5">đáy nhỏ</text>
+        <text x="172" y="182" font-size="11.5">đáy lớn</text>
+        <text x="6" y="100" font-size="11.5">cạnh bên</text>
+        <text x="332" y="100" font-size="11.5">cạnh bên</text>
+        <text x="128" y="106" font-size="11.5" class="accent-fill">đường cao</text>
+      </svg>
+      <figcaption>Hình thang <i>ABCD</i> (\(AB \parallel CD\)) theo H.3.12: đáy nhỏ <i>AB</i>, đáy lớn <i>CD</i>, cạnh bên <i>AD</i>, <i>BC</i>, đường cao <i>AH</i>.</figcaption>
+    </figure>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 (SGK tr. 53). Chứng minh hai góc kề một cạnh bên của hình thang bù nhau.</p>
+      <p>Cho hình thang <i>ABCD</i> (\(AB \parallel CD\)), kéo dài <i>DA</i> về phía <i>A</i> được góc \(\widehat{A_1}\).</p>
+      <p>Vì \(AB \parallel CD\) nên \(\widehat{D} = \widehat{A_1}\) (hai góc đồng vị).</p>
+      <p>Mà \(\widehat{DAB} + \widehat{A_1} = 180^\circ\) (hai góc kề bù), suy ra \(\widehat{D} + \widehat{DAB} = 180^\circ\).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Hai góc kề một cạnh bên của hình thang (bù nhau)</div>
+      <div class="formula-body">\[ \widehat{A} + \widehat{D} = 180^\circ, \qquad \widehat{B} + \widehat{C} = 180^\circ \]</div>
+      <ul class="formula-legend">
+        <li>Áp dụng cho hình thang \(ABCD\) với \(AB \parallel CD\)</li>
+        <li>\(\widehat{A}, \widehat{D}\): hai góc kề cạnh bên \(AD\) (độ)</li>
+        <li>\(\widehat{B}, \widehat{C}\): hai góc kề cạnh bên \(BC\) (độ)</li>
+      </ul>
+      <p class="formula-note">Đây là hai góc trong cùng phía của hai đường thẳng song song \(AB\), \(CD\).</p>
+    </div>
+    <div class="box def">
+      <p><span class="kw">Hình thang cân</span> là hình thang có <b>hai góc kề một đáy bằng nhau</b>.</p>
+      <p>Hình thang cân <i>ABCD</i> (\(AB \parallel CD\)): \(\widehat{A} = \widehat{B}\) (hai góc kề đáy nhỏ <i>AB</i>) và \(\widehat{C} = \widehat{D}\) (hai góc kề đáy lớn <i>CD</i>).</p>
+    </div>
+    <div class="box note">
+      <p>Trong hình thang, <b>hai góc kề một đáy bằng nhau thì hai góc kề đáy kia cũng bằng nhau</b> (vì mỗi cặp góc kề một cạnh bên thì bù nhau).</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 400 215" width="400" role="img" aria-label="Hình thang cân ABCD với hai góc kề đáy lớn bằng nhau, hai góc kề đáy nhỏ bằng nhau và hai cạnh bên bằng nhau">
+        <polygon points="130,55 270,55 340,165 60,165" class="stroke" fill="none" stroke-width="2"/>
+        <g class="accent" fill="none" stroke-width="1.8">
+          <path d="M88 165 A28 28 0 0 0 75 141.4"/>
+          <path d="M325 141.4 A28 28 0 0 0 312 165"/>
+        </g>
+        <g class="stroke" fill="none" stroke-width="1.6">
+          <path d="M154 55 A24 24 0 0 1 117.1 75.2"/>
+          <path d="M282.9 75.2 A24 24 0 0 1 246 55"/>
+          <path d="M89.9 106.8 L100.1 113.2"/>
+          <path d="M299.9 113.2 L310.1 106.8"/>
+        </g>
+        <text x="122" y="46" font-size="16" font-style="italic">A</text>
+        <text x="274" y="46" font-size="16" font-style="italic">B</text>
+        <text x="346" y="182" font-size="16" font-style="italic">C</text>
+        <text x="42" y="182" font-size="16" font-style="italic">D</text>
+        <text x="110" y="202" font-size="12" class="accent-fill">hai góc kề đáy lớn bằng nhau ⇒ AD = BC</text>
+      </svg>
+      <figcaption>Hình thang cân <i>ABCD</i> (\(AB \parallel CD\)): \(\widehat{C} = \widehat{D}\), \(\widehat{A} = \widehat{B}\) và \(AD = BC\) (gạch cùng số).</figcaption>
+    </figure>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập 1, H.3.15). Hình thang cân <i>ABCD</i> (\(AB \parallel CD\)) có \(\widehat{C} = 40^\circ\). Tính các góc của hình thang.</p>
+      <p>\(\widehat{D} = \widehat{C} = 40^\circ\) (hai góc kề đáy lớn <i>CD</i>).</p>
+      <p>\(\widehat{A} = 180^\circ - \widehat{D} = 140^\circ\) (hai góc kề cạnh bên <i>AD</i> bù nhau); tương tự \(\widehat{B} = 140^\circ\).</p>
+      <p><b>Kiểm tra:</b> \(140^\circ + 140^\circ + 40^\circ + 40^\circ = 360^\circ\) ✓</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Các góc của hình thang cân</div>
+      <div class="formula-body">\[ \widehat{A} = \widehat{B}, \quad \widehat{C} = \widehat{D}, \quad \widehat{A} + \widehat{D} = 180^\circ \]</div>
+      <ul class="formula-legend">
+        <li>Hình thang cân \(ABCD\), \(AB \parallel CD\)</li>
+        <li>Suy ra: \(\widehat{A} = \widehat{B} = 180^\circ - \widehat{C}\)</li>
+        <li>Biết <b>một</b> góc là tính được cả bốn góc</li>
+      </ul>
+    </div>
+
+    <h4>2. Tính chất của hình thang cân</h4>
+    <div class="box law" data-label="⚖️ Định lí 1 (cạnh bên của hình thang cân)">
+      <p><b>Trong hình thang cân, hai cạnh bên bằng nhau.</b></p>
+      <p class="muted">Hình thang cân \(ABCD\) (\(AB \parallel CD\)) có hai cạnh bên \(AD\), \(BC\) thì \(AD = BC\).</p>
+    </div>
+    <div class="box law" data-label="⚖️ Định lí 2 (đường chéo của hình thang cân)">
+      <p><b>Trong hình thang cân, hai đường chéo bằng nhau.</b></p>
+      <p class="muted">Chứng minh: \(\triangle ACD = \triangle BDC\) (c.g.c, vì \(AD = BC\), \(\widehat{ADC} = \widehat{BCD}\), \(DC\) chung) ⇒ \(AC = BD\).</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 400 215" width="400" role="img" aria-label="Hình thang cân ABCD với hai đường chéo AC và BD bằng nhau, cắt nhau tại một điểm trên trục đối xứng">
+        <polygon points="130,55 270,55 340,165 60,165" class="stroke" fill="none" stroke-width="2"/>
+        <g class="accent" fill="none" stroke-width="1.8">
+          <line x1="130" y1="55" x2="340" y2="165"/>
+          <line x1="270" y1="55" x2="60" y2="165"/>
+          <path d="M167 81.2 L172.6 70.5 M171.4 83.5 L177 72.8"/>
+          <path d="M227.4 70.5 L233 81.2 M223 72.8 L228.6 83.5"/>
+        </g>
+        <circle cx="200" cy="91.7" r="3.5" class="accent-fill"/>
+        <text x="122" y="46" font-size="16" font-style="italic">A</text>
+        <text x="274" y="46" font-size="16" font-style="italic">B</text>
+        <text x="346" y="182" font-size="16" font-style="italic">C</text>
+        <text x="42" y="182" font-size="16" font-style="italic">D</text>
+        <text x="146" y="202" font-size="12" class="accent-fill">hai đường chéo bằng nhau: AC = BD</text>
+      </svg>
+      <figcaption>Theo H.3.19: trong hình thang cân <i>ABCD</i> ta có \(AC = BD\) (hai dấu gạch trên mỗi đường chéo).</figcaption>
+    </figure>
+    <div class="formula">
+      <div class="formula-name">Tính chất hình thang cân (cạnh bên và đường chéo)</div>
+      <div class="formula-body">\[ AD = BC, \qquad AC = BD \]</div>
+      <ul class="formula-legend">
+        <li>Hình thang cân \(ABCD\), \(AB \parallel CD\)</li>
+        <li>\(AD, BC\): hai cạnh bên</li>
+        <li>\(AC, BD\): hai đường chéo</li>
+      </ul>
+      <p class="formula-note">Hai đường chéo cắt nhau tại một điểm cách đều \(A\), \(B\) và cách đều \(C\), \(D\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập 3, H.3.20). \(\triangle ABC\) cân tại <i>A</i>; đường thẳng \(d \parallel BC\) cắt <i>AB</i> tại <i>D</i>, cắt <i>AC</i> tại <i>E</i>. a) <i>DECB</i> là hình gì? b) Chứng minh \(BE = CD\).</p>
+      <p><b>a)</b> Tứ giác <i>DECB</i> có \(DE \parallel BC\) nên là <b>hình thang</b> (hai đáy <i>DE</i>, <i>BC</i>).</p>
+      <p>Hai góc kề đáy <i>BC</i> là \(\widehat{DBC} = \widehat{ABC}\) và \(\widehat{ECB} = \widehat{ACB}\); mà \(\widehat{ABC} = \widehat{ACB}\) (\(\triangle ABC\) cân tại <i>A</i>) nên chúng bằng nhau. Vậy <i>DECB</i> là <b>hình thang cân</b>.</p>
+      <p><b>b)</b> Hai đường chéo của hình thang cân <i>DECB</i> là <i>DC</i> và <i>EB</i>, theo Định lí 2 chúng bằng nhau: \(BE = CD\).</p>
+    </div>
+
+    <h4>3. Dấu hiệu nhận biết hình thang cân</h4>
+    <div class="box law" data-label="⚖️ Định lí 3 (dấu hiệu nhận biết)">
+      <p><b>Nếu một hình thang có hai đường chéo bằng nhau thì hình thang đó là hình thang cân.</b></p>
+      <p class="muted">Đây là <b>định lí đảo</b> của Định lí 2: giả thiết của định lí này là kết luận của định lí kia.</p>
+    </div>
+    <div class="box law" data-label="⚖️ Dấu hiệu nhận biết hình thang cân">
+      <ol>
+        <li>Hình thang có <b>hai góc kề một đáy bằng nhau</b> (theo định nghĩa).</li>
+        <li>Hình thang có <b>hai đường chéo bằng nhau</b> (Định lí 3).</li>
+        <li>Hình thang có <b>hai đáy không bằng nhau</b> và <b>hai cạnh bên bằng nhau</b> (Luyện tập chung tr. 56).</li>
+      </ol>
+    </div>
+    <div class="box warn">
+      <p><b>Hình thang có hai cạnh bên bằng nhau CHƯA chắc là hình thang cân!</b> (Tranh luận SGK tr. 59)</p>
+      <p>Phản ví dụ: <b>hình bình hành</b> cũng là hình thang và có hai cạnh bên bằng nhau, nhưng nói chung không phải hình thang cân.</p>
+      <p>Chỉ khi thêm điều kiện <b>hai đáy không bằng nhau</b> thì kết luận mới đúng.</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Chứng minh một tứ giác là hình thang cân</p>
+      <ol class="steps">
+        <li><b>Bước 1 — chứng minh là hình thang</b>: chỉ ra hai cạnh đối song song (dùng cặp góc so le trong, đồng vị bằng nhau, hoặc cùng vuông góc/cùng song song với một đường thẳng).</li>
+        <li><b>Bước 2 — chọn một dấu hiệu</b>: hai góc kề một đáy bằng nhau · hai đường chéo bằng nhau · hai đáy không bằng nhau và hai cạnh bên bằng nhau.</li>
+        <li>Muốn có hai góc (hoặc hai đoạn) bằng nhau: ghép chúng vào <b>hai tam giác bằng nhau</b> hoặc dùng <b>tam giác cân</b>.</li>
+        <li>Kết luận, ghi rõ tên dấu hiệu đã dùng.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 (SGK tr. 54–55, H.3.21). Hình thang <i>ABCD</i> (\(AB \parallel CD\)) có \(\widehat{ACD} = \widehat{BDC}\). Chứng minh <i>ABCD</i> là hình thang cân.</p>
+      <p>Gọi <i>I</i> là giao điểm của hai đường chéo <i>AC</i>, <i>BD</i>.</p>
+      <p>Vì \(AB \parallel CD\) nên \(\widehat{BAC} = \widehat{ACD}\) và \(\widehat{ABD} = \widehat{BDC}\) (các cặp góc so le trong).</p>
+      <p>Theo giả thiết \(\widehat{ACD} = \widehat{BDC}\), suy ra \(\widehat{BAC} = \widehat{ACD} = \widehat{BDC} = \widehat{ABD}\).</p>
+      <p>Do đó \(\triangle ICD\) cân tại <i>I</i> và \(\triangle IAB\) cân tại <i>I</i>, nên \(IC = ID\) và \(IA = IB\).</p>
+      <p>Vậy \(AC = IA + IC = IB + ID = BD\). Theo Định lí 3, <i>ABCD</i> là <b>hình thang cân</b>.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập chung tr. 56, H.3.24). Chứng minh: hình thang có hai cạnh đáy không bằng nhau và hai cạnh bên bằng nhau là hình thang cân.</p>
+      <p class="muted">GT: hình thang \(ABCD\), \(AB \parallel CD\), \(AB \lt CD\), \(AD = BC\). &nbsp;·&nbsp; KL: \(ABCD\) là hình thang cân.</p>
+      <p>Vì \(AB \lt CD\) nên có điểm <i>E</i> nằm giữa <i>D</i> và <i>C</i> sao cho \(DE = AB\).</p>
+      <p>Hai tam giác <i>ADE</i> và <i>EBA</i> có \(DE = AB\), <i>AE</i> là cạnh chung, \(\widehat{E_1} = \widehat{A_2}\) (so le trong, do \(AB \parallel DC\)) ⇒ \(\triangle ADE = \triangle EBA\) (c.g.c) ⇒ \(DA = BE\).</p>
+      <p>Mà \(AD = BC\) (giả thiết) nên \(BE = BC\), tức \(\triangle BEC\) cân tại <i>B</i>, vì thế \(\widehat{E_3} = \widehat{C}\).</p>
+      <p>Mặt khác \(\triangle ADE = \triangle EBA\) cho \(\widehat{D} = \widehat{B_1}\); mà \(\widehat{B_1} = \widehat{E_3}\) (đồng vị, do \(AB \parallel CD\)) nên \(\widehat{D} = \widehat{E_3}\).</p>
+      <p>Vậy \(\widehat{D} = \widehat{E_3} = \widehat{C}\) — hai góc kề đáy <i>CD</i> bằng nhau ⇒ <i>ABCD</i> là <b>hình thang cân</b>.</p>
+    </div>
+    <div class="box tip">
+      <p>Hình thang cân có <b>trục đối xứng</b> là đường thẳng đi qua trung điểm hai đáy. Nhìn ra trục này là thấy ngay \(AD = BC\) và \(AC = BD\).</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li><b>Hình thang</b> = tứ giác có hai cạnh đối song song; hai cạnh đó là <b>hai đáy</b>, hai cạnh còn lại là <b>cạnh bên</b>.</li>
+        <li>Hai góc kề một <b>cạnh bên</b> của hình thang thì <b>bù nhau</b> (tổng \(180^\circ\)).</li>
+        <li><b>Hình thang cân</b> = hình thang có hai góc kề một đáy bằng nhau.</li>
+        <li>Tính chất: <b>hai cạnh bên bằng nhau</b> (Định lí 1) và <b>hai đường chéo bằng nhau</b> (Định lí 2).</li>
+        <li>Dấu hiệu: hai góc kề một đáy bằng nhau · hai đường chéo bằng nhau · hai đáy khác nhau và hai cạnh bên bằng nhau.</li>
+        <li>Hình thang có hai cạnh bên bằng nhau <b>chưa chắc</b> là hình thang cân (hình bình hành!).</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-12">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 12</span>Hình bình hành</h3>
+    <p class="lesson-goal">Cần nắm: định nghĩa hình bình hành; ba tính chất (cạnh đối, góc đối, đường chéo); năm dấu hiệu nhận biết; cách dùng hình bình hành để chứng minh hai đoạn thẳng bằng nhau, hai đoạn thẳng có chung trung điểm.</p>
+
+    <h4>1. Hình bình hành và tính chất</h4>
+    <div class="box def">
+      <p><span class="kw">Hình bình hành</span> là tứ giác có <b>các cạnh đối song song</b>.</p>
+      <p>Hình bình hành <i>ABCD</i>: \(AB \parallel CD\) và \(AD \parallel BC\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 (SGK tr. 57, H.3.29). Tứ giác <i>ABCD</i> có ba góc bằng nhau như hình vẽ. <i>ABCD</i> có là hình bình hành không?</p>
+      <p>Ta có \(\widehat{xDA} = \widehat{DAB}\) và chúng ở vị trí so le trong nên \(AB \parallel CD\).</p>
+      <p>Tương tự \(AD \parallel CB\). Vậy theo định nghĩa, <i>ABCD</i> là <b>hình bình hành</b>.</p>
+    </div>
+    <div class="box law" data-label="⚖️ Định lí 1 (tính chất hình bình hành)">
+      <p>Trong hình bình hành:</p>
+      <ol>
+        <li><b>Các cạnh đối bằng nhau</b>;</li>
+        <li><b>Các góc đối bằng nhau</b>;</li>
+        <li><b>Hai đường chéo cắt nhau tại trung điểm của mỗi đường</b>.</li>
+      </ol>
+      <p class="muted">GT: \(ABCD\) là hình bình hành, \(O\) là giao điểm của \(AC\) và \(BD\). &nbsp;·&nbsp; KL: a) \(AB = CD\), \(AD = BC\); b) \(\widehat{A} = \widehat{C}\), \(\widehat{B} = \widehat{D}\); c) \(OA = OC\), \(OB = OD\).</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 400 205" width="400" role="img" aria-label="Hình bình hành ABCD có các cạnh đối bằng nhau và các góc đối bằng nhau">
+        <polygon points="150,50 350,50 250,160 50,160" class="stroke" fill="none" stroke-width="2"/>
+        <g class="stroke" fill="none" stroke-width="1.6">
+          <path d="M250 56 L250 44"/>
+          <path d="M150 166 L150 154"/>
+          <path d="M97.2 99.1 L106.1 107.2 M93.9 102.8 L102.8 110.9"/>
+          <path d="M297.2 99.1 L306.1 107.2 M293.9 102.8 L302.8 110.9"/>
+          <path d="M335.2 66.3 A22 22 0 0 1 328 50"/>
+          <path d="M64.8 143.7 A22 22 0 0 1 72 160"/>
+        </g>
+        <g class="accent" fill="none" stroke-width="1.8">
+          <path d="M176 50 A26 26 0 0 1 132.5 69.2"/>
+          <path d="M224 160 A26 26 0 0 1 267.5 140.8"/>
+        </g>
+        <text x="142" y="42" font-size="16" font-style="italic">A</text>
+        <text x="354" y="42" font-size="16" font-style="italic">B</text>
+        <text x="254" y="178" font-size="16" font-style="italic">C</text>
+        <text x="32" y="178" font-size="16" font-style="italic">D</text>
+      </svg>
+      <figcaption>Cạnh cùng số gạch thì bằng nhau: \(AB = CD\), \(AD = BC\). Góc cùng kí hiệu cung thì bằng nhau: \(\widehat{A} = \widehat{C}\), \(\widehat{B} = \widehat{D}\).</figcaption>
+    </figure>
+    <figure class="diagram">
+      <svg viewBox="0 0 400 205" width="400" role="img" aria-label="Hình bình hành ABCD có hai đường chéo AC và BD cắt nhau tại trung điểm O của mỗi đường">
+        <polygon points="150,50 350,50 250,160 50,160" class="stroke" fill="none" stroke-width="2"/>
+        <g class="accent" fill="none" stroke-width="1.8">
+          <line x1="150" y1="50" x2="250" y2="160"/>
+          <line x1="350" y1="50" x2="50" y2="160"/>
+          <path d="M170.6 81.5 L179.4 73.5"/>
+          <path d="M220.6 136.5 L229.4 128.5"/>
+          <path d="M274.7 84 L270.6 72.7 M279.4 82.3 L275.3 71"/>
+          <path d="M125.3 126 L129.4 137.3 M120.6 127.7 L124.7 139"/>
+        </g>
+        <circle cx="200" cy="105" r="3.5" class="accent-fill"/>
+        <text x="142" y="42" font-size="16" font-style="italic">A</text>
+        <text x="354" y="42" font-size="16" font-style="italic">B</text>
+        <text x="254" y="178" font-size="16" font-style="italic">C</text>
+        <text x="32" y="178" font-size="16" font-style="italic">D</text>
+        <text x="178" y="128" font-size="14" font-style="italic" class="accent-fill">O</text>
+      </svg>
+      <figcaption>Theo H.3.30: \(\triangle AOB = \triangle COD\) ⇒ \(OA = OC\) (một gạch), \(OB = OD\) (hai gạch). Vậy <i>O</i> là trung điểm của cả <i>AC</i> và <i>BD</i>.</figcaption>
+    </figure>
+    <div class="formula">
+      <div class="formula-name">Tính chất hình bình hành (cạnh, góc, đường chéo)</div>
+      <div class="formula-body">\[ \begin{aligned} AB &amp;= CD, \quad AD = BC \\ \widehat{A} &amp;= \widehat{C}, \quad \widehat{B} = \widehat{D} \\ OA &amp;= OC, \quad OB = OD \end{aligned} \]</div>
+      <ul class="formula-legend">
+        <li>\(ABCD\): hình bình hành</li>
+        <li>\(O\): giao điểm hai đường chéo \(AC\), \(BD\)</li>
+        <li>Suy ra \(OA = \dfrac{1}{2}AC\), \(OB = \dfrac{1}{2}BD\)</li>
+      </ul>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Hai góc kề một cạnh của hình bình hành (bù nhau)</div>
+      <div class="formula-body">\[ \widehat{A} + \widehat{B} = \widehat{C} + \widehat{D} = 180^\circ \] \[ \widehat{B} + \widehat{C} = \widehat{D} + \widehat{A} = 180^\circ \]</div>
+      <ul class="formula-legend">
+        <li>Nhận xét SGK tr. 58: trong hình bình hành, hai góc kề một cạnh bất kì thì bù nhau</li>
+        <li>Biết <b>một</b> góc là tính được cả bốn góc của hình bình hành</li>
+      </ul>
+      <p class="formula-note">Vì \(AD \parallel BC\) nên \(\widehat{A}\), \(\widehat{B}\) là hai góc trong cùng phía.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Diện tích hình bình hành</div>
+      <div class="formula-body">\[ S = a \cdot h \]</div>
+      <ul class="formula-legend">
+        <li>\(a\): độ dài một cạnh (cm)</li>
+        <li>\(h\): chiều cao ứng với cạnh đó (cm)</li>
+        <li>\(S\): diện tích hình bình hành (cm²)</li>
+      </ul>
+      <p class="formula-note">Công thức đã học ở lớp 6; ở Ví dụ 2 (SGK tr. 62) diện tích còn được tính bằng cách chia hình bình hành thành hai tam giác bằng nhau.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập chung tr. 62, Ví dụ 2, H.3.38). Tính diện tích hình bình hành <i>ABCD</i> có đường chéo <i>AC</i> vuông góc với cạnh <i>AD</i>, biết \(AC = 4\) cm, \(AD = 3\) cm.</p>
+      <p><i>ABCD</i> là hình bình hành nên \(BC \parallel AD\) và \(BC = AD = 3\) cm. Mà \(AD \perp AC\) nên \(BC \perp AC\).</p>
+      <p>\(S_{ADC} = \dfrac{1}{2} AD \cdot AC = \dfrac{1}{2} \cdot 3 \cdot 4 = 6\) (cm²); \(S_{ACB} = \dfrac{1}{2} AC \cdot BC = \dfrac{1}{2} \cdot 4 \cdot 3 = 6\) (cm²).</p>
+      <p><b>Vậy</b> \(S_{ABCD} = 6 + 6 = 12\) (cm²).</p>
+    </div>
+
+    <h4>2. Dấu hiệu nhận biết hình bình hành</h4>
+    <div class="box law" data-label="⚖️ Định lí 2 (dấu hiệu theo cạnh)">
+      <ol>
+        <li>Tứ giác có <b>các cạnh đối bằng nhau</b> là một hình bình hành.</li>
+        <li>Tứ giác có <b>một cặp cạnh đối song song và bằng nhau</b> là một hình bình hành.</li>
+      </ol>
+    </div>
+    <div class="box law" data-label="⚖️ Định lí 3 (dấu hiệu theo góc và đường chéo)">
+      <ol>
+        <li>Tứ giác có <b>các góc đối bằng nhau</b> là một hình bình hành.</li>
+        <li>Tứ giác có <b>hai đường chéo cắt nhau tại trung điểm của mỗi đường</b> là một hình bình hành.</li>
+      </ol>
+    </div>
+    <div class="box fact" data-label="🔎 Năm dấu hiệu nhận biết hình bình hành">
+      <div class="table-wrap"><table>
+        <thead><tr><th>#</th><th>Điều kiện của tứ giác <i>ABCD</i></th><th>Căn cứ</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>\(AB \parallel CD\) và \(AD \parallel BC\)</td><td>Định nghĩa</td></tr>
+          <tr><td>2</td><td>\(AB = CD\) và \(AD = BC\)</td><td>Định lí 2a</td></tr>
+          <tr><td>3</td><td>\(AB \parallel CD\) và \(AB = CD\) (một cặp cạnh đối)</td><td>Định lí 2b</td></tr>
+          <tr><td>4</td><td>\(\widehat{A} = \widehat{C}\) và \(\widehat{B} = \widehat{D}\)</td><td>Định lí 3a</td></tr>
+          <tr><td>5</td><td>\(AC\) và \(BD\) cắt nhau tại trung điểm của mỗi đường</td><td>Định lí 3b</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Chứng minh một tứ giác là hình bình hành</p>
+      <ol class="steps">
+        <li>Đọc kĩ giả thiết xem có sẵn yếu tố nào: hai cạnh song song, hai cạnh bằng nhau, trung điểm, hay các góc.</li>
+        <li>Có <b>trung điểm</b> của hai đoạn thẳng cắt nhau ⇒ chọn ngay <b>dấu hiệu 5</b> (đường chéo).</li>
+        <li>Có <b>một cặp cạnh vừa song song vừa bằng nhau</b> ⇒ chọn <b>dấu hiệu 3</b> (ngắn gọn nhất).</li>
+        <li>Chỉ có độ dài ⇒ chứng minh hai cặp cạnh đối bằng nhau (dấu hiệu 2), thường qua hai tam giác bằng nhau.</li>
+        <li>Chỉ có số đo góc ⇒ chứng minh hai cặp góc đối bằng nhau (dấu hiệu 4) hoặc chỉ ra các cặp góc so le trong / đồng vị bằng nhau để có hai cặp cạnh song song (dấu hiệu 1).</li>
+        <li>Kết luận, nêu rõ dấu hiệu đã dùng.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 (SGK tr. 59, H.3.31). Hình bình hành <i>ABCD</i>; từ <i>A</i>, <i>C</i> kẻ \(AH \perp BD\), \(CK \perp BD\) (\(H, K \in BD\)). Chứng minh <i>AHCK</i> là hình bình hành.</p>
+      <p><i>ABCD</i> là hình bình hành nên \(AD \parallel BC\) và \(AD = BC\), suy ra \(\widehat{D_1} = \widehat{B_1}\) (hai góc so le trong).</p>
+      <p>Hai tam giác vuông <i>AHD</i> và <i>CKB</i> có \(AD = BC\), \(\widehat{D_1} = \widehat{B_1}\) ⇒ \(\triangle AHD = \triangle CKB\) (cạnh huyền – góc nhọn) ⇒ \(AH = CK\).</p>
+      <p>Mặt khác \(AH\) và \(CK\) cùng vuông góc với \(BD\) nên \(AH \parallel CK\).</p>
+      <p>Tứ giác <i>AHCK</i> có cặp cạnh đối <i>AH</i>, <i>CK</i> <b>song song và bằng nhau</b> ⇒ <i>AHCK</i> là <b>hình bình hành</b> (Định lí 2b).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 (SGK tr. 60–61, H.3.34). Tứ giác nào là hình bình hành?</p>
+      <p><b>a)</b> Có hai cặp cạnh đối bằng nhau (các dấu gạch) ⇒ là hình bình hành (Định lí 2a).</p>
+      <p><b>b)</b> Có \(\widehat{A} = 110^\circ\), \(\widehat{C} = 100^\circ\): hai góc đối <b>không</b> bằng nhau ⇒ <b>không</b> là hình bình hành.</p>
+      <p><b>c)</b> Hai đường chéo cắt nhau tại trung điểm của mỗi đường ⇒ là hình bình hành (Định lí 3b).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Dùng hình bình hành để chứng minh hai đoạn thẳng bằng nhau (hoặc song song)</p>
+      <ol class="steps">
+        <li>Ghép hai đoạn thẳng cần so sánh thành <b>hai cạnh đối</b> của một tứ giác.</li>
+        <li>Chứng minh tứ giác đó là hình bình hành (theo một trong năm dấu hiệu).</li>
+        <li>Suy ra hai cạnh đối bằng nhau và song song — điều phải chứng minh.</li>
+        <li>Nếu cần chứng minh hai đoạn thẳng <b>có chung trung điểm</b>: chứng minh chúng là <b>hai đường chéo</b> của một hình bình hành.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập 1, SGK tr. 58). \(\triangle ABC\); \(M \in BC\); kẻ \(MN \parallel AB\) (\(N \in AC\)), \(MP \parallel AC\) (\(P \in AB\)); <i>I</i> là trung điểm <i>NP</i>. Chứng minh <i>I</i> cũng là trung điểm của <i>AM</i>.</p>
+      <p>Tứ giác <i>ANMP</i> có \(AN \parallel PM\) (vì \(MP \parallel AC\)) và \(AP \parallel NM\) (vì \(MN \parallel AB\)) nên là <b>hình bình hành</b>.</p>
+      <p>Hai đường chéo của nó là <i>AM</i> và <i>NP</i>, chúng cắt nhau tại trung điểm của mỗi đường. Mà <i>I</i> là trung điểm <i>NP</i> nên <i>I</i> cũng là <b>trung điểm của <i>AM</i></b>.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập chung tr. 62, Ví dụ 1, H.3.37). <i>E</i>, <i>F</i>, <i>G</i>, <i>H</i> lần lượt là trung điểm các cạnh <i>AB</i>, <i>BC</i>, <i>CD</i>, <i>DA</i> của hình bình hành <i>ABCD</i>. Hỏi <i>EFGH</i> là hình gì?</p>
+      <p>Vì <i>E</i>, <i>G</i> là trung điểm <i>AB</i>, <i>CD</i> và \(AB = CD\) nên \(AE = \dfrac{1}{2}AB = \dfrac{1}{2}CD = CG\).</p>
+      <p>Tương tự \(AH = \dfrac{1}{2}AD = \dfrac{1}{2}BC = CF\).</p>
+      <p>Hai tam giác <i>AHE</i> và <i>CFG</i> có \(\widehat{HAE} = \widehat{FCG}\) (hai góc đối của hình bình hành), \(AH = CF\), \(AE = CG\) ⇒ \(\triangle AHE = \triangle CFG\) (c.g.c) ⇒ \(HE = FG\). Tương tự \(GH = EF\).</p>
+      <p>Tứ giác <i>EFGH</i> có các cạnh đối bằng nhau nên là <b>hình bình hành</b>.</p>
+    </div>
+    <div class="box warn">
+      <p>Ba khẳng định hay bị lẫn (SGK tr. 61, bài 3.13):</p>
+      <ul>
+        <li>“Hình thang có hai cạnh bên <b>song song</b> là hình bình hành” — <b>đúng</b> (đủ hai cặp cạnh đối song song).</li>
+        <li>“Hình thang có hai cạnh bên <b>bằng nhau</b> là hình bình hành” — <b>sai</b> (hình thang cân là phản ví dụ).</li>
+        <li>“Tứ giác có hai cạnh đối nào cũng song song là hình bình hành” — <b>đúng</b> (chính là định nghĩa).</li>
+      </ul>
+      <p>Tứ giác có <b>hai cạnh đối bằng nhau</b> mà không song song thì <b>chưa</b> là hình bình hành; phải đủ <b>cả hai cặp</b> cạnh đối bằng nhau, hoặc một cặp <b>vừa song song vừa bằng nhau</b>.</p>
+    </div>
+    <div class="box tip">
+      <p>Nhớ dấu hiệu nhanh bằng ba nhóm: <b>cạnh</b> (song song / bằng nhau) — <b>góc</b> (góc đối bằng nhau) — <b>đường chéo</b> (cắt nhau tại trung điểm). Bài toán cho trung điểm thì gần như chắc chắn dùng nhóm “đường chéo”.</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li><b>Hình bình hành</b> = tứ giác có các cạnh đối song song.</li>
+        <li>Tính chất: các cạnh đối bằng nhau · các góc đối bằng nhau · hai đường chéo cắt nhau tại <b>trung điểm của mỗi đường</b>.</li>
+        <li>Hai góc kề một cạnh bất kì của hình bình hành thì <b>bù nhau</b>.</li>
+        <li>Năm dấu hiệu: hai cặp cạnh đối song song · hai cặp cạnh đối bằng nhau · một cặp cạnh đối song song và bằng nhau · hai cặp góc đối bằng nhau · hai đường chéo cắt nhau tại trung điểm mỗi đường.</li>
+        <li>Muốn chứng minh hai đoạn thẳng bằng nhau (hoặc có chung trung điểm) ⇒ đưa chúng về cạnh đối (hoặc đường chéo) của một hình bình hành.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-13">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 13</span>Hình chữ nhật</h3>
+    <p class="lesson-goal">Cần nắm: định nghĩa hình chữ nhật; hình chữ nhật vừa là hình bình hành vừa là hình thang cân; tính chất hai đường chéo; nhận xét về đường trung tuyến ứng với cạnh huyền; các dấu hiệu nhận biết.</p>
+
+    <h4>1. Hình chữ nhật và tính chất</h4>
+    <div class="box def">
+      <p><span class="kw">Hình chữ nhật</span> là tứ giác có <b>bốn góc vuông</b>.</p>
+    </div>
+    <div class="box note" data-label="📝 Chú ý (SGK tr. 64)">
+      <p>Nếu một tứ giác có <b>ba góc vuông</b> thì góc còn lại cũng là góc vuông và tứ giác đó là <b>hình chữ nhật</b>.</p>
+      <p class="muted">Vì góc thứ tư \(= 360^\circ - 3 \times 90^\circ = 90^\circ\).</p>
+    </div>
+    <div class="box fact" data-label="🔎 Hình chữ nhật vừa là hình bình hành, vừa là hình thang cân">
+      <ul>
+        <li>Có \(\widehat{A} = \widehat{C} = 90^\circ\) và \(\widehat{B} = \widehat{D} = 90^\circ\) ⇒ các góc đối bằng nhau ⇒ là <b>hình bình hành</b>.</li>
+        <li>Có \(AB \parallel CD\) và hai góc kề đáy <i>CD</i> bằng nhau (cùng \(90^\circ\)) ⇒ là <b>hình thang cân</b>.</li>
+        <li>Vì vậy hình chữ nhật có <b>tất cả</b> tính chất của hình bình hành và của hình thang cân.</li>
+      </ul>
+    </div>
+    <div class="box law" data-label="⚖️ Định lí 1 (đường chéo hình chữ nhật)">
+      <p>Trong hình chữ nhật, <b>hai đường chéo bằng nhau</b> và <b>cắt nhau tại trung điểm của mỗi đường</b>.</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 400 200" width="400" role="img" aria-label="Hình chữ nhật ABCD có bốn góc vuông, hai đường chéo bằng nhau cắt nhau tại trung điểm O">
+        <rect x="80" y="45" width="240" height="110" class="stroke" fill="none" stroke-width="2"/>
+        <g class="stroke" fill="none" stroke-width="1.5">
+          <path d="M91 45 L91 56 L80 56"/>
+          <path d="M320 56 L309 56 L309 45"/>
+          <path d="M309 155 L309 144 L320 144"/>
+          <path d="M80 144 L91 144 L91 155"/>
+        </g>
+        <g class="accent" fill="none" stroke-width="1.8">
+          <line x1="80" y1="45" x2="320" y2="155"/>
+          <line x1="320" y1="45" x2="80" y2="155"/>
+          <path d="M137.5 78 L142.5 67"/>
+          <path d="M257.5 67 L262.5 78"/>
+          <path d="M262.5 122 L257.5 133"/>
+          <path d="M142.5 133 L137.5 122"/>
+        </g>
+        <circle cx="200" cy="100" r="3.5" class="accent-fill"/>
+        <text x="64" y="38" font-size="16" font-style="italic">A</text>
+        <text x="326" y="38" font-size="16" font-style="italic">B</text>
+        <text x="326" y="172" font-size="16" font-style="italic">C</text>
+        <text x="64" y="172" font-size="16" font-style="italic">D</text>
+        <text x="192" y="92" font-size="14" font-style="italic" class="accent-fill">O</text>
+      </svg>
+      <figcaption>Theo H.3.42: bốn góc vuông; bốn nửa đường chéo cùng một gạch nên \(OA = OB = OC = OD = \dfrac{1}{2}AC = \dfrac{1}{2}BD\).</figcaption>
+    </figure>
+    <div class="formula">
+      <div class="formula-name">Đường chéo của hình chữ nhật</div>
+      <div class="formula-body">\[ AC = BD \] \[ OA = OB = OC = OD = \frac{1}{2}AC \]</div>
+      <ul class="formula-legend">
+        <li>\(ABCD\): hình chữ nhật; \(O\): giao điểm hai đường chéo</li>
+        <li>\(AC, BD\): hai đường chéo (cm)</li>
+        <li>Hệ quả: \(O\) cách đều bốn đỉnh của hình chữ nhật</li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 (SGK tr. 65, H.3.43). Hình chữ nhật <i>ABCD</i> có hai đường chéo cắt nhau tại <i>O</i>. Chứng minh \(\triangle OAB = \triangle ODC\).</p>
+      <p>Vì <i>ABCD</i> là hình chữ nhật nên \(AC = BD\) và <i>O</i> là trung điểm của <i>AC</i>, <i>BD</i>, suy ra \(OA = OC = \dfrac{1}{2}AC = \dfrac{1}{2}BD = OB = OD\).</p>
+      <p>Hai tam giác <i>OAB</i> và <i>ODC</i> có \(OA = OD\), \(OB = OC\), \(AB = DC\) ⇒ \(\triangle OAB = \triangle ODC\) (c.c.c).</p>
+    </div>
+    <div class="box law" data-label="⚖️ Nhận xét (đường trung tuyến ứng với cạnh huyền)">
+      <p>Trong <b>tam giác vuông</b>, <b>đường trung tuyến ứng với cạnh huyền bằng nửa cạnh huyền</b>.</p>
+      <p class="muted">Đảo lại (SGK tr. 66): nếu tam giác có một đường trung tuyến bằng nửa cạnh tương ứng thì tam giác đó là <b>tam giác vuông</b>.</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 400 200" width="400" role="img" aria-label="Tam giác ABC vuông tại A với trung tuyến AM bằng nửa cạnh huyền BC, dựng thêm hình chữ nhật ABDC bằng nét đứt">
+        <g class="stroke" fill="none" stroke-width="1.4" stroke-dasharray="5 4">
+          <path d="M80 45 L320 45 L320 155"/>
+        </g>
+        <polygon points="80,155 80,45 320,155" class="stroke" fill="none" stroke-width="2"/>
+        <line x1="80" y1="155" x2="200" y2="100" class="accent" stroke-width="2"/>
+        <line x1="200" y1="100" x2="320" y2="45" class="accent" stroke-width="1.4" stroke-dasharray="5 4"/>
+        <path d="M80 142 L93 142 L93 155" class="stroke" fill="none" stroke-width="1.5"/>
+        <g class="stroke" fill="none" stroke-width="1.6">
+          <path d="M137.5 78 L142.5 67"/>
+          <path d="M257.5 133 L262.5 122"/>
+        </g>
+        <path d="M142.5 133 L137.5 122" class="accent" fill="none" stroke-width="1.6"/>
+        <circle cx="200" cy="100" r="3.5" class="accent-fill"/>
+        <text x="60" y="172" font-size="16" font-style="italic">A</text>
+        <text x="62" y="40" font-size="16" font-style="italic">B</text>
+        <text x="326" y="172" font-size="16" font-style="italic">C</text>
+        <text x="326" y="40" font-size="16" font-style="italic">D</text>
+        <text x="203" y="92" font-size="14" font-style="italic" class="accent-fill">M</text>
+      </svg>
+      <figcaption>Dựng <i>D</i> để <i>ABDC</i> là hình chữ nhật. Hai đường chéo <i>AD</i>, <i>BC</i> bằng nhau và cắt nhau tại trung điểm <i>M</i>, nên \(AM = \dfrac{1}{2}AD = \dfrac{1}{2}BC = BM = MC\).</figcaption>
+    </figure>
+    <div class="formula">
+      <div class="formula-name">Đường trung tuyến ứng với cạnh huyền của tam giác vuông</div>
+      <div class="formula-body">\[ AM = \frac{1}{2}BC = BM = MC \]</div>
+      <ul class="formula-legend">
+        <li>\(\triangle ABC\) vuông tại \(A\); \(M\) là trung điểm cạnh huyền \(BC\)</li>
+        <li>\(AM\): đường trung tuyến ứng với cạnh huyền (cm)</li>
+        <li>\(BC\): cạnh huyền (cm)</li>
+      </ul>
+      <p class="formula-note">Điều ngược lại cũng đúng: nếu \(AM = \dfrac{1}{2}BC\) thì \(\triangle ABC\) vuông tại \(A\).</p>
+    </div>
+
+    <h4>2. Dấu hiệu nhận biết hình chữ nhật</h4>
+    <div class="box law" data-label="⚖️ Định lí 2 (dấu hiệu nhận biết)">
+      <ol>
+        <li><b>Hình bình hành có một góc vuông</b> là hình chữ nhật.</li>
+        <li><b>Hình bình hành có hai đường chéo bằng nhau</b> là hình chữ nhật.</li>
+      </ol>
+    </div>
+    <div class="box fact" data-label="🔎 Bốn dấu hiệu nhận biết hình chữ nhật">
+      <div class="table-wrap"><table>
+        <thead><tr><th>#</th><th>Điều kiện</th><th>Căn cứ</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Tứ giác có bốn góc vuông</td><td>Định nghĩa</td></tr>
+          <tr><td>2</td><td>Tứ giác có <b>ba</b> góc vuông</td><td>Chú ý SGK tr. 64</td></tr>
+          <tr><td>3</td><td>Hình bình hành có một góc vuông</td><td>Định lí 2a</td></tr>
+          <tr><td>4</td><td>Hình bình hành có hai đường chéo bằng nhau</td><td>Định lí 2b</td></tr>
+        </tbody>
+      </table></div>
+      <p class="muted">Bổ sung thường dùng: <b>hình thang cân có một góc vuông</b> cũng là hình chữ nhật (khi đó cả bốn góc đều vuông).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Chứng minh một tứ giác là hình chữ nhật</p>
+      <ol class="steps">
+        <li>Nếu đề cho nhiều <b>góc vuông</b>: đếm xem đã có ba góc vuông chưa ⇒ dùng dấu hiệu 2 (nhanh nhất).</li>
+        <li>Nếu đề cho <b>trung điểm</b> hoặc các cạnh song song: trước hết chứng minh tứ giác là <b>hình bình hành</b>.</li>
+        <li>Rồi bổ sung <b>một góc vuông</b> (dấu hiệu 3) hoặc <b>hai đường chéo bằng nhau</b> (dấu hiệu 4).</li>
+        <li>Kết luận và nêu rõ dấu hiệu đã dùng.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 (SGK tr. 65, H.3.45). Chứng minh: tứ giác có hai đường chéo bằng nhau và cắt nhau tại trung điểm của mỗi đường thì là hình chữ nhật.</p>
+      <p class="muted">GT: tứ giác \(ABCD\); \(O\) là giao điểm của \(AC\), \(BD\); \(AC = BD\), \(OA = OC\), \(OB = OD\). &nbsp;·&nbsp; KL: \(ABCD\) là hình chữ nhật.</p>
+      <p><i>O</i> là trung điểm của cả <i>AC</i> và <i>BD</i> nên <i>ABCD</i> là <b>hình bình hành</b> (dấu hiệu đường chéo).</p>
+      <p>Hơn nữa \(AC = BD\), nên theo Định lí 2, hình bình hành <i>ABCD</i> là <b>hình chữ nhật</b>.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (tình huống mở đầu, H.3.40). Hai thanh tre thẳng dài bằng nhau, gắn với nhau tại trung điểm của mỗi thanh. Bốn đầu mút tạo thành tứ giác gì?</p>
+      <p>Bốn đầu mút là bốn đỉnh của một tứ giác có <b>hai đường chéo</b> chính là hai thanh tre: chúng <b>bằng nhau</b> và <b>cắt nhau tại trung điểm của mỗi đường</b>.</p>
+      <p>Theo Ví dụ 2, tứ giác đó là <b>hình chữ nhật</b>.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập 2, SGK tr. 66). Tứ giác <i>ABCD</i> có \(\widehat{A} = 90^\circ\), hai đường chéo cắt nhau tại trung điểm <i>O</i> của mỗi đường. <i>ABCD</i> là hình gì?</p>
+      <p>Hai đường chéo cắt nhau tại trung điểm mỗi đường ⇒ <i>ABCD</i> là <b>hình bình hành</b>.</p>
+      <p>Hình bình hành ấy có một góc vuông (\(\widehat{A} = 90^\circ\)) ⇒ <i>ABCD</i> là <b>hình chữ nhật</b> (Định lí 2a).</p>
+    </div>
+    <div class="box warn">
+      <p>“Tứ giác có <b>hai đường chéo bằng nhau</b>” <b>chưa đủ</b> để kết luận là hình chữ nhật — <b>hình thang cân</b> cũng có hai đường chéo bằng nhau. Phải thêm điều kiện chúng <b>cắt nhau tại trung điểm của mỗi đường</b> (hoặc tứ giác đã là hình bình hành).</p>
+      <p>Tương tự, hình bình hành có <b>một</b> góc vuông là đủ; không cần chứng minh cả bốn góc vuông.</p>
+    </div>
+    <div class="box tip">
+      <p>Cách kiểm tra bằng dụng cụ (bài 3.25, 3.26 SGK tr. 66): dùng <b>ê ke</b> kiểm tra ba góc vuông; hoặc dùng <b>compa</b> kiểm tra hai cặp cạnh đối bằng nhau <i>và</i> hai đường chéo bằng nhau.</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li><b>Hình chữ nhật</b> = tứ giác có bốn góc vuông; có ba góc vuông là đủ.</li>
+        <li>Hình chữ nhật vừa là <b>hình bình hành</b> vừa là <b>hình thang cân</b> ⇒ có mọi tính chất của cả hai.</li>
+        <li>Hai đường chéo <b>bằng nhau</b> và <b>cắt nhau tại trung điểm mỗi đường</b> ⇒ giao điểm cách đều bốn đỉnh.</li>
+        <li>Dấu hiệu: ba (bốn) góc vuông · hình bình hành có một góc vuông · hình bình hành có hai đường chéo bằng nhau.</li>
+        <li>Trong tam giác vuông, <b>trung tuyến ứng với cạnh huyền bằng nửa cạnh huyền</b> (và ngược lại).</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-14">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 14</span>Hình thoi và hình vuông</h3>
+    <p class="lesson-goal">Cần nắm: định nghĩa hình thoi, hình vuông; tính chất đường chéo của hình thoi (vuông góc, là phân giác các góc) và của hình vuông; các dấu hiệu nhận biết hình thoi, hình vuông.</p>
+
+    <h4>1. Hình thoi</h4>
+    <div class="box def">
+      <p><span class="kw">Hình thoi</span> là tứ giác có <b>bốn cạnh bằng nhau</b>.</p>
+      <p>Hình thoi <i>ABCD</i>: \(AB = BC = CD = DA\).</p>
+    </div>
+    <div class="box fact" data-label="🔎 Hình thoi là một hình bình hành">
+      <p>Hình thoi có các cạnh đối bằng nhau (\(AB = CD\), \(BC = DA\)) nên là <b>hình bình hành</b>. Do đó hình thoi có đủ mọi tính chất của hình bình hành:</p>
+      <ul>
+        <li>Các cạnh đối song song;</li>
+        <li>Các góc đối bằng nhau;</li>
+        <li>Hai đường chéo cắt nhau tại trung điểm của mỗi đường.</li>
+      </ul>
+    </div>
+    <div class="box law" data-label="⚖️ Định lí 1 (đường chéo hình thoi)">
+      <p>Trong hình thoi:</p>
+      <ol>
+        <li>Hai đường chéo <b>vuông góc với nhau</b>;</li>
+        <li>Hai đường chéo là <b>các đường phân giác của các góc</b> trong hình thoi.</li>
+      </ol>
+      <p class="muted">Vì \(\triangle ABD\) cân tại \(A\) (\(AB = AD\)) và \(AO\) là trung tuyến nên \(AO\) cũng là đường cao và đường phân giác.</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 400 220" width="400" role="img" aria-label="Hình thoi ABCD có bốn cạnh bằng nhau, hai đường chéo vuông góc tại O và là phân giác các góc">
+        <polygon points="40,110 200,35 360,110 200,185" class="stroke" fill="none" stroke-width="2"/>
+        <g class="stroke" fill="none" stroke-width="1.6">
+          <path d="M122.5 77.9 L117.5 67.1"/>
+          <path d="M277.5 77.9 L282.5 67.1"/>
+          <path d="M277.5 142.1 L282.5 152.9"/>
+          <path d="M122.5 142.1 L117.5 152.9"/>
+        </g>
+        <g class="accent" fill="none" stroke-width="1.8">
+          <line x1="40" y1="110" x2="360" y2="110"/>
+          <line x1="200" y1="35" x2="200" y2="185"/>
+          <path d="M212 110 L212 98 L200 98"/>
+          <path d="M70.8 95.6 A34 34 0 0 1 74 110"/>
+          <path d="M74 110 A34 34 0 0 1 70.8 124.4"/>
+          <path d="M223.5 46 A26 26 0 0 1 200 61"/>
+          <path d="M200 61 A26 26 0 0 1 176.5 46"/>
+        </g>
+        <circle cx="200" cy="110" r="3.5" class="accent-fill"/>
+        <text x="22" y="106" font-size="16" font-style="italic">A</text>
+        <text x="194" y="26" font-size="16" font-style="italic">B</text>
+        <text x="366" y="116" font-size="16" font-style="italic">C</text>
+        <text x="194" y="204" font-size="16" font-style="italic">D</text>
+        <text x="207" y="128" font-size="14" font-style="italic" class="accent-fill">O</text>
+      </svg>
+      <figcaption>Theo H.3.48: bốn cạnh cùng một gạch nên bằng nhau; \(AC \perp BD\) tại <i>O</i>; <i>AC</i> là phân giác của \(\widehat{A}\), <i>BD</i> là phân giác của \(\widehat{B}\).</figcaption>
+    </figure>
+    <div class="formula">
+      <div class="formula-name">Tính chất đường chéo hình thoi</div>
+      <div class="formula-body">\[ AC \perp BD \] \[ OA = OC, \quad OB = OD \]</div>
+      <ul class="formula-legend">
+        <li>\(ABCD\): hình thoi; \(O\): giao điểm hai đường chéo (hai đường chéo vuông góc tại \(O\))</li>
+        <li>\(\widehat{A_1} = \widehat{A_2}\), \(\widehat{B_1} = \widehat{B_2}\), …: mỗi đường chéo là phân giác của hai góc mà nó đi qua</li>
+        <li>Bốn tam giác \(OAB\), \(OBC\), \(OCD\), \(ODA\) là các tam giác vuông bằng nhau</li>
+      </ul>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 (SGK tr. 68, H.3.49). Hai đường tròn tâm <i>A</i> và tâm <i>C</i> có cùng bán kính, cắt nhau tại <i>B</i>, <i>D</i>. a) <i>ABCD</i> là hình gì? b) Chứng minh \(AC \perp BD\).</p>
+      <p><b>a)</b> Hai đường tròn cùng bán kính nên \(AB = AD = CD = CB\). Theo định nghĩa, <i>ABCD</i> là <b>hình thoi</b>.</p>
+      <p><b>b)</b> Từ câu a và Định lí 1, hai đường chéo của hình thoi vuông góc: \(AC \perp BD\).</p>
+    </div>
+    <div class="box law" data-label="⚖️ Định lí 2 (dấu hiệu nhận biết hình thoi)">
+      <ol>
+        <li><b>Hình bình hành có hai cạnh kề bằng nhau</b> là hình thoi.</li>
+        <li><b>Hình bình hành có hai đường chéo vuông góc với nhau</b> là hình thoi.</li>
+        <li><b>Hình bình hành có một đường chéo là đường phân giác của một góc</b> là hình thoi.</li>
+      </ol>
+    </div>
+    <div class="box fact" data-label="🔎 Bốn dấu hiệu nhận biết hình thoi">
+      <div class="table-wrap"><table>
+        <thead><tr><th>#</th><th>Điều kiện</th><th>Căn cứ</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Tứ giác có bốn cạnh bằng nhau</td><td>Định nghĩa</td></tr>
+          <tr><td>2</td><td>Hình bình hành có hai cạnh kề bằng nhau</td><td>Định lí 2a</td></tr>
+          <tr><td>3</td><td>Hình bình hành có hai đường chéo vuông góc</td><td>Định lí 2b</td></tr>
+          <tr><td>4</td><td>Hình bình hành có một đường chéo là phân giác của một góc</td><td>Định lí 2c</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Chứng minh một tứ giác là hình thoi</p>
+      <ol class="steps">
+        <li>Nếu tính được <b>bốn cạnh bằng nhau</b> (thường nhờ các bán kính bằng nhau, hoặc hai tam giác bằng nhau) ⇒ dùng ngay định nghĩa.</li>
+        <li>Ngược lại: chứng minh tứ giác là <b>hình bình hành</b> trước.</li>
+        <li>Rồi thêm <b>một</b> trong ba điều kiện: hai cạnh kề bằng nhau · hai đường chéo vuông góc · một đường chéo là phân giác của một góc.</li>
+        <li>Kết luận kèm tên dấu hiệu.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 (SGK tr. 69, H.3.50). Tứ giác nào là hình thoi?</p>
+      <p><b>a)</b> <i>ABCD</i> có các góc đối bằng nhau (\(\widehat{A} = \widehat{C}\), \(\widehat{B} = \widehat{D}\)) nên là hình bình hành; lại có hai cạnh kề <i>AB</i>, <i>BC</i> bằng nhau ⇒ <i>ABCD</i> là <b>hình thoi</b>.</p>
+      <p><b>b)</b> <i>MNPQ</i> <b>không</b> phải hình thoi vì hai cạnh kề <i>MN</i> và <i>NP</i> không bằng nhau.</p>
+    </div>
+    <div class="box warn">
+      <p>“Tứ giác có <b>hai đường chéo vuông góc</b>” <b>chưa đủ</b> để là hình thoi — hình “cái diều” (\(AB = AD\), \(CB = CD\)) cũng có hai đường chéo vuông góc. Phải là <b>hình bình hành</b> rồi mới thêm điều kiện đường chéo.</p>
+      <p>“Tứ giác có <b>ba</b> cạnh bằng nhau” cũng chưa phải hình thoi; cần <b>cả bốn</b> cạnh bằng nhau.</p>
+    </div>
+
+    <h4>2. Hình vuông</h4>
+    <div class="box def">
+      <p><span class="kw">Hình vuông</span> là tứ giác có <b>bốn góc vuông</b> và <b>bốn cạnh bằng nhau</b>.</p>
+    </div>
+    <div class="box fact" data-label="🔎 Hình vuông vừa là hình chữ nhật, vừa là hình thoi">
+      <p>Hình vuông có bốn góc vuông nên là <b>hình chữ nhật</b>; có bốn cạnh bằng nhau nên là <b>hình thoi</b>. Vì vậy hình vuông có <b>tất cả</b> tính chất của hình chữ nhật và của hình thoi (và do đó của cả hình bình hành, hình thang cân).</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 320 220" width="320" role="img" aria-label="Hình vuông ABCD có bốn góc vuông, bốn cạnh bằng nhau, hai đường chéo bằng nhau và vuông góc tại tâm O">
+        <rect x="90" y="40" width="140" height="140" class="stroke" fill="none" stroke-width="2"/>
+        <g class="stroke" fill="none" stroke-width="1.5">
+          <path d="M102 40 L102 52 L90 52"/>
+          <path d="M230 52 L218 52 L218 40"/>
+          <path d="M218 180 L218 168 L230 168"/>
+          <path d="M90 168 L102 168 L102 180"/>
+          <path d="M160 46 L160 34"/>
+          <path d="M224 110 L236 110"/>
+          <path d="M160 174 L160 186"/>
+          <path d="M96 110 L84 110"/>
+        </g>
+        <g class="accent" fill="none" stroke-width="1.8">
+          <line x1="90" y1="40" x2="230" y2="180"/>
+          <line x1="230" y1="40" x2="90" y2="180"/>
+          <path d="M167.8 102.2 L175.6 110 L167.8 117.8"/>
+          <path d="M120 40 A30 30 0 0 1 111.2 61.2"/>
+          <path d="M111.2 61.2 A30 30 0 0 1 90 70"/>
+        </g>
+        <circle cx="160" cy="110" r="3.5" class="accent-fill"/>
+        <text x="126" y="56" font-size="11" class="accent-fill">45°</text>
+        <text x="103" y="86" font-size="11" class="accent-fill">45°</text>
+        <text x="74" y="34" font-size="16" font-style="italic">A</text>
+        <text x="236" y="34" font-size="16" font-style="italic">B</text>
+        <text x="236" y="196" font-size="16" font-style="italic">C</text>
+        <text x="74" y="196" font-size="16" font-style="italic">D</text>
+        <text x="154" y="134" font-size="14" font-style="italic" class="accent-fill">O</text>
+      </svg>
+      <figcaption>Theo H.3.52: bốn góc vuông, bốn cạnh bằng nhau. Hai đường chéo bằng nhau, vuông góc tại <i>O</i> và chia mỗi góc vuông thành hai góc \(45^\circ\).</figcaption>
+    </figure>
+    <div class="box law" data-label="⚖️ Định lí 3 (đường chéo hình vuông)">
+      <p>Trong một hình vuông, hai đường chéo <b>bằng nhau</b>, <b>vuông góc với nhau</b>, <b>cắt nhau tại trung điểm mỗi đường</b> và là <b>các đường phân giác của các góc</b> của hình vuông.</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Tính chất đường chéo hình vuông</div>
+      <div class="formula-body">\[ AC = BD, \quad AC \perp BD \] \[ OA = OB = OC = OD \]</div>
+      <ul class="formula-legend">
+        <li>\(ABCD\): hình vuông; \(O\): giao điểm hai đường chéo</li>
+        <li>Mỗi đường chéo chia góc vuông của hình vuông thành hai góc \(45^\circ\)</li>
+        <li>Bốn tam giác \(OAB\), \(OBC\), \(OCD\), \(ODA\) là các tam giác vuông cân bằng nhau</li>
+      </ul>
+    </div>
+    <div class="box law" data-label="⚖️ Định lí 4 (dấu hiệu nhận biết hình vuông)">
+      <ol>
+        <li><b>Hình chữ nhật có hai cạnh kề bằng nhau</b> là hình vuông.</li>
+        <li><b>Hình chữ nhật có hai đường chéo vuông góc</b> là hình vuông.</li>
+        <li><b>Hình chữ nhật có một đường chéo là đường phân giác của một góc</b> là hình vuông.</li>
+      </ol>
+    </div>
+    <div class="box note" data-label="📝 Chú ý (SGK tr. 70)">
+      <ul>
+        <li><b>Hình thoi có một góc vuông</b> là hình vuông.</li>
+        <li><b>Hình thoi có hai đường chéo bằng nhau</b> là hình vuông.</li>
+      </ul>
+    </div>
+    <div class="box fact" data-label="🔎 Sáu dấu hiệu nhận biết hình vuông">
+      <div class="table-wrap"><table>
+        <thead><tr><th>#</th><th>Điều kiện</th><th>Căn cứ</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Tứ giác có bốn góc vuông và bốn cạnh bằng nhau</td><td>Định nghĩa</td></tr>
+          <tr><td>2</td><td>Hình chữ nhật có hai cạnh kề bằng nhau</td><td>Định lí 4a</td></tr>
+          <tr><td>3</td><td>Hình chữ nhật có hai đường chéo vuông góc</td><td>Định lí 4b</td></tr>
+          <tr><td>4</td><td>Hình chữ nhật có một đường chéo là phân giác của một góc</td><td>Định lí 4c</td></tr>
+          <tr><td>5</td><td>Hình thoi có một góc vuông</td><td>Chú ý SGK tr. 70</td></tr>
+          <tr><td>6</td><td>Hình thoi có hai đường chéo bằng nhau</td><td>Chú ý SGK tr. 70</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Chứng minh một tứ giác là hình vuông</p>
+      <ol class="steps">
+        <li>Chọn <b>một con đường</b>: đi qua hình chữ nhật, hoặc đi qua hình thoi.</li>
+        <li><b>Đường 1</b>: chứng minh tứ giác là hình chữ nhật (ba góc vuông, hoặc hình bình hành + một góc vuông), rồi thêm <b>hai cạnh kề bằng nhau</b> / hai đường chéo vuông góc.</li>
+        <li><b>Đường 2</b>: chứng minh tứ giác là hình thoi (bốn cạnh bằng nhau, hoặc hình bình hành + hai cạnh kề bằng nhau), rồi thêm <b>một góc vuông</b> / hai đường chéo bằng nhau.</li>
+        <li>Kết luận, nêu rõ dấu hiệu đã dùng.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 (SGK tr. 70, H.3.53). Tìm hình vuông.</p>
+      <p><b>a)</b> <i>ABCD</i> có ba góc vuông nên là <b>hình chữ nhật</b>; lại có hai cạnh kề \(AD = DC\) ⇒ <i>ABCD</i> là <b>hình vuông</b> (Định lí 4a).</p>
+      <p><b>b)</b> <i>MNPQ</i> có hai đường chéo <i>MP</i>, <i>NQ</i> <b>không</b> bằng nhau nên không phải hình chữ nhật, do đó <b>không</b> phải hình vuông.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập chung tr. 73, H.3.57). Ba điểm <i>A</i>, <i>B</i>, <i>D</i> có \(AB = AD\) và \(AB \perp AD\). Vẽ hai đường tròn cùng đi qua <i>A</i>, tâm lần lượt là <i>B</i> và <i>D</i>; chúng cắt nhau tại <i>C</i>. Chứng minh <i>ABCD</i> là hình vuông.</p>
+      <p><i>C</i> nằm trên đường tròn tâm <i>B</i> đi qua <i>A</i> nên \(BC = BA\).</p>
+      <p><i>C</i> nằm trên đường tròn tâm <i>D</i> đi qua <i>A</i> nên \(DC = DA\).</p>
+      <p>Theo giả thiết \(AB = AD\), vậy \(DC = AD = AB = BC\): tứ giác <i>ABCD</i> có bốn cạnh bằng nhau ⇒ là <b>hình thoi</b>.</p>
+      <p>Hình thoi <i>ABCD</i> có góc <i>A</i> vuông ⇒ <i>ABCD</i> là <b>hình vuông</b> (Chú ý SGK tr. 70).</p>
+    </div>
+    <div class="box warn">
+      <p>Đừng dừng lại ở “hình chữ nhật” hay “hình thoi”: hình vuông cần <b>đồng thời</b> điều kiện về góc và về cạnh.</p>
+      <p>Hình thoi có hai đường chéo <b>vuông góc</b> — điều này luôn đúng, <b>không</b> phải dấu hiệu nhận biết hình vuông. Dấu hiệu đúng là hình thoi có hai đường chéo <b>bằng nhau</b>.</p>
+    </div>
+    <div class="box tip">
+      <p>Gấp tờ giấy làm tư rồi cắt chéo (tình huống mở đầu, H.3.46): mở ra luôn được <b>hình thoi</b> (hai đường chéo vuông góc, cắt nhau tại trung điểm mỗi đường); nếu cắt sao cho \(OA = OB\) thì hai đường chéo bằng nhau, ta được <b>hình vuông</b>.</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li><b>Hình thoi</b> = tứ giác có bốn cạnh bằng nhau; nó là hình bình hành đặc biệt.</li>
+        <li>Đường chéo hình thoi: <b>vuông góc</b> với nhau và là <b>phân giác</b> các góc của hình thoi.</li>
+        <li>Dấu hiệu hình thoi: bốn cạnh bằng nhau · hình bình hành + (hai cạnh kề bằng nhau / hai đường chéo vuông góc / một đường chéo là phân giác một góc).</li>
+        <li><b>Hình vuông</b> = tứ giác có bốn góc vuông và bốn cạnh bằng nhau; vừa là hình chữ nhật vừa là hình thoi.</li>
+        <li>Đường chéo hình vuông: bằng nhau, vuông góc, cắt nhau tại trung điểm mỗi đường, là phân giác các góc.</li>
+        <li>Dấu hiệu hình vuông: hình chữ nhật + (hai cạnh kề bằng nhau / hai đường chéo vuông góc / một đường chéo là phân giác một góc); hình thoi + (một góc vuông / hai đường chéo bằng nhau).</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-on-tap-chuong-3">
+    <h3 class="lesson-title"><span class="lesson-no">Ôn tập</span>Ôn tập chương III</h3>
+    <p class="lesson-goal">Cần nắm: sơ đồ quan hệ giữa các loại tứ giác; bảng tổng hợp tính chất và dấu hiệu nhận biết; các dạng toán thường gặp và cách giải (gộp phần Luyện tập chung tr. 56, 62, 73 và Bài tập cuối chương III tr. 74–75).</p>
+
+    <h4>1. Sơ đồ quan hệ giữa các loại tứ giác</h4>
+    <figure class="diagram">
+      <svg viewBox="0 0 470 340" width="470" role="img" aria-label="Sơ đồ quan hệ: tứ giác chứa hình thang; hình thang chứa hình thang cân và hình bình hành; hình bình hành chứa hình chữ nhật và hình thoi; hình vuông thuộc cả hình chữ nhật và hình thoi">
+        <g class="accent" fill="none" stroke-width="1.6">
+          <path d="M235 42 L235 61"/>
+          <path d="M220 104 L113.6 135.4"/>
+          <path d="M255 104 L312 133.8"/>
+          <path d="M315 172 L269.3 204.8"/>
+          <path d="M350 172 L389.1 204.3"/>
+          <path d="M262 244 L302.9 276.4"/>
+          <path d="M396 244 L352.2 276.6"/>
+        </g>
+        <g class="accent-fill">
+          <polygon points="235,70 230.5,61 239.5,61"/>
+          <polygon points="105,138 112.4,131.1 114.9,139.8"/>
+          <polygon points="320,138 309.9,137.8 314.1,129.8"/>
+          <polygon points="262,210 266.7,201.1 271.9,208.4"/>
+          <polygon points="396,210 386.2,207.7 391.9,200.8"/>
+          <polygon points="310,282 300.2,279.9 305.7,272.9"/>
+          <polygon points="345,282 349.5,273 354.9,280.2"/>
+          <polygon points="108,174 118,174.8 113.4,182.5"/>
+        </g>
+        <path d="M184 220 L115.7 178.7" class="accent" fill="none" stroke-width="1.3" stroke-dasharray="5 4"/>
+        <g class="stroke" fill="none" stroke-width="1.8">
+          <rect x="185" y="10" width="100" height="32" rx="8"/>
+          <rect x="180" y="72" width="110" height="32" rx="8"/>
+          <rect x="15" y="140" width="130" height="32" rx="8"/>
+          <rect x="262" y="140" width="136" height="32" rx="8"/>
+          <rect x="186" y="212" width="128" height="32" rx="8"/>
+          <rect x="355" y="212" width="100" height="32" rx="8"/>
+          <rect x="270" y="284" width="110" height="32" rx="8"/>
+        </g>
+        <g font-size="13.5" text-anchor="middle">
+          <text x="235" y="31">Tứ giác</text>
+          <text x="235" y="93">Hình thang</text>
+          <text x="80" y="161">Hình thang cân</text>
+          <text x="330" y="161">Hình bình hành</text>
+          <text x="250" y="233">Hình chữ nhật</text>
+          <text x="405" y="233">Hình thoi</text>
+          <text x="325" y="305">Hình vuông</text>
+        </g>
+        <text x="16" y="334" font-size="11.5" class="accent-fill">Mũi tên: “là trường hợp đặc biệt của”. Nét đứt: hình chữ nhật cũng là hình thang cân.</text>
+      </svg>
+      <figcaption>Đi xuống theo mũi tên là thêm điều kiện: <b>tứ giác</b> → <b>hình thang</b> (hai cạnh đối song song) → <b>hình bình hành</b> (hai cặp cạnh đối song song) → <b>hình chữ nhật</b> (thêm góc vuông) hoặc <b>hình thoi</b> (thêm hai cạnh kề bằng nhau) → <b>hình vuông</b> (có cả hai).</figcaption>
+    </figure>
+    <div class="flow"><span>Hình bình hành</span><i>+ 1 góc vuông →</i><span>Hình chữ nhật</span><i>+ 2 cạnh kề bằng nhau →</i><span>Hình vuông</span></div>
+    <div class="flow"><span>Hình bình hành</span><i>+ 2 cạnh kề bằng nhau →</i><span>Hình thoi</span><i>+ 1 góc vuông →</i><span>Hình vuông</span></div>
+    <div class="box tip">
+      <p>Nhớ theo hai “nhánh”: thêm <b>góc vuông</b> đi về phía <b>hình chữ nhật</b>; thêm <b>cạnh bằng nhau</b> đi về phía <b>hình thoi</b>. Có <b>cả hai</b> thì được <b>hình vuông</b>.</p>
+    </div>
+
+    <h4>2. Bảng tổng hợp tính chất</h4>
+    <div class="box fact" data-label="🔎 Tính chất các loại tứ giác (✔ = luôn đúng)">
+      <div class="table-wrap"><table>
+        <thead><tr><th>Tính chất</th><th>Hình thang cân</th><th>Hình bình hành</th><th>Hình chữ nhật</th><th>Hình thoi</th><th>Hình vuông</th></tr></thead>
+        <tbody>
+          <tr><td>Các cạnh đối song song</td><td>1 cặp</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr>
+          <tr><td>Các cạnh đối bằng nhau</td><td>2 cạnh bên</td><td>✔</td><td>✔</td><td>✔ (bốn cạnh)</td><td>✔ (bốn cạnh)</td></tr>
+          <tr><td>Các góc đối bằng nhau</td><td>—</td><td>✔</td><td>✔ (đều \(90^\circ\))</td><td>✔</td><td>✔ (đều \(90^\circ\))</td></tr>
+          <tr><td>Hai góc kề một đáy bằng nhau</td><td>✔</td><td>—</td><td>✔</td><td>—</td><td>✔</td></tr>
+          <tr><td>Hai đường chéo bằng nhau</td><td>✔</td><td>—</td><td>✔</td><td>—</td><td>✔</td></tr>
+          <tr><td>Đường chéo cắt nhau tại trung điểm mỗi đường</td><td>—</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr>
+          <tr><td>Hai đường chéo vuông góc</td><td>—</td><td>—</td><td>—</td><td>✔</td><td>✔</td></tr>
+          <tr><td>Đường chéo là phân giác các góc</td><td>—</td><td>—</td><td>—</td><td>✔</td><td>✔</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Các hệ thức cần nhớ của chương III</div>
+      <div class="formula-body">\[ \begin{aligned} \widehat{A} + \widehat{B} + \widehat{C} + \widehat{D} &amp;= 360^\circ \\ \widehat{A} + \widehat{D} &amp;= 180^\circ \\ AD = BC, \quad AC &amp;= BD \\ OA = OC, \quad OB &amp;= OD \\ AM &amp;= \tfrac{1}{2}BC \end{aligned} \]</div>
+      <ul class="formula-legend">
+        <li>Dòng 1: mọi tứ giác \(ABCD\)</li>
+        <li>Dòng 2: hai góc kề một cạnh bên của hình thang (hoặc kề một cạnh của hình bình hành)</li>
+        <li>Dòng 3: hình thang cân — hai cạnh bên và hai đường chéo</li>
+        <li>Dòng 4: hình bình hành — \(O\) là giao điểm hai đường chéo</li>
+        <li>Dòng 5: \(\triangle ABC\) vuông tại \(A\), \(M\) là trung điểm cạnh huyền \(BC\)</li>
+        <li>Hình chữ nhật: \(AC = BD\) và \(OA = OB = OC = OD\); hình thoi: \(AC \perp BD\)</li>
+      </ul>
+    </div>
+
+    <h4>3. Bảng dấu hiệu nhận biết</h4>
+    <div class="box fact" data-label="🔎 Dấu hiệu nhận biết — tra nhanh">
+      <div class="table-wrap"><table>
+        <thead><tr><th>Muốn chứng minh là…</th><th>Chọn một trong các dấu hiệu</th></tr></thead>
+        <tbody>
+          <tr><td><b>Hình thang</b></td><td>Tứ giác có hai cạnh đối song song.</td></tr>
+          <tr><td><b>Hình thang cân</b></td><td>Hình thang có hai góc kề một đáy bằng nhau · hai đường chéo bằng nhau · hai đáy không bằng nhau và hai cạnh bên bằng nhau.</td></tr>
+          <tr><td><b>Hình bình hành</b></td><td>Hai cặp cạnh đối song song · hai cặp cạnh đối bằng nhau · một cặp cạnh đối song song và bằng nhau · hai cặp góc đối bằng nhau · hai đường chéo cắt nhau tại trung điểm mỗi đường.</td></tr>
+          <tr><td><b>Hình chữ nhật</b></td><td>Tứ giác có ba góc vuông · hình bình hành có một góc vuông · hình bình hành có hai đường chéo bằng nhau.</td></tr>
+          <tr><td><b>Hình thoi</b></td><td>Tứ giác có bốn cạnh bằng nhau · hình bình hành có hai cạnh kề bằng nhau · hình bình hành có hai đường chéo vuông góc · hình bình hành có một đường chéo là phân giác của một góc.</td></tr>
+          <tr><td><b>Hình vuông</b></td><td>Hình chữ nhật có hai cạnh kề bằng nhau · hình chữ nhật có hai đường chéo vuông góc · hình chữ nhật có một đường chéo là phân giác của một góc · hình thoi có một góc vuông · hình thoi có hai đường chéo bằng nhau.</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Nhận dạng nhanh một tứ giác từ dữ kiện đề bài</p>
+      <ol class="steps">
+        <li>Đếm xem đề cho gì: <b>cạnh song song</b>, <b>cạnh bằng nhau</b>, <b>góc</b>, hay <b>đường chéo / trung điểm</b>.</li>
+        <li>Có trung điểm của hai đoạn cắt nhau ⇒ nghĩ ngay <b>hình bình hành</b>; thêm hai đoạn đó bằng nhau ⇒ <b>hình chữ nhật</b>; thêm vuông góc ⇒ <b>hình thoi</b>; có cả hai ⇒ <b>hình vuông</b>.</li>
+        <li>Chỉ có <b>một</b> cặp cạnh song song ⇒ hình thang; thêm hai góc kề một đáy bằng nhau (hoặc hai đường chéo bằng nhau) ⇒ <b>hình thang cân</b>.</li>
+        <li>Viết kết luận theo trình tự “tứ giác → hình bình hành → hình đặc biệt”, mỗi bước nêu rõ dấu hiệu.</li>
+      </ol>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Trình bày một bài chứng minh về tứ giác</p>
+      <ol class="steps">
+        <li>Vẽ hình đúng đề, đánh dấu ngay lên hình các yếu tố bằng nhau (gạch, cung, kí hiệu góc vuông).</li>
+        <li>Ghi <b>GT – KL</b> bằng kí hiệu toán học.</li>
+        <li>Chứng minh theo “bậc thang”: hình bình hành trước, rồi mới đến hình chữ nhật / hình thoi / hình vuông.</li>
+        <li>Mỗi khẳng định phải kèm <b>căn cứ</b>: định nghĩa, định lí, dấu hiệu, hoặc hai tam giác bằng nhau.</li>
+        <li>Muốn có hai đoạn (hai góc) bằng nhau: dùng <b>hai tam giác bằng nhau</b> hoặc <b>tính chất của tứ giác đặc biệt</b>.</li>
+      </ol>
+    </div>
+
+    <h4>4. Ví dụ ôn tập</h4>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 (Bài 3.42, H.3.59). Chứng minh: nếu tứ giác có hai đường chéo bằng nhau và một cặp cạnh đối bằng nhau thì tứ giác đó là hình thang cân.</p>
+      <p class="muted">GT: tứ giác \(ABCD\); \(AC = BD\); \(AD = BC\); \(I\) là giao điểm của \(AC\) và \(BD\). &nbsp;·&nbsp; KL: \(ABCD\) là hình thang cân.</p>
+      <p>Hai tam giác <i>ADC</i> và <i>BCD</i> có \(AD = BC\), \(AC = BD\), <i>DC</i> là cạnh chung ⇒ \(\triangle ADC = \triangle BCD\) (c.c.c).</p>
+      <p>Suy ra \(\widehat{ACD} = \widehat{BDC}\), nên \(\triangle ICD\) cân tại <i>I</i>, tức \(IC = ID\).</p>
+      <p>Mà \(AC = BD\) nên \(IA = AC - IC = BD - ID = IB\), do đó \(\triangle IAB\) cân tại <i>I</i>.</p>
+      <p>Hai tam giác cân <i>IAB</i>, <i>ICD</i> có góc ở đỉnh bằng nhau (\(\widehat{AIB} = \widehat{DIC}\), đối đỉnh) nên \(\widehat{IAB} = \widehat{ICD}\). Đây là hai góc so le trong của <i>AB</i>, <i>CD</i> cắt bởi <i>AC</i> ⇒ \(AB \parallel CD\).</p>
+      <p>Vậy <i>ABCD</i> là hình thang có hai đường chéo bằng nhau ⇒ <b>hình thang cân</b> (Định lí 3, Bài 11).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 (Bài 3.44, H.3.60). \(\triangle ABC\) vuông tại <i>A</i>; <i>M</i> là trung điểm <i>BC</i>; <i>P</i>, <i>N</i> lần lượt là chân đường vuông góc hạ từ <i>M</i> xuống <i>CA</i>, <i>AB</i>.</p>
+      <p><b>a)</b> Vì \(MP \perp CA\) và \(AB \perp CA\) nên \(MP \parallel AB\); tương tự \(MN \parallel AC\).</p>
+      <p>Hai tam giác vuông <i>CMP</i> và <i>MBN</i> có \(CM = MB\) (giả thiết) và \(\widehat{PCM} = \widehat{NMB}\) (đồng vị, do \(MN \parallel AC\)) ⇒ \(\triangle CMP = \triangle MBN\) (cạnh huyền – góc nhọn).</p>
+      <p><b>b)</b> Tứ giác <i>APMN</i> có \(\widehat{A} = \widehat{APM} = \widehat{ANM} = 90^\circ\) — ba góc vuông ⇒ <i>APMN</i> là <b>hình chữ nhật</b>.</p>
+      <p>Từ câu a: \(CP = MN = AP\) ⇒ <i>P</i> là trung điểm <i>AC</i>; \(MP = NB = AN\) ⇒ <i>N</i> là trung điểm <i>AB</i>.</p>
+      <p><b>c)</b> Lấy <i>Q</i> sao cho <i>P</i> là trung điểm <i>MQ</i>. Tứ giác <i>AMCQ</i> có hai đường chéo <i>AC</i>, <i>MQ</i> cắt nhau tại trung điểm <i>P</i> của mỗi đường ⇒ là <b>hình bình hành</b>; lại có \(AC \perp MQ\) ⇒ <i>AMCQ</i> là <b>hình thoi</b>.</p>
+      <p><b>d)</b> Nếu \(AB = AC\) thì \(MQ = 2MP = 2AN = AB = AC\): hình thoi <i>AMCQ</i> có hai đường chéo bằng nhau ⇒ là <b>hình vuông</b>.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 (Bài 3.35, H.3.58). Hình bình hành <i>ABCD</i>, các tia phân giác của bốn góc <i>A</i>, <i>B</i>, <i>C</i>, <i>D</i> cắt nhau tạo thành tứ giác <i>EFGH</i>. Chứng minh <i>EFGH</i> là hình chữ nhật.</p>
+      <p>Gọi <i>H</i> là giao điểm của tia phân giác góc <i>A</i> và tia phân giác góc <i>D</i>.</p>
+      <p>Trong hình bình hành, \(\widehat{A} + \widehat{D} = 180^\circ\) nên \(\widehat{HAD} + \widehat{HDA} = \dfrac{\widehat{A}}{2} + \dfrac{\widehat{D}}{2} = 90^\circ\).</p>
+      <p>Trong \(\triangle AHD\): \(\widehat{AHD} = 180^\circ - 90^\circ = 90^\circ\), do đó góc của tứ giác <i>EFGH</i> tại <i>H</i> bằng \(90^\circ\).</p>
+      <p>Lập luận tương tự với các đỉnh <i>E</i>, <i>F</i>, <i>G</i>: tứ giác <i>EFGH</i> có ba góc vuông ⇒ <i>EFGH</i> là <b>hình chữ nhật</b>.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 4 (Bài 3.33, H.3.56). Hình chữ nhật <i>ABCD</i> có chu vi \(36\) cm; <i>M</i> là trung điểm <i>BC</i> và \(MA \perp MD\). Tính độ dài các cạnh.</p>
+      <p>Đặt \(AB = CD = a\) (cm) và \(BC = AD = b\) (cm); \(MB = MC = \dfrac{b}{2}\).</p>
+      <p>Hai tam giác vuông <i>ABM</i> và <i>DCM</i> có \(AB = DC\), \(BM = CM\) ⇒ \(\triangle ABM = \triangle DCM\) (hai cạnh góc vuông) ⇒ \(MA = MD\).</p>
+      <p>Vậy \(\triangle AMD\) vuông tại <i>M</i> (giả thiết \(MA \perp MD\)) và cân tại <i>M</i>, tức <b>vuông cân</b>, suy ra \(\widehat{MAD} = 45^\circ\).</p>
+      <p>Vì \(AD \parallel BC\) nên \(\widehat{AMB} = \widehat{MAD} = 45^\circ\) (so le trong), do đó \(\triangle ABM\) vuông cân tại <i>B</i>: \(AB = BM = \dfrac{b}{2}\), tức \(a = \dfrac{b}{2}\) hay \(b = 2a\).</p>
+      <p>Chu vi: \(2(a + b) = 36 \Rightarrow a + b = 18 \Rightarrow a + 2a = 18 \Rightarrow a = 6\), \(b = 12\).</p>
+      <p><b>Vậy</b> \(AB = CD = 6\) cm và \(BC = AD = 12\) cm.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 5 (Bài 3.39, trắc nghiệm). Khẳng định nào đúng?</p>
+      <ul>
+        <li>A. Không có tứ giác nào mà không có góc tù — <b>sai</b> (hình chữ nhật có bốn góc vuông).</li>
+        <li>B. Nếu tứ giác có ba góc nhọn thì góc còn lại là góc tù — <b>đúng</b> (ba góc nhọn có tổng \(\lt 270^\circ\) nên góc thứ tư \(\gt 90^\circ\)).</li>
+        <li>C. Nếu tứ giác có hai góc tù thì hai góc còn lại phải nhọn — <b>sai</b> (vd. \(100^\circ, 100^\circ, 90^\circ, 70^\circ\)).</li>
+        <li>D. Không có tứ giác nào có ba góc tù — <b>sai</b> (vd. \(100^\circ, 100^\circ, 100^\circ, 60^\circ\)).</li>
+      </ul>
+      <p class="answer">B</p>
+    </div>
+    <div class="box warn">
+      <p>Bốn lỗi hay gặp nhất của chương III:</p>
+      <ul>
+        <li>Dùng “hình thang có hai cạnh bên bằng nhau” để kết luận <b>hình thang cân</b> — thiếu điều kiện hai đáy không bằng nhau.</li>
+        <li>Dùng “tứ giác có hai đường chéo bằng nhau” để kết luận <b>hình chữ nhật</b> — thiếu “cắt nhau tại trung điểm mỗi đường”.</li>
+        <li>Dùng “tứ giác có hai đường chéo vuông góc” để kết luận <b>hình thoi</b> — thiếu “là hình bình hành”.</li>
+        <li>Viết tên tứ giác <b>không theo vòng</b> quanh hình, làm sai cả cặp cạnh đối và cặp góc đối.</li>
+      </ul>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Tổng bốn góc của một tứ giác luôn bằng \(360^\circ\).</li>
+        <li>Chuỗi đặc biệt hoá: tứ giác → hình thang → hình bình hành → hình chữ nhật / hình thoi → hình vuông.</li>
+        <li>Hình thang cân: hai cạnh bên bằng nhau, hai đường chéo bằng nhau.</li>
+        <li>Hình bình hành: cạnh đối bằng nhau, góc đối bằng nhau, đường chéo cắt nhau tại trung điểm mỗi đường.</li>
+        <li>Hình chữ nhật thêm: hai đường chéo bằng nhau. Hình thoi thêm: hai đường chéo vuông góc và là phân giác các góc.</li>
+        <li>Hình vuông = hình chữ nhật + hình thoi; mọi tính chất của hai hình đó đều đúng cho hình vuông.</li>
+      </ul>
+    </div>
+  </article>
+</section>

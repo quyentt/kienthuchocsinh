@@ -1,0 +1,851 @@
+<section class="chapter" id="toan-chuong-2">
+  <h2 class="chapter-title"><span>Chương II · Đại số</span>Hằng đẳng thức đáng nhớ và ứng dụng</h2>
+
+  <article class="lesson" id="toan-bai-6">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 6</span>Hiệu hai bình phương. Bình phương của một tổng hay một hiệu</h3>
+    <p class="lesson-goal">Cần nắm: thế nào là hằng đẳng thức; ba hằng đẳng thức \(A^2 - B^2\), \((A+B)^2\), \((A-B)^2\); dùng chúng theo cả hai chiều để <b>khai triển</b>, <b>thu gọn thành tích</b> và <b>tính nhanh</b>.</p>
+
+    <h4>1. Hằng đẳng thức</h4>
+    <div class="box def">
+      <p>Nếu hai biểu thức (đại số) \(A\) và \(B\) luôn nhận <span class="kw">giá trị bằng nhau</span> với <b>mọi</b> giá trị của biến thì ta nói \(A = B\) là một <b>đồng nhất thức</b> hay là một <b>hằng đẳng thức</b>.</p>
+      <p>Chẳng hạn \((a+1)\cdot b = a\cdot b + b\): thay \(a\), \(b\) bởi bất kì giá trị số nào thì hai vế cũng bằng nhau.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 (SGK tr. 30) — Các hằng đẳng thức thường gặp</p>
+      <p>\[ \begin{aligned} a + b &= b + a; \\ a \cdot b &= b \cdot a; \\ a(b+c) &= ab + ac. \end{aligned} \]</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Kiểm tra một đẳng thức có phải là hằng đẳng thức không</p>
+      <ol class="steps">
+        <li>Biến đổi (khai triển, thu gọn) <b>vế trái</b> xem có ra đúng <b>vế phải</b> không.</li>
+        <li>Nếu hai vế thu gọn bằng nhau \(\Rightarrow\) đó là hằng đẳng thức (đúng với mọi giá trị của biến).</li>
+        <li>Nếu nghi ngờ <b>không</b> phải: chỉ cần tìm <b>một</b> giá trị của biến làm hai vế khác nhau là đủ để kết luận.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 (SGK tr. 30)</p>
+      <p>a) \(a(a-2) = a^2 - 2a\) <b>là</b> hằng đẳng thức (khai triển vế trái ra đúng vế phải).</p>
+      <p>b) \(a^2 - 1 = 3a\) <b>không</b> là hằng đẳng thức: thay \(a = 1\) thì vế trái bằng \(0\), vế phải bằng \(3\), hai vế khác nhau.</p>
+    </div>
+    <div class="box warn">
+      <p>Chỉ cần <b>một</b> giá trị phản ví dụ là đẳng thức không còn là hằng đẳng thức. Ngược lại, thử vài giá trị thấy đúng thì <b>chưa</b> đủ kết luận — phải biến đổi đại số.</p>
+    </div>
+
+    <h4>2. Hiệu hai bình phương</h4>
+    <figure class="diagram">
+      <svg viewBox="0 0 440 210" width="440" role="img" aria-label="Hình vuông cạnh a bỏ đi hình vuông cạnh b, phần còn lại ghép thành hình chữ nhật có kích thước a cộng b nhân a trừ b">
+        <defs>
+          <marker id="t8c2-arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+            <path d="M0 0 L10 5 L0 10 z" class="accent-fill"/>
+          </marker>
+        </defs>
+        <rect x="30" y="45" width="120" height="120" class="accent-fill" opacity="0.2"/>
+        <rect x="30" y="45" width="78" height="78" class="accent-fill" opacity="0.08"/>
+        <rect x="30" y="45" width="120" height="120" class="stroke" fill="none" stroke-width="1.3"/>
+        <rect x="30" y="45" width="78" height="78" class="stroke" fill="none" stroke-width="1.1" stroke-dasharray="4 3"/>
+        <text x="62" y="38" font-size="12">b</text>
+        <text x="115" y="38" font-size="12">a−b</text>
+        <text x="18" y="110" font-size="12">a</text>
+        <text x="84" y="181" font-size="12">a</text>
+        <text x="95" y="88" font-size="12">b</text>
+        <text x="156" y="148" font-size="12">a−b</text>
+        <text x="80" y="200" font-size="11.5" font-style="italic">a)</text>
+        <path d="M170 90 C200 70, 215 78, 232 100" class="stroke" fill="none" stroke-width="1" stroke-dasharray="5 4" marker-end="url(#t8c2-arr)"/>
+        <rect x="222" y="108" width="198" height="42" class="accent-fill" opacity="0.2"/>
+        <rect x="222" y="108" width="198" height="42" class="stroke" fill="none" stroke-width="1.3"/>
+        <line x1="342" y1="108" x2="342" y2="150" class="stroke" stroke-width="1.1" stroke-dasharray="4 3"/>
+        <text x="278" y="168" font-size="12">a</text>
+        <text x="378" y="168" font-size="12">b</text>
+        <text x="428" y="134" font-size="12">a−b</text>
+        <text x="312" y="200" font-size="11.5" font-style="italic">b)</text>
+      </svg>
+      <figcaption>Hình 2.1 (SGK tr. 30). Phần tô đậm ở hình a) có diện tích \(a^2 - b^2\); cắt ghép lại được hình chữ nhật b) có diện tích \((a-b)(a+b)\). Vậy \(a^2 - b^2 = (a-b)(a+b)\).</figcaption>
+    </figure>
+    <div class="formula">
+      <div class="formula-name">Hiệu hai bình phương</div>
+      <div class="formula-body">\[ A^2 - B^2 = (A - B)(A + B) \]</div>
+      <ul class="formula-legend">
+        <li>\(A\), \(B\): hai biểu thức tuỳ ý (số, chữ, hay cả một biểu thức trong ngoặc)</li>
+        <li><b>Cách đọc:</b> hiệu hai bình phương bằng tích của <b>hiệu</b> với <b>tổng</b> hai biểu thức đó</li>
+        <li><b>Chiều \(\to\) (thu gọn thành tích):</b> gặp \(A^2 - B^2\) thì viết ngay thành tích — dùng để <i>phân tích thành nhân tử</i></li>
+        <li><b>Chiều \(\leftarrow\) (khai triển):</b> gặp tích \((A-B)(A+B)\) thì viết ngay thành \(A^2 - B^2\), khỏi nhân từng hạng tử</li>
+      </ul>
+      <div class="formula-note">Ví dụ: \(101^2 - 99^2 = (101-99)(101+99) = 2\cdot 200 = 400\); \(\quad x^2 - 4 = x^2 - 2^2 = (x-2)(x+2)\).</div>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 (SGK tr. 31)</p>
+      <p>a) Tính nhanh \(101^2 - 99^2 = (101-99)(101+99) = 2 \cdot 200 = 400\).</p>
+      <p>b) Viết \(x^2 - 4\) dưới dạng tích: \(x^2 - 4 = x^2 - 2^2 = (x-2)(x+2)\).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Tính nhanh một tích hai số nhờ hiệu hai bình phương</p>
+      <ol class="steps">
+        <li>Nhận ra hai số <b>cách đều</b> một số tròn \(m\) (số trung bình cộng của chúng): viết chúng thành \(m - n\) và \(m + n\).</li>
+        <li>Áp dụng \((m-n)(m+n) = m^2 - n^2\).</li>
+        <li>Tính \(m^2\) và \(n^2\) rồi trừ.</li>
+      </ol>
+      <p>Bài toán mở đầu (SGK tr. 29): \(198 \cdot 202 = (200-2)(200+2) = 200^2 - 2^2 = 40\,000 - 4 = 39\,996\).</p>
+      <p>Tương tự (Bài 2.3a): \(54 \cdot 66 = (60-6)(60+6) = 3\,600 - 36 = 3\,564\).</p>
+    </div>
+
+    <h4>3. Bình phương của một tổng</h4>
+    <div class="formula">
+      <div class="formula-name">Bình phương của một tổng</div>
+      <div class="formula-body">\[ (A + B)^2 = A^2 + 2AB + B^2 \]</div>
+      <ul class="formula-legend">
+        <li>\(A\): biểu thức thứ nhất · \(B\): biểu thức thứ hai</li>
+        <li><b>Cách đọc:</b> bình phương biểu thức thứ nhất, <b>cộng</b> hai lần tích hai biểu thức, cộng bình phương biểu thức thứ hai</li>
+        <li><b>Chiều \(\to\) (khai triển):</b> bỏ dấu bình phương của một tổng</li>
+        <li><b>Chiều \(\leftarrow\) (thu gọn):</b> thấy \(A^2 + 2AB + B^2\) thì viết lại thành \((A+B)^2\)</li>
+      </ul>
+      <div class="formula-note">Ví dụ: \((2x+y)^2 = 4x^2 + 4xy + y^2\); \(\quad x^2 + 4xy + 4y^2 = (x+2y)^2\); \(\quad 101^2 = (100+1)^2 = 10\,201\).</div>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 270 240" width="270" role="img" aria-label="Hình vuông cạnh a cộng b được chia thành bốn phần có diện tích a bình phương, ab, ab và b bình phương">
+        <rect x="40" y="30" width="180" height="180" class="stroke" fill="none" stroke-width="1.3"/>
+        <rect x="150" y="30" width="70" height="110" class="accent-fill" opacity="0.2"/>
+        <rect x="40" y="140" width="110" height="70" class="accent-fill" opacity="0.2"/>
+        <line x1="150" y1="30" x2="150" y2="210" class="stroke" stroke-width="1"/>
+        <line x1="40" y1="140" x2="220" y2="140" class="stroke" stroke-width="1"/>
+        <text x="90" y="92" font-size="13" font-style="italic">P</text>
+        <text x="182" y="92" font-size="13" font-style="italic">Q</text>
+        <text x="90" y="182" font-size="13" font-style="italic">R</text>
+        <text x="182" y="182" font-size="13" font-style="italic">S</text>
+        <text x="30" y="26" font-size="12" font-style="italic">A</text>
+        <text x="224" y="26" font-size="12" font-style="italic">B</text>
+        <text x="30" y="224" font-size="12" font-style="italic">D</text>
+        <text x="224" y="224" font-size="12" font-style="italic">C</text>
+        <text x="92" y="22" font-size="12">a</text>
+        <text x="182" y="22" font-size="12">b</text>
+        <text x="26" y="90" font-size="12">a</text>
+        <text x="26" y="180" font-size="12">b</text>
+      </svg>
+      <figcaption>Hình 2.3 (SGK tr. 47). Diện tích hình vuông \(ABCD\) tính theo hai cách: \((a+b)^2\) và \(P + Q + R + S = a^2 + ab + ab + b^2\). Suy ra \((a+b)^2 = a^2 + 2ab + b^2\).</figcaption>
+    </figure>
+    <div class="box example">
+      <p class="box-title">Ví dụ 4 (SGK tr. 31)</p>
+      <p>a) \(101^2 = (100+1)^2 = 100^2 + 2\cdot 100 + 1^2 = 10\,000 + 200 + 1 = 10\,201\).</p>
+      <p>b) \((2x+y)^2 = (2x)^2 + 2\cdot 2x \cdot y + y^2 = 4x^2 + 4xy + y^2\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 5 (SGK tr. 32) — Viết \(x^2 + 4xy + 4y^2\) thành bình phương của một tổng</p>
+      <p>\[ \begin{aligned} x^2 + 4xy + 4y^2 &= x^2 + 2\cdot x\cdot 2y + (2y)^2 \\ &= (x+2y)^2. \end{aligned} \]</p>
+      <p>Tương tự (Luyện tập 3): \(9y^2 + 6yx + x^2 = (3y)^2 + 2\cdot 3y\cdot x + x^2 = (3y + x)^2\).</p>
+    </div>
+
+    <h4>4. Bình phương của một hiệu</h4>
+    <div class="formula">
+      <div class="formula-name">Bình phương của một hiệu</div>
+      <div class="formula-body">\[ (A - B)^2 = A^2 - 2AB + B^2 \]</div>
+      <ul class="formula-legend">
+        <li><b>Cách đọc:</b> bình phương biểu thức thứ nhất, <b>trừ</b> hai lần tích hai biểu thức, <b>cộng</b> bình phương biểu thức thứ hai</li>
+        <li>Suy ra từ hằng đẳng thức trên bằng cách viết \(A - B = A + (-B)\)</li>
+        <li><b>Chiều \(\leftarrow\):</b> thấy \(A^2 - 2AB + B^2\) thì viết thành \((A-B)^2\)</li>
+        <li>Hạng tử cuối \(B^2\) luôn mang dấu <b>cộng</b> (vì bình phương)</li>
+      </ul>
+      <div class="formula-note">\((A-B)^2 = (B-A)^2\) vì \(B^2 - 2AB + A^2\) cũng là biểu thức đó. Ví dụ: \(99^2 = (100-1)^2 = 10\,000 - 200 + 1 = 9\,801\).</div>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 6 (SGK tr. 32)</p>
+      <p>a) \(99^2 = (100-1)^2 = 100^2 - 2\cdot 100 + 1 = 10\,000 - 200 + 1 = 9\,801\).</p>
+      <p>b) \(\left(x - \dfrac{3}{2}\right)^2 = x^2 - 2\cdot x\cdot \dfrac{3}{2} + \left(\dfrac{3}{2}\right)^2 = x^2 - 3x + \dfrac{9}{4}\).</p>
+      <p>Luyện tập 4: \((3x - 2y)^2 = 9x^2 - 12xy + 4y^2\).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Tính nhanh bình phương của một số</p>
+      <ol class="steps">
+        <li>Tách số đã cho thành <b>số tròn cộng (hoặc trừ)</b> một số nhỏ: \(1\,002 = 1\,000 + 2\); \(\;99 = 100 - 1\).</li>
+        <li>Áp dụng \((A+B)^2\) hoặc \((A-B)^2\).</li>
+        <li>Tính ba hạng tử rồi cộng, trừ. Số tròn bình phương rất dễ tính nhẩm.</li>
+      </ol>
+      <p><b>Vận dụng 2 (SGK tr. 32).</b> \(1\,002^2 = (1\,000+2)^2 = 1\,000^2 + 2\cdot 1\,000\cdot 2 + 2^2 = 1\,000\,000 + 4\,000 + 4 = 1\,004\,004\).</p>
+      <p>Bài 2.3b: \(203^2 = (200+3)^2 = 40\,000 + 1\,200 + 9 = 41\,209\).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Mẹo nhẩm bình phương số có tận cùng là 5</div>
+      <div class="formula-body">\[ (10a + 5)^2 = 100a(a+1) + 25 \]</div>
+      <ul class="formula-legend">
+        <li>\(a\): phần đứng trước chữ số 5 (vd. với \(35\) thì \(a = 3\))</li>
+        <li>Chứng minh: \((10a+5)^2 = 100a^2 + 100a + 25 = 100a(a+1) + 25\)</li>
+        <li><b>Quy tắc nhẩm:</b> lấy \(a\) nhân với \(a+1\), rồi viết thêm <b>25</b> vào sau</li>
+      </ul>
+      <div class="formula-note">\(25^2\): \(2\cdot 3 = 6 \Rightarrow 625\). \(\;35^2\): \(3\cdot 4 = 12 \Rightarrow 1\,225\). \(\;85^2\): \(8\cdot 9 = 72 \Rightarrow 7\,225\). (Bài 2.17, SGK tr. 41)</div>
+    </div>
+
+    <h4>5. Rút gọn biểu thức và chứng minh chia hết</h4>
+    <div class="box method">
+      <p class="box-title">Dạng: Rút gọn biểu thức có \((A\pm B)^2\) và \(A^2 - B^2\)</p>
+      <ol class="steps">
+        <li>Khai triển từng ngoặc bằng đúng hằng đẳng thức (chú ý dấu của hạng tử giữa).</li>
+        <li>Bỏ ngoặc — nếu trước ngoặc có dấu “−” thì <b>đổi dấu</b> mọi hạng tử bên trong.</li>
+        <li>Nhóm các hạng tử <b>đồng dạng</b> rồi cộng, trừ hệ số.</li>
+        <li>Nếu hiệu hai bình phương của hai ngoặc phức tạp: dùng luôn \(X^2 - Y^2 = (X-Y)(X+Y)\) với \(X\), \(Y\) là cả ngoặc — nhanh hơn khai triển.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Bài 2.5, SGK tr. 33)</p>
+      <p>a) \((x-3y)^2 - (x+3y)^2 = \big[(x-3y)-(x+3y)\big]\big[(x-3y)+(x+3y)\big] = (-6y)(2x) = -12xy\).</p>
+      <p>b) \((3x+4y)^2 + (4x-3y)^2 = (9x^2 + 24xy + 16y^2) + (16x^2 - 24xy + 9y^2) = 25x^2 + 25y^2\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Bài 2.6, SGK tr. 33) — Chứng minh \((n+2)^2 - n^2\) chia hết cho 4</p>
+      <p>\[ \begin{aligned} (n+2)^2 - n^2 &= \big[(n+2) - n\big]\big[(n+2) + n\big] \\ &= 2(2n+2) = 4(n+1). \end{aligned} \]</p>
+      <p>Vì \(4(n+1)\) là tích của \(4\) với số tự nhiên \(n+1\) nên \((n+2)^2 - n^2\) luôn chia hết cho \(4\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập chung, SGK tr. 40) — Rút gọn</p>
+      <p>a) \((2x+y)^2 + (x-2y)^2 = (4x^2 + 4xy + y^2) + (x^2 - 4xy + 4y^2) = 5x^2 + 5y^2\).</p>
+      <p>b) Xem hai ngoặc là \(X = x+y+z\) và \(Y = x+y-z\):</p>
+      <p>\[ \begin{aligned} &(x+y+z)^2 - (x+y-z)^2 \\ &= (X-Y)(X+Y) \\ &= (2z)(2x+2y) = 4z(x+y). \end{aligned} \]</p>
+    </div>
+    <div class="box tip">
+      <p><b>Tam giác Pascal</b> cho hệ số khi khai triển: dòng của số mũ 2 là <span class="hl">1 &nbsp; 2 &nbsp; 1</span>, nên \((A+B)^2 = 1\cdot A^2 + 2AB + 1\cdot B^2\). Hệ số giữa là <b>2</b>, đừng bỏ quên.</p>
+      <p>Với <b>hiệu</b>, các dấu xen kẽ bắt đầu từ dấu “+”: \(+\,-\,+\) \(\Rightarrow (A-B)^2 = A^2 - 2AB + B^2\).</p>
+    </div>
+    <div class="box warn">
+      <p><b>Lỗi kinh điển:</b> \((A+B)^2 \ne A^2 + B^2\) và \((A-B)^2 \ne A^2 - B^2\) — luôn còn hạng tử giữa \(\pm 2AB\).</p>
+      <p>Khi \(A\) hoặc \(B\) có hệ số, phải bình phương <b>cả</b> hệ số: \((2x+y)^2 = 4x^2 + 4xy + y^2\), không phải \(2x^2 + \dots\).</p>
+      <p>Đừng lẫn \(A^2 - B^2 = (A-B)(A+B)\) với \((A-B)^2\): một cái là <b>hiệu hai bình phương</b>, một cái là <b>bình phương của một hiệu</b>.</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Hằng đẳng thức: đẳng thức đúng với <b>mọi</b> giá trị của biến; phủ định chỉ cần một phản ví dụ.</li>
+        <li>\(A^2 - B^2 = (A-B)(A+B)\) — hiệu hai bình phương thành tích hiệu nhân tổng.</li>
+        <li>\((A+B)^2 = A^2 + 2AB + B^2\) và \((A-B)^2 = A^2 - 2AB + B^2\) — luôn có hạng tử giữa \(\pm 2AB\).</li>
+        <li>Dùng theo <b>hai chiều</b>: khai triển để rút gọn, thu gọn để phân tích thành nhân tử.</li>
+        <li>Tính nhanh: tách về số tròn \((100 \pm n)\), hoặc nhận ra hai thừa số cách đều một số tròn.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-7">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 7</span>Lập phương của một tổng. Lập phương của một hiệu</h3>
+    <p class="lesson-goal">Cần nắm: hai hằng đẳng thức \((A+B)^3\) và \((A-B)^3\); cách khai triển, cách viết một đa thức về dạng lập phương, cách rút gọn và tính nhanh giá trị biểu thức.</p>
+
+    <h4>1. Lập phương của một tổng</h4>
+    <div class="formula">
+      <div class="formula-name">Lập phương của một tổng</div>
+      <div class="formula-body">\[ (A + B)^3 = A^3 + 3A^2B + 3AB^2 + B^3 \]</div>
+      <ul class="formula-legend">
+        <li>\(A\), \(B\): hai biểu thức tuỳ ý</li>
+        <li><b>Cách đọc:</b> lập phương số thứ nhất, cộng <b>ba lần</b> bình phương số thứ nhất nhân số thứ hai, cộng <b>ba lần</b> số thứ nhất nhân bình phương số thứ hai, cộng lập phương số thứ hai</li>
+        <li>Số mũ của \(A\) giảm dần \(3, 2, 1, 0\); số mũ của \(B\) tăng dần \(0, 1, 2, 3\); hệ số \(1,\,3,\,3,\,1\); tất cả dấu <b>cộng</b></li>
+        <li><b>Chiều \(\leftarrow\) (thu gọn):</b> thấy đủ bốn hạng tử \(A^3 + 3A^2B + 3AB^2 + B^3\) thì viết thành \((A+B)^3\)</li>
+      </ul>
+      <div class="formula-note">Suy ra từ \((A+B)^3 = (A+B)(A+B)^2\). Ví dụ: \((x+2)^3 = x^3 + 6x^2 + 12x + 8\).</div>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 (SGK tr. 34) — Khai triển</p>
+      <p>a) \((x+2)^3 = x^3 + 3\cdot x^2 \cdot 2 + 3\cdot x\cdot 2^2 + 2^3 = x^3 + 6x^2 + 12x + 8\).</p>
+      <p>b) \[ \begin{aligned} (2x+y)^3 &= (2x)^3 + 3(2x)^2 y + 3\cdot 2x\cdot y^2 + y^3 \\ &= 8x^3 + 12x^2 y + 6xy^2 + y^3. \end{aligned} \]</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 (SGK tr. 35) — Viết \(1 + 6x + 12x^2 + 8x^3\) thành lập phương của một tổng</p>
+      <p>\[ \begin{aligned} &1 + 6x + 12x^2 + 8x^3 \\ &= 1^3 + 3\cdot 1^2 \cdot 2x + 3\cdot 1\cdot (2x)^2 + (2x)^3 \\ &= (1 + 2x)^3. \end{aligned} \]</p>
+      <p>Tương tự (Luyện tập 2): \(x^3 + 9x^2 y + 27xy^2 + 27y^3 = (x + 3y)^3\).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Viết một đa thức bốn hạng tử về dạng \((A \pm B)^3\)</p>
+      <ol class="steps">
+        <li>Nhìn hạng tử <b>đầu</b> và hạng tử <b>cuối</b>: đưa chúng về dạng \(A^3\) và \(B^3\) để đoán ra \(A\) và \(B\).</li>
+        <li>Kiểm tra hạng tử thứ hai có đúng bằng \(3A^2B\) và hạng tử thứ ba có đúng bằng \(3AB^2\) không.</li>
+        <li>Xét <b>dấu</b>: bốn dấu cùng “+” \(\Rightarrow (A+B)^3\); dấu xen kẽ \(+\,-\,+\,-\) \(\Rightarrow (A-B)^3\).</li>
+        <li>Viết kết quả và (nếu cần) khai triển ngược lại để kiểm tra.</li>
+      </ol>
+    </div>
+
+    <h4>2. Lập phương của một hiệu</h4>
+    <div class="formula">
+      <div class="formula-name">Lập phương của một hiệu</div>
+      <div class="formula-body">\[ (A - B)^3 = A^3 - 3A^2B + 3AB^2 - B^3 \]</div>
+      <ul class="formula-legend">
+        <li>Suy ra từ hằng đẳng thức trên bằng cách viết \(A - B = A + (-B)\)</li>
+        <li>Hệ số vẫn là \(1,\,3,\,3,\,1\), chỉ khác ở <b>dấu xen kẽ</b>: \(+\;-\;+\;-\)</li>
+        <li>Hai hạng tử chứa \(B\) với số mũ <b>lẻ</b> mang dấu “−”; hạng tử chứa \(B^2\) mang dấu “+”</li>
+        <li><b>Chiều \(\leftarrow\):</b> thấy \(A^3 - 3A^2B + 3AB^2 - B^3\) thì viết thành \((A-B)^3\)</li>
+      </ul>
+      <div class="formula-note">\((A-B)^3 = -(B-A)^3\) (đổi chỗ hai biểu thức thì đổi dấu — Bài 2.11, SGK tr. 36). Ví dụ: \((x-1)^3 = x^3 - 3x^2 + 3x - 1\).</div>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 (SGK tr. 35) — Khai triển</p>
+      <p>a) \((x-1)^3 = x^3 - 3x^2\cdot 1 + 3x\cdot 1^2 - 1^3 = x^3 - 3x^2 + 3x - 1\).</p>
+      <p>b) \[ \begin{aligned} (x-2y)^3 &= x^3 - 3x^2(2y) + 3x(2y)^2 - (2y)^3 \\ &= x^3 - 6x^2 y + 12xy^2 - 8y^3. \end{aligned} \]</p>
+      <p>Luyện tập 3: \((2x - y)^3 = 8x^3 - 12x^2 y + 6xy^2 - y^3\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 4 (SGK tr. 36) — Viết \(27 - 27x + 9x^2 - x^3\) thành lập phương của một hiệu</p>
+      <p>\[ \begin{aligned} &27 - 27x + 9x^2 - x^3 \\ &= 3^3 - 3\cdot 3^2 \cdot x + 3\cdot 3\cdot x^2 - x^3 \\ &= (3 - x)^3. \end{aligned} \]</p>
+      <p>Luyện tập 4: \(8x^3 - 36x^2 y + 54xy^2 - 27y^3 = (2x - 3y)^3\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Bài 2.11, SGK tr. 36) — Chứng minh \((a-b)^3 = -(b-a)^3\)</p>
+      <p>\((a-b)^3 = a^3 - 3a^2 b + 3ab^2 - b^3\) và \((b-a)^3 = b^3 - 3b^2 a + 3ba^2 - a^3\).</p>
+      <p>Cộng hai kết quả được \(0\), nên \((a-b)^3 = -(b-a)^3\).</p>
+    </div>
+
+    <h4>3. Rút gọn và tính nhanh giá trị biểu thức</h4>
+    <div class="box method">
+      <p class="box-title">Dạng: Tính nhanh giá trị của một biểu thức</p>
+      <ol class="steps">
+        <li>Quan sát biểu thức, <b>thu gọn</b> nó về dạng một hằng đẳng thức (thường là \((A \pm B)^2\) hay \((A \pm B)^3\)).</li>
+        <li>Thay giá trị của biến vào <b>dạng đã thu gọn</b> — thường ra một <b>số tròn</b>.</li>
+        <li>Tính luỹ thừa của số tròn đó và kết luận.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Bài 2.9, SGK tr. 36)</p>
+      <p>a) \(x^3 + 9x^2 + 27x + 27 = (x+3)^3\). Tại \(x = 7\): \((7+3)^3 = 10^3 = 1\,000\).</p>
+      <p>b) \(27 - 54x + 36x^2 - 8x^3 = (3 - 2x)^3\). Tại \(x = 6{,}5\): \((3 - 13)^3 = (-10)^3 = -1\,000\).</p>
+      <p>Tương tự (Bài 2.18): \(x^3 + 3x^2 + 3x + 1 = (x+1)^3\), tại \(x = 99\) được \(100^3 = 1\,000\,000\);</p>
+      <p>\(x^3 - 3x^2 y + 3xy^2 - y^3 = (x-y)^3\), tại \(x = 88,\ y = -12\) được \(100^3 = 1\,000\,000\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Vận dụng SGK tr. 36 và Bài 2.10) — Rút gọn tổng hai lập phương đối xứng</p>
+      <p>\[ \begin{aligned} (x-y)^3 + (x+y)^3 &= (x^3 - 3x^2y + 3xy^2 - y^3) \\ &\quad + (x^3 + 3x^2y + 3xy^2 + y^3) \\ &= 2x^3 + 6xy^2. \end{aligned} \]</p>
+      <p>Các hạng tử chứa số mũ <b>lẻ</b> của \(y\) triệt tiêu. Tương tự:</p>
+      <p>\((x-2y)^3 + (x+2y)^3 = 2x^3 + 24xy^2\); &nbsp; \((3x+2y)^3 + (3x-2y)^3 = 54x^3 + 72xy^2\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Bài 2.19, SGK tr. 41) — Rút gọn</p>
+      <p>a) \[ \begin{aligned} &(x-2)^3 + (x+2)^3 - 6x(x+2)(x-2) \\ &= (2x^3 + 24x) - 6x(x^2 - 4) \\ &= 2x^3 + 24x - 6x^3 + 24x = -4x^3 + 48x. \end{aligned} \]</p>
+      <p>b) \((2x-y)^3 + (2x+y)^3 = 16x^3 + 12xy^2\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 (Luyện tập chung, SGK tr. 40) — Bài toán lãi kép</p>
+      <p>Gửi \(150\) triệu đồng theo lãi kép, lãi suất \(x\) mỗi năm thì sau 3 năm nhận được \(S = 150(1+x)^3\) (triệu đồng).</p>
+      <p>a) Với \(x = 5\% = 0{,}05\): \(S = 150 \cdot 1{,}05^3 = 173{,}64375\) (triệu đồng).</p>
+      <p>b) Khai triển: \[ \begin{aligned} S &= 150\big(1 + 3x + 3x^2 + x^3\big) \\ &= 150 + 450x + 450x^2 + 150x^3. \end{aligned} \] \(S\) là đa thức <b>bậc 3</b> theo biến \(x\).</p>
+      <p>Tương tự (Bài 2.21) với \(200\) triệu đồng, \(x = 5{,}5\%\): \(S = 200\cdot 1{,}055^3 = 234{,}848275\) (triệu đồng); khai triển \(S = 200 + 600x + 600x^2 + 200x^3\).</p>
+    </div>
+    <div class="box tip">
+      <p>Hệ số lấy từ <b>tam giác Pascal</b> — dòng của số mũ 3 là <span class="hl">1 &nbsp; 3 &nbsp; 3 &nbsp; 1</span>:</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Số mũ</th><th>Hệ số khai triển</th><th>Hằng đẳng thức</th></tr></thead>
+        <tbody>
+          <tr><td>\(2\)</td><td>1 &nbsp; 2 &nbsp; 1</td><td>\((A+B)^2 = A^2 + 2AB + B^2\)</td></tr>
+          <tr><td>\(3\)</td><td>1 &nbsp; 3 &nbsp; 3 &nbsp; 1</td><td>\((A+B)^3 = A^3 + 3A^2B + 3AB^2 + B^3\)</td></tr>
+        </tbody>
+      </table></div>
+      <p>Với <b>hiệu</b>: giữ nguyên hệ số, đặt dấu <b>xen kẽ</b> bắt đầu bằng “+”.</p>
+    </div>
+    <div class="box warn">
+      <p>Quên hệ số <b>3</b>: \((A+B)^3 \ne A^3 + B^3\). Bốn hạng tử, không phải hai.</p>
+      <p>Sai dấu ở \((A-B)^3\): dấu là \(+\,-\,+\,-\), <b>không</b> phải \(+\,-\,-\,-\). Hạng tử \(3AB^2\) mang dấu <b>cộng</b>.</p>
+      <p>Khi \(A\), \(B\) có hệ số, phải luỹ thừa cả hệ số: \((2x)^3 = 8x^3\), \(3(2x)^2 y = 12x^2 y\).</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>\((A+B)^3 = A^3 + 3A^2B + 3AB^2 + B^3\) — bốn hạng tử, hệ số \(1,3,3,1\), tất cả dấu “+”.</li>
+        <li>\((A-B)^3 = A^3 - 3A^2B + 3AB^2 - B^3\) — cùng hệ số, dấu xen kẽ \(+\,-\,+\,-\).</li>
+        <li>\((A-B)^3 = -(B-A)^3\); nhưng \((A-B)^2 = (B-A)^2\).</li>
+        <li>Thu gọn về dạng lập phương rồi mới thay số \(\Rightarrow\) tính nhanh giá trị biểu thức.</li>
+        <li>\((x-y)^3 + (x+y)^3 = 2x^3 + 6xy^2\): các hạng tử có số mũ lẻ của \(y\) triệt tiêu.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-8">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 8</span>Tổng và hiệu hai lập phương</h3>
+    <p class="lesson-goal">Cần nắm: hai hằng đẳng thức \(A^3 + B^3\) và \(A^3 - B^3\); dùng chúng để viết đa thức dưới dạng <b>tích</b> và để <b>rút gọn</b> biểu thức; thuộc lòng bảng <b>bảy hằng đẳng thức đáng nhớ</b>.</p>
+
+    <h4>1. Tổng hai lập phương</h4>
+    <div class="formula">
+      <div class="formula-name">Tổng hai lập phương</div>
+      <div class="formula-body">\[ A^3 + B^3 = (A + B)\left(A^2 - AB + B^2\right) \]</div>
+      <ul class="formula-legend">
+        <li>\(A\), \(B\): hai biểu thức tuỳ ý</li>
+        <li><b>Cách đọc:</b> tổng hai lập phương bằng tích của <b>tổng</b> hai biểu thức với <b>bình phương thiếu của hiệu</b> \(\left(A^2 - AB + B^2\right)\)</li>
+        <li>Gọi là “bình phương <b>thiếu</b>” vì hạng tử giữa là \(-AB\) chứ không phải \(-2AB\)</li>
+        <li><b>Chiều \(\to\):</b> viết đa thức dưới dạng <b>tích</b> (phân tích thành nhân tử)</li>
+        <li><b>Chiều \(\leftarrow\):</b> nhân nhanh \((A+B)\left(A^2 - AB + B^2\right)\) ra ngay \(A^3 + B^3\)</li>
+      </ul>
+      <div class="formula-note">Ví dụ: \(x^3 + 8 = x^3 + 2^3 = (x+2)\left(x^2 - 2x + 4\right)\); \(\;8x^3 + y^3 = (2x+y)\left(4x^2 - 2xy + y^2\right)\).</div>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 (SGK tr. 37) — Viết dưới dạng tích</p>
+      <p>a) \(x^3 + 8 = x^3 + 2^3 = (x+2)\left(x^2 - 2x + 4\right)\).</p>
+      <p>b) \(8x^3 + y^3 = (2x)^3 + y^3 = (2x+y)\left(4x^2 - 2xy + y^2\right)\).</p>
+      <p>Luyện tập 1: \(x^3 + 27 = x^3 + 3^3 = (x+3)\left(x^2 - 3x + 9\right)\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 (SGK tr. 37) — Rút gọn</p>
+      <p>a) \((x+3)\left(x^2 - 3x + 9\right) - x^3 = \left(x^3 + 3^3\right) - x^3 = 27\).</p>
+      <p>b) \[ \begin{aligned} &(3x+y)\left(9x^2 - 3xy + y^2\right) - y^3 - 26x^3 \\ &= \big(27x^3 + y^3\big) - y^3 - 26x^3 = x^3. \end{aligned} \]</p>
+    </div>
+
+    <h4>2. Hiệu hai lập phương</h4>
+    <div class="formula">
+      <div class="formula-name">Hiệu hai lập phương</div>
+      <div class="formula-body">\[ A^3 - B^3 = (A - B)\left(A^2 + AB + B^2\right) \]</div>
+      <ul class="formula-legend">
+        <li><b>Cách đọc:</b> hiệu hai lập phương bằng tích của <b>hiệu</b> hai biểu thức với <b>bình phương thiếu của tổng</b> \(\left(A^2 + AB + B^2\right)\)</li>
+        <li>Suy ra từ hằng đẳng thức trên bằng cách viết \(A^3 - B^3 = A^3 + (-B)^3\)</li>
+        <li>Dấu trong ngoặc thứ hai <b>ngược</b> với dấu ở ngoặc thứ nhất: hiệu \(\to\) hạng tử giữa mang dấu “+”</li>
+        <li><b>Chiều \(\to\):</b> phân tích thành nhân tử · <b>Chiều \(\leftarrow\):</b> nhân nhanh</li>
+      </ul>
+      <div class="formula-note">Ví dụ: \(x^3 - 1 = (x-1)\left(x^2 + x + 1\right)\); \(\;8x^3 - y^3 = (2x-y)\left(4x^2 + 2xy + y^2\right)\).</div>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 (SGK tr. 38) — Viết dưới dạng tích</p>
+      <p>a) \(x^3 - 1 = x^3 - 1^3 = (x-1)\left(x^2 + x + 1\right)\).</p>
+      <p>b) \(8x^3 - y^3 = (2x)^3 - y^3 = (2x-y)\left(4x^2 + 2xy + y^2\right)\).</p>
+      <p>Luyện tập 2: \(x^3 - 8 = x^3 - 2^3 = (x-2)\left(x^2 + 2x + 4\right)\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 4 (SGK tr. 38) — Rút gọn</p>
+      <p>a) \((x-3)\left(x^2 + 3x + 9\right) - x^3 = \left(x^3 - 3^3\right) - x^3 = -27\).</p>
+      <p>b) \[ \begin{aligned} &(2x-y)\left(4x^2 + 2xy + y^2\right) + y^3 - 7x^3 \\ &= \big(8x^3 - y^3\big) + y^3 - 7x^3 = x^3. \end{aligned} \]</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Rút gọn biểu thức chứa tích \((A \pm B)\left(A^2 \mp AB + B^2\right)\)</p>
+      <ol class="steps">
+        <li><b>Không</b> nhân bung từng hạng tử. Nhận ra ngay tích đó bằng \(A^3 + B^3\) hoặc \(A^3 - B^3\).</li>
+        <li>Xác định \(A\), \(B\) từ ngoặc thứ nhất; kiểm tra ngoặc thứ hai có đúng dạng bình phương thiếu không.</li>
+        <li>Thay bằng \(A^3 \pm B^3\), rồi cộng, trừ các hạng tử còn lại.</li>
+        <li>Thu gọn các hạng tử đồng dạng và kết luận.</li>
+      </ol>
+      <p><b>Ví dụ (Bài 2.15, SGK tr. 39):</b></p>
+      <p>\[ \begin{aligned} &(x-2y)\left(x^2 + 2xy + 4y^2\right) \\ &\quad + (x+2y)\left(x^2 - 2xy + 4y^2\right) \\ &= \big(x^3 - 8y^3\big) + \big(x^3 + 8y^3\big) = 2x^3. \end{aligned} \]</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Bài 2.12 – 2.14, SGK tr. 39)</p>
+      <p>2.12: \((x+4)\left(x^2 - 4x + 16\right) = x^3 + 64\); &nbsp; \(\left(4x^2 + 2xy + y^2\right)(2x - y) = 8x^3 - y^3\).</p>
+      <p>2.13: \(x^3 + 512 = (x+8)\left(x^2 - \boxed{8x} + 64\right)\); &nbsp; \(27x^3 - 8y^3 = \left(\boxed{3x} - 2y\right)\left(\boxed{9x^2} + 6xy + 4y^2\right)\).</p>
+      <p>2.14: \(27x^3 + y^3 = (3x+y)\left(9x^2 - 3xy + y^2\right)\); &nbsp; \(x^3 - 8y^3 = (x-2y)\left(x^2 + 2xy + 4y^2\right)\).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Tổng hai lập phương tính theo tổng và tích</div>
+      <div class="formula-body">\[ a^3 + b^3 = (a+b)^3 - 3ab(a+b) \]</div>
+      <ul class="formula-legend">
+        <li>\(a + b\): tổng hai số · \(ab\): tích hai số</li>
+        <li>Chứng minh: \((a+b)^3 = a^3 + b^3 + 3ab(a+b)\), chuyển vế được công thức trên</li>
+        <li>Dùng khi đề <b>chỉ cho</b> tổng và tích, không cho riêng từng số</li>
+      </ul>
+      <div class="formula-note">Bài 2.20 (SGK tr. 41): với \(a+b = 4\), \(ab = 3\) thì \(a^3 + b^3 = 4^3 - 3\cdot 3\cdot 4 = 64 - 36 = 28\).</div>
+    </div>
+
+    <h4>3. Bảy hằng đẳng thức đáng nhớ</h4>
+    <div class="box note">
+      <p><b>Chú ý (SGK tr. 39).</b> Các hằng đẳng thức vừa học được sử dụng <b>thường xuyên</b> trong các biến đổi đại số nên ta gọi chúng là <span class="kw">các hằng đẳng thức đáng nhớ</span>. Có tất cả <b>bảy</b> hằng đẳng thức:</p>
+      <p>\(A^2 - B^2\); &nbsp; \((A+B)^2\); &nbsp; \((A-B)^2\); &nbsp; \((A+B)^3\); &nbsp; \((A-B)^3\); &nbsp; \(A^3 + B^3\); &nbsp; \(A^3 - B^3\).</p>
+      <p>Bảng tổng hợp đầy đủ cả hai chiều xem ở bài <a href="#toan-on-tap-chuong-2">Ôn tập chương II</a>.</p>
+    </div>
+    <div class="box warn">
+      <p><b>Đừng lẫn</b> \(A^3 + B^3\) với \((A+B)^3\): \(A^3 + B^3 = (A+B)\left(A^2 - AB + B^2\right)\), còn \((A+B)^3\) có <b>bốn</b> hạng tử.</p>
+      <p><b>Bình phương thiếu</b> \(A^2 - AB + B^2\) <b>không</b> phải \((A-B)^2 = A^2 - 2AB + B^2\) — hạng tử giữa chỉ là \(AB\), không nhân 2.</p>
+      <p>Nhớ đúng dấu: <b>tổng</b> lập phương \(\Rightarrow\) ngoặc thứ hai có dấu “−” ở giữa; <b>hiệu</b> lập phương \(\Rightarrow\) dấu “+”. Dấu luôn <b>ngược</b> nhau.</p>
+    </div>
+    <div class="box tip">
+      <p>Nhớ theo câu: <i>“Tổng nhân bình phương thiếu của <b>hiệu</b>, hiệu nhân bình phương thiếu của <b>tổng</b>”</i> — dấu ở hai ngoặc luôn trái nhau.</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>\(A^3 + B^3 = (A+B)\left(A^2 - AB + B^2\right)\) — tổng nhân bình phương thiếu của hiệu.</li>
+        <li>\(A^3 - B^3 = (A-B)\left(A^2 + AB + B^2\right)\) — hiệu nhân bình phương thiếu của tổng.</li>
+        <li>Bình phương <b>thiếu</b>: hạng tử giữa là \(AB\), không phải \(2AB\).</li>
+        <li>Dùng chiều \(\to\) để viết đa thức thành <b>tích</b>, chiều \(\leftarrow\) để <b>rút gọn</b> rất nhanh.</li>
+        <li>\(a^3 + b^3 = (a+b)^3 - 3ab(a+b)\) khi chỉ biết tổng và tích.</li>
+        <li>Bảy hằng đẳng thức đáng nhớ phải thuộc lòng, dùng được theo cả hai chiều.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-bai-9">
+    <h3 class="lesson-title"><span class="lesson-no">Bài 9</span>Phân tích đa thức thành nhân tử</h3>
+    <p class="lesson-goal">Cần nắm: thế nào là phân tích đa thức thành nhân tử; ba phương pháp — <b>đặt nhân tử chung</b>, <b>dùng hằng đẳng thức</b>, <b>nhóm các hạng tử</b> — và cách phối hợp chúng; ứng dụng để tính nhanh giá trị biểu thức và tìm \(x\).</p>
+
+    <h4>1. Phân tích đa thức thành nhân tử bằng cách đặt nhân tử chung</h4>
+    <div class="box def">
+      <p><b>Phân tích đa thức thành nhân tử</b> (hay <b>thừa số</b>) là biến đổi đa thức đó thành một <span class="kw">tích của những đa thức</span>.</p>
+      <p>Chẳng hạn \(x^3 + x = x\left(x^2 + 1\right)\): đa thức \(x^3 + x\) đã được viết thành tích của hai nhân tử là \(x\) và \(x^2+1\).</p>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Đặt nhân tử chung</div>
+      <div class="formula-body">\[ A\cdot B + A\cdot C - A\cdot D = A\,(B + C - D) \]</div>
+      <ul class="formula-legend">
+        <li>\(A\): <b>nhân tử chung</b> — phần có mặt trong <b>mọi</b> hạng tử</li>
+        <li>\(B\), \(C\), \(D\): phần còn lại của từng hạng tử sau khi bỏ \(A\)</li>
+        <li>Nhân tử chung gồm: <b>ƯCLN</b> của các hệ số, nhân với mỗi biến chung lấy <b>số mũ nhỏ nhất</b></li>
+        <li>Nhân tử chung có thể là cả một <b>ngoặc</b>: \(2(x+y) - 2y(x+y) = (x+y)(2 - 2y)\)</li>
+      </ul>
+      <div class="formula-note">Ví dụ: \(6a^2 b - 18ab = 6ab(a - 3)\); \(\;x^3 + x = x\left(x^2+1\right)\).</div>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 (SGK tr. 42)</p>
+      <p>a) \(x^3 + x = x\cdot x^2 + x = x\left(x^2 + 1\right)\).</p>
+      <p>b) \(2(x+y) - 2y(x+y) = (2 - 2y)(x+y) = 2(1-y)(x+y)\).</p>
+      <p>Luyện tập 1: \(6y^3 + 2y = 2y\left(3y^2 + 1\right)\); &nbsp; \(4(x-y) - 3x(x-y) = (x-y)(4 - 3x)\).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Đặt nhân tử chung</p>
+      <ol class="steps">
+        <li>Tìm <b>ƯCLN</b> của các hệ số.</li>
+        <li>Với mỗi biến (hoặc mỗi ngoặc) có mặt ở <b>tất cả</b> các hạng tử, lấy số mũ <b>nhỏ nhất</b>.</li>
+        <li>Nhân hai phần trên lại được nhân tử chung \(A\); chia từng hạng tử cho \(A\) để tìm phần còn lại.</li>
+        <li>Viết \(A\,(\dots)\) và <b>kiểm tra lại</b> bằng cách nhân phân phối.</li>
+        <li>Xét tiếp ngoặc vừa thu được: nếu còn phân tích được thì làm tiếp (đến khi <b>triệt để</b>).</li>
+      </ol>
+    </div>
+    <div class="box warn">
+      <p>Phân tích <b>chưa triệt để</b>: \(x^3 - x = x\left(x^2 - 1\right)\) mới là bước 1; phải viết tiếp \(= x(x-1)(x+1)\) (phần “Tranh luận”, SGK tr. 44 — Vuông làm đúng, Tròn chưa xong).</p>
+      <p>Khi <b>cả</b> hạng tử bị lấy ra làm nhân tử chung, đừng quên để lại số \(1\): \(5x^2 + 5x = 5x(x + 1)\), không phải \(5x(x)\).</p>
+      <p>Hai ngoặc <b>đối nhau</b> thì đổi dấu để thành chung: \(2 - x = -(x-2)\), nhờ đó \(3y(x-2) + z^2(2-x) = (x-2)\left(3y - z^2\right)\).</p>
+    </div>
+
+    <h4>2. Phân tích đa thức thành nhân tử bằng cách sử dụng hằng đẳng thức</h4>
+    <div class="box method">
+      <p class="box-title">Dạng: Dùng hằng đẳng thức để phân tích</p>
+      <ol class="steps">
+        <li>Đếm <b>số hạng tử</b>: 2 hạng tử \(\Rightarrow\) nghĩ tới \(A^2 - B^2\), \(A^3 \pm B^3\); 3 hạng tử \(\Rightarrow\) \((A \pm B)^2\); 4 hạng tử \(\Rightarrow\) \((A \pm B)^3\) hoặc nhóm hạng tử.</li>
+        <li>Viết các hạng tử đầu và cuối về dạng \(A^2\) (hoặc \(A^3\)) và \(B^2\) (hoặc \(B^3\)) để tìm \(A\), \(B\).</li>
+        <li>Kiểm tra hạng tử giữa có đúng \(2AB\) (hay \(3A^2B\), \(3AB^2\)) không.</li>
+        <li>Áp dụng hằng đẳng thức tương ứng, chú ý <b>dấu</b>.</li>
+      </ol>
+      <p>Số không chính phương vẫn dùng được nhờ căn bậc hai: \(x^2 - 3 = x^2 - \left(\sqrt{3}\right)^2 = \left(x - \sqrt{3}\right)\left(x + \sqrt{3}\right)\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 (SGK tr. 43)</p>
+      <p>a) \(x^2 - 8x + 16 = x^2 - 2\cdot x\cdot 4 + 4^2 = (x-4)^2\).</p>
+      <p>b) \(x^2 - 3 = x^2 - \left(\sqrt{3}\right)^2 = \left(x-\sqrt{3}\right)\left(x+\sqrt{3}\right)\).</p>
+      <p>c) \(9x^2 + 12x + 4 = (3x)^2 + 2\cdot 3x\cdot 2 + 2^2 = (3x+2)^2\).</p>
+      <p>d) \(8x^3 - 27 = (2x)^3 - 3^3 = (2x-3)\left(4x^2 + 6x + 9\right)\).</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Luyện tập 2, SGK tr. 43)</p>
+      <p>a) \((x+1)^2 - y^2 = (x+1-y)(x+1+y)\).</p>
+      <p>b) \(x^3 + 3x^2 + 3x + 1 = (x+1)^3\).</p>
+      <p>c) \(8x^3 - 12x^2 + 6x - 1 = (2x)^3 - 3(2x)^2 + 3(2x) - 1 = (2x-1)^3\).</p>
+    </div>
+
+    <h4>3. Phân tích đa thức thành nhân tử bằng cách nhóm các hạng tử</h4>
+    <div class="box method">
+      <p class="box-title">Dạng: Nhóm các hạng tử</p>
+      <ol class="steps">
+        <li>Nhóm các hạng tử thành từng cụm sao cho <b>mỗi cụm</b> phân tích được (đặt nhân tử chung hoặc dùng hằng đẳng thức).</li>
+        <li>Phân tích từng cụm.</li>
+        <li>Các cụm phải xuất hiện <b>cùng một nhân tử chung</b> — đặt nhân tử chung đó ra ngoài.</li>
+        <li>Nếu cách nhóm không ra nhân tử chung, hãy <b>đổi cách nhóm</b> (một đa thức thường có nhiều cách nhóm).</li>
+      </ol>
+      <p>Bốn hạng tử thường nhóm <b>2 – 2</b>; đôi khi nhóm <b>3 – 1</b> để tạo ra một bình phương rồi dùng hiệu hai bình phương.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (SGK tr. 43) — Hai cách nhóm của Nam và Hà cho \(x^2 - xy - 2y + 2x\)</p>
+      <p><b>Nam:</b> \[ \begin{aligned} &x^2 - xy - 2y + 2x \\ &= \left(x^2 - xy\right) + (2x - 2y) \\ &= x(x-y) + 2(x-y) \\ &= (x+2)(x-y). \end{aligned} \]</p>
+      <p><b>Hà:</b> \[ \begin{aligned} &x^2 - xy - 2y + 2x \\ &= \left(x^2 + 2x\right) - (xy + 2y) \\ &= x(x+2) - y(x+2) \\ &= (x-y)(x+2). \end{aligned} \]</p>
+      <p>Hai cách nhóm khác nhau nhưng cho <b>cùng</b> kết quả.</p>
+    </div>
+    <div class="box note">
+      <p><b>Chú ý (SGK tr. 43).</b> Đối với một đa thức, có thể có <b>nhiều cách nhóm</b> những hạng tử thích hợp.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 (SGK tr. 44) — Phân tích \(xy + 3z + xz + 3y\)</p>
+      <p><b>Cách 1:</b> \(\left(xy + xz\right) + \left(3z + 3y\right) = x(y+z) + 3(z+y) = (x+3)(y+z)\).</p>
+      <p><b>Cách 2:</b> \(\left(xy + 3y\right) + \left(3z + xz\right) = (x+3)y + (3+x)z = (x+3)(y+z)\).</p>
+      <p>Luyện tập 3: \(2x^2 - 4xy + 2y - x = 2x(x-2y) - (x - 2y) = (x-2y)(2x-1)\).</p>
+    </div>
+    <div class="box warn">
+      <p>Nhóm với dấu “−” đứng trước ngoặc phải <b>đổi dấu</b> mọi hạng tử đưa vào ngoặc: \(-xy - 2y = -(xy + 2y)\).</p>
+      <p>Nhóm xong mà hai cụm <b>không</b> có nhân tử chung thì cách nhóm đó sai — hãy thử cách nhóm khác, đừng cố nhân bung ra.</p>
+    </div>
+
+    <h4>4. Phối hợp nhiều phương pháp</h4>
+    <div class="box method">
+      <p class="box-title">Dạng: Phối hợp nhiều phương pháp để phân tích</p>
+      <ol class="steps">
+        <li><b>Luôn thử trước:</b> đặt nhân tử chung cho cả đa thức (kể cả một hệ số chung như \(2\), \(3\)).</li>
+        <li>Xem đa thức (hoặc từng cụm) có rơi vào một trong <b>bảy hằng đẳng thức</b> không.</li>
+        <li>Nếu chưa được: <b>nhóm hạng tử</b> để tạo ra nhân tử chung hoặc tạo ra hằng đẳng thức.</li>
+        <li>Lặp lại các bước trên với <b>từng nhân tử</b> vừa thu được, cho đến khi không phân tích được nữa.</li>
+      </ol>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 1 (Luyện tập chung, SGK tr. 45)</p>
+      <p>a) Nhóm 2 – 2, cụm đầu là hiệu hai bình phương:</p>
+      <p>\[ \begin{aligned} &x^2 - x + 2y - 4y^2 \\ &= \left[x^2 - (2y)^2\right] - (x - 2y) \\ &= (x-2y)(x+2y) - (x-2y) \\ &= (x-2y)(x + 2y - 1). \end{aligned} \]</p>
+      <p>b) Đổi dấu để hai cụm có chung ngoặc \((x-2)\):</p>
+      <p>\[ \begin{aligned} &3xy + 2z^2 - 6y - xz^2 \\ &= (3xy - 6y) + \left(2z^2 - xz^2\right) \\ &= 3y(x-2) + z^2(2-x) \\ &= 3y(x-2) - z^2(x-2) \\ &= \left(3y - z^2\right)(x-2). \end{aligned} \]</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 2 (Luyện tập chung, SGK tr. 45) — Nhóm 3 – 1</p>
+      <p>a) \[ \begin{aligned} &4x^2 - 4x + 1 - 4y^2 \\ &= \left(4x^2 - 4x + 1\right) - (2y)^2 \\ &= (2x-1)^2 - (2y)^2 \\ &= (2x - 1 - 2y)(2x - 1 + 2y). \end{aligned} \]</p>
+      <p>b) \[ \begin{aligned} &8x^3 - 27y^3 - 27y^2 - 9y - 1 \\ &= (2x)^3 - \left(27y^3 + 27y^2 + 9y + 1\right) \\ &= (2x)^3 - (3y+1)^3 \\ &= (2x - 3y - 1) \\ &\quad \times \left[4x^2 + 2x(3y+1) + (3y+1)^2\right]. \end{aligned} \]</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ 3 (Luyện tập chung, SGK tr. 45)</p>
+      <p>a) \[ \begin{aligned} &x^3 - x + 2y - 8y^3 \\ &= \left(x^3 - 8y^3\right) - (x - 2y) \\ &= (x-2y)\left(x^2 + 2xy + 4y^2\right) - (x - 2y) \\ &= (x-2y)\left(x^2 + 2xy + 4y^2 - 1\right). \end{aligned} \]</p>
+      <p>b) Đặt nhân tử chung \(2\) trước, rồi nhóm:</p>
+      <p>\[ \begin{aligned} &2x^3 - 8x^2 - 24x + 54 \\ &= 2\left(x^3 - 4x^2 - 12x + 27\right) \\ &= 2\left[\left(x^3 + 27\right) - \left(4x^2 + 12x\right)\right] \\ &= 2\big[(x+3)\left(x^2 - 3x + 9\right) \\ &\qquad - 4x(x+3)\big] \\ &= 2(x+3)\left(x^2 - 3x + 9 - 4x\right) \\ &= 2(x+3)\left(x^2 - 7x + 9\right). \end{aligned} \]</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Bài 2.26 – 2.27, SGK tr. 46)</p>
+      <p>a) \(x^2 - 6x + 9 - y^2 = (x-3)^2 - y^2 = (x - 3 - y)(x - 3 + y)\).</p>
+      <p>b) \(4x^2 - y^2 + 4y - 4 = (2x)^2 - \left(y^2 - 4y + 4\right) = (2x - y + 2)(2x + y - 2)\).</p>
+      <p>c) \(xy + z^2 + xz + yz = x(y+z) + z(z+y) = (y+z)(x+z)\).</p>
+      <p>d) \(x^2 - 4xy + 4y^2 + xz - 2yz = (x-2y)^2 + z(x-2y) = (x-2y)(x - 2y + z)\).</p>
+      <p>2.27a) \(x^3 + y^3 + x + y = (x+y)\left(x^2 - xy + y^2\right) + (x+y) = (x+y)\left(x^2 - xy + y^2 + 1\right)\).</p>
+      <p>2.27c) \((x-y)^3 + (x+y)^3 = 2x^3 + 6xy^2 = 2x\left(x^2 + 3y^2\right)\).</p>
+    </div>
+
+    <h4>5. Ứng dụng: tính nhanh giá trị biểu thức và tìm \(x\)</h4>
+    <div class="box method">
+      <p class="box-title">Dạng: Tính nhanh giá trị của biểu thức nhờ phân tích thành nhân tử</p>
+      <ol class="steps">
+        <li>Phân tích biểu thức thành <b>tích</b> (đặt nhân tử chung, nhóm, hằng đẳng thức).</li>
+        <li>Thay giá trị của biến vào <b>dạng tích</b> — các thừa số thường ra số rất gọn.</li>
+        <li>Nhân các thừa số lại và kết luận.</li>
+      </ol>
+      <p><b>Vận dụng 2 (SGK tr. 44).</b> \(A = x^2 + 2y - 2x - xy\) tại \(x = 2\,022\), \(y = 2\,020\):</p>
+      <p>\[ \begin{aligned} A &= \left(x^2 - 2x\right) - (xy - 2y) \\ &= x(x-2) - y(x-2) \\ &= (x-2)(x-y) = 2\,020 \cdot 2 = 4\,040. \end{aligned} \]</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Tìm \(x\) bằng cách phân tích thành nhân tử</p>
+      <ol class="steps">
+        <li>Chuyển hết các hạng tử về <b>một vế</b>, vế kia bằng \(0\).</li>
+        <li>Phân tích vế trái thành <b>tích</b> các nhân tử.</li>
+        <li>Dùng tính chất: tích bằng \(0\) khi và chỉ khi <b>có ít nhất một thừa số bằng 0</b>.</li>
+        <li>Giải từng trường hợp rồi kết luận đủ các giá trị của \(x\).</li>
+      </ol>
+      <p><b>Ví dụ (Bài 2.24, SGK tr. 44).</b></p>
+      <p>a) \(x^2 - 4x = 0 \Leftrightarrow x(x-4) = 0 \Leftrightarrow x = 0\) hoặc \(x = 4\).</p>
+      <p>b) \(2x^3 - 2x = 0 \Leftrightarrow 2x(x-1)(x+1) = 0 \Leftrightarrow x = 0\); \(x = 1\); \(x = -1\).</p>
+      <p>Bài toán mở đầu (SGK tr. 42): \(2x^2 + x = 0 \Leftrightarrow x(2x+1) = 0 \Leftrightarrow x = 0\) hoặc \(x = -\dfrac{1}{2}\).</p>
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 240 220" width="240" role="img" aria-label="Mảnh vườn hình vuông cạnh x với đường đi rộng y chạy xung quanh">
+        <rect x="30" y="30" width="180" height="180" class="accent-fill" opacity="0.22"/>
+        <rect x="66" y="66" width="108" height="108" class="stroke" fill="var(--surface-2)" stroke-width="1.1"/>
+        <rect x="30" y="30" width="180" height="180" class="stroke" fill="none" stroke-width="1.3"/>
+        <text x="115" y="22" font-size="12" font-style="italic">x</text>
+        <line x1="120" y1="32" x2="120" y2="64" class="accent" stroke-width="1"/>
+        <text x="126" y="54" font-size="12" font-style="italic">y</text>
+        <line x1="32" y1="120" x2="64" y2="120" class="accent" stroke-width="1"/>
+        <text x="40" y="112" font-size="12" font-style="italic">y</text>
+      </svg>
+      <figcaption>Hình 2.2 (SGK tr. 44). Mảnh vườn hình vuông cạnh \(x\) (mét), đường đi bao quanh rộng \(y\) (mét) nằm ở phần tô màu.</figcaption>
+    </figure>
+    <div class="box example">
+      <p class="box-title">Ví dụ (Bài 2.25, SGK tr. 44) — Diện tích đường đi quanh mảnh vườn</p>
+      <p>Mảnh vườn (phần trắng) là hình vuông cạnh \(x\); cả mảnh vườn <b>và</b> đường đi là hình vuông cạnh \(x + 2y\). Vậy diện tích đường đi:</p>
+      <p>\[ \begin{aligned} S &= (x+2y)^2 - x^2 = (x + 2y - x)(x + 2y + x) \\ &= 2y(2x + 2y) = 4y(x+y). \end{aligned} \]</p>
+      <p>Với \(x = 102\) m, \(y = 2\) m: \(S = 4\cdot 2\cdot(102 + 2) = 8 \cdot 104 = 832\ \text{m}^2\).</p>
+    </div>
+    <div class="box note">
+      <p><b>Em có biết (SGK tr. 46) — Định lí Bézout và ứng dụng.</b> Nếu đa thức \(f(x)\) có <b>nghiệm</b> \(x = a\) thì \(f(x)\) phân tích được thành tích \(f(x) = (x-a)\,g(x)\), trong đó \(g(x)\) là thương của phép chia \(f(x)\) cho \(x - a\).</p>
+      <p>Chẳng hạn \(2x^3 + x^2 - 3x - 14\) nhận \(x = 2\) làm nghiệm, thương của phép chia cho \(x-2\) là \(2x^2 + 5x + 7\), nên</p>
+      <p>\[ 2x^3 + x^2 - 3x - 14 = (x-2)\left(2x^2 + 5x + 7\right). \]</p>
+      <p><span class="muted">Étienne Bézout (1730 – 1783) là nhà toán học người Pháp, nổi tiếng với các công trình nghiên cứu về nghiệm của đa thức.</span></p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Phân tích đa thức thành nhân tử = viết đa thức thành <b>tích</b> của những đa thức.</li>
+        <li>Ba phương pháp: <b>đặt nhân tử chung</b> — <b>dùng hằng đẳng thức</b> — <b>nhóm các hạng tử</b>.</li>
+        <li>Thứ tự ưu tiên: nhân tử chung \(\to\) hằng đẳng thức \(\to\) nhóm hạng tử \(\to\) lặp lại đến khi triệt để.</li>
+        <li>Một đa thức có thể có <b>nhiều cách nhóm</b>, nhưng kết quả cuối cùng như nhau.</li>
+        <li>Ứng dụng: tính nhanh giá trị biểu thức và giải bài toán tìm \(x\) (đưa về tích bằng \(0\)).</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="lesson" id="toan-on-tap-chuong-2">
+    <h3 class="lesson-title"><span class="lesson-no">Ôn tập</span>Ôn tập chương II</h3>
+    <p class="lesson-goal">Tóm tắt: bảng đầy đủ <b>bảy hằng đẳng thức đáng nhớ</b> (cả hai chiều); sơ đồ chọn phương pháp phân tích đa thức thành nhân tử; các dạng toán trong Luyện tập chung và Bài tập cuối chương II.</p>
+
+    <h4>1. Bảy hằng đẳng thức đáng nhớ</h4>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Tên gọi</th><th>Hằng đẳng thức</th><th>Dùng để</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Hiệu hai bình phương</td>
+          <td>\(A^2 - B^2 = (A-B)(A+B)\)</td>
+          <td>Tính nhanh \(101^2 - 99^2\); phân tích \(x^2 - 4 = (x-2)(x+2)\)</td>
+        </tr>
+        <tr>
+          <td>Bình phương của một tổng</td>
+          <td>\((A+B)^2 = A^2 + 2AB + B^2\)</td>
+          <td>Khai triển \((2x+y)^2\); thu gọn \(x^2 + 4xy + 4y^2 = (x+2y)^2\)</td>
+        </tr>
+        <tr>
+          <td>Bình phương của một hiệu</td>
+          <td>\((A-B)^2 = A^2 - 2AB + B^2\)</td>
+          <td>Tính nhanh \(99^2\); phân tích \(x^2 - 8x + 16 = (x-4)^2\)</td>
+        </tr>
+        <tr>
+          <td>Lập phương của một tổng</td>
+          <td>\((A+B)^3 = A^3 + 3A^2B + 3AB^2 + B^3\)</td>
+          <td>Khai triển \((x+2)^3\); thu gọn \(1 + 6x + 12x^2 + 8x^3 = (1+2x)^3\)</td>
+        </tr>
+        <tr>
+          <td>Lập phương của một hiệu</td>
+          <td>\((A-B)^3 = A^3 - 3A^2B + 3AB^2 - B^3\)</td>
+          <td>Khai triển \((x-1)^3\); thu gọn \(27 - 27x + 9x^2 - x^3 = (3-x)^3\)</td>
+        </tr>
+        <tr>
+          <td>Tổng hai lập phương</td>
+          <td>\(A^3 + B^3 = (A+B)\left(A^2 - AB + B^2\right)\)</td>
+          <td>Viết \(x^3 + 8 = (x+2)\left(x^2 - 2x + 4\right)\); rút gọn tích cho sẵn</td>
+        </tr>
+        <tr>
+          <td>Hiệu hai lập phương</td>
+          <td>\(A^3 - B^3 = (A-B)\left(A^2 + AB + B^2\right)\)</td>
+          <td>Viết \(8x^3 - 27 = (2x-3)\left(4x^2 + 6x + 9\right)\)</td>
+        </tr>
+      </tbody>
+    </table></div>
+    <div class="box tip">
+      <p><b>Cách nhớ nhanh.</b> Hệ số lấy từ tam giác Pascal: mũ 2 là <span class="hl">1 2 1</span>, mũ 3 là <span class="hl">1 3 3 1</span>.</p>
+      <p>Với <b>hiệu</b>, giữ nguyên hệ số và đặt dấu <b>xen kẽ</b> bắt đầu bằng “+”.</p>
+      <p>Hai hằng đẳng thức lập phương ở dạng tích: <i>tổng</i> đi với bình phương thiếu của <i>hiệu</i>, và ngược lại — dấu ở hai ngoặc luôn trái nhau.</p>
+    </div>
+    <div class="box note">
+      <p><b>Hằng đẳng thức phụ hay dùng</b> (suy ra từ bảng trên):</p>
+      <p>\((A-B)^2 = (B-A)^2\) &nbsp;·&nbsp; \((A-B)^3 = -(B-A)^3\) &nbsp;·&nbsp; \(a^3 + b^3 = (a+b)^3 - 3ab(a+b)\)</p>
+      <p>\((10a+5)^2 = 100a(a+1) + 25\) (nhẩm bình phương số tận cùng là 5).</p>
+    </div>
+
+    <h4>2. Sơ đồ chọn phương pháp phân tích đa thức thành nhân tử</h4>
+    <figure class="diagram">
+      <svg viewBox="0 0 420 266" width="420" role="img" aria-label="Sơ đồ bốn bước chọn phương pháp phân tích đa thức thành nhân tử">
+        <defs>
+          <marker id="t8c2-arr2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+            <path d="M0 0 L10 5 L0 10 z" class="accent-fill"/>
+          </marker>
+        </defs>
+        <rect x="30" y="8" width="360" height="50" rx="8" class="accent-fill" opacity="0.16"/>
+        <rect x="30" y="8" width="360" height="50" rx="8" class="stroke" fill="none" stroke-width="1.1"/>
+        <text x="46" y="30" font-size="13">1. Đặt nhân tử chung</text>
+        <text x="46" y="48" font-size="11">khi mọi hạng tử đều chứa một nhân tử giống nhau</text>
+        <line x1="210" y1="58" x2="210" y2="70" class="stroke" stroke-width="1.1" marker-end="url(#t8c2-arr2)"/>
+        <rect x="30" y="70" width="360" height="50" rx="8" class="accent-fill" opacity="0.16"/>
+        <rect x="30" y="70" width="360" height="50" rx="8" class="stroke" fill="none" stroke-width="1.1"/>
+        <text x="46" y="92" font-size="13">2. Dùng hằng đẳng thức</text>
+        <text x="46" y="110" font-size="11">khi đa thức có dạng một trong bảy hằng đẳng thức</text>
+        <line x1="210" y1="120" x2="210" y2="132" class="stroke" stroke-width="1.1" marker-end="url(#t8c2-arr2)"/>
+        <rect x="30" y="132" width="360" height="50" rx="8" class="accent-fill" opacity="0.16"/>
+        <rect x="30" y="132" width="360" height="50" rx="8" class="stroke" fill="none" stroke-width="1.1"/>
+        <text x="46" y="154" font-size="13">3. Nhóm các hạng tử</text>
+        <text x="46" y="172" font-size="11">nhóm 2–2 hoặc 3–1 để tạo nhân tử chung / hằng đẳng thức</text>
+        <line x1="210" y1="182" x2="210" y2="194" class="stroke" stroke-width="1.1" marker-end="url(#t8c2-arr2)"/>
+        <rect x="30" y="194" width="360" height="50" rx="8" class="accent-fill" opacity="0.16"/>
+        <rect x="30" y="194" width="360" height="50" rx="8" class="stroke" fill="none" stroke-width="1.1"/>
+        <text x="46" y="216" font-size="13">4. Lặp lại với từng nhân tử</text>
+        <text x="46" y="234" font-size="11">đến khi không phân tích được nữa (phân tích triệt để)</text>
+      </svg>
+      <figcaption>Thứ tự nên thử khi phân tích một đa thức thành nhân tử. Bước nào dùng được thì dùng, chưa được thì chuyển sang bước sau.</figcaption>
+    </figure>
+    <div class="flow"><span>Đếm số hạng tử</span><i>→</i><span>Đặt nhân tử chung</span><i>→</i><span>Hằng đẳng thức</span><i>→</i><span>Nhóm hạng tử</span><i>→</i><span>Phân tích triệt để</span></div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Số hạng tử</th><th>Nghĩ ngay tới</th><th>Ví dụ</th></tr></thead>
+      <tbody>
+        <tr><td>2</td><td>\(A^2 - B^2\); \(A^3 + B^3\); \(A^3 - B^3\); hoặc nhân tử chung</td><td>\(x^3 - 4x = x(x-2)(x+2)\)</td></tr>
+        <tr><td>3</td><td>\((A \pm B)^2\); hoặc nhân tử chung rồi hằng đẳng thức</td><td>\(x^4 - 2x^3 + x^2 = x^2(x-1)^2\)</td></tr>
+        <tr><td>4</td><td>\((A \pm B)^3\); nhóm <b>2 – 2</b>; hoặc nhóm <b>3 – 1</b></td><td>\(x^2 - xy - 2y + 2x = (x+2)(x-y)\)</td></tr>
+        <tr><td>5 trở lên</td><td>Nhóm để tạo hằng đẳng thức, thường là \(3 - 2\) hoặc \(1 - 4\)</td><td>\(4x^2 - 4x + 1 - 4y^2 = (2x-1-2y)(2x-1+2y)\)</td></tr>
+      </tbody>
+    </table></div>
+
+    <h4>3. Các dạng toán thường gặp</h4>
+    <div class="box method">
+      <p class="box-title">Dạng: Khai triển và rút gọn biểu thức</p>
+      <ol class="steps">
+        <li>Nhận diện từng ngoặc thuộc hằng đẳng thức nào, khai triển đúng <b>dấu</b> và đúng <b>hệ số</b>.</li>
+        <li>Nếu gặp \(X^2 - Y^2\) với \(X\), \(Y\) là hai ngoặc: dùng ngay \((X-Y)(X+Y)\), đừng khai triển.</li>
+        <li>Nếu gặp tích \((A \pm B)\left(A^2 \mp AB + B^2\right)\): thay ngay bằng \(A^3 \pm B^3\).</li>
+        <li>Bỏ ngoặc (đổi dấu sau dấu “−”), gộp các hạng tử đồng dạng, sắp xếp theo luỹ thừa giảm dần.</li>
+      </ol>
+      <p><b>Ví dụ (Bài 2.33, SGK tr. 47).</b></p>
+      <p>a) \((2x-5y)(2x+5y) + (2x+5y)^2 = \left(4x^2 - 25y^2\right) + \left(4x^2 + 20xy + 25y^2\right) = 8x^2 + 20xy\).</p>
+      <p>b) \((x+2y)\left(x^2 - 2xy + 4y^2\right) + (2x-y)\left(4x^2 + 2xy + y^2\right) = \left(x^3 + 8y^3\right) + \left(8x^3 - y^3\right) = 9x^3 + 7y^3\).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Tính nhanh giá trị của biểu thức</p>
+      <ol class="steps">
+        <li>Thu gọn biểu thức về một <b>hằng đẳng thức</b> hoặc một <b>tích</b> — đừng vội thay số.</li>
+        <li>Thay giá trị của biến vào dạng gọn; thường ra số tròn (\(100\), \(1\,000\)…).</li>
+        <li>Tính luỹ thừa / tích rồi kết luận.</li>
+      </ol>
+      <p><b>Ví dụ (Bài 2.16, 2.32).</b></p>
+      <p>\(x^2 + \dfrac{1}{2}x + \dfrac{1}{16} = \left(x + \dfrac{1}{4}\right)^2\); tại \(x = 99{,}75\) được \(100^2 = 10\,000\).</p>
+      <p>\(x^2 - 4x + 4 = (x-2)^2\); tại \(x = 102\) được \(100^2 = 10\,000\).</p>
+      <p>\(x^3 + 3x^2 + 3x + 1 = (x+1)^3\); tại \(x = 999\) được \(1\,000^3 = 10^9\).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Thay dấu “?” bằng biểu thức thích hợp</p>
+      <ol class="steps">
+        <li>Xác định đẳng thức đang dùng <b>hằng đẳng thức nào</b> (nhìn vế đã đầy đủ hơn).</li>
+        <li>Tìm \(A\) và \(B\) từ các hạng tử đã biết (thường là hạng tử đầu và hạng tử cuối).</li>
+        <li>Tính hạng tử còn thiếu theo công thức rồi điền vào.</li>
+        <li>Kiểm tra lại bằng cách khai triển hoàn chỉnh cả hai vế.</li>
+      </ol>
+      <p><b>Ví dụ (Bài 2.2, 2.13).</b> \((x-3y)(x+3y) = x^2 - 9y^2\); &nbsp; \(x^2 + 8xy + 16y^2 = (x+4y)^2\);</p>
+      <p>\(x^3 + 512 = (x+8)\left(x^2 - 8x + 64\right)\); &nbsp; \(27x^3 - 8y^3 = (3x - 2y)\left(9x^2 + 6xy + 4y^2\right)\).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Chứng minh một đẳng thức hoặc một tính chất chia hết</p>
+      <ol class="steps">
+        <li>Biến đổi <b>vế phức tạp hơn</b> bằng hằng đẳng thức cho tới khi ra vế kia.</li>
+        <li>Với bài chia hết: phân tích biểu thức thành <b>tích</b> có chứa thừa số là số cần chia hết.</li>
+        <li>Kết luận: tích đó chia hết cho thừa số ấy với mọi giá trị của biến.</li>
+      </ol>
+      <p><b>Ví dụ.</b> \((n+2)^2 - n^2 = 4(n+1)\) nên luôn chia hết cho \(4\) (Bài 2.6).</p>
+      <p>\((10a+5)^2 = 100a(a+1) + 25\) — quy tắc nhẩm bình phương số tận cùng là 5 (Bài 2.17).</p>
+      <p>\((a-b)^3 = -(b-a)^3\) (Bài 2.11); &nbsp; \(a^3 + b^3 = (a+b)^3 - 3ab(a+b)\) (Bài 2.20).</p>
+    </div>
+    <div class="box method">
+      <p class="box-title">Dạng: Bài toán thực tế dùng hằng đẳng thức</p>
+      <ol class="steps">
+        <li>Đặt ẩn theo đề, viết biểu thức cần tính (diện tích, số tiền…).</li>
+        <li>Rút gọn hoặc phân tích biểu thức bằng hằng đẳng thức.</li>
+        <li>Thay số đã cho, tính và trả lời <b>kèm đơn vị</b>.</li>
+      </ol>
+      <p><b>Ví dụ.</b> Diện tích đường đi quanh mảnh vườn: \(S = (x+2y)^2 - x^2 = 4y(x+y)\); với \(x=102\) m, \(y=2\) m thì \(S = 832\ \text{m}^2\) (Bài 2.25).</p>
+      <p>Lãi kép 3 năm: \(S = A(1+x)^3 = A\left(1 + 3x + 3x^2 + x^3\right)\), là đa thức bậc 3 theo \(x\) (Ví dụ 3 tr. 40, Bài 2.21).</p>
+    </div>
+
+    <h4>4. Bài tập cuối chương — phần trắc nghiệm</h4>
+    <div class="box example">
+      <p class="box-title">Bài 2.28 – 2.31 (SGK tr. 47)</p>
+      <p><b>2.28.</b> \(x^2 - 9x + 8 = (x-1)(x-8)\) vì \((-1)+(-8) = -9\) và \((-1)(-8) = 8\). &nbsp;\(\Rightarrow\) Đáp án <b>B</b>.</p>
+      <p><b>2.29.</b> \((A+B)(A-B) = A^2 - B^2\). &nbsp;\(\Rightarrow\) Đáp án <b>D</b>.</p>
+      <p><b>2.30.</b> \(25x^2 + 20xy + 4y^2 = (5x)^2 + 2\cdot 5x\cdot 2y + (2y)^2 = (5x+2y)^2\). &nbsp;\(\Rightarrow\) Đáp án <b>D</b>.</p>
+      <p><b>2.31.</b> \(A = (2x+1)^3 - 6x(2x+1) = \left(8x^3 + 12x^2 + 6x + 1\right) - \left(12x^2 + 6x\right) = 8x^3 + 1\). &nbsp;\(\Rightarrow\) Đáp án <b>C</b>.</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Bài 2.34 (SGK tr. 47) — Phân tích thành nhân tử</p>
+      <p>a) \(6x^2 - 24y^2 = 6\left(x^2 - 4y^2\right) = 6(x-2y)(x+2y)\) &nbsp;<span class="muted">(nhân tử chung rồi hằng đẳng thức)</span></p>
+      <p>b) \(64x^3 - 27y^3 = (4x)^3 - (3y)^3 = (4x-3y)\left(16x^2 + 12xy + 9y^2\right)\)</p>
+      <p>c) \(x^4 - 2x^3 + x^2 = x^2\left(x^2 - 2x + 1\right) = x^2(x-1)^2\)</p>
+      <p>d) \((x-y)^3 + 8y^3 = (x-y)^3 + (2y)^3 = (x+y)\left(x^2 - 4xy + 7y^2\right)\)</p>
+    </div>
+    <div class="box example">
+      <p class="box-title">Bài 2.35 (SGK tr. 47) — Giải thích \((a+b)^2 = a^2 + 2ab + b^2\) bằng diện tích</p>
+      <p><b>Cách 1.</b> Hình vuông \(ABCD\) có cạnh \(a+b\) nên diện tích bằng \((a+b)^2\).</p>
+      <p><b>Cách 2.</b> Cộng diện tích bốn hình nhỏ: \(P = a^2\), \(Q = ab\), \(R = ab\), \(S = b^2\), tổng bằng \(a^2 + 2ab + b^2\).</p>
+      <p>Hai cách tính cùng một diện tích nên \((a+b)^2 = a^2 + 2ab + b^2\) (xem hình ở <a href="#toan-bai-6">Bài 6</a>).</p>
+    </div>
+    <div class="box warn">
+      <p><b>Các lỗi hay gặp của cả chương:</b></p>
+      <p>· \((A \pm B)^2 \ne A^2 \pm B^2\) và \((A \pm B)^3 \ne A^3 \pm B^3\) — luôn còn các hạng tử giữa.</p>
+      <p>· Nhầm \(A^3 + B^3\) (bằng một <b>tích</b>) với \((A+B)^3\) (có <b>bốn</b> hạng tử).</p>
+      <p>· Nhầm bình phương <b>thiếu</b> \(A^2 \mp AB + B^2\) với bình phương <b>đủ</b> \(A^2 \mp 2AB + B^2\).</p>
+      <p>· Sai dấu ở \((A-B)^3\): dấu đúng là \(+\,-\,+\,-\).</p>
+      <p>· Quên bình phương / lập phương cả <b>hệ số</b>: \((2x)^3 = 8x^3\), không phải \(2x^3\).</p>
+      <p>· Phân tích <b>chưa triệt để</b>, dừng ở \(x\left(x^2 - 1\right)\) thay vì \(x(x-1)(x+1)\).</p>
+      <p>· Nhóm hạng tử mà quên đổi dấu khi đặt dấu “−” trước ngoặc.</p>
+    </div>
+
+    <div class="key-points">
+      <ul>
+        <li>Thuộc <b>bảy hằng đẳng thức đáng nhớ</b> và dùng được theo <b>cả hai chiều</b>.</li>
+        <li>Hệ số khai triển lấy từ tam giác Pascal (\(1\,2\,1\) và \(1\,3\,3\,1\)); với hiệu thì dấu xen kẽ.</li>
+        <li>Phân tích thành nhân tử: nhân tử chung \(\to\) hằng đẳng thức \(\to\) nhóm hạng tử \(\to\) lặp lại đến triệt để.</li>
+        <li>Đếm số hạng tử để đoán nhanh phương pháp: 2 (hiệu bình phương, tổng/hiệu lập phương), 3 (bình phương), 4 (lập phương hoặc nhóm).</li>
+        <li>Muốn tính nhanh giá trị biểu thức: <b>thu gọn trước, thay số sau</b>.</li>
+        <li>Tích bằng \(0\) \(\Rightarrow\) một thừa số bằng \(0\): đó là cách tìm \(x\) sau khi phân tích thành nhân tử.</li>
+      </ul>
+    </div>
+  </article>
+</section>
